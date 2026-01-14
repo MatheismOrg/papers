@@ -355,4 +355,3 @@ Tegmark, M. (2014). *Our Mathematical Universe*. Knopf.
 Tononi, G. (2004). An information integration theory of consciousness. *BMC Neuroscience*, *5*, 42\.
 
 Wigner, E. (1960). The unreasonable effectiveness of mathematics in the natural sciences. *Communications on Pure and Applied Mathematics*, *13*(1), 1–14.
-
