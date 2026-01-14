@@ -140,6 +140,8 @@ The question 'what makes our universe physically real rather than merely abstrac
 
 This dissolves Benacerraf's (1973) dilemma about mathematical knowledge. Benacerraf asked: how can we know about abstract mathematical objects if they are causally inert? The answer: we know mathematical truths because we *are* mathematical structures, subpatterns with direct acquaintance rather than requiring causal contact. The epistemological problem disappears once the ontological confusion is cleared away.
 
+This position resembles but differs from Lewis's (1986) modal realism. Lewis posits concrete possible worlds as real as our own, distinguished by spatiotemporal isolation. The present view posits mathematical structures, not concrete worlds. Lewis faces the incredulous stare: why believe in infinitely many concrete universes? Mathematical monism faces no such burden. Mathematical structures are not additional concrete entities but the very fabric of consistency itself. The 'existence' of the Mandelbrot set requires no ontological extravagance; it follows from the definition. The multiverse here is not a collection of spatiotemporally isolated physical universes but the totality of self-consistent mathematical forms.
+
 ---
 
 ## **4\. The Measure Problem and the Induced Parsimony Postulate**
@@ -159,6 +161,8 @@ I propose:
 $$P(S) \\propto 2^{-K(S)}$$
 
 where K(S) is the Kolmogorov complexity of S, that is, the length of the shortest program that generates the structure's rules.
+
+This approach builds on Schmidhuber's (2000, 2002\) algorithmic theories of everything, which first rigorously proposed that universes are weighted by algorithmic probability. Schmidhuber further refined this with the Speed Prior, incorporating computation time alongside program length. The present framework differs in two respects: first, it includes all self-consistent mathematical structures, not only computable ones, since consistency is the criterion established by the pattern-randomness dichotomy; second, it provides philosophical grounding for *why* algorithmic probability governs measure, rather than positing it as a starting assumption. Tegmark's (2008) Mathematical Universe Hypothesis shares our conclusion but not our derivation; Schmidhuber's framework shares our measure but not our scope. The present work unifies both: deriving mathematical existence a priori, then applying algorithmic probability as the natural measure over structure-space.
 
 **Critical distinction:** K(S) measures *generative* complexity (the shortest program specifying the laws or rules), not *instance* complexity of specific states. A universe with simple laws (low generative complexity) can produce configurations of enormous detail, even infinite states. The Mandelbrot set has low K(S) (its definition is \~50 characters) but infinite fractal complexity.
 
@@ -328,13 +332,13 @@ Chalmers (1996) argues that even complete physical knowledge would leave unexpla
 
 The response: the hard problem assumes its conclusion. To claim that structure cannot constitute experience is to presuppose that experience is not structural. But our argument establishes that anything that exists and causally interacts must be structure. Consciousness causally interacts with physical systems (my experience of pain causes my report 'that hurts'). Therefore consciousness is structure.
 
-A striking confirmation: every proposed explanation of consciousness is itself mathematical. Penrose's Orch-OR theory invokes quantum coherence in microtubules, the dynamics of state-vector reduction, specific decoherence timescales. Tononi's Integrated Information Theory defines consciousness via the mathematical quantity Φ, calculated from causal interaction matrices. Global Workspace Theory describes computational broadcasting across neural modules. Even dualist proposals invoking 'non-physical' properties must specify *which* properties, *how* they interact, *what laws* govern their behavior—and this specification is structure. The pattern-randomness dichotomy applies recursively: any determinate feature of consciousness, any mechanism proposed to explain it, any bridge posited across the explanatory gap, falls within mathematical description. Objections to mathematical consciousness invariably invoke more mathematics. The escape routes all lead back.
-
 The explanatory gap Levine (1983) identifies (we cannot see *why* certain structures constitute experience) may reflect the structure of explanation itself rather than a gap in reality. A system cannot fully model its own modeling processes, so consciousness *should* seem irreducible from the inside even if it is not. The opacity is precisely what structuralism predicts: we experience the outputs of our computational processes, not the processes themselves.
 
 The zombie argument (that beings physically identical to us but lacking consciousness are conceivable, hence possible) proves too much. We can 'conceive' of water without H₂O, heat without molecular motion, life without biochemistry, yet these identities hold necessarily. Pre-theoretical intuitions about conceivability have repeatedly failed as guides to metaphysical possibility. Structural identity necessitates phenomenal identity, as it does for heat and molecular motion; zombies are therefore metaphysically impossible.
 
 This does not diminish consciousness but identifies what it must be: a pattern within mathematical structure, known from within rather than observed from without.
+
+Russellian monism offers a compatible perspective. Russell (1927) observed that physics describes only relational structure, leaving open what *instantiates* those relations. Russellians propose that phenomenal properties are the intrinsic nature of physical structure. On mathematical monism, this collapses elegantly: there is no gap between structure and its intrinsic nature because structure is fundamental. Qualia are not hidden fillers of structural nodes but aspects of what it is like to *be* certain mathematical patterns. The hard problem dissolves not by explaining qualia in terms of something else but by recognizing that mathematical structure, from the inside, constitutes experience.
 
 ### **6.5 The Born Rule**
 
@@ -512,6 +516,8 @@ Ladyman, J., & Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. 
 
 Levine, J. (1983). Materialism and qualia: The explanatory gap. *Pacific Philosophical Quarterly*, 64(4), 354–361.
 
+Lewis, D. (1986). *On the Plurality of Worlds*. Blackwell.
+
 Li, M., & Vitányi, P. (2008). *An introduction to Kolmogorov complexity and its applications* (3rd ed.). Springer.
 
 Melia, J. (1998). Field's programme: Some interference. *Analysis*, 58(2), 63–71.
@@ -520,7 +526,13 @@ Newman, M. H. A. (1928). Mr. Russell's 'causal theory of perception.' *Mind*, 37
 
 Saunders, S. (2006). Are quantum particles objects? *Analysis*, 66(1), 52–63.
 
+Russell, B. (1927). *The Analysis of Matter*. Kegan Paul.
+
 Schmidhuber, J. (1997). A computer scientist's view of life, the universe, and everything. In C. Freksa (Ed.), *Foundations of computer science* (pp. 201–208). Springer.
+
+Schmidhuber, J. (2000). Algorithmic theories of everything. arXiv:quant-ph/0011122.
+
+Schmidhuber, J. (2002). The Speed Prior: A new simplicity measure yielding near-optimal computable predictions. *Proceedings of COLT 2002*, LNAI 2375, 216–228.
 
 Sider, T. (2011). *Writing the Book of the World*. Oxford University Press.
 
@@ -529,8 +541,6 @@ Solomonoff, R. J. (1964). A formal theory of inductive inference, Parts I and II
 Tegmark, M. (2008). The mathematical universe. *Foundations of Physics*, 38(2), 101–150.
 
 Tegmark, M. (2014). *Our Mathematical Universe: My quest for the ultimate nature of reality*. Alfred A. Knopf.
-
-Tononi, G. (2004). An information integration theory of consciousness. *BMC Neuroscience*, 5, 42\.
 
 Wallace, D. (2012). *The emergent multiverse: Quantum theory according to the Everett interpretation*. Oxford University Press.
 
