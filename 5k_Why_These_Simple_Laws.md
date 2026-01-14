@@ -118,7 +118,9 @@ I propose:
 
 **IPP:** P(S) ∝ 2^(−K(S))
 
-where K(S) is the Kolmogorov complexity of S: the length of the shortest program generating the structure's rules when run on a universal Turing machine. This approach extends Schmidhuber's (2000) algorithmic theories of everything, which first proposed that the universe is computable and weighted by algorithmic probability.
+where K(S) is the Kolmogorov complexity of S: the length of the shortest program generating the structure's rules when run on a universal Turing machine.
+
+This approach builds on Schmidhuber's (2000, 2002\) algorithmic theories of everything, which first rigorously proposed that universes are weighted by algorithmic probability. Schmidhuber further refined this with the Speed Prior, incorporating computation time alongside program length. The present framework differs in two respects: first, it includes all self-consistent mathematical structures, not only computable ones, since consistency is the criterion established by the pattern-randomness dichotomy; second, it provides philosophical grounding for *why* algorithmic probability governs measure, rather than positing it as a starting assumption. Tegmark's (2008) Mathematical Universe Hypothesis shares our conclusion but not our derivation; Schmidhuber's framework shares our measure but not our scope. The present work unifies both: deriving mathematical existence a priori, then applying algorithmic probability as the natural measure over structure-space.
 
 **Critical distinction:** K(S) measures *generative* complexity (program specifying laws), not instance complexity of states. A universe with simple laws can produce vast complexity. The Mandelbrot set has K(S) of \~50 characters but infinite fractal detail. Similarly, simple physical laws (Standard Model plus general relativity, \~10³ bits) produce the observable universe's vast complexity.
 
@@ -309,6 +311,8 @@ Saunders, S. (2006). Are quantum particles objects? *Analysis*, 66(1), 52–63.
 Schmidhuber, J. (1997). A computer scientist's view of life, the universe, and everything. *Lecture Notes in Computer Science*, 1337, 201–208.
 
 Schmidhuber, J. (2000). Algorithmic theories of everything. arXiv:quant-ph/0011122.
+
+Schmidhuber, J. (2002). The Speed Prior: A new simplicity measure yielding near-optimal computable predictions. *Proceedings of COLT 2002*, LNAI 2375, 216–228.
 
 Solomonoff, R. J. (1964). A formal theory of inductive inference. *Information and Control*, 7(1–2), 1–22, 224–254.
 
