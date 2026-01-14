@@ -6,7 +6,7 @@ matheism.org
 
 ## **Abstract**
 
-I establish that existence is identical to mathematical consistency through a priori argument, then derive consequences for physics. The pattern-randomness dichotomy proves exhaustive: anything intelligible exhibits either discoverable patterns or apparent randomness, both inherently mathematical. Combined with the Identity of Indiscernibles applied to isomorphic structures, this establishes that reality *is* mathematical structure, not merely described by it; the math is the territory. From this foundation, the Level IV multiverse follows deductively: all self-consistent mathematical structures necessarily exist, since any principle filtering structures into 'existing' and 'non-existing' categories would itself require grounding, generating regress. The measure problem (which structures should observers expect to inhabit?) is addressed by the Induced Parsimony Postulate (IPP): a structure's measure is governed by its algorithmic probability, P(S) ∝ 2^(−K(S)), where K(S) is the Kolmogorov complexity of its generating rules. Since reality is structure, this measure is not imposed but discovered: algorithmic probability is inherent to structure-space. IPP explains cosmological fine-tuning, the success of Occam's Razor, and why physical laws take variational form. It generates testable predictions: the final theory of physics should have near-minimal generative complexity among observer-supporting structures, and outstanding puzzles (quantum gravity, dark matter, dark energy) will have simple solutions. Unlike Tegmark's Mathematical Universe Hypothesis, which posits mathematical existence as cosmological conjecture, this framework derives it from logical necessity.
+I establish that existence is identical to mathematical consistency through a priori argument, then derive consequences for physics. The pattern-randomness dichotomy proves exhaustive: anything intelligible exhibits either discoverable patterns or apparent randomness, both inherently mathematical. Combined with the Identity of Indiscernibles applied to isomorphic structures, this establishes that reality *is* mathematical structure, not merely described by it; the math is the territory. From this foundation, the Level IV multiverse follows deductively: all self-consistent mathematical structures necessarily exist, since any filter is itself a consistent structure, all filters exist, including the null filter that excludes nothing. The measure problem (which structures should observers expect to inhabit?) is addressed by the Induced Parsimony Postulate (IPP): a structure's measure is governed by its algorithmic probability, P(S) ∝ 2^(−K(S)), where K(S) is the Kolmogorov complexity of its generating rules. Since reality is structure, this measure is not imposed but discovered: algorithmic probability is inherent to structure-space. IPP explains cosmological fine-tuning, the success of Occam's Razor, and why physical laws take variational form. It generates testable predictions: the final theory of physics should have near-minimal generative complexity among observer-supporting structures, and outstanding puzzles (quantum gravity, dark matter, dark energy) will have simple solutions. Unlike Tegmark's Mathematical Universe Hypothesis, which posits mathematical existence as cosmological conjecture, this framework derives it from logical necessity.
 
 **Keywords:** mathematical universe, structural realism, multiverse, Kolmogorov complexity, fine-tuning, measure problem
 
@@ -102,6 +102,8 @@ The physical/abstract distinction dissolves. 'Physical' names structure experien
 
 This dissolves Benacerraf's (1973) dilemma about mathematical knowledge. How can we know abstract objects if they are causally inert? Answer: we know mathematical truths because we *are* mathematical structures, subpatterns with direct acquaintance rather than requiring causal contact.
 
+This position resembles but differs from Lewis's (1986) modal realism. Lewis posits concrete possible worlds as real as our own, distinguished by spatiotemporal isolation. The present view posits mathematical structures, not concrete worlds. Lewis faces the incredulous stare: why believe in infinitely many concrete universes? Mathematical monism faces no such burden. Mathematical structures are not additional concrete entities but the very fabric of consistency itself. The 'existence' of the Mandelbrot set requires no ontological extravagance; it follows from the definition. The multiverse here is not a collection of spatiotemporally isolated physical universes but the totality of self-consistent mathematical forms.
+
 ---
 
 ## **4\. The Measure Problem and IPP**
@@ -116,7 +118,7 @@ I propose:
 
 **IPP:** P(S) ∝ 2^(−K(S))
 
-where K(S) is the Kolmogorov complexity of S: the length of the shortest program generating the structure's rules when run on a universal Turing machine.
+where K(S) is the Kolmogorov complexity of S: the length of the shortest program generating the structure's rules when run on a universal Turing machine. This approach extends Schmidhuber's (2000) algorithmic theories of everything, which first proposed that the universe is computable and weighted by algorithmic probability.
 
 **Critical distinction:** K(S) measures *generative* complexity (program specifying laws), not instance complexity of states. A universe with simple laws can produce vast complexity. The Mandelbrot set has K(S) of \~50 characters but infinite fractal detail. Similarly, simple physical laws (Standard Model plus general relativity, \~10³ bits) produce the observable universe's vast complexity.
 
@@ -246,6 +248,8 @@ The response: the hard problem assumes its conclusion. To claim structure cannot
 
 Crucially, any proposed explanation of consciousness must itself be mathematical. Penrose's Orch-OR invokes quantum coherence in microtubules. Integrated Information Theory defines consciousness via the mathematical quantity Φ. Global Workspace Theory describes computational broadcasting. Dualist proposals invoking "non-physical" properties must still specify *which* properties and *how* they interact, which is specifying structure. The pattern-randomness dichotomy applies: any determinate feature of consciousness, any mechanism proposed to explain it, falls within mathematical description. Objections to mathematical consciousness invariably invoke more mathematics. The escape routes all lead back.
 
+Russellian monism offers a compatible perspective. Russell (1927) observed that physics describes only relational structure, leaving open what *instantiates* those relations. Russellians propose that phenomenal properties are the intrinsic nature of physical structure. On mathematical monism, this collapses elegantly: there is no gap between structure and its intrinsic nature because structure is fundamental. Qualia are not hidden fillers of structural nodes but aspects of what it is like to *be* certain mathematical patterns. The hard problem dissolves not by explaining qualia in terms of something else but by recognizing that mathematical structure, from the inside, constitutes experience.
+
 ---
 
 ## **6\. Objections and Responses**
@@ -294,11 +298,17 @@ French, S. (2014). *The Structure of the World*. Oxford University Press.
 
 Ladyman, J., & Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford University Press.
 
+Lewis, D. (1986). *On the Plurality of Worlds*. Blackwell.
+
 Sandora, M. (2025). Multiverse predictions for habitability. arXiv:2509.08220.
+
+Russell, B. (1927). *The Analysis of Matter*. Kegan Paul.
 
 Saunders, S. (2006). Are quantum particles objects? *Analysis*, 66(1), 52–63.
 
 Schmidhuber, J. (1997). A computer scientist's view of life, the universe, and everything. *Lecture Notes in Computer Science*, 1337, 201–208.
+
+Schmidhuber, J. (2000). Algorithmic theories of everything. arXiv:quant-ph/0011122.
 
 Solomonoff, R. J. (1964). A formal theory of inductive inference. *Information and Control*, 7(1–2), 1–22, 224–254.
 
