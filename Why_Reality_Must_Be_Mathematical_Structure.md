@@ -190,6 +190,8 @@ The master argument: Any property that makes a difference, causally, counterfact
 
 A striking confirmation: every proposed explanation of consciousness is itself mathematical. Penrose's Orch-OR theory invokes quantum coherence in microtubules, the dynamics of state-vector reduction, specific decoherence timescales. Tononi's Integrated Information Theory defines consciousness via the mathematical quantity Φ, calculated from causal interaction matrices. Global Workspace Theory describes computational broadcasting across neural modules. Even dualist proposals invoking 'non-physical' properties must specify *which* properties, *how* they interact, *what laws* govern their behavior, and this specification is structure. The pattern-randomness dichotomy applies recursively: any determinate feature of consciousness, any mechanism proposed to explain it, any bridge posited across the explanatory gap, falls within mathematical description. Objections to mathematical consciousness invariably invoke more mathematics. The escape routes all lead back.
 
+Yet Russellian monism, properly understood, offers a compatible perspective rather than a rival. Russell (1927) observed that physics describes only relational structure, leaving open what *instantiates* those relations. On mathematical monism, this gap closes elegantly: there is no distinction between structure and its intrinsic nature because structure is fundamental. Qualia are not hidden fillers of structural nodes but aspects of what it is like to *be* certain mathematical patterns. The hard problem dissolves not by explaining qualia in terms of something else but by recognizing that mathematical structure, experienced from within, constitutes experience. Strawson and Goff err not in taking consciousness seriously but in positing something beyond structure to ground it.
+
 ### **3.4 The Interaction Problem and Positive Evidence**
 
 Substance dualism faces a further difficulty beyond the general collapse of interacting dualisms: the specific problem of causal interaction. Physical systems exhibit causal closure; every neural event has sufficient physical causes traceable through electrochemistry. A non-physical mind influencing neural firing would violate conservation of energy at the interface. No such violation has been detected at any scale.
@@ -337,6 +339,8 @@ Penrose, R. (1989). *The emperor's new mind: Concerning computers, minds, and th
 Psillos, S. (2001). Is structural realism possible? *Philosophy of Science*, *68*(S3), S13–S24.
 
 Resnik, M. D. (1997). *Mathematics as a Science of Patterns*. Oxford University Press.
+
+Russell, B. (1927). *The Analysis of Matter*. Kegan Paul.
 
 Saunders, S. (2006). Are quantum particles objects? *Analysis*, *66*(1), 52–63.
 
