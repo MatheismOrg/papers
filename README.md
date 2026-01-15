@@ -1,1 +1,1 @@
-papers have each been moved to their own repos
+latest papers now in their own repos
