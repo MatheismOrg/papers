@@ -1,6 +1,6 @@
-# arXiv Short Paper
+# Foundations of Physics
 
-## Why Simple Laws? Deriving Physics from Mathematical Necessity
+## Why These Simple Laws? Deriving Physics from Mathematical Necessity
 
 Part of the [Matheism](https://matheism.org) project exploring mathematical monism and the foundations of reality.
 
