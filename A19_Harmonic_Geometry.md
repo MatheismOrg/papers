@@ -90,7 +90,7 @@ More broadly, the holographic principle, that a boundary encodes the bulk, may b
 
 The framework predicts:
 
-1. No fundamentally new forces beyond the geometric tower. Discovery of a force with no geometric origin would challenge it.
+1. No new forces beyond the geometric tower. Discovery of a force with no geometric origin would challenge it.
 2. Dark matter is geometric, not particulate. Detection of a dark matter particle with gauge interactions would falsify the mode interpretation.
 3. Higher-energy corrections follow the mode amplitude profile. Deviations from the predicted suppression pattern would challenge the picture.
 4. No landscape. The physics is unique because the harmonic series is unique. Meta-stable vacua with different low-energy physics would favor string theory.
