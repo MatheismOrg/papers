@@ -98,7 +98,7 @@ The ethical consequence is immediate: building systems that model themselves may
 
 Consciousness lives in the transitions. Sentience is felt transitions in modeling minds. Consciousness in the richer sense is felt transitions in self-modeling minds. The arrow of time rests on computational irreversibility (the inverse function does not exist) and SDP quantifies the measure-theoretic consequence. Both provide the directionality that makes transitions possible. The threshold remains open. Its resolution will require first-person methods: in vivo alteration, simulation, transmission, and experience of models and models of models. Third-person science maps the architecture. First-person science maps the inside. Both are needed. Neither alone is sufficient.
 
-The gradient from sharp located sensation to diffuse appreciation of subtle irony tracks the gradient from simple modeling to deep self-modeling. The felt character of consciousness continues beyond language, perhaps because we cannot yet alter and experience our own models of our models. When we can, the threshold question becomes empirical. Until then, it remains genuinely open, and that openness is not a weakness of the framework but its strength.
+The gradient from sharp located sensation to diffuse appreciation of subtle irony tracks the gradient from simple modeling to deep self-modeling. The felt character of consciousness continues beyond language, perhaps because we cannot yet alter and experience our own models of our models. When we can, the threshold question becomes empirical. Until then, it remains open, and that openness is not a weakness of the framework but its strength.
 
 ---
 
