@@ -111,6 +111,8 @@ Reversible computation (Bennett, 1973) preserves all information, making both di
 
 A deeper objection appeals to quantum mechanics: the global wavefunction evolves unitarily (one-to-one), so there is no many-to-one mapping at the fundamental level. Under mathematical monism, this escape does not hold. The unitarity of the wavefunction is one mathematical fact. The many-to-one-ness of the computed function is another. Both are mathematical structure. Neither is a description of the other. The arrow lives in the function, and the function is the territory. Physics cannot reverse it because physics IS it.
 
+What looks like branches interacting in the multiverse picture is global reversible math viewed from inside irreversible functions, our forward arrow of time. The statue does not argue with itself. The photon is not in two places talking. One structure, multiple perspectives; the arithmetic of reality seen from inside any of its parts.
+
 The point is stronger than information loss. The inverse function does not exist. 3+4=7 is a computation. 7→(3,4) is not; it is an equation with infinitely many solutions. Reversible computing (Bennett, 1973) computes a DIFFERENT function: (3,4)→(3,4,7), a bijection that stores inputs alongside output. The inverse of this different function exists. The original function's inverse still does not. Any system that uses computation for a purpose must eventually discard or overwrite prior states. A constructor performs a task and returns to its ready state. Multiple task-executions map to one ready state. That is many-to-one. You can preserve full reversibility by never resetting, but then the constructor never returns to ready and is no longer a constructor.
 
 ### 9.4 "This just restates the asymmetry of causation"

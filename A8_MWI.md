@@ -100,6 +100,8 @@ Mathematical structural realism dissolves the puzzle. If reality is mathematical
 
 Bell correlations are not spooky action at a distance. They are mathematics. The correlations are structural features of a unified mathematical object, not causal influences propagating through space.
 
+Many-worlds treats branches as interacting. Matheism treats the whole wavefunction as one mathematical structure; what looks like branches interacting is global reversible math viewed from inside irreversible functions, our forward arrow of time. The statue does not argue with itself. The photon is not in two places talking. One structure, multiple perspectives; the arithmetic of reality seen from inside any of its parts.
+
 ### 4.3 The Born Rule
 
 Why do observed frequencies match |Ψ|²? This remains an active research area. Deutsch (1999) and Wallace (2012) have argued that the Born rule follows from decision-theoretic rationality constraints within MWI: rational agents in branching universes must weight outcomes by squared amplitudes. This derivation does not require counting branches or assigning them intrinsic probabilities.
