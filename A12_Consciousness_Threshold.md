@@ -1,4 +1,4 @@
-# Consciousness Is Felt Transitions in Self-Modeling Computation
+# Consciousness Lives in the Transitions: On the Threshold of Felt Structure
 
 **Gary Abraham Bernstein**
 
@@ -7,7 +7,7 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 
 ## Abstract
 
-If reality is mathematical structure (Bernstein, 2026c) and the arrow of time is a consequence of computational irreversibility (Bernstein, 2026h), consciousness is the felt math transitions of modeling and self-modeling minds along that arrow. This paper distinguishes two levels: sentience (felt transitions in a modeling mind: perception, location, sensation) and consciousness (felt transitions in a self-modeling mind: awareness of awareness, knowing that you feel). The core thesis is that consciousness lives in the transitions, not in the states alone. A dead brain contains a self-model but does not run it. A frozen computer stores a program but does not compute. The difference between a corpse and a person is not structural but dynamic: the same math, but only one is transitioning along the arrow. This reframes the hard problem as a question about dynamics rather than ontology, and identifies the threshold question as the central open problem: where does modeling begin? The paper maps the terrain without closing the question prematurely, arguing that resolution may require in vivo first-person experimentation and reports rather than third-person observation alone.
+If reality is mathematical structure (Bernstein, 2026c) and the arrow of time is a consequence of computational irreversibility (Bernstein, 2026h), consciousness is the felt math transitions of modeling and self-modeling minds along that arrow. This paper distinguishes two levels: sentience (felt transitions in a modeling mind: perception, location, sensation) and consciousness (felt transitions in a self-modeling mind: awareness of awareness, knowing that you feel). The core thesis is that consciousness is felt transitions, not states alone. A dead brain contains a self-model but does not run it. A frozen computer stores a program but does not compute. The difference between a corpse and a person is not structural but dynamic: the same math, but only one is transitioning along the arrow. This reframes the hard problem as a question about dynamics rather than ontology, and identifies the threshold question as the central open problem: where does modeling begin? The paper maps the terrain without closing the question prematurely, arguing that resolution may require in vivo first-person experimentation and reports rather than third-person observation alone.
 
 **Keywords:** consciousness, sentience, self-modeling, hard problem, mathematical monism, arrow of time, transitions
 
@@ -106,7 +106,7 @@ The gradient from sharp located sensation to diffuse appreciation of subtle iron
 
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 
-Bernstein, G. A. (2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
+Bernstein, G. A. (2026e). Why these simple laws? Deriving physics from mathematical necessity.
 
 Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
 
