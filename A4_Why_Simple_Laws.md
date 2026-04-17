@@ -537,7 +537,7 @@ Bernstein, G. A. (2026c). Reality is mathematical structure.
 
 Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism conflates specificity with complexity.
 
-Bernstein, G. A. (2026g). String theory is complexity-disfavored: An information-theoretic assessment.
+Bernstein, G. A. (2026g). String theory is complexity-disfavored: A description-length bound.
 
 Bernstein, G. A. (2026f). Consciousness is felt transitions in self-modeling computation.
 

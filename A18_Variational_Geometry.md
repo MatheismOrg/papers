@@ -96,7 +96,7 @@ Weinstein's construction has not been peer-reviewed and has faced technical crit
 
 ## References
 
-Bernstein, G. A. (2026g). String theory is complexity-disfavored: An information-theoretic assessment.
+Bernstein, G. A. (2026g). String theory is complexity-disfavored: A description-length bound.
 
 
 Bernstein, G. A. (2026k). Why forward time, least action, and emergence are the same theorem.
