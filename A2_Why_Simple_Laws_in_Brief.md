@@ -101,9 +101,9 @@ Albert, D. Z. (2000). *Time and Chance*. Harvard University Press.
 
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 
-Bernstein, G. A. (2026d, 2026e). Why these simple laws? Deriving physics from mathematical necessity.
+Bernstein, G. A. (2026d, 2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
-Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism is a category error.
+Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism conflates specificity with complexity.
 
 Bernstein, G. A. (2026g). String theory is complexity-disfavored: An information-theoretic assessment.
 

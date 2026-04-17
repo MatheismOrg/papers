@@ -186,7 +186,7 @@ The final ranking depends on model-specific K computations that are not yet avai
 
 ## References
 
-Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism is a category error.
+Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism conflates specificity with complexity.
 
 Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
 

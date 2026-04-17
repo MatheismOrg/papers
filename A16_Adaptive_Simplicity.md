@@ -85,7 +85,7 @@ Human simplicity preference is not a heuristic shortcut. It is a calibration to 
 
 ## References
 
-Bernstein, G. A. (2026a). Simple laws, the arrow of time, many worlds, superdeterminism and all: Convergence from mathematical monism.
+Bernstein, G. A. (2026a). Why these simple laws, forward time, many-worlds, and superdeterminism, in brief.
 
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 

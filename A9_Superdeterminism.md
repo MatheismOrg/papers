@@ -235,7 +235,7 @@ A further philosophical observation: true randomness, like a perfect circle, is 
 
 ## References
 
-Bernstein, G. A. (2026e). Why these simple laws? Deriving physics from mathematical necessity.
+Bernstein, G. A. (2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
 
 

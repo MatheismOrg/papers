@@ -137,7 +137,7 @@ The result required no advanced mathematics. It required noticing that nearly al
 
 ## References
 
-Bernstein, G. A. (2026e). Why these simple laws? Deriving physics from mathematical necessity.
+Bernstein, G. A. (2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
 Bernstein, G. A. (2026f). Consciousness lives in the transitions: On the threshold of felt structure.
 

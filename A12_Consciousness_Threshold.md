@@ -106,7 +106,7 @@ The gradient from sharp located sensation to diffuse appreciation of subtle iron
 
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 
-Bernstein, G. A. (2026e). Why these simple laws? Deriving physics from mathematical necessity.
+Bernstein, G. A. (2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
 Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
 
