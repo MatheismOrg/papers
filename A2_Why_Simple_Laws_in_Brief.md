@@ -1,4 +1,4 @@
-# Why Simple Laws, Forward Time, Many-Worlds, and Superdeterminism, in Brief
+# Why These Simple Laws, in Brief
 
 
 

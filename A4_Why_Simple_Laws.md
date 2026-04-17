@@ -1,4 +1,4 @@
-# **Why Simple Laws, Forward Time, Many-Worlds, and Superdeterminism**
+# **Why These Simple Laws, Forward Time, Many-Worlds, and Superdeterminism**
 
 **Gary Abraham Bernstein**
 

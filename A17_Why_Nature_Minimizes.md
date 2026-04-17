@@ -121,7 +121,7 @@ Fourth, it clarifies what would count as evidence against the account. If a stab
 
 ## References
 
-Bernstein, G. A. (2026a). Why these simple laws, forward time, many-worlds, and superdeterminism, in brief.
+Bernstein, G. A. (2026a). Why these simple laws, in brief.
 
 Bernstein, G. A. (2026d). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
