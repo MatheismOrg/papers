@@ -1,0 +1,456 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\section{The Arrow of Time Is Irreversible
+Computation}\label{the-arrow-of-time-is-irreversible-computation}
+
+\textbf{Gary Abraham Bernstein}
+
+Independent Researcher ORCID: https://orcid.org/0009-0009-1761-2867
+
+\subsection{Abstract}\label{abstract}
+
+Computation is deterministic forward: 1+1=2. It is underdetermined
+backward: 2=x+y has infinitely many solutions. The inverse function does
+not exist. This is a fact about mathematics, true in every possible
+world.
+
+A system running backward cannot compute, because every operation has
+infinitely many possible inputs. It cannot predict, because prediction
+requires computing consequences from causes, and causes are
+underdetermined from consequences. It cannot model, because modeling
+requires updating representations, and updates are many-to-one
+operations that cannot be inverted. The impossibility is total and
+operates at every scale of mind, math, and matter.
+
+In a block universe where all states exist, backward states are present
+but nothing can compute through them. This is the arrow of computation.
+It is the structural foundation for the time asymmetry that algorithmic
+probability quantifies: end states have high Kolmogorov complexity
+because many-to-one functions ran forward. The computational arrow
+stands without algorithmic probability. algorithmic probability's time
+arrow depends on it.
+
+Deutsch argues the arrow is perspectival because the global wavefunction
+evolves unitarily. His own constructor theory (Deutsch, 2013)
+contradicts him: it defines physics through local operations, and those
+operations are many-to-one. The arrow lives at the level his own
+framework selects. This affirms Many-Worlds: MWI is the only
+interpretation where the substrate stays reversible while the arrow
+exists at the function level. Collapse breaks substrate reversibility
+when the arrow already exists in the function, adding specification cost
+for no gain. Superdeterminism is compatible for the same reason:
+deterministic initial conditions, forward arrow, no collapse.
+
+Consciousness is a further consequence: sentience requires modeling
+(Bernstein, 2026f), and modeling requires forward computation.
+
+\textbf{Keywords:} computation, arrow of time, determinism, block
+universe, logical irreversibility, prediction, modeling
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{1. The Problem}\label{the-problem}
+
+The block universe of general relativity contains all moments equally.
+Past, present, and future are locations within a four-dimensional
+structure, none more real than any other. If this is correct, the
+question ``why does time seem to flow?'' becomes acute. The standard
+answer appeals to entropy: the universe began in a low-entropy state
+(the Past Hypothesis), entropy increases toward the future, and
+conscious systems track this increase through memory formation.
+
+But this answer has a gap. Why does anything computational run one
+direction? In the block, both directions exist. Every state has
+neighboring states in both temporal directions. The thermodynamic arrow
+explains why one end of the block is simple and the other complex. It
+does not explain why computation at any given state runs toward the
+complex end.
+
+This paper argues that the answer lies not in thermodynamics but in the
+logical structure of computation itself. Before reaching consciousness,
+before reaching modeling, before reaching prediction: computation has an
+inherent direction because functions are many-to-one. This is deeper
+than any theory of mind. It is a fact about mathematics.
+
+\subsection{2. Computational
+Determinism}\label{computational-determinism}
+
+Consider the simplest possible computation: addition.
+
+\textbf{Forward:} Given inputs (1, 1) and the rule (addition), the
+output is determined: 2. One input maps to one output. The computation
+is deterministic.
+
+\textbf{Backward:} Given output 2 and the rule (addition), the inputs
+are underdetermined: (0, 2), (1, 1), (-1, 3), (0.5, 1.5), and infinitely
+many others. One output maps to infinitely many possible inputs. The
+reverse computation is not deterministic.
+
+This asymmetry is not specific to addition. It is a property of
+computation in general. Most computations are many-to-one functions:
+multiple inputs produce the same output. This is Landauer's (1961)
+insight, though his focus was thermodynamic (bit erasure produces heat).
+The deeper point is logical: many-to-one functions have a deterministic
+forward direction and an underdetermined backward direction. No
+thermodynamic assumption is required. The asymmetry is mathematical.
+
+Multiplication: 3 × 4 = 12 is deterministic. 12 = x × y is not. Hashing:
+hash(``hello'') = 0x5d41\ldots{} is deterministic. 0x5d41\ldots{} =
+hash(?) is not (this is why cryptography works). Logical inference:
+premises A and B yield conclusion C. But conclusion C does not uniquely
+determine premises (multiple arguments reach the same conclusion).
+Neural computation: sensory inputs produce a percept. The percept does
+not uniquely determine which inputs produced it (this is the binding
+problem, and illusions exploit exactly this underdetermination).
+
+In every case, the forward direction is deterministic and the backward
+direction is underdetermined. This is not a contingent feature of our
+physics. It is a structural property of many-to-one functions, which is
+to say, of nearly all functions.
+
+\subsection{3. The Impossibility at Every
+Scale}\label{the-impossibility-at-every-scale}
+
+The underdetermination operates at every scale. Two atoms collide and
+scatter: infinitely many input trajectories produce the same scattering
+angle. A protein folds: many sequences fold identically, so the fold
+does not specify its origin. A neuron fires: thousands of synaptic input
+combinations cross the same threshold. At every level, the backward
+problem is underdetermined.
+
+A system running backward cannot predict, because prediction means
+computing consequences from causes, and causes are underdetermined from
+consequences. Suppose a computational system could operate backward. At
+its first step, it faces an output and must determine inputs. It cannot,
+because the mapping is many-to-one. It could only guess. The system
+stalls at step one. A backward-running ``computer'' is not a slow
+computer or a probabilistic computer. It is not a computer at all.
+
+\subsection{4. Consequences for Minds}\label{consequences-for-minds}
+
+The computational impossibility has cascading consequences for anything
+that models, predicts, or understands.
+
+To ``think backward'' would require inverting this process: taking the
+current mental state and determining which prior states produced it. But
+mental computation is many-to-one. Multiple prior states produce the
+same current state (this is why memory is lossy and reconstruction is
+unreliable). The backward direction is underdetermined.
+
+A mind cannot think in the underdetermined direction because there is
+nothing to compute. Given output 2, there is no procedure that
+determines the inputs without additional information. The mind would
+need to already know its past to derive its past. Backward thinking is
+not merely difficult or improbable. It is logically impossible without
+information that only the forward direction provides.
+
+This is why memory points one way. A state computed from prior states
+contains information about those prior states (compressed, lossy, but
+present). It does not contain information about future states, because
+it was not computed from them. The asymmetry of information in mental
+states is the asymmetry of deterministic forward computation.
+
+\subsection{5. Independence from
+Thermodynamics}\label{independence-from-thermodynamics}
+
+The standard account connects the arrow of consciousness to the
+thermodynamic arrow: memory formation increases entropy (recording
+information requires erasing prior states of the recording medium, which
+is thermodynamically irreversible). This makes the arrow of
+consciousness a derivative of the arrow of entropy.
+
+The present argument is independent. The logical asymmetry of
+computation, deterministic forward and underdetermined backward, does
+not depend on the second law, the Past Hypothesis, or any thermodynamic
+consideration. It holds in any possible universe with any entropy
+profile. A hypothetical universe where entropy decreases would still
+contain computations that are deterministic forward and underdetermined
+backward, because this is a property of functions, not of physics.
+
+In such a universe, minds would still compute forward (from inputs to
+outputs). They would still form memories in the computational direction.
+They would still experience time flowing toward the direction of their
+computation. From the inside, they would call that direction
+``forward,'' regardless of which direction entropy changes.
+
+The thermodynamic arrow (Bernstein, 2026e) explains which end of the
+block is simple. The computational arrow explains which direction
+consciousness runs. That both arrows point the same direction is not
+coincidence: algorithmic probability's measure-theoretic asymmetry
+depends on computational irreversibility (many-to-one functions are what
+make end states complex). Minds are physical systems whose computational
+direction is implemented through thermodynamic processes. But the
+logical arrow is deeper. It would hold even if the thermodynamic arrow
+reversed.
+
+\subsection{6. The Block Universe
+Resolved}\label{the-block-universe-resolved}
+
+The block universe raises the question: if all moments exist equally,
+why does consciousness have a direction? The thermodynamic answer
+(entropy increases) describes a feature of the block but does not
+explain why minds track that feature. The computational answer does.
+
+In the block, every state has temporal neighbors in both directions. A
+mind at state S has neighboring states S-1 and S+1. The mind's state S
+was computed from S-1 (deterministically). It was not computed from S+1.
+Therefore S contains information about S-1 (as compressed memory) but
+not about S+1 (which is unknown, because the many-to-one computation
+from S+1 to S has not been performed and cannot be inverted).
+
+The mind at S ``remembers'' S-1 and ``anticipates'' S+1. This is not
+because S-1 is ``past'' in some metaphysical sense. It is because S was
+computed from S-1 and therefore contains information about it. The
+direction of information inheritance is the direction of experienced
+time. No flow, no traversal, no moving spotlight. Just the logical
+structure of computation producing an asymmetry in information content
+at each state.
+
+Backward states exist. No mind can think that way. 1+1=2 is
+deterministic. 2=x+y is not.
+
+\subsection{7. The Past Hypothesis as
+Consequence}\label{the-past-hypothesis-as-consequence}
+
+The computational arrow independently grounds what cosmologists call the
+Past Hypothesis. Computation runs from inputs to outputs. Inputs are
+simpler than outputs (many-to-one maps generate complexity from
+simplicity). Minds call the input-direction ``past'' because that is the
+direction they can model. Therefore minds observe simpler states in
+their past and more complex states in their future. This is the Past
+Hypothesis: the universe began in a low-entropy state. Under the
+computational arrow, it is not a postulate about cosmology but a
+consequence of what modeling means. Any mind, in any block, will observe
+its computational past as simpler than its computational future.
+
+This result is independent of algorithmic probability. Algorithmic
+probability explains which blocks have higher measure (Bernstein,
+2026e). The computational arrow explains why minds within any block
+observe simple pasts. Both yield the Past Hypothesis, from different
+premises, converging on the same result. The dependency runs one way:
+algorithmic probability's time arrow depends on computational
+irreversibility (end states have high K because many-to-one functions
+ran forward), but the computational arrow stands without algorithmic
+probability.
+
+\subsection{8. Relationship to the Arrow of
+Time}\label{relationship-to-the-arrow-of-time}
+
+The arrow of time (Bernstein, 2026e) and the arrow of computation
+converge on the same direction from different levels:
+
+\textbf{Arrow of computation (structural):} Many-to-one functions have a
+deterministic direction. The inverse does not exist. This is the
+foundation.
+
+\textbf{Arrow of time (measure-theoretic):} Among all block universes,
+those specified by simple laws plus simple initial conditions have
+minimal Kolmogorov complexity and dominate the measure. End states have
+high K because many-to-one functions ran forward. Algorithmic
+probability quantifies the consequence of computational irreversibility.
+
+The computational arrow stands without algorithmic probability.
+algorithmic probability's time arrow depends on it. That both point the
+same direction is not coincidence but consequence: algorithmic
+probability measures the asymmetry that computational irreversibility
+creates.
+
+\subsection{9. Objections}\label{objections}
+
+\subsubsection{9.1 ``Computation is an abstraction, not a physical
+process''}\label{computation-is-an-abstraction-not-a-physical-process}
+
+In the block universe, computation is a structural relationship between
+states. The inputs-to-outputs direction is defined by the logical
+dependency structure, not by physical traversal. The asymmetry is
+structural: state S depends on state S-1 (is determined by it), not vice
+versa. This is a mathematical fact about the block, not an
+interpretation imposed on it.
+
+\subsubsection{9.2 ``Retrodiction exists''}\label{retrodiction-exists}
+
+We can infer past states from present evidence. Forensic science,
+paleontology, and cosmology all reconstruct the past from present data.
+But retrodiction requires additional information: physical laws,
+background knowledge, and constraints that narrow the underdetermined
+inverse. Without these, 2=x+y is unsolvable. Retrodiction is forward
+computation (applying laws to current evidence to compute probable
+pasts), not backward computation.
+
+\subsubsection{9.3 ``Reversible computation
+exists''}\label{reversible-computation-exists}
+
+Reversible computation (Bennett, 1973) preserves all information, making
+both directions deterministic. This is the strongest objection to the
+present argument: if computation can be made reversible, how can
+computation have an inherent direction? The answer is that reversible
+computation does not model. Modeling is compression: many possible
+states of the world map to the same internal representation. Compression
+is many-to-one. Reversible computation is bijective and cannot compress.
+A mind that never overwrites prior states never learns, never updates,
+never changes its representation of the world. Reversible computation is
+possible in principle but is not sufficient for consciousness or
+cognition. Bennett's result shows that the thermodynamic cost of
+computation can be made arbitrarily small; it does not show that the
+logical arrow of computation can be eliminated. The distinction between
+thermodynamic reversibility and logical reversibility is precisely the
+point: the arrow of computation identified here is logical, not
+thermodynamic, and persists even in Bennett's idealized reversible
+machines whenever those machines are used for modeling.
+
+A deeper objection appeals to quantum mechanics: the global wavefunction
+evolves unitarily (one-to-one), so there is no many-to-one mapping at
+the fundamental level. Under mathematical monism, this escape does not
+hold. The unitarity of the wavefunction is one mathematical fact. The
+many-to-one-ness of the computed function is another. Both are
+mathematical structure. Neither is a description of the other. The arrow
+lives in the function, and the function is the territory. Physics cannot
+reverse it because physics IS it.
+
+What looks like branches interacting in the multiverse picture is global
+reversible math viewed from inside irreversible functions, our forward
+arrow of time. The statue does not argue with itself. The photon is not
+in two places talking. One structure, multiple perspectives; the
+arithmetic of reality seen from inside any of its parts.
+
+The point is stronger than information loss. The inverse function does
+not exist. 3+4=7 is a computation. 7→(3,4) is not; it is an equation
+with infinitely many solutions. Reversible computing (Bennett, 1973)
+computes a DIFFERENT function: (3,4)→(3,4,7), a bijection that stores
+inputs alongside output. The inverse of this different function exists.
+The original function's inverse still does not. Any system that uses
+computation for a purpose must eventually discard or overwrite prior
+states. A constructor performs a task and returns to its ready state.
+Multiple task-executions map to one ready state. That is many-to-one.
+You can preserve full reversibility by never resetting, but then the
+constructor never returns to ready and is no longer a constructor.
+
+\subsubsection{9.4 ``This just restates the asymmetry of
+causation''}\label{this-just-restates-the-asymmetry-of-causation}
+
+Partially. The causal direction and the computational direction
+coincide. But causation is typically grounded in thermodynamics
+(interventionist accounts) or in laws plus boundary conditions (process
+accounts). The computational arrow is grounded in neither. It is
+grounded in the logical structure of many-to-one functions. This
+provides an independent foundation for the direction of causation
+itself: causes are the deterministic inputs; effects are the computed
+outputs.
+
+\subsection{10. Conclusion}\label{conclusion}
+
+Nothing computational works backward. 1+1=2 is deterministic. 2=x+y is
+not. The impossibility is immediate, total, and logical: it depends only
+on the structure of many-to-one functions.
+
+Consciousness is a further consequence. Sentience requires modeling.
+Modeling requires forward computation. A backward system is not a dim
+mind. It is not a mind.
+
+The computational arrow is the structural foundation for the time
+asymmetry algorithmic probability quantifies. End states have high K
+because many-to-one functions ran forward. Algorithmic probability
+measures the consequence. The computational arrow stands without
+algorithmic probability. algorithmic probability's time arrow depends on
+it. The arrow needs only that one plus one leads only to two, but two
+does not lead back to one plus one.
+
+A companion result (conjectural; see Section above) shows that in an
+analytic block universe, the infinite jet bundle at any spacetime point
+encodes the full 4D geometry via Taylor's theorem, including future
+states. This does not conflict with the computational arrow: the
+encoding is mathematical redundancy in a fixed block, not backward
+causation. Local computation still runs forward. The future is encoded
+at every point but can only be \emph{computed through} in one direction.
+
+The same structural fact grounds the Principle of Least Action: in the
+path integral (where a particle takes every possible path and most
+cancel), many quantum paths map to one classical trajectory through
+phase cancellation. Many-to-one produces the arrow of time and the
+variational form of physics from a single root (Bernstein, 2026k).
+
+The result required no advanced mathematics. It required noticing that
+nearly all functions are many-to-one, and that under mathematical monism
+the function is the territory rather than a description of something
+deeper.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{References}\label{references}
+
+Bernstein, G. A. (2026e). Why these simple laws, forward time,
+many-worlds, and superdeterminism.
+
+Bernstein, G. A. (2026f). Consciousness is felt transitions in
+self-modeling computation.
+
+Bernstein, G. A. (2026k). Why forward time, least action, and emergence
+are the same theorem.
+
+Bennett, C. H. (1973). Logical reversibility of computation. \emph{IBM
+Journal of Research and Development}, 17(6), 525-532.
+
+Deutsch, D. (2013). Constructor theory. \emph{Synthese}, 190(18),
+4331-4359.
+
+Brown, H. R. (2005). \emph{Physical Relativity: Space-time Structure
+from a Dynamical Perspective}. Oxford University Press.
+
+Landauer, R. (1961). Irreversibility and heat generation in the
+computing process. \emph{IBM Journal of Research and Development}, 5(3),
+183-191.
+
+All companion papers available at https://matheism.org
+
+\end{document}

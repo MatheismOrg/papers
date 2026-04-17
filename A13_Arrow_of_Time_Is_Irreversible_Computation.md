@@ -11,7 +11,7 @@ Computation is deterministic forward: 1+1=2. It is underdetermined backward: 2=x
 
 A system running backward cannot compute, because every operation has infinitely many possible inputs. It cannot predict, because prediction requires computing consequences from causes, and causes are underdetermined from consequences. It cannot model, because modeling requires updating representations, and updates are many-to-one operations that cannot be inverted. The impossibility is total and operates at every scale of mind, math, and matter.
 
-In a block universe where all states exist, backward states are present but nothing can compute through them. This is the arrow of computation. It is the structural foundation for the time asymmetry that algorithmic probability quantifies: end states have high Kolmogorov complexity because many-to-one functions ran forward. The computational arrow stands without algorithmic probability. algorithmic probability's time arrow depends on it.
+In a block universe where all states exist, backward states are present but nothing can compute through them. This is the arrow of computation. It is the structural foundation for the time asymmetry that algorithmic probability quantifies. Forward computation does not increase Kolmogorov complexity: given simple laws and simple initial conditions, any later state is compactly described by "apply this rule for t steps." Running backward requires specifying which of infinitely many inputs produced each output, an arbitrarily high specification cost. The asymmetry is not in the end state but in the backward path. The computational arrow stands without algorithmic probability. Algorithmic probability's time arrow depends on it.
 
 Deutsch argues the arrow is perspectival because the global wavefunction evolves unitarily. His own constructor theory (Deutsch, 2013) contradicts him: it defines physics through local operations, and those operations are many-to-one. The arrow lives at the level his own framework selects. This affirms Many-Worlds: MWI is the only interpretation where the substrate stays reversible while the arrow exists at the function level. Collapse breaks substrate reversibility when the arrow already exists in the function, adding specification cost for no gain. Superdeterminism is compatible for the same reason: deterministic initial conditions, forward arrow, no collapse.
 
@@ -67,7 +67,7 @@ The present argument is independent. The logical asymmetry of computation, deter
 
 In such a universe, minds would still compute forward (from inputs to outputs). They would still form memories in the computational direction. They would still experience time flowing toward the direction of their computation. From the inside, they would call that direction "forward," regardless of which direction entropy changes.
 
-The thermodynamic arrow (Bernstein, 2026e) explains which end of the block is simple. The computational arrow explains which direction consciousness runs. That both arrows point the same direction is not coincidence: algorithmic probability's measure-theoretic asymmetry depends on computational irreversibility (many-to-one functions are what make end states complex). Minds are physical systems whose computational direction is implemented through thermodynamic processes. But the logical arrow is deeper. It would hold even if the thermodynamic arrow reversed.
+The thermodynamic arrow (Bernstein, 2026e) explains which end of the block is simple. The computational arrow explains which direction consciousness runs. That both arrows point the same direction is not coincidence: algorithmic probability's measure-theoretic asymmetry depends on computational irreversibility. Minds are physical systems whose computational direction is implemented through thermodynamic processes. But the logical arrow is deeper. It would hold even if the thermodynamic arrow reversed.
 
 ## 6. The Block Universe Resolved
 
@@ -83,7 +83,7 @@ Backward states exist. No mind can think that way. 1+1=2 is deterministic. 2=x+y
 
 The computational arrow independently grounds what cosmologists call the Past Hypothesis. Computation runs from inputs to outputs. Inputs are simpler than outputs (many-to-one maps generate complexity from simplicity). Minds call the input-direction "past" because that is the direction they can model. Therefore minds observe simpler states in their past and more complex states in their future. This is the Past Hypothesis: the universe began in a low-entropy state. Under the computational arrow, it is not a postulate about cosmology but a consequence of what modeling means. Any mind, in any block, will observe its computational past as simpler than its computational future.
 
-This result is independent of algorithmic probability. Algorithmic probability explains which blocks have higher measure (Bernstein, 2026e). The computational arrow explains why minds within any block observe simple pasts. Both yield the Past Hypothesis, from different premises, converging on the same result. The dependency runs one way: algorithmic probability's time arrow depends on computational irreversibility (end states have high K because many-to-one functions ran forward), but the computational arrow stands without algorithmic probability.
+This result is independent of algorithmic probability. Algorithmic probability explains which blocks have higher measure (Bernstein, 2026e). The computational arrow explains why minds within any block observe simple pasts. Both yield the Past Hypothesis, from different premises, converging on the same result. The dependency runs one way: algorithmic probability's time arrow depends on computational irreversibility. Forward computation does not increase Kolmogorov complexity when described via the generating rules and initial conditions. The high complexity appears only when one tries to directly specify late-time states or select particular histories without those rules, a backward problem. The computational arrow stands without algorithmic probability.
 
 ## 8. Relationship to the Arrow of Time
 
@@ -91,7 +91,7 @@ The arrow of time (Bernstein, 2026e) and the arrow of computation converge on th
 
 **Arrow of computation (structural):** Many-to-one functions have a deterministic direction. The inverse does not exist. This is the foundation.
 
-**Arrow of time (measure-theoretic):** Among all block universes, those specified by simple laws plus simple initial conditions have minimal Kolmogorov complexity and dominate the measure. End states have high K because many-to-one functions ran forward. Algorithmic probability quantifies the consequence of computational irreversibility.
+**Arrow of time (measure-theoretic):** Among all block universes, those specified by simple laws plus simple initial conditions have minimal Kolmogorov complexity and dominate the measure. Directly specifying late-time states without the generating rule requires much higher complexity, because many-to-one dynamics collapse many possible histories into the same outcome. Algorithmic probability quantifies this consequence of computational irreversibility.
 
 The computational arrow stands without algorithmic probability. algorithmic probability's time arrow depends on it. That both point the same direction is not coincidence but consequence: algorithmic probability measures the asymmetry that computational irreversibility creates.
 
@@ -125,7 +125,7 @@ Nothing computational works backward. 1+1=2 is deterministic. 2=x+y is not. The 
 
 Consciousness is a further consequence. Sentience requires modeling. Modeling requires forward computation. A backward system is not a dim mind. It is not a mind.
 
-The computational arrow is the structural foundation for the time asymmetry algorithmic probability quantifies. End states have high K because many-to-one functions ran forward. Algorithmic probability measures the consequence. The computational arrow stands without algorithmic probability. algorithmic probability's time arrow depends on it. The arrow needs only that one plus one leads only to two, but two does not lead back to one plus one.
+The computational arrow is the structural foundation for the time asymmetry algorithmic probability quantifies. The computational arrow stands without algorithmic probability. Algorithmic probability's time arrow depends on it. The arrow needs only that one plus one leads only to two, but two does not lead back to one plus one.
 
 A companion result (conjectural; see Section above) shows that in an analytic block universe, the infinite jet bundle at any spacetime point encodes the full 4D geometry via Taylor's theorem, including future states. This does not conflict with the computational arrow: the encoding is mathematical redundancy in a fixed block, not backward causation. Local computation still runs forward. The future is encoded at every point but can only be *computed through* in one direction.
 
