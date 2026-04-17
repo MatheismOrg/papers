@@ -329,7 +329,7 @@ Algorithmic probability yields a precise comparison. Many-Worlds requires only t
 
 A clarification: MWI is favored by algorithmic probability for structures like ours, but the Level IV multiverse contains all consistent structures, including those where collapse is fundamental or Bell correlations arise through genuinely nonlocal hidden variables. All consistent quantum interpretations correspond to structures that necessarily exist. MWI dominates the measure; it is not the only option that exists.
 
-A further clarification on superdeterminism, which rejects the statistical independence assumption in Bell's theorem. The mainstream objection (that superdeterminism requires "extreme fine-tuning" of initial conditions) is a category error under algorithmic probability. The objection assumes initial-condition correlations are brute facts (high K). But if the correlations follow from a simple generating rule, K is low and the measure favors them. Genuinely random collapse outcomes have infinite K: each specific eigenvalue selection requires specification beyond the generating rule. Both superdeterminism and MWI avoid this infinite-K cost. The fine-tuning objection inadvertently argues against collapse, not against superdeterminism. MWI retains a parsimony advantage with current models (the Schrödinger equation alone, with no additions) but the competition is mathematical: whichever model has lower total K wins. A superdeterministic generating rule simpler than the Schrödinger equation would reverse the ranking. No such model exists yet, but nothing in principle prevents it. The "universal conspiracy" dissolves once initial conditions are understood as outputs of compact generating functions rather than arbitrary specifications.
+A further clarification on superdeterminism, which rejects the statistical independence assumption in Bell's theorem. The mainstream objection (that superdeterminism requires "extreme fine-tuning" of initial conditions) is a category error under algorithmic probability. The objection assumes initial-condition correlations are brute facts (high K). But if the correlations follow from a simple generating rule, K is low and the measure favors them. Truly random collapse outcomes have infinite K: each specific eigenvalue selection requires specification beyond the generating rule. Both superdeterminism and MWI avoid this infinite-K cost. The fine-tuning objection inadvertently argues against collapse, not against superdeterminism. MWI retains a parsimony advantage with current models (the Schrödinger equation alone, with no additions) but the competition is mathematical: whichever model has lower total K wins. A superdeterministic generating rule simpler than the Schrödinger equation would reverse the ranking. No such model exists yet, but nothing in principle prevents it. The "universal conspiracy" dissolves once initial conditions are understood as outputs of compact generating functions rather than arbitrary specifications.
 
 ### **6.3 Bell's Theorem as Corroboration**
 
@@ -535,7 +535,7 @@ Mathematical consistency does not require a substrate, a creator, or external gr
 
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 
-Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism is a category error.
+Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism conflates specificity with complexity.
 
 Bernstein, G. A. (2026g). String theory is complexity-disfavored: An information-theoretic assessment.
 
