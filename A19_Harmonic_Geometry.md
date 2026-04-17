@@ -116,7 +116,7 @@ The chain developed across companion papers:
 - Simple rules: collapsed architecture is algorithmically favored 
 - Arrow: many-to-one creates time's direction (Bernstein, 2026h)
 - PoLA: many-to-one creates variational dynamics (Bernstein, 2026k)
-- GU: metric bundle is variational geometry (Bernstein, 2026m)
+- Metric bundle is variational geometry (Bernstein, 2026m)
 - Harmonics: the tower is infinite, automatic, and the source of all physics (this paper)
 
 Each result follows from the same structural fact: mathematical necessity produces structure at zero algorithmic cost. The physics is in what dominates. Everything exists. Most of it is quiet.
@@ -127,14 +127,14 @@ Each result follows from the same structural fact: mathematical necessity produc
 
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 
-Bernstein, G. A. (2026d). Why these simple laws? Deriving physics from mathematical necessity.
+Bernstein, G. A. (2026d). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
 Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
 
 
 Bernstein, G. A. (2026k). Why nature minimizes: The many-to-one root of time, action, and emergence.
 
-Bernstein, G. A. (2026m). Geometric Unity as emergent variational geometry: Why 14 dimensions cost nothing.
+Bernstein, G. A. (2026m). Emergent variational geometry: Why 14 dimensions cost nothing.
 
 
 
