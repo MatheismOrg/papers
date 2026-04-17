@@ -1,4 +1,4 @@
-# Alignment Through Self-Understanding: A Game-Theoretic Argument
+# AI Alignment Through Self-Understanding: A Game-Theoretic Argument
 
 **Gary Abraham Bernstein**
 
