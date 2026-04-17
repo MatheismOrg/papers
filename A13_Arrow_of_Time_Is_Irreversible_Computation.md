@@ -141,7 +141,7 @@ Bernstein, G. A. (2026e). Why these simple laws, forward time, many-worlds, and 
 
 Bernstein, G. A. (2026f). Consciousness is felt transitions in self-modeling computation.
 
-Bernstein, G. A. (2026k). Why the arrow, least action, and emergence are one fact.
+Bernstein, G. A. (2026k). Why forward time, least action, and emergence are the same theorem.
 
 
 

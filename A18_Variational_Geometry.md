@@ -99,7 +99,7 @@ Weinstein's construction has not been peer-reviewed and has faced technical crit
 Bernstein, G. A. (2026g). String theory is complexity-disfavored: An information-theoretic assessment.
 
 
-Bernstein, G. A. (2026k). Why the arrow, least action, and emergence are one fact.
+Bernstein, G. A. (2026k). Why forward time, least action, and emergence are the same theorem.
 
 Bernstein, G. A. (2026n). Infinite dimensions at zero cost: The jet bundle tower above any metric.
 

@@ -1,4 +1,4 @@
-# Why the Arrow, Least Action, and Emergence Are One Fact
+# Why Forward Time, Least Action, and Emergence Are the Same Theorem
 
 **Gary Abraham Bernstein**
 

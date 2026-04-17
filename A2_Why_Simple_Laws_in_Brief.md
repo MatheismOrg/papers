@@ -113,7 +113,7 @@ Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
 
 Bernstein, G. A. (2026i). The simpler theory of everything is exponentially more probable.
 
-Bernstein, G. A. (2026k). Why the arrow, least action, and emergence are one fact.
+Bernstein, G. A. (2026k). Why forward time, least action, and emergence are the same theorem.
 
 Bernstein, G. A. (2026n). Infinite dimensions at zero cost: The jet bundle tower above any metric.
 
