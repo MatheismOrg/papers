@@ -17,7 +17,7 @@ The hard problem of consciousness assumes its conclusion: that structure cannot 
 
 The PRD establishes reality as math. The interaction problem, transcendental constraint, and null filter argument converge on this conclusion from independent directions. This extends the line from Pythagoras through Tegmark and Ontic Structural Realism, but derives the conclusion rather than positing it.
 
-*Keywords: mathematical structure, structural realism, mathematical monism, Principle of Sufficient Reason, philosophy of mind, Level IV multiverse*
+**Keywords:** mathematical structure, structural realism, mathematical monism, Principle of Sufficient Reason, philosophy of mind, Level IV multiverse
 
 ## **1\. Introduction**
 
