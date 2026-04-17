@@ -1,4 +1,4 @@
-# Why All Is Math, in Brief
+# Why Reality Is Math, in Brief
 
 **Gary Abraham Bernstein**
 
