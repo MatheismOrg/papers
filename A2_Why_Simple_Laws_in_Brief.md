@@ -1,4 +1,4 @@
-# Why All This Physics, in Brief
+# Why Simple Laws, Forward Time, Many-Worlds, and Superdeterminism, in Brief
 
 
 
