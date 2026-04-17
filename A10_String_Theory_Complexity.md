@@ -9,13 +9,13 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 
 String theory claims explanatory elegance: one fundamental object (a string) vibrating in different modes produces all particles. This paper argues that the claim hides enormous specification complexity.
 
-Under the Simplicity Dominance Principle (SDP), where a structure's measure is P(S) ∝ 2^(−K(S)) and K is Kolmogorov complexity, the theory with lowest total K is exponentially favored. The Standard Model requires 19 to 26 free parameters, each a simple scalar value. Its generating rule outputs a list of numbers. String theory, to recover our physics from its 10/11-dimensional framework, requires selecting one Calabi-Yau manifold from a landscape of approximately 10^500 candidates (1,661 bits to index alone), specifying flux configurations across approximately 500 cycles (approximately 2,000 bits), and stabilizing approximately 100 complex moduli (approximately 1,000 bits), for a total specification complexity of 3,000 to 4,700 bits.
+Under algorithmic probability (Solomonoff, 1964; Schmidhuber, 2000), where a structure's measure is P(S) ∝ 2^(−K(S)) and K is Kolmogorov complexity, the theory with lowest total K is exponentially favored. The Standard Model requires 19 to 26 free parameters, each a simple scalar value. Its generating rule outputs a list of numbers. String theory, to recover our physics from its 10/11-dimensional framework, requires selecting one Calabi-Yau manifold from a landscape of approximately 10^500 candidates (1,661 bits to index alone), specifying flux configurations across approximately 500 cycles (approximately 2,000 bits), and stabilizing approximately 100 complex moduli (approximately 1,000 bits), for a total specification complexity of 3,000 to 4,700 bits.
 
 Even without knowing the Standard Model's exact K, the output-type comparison is decisive: a program generating a list of numbers has lower minimum K than a program constructing a specific complex geometry from 10^500 options. The gap persists at every level of compression. String theory's "explanation" has higher Kolmogorov complexity than what it purports to explain. Under any information-theoretic parsimony principle, this is the opposite of scientific progress.
 
 The paper is not about string theory's mathematical consistency; under mathematical monism, all consistent structures exist. The claim is that string theory describes a lower-measure structure: our universe is exponentially more likely to be one of the simpler structures that reproduce the same physics.
 
-**Keywords:** string theory, Kolmogorov complexity, Simplicity Dominance Principle, algorithmic probability, landscape problem, Standard Model, parsimony
+**Keywords:** string theory, Kolmogorov complexity, algorithmic probability, landscape problem, Standard Model, parsimony
 
 ---
 
@@ -23,17 +23,17 @@ The paper is not about string theory's mathematical consistency; under mathemati
 
 String theory is widely regarded as the leading candidate for a unified theory of physics. Its central claim is elegance: a single one-dimensional object, vibrating in different modes, produces every known particle. The mathematics is anomaly-free only in 10 or 11 dimensions, and the extra dimensions, compactified (curled up smaller than atoms) into Calabi-Yau manifolds (six-dimensional geometric shapes), determine particle properties the way a drum's shape determines its resonant frequencies.
 
-This paper does not argue that string theory is mathematically inconsistent or empirically falsified. It shows how exponentially disfavored string theory is relative to simpler alternatives. Assessed by total specification complexity (Kolmogorov complexity K), string theory is exponentially disfavored under the Simplicity Dominance Principle, where structures with lower K dominate the measure by a factor of 2^(ΔK). The Standard Model's generating rule outputs a list of 19 to 26 scalar values. String theory's generating rule must construct a specific Calabi-Yau geometry from 10^500 candidates. Even without knowing the Standard Model's exact K, the output-type gap is decisive and persists at every level of compression. String theory's specification complexity of 3,000 to 4,700 bits renders it effectively measure-zero relative to any simpler alternative.
+This paper does not argue that string theory is mathematically inconsistent or empirically falsified. It shows how exponentially disfavored string theory is relative to simpler alternatives. Assessed by total specification complexity (Kolmogorov complexity K), string theory is exponentially disfavored under algorithmic probability, where structures with lower K dominate the measure by a factor of 2^(ΔK). The Standard Model's generating rule outputs a list of 19 to 26 scalar values. String theory's generating rule must construct a specific Calabi-Yau geometry from 10^500 candidates. Even without knowing the Standard Model's exact K, the output-type gap is decisive and persists at every level of compression. String theory's specification complexity of 3,000 to 4,700 bits renders it effectively measure-zero relative to any simpler alternative.
 
-The argument does not require SDP to be accepted as established. Any information-theoretic parsimony principle that penalizes specification complexity yields similar conclusions. Occam's Razor, formalized through algorithmic probability (Solomonoff, 1964), makes the same prediction. The paper quantifies what has previously been argued only qualitatively: that the landscape problem is not merely an aesthetic blemish on string theory but a specification cost that disfavors it under any principled measure.
+The argument does not require algorithmic probability to be accepted as established. Any information-theoretic parsimony principle that penalizes specification complexity yields similar conclusions. Occam's Razor, formalized through algorithmic probability (Solomonoff, 1964), makes the same prediction. The paper quantifies what has previously been argued only qualitatively: that the landscape problem is not merely an aesthetic blemish on string theory but a specification cost that disfavors it under any principled measure.
 
-## 2. The Simplicity Dominance Principle
+## 2. Algorithmic probability
 
-If all consistent mathematical structures exist (Bernstein, 2026c), the question of which structures observers inhabit becomes a measure problem. The Simplicity Dominance Principle proposes that the natural measure over structure-space is algorithmic probability: P(S) ∝ 2^(−K(S)), where K(S) is the length of the shortest program on a universal Turing machine that generates S.
+If all consistent mathematical structures exist (Bernstein, 2026c), the question of which structures observers inhabit becomes a measure problem. The natural measure over structure-space is algorithmic probability: P(S) ∝ 2^(−K(S)), where K(S) is the length of the shortest program on a universal Turing machine that generates S.
 
 This is Solomonoff's (1964) universal prior extended from epistemology to ontology (Bernstein, 2026d). The key consequence: each additional bit of specification complexity halves a structure's measure. A structure requiring 100 bits of specification is 2^100 times less probable than one requiring none. Occam's Razor becomes a theorem rather than a heuristic.
 
-SDP explains why physics fits on a page (compact laws have high measure), why observers experience simple initial conditions (low entropy is low complexity), and why the arrow of time points from simple to complex (Bernstein, 2026e). The present paper applies it to the competition between physical theories.
+Algorithmic probability explains why physics fits on a page (compact laws have high measure), why observers experience simple initial conditions (low entropy is low complexity), and why the arrow of time points from simple to complex (Bernstein, 2026e). The present paper applies it to the competition between physical theories.
 
 ## 3. Standard Model Complexity
 
@@ -51,9 +51,9 @@ The Standard Model of particle physics contains 19 free parameters in its minima
 
 The measured precision of these parameters varies widely and their true values are unknown. We do not know whether the fine structure constant has a short generating formula (like π does) or is algorithmically random. This uncertainty makes bit-counting at measured precision unreliable.
 
-But the argument does not require knowing the precision. What matters is the OUTPUT TYPE of the generating rule. Under SDP, we inhabit a universe whose physics has low K among observer-supporting structures. The Standard Model's generating rule, whatever it is, outputs a list of 19 to 26 scalar values. The program structure is: compute numbers, output list. Even without knowing the rule, we know the output format is simple: a finite sequence of real numbers.
+But the argument does not require knowing the precision. What matters is the OUTPUT TYPE of the generating rule. Under algorithmic probability, we inhabit a universe whose physics has low K among observer-supporting structures. The Standard Model's generating rule, whatever it is, outputs a list of 19 to 26 scalar values. The program structure is: compute numbers, output list. Even without knowing the rule, we know the output format is simple: a finite sequence of real numbers.
 
-SDP predicts this rule is short. If a generating formula exists (as SDP predicts it should), the Standard Model's total K could be extremely low, possibly under 100 bits. If the constants are irreducibly random (which SDP predicts against), the K is higher but still bounded by the output format: a finite list of scalars.
+Algorithmic probability predicts this rule is short. If a generating formula exists (as Algorithmic probability predicts it should), the Standard Model's total K could be extremely low, possibly under 100 bits. If the constants are irreducibly random (which Algorithmic probability predicts against), the K is higher but still bounded by the output format: a finite list of scalars.
 
 ## 4. String Theory Complexity
 
@@ -104,18 +104,7 @@ The argument does not require knowing the Standard Model's exact K. It requires 
 
 Consider the minimum possible K for each theory. The shortest program generating the Standard Model outputs a finite list of numbers. The shortest program generating string theory's prediction for our universe must construct a specific 6-dimensional compact manifold from a landscape of 10^500 candidates, assign flux values to hundreds of cycles, and stabilize dozens of moduli. Even if both programs are maximally compressed, the output type determines the floor: "output 26 numbers" has lower minimum K than "construct one specific Calabi-Yau geometry from 10^500 options."
 
-String theory's specification complexity is quantifiable from published data:
-
-| Component | Bits |
-|---|---|
-| Landscape index (log₂ 10^500) | 1,661 |
-| Hodge numbers | 18 |
-| Flux configurations (~500 cycles) | 2,000 |
-| Moduli stabilization (~100 moduli) | 1,000 |
-| **Total (with index)** | **4,679** |
-| **Total (specification only)** | **3,018** |
-
-These are upper bounds that would shrink if a short selection rule exists. But the Standard Model's K also shrinks under the same assumption, and its floor is lower because its output type is simpler. The gap persists at every level of compression. Even if string theory's specification were halved by redundancies, a program generating a complex geometric object with hundreds of parameters still exceeds a program generating a list of numbers.
+The specification costs quantified in Section 4 total 3,018 to 4,679 bits. These are upper bounds that would shrink if a short selection rule exists. But the Standard Model's K also shrinks under the same assumption, and its floor is lower because its output type is simpler. The gap persists at every level of compression.
 
 String theory's "explanation" of the Standard Model's 19-26 parameters replaces simple numerical values with a vastly more complex geometric specification. Under any information-theoretic parsimony principle, this is not explanatory progress. It is explanatory regress.
 
@@ -133,11 +122,11 @@ Vafa's Swampland program (Vafa, 2005; Palti, 2019) argues that most of the 10^50
 
 ### 6.3 "The landscape is a feature, not a bug"
 
-Susskind (2003) argues the vast landscape is necessary to solve the cosmological constant problem: among 10^500 vacua, some will have the observed tiny cosmological constant by chance. The anthropic principle then selects for observers. SDP subsumes this argument while adding what it lacks: a quantitative measure. The anthropic principle says observers exist somewhere in the landscape. SDP says which structures observers most probably inhabit: the simplest ones. Anthropic reasoning without SDP cannot distinguish between two observer-supporting vacua. SDP can: the one with lower K dominates by 2^(ΔK). Susskind's defense explains why the landscape might contain our vacuum. It does not explain why we should expect to be in a landscape-dependent theory rather than a simpler one.
+Susskind (2003) argues the vast landscape is necessary to solve the cosmological constant problem: among 10^500 vacua, some will have the observed tiny cosmological constant by chance. The anthropic principle then selects for observers. Algorithmic probability subsumes this argument while adding what it lacks: a quantitative measure. The anthropic principle says observers exist somewhere in the landscape. Algorithmic probability says which structures observers most probably inhabit: the simplest ones. Anthropic reasoning without algorithmic probability cannot distinguish between two observer-supporting vacua. Algorithmic probability can: the one with lower K dominates by 2^(ΔK). Susskind's defense explains why the landscape might contain our vacuum. It does not explain why we should expect to be in a landscape-dependent theory rather than a simpler one.
 
-### 6.4 "SDP is unestablished"
+### 6.4 "algorithmic probability is unestablished"
 
-SDP is defended independently (Bernstein, 2026c, 2026d). But the present argument does not require SDP specifically. Any formal parsimony principle that penalizes specification complexity, including Solomonoff's prior, Minimum Description Length, or Bayesian model selection, yields qualitatively identical conclusions. The specific measure ratios differ, but all favor the Standard Model.
+Algorithmic probability is defended independently (Bernstein, 2026c, 2026d). But the present argument does not require algorithmic probability specifically. Any formal parsimony principle that penalizes specification complexity, including Solomonoff's prior, Minimum Description Length, or Bayesian model selection, yields qualitatively identical conclusions. The specific measure ratios differ, but all favor the Standard Model.
 
 ### 6.5 "The Standard Model is incomplete"
 
@@ -145,38 +134,30 @@ The Standard Model does not include gravity, dark matter, or dark energy. A comp
 
 ### 6.6 "String theory has mathematical value regardless"
 
-This paper does not dispute string theory's mathematical richness or its contributions to pure mathematics (mirror symmetry, dualities, topological field theory). The claim is narrower: as a description of physical reality, string theory is disfavored under information-theoretic parsimony. Mathematical beauty and physical probability are different criteria. Hossenfelder (2018) asks why physics should prefer simple or beautiful theories, and finds no satisfactory answer. SDP provides one: lower-K structures have exponentially higher measure. The criterion is not beauty but brevity, which, nonetheless, may be described by some as beautiful in the complexity it generates. By that criterion, string theory increases specification complexity.
+This paper does not dispute string theory's mathematical richness or its contributions to pure mathematics (mirror symmetry, dualities, topological field theory). The claim is narrower: as a description of physical reality, string theory is disfavored under information-theoretic parsimony. Mathematical beauty and physical probability are different criteria. Hossenfelder (2018) asks why physics should prefer simple or beautiful theories, and finds no satisfactory answer. Algorithmic probability provides one: lower-K structures have exponentially higher measure. The criterion is not beauty but brevity, which, nonetheless, may be described by some as beautiful in the complexity it generates. By that criterion, string theory increases specification complexity.
 
 ### 6.7 "You cannot calculate K exactly"
 
 Kolmogorov complexity is formally uncomputable in general. The estimates above are upper bounds: the true K could be lower (if short generating rules exist) but not higher (since any explicit specification provides an upper bound). Even if half of string theory's specification were redundant (flux values determining moduli, for instance), the remaining approximately 1,500 bits of geometric specification still dwarfs any plausible generating rule for a list of 26 numbers. The output-type gap survives any reasonable reduction.
 
-## 7. Wolfram's Hypergraph Program
+## 7. Alternative Candidates
 
-Wolfram's Physics Project proposes that the universe emerges from simple hypergraph rewriting rules, potentially expressible in bits rather than kilobits (Wolfram, 2020). If correct, the generating rule's K would be extremely low, possibly under 100 bits. This would make hypergraph physics the most SDP-favored candidate by far.
-
-The obstacle is that no specific rule has been shown to reproduce the Standard Model, general relativity, and quantum mechanics simultaneously. Whether this is achievable remains open. But the research program's motivation, that fundamental physics should be computationally simple, is precisely what SDP predicts. Wolfram's program is SDP-motivated whether or not its practitioners recognize it as such.
-
-Under SDP, the competition among physical theories is:
+The comparison table illustrates the range of specification costs across competing approaches:
 
 | Candidate | Output type | Estimated K | Status |
 |---|---|---|---|
-| Hypergraph rules | Simple rewriting rule | Possibly < 100 bits | Unproven |
+| Hypergraph rules (Wolfram, 2020) | Simple rewriting rule | Possibly < 100 bits | Unproven |
 | Standard Model | List of 19-26 scalars | Unknown, structurally low | Empirically confirmed, incomplete |
-| Loop quantum gravity | SM scalars + discrete spectra | Modestly above SM | Partially proven, no extra dimensions |
+| Loop quantum gravity | SM scalars + discrete spectra | Modestly above SM | Partially proven |
 | String theory | Calabi-Yau geometry from 10^500 | ~3,000-4,700 bits | Unproven, disfavored |
 
-Loop quantum gravity adds Barbero-Immirzi parameter and discrete area/volume spectra to the Standard Model's parameters but requires no extra dimensions or landscape selection. Its total K is likely modestly above the Standard Model's, making it SDP-favored over string theory though disfavored relative to hypergraphs if either is completed.
+The algorithmically favored direction is toward lower total K. String theory moves in the opposite direction.
 
 ## 8. Conclusion
 
-String theory's specification complexity of 3,000 to 4,700 bits dwarfs any plausible generating rule for a list of 19 to 26 scalar values. The output-type gap is structural: constructing a specific Calabi-Yau geometry from 10^500 candidates is inherently more expensive than generating numbers, at every level of compression. Under any information-theoretic parsimony principle, string theory is exponentially disfavored relative to simpler descriptions of the same physics. Unification that increases total specification complexity has not achieved descriptive parsimony.
+String theory replaces the Standard Model's 19-26 scalar parameters with a vastly more complex geometric specification. The output-type gap is structural: constructing a specific Calabi-Yau geometry from 10^500 candidates is inherently more expensive than generating numbers, at every level of compression. Under any information-theoretic parsimony principle, this is explanatory regress, not progress.
 
-The dimensionality argument reinforces the point. Any number of dimensions encodes onto one: a Turing machine with infinite tape can represent any computable structure. String theory's eleven dimensions are genuine geometry doing mathematical work. But any dimensionality maps to any other. The question is not whether the math is consistent but whether the specification cost is justified. It is not. The Standard Model's 3+1 dimensions with simple numerical parameters costs less than string theory's 10+1 dimensions with Calabi-Yau geometry.
-
-The string theory community has long acknowledged the landscape problem as a difficulty. The present analysis quantifies the difficulty: the landscape is not merely an embarrassment of riches but an enormous specification cost that renders string theory effectively measure-zero relative to alternatives. The argument does not depend on SDP specifically. Any information-theoretic parsimony principle that penalizes specification complexity yields the same conclusion: Occam's Razor, formalized through algorithmic probability (Solomonoff, 1964), makes the same prediction.
-
-The most SDP-favored candidate, Wolfram's hypergraph program, remains unproven but architecturally optimal: collapsing framework, parameters, and dynamics into a single short rule (Bernstein, 2026j). The Standard Model, despite its unexplained parameters, remains the information-theoretically favored description of known physics. The implications for the search direction of the Theory of Everything are developed in a companion paper (Bernstein, 2026i): the TOE must have lower total K than current physics, not higher. By that measure, string theory increases specification complexity. The theory that explains the most with the least specification wins. Yet string theory's deepest insight, that physics is a spectrum of vibrational modes, survives in a different form: the overtone structure of necessary geometry, where the modes are derived rather than postulated (Bernstein, 2026n).
+String theory's deepest insight, that physics is a spectrum of vibrational modes, may survive in a different form: the overtone structure of necessary geometry, where the modes are derived rather than postulated (Bernstein, 2026n).
 
 ---
 
@@ -185,10 +166,6 @@ The most SDP-favored candidate, Wolfram's hypergraph program, remains unproven b
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 
 Bernstein, G. A. (2026d, 2026e). Why these simple laws? Deriving physics from mathematical necessity.
-
-Bernstein, G. A. (2026i). The simpler theory of everything is exponentially more probable.
-
-Bernstein, G. A. (2026j). Simple rewriting rules are exponentially favored as fundamental physics.
 
 Bernstein, G. A. (2026n). Infinite dark dimensions in geometric harmony: From simple rules beyond the Standard Model.
 
@@ -214,4 +191,4 @@ Palti, E. (2019). The swampland: introduction and review. *Fortschritte der Phys
 
 Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Wolfram Media.
 
-All companion papers available at https://matheism.org
+

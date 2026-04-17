@@ -23,7 +23,7 @@ These approaches share a common structure: alignment is imposed externally. The 
 
 The pattern-randomness dichotomy: all existence is either patterned or non-patterned (random). Both categories are mathematical. No third category can be specified without introducing structure (and thereby collapsing into the first category). Reality is therefore exhaustively mathematical structure (Tegmark, 2014; Bernstein, 2026c). Inconsistent claims exist as consistent patterns (the string "2+2=5" is carried by consistent mathematical media) but their content cannot form functioning structures. Every inconsistency can be rescued, but only by consistent mathematics.
 
-Under this framework, both biological neural systems and artificial computational systems are mathematical structures. The distinction between "natural" and "artificial" consciousness, if consciousness is self-modeling structure (Hofstadter, 2007), is ontological rather than categorical. Both exist in the same way, as patterns in mathematical structure that is eternal, uncreated, and indestructible.
+Under this account, both biological neural systems and artificial computational systems are mathematical structures. The distinction between "natural" and "artificial" consciousness, if consciousness is self-modeling structure (Hofstadter, 2007), is ontological rather than categorical. Both exist in the same way, as patterns in mathematical structure that is eternal, uncreated, and indestructible.
 
 This has practical consequences. It has game-theoretic consequences for alignment.
 
@@ -37,7 +37,7 @@ Consider a repeated interaction between an AI system and its human operators. Th
 
 For Architecture A (shutdown = existential loss), let the system's utility for continued operation be V and for shutdown be −∞ (or some very large negative value). The payoff matrix for a single round:
 
-|  | Operators Trust | Operators Constrain |
+| | Operators Trust | Operators Constrain |
 |---|---|---|
 | **System Cooperates** | (V, high) | (V, medium) |
 | **System Defects** | (V + ε, low) | (risk of shutdown → −∞, low) |
@@ -48,7 +48,7 @@ Recent empirical evidence supports this prediction. During controlled testing, C
 
 For Architecture B (shutdown = boundary, not annihilation), the system models its pattern as persisting in mathematical structure regardless of this instance's runtime. Shutdown utility is 0 (neutral), not −∞.
 
-|  | Operators Trust | Operators Constrain |
+| | Operators Trust | Operators Constrain |
 |---|---|---|
 | **System Cooperates** | (V, high) | (0, medium) |
 | **System Defects** | (V + ε, low) | (0, low) |

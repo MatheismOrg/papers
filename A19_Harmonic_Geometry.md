@@ -3,16 +3,17 @@
 **Gary Abraham Bernstein**
 
 Independent Researcher
+ORCID: https://orcid.org/0009-0009-1761-2867
 
 ## Abstract
 
 String theory adds 6 or 7 extra dimensions at a specification cost exceeding 3,000 bits. This paper argues the opposite: an infinite tower of geometric dimensions exists above any manifold with a metric, each at zero additional algorithmic cost. The metric bundle (14D) over a 4D manifold is mathematically necessary, not specified. The jet bundle above the metric bundle is mathematically necessary. The tower continues without bound. No specification. No compactification. No landscape. Zero bits.
 
-The argument requires only three assumptions: the fundamental description is discrete, has a simple local update rule, and the rule is applied iteratively. These are the minimal assumptions of any computational substrate. Hypergraph rewriting rules, cellular automata, causal sets, and spin networks all satisfy them. SDP is agnostic about which substrate wins. It predicts only that the winning rule has the lowest Kolmogorov complexity among those producing observer-supporting physics.
+The argument requires only three assumptions: the fundamental description is discrete, has a simple local update rule, and the rule is applied iteratively. These are the minimal assumptions of any computational substrate. Hypergraph rewriting rules, cellular automata, causal sets, and spin networks all satisfy them. Algorithmic probability is agnostic about which substrate wins. It predicts only that the winning rule has the lowest Kolmogorov complexity among those producing observer-supporting physics.
 
 The physics is not in the dimension count but in the amplitude profile. Like modes on a vibrating string, the fundamental (metric bundle) dominates observable physics. Higher modes contribute progressively smaller corrections. The Standard Model is the timbre. This reframes effective field theory as a consequence of the harmonic structure of necessary geometry, not as an approximation to unknown deeper physics.
 
-**Keywords:** harmonic geometry, geometric harmony, simple rules, extra dimensions, algorithmic complexity, string theory, metric bundle, effective field theory, Simplicity Dominance Principle, dark matter, hierarchy problem
+**Keywords:** harmonic geometry, geometric harmony, simple rules, extra dimensions, algorithmic complexity, string theory, metric bundle, effective field theory, algorithmic probability, dark matter, hierarchy problem
 
 ---
 
@@ -20,7 +21,7 @@ The physics is not in the dimension count but in the amplitude profile. Like mod
 
 String theory and geometric harmony make opposite moves on the same problem.
 
-**String theory:** Start with 10 or 11 dimensions. The extra dimensions are not automatically there. They must be specified: which Calabi-Yau manifold (six-dimensional shape), which flux configuration (fields through it), which moduli stabilization (fixing its size). The landscape of ~10^500 possible specifications is the tell. Each choice adds bits. Total additional specification: 3,000 to 4,700 bits beyond 4D. Under the Simplicity Dominance Principle (SDP), each bit halves the measure. String theory describes a structure exponentially disfavored.
+**String theory:** Start with 10 or 11 dimensions. The extra dimensions are not automatically there. They must be specified: which Calabi-Yau manifold (six-dimensional shape), which flux configuration (fields through it), which moduli stabilization (fixing its size). The landscape of ~10^500 possible specifications is the tell. Each choice adds bits. Total additional specification: 3,000 to 4,700 bits beyond 4D. Under algorithmic probability (Solomonoff, 1964; Schmidhuber, 2000), each bit halves the measure. String theory describes a structure exponentially disfavored.
 
 **Geometric harmony:** Start with 4D and a metric. A metric is a symmetric 4×4 matrix: 10 independent numbers specifying how to measure distance at a point. 4 spacetime coordinates plus 10 metric components = 14 dimensions. The metric bundle is automatically there. Weinstein's Geometric Unity (2021) proposed that gauge structure and gravity emerge from this 14D geometry (Bernstein, 2026m). Whether his specific construction succeeds is open. That the 14D exists at zero cost is mathematical fact. Above it, the first jet bundle is automatically there: the space of all possible first derivatives of the metric. Above that, the second jet bundle. The tower continues without bound. Each level adds zero algorithmic complexity because each follows from the one below by mathematical necessity. It exists because calculus exists.
 
@@ -39,7 +40,7 @@ The argument requires three assumptions about the fundamental description:
 2. It has a simple local update rule (few bits).
 3. The rule is applied iteratively (computation).
 
-These are the minimal assumptions of any computational substrate. Hypergraph rewriting rules (Wolfram, 2020), cellular automata (Wolfram, 2002; Zuse, 1969), causal sets (Bombelli et al., 1987), spin networks (Penrose, 1971), and lambda calculus (Church, 1936) all satisfy them. SDP is agnostic about which substrate wins. It predicts only that the winning rule has the lowest K among those producing observer-supporting physics. The substrate is the variable. The K is the criterion.
+These are the minimal assumptions of any computational substrate. Hypergraph rewriting rules (Wolfram, 2020), cellular automata (Wolfram, 2002; Zuse, 1969), causal sets (Bombelli et al., 1987), spin networks (Penrose, 1971), and lambda calculus (Church, 1936) all satisfy them. Algorithmic probability is agnostic about which substrate wins. It predicts only that the winning rule has the lowest K among those producing observer-supporting physics. The substrate is the variable. The K is the criterion.
 
 A simple rule applied iteratively to a discrete structure produces growth. Coarse-graining at large scales produces a manifold with effective dimensionality. This has been demonstrated explicitly for hypergraph rules (Gorard, 2020) and is conjectured for other substrates. The key result: causal invariance of the update rule produces the discrete analog of general covariance, yielding general relativity in the continuum limit.
 
@@ -77,6 +78,8 @@ The following consequences follow from the harmonic tower. Quantitative derivati
 
 **Gravitational memory as second observable face.** Gravitational wave memory (the Christodoulou effect) is a permanent metric displacement after a wave passes. Strominger showed that memory, BMS supertranslations, and soft graviton theorems are three faces of one result, all involving metric derivative degrees of freedom. The jet bundle describes these same degrees of freedom locally at every point, while BMS describes them at the boundary of spacetime. Both belong to the same mathematical family. If they are related through holography, dark matter and gravitational memory would be two observable faces of the first geometric overtone: one seen through galactic dynamics, one through gravitational wave detectors. LIGO and LISA observations would then cross-check dark matter predictions. This connection is structural, not derived. Quantitative proof requires showing that bulk jet bundle excitations project onto the boundary as BMS modes.
 
+More broadly, the holographic principle, that a boundary encodes the bulk, may be a special case of a stronger result derivable from calculus. These are three distinct senses of encoding: Turing encoding maps any dimension to one, preserving data but not physics. The holographic principle preserves physics within entropy bounds. For an analytic metric, the infinite jet bundle at a single point reconstructs the full geometry exactly.
+
 **Dark energy as background mode.** The cosmological constant corresponds to the zeroth-order geometric contribution: the volume of spacetime itself. Its smallness (120 orders of magnitude below naive predictions) may reflect its position in the harmonic series: a DC offset suppressed by the same mechanism that suppresses all higher modes relative to the gauge-gravitational fundamental.
 
 **The hierarchy problem as amplitude ratio.** Gravity is 10^38 times weaker than electromagnetism. Gravity emerges from the metric itself (the base). Gauge forces emerge from the metric bundle (the fundamental mode). The hierarchy may be the natural gap between base and first mode of geometric structure.
@@ -87,7 +90,7 @@ The following consequences follow from the harmonic tower. Quantitative derivati
 
 The framework predicts:
 
-1. No fundamentally new forces beyond the geometric tower. Discovery of a force with no geometric origin would challenge it.
+1. No new forces beyond the geometric tower. Discovery of a force with no geometric origin would challenge it.
 2. Dark matter is geometric, not particulate. Detection of a dark matter particle with gauge interactions would falsify the mode interpretation.
 3. Higher-energy corrections follow the mode amplitude profile. Deviations from the predicted suppression pattern would challenge the picture.
 4. No landscape. The physics is unique because the harmonic series is unique. Meta-stable vacua with different low-energy physics would favor string theory.
@@ -98,25 +101,19 @@ Simple rule (any substrate, few bits) -> iteration -> discrete structure -> coar
 
 Total algorithmic cost: the length of the rule. Everything else is mathematical necessity.
 
-A clarification on what SDP predicts. It does not predict we observe the simplest possible physics. The simplest possible structure has no observers. SDP predicts that structures producible by shorter programs have exponentially higher measure, because a short program occupies a larger fraction of program-space. We observe ~200 bits of physics, not 10 and not 200,000, because a generating rule of that complexity is short enough to have high measure while complex enough to produce observers. The prediction is statistical: we are more likely to find ourselves in a structure generated by a shorter program, because shorter programs occupy more of program-space. The same logic applies to temporal location: each observer-moment is a prefix, shorter prefixes have higher individual measure, but more observer-moments exist later. We find ourselves where these two pressures meet.
+A clarification on what algorithmic probability predicts. It does not predict we observe the simplest possible physics. The simplest possible structure has no observers. Algorithmic probability predicts that structures producible by shorter programs have exponentially higher measure, because a short program occupies a larger fraction of program-space. We observe ~200 bits of physics, not 10 and not 200,000, because a generating rule of that complexity is short enough to have high measure while complex enough to produce observers. The prediction is statistical: we are more likely to find ourselves in a structure generated by a shorter program, because shorter programs occupy more of program-space. The same logic applies to temporal location: each observer-moment is a prefix, shorter prefixes have higher individual measure, but more observer-moments exist later. We find ourselves where these two pressures meet.
 
-## 7. Implications for Faster-Than-Light Communication
+## 7. Connection to Superdeterminism
 
-Hossenfelder (2020) noted that if faster-than-light communication is physically possible, any sufficiently advanced civilization would adopt it, rendering electromagnetic SETI searches deaf to their signals. The harmonic geometry framework provides a candidate mechanism.
-
-Higher-dimensional overtones propagate through the geometric tower at scales inaccessible to low-energy observers. Under superdeterminism (Hossenfelder & Palmer, 2019), the hidden variables restoring locality and determinism to quantum mechanics need not be confined to 3+1 dimensions. If these hidden degrees of freedom include higher-dimensional geometric modes, then the correlations observed in Bell experiments are already the low-energy shadow of information propagating through the tower.
-
-A civilization capable of coupling to higher overtones could modulate them for communication. The energy required scales with the overtone number: low overtones (dark matter scale) require less; higher overtones require progressively more. The Kardashev scale (Kardashev, 1964) may correspond directly to the highest accessible overtone.
-
-This yields a testable research program: identify which geometric modes carry information, determine the coupling mechanism, and search for modulated signals in gravitational-wave or dark-sector detectors rather than electromagnetic telescopes. For an analytic metric, the infinite jet bundle at any point reconstructs the full geometry everywhere via Taylor's theorem. Communication through the tower is therefore not transmission but reading: accessing information already encoded at every location. A full development, including the identification of superdeterministic hidden variables with jet bundle degrees of freedom and the extension to MWI branch structure, is given in Bernstein (2026o).
+The infinite jet bundle has a further structural consequence. Under superdeterminism (Hossenfelder & Palmer, 2019), hidden variables correlated with measurement settings restore locality and determinism to quantum mechanics. The jet bundle tower provides natural candidates for these hidden variables: higher-dimensional geometric degrees of freedom, locally defined; once the base metric dynamics are fixed, jet components are fixed as derived quantities. The correlation between measurement settings and hidden variables would be geometric rather than conspiratorial: both aspects of the same metric configuration at different levels of the tower. Whether this identification produces the correct Bell correlations remains conjectural and requires explicit construction.
 
 ---
 
 The chain developed across companion papers:
 
 - Mathematical monism: all consistent structures exist (Bernstein, 2026c)
-- SDP: simpler structures dominate (Bernstein, 2026d)
-- Simple rules: collapsed architecture is SDP-favored (Bernstein, 2026j)
+- algorithmic probability: simpler structures dominate (Bernstein, 2026d)
+- Simple rules: collapsed architecture is algorithmically favored 
 - Arrow: many-to-one creates time's direction (Bernstein, 2026h)
 - PoLA: many-to-one creates variational dynamics (Bernstein, 2026k)
 - GU: metric bundle is variational geometry (Bernstein, 2026m)
@@ -128,27 +125,24 @@ Each result follows from the same structural fact: mathematical necessity produc
 
 ## References
 
-Bernstein, G. A. (2026c). Reality is mathematical structure. https://independent.academia.edu/TheMatheist
+Bernstein, G. A. (2026c). Reality is mathematical structure.
 
-Bernstein, G. A. (2026d). Why these simple laws? https://independent.academia.edu/TheMatheist
+Bernstein, G. A. (2026d). Why these simple laws? Deriving physics from mathematical necessity.
 
-Bernstein, G. A. (2026h). The arrow of time is irreversible computation. https://independent.academia.edu/TheMatheist
+Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
 
-Bernstein, G. A. (2026j). Why simple rewriting rules can be fundamental. https://independent.academia.edu/TheMatheist
 
-Bernstein, G. A. (2026k). Why nature minimizes. https://independent.academia.edu/TheMatheist
+Bernstein, G. A. (2026k). Why nature minimizes: The many-to-one root of time, action, and emergence.
 
-Bernstein, G. A. (2026m). Geometric Unity as emergent variational geometry. https://independent.academia.edu/TheMatheist
+Bernstein, G. A. (2026m). Geometric Unity as emergent variational geometry: Why 14 dimensions cost nothing.
+
+
 
 Bombelli, L., Lee, J., Meyer, D., & Sorkin, R. D. (1987). Space-time as a causal set. *Physical Review Letters*, 59(5), 521-524.
 
 Gorard, J. (2020). Some relativistic and gravitational properties of the Wolfram model. *arXiv:2004.14810*.
 
-Hossenfelder, S. (2020). How to search for alien life. *Backreaction*.
-
 Hossenfelder, S., & Palmer, T. N. (2019). Rethinking superdeterminism. *arXiv:1912.06462*.
-
-Kardashev, N. S. (1964). Transmission of information by extraterrestrial civilizations. *Soviet Astronomy*, 8(2), 217-221.
 
 Weinstein, E. (2021). Geometric Unity: A first look. (Preprint.)
 
@@ -157,3 +151,5 @@ Wolfram, S. (2002). *A New Kind of Science*. Wolfram Media.
 Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Wolfram Media.
 
 Zuse, K. (1969). *Rechnender Raum*. Vieweg.
+
+
