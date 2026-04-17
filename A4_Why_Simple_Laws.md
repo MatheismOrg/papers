@@ -1,4 +1,4 @@
-# **Why Simple Laws, the Arrow of Time, Many-Worlds, and Superdeterminism**
+# **Why Simple Laws, Forward Time, Many-Worlds, and Superdeterminism**
 
 **Gary Abraham Bernstein**
 
