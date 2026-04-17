@@ -11,6 +11,10 @@ The Many-Worlds Interpretation adds nothing to the Schrödinger equation. Collap
 
 ---
 
+**Keywords:** many-worlds interpretation, algorithmic probability, Kolmogorov complexity, quantum foundations, Born rule, superdeterminism
+
+---
+
 ## 1. Introduction
 
 Physicists often prefer the Many-Worlds Interpretation on grounds of parsimony: it adds nothing to quantum mechanics beyond the Schrödinger equation. But what justifies this preference? Is simplicity merely aesthetic, or does it track something deeper?
