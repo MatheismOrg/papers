@@ -8,7 +8,7 @@ ORCID: 0009-0009-1761-2867
 
 ## Abstract
 
-We compare the Standard Model and string theory as competing generative descriptions of the same low-energy physics under description-length-based model selection. The relevant quantity is the specification cost required to generate a theory instance that reproduces observed physics, measured as the length of the shortest program in a fixed universal description language. Algorithmic probability, Minimum Description Length, and Bayesian model selection with proper priors all penalize description length in the same direction. The Standard Model's generating rule outputs a finite tuple of 19 to 26 real scalar parameters. String-theoretic realizations require, in addition, selection of a vacuum from a large landscape, specification of compactification geometry, assignment of flux integers, and stabilization of continuous moduli. Under explicit prefix-coding assumptions, these contributions amount to upper bounds of roughly 3,000 to 4,700 bits on the instance specification cost for string-theoretic realizations. We state the comparison as a general proposition: any model class whose instance specification requires selection from a large discrete family plus structured auxiliary data pays a description-length penalty relative to a comparator class specified by a short parameter list, unless a compact selection rule replaces the explicit selector. The string-vacuum case is a corollary. The conclusion is conditional on the coding scheme and does not bear on empirical adequacy or mathematical consistency. It states a prior penalty, not a refutation.
+String theory is exponentially disfavored under every standard parsimony measure. It requires 3,000 to 4,700 bits of specification to reproduce observed physics. The Standard Model requires roughly 60 bits under any compressing rule, 1,700 under direct encoding at 64-bit precision. Under algorithmic probability, Minimum Description Length, or Bayesian model selection, this gap is decisive. The specification cost includes vacuum selection from a landscape of at least 10^500 solutions, compactification geometry, flux integers, and moduli stabilization. The Standard Model's generating rule outputs a finite tuple of 19 to 26 real scalar parameters. We state the comparison as a proposition about code lengths, not exact Kolmogorov complexity: any model class whose instance specification requires selection from a large discrete family plus structured auxiliary data has a long explicit description relative to a comparator class specified by a short parameter list, and the corresponding prior odds ratio is bounded unless a compact selection rule is produced that compresses the long description. The string-vacuum case is a corollary. All numerical estimates are explicit code lengths under a specified prefix-coding scheme. The conclusion is code-relative and conditional. It does not bear on empirical adequacy or mathematical consistency. It states a prior penalty, not a refutation.
 
 **Keywords:** Kolmogorov complexity, algorithmic probability, minimum description length, Bayesian model selection, description-length bounds
 
@@ -18,11 +18,11 @@ We compare the Standard Model and string theory as competing generative descript
 
 Two classes of physical model reproduce the observed low-energy Standard Model parameters. The first specifies those parameters by a finite list of real scalars. The second routes through a higher-level construction that requires selecting a vacuum from a landscape of candidate solutions, fixing compactification geometry, assigning flux integers to topological cycles, and stabilizing moduli at specific values. The two classes differ in description architecture.
 
-This paper asks how much description length is incurred by each approach under standard information-theoretic parsimony principles. The question is conditional on a coding scheme. We adopt Solomonoff's universal prior and the equivalent Minimum Description Length formulation, and we quantify specification cost as the length of the shortest prefix-code representation of a model instance in a fixed universal description language. The specification cost is an upper bound on Kolmogorov complexity. It is not exact K, which is uncomputable.
+This paper asks how much description length is incurred by each approach under standard information-theoretic parsimony principles. The question is conditional on a coding scheme. We adopt Solomonoff's universal prior and the equivalent Minimum Description Length formulation, and we quantify specification cost as the length of an explicit prefix-code representation of a model instance in a fixed universal description language. The specification cost is an upper bound on Kolmogorov complexity. It is not exact K, which is uncomputable.
 
 The contribution is not to defend algorithmic probability as an epistemology, nor to assess string theory as a mathematical structure. Both of those are separate questions. The contribution is to state a general description-length criterion for comparing theory classes that reproduce the same low-energy data, and to apply the criterion to the Standard Model and string-theoretic realizations as a case study.
 
-Section 2 separates three levels that are often conflated: exact Kolmogorov complexity, explicit description-length upper bounds, and the MDL and Bayesian interpretations built on them. Section 3 fixes the coding scheme and defines the comparator. Sections 4 and 5 compute explicit upper bounds for the two model classes. Section 6 states the general proposition and applies it to the string case. Sections 7 through 9 address objections, related alternatives, and implications.
+Section 2 separates three levels that are often conflated: exact Kolmogorov complexity, explicit description-length upper bounds, and the MDL and Bayesian interpretations built on them. Section 3 fixes the coding scheme and defines the comparator. Sections 4 and 5 compute explicit description lengths for the two model classes. Section 6 states the proposition and applies it to the string case. Sections 7 through 9 address objections, related alternatives, and implications.
 
 ## 2. Algorithmic probability, MDL, and description-length proxies
 
@@ -30,11 +30,11 @@ Three levels of description-length reasoning appear in this paper. They are rela
 
 **Exact Kolmogorov complexity.** For a finite binary string x, the prefix Kolmogorov complexity K(x) is the length of the shortest program p such that U(p) = x, where U is a universal prefix-free Turing machine. K(x) is uncomputable in general, and it is invariant up to an additive constant under change of U (Li & Vitányi, 2019). Exact K does not appear in any numerical estimate below.
 
-**Explicit description-length upper bounds.** For any specific prefix-coding scheme that actually produces x, the code length is an upper bound on K(x). This paper uses explicit upper bounds throughout. When the text states that a landscape selection incurs log₂(N) bits, it means that a self-delimiting index into an enumerable set of size N admits a prefix code of that length. The true K could be lower if a short generating rule exists. It cannot exceed an explicit code length by more than a machine-dependent constant.
+**Explicit description-length upper bounds.** For any specific prefix-coding scheme that actually produces x, the code length is an upper bound on K(x). This paper uses explicit code lengths throughout. When the text states that a landscape selection incurs log₂(N) bits, it means that a self-delimiting index into an enumerable set of size N admits a prefix code of that length. The true K could be strictly smaller if a shorter generating rule exists. The explicit code length is always an upper bound on K, never a lower bound.
 
 **MDL and Bayesian interpretation.** Under Solomonoff's (1964) universal prior, P(M) ∝ 2^(−K(M)), shorter descriptions carry more prior weight. Li & Vitányi (2019) show that this prior dominates any other enumerable semi-measure up to a multiplicative constant. Rissanen's (1978) MDL selects the model minimizing L(M) + L(D|M), where L denotes code length. Bayesian model selection with any proper prior that penalizes model complexity (Jefferys & Berger, 1992) yields compatible ordering. These three formalisms differ in detail and motivation. All three penalize larger description length in the same direction.
 
-The argument of this paper operates at the second level. All numerical estimates are upper bounds under a specified prefix-coding scheme. The comparison is relative, not absolute, and robust across reasonable coding choices.
+The argument of this paper operates at the second level. All numerical estimates are explicit code lengths under a specified prefix-coding scheme. The comparison is relative, not absolute, and robust across reasonable coding choices.
 
 ### 2.1 A toy example
 
@@ -52,7 +52,7 @@ Two model classes are central.
 
 > out(M_scal) = (θ₁, ..., θ_d)
 
-with d fixed by the class. Each θ_i is encoded to precision ε. Under a basic prefix code, the instance specification cost scales as d · log₂(1/ε) plus small delimiter overhead.
+with d fixed by the class. Each θ_i is encoded to precision ε. Under a basic prefix code, an explicit description of M_scal has length L_scal on the order of d · log₂(1/ε) plus small delimiter overhead. The true K_U(M_scal) is at most L_scal plus a machine-dependent constant.
 
 **Landscape-selection theories.** A theory M_land selects one element from a finite discrete family V = {v₁, ..., v_N} and assigns structured auxiliary data to that element:
 
@@ -62,14 +62,14 @@ where i ∈ {1, ..., N} indexes the vacuum and φ_j encode fluxes, stabilized mo
 
 Two coding assumptions are used.
 
-- (A1) The family V is effectively enumerable, so specifying v_i requires at least ⌈log₂ N⌉ bits under explicit enumeration, absent a shorter selection rule.
+- (A1) The family V is effectively enumerable, so a self-delimiting index into V requires at least ⌈log₂ N⌉ bits under explicit enumeration, absent a shorter selection rule.
 - (A2) The auxiliary data (φ₁, ..., φ_k) admit a prefix code of total length at least B bits at the chosen resolution.
 
-Under (A1) and (A2), the instance specification cost satisfies
+Under (A1) and (A2), any explicit prefix-code description of M_land in the specified scheme has length at least
 
-> K_U(M_land) ≥ log₂(N) + B − c,
+> L_land := log₂(N) + B
 
-where c is a machine-dependent overhead constant.
+bits, up to delimiter overhead. The true K_U(M_land) is at most L_land plus a machine-dependent constant. It could be strictly smaller only if a compressing generative rule exists that replaces either the explicit enumeration of V or the explicit encoding of the auxiliary data. The burden of exhibiting such a rule falls on the proponent of the compressed description.
 
 The comparator is not empirical adequacy. Both classes are assumed to reproduce the same low-energy observables. The comparator is explanatory overhead: how many bits must be supplied to specify an instance that generates those observables.
 
@@ -89,13 +89,13 @@ The Standard Model of particle physics contains 19 free parameters in its minima
 
 Whether these constants admit a short generating rule is unknown. The argument below does not depend on exact values. It uses the structural property that the output is a finite parameter tuple.
 
-Under a basic prefix code at precision ε, a tuple of n parameters admits a description length on the order of n · log₂(1/ε) plus delimiter overhead. For n = 26 and ε = 2^(−64), this yields roughly 1,700 bits as a loose upper bound. If a compressing rule exists, the true K is smaller. If the constants are incompressible at this precision, the bound is tight up to constants.
+Under a basic prefix code at precision ε, a tuple of n parameters admits an explicit description length on the order of n · log₂(1/ε) plus delimiter overhead. For n = 26 and ε = 2^(−64), this yields roughly 1,700 bits. This is an upper bound on K_U(M_SM) via the standard inequality K ≤ code length + constant. If a compressing rule exists, the true K is smaller. If the constants are incompressible at this precision, no shorter description exists.
 
-The structural point is that scalar-parameter specifications scale linearly in n and log₂(1/ε). They do not incur selector costs.
+The structural point is that scalar-parameter descriptions scale linearly in n and log₂(1/ε). They do not incur selector costs.
 
 ## 5. Selector-rich vacuum specifications
 
-String-theoretic realizations route through a higher-level construction. The instance specification cost decomposes into components, each with a corresponding prefix-code upper bound.
+String-theoretic realizations route through a higher-level construction. The explicit description length decomposes into components, each bounded by a corresponding prefix-code construction.
 
 ### 5.1 Landscape selection
 
@@ -103,9 +103,9 @@ The string-theoretic landscape contains approximately 10^500 distinct vacuum sol
 
 > log₂(10^500) ≈ 1,661 bits.
 
-This is an upper bound under explicit enumeration. If a short selection rule exists, the cost collapses to the length of that rule. No such rule has been identified.
+This is the explicit enumeration cost. If a short selection rule exists, the description length collapses to the length of that rule. No such rule has been identified.
 
-More recent work (Taylor & Wang, 2015) suggests consistent flux vacua exceed 10^272,000 in F-theory compactifications. Larger landscape estimates strengthen the lower bound on the selector cost.
+More recent work (Taylor & Wang, 2015) suggests consistent flux vacua exceed 10^272,000 in F-theory compactifications. Larger landscape estimates make the enumeration cost larger.
 
 ### 5.2 Geometry descriptor
 
@@ -113,19 +113,19 @@ The six extra dimensions compactify to a Calabi-Yau threefold. Topological invar
 
 ### 5.3 Flux configurations
 
-The Bousso-Polchinski mechanism stabilizes moduli through integer-valued fluxes on topological cycles. For a manifold with m cycles, each carrying a flux integer in an alphabet of size q, a basic prefix code gives an upper bound of m · log₂(q) bits before any regularity is exploited. For typical compactifications with m ≈ 500 cycles and q ≈ 10:
+The Bousso-Polchinski mechanism stabilizes moduli through integer-valued fluxes on topological cycles. For a manifold with m cycles, each carrying a flux integer in an alphabet of size q, a basic prefix code has length m · log₂(q) bits before any regularity is exploited. For typical compactifications with m ≈ 500 cycles and q ≈ 10:
 
 > 500 × log₂(10) ≈ 1,660 bits.
 
-The schematic value 2,000 bits is used as a round upper bound with overhead.
+The schematic value 2,000 bits is used as a round figure with overhead.
 
 ### 5.4 Moduli stabilization
 
-The KKLT construction (Kachru et al., 2003) and related approaches specify stabilized values of geometric moduli. For a manifold with r ≈ 100 complex moduli, each specified at a modest precision, a basic prefix code gives an upper bound on the order of 1,000 bits.
+The KKLT construction (Kachru et al., 2003) and related approaches specify stabilized values of geometric moduli. For a manifold with r ≈ 100 complex moduli, each specified at a modest precision, a basic prefix code has length on the order of 1,000 bits.
 
-### 5.5 Total instance specification cost
+### 5.5 Total explicit description length
 
-| Component | Upper bound (bits) |
+| Component | Bits |
 |---|---|
 | Landscape index | 1,661 |
 | Hodge pair | 18 |
@@ -134,35 +134,41 @@ The KKLT construction (Kachru et al., 2003) and related approaches specify stabi
 | **Total with index** | **4,679** |
 | **Total without index (short selector assumed)** | **3,018** |
 
-These are explicit upper bounds under the coding scheme above. The true K of a string-theoretic realization may be smaller if short generating rules exist for some components. It cannot exceed these explicit bounds by more than machine-dependent constants.
+These are explicit description lengths under the coding scheme above. The true K of a string-theoretic realization may be strictly smaller if shorter generating rules exist for some components. K_U(M_ST) is at most these explicit lengths plus a machine-dependent constant.
 
-## 6. The complexity gap
+## 6. The description-length penalty
 
-The comparison yields a general proposition and a specific corollary.
+The comparison yields a proposition and a specific corollary.
 
-> **Proposition (Complexity gap for landscape-selection theories).** Let M_scal be a scalar-parameter theory with K_U(M_scal) ≤ C_scal. Let M_land be a landscape-selection theory satisfying (A1) and (A2), so that K_U(M_land) ≥ log₂(N) + B − C_land. Under the universal prior, the prior odds ratio satisfies
+> **Proposition (Description-length penalty for landscape-selection theories).** Let M_scal be a scalar-parameter theory whose explicit description under a fixed prefix code has length L_scal, so K_U(M_scal) ≤ L_scal + c₁. Let M_land be a landscape-selection theory satisfying (A1) and (A2), whose shortest exhibited description has length L_land = log₂(N) + B. Assume no compressing generative rule has been produced that reduces the description of M_land below L_land by more than a machine-dependent constant. Then under the universal prior, the prior odds ratio satisfies
 >
-> P(M_land) / P(M_scal) ≤ 2^(−ΔK),
+> P(M_land) / P(M_scal) ≤ 2^(−(L_land − L_scal) + c),
 >
-> where ΔK ≥ log₂(N) + B − (C_land + C_scal).
+> where c is a machine-dependent constant absorbing encoding overhead.
 
-**Proof.** By definition of the universal prior, P(M) ∝ 2^(−K_U(M)). The ratio of prior probabilities equals 2^(K_U(M_scal) − K_U(M_land)). Substituting the stated bounds yields K_U(M_land) − K_U(M_scal) ≥ log₂(N) + B − (C_land + C_scal), and hence the claimed bound on the ratio. ∎
+**Proof.** By definition of the universal prior, P(M) ∝ 2^(−K_U(M)). The ratio equals 2^(K_U(M_scal) − K_U(M_land)). By construction, K_U(M_scal) ≤ L_scal + c₁. Under the no-compression assumption, the shortest known description of M_land has length L_land, so K_U(M_land) ≥ L_land − c₂ for some machine-dependent constant c₂. Substituting:
 
-> **Corollary (String-vacuum case).** For M_SM a scalar-parameter theory outputting the observed Standard Model parameters and M_ST a string-theoretic realization reproducing the same observables, with N ≈ 10^500 and B in the range 1,300 to 3,000 bits from Section 5, the prior odds ratio satisfies
+K_U(M_scal) − K_U(M_land) ≤ (L_scal + c₁) − (L_land − c₂) = −(L_land − L_scal) + (c₁ + c₂).
+
+Setting c = c₁ + c₂ gives the stated bound. ∎
+
+> **Corollary (String-vacuum case).** For M_SM a scalar-parameter theory describing the observed Standard Model parameters and M_ST a string-theoretic realization reproducing the same observables, with N ≈ 10^500 and B in the range 1,300 to 3,000 bits from Section 5, the prior odds ratio satisfies
 >
-> P(M_ST) / P(M_SM) ≤ 2^(−ΔK)
+> P(M_ST) / P(M_SM) ≤ 2^(−ΔL + c)
 >
-> with ΔK on the order of 3,000 bits, up to machine-dependent constants.
+> with ΔL on the order of 3,000 bits, up to machine-dependent constants, absent a compressing selector rule.
 
-The proposition is code-relative and conditional. It makes no claim about empirical adequacy or mathematical consistency. It states a prior penalty under description-length parsimony: landscape-selection architectures incur a large specification cost that scalar-parameter architectures do not, unless a compact selector rule collapses the cost.
+The proposition is code-relative and conditional. It makes no claim about empirical adequacy or mathematical consistency. It states a prior penalty under description-length parsimony: landscape-selection architectures incur a large description cost that scalar-parameter architectures do not, and this cost translates into an exponentially small prior weight unless a compact selector rule compresses the description.
+
+The no-compression assumption is the formal expression of a standing burden of proof. Exhibiting a short rule that uniquely selects the correct vacuum, flux configuration, and moduli values would reduce L_land and collapse the penalty. No such rule has been identified.
 
 **Comparison fairness.** The comparison is between two ways of specifying the low-energy world, not between a UV-complete theory and a rival UV-complete theory. The scalar-parameter class treats the Standard Model as an effective description at a given energy. The landscape-selection class routes that description through a higher-level construction. The penalty targets explanatory overhead incurred by routing, not empirical completeness of either class. A complete quantum theory of gravity, if landscape-free, would not incur the selector cost.
 
 ## 7. Objections and responses
 
-### 7.1 A short generating rule might collapse the selector cost
+### 7.1 A short generating rule might compress the selector cost
 
-If a compact algorithm uniquely identifies the correct vacuum, compactification, flux configuration, and moduli values, the instance specification cost collapses to the length of that algorithm. The proposition then gives a small or negative ΔK, and no penalty is incurred.
+If a compact algorithm uniquely identifies the correct vacuum, compactification, flux configuration, and moduli values, the description length collapses to the length of that algorithm. The proposition then gives a small or negative ΔL, and no penalty is incurred.
 
 This response accepts the criterion. It shifts the burden of proof: exhibit the compact selector. No such rule has been identified in four decades of research. The landscape was introduced precisely because selection principles had failed.
 
@@ -176,11 +182,11 @@ Susskind (2003) argues that the vast landscape addresses the cosmological consta
 
 ### 7.4 Algorithmic probability is not established
 
-The argument operates at the level of explicit description-length upper bounds, not exact Kolmogorov complexity. MDL (Rissanen, 1978) and Bayesian model selection with complexity-penalizing priors (Jefferys & Berger, 1992) yield compatible conclusions. Any formal parsimony principle that penalizes specification complexity ranks the two model classes in the same order.
+The argument operates at the level of explicit description lengths, not exact Kolmogorov complexity. MDL (Rissanen, 1978) and Bayesian model selection with complexity-penalizing priors (Jefferys & Berger, 1992) yield compatible conclusions. Any formal parsimony principle that penalizes specification complexity ranks the two model classes in the same order.
 
 ### 7.5 The Standard Model is incomplete
 
-The Standard Model does not include quantum gravity, dark matter, or dark energy. A more complete low-energy theory will have additional parameters or mechanisms. If that theory has 50 or 100 scalar parameters, its specification cost rises modestly within the scalar-parameter class. The selector cost of landscape realizations, roughly 3,000 bits, remains much larger than any plausible parameter list addition.
+The Standard Model does not include quantum gravity, dark matter, or dark energy. A more complete low-energy theory will have additional parameters or mechanisms. If that theory has 50 or 100 scalar parameters, its description length rises modestly within the scalar-parameter class. The selector cost of landscape realizations, roughly 3,000 bits, remains much larger than any plausible parameter list addition.
 
 ### 7.6 String theory has mathematical value
 
@@ -188,24 +194,24 @@ String theory has contributed to pure mathematics through mirror symmetry, duali
 
 ### 7.7 Kolmogorov complexity is uncomputable
 
-Exact K is not used here. All estimates are explicit upper bounds under a specified prefix-coding scheme. The true K of any component could be smaller under compression. It cannot exceed an explicit code length by more than a machine-dependent constant. The gap survives compression of individual components, because the selector into a set of size 10^500 carries an irreducible information content absent a short rule.
+Exact K is not used here. All estimates are explicit code lengths under a specified prefix-coding scheme. K is always at most an explicit code length plus a machine-dependent constant, and could be strictly smaller if compression exists. The gap survives compression of individual components, because selecting from a set of size 10^500 requires at least 1,661 bits absent a short selection rule, and exhibiting such a rule is the standing burden.
 
 ## 8. Alternative candidates
 
-Under the same criterion, alternative approaches differ in instance specification cost:
+Under the same criterion, alternative approaches differ in description-length cost:
 
-| Candidate | Output type | Estimated upper bound | Status |
+| Candidate | Output type | Estimated code length | Status |
 |---|---|---|---|
 | Hypergraph rules (Wolfram, 2020) | Simple rewriting rule | Possibly low | Unproven |
 | Standard Model | Parameter list (19–26) | Low | Empirically confirmed, incomplete |
 | Loop quantum gravity | Parameters plus discrete spectra | Modestly above SM | Partially developed |
 | Landscape-selection | Vacuum index plus geometry, flux, moduli | 3,000 to 4,700 bits | Unproven |
 
-The description-length criterion favors candidates that reduce instance specification cost while reproducing the same observables.
+The description-length criterion favors candidates that reduce instance description cost while reproducing the same observables.
 
 ## 9. Conclusion
 
-The comparison can be stated compactly. When two model classes reproduce the same low-energy physics, their prior odds ratio under Solomonoff's universal prior equals 2 to the negative difference of their specification costs. Under explicit prefix-coding assumptions, landscape-selection realizations incur a specification cost on the order of thousands of bits more than scalar-parameter alternatives, unless a compact selector rule collapses the cost.
+The comparison can be stated compactly. When two model classes reproduce the same low-energy physics, their prior odds ratio under Solomonoff's universal prior equals 2 to the negative difference of their Kolmogorov complexities, each bounded above by the corresponding explicit code length. Under explicit prefix-coding assumptions, landscape-selection realizations have explicit descriptions on the order of thousands of bits longer than scalar-parameter alternatives, and the prior ratio is bounded accordingly unless a compact selector rule compresses the description.
 
 The result is code-relative and conditional. It does not refute string theory, nor does it assess empirical adequacy. It identifies a model-selection burden: selector richness must be offset by a comparably compact generative rule for the theory to gain, rather than lose, in description economy.
 
