@@ -1,4 +1,4 @@
-# Infinite Dark Dimensions in Geometric Harmony: From Simple Rules Beyond the Standard Model
+# Infinite Dimensions at Zero Cost: The Jet Bundle Tower Above Any Metric
 
 **Gary Abraham Bernstein**
 

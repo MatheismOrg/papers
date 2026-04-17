@@ -1,4 +1,4 @@
-# Consciousness Lives in the Transitions: On the Threshold of Felt Structure
+# Consciousness Is Felt Transitions in Self-Modeling Computation
 
 **Gary Abraham Bernstein**
 

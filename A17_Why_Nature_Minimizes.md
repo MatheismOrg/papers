@@ -1,4 +1,4 @@
-# Why Nature Minimizes: The Many-to-One Root of Time, Action, and Emergence
+# Why the Arrow, Least Action, and Emergence Are One Fact
 
 **Gary Abraham Bernstein**
 

@@ -1,4 +1,4 @@
-# Many-Worlds Is the Simplest Interpretation: An Algorithmic Argument
+# Many-Worlds Wins by Algorithmic Parsimony
 
 **Gary Abraham Bernstein**
 
