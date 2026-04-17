@@ -1,4 +1,4 @@
-# Why 14 Dimensions Cost Nothing
+# Why 14 Dimensions Cost Nothing: Emergent Variational Geometry
 
 **Gary Abraham Bernstein**
 
