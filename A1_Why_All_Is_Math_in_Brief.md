@@ -11,6 +11,8 @@ All existence is either patterned or not-patterned (random). Both are mathematic
 
 ---
 
+**Keywords:** mathematical monism, pattern-randomness dichotomy, ontic structural realism, Kolmogorov complexity
+
 ## 1. Introduction
 
 All existence is either patterned or not-patterned (random). Both are mathematical: patterns by definition, random through algorithmic incompressibility. This exhaustive dichotomy, the pattern-randomness dichotomy (PRD), establishes mathematical structure as the sole coherent substrate of existence. The math *is* the territory.

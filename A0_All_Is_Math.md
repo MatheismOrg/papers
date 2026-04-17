@@ -11,6 +11,8 @@ Reality is identical to mathematical structure. This follows from the pattern-ra
 
 ---
 
+**Keywords:** mathematical monism, pattern-randomness dichotomy, algorithmic probability, Kolmogorov complexity, multiverse, consciousness
+
 ## 1. The Proof
 
 Anything real has determinate features or it is indistinguishable from nothing. Determinate features are either patterned (regularities governed by rules simpler than the data) or random (algorithmically incompressible). Both are mathematical: patterns are computable functions; randomness is defined by Kolmogorov complexity. The pattern-randomness dichotomy is exhaustive. No coherent third category exists. Any proposed non-mathematical substance must have determinate features to differ from nothing, and those features fall into one of the two categories. The escape routes all lead back.

@@ -11,6 +11,8 @@ Constructor theory expresses physical laws in terms of which transformations are
 
 ---
 
+**Keywords:** constructor theory, mathematical monism, algorithmic probability, Kolmogorov complexity, Deutsch-Marletto
+
 ## 1. Constructor Theory's Promise
 
 Constructor theory, developed by Deutsch and Marletto, proposes a fundamental reorientation of physics. Rather than expressing laws as differential equations governing trajectories from initial conditions, constructor theory expresses laws as principles about which physical transformations (tasks) are possible and which are impossible.
