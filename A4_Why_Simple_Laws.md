@@ -85,7 +85,7 @@ Even incompressible sequences are mathematical objects. They are elements of wel
 
 Four potential counterexamples deserve consideration:
 
-*Ontic vagueness* (Barnes, 2010): perhaps properties are genuinely indeterminate, neither patterned nor random. But indeterminate properties still require relational boundaries, needed to differ from other vague properties. These boundaries constitute structure.
+*Ontic vagueness* (Barnes, 2010): perhaps properties are indeterminate, neither patterned nor random. But indeterminate properties still require relational boundaries, needed to differ from other vague properties. These boundaries constitute structure.
 
 *Primitive dispositions*: perhaps things have intrinsic 'powers' not reducible to mathematics. But a 'power' is defined entirely by its conditional manifestation (If X, then Y). This 'If-Then' structure is a logical function. Dispositions are relational mathematical functions renamed.
 
@@ -327,7 +327,7 @@ Algorithmic probability yields a precise comparison. Many-Worlds requires only t
 
 **Coherence with Level IV:** If all mathematical structures exist, the question 'do other branches exist?' is already answered affirmatively. MWI is recognition that quantum branching is one way mathematical structures differentiate.
 
-A clarification: MWI is favored by algorithmic probability for structures like ours, but the Level IV multiverse contains all consistent structures, including those where collapse is fundamental or Bell correlations arise through genuinely nonlocal hidden variables. All consistent quantum interpretations correspond to structures that necessarily exist. MWI dominates the measure; it is not the only option that exists.
+A clarification: MWI is favored by algorithmic probability for structures like ours, but the Level IV multiverse contains all consistent structures, including those where collapse is fundamental or Bell correlations arise through nonlocal hidden variables. All consistent quantum interpretations correspond to structures that necessarily exist. MWI dominates the measure; it is not the only option that exists.
 
 A further clarification on superdeterminism, which rejects the statistical independence assumption in Bell's theorem. The mainstream objection (that superdeterminism requires "extreme fine-tuning" of initial conditions) is a category error under algorithmic probability. The objection assumes initial-condition correlations are brute facts (high K). But if the correlations follow from a simple generating rule, K is low and the measure favors them. Truly random collapse outcomes have infinite K: each specific eigenvalue selection requires specification beyond the generating rule. Both superdeterminism and MWI avoid this infinite-K cost. The fine-tuning objection inadvertently argues against collapse, not against superdeterminism. MWI retains a parsimony advantage with current models (the Schrödinger equation alone, with no additions) but the competition is mathematical: whichever model has lower total K wins. A superdeterministic generating rule simpler than the Schrödinger equation would reverse the ranking. No such model exists yet, but nothing in principle prevents it. The "universal conspiracy" dissolves once initial conditions are understood as outputs of compact generating functions rather than arbitrary specifications.
 
@@ -505,7 +505,7 @@ We are not saying 'reality is mathematical because we understand it.' We are say
 
 *Response:* The objection misidentifies the argumentative goal. The claim is not that 'structured reality is structured' but that 'any coherent alternative to structural reality is incoherent', which is substantive. The philosophical substance lies in demonstrating that apparent alternatives (substrate, haecceity, non-relational intrinsic properties) either collapse into structuralism or face decisive objections.
 
-Furthermore, if the claim were genuinely tautological, true by logical necessity, this would strengthen rather than weaken it. The goal of foundational metaphysics is precisely to identify principles whose truth is necessary rather than contingent.
+Furthermore, if the claim were tautological, true by logical necessity, this would strengthen rather than weaken it. The goal of foundational metaphysics is precisely to identify principles whose truth is necessary rather than contingent.
 
 ### **7.7 The Gödel Objection**
 
