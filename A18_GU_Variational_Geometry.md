@@ -3,7 +3,6 @@
 **Gary Abraham Bernstein**
 
 Independent Researcher
-ORCID: https://orcid.org/0009-0009-1761-2867
 
 ## Abstract
 
@@ -96,20 +95,14 @@ GU has not been peer-reviewed and has faced technical criticism. The present arg
 
 ## References
 
-Bernstein, G. A. (2026g). String theory is complexity-disfavored: An information-theoretic assessment.
+Bernstein, G. A. (2026g). String theory complexity. https://independent.academia.edu/TheMatheist
 
-Bernstein, G. A. (2026j). Simple rewriting rules are exponentially favored as fundamental physics.
+Bernstein, G. A. (2026j). Why simple rewriting rules can be fundamental. https://independent.academia.edu/TheMatheist
 
-Bernstein, G. A. (2026k). Why nature minimizes: The many-to-one root of time, action, and emergence.
-
-Bernstein, G. A. (2026n). Infinite dark dimensions in geometric harmony: From simple rules beyond the Standard Model.
-
-
+Bernstein, G. A. (2026k). Why nature minimizes: the many-to-one root of time, action, and emergence. https://independent.academia.edu/TheMatheist
 
 Gorard, J. (2020). Some relativistic and gravitational properties of the Wolfram model. *arXiv:2004.14810*.
 
 Weinstein, E. (2021). Geometric Unity: A first look. (Preprint.)
 
 Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Wolfram Media.
-
-All companion papers available at https://matheism.org

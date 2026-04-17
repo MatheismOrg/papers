@@ -527,35 +527,25 @@ SDP generates testable predictions: the final theory should have low complexity 
 
 Mathematical monism completes the Mathematical Universe Hypothesis by providing what Tegmark's original formulation lacked: an a priori foundation for the multiverse's existence and a principled solution to the measure problem. The result is not speculative cosmology but rigorous metaphysics with empirical contact, a theory that explains why the universe is comprehensible, why physics works, and why we find ourselves in a cosmos of elegant laws and apparent fine-tuning.
 
-Mathematical consistency does not require a substrate, a creator, or external grounding. It is self-necessitating. It is also indestructible: no conceivable process could make 2+2 cease to equal 4. Physical conservation laws reflect this deeper fact, when matter transforms, the mathematics of one state becomes the mathematics of another. What physics conserves is not substance but structure. The rules are the things. And because we are patterns within that consistency, we find ourselves, inevitably and not accidentally, in a patterned, comprehensible reality whose deepest nature we are only beginning to understand. 'Metaphysics' (beyond physics) is the discipline that discovers there is nothing beyond physics. Physics is mathematical structure, and mathematical structure is everything.
+Mathematical consistency does not require a substrate, a creator, or external grounding. It is self-necessitating. It is also indestructible: no conceivable process could make 2+2 cease to equal 4. Physical conservation laws reflect this deeper fact, when matter transforms, the mathematics of one state becomes the mathematics of another. What physics conserves is not substance but structure. The rules are the things. The infinite jet bundle above any metric reconstructs the full geometry at every point via Taylor's theorem, deriving the holographic principle from calculus rather than black hole thermodynamics (Bernstein, 2026o). And because we are patterns within that consistency, we find ourselves, inevitably and not accidentally, in a patterned, comprehensible reality whose deepest nature we are only beginning to understand. 'Metaphysics' (beyond physics) is the discipline that discovers there is nothing beyond physics. Physics is mathematical structure, and mathematical structure is everything.
 
 ---
 
 ## **References**
-
-Bernstein, G. A. (2026c). Reality is mathematical structure.
-
-Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism is a category error.
-
-Bernstein, G. A. (2026g). String theory is complexity-disfavored: An information-theoretic assessment.
-
-Bernstein, G. A. (2026f). Consciousness lives in the transitions: On the threshold of felt structure.
-
-Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
-
-Bernstein, G. A. (2026i). The simpler theory of everything is exponentially more probable.
-
-Bernstein, G. A. (2026k). Why nature minimizes: The many-to-one root of time, action, and emergence.
-
-Bernstein, G. A. (2026m). Geometric Unity as emergent variational geometry: Why 14 dimensions cost nothing.
-
-
 
 Adams, R. M. (1979). Primitive thisness and primitive identity. *Journal of Philosophy*, 76(1), 5–26.
 
 Barnes, E. (2010). Ontic vagueness: A guide for the perplexed. *Noûs*, 44(4), 601–627.
 
 Benacerraf, P. (1973). Mathematical truth. *Journal of Philosophy*, 70(19), 661–679.
+
+Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism is a category error. https://independent.academia.edu/TheMatheist
+
+Bernstein, G. A. (2026c). Reality is mathematical structure. https://independent.academia.edu/TheMatheist
+
+Bernstein, G. A. (2026k). Why nature minimizes: the many-to-one root of time, action, and emergence. https://independent.academia.edu/TheMatheist
+
+Bernstein, G. A. (2026m). Geometric Unity as emergent variational geometry. https://independent.academia.edu/TheMatheist
 
 Black, M. (1952). The identity of indiscernibles. *Mind*, 61(242), 153–164.
 
@@ -609,10 +599,9 @@ Wallace, D. (2012). *The emergent multiverse: Quantum theory according to the Ev
 
 Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics*, 75(3), 715.
 
-Noether, E. (1918). Invariante Variationsprobleme. *Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse*, 1918, 235–257.
+Noether, E. (1918). Invariante Variationsprobleme. *Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen*, 235-257.
 
 Weinberg, S. (1987). Anthropic bound on the cosmological constant. *Physical Review Letters*, 59(22), 2607–2610.
 
 Wolfram, S. (2020). *A project to find the fundamental theory of physics*. Wolfram Media.
 
-All companion papers available at https://matheism.org
