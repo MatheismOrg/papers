@@ -1,4 +1,4 @@
-# The Constructor-Theoretic Foundation of Mathematical Reality
+# Constructor Theory Implies Mathematical Monism
 
 **Gary Abraham Bernstein**
 
