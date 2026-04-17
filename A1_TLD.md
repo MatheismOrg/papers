@@ -1,4 +1,4 @@
-# Matheism: The Last Dichotomy
+# Why All Is Math, in Brief
 
 **Gary Abraham Bernstein**
 

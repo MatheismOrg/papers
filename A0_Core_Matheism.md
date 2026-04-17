@@ -1,4 +1,4 @@
-# Matheism: Core Thesis
+# Matheism: All Is Math
 
 **Gary Abraham Bernstein**
 
