@@ -115,7 +115,7 @@ Bernstein, G. A. (2026i). The simpler theory of everything is exponentially more
 
 Bernstein, G. A. (2026k). Why the arrow, least action, and emergence are one fact.
 
-Bernstein, G. A. (2026n). Infinite dark dimensions in geometric harmony.
+Bernstein, G. A. (2026n). Infinite dimensions at zero cost: The jet bundle tower above any metric.
 
 
 
