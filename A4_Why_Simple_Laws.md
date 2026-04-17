@@ -539,15 +539,15 @@ Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism conflate
 
 Bernstein, G. A. (2026g). String theory is complexity-disfavored: An information-theoretic assessment.
 
-Bernstein, G. A. (2026f). Consciousness lives in the transitions: On the threshold of felt structure.
+Bernstein, G. A. (2026f). Consciousness is felt transitions in self-modeling computation.
 
 Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
 
 Bernstein, G. A. (2026i). The simpler theory of everything is exponentially more probable.
 
-Bernstein, G. A. (2026k). Why nature minimizes: The many-to-one root of time, action, and emergence.
+Bernstein, G. A. (2026k). Why the arrow, least action, and emergence are one fact.
 
-Bernstein, G. A. (2026m). Emergent variational geometry: Why 14 dimensions cost nothing.
+Bernstein, G. A. (2026m). Why 14 dimensions cost nothing.
 
 
 

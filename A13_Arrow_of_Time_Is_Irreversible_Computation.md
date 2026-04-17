@@ -139,9 +139,9 @@ The result required no advanced mathematics. It required noticing that nearly al
 
 Bernstein, G. A. (2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
-Bernstein, G. A. (2026f). Consciousness lives in the transitions: On the threshold of felt structure.
+Bernstein, G. A. (2026f). Consciousness is felt transitions in self-modeling computation.
 
-Bernstein, G. A. (2026k). Why nature minimizes: The many-to-one root of time, action, and emergence.
+Bernstein, G. A. (2026k). Why the arrow, least action, and emergence are one fact.
 
 
 

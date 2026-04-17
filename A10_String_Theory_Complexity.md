@@ -167,7 +167,7 @@ Bernstein, G. A. (2026c). Reality is mathematical structure.
 
 Bernstein, G. A. (2026d, 2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
-Bernstein, G. A. (2026n). Infinite dark dimensions in geometric harmony: From simple rules beyond the Standard Model.
+Bernstein, G. A. (2026n). Infinite dimensions at zero cost: The jet bundle tower above any metric.
 
 
 

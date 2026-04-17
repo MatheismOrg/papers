@@ -132,9 +132,9 @@ Bernstein, G. A. (2026d). Why these simple laws, forward time, many-worlds, and 
 Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
 
 
-Bernstein, G. A. (2026k). Why nature minimizes: The many-to-one root of time, action, and emergence.
+Bernstein, G. A. (2026k). Why the arrow, least action, and emergence are one fact.
 
-Bernstein, G. A. (2026m). Emergent variational geometry: Why 14 dimensions cost nothing.
+Bernstein, G. A. (2026m). Why 14 dimensions cost nothing.
 
 
 
