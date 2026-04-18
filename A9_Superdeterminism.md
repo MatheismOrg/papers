@@ -68,7 +68,7 @@ This postulate is not new physics. It is the application of a well-established p
 
 A natural objection arises: quantum mechanics specifies the probability distribution over outcomes with finite K (the Born rule |ψ|² is a compact postulate). Only specifying *which particular* outcome occurred requires additional K. So perhaps K(O) is irrelevant, the *theory* has finite K regardless.
 
-This objection conflates the complexity of the predictive theory with the complexity of the actual physical history. The Born rule specifies a distribution; it does not specify which branch of the distribution is actualized. Under collapse interpretations, the universe must select one outcome at each measurement. That selection is, by hypothesis, irreducibly random, not determined by the wave function, the Born rule, or anything else in the theory. The sequence of selections across all measurement events in the universe's history constitutes an algorithmically incompressible string: K(O) ≈ N for N measurements with genuinely random outcomes.
+This objection conflates the complexity of the predictive theory with the complexity of the actual physical history. The Born rule specifies a distribution; it does not specify which branch of the distribution is actualized. Under collapse interpretations, the universe must select one outcome at each measurement. That selection is, by hypothesis, irreducibly random, not determined by the wave function, the Born rule, or anything else in the theory. The sequence of selections across all measurement events in the universe's history constitutes an algorithmically incompressible string: K(O) ≈ N for N measurements with random outcomes.
 
 *This is not a deficiency of collapse interpretations that might be repaired.* It is the defining feature: collapse theories hold that nature makes choices not determined by the prior state. Each choice adds information, specification complexity, to the complete description of the physical world.
 
@@ -235,7 +235,7 @@ A further philosophical observation: true randomness, like a perfect circle, is 
 
 ## References
 
-Bernstein, G. A. (2026e). Why these simple laws? Deriving physics from mathematical necessity.
+Bernstein, G. A. (2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
 
 

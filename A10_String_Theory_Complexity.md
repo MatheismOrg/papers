@@ -8,7 +8,7 @@ ORCID: 0009-0009-1761-2867
 
 ## Abstract
 
-String theory is exponentially disfavored under every standard parsimony measure. It requires 3,000 to 4,700 bits of specification to reproduce observed physics, including at least 1,661 bits to index one vacuum from a landscape of 10^500 candidates. The Standard Model's 26 scalar parameters require at most a few hundred bits at measurement precision, and potentially far fewer if compressible generating rules exist, as they do for mathematical constants like pi and other infinite-digit irrationals that can be generated from roughly 10 bits. Under algorithmic probability, compressible constants are exponentially favored. Even with zero SM compression, the gap exceeds 2,600 bits. Under algorithmic probability, Minimum Description Length, or Bayesian model selection, this gap is decisive. We state the comparison as a proposition about explicit code lengths, not exact Kolmogorov complexity. The conclusion is code-relative and conditional. It states a prior penalty, not a refutation.
+String theory is exponentially disfavored under every standard parsimony measure. It requires 3,000 to 4,700 bits of specification to reproduce observed physics, including at least 1,661 bits to index one vacuum from a landscape of 10^500 candidates. The Standard Model's 26 scalar parameters require at most a few hundred bits at measurement precision, and potentially far fewer if compressible generating rules exist, as they do for mathematical constants like pi and other infinite-digit irrationals that can be generated from roughly 10 bits. Under algorithmic probability, compressible constants are exponentially favored. Even with zero SM compression, the gap exceeds 2,600 bits, a prior odds ratio exceeding 2^2,600. Astronomical. We state the comparison as a proposition about explicit code lengths, not exact Kolmogorov complexity; the conclusion is code-relative and conditional, a prior penalty, not a refutation. Under algorithmic probability, elegance is short description. A selector requiring 1,661 bits is not elegant. String theory landscape-selection has so far failed its own aesthetic and parsimony criteria on the same grounds.
 
 **Keywords:** Kolmogorov complexity, algorithmic probability, minimum description length, Bayesian model selection, description-length bounds
 
@@ -22,7 +22,7 @@ The Standard Model is a finite list of 26 scalar parameters. Each is a number. N
 
 String theory routes through a landscape of at least 10^500 vacuum solutions, each requiring a compactification geometry, flux integers, and stabilized moduli. Indexing one vacuum costs log2(10^500), approximately 1,661 bits, absent a compressing selection rule. None has been found. Total string-theoretic specification: 3,000 to 4,700 bits.
 
-The asymmetry is structural. Scalar-parameter descriptions have constants that are potentially compressible under algorithmic probability. Landscape-selection descriptions have a selector cost bounded below by enumeration unless a generating rule replaces it. Even comparing SM uncompressed (390 bits) against string theory at its best (3,000 bits), the gap exceeds 2,600 bits. The prior probability ratio is at least 2^2,600. String theory is not slightly disfavored. It is exponentially, astronomically, disfavored. (A separate question, addressed in the conclusion, is whether mathematical monism changes this calculus by eliminating landscape selection entirely.)
+The asymmetry is structural. Scalar-parameter descriptions have constants that are potentially compressible under algorithmic probability. Landscape-selection descriptions have a selector cost bounded below by enumeration unless a generating rule replaces it. Even comparing SM uncompressed (390 bits) against string theory at its best (3,000 bits), the gap exceeds 2,600 bits. The prior probability ratio is at least 2^2,600. String theory, given the need for landscape-selection, is not slightly disfavored. It is exponentially, astronomically, disfavored.
 
 This paper makes that comparison precise. We adopt Solomonoff's universal prior and the equivalent Minimum Description Length formulation, and quantify specification cost as the length of an explicit prefix-code representation of a model instance in a fixed universal description language. The specification cost is an upper bound on Kolmogorov complexity. It is not exact K, which is uncomputable.
 
@@ -79,7 +79,7 @@ The Standard Model of particle physics contains 19 free parameters in its minima
 
 Whether these constants admit a short generating rule is unknown. Compressibility is common among mathematical constants: pi requires roughly 10 bits, e roughly 10, the golden ratio roughly 5. Whether the SM constants are similarly compressible is an open empirical question, but under algorithmic probability, compressible values are exponentially more probable, so the prediction is that they are. If so, 26 constants at roughly 20 bits each would give roughly 500 bits. If they share a generating rule (as gauge coupling unification at the GUT scale suggests), the total could be 100 to 200 bits. Even with zero compression at measurement precision, 26 parameters at 15 bits each gives roughly 390 bits.
 
-The structural point is that the minimum description length of the SM is set by its output type: a finite scalar tuple. Its constants are potentially compressible. Neither its floor nor its ceiling incurs the landscape-selection cost analyzed in Section 5, which is a hard mathematical floor that no compression can reduce without a selection rule.
+The structural point is that the minimum description length of the SM is set by its output type: a finite scalar tuple. Its constants are potentially compressible. Neither its floor nor its ceiling incurs the landscape-selection cost analyzed in Section 5, which is a mathematical floor that no compression can reduce without a selection rule.
 
 ## 5. Selector-rich vacuum specifications
 
@@ -132,7 +132,7 @@ These are explicit description lengths under the coding scheme above. The true K
 
 The proposition is code-relative and conditional. It states a prior penalty, not a refutation. Exhibiting a short rule that uniquely selects the correct vacuum would collapse the penalty. No such rule has been identified.
 
-**Comparison fairness.** The comparison is between two ways of specifying the low-energy world, not between UV-complete theories. The penalty targets explanatory overhead incurred by routing through landscape selection. String theory without landscape selection is a mathematical framework that does not specify low-energy physics. String theory that specifies low-energy physics requires landscape selection. The penalty applies to the latter. A complete quantum theory of gravity, if landscape-free, would not incur the selector cost.
+**Comparison fairness.** The comparison is between two ways of specifying the low-energy world, not between UV-complete theories. The penalty targets explanatory overhead incurred by routing through landscape selection. String theory without landscape selection is a mathematical construction that does not specify low-energy physics. String theory that specifies low-energy physics requires landscape selection. The penalty applies to the latter. A complete quantum theory of gravity, if landscape-free, would not incur the selector cost.
 
 
 ## 7. Objections and responses
@@ -186,13 +186,11 @@ The description-length criterion favors candidates that reduce instance descript
 
 ## 9. Conclusion
 
-The comparison can be stated compactly. When two model classes reproduce the same low-energy physics, their prior odds ratio under Solomonoff's universal prior equals 2 to the negative difference of their Kolmogorov complexities, each bounded above by the corresponding explicit code length. Under explicit prefix-coding assumptions, landscape-selection realizations have explicit descriptions on the order of thousands of bits longer than scalar-parameter alternatives, and the prior ratio is bounded accordingly unless a compact selector rule compresses the description.
+String theory requires 3,000 to 4,700 bits to specify a realization that reproduces observed physics. The Standard Model requires a few hundred at measurement precision, likely far fewer. The gap exceeds 2,600 bits. The prior odds ratio exceeds 2^2,600.
 
-The result is code-relative and conditional. It does not refute string theory, nor does it assess empirical adequacy. It identifies a model-selection burden: selector richness must be offset by a comparably compact generative rule for the theory to gain, rather than lose, in description economy.
+Under mathematical monism, all 10^500 vacua exist without selection. String theory itself is then low-K, but so is pi, and so are Wolfram's hypergraph rewriting rules. Low complexity of the theory itself is necessary but not sufficient for a theory of observed physics. What observers require is a specification that reproduces their observations, and that task incurs the selector cost regardless of whether other structures also exist.
 
-A note on scope: under mathematical monism, where all consistent structures exist, all 10^500 string vacua exist without selection. The total measure of all string vacua then depends on the complexity of the string framework itself, not on the landscape index. Whether this framework complexity is lower than the Standard Model's is an open question developed separately. The present paper's penalty applies specifically to the task of specifying which vacuum reproduces observed physics, which remains the relevant question for observers comparing theories.
-
-The same criterion applies to any physical model whose instance specification routes through explicit selection from a large candidate set plus structured auxiliary data. It is neutral across applications.
+String theory is often defended on elegance grounds. Under algorithmic probability, elegance is short description. A selector requiring 1,661 bits is not elegant. String theory landscape-selection has so far failed its own aesthetic and parsimony criteria on the same grounds. The burden is symmetric: exhibit a compact rule that produces observed physics, or carry the selector cost. In four decades, no such rule has been found. The theory that explains the most with the least specification wins.
 
 ---
 
