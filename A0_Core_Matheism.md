@@ -31,7 +31,7 @@ Among all structures, which should observers expect to inhabit? Algorithmic prob
 
 The measure is not new. Solomonoff invented it for inductive inference. Schmidhuber (2000) applied it to the universe ensemble. What is new here is the derivation: the PRD establishes why the ensemble exists; the null filter shows it is non-arbitrary; algorithmic probability is its natural measure. Tegmark posits the ensemble. Schmidhuber measures it. The PRD derives both.
 
-Schmidhuber's Speed Prior (2002) extends the measure by weighting computation time alongside description length. A computation objection to simulation is that K(simulation) exceeds K(base). But any universe containing biological observers has already demonstrated computational capacity: K(computer) is near zero. Simulated minds likely dominate the measure. The sim is math. Base reality is math. There is no unmatrix.
+Schmidhuber's Speed Prior (2002) extends the measure by weighting computation time alongside description length. Under mathematical monism, computation time applies to simulations but not to base mathematical structures, which exist necessarily.
 
 ## 4. Consequences
 
