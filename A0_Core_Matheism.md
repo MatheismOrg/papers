@@ -31,7 +31,7 @@ Among all structures, which should observers expect to inhabit? Algorithmic prob
 
 The measure is not new. Solomonoff invented it for inductive inference. Schmidhuber (2000) applied it to the universe ensemble. What is new here is the derivation: the PRD establishes why the ensemble exists; the null filter shows it is non-arbitrary; algorithmic probability is its natural measure. Tegmark posits the ensemble. Schmidhuber measures it. The PRD derives both.
 
-Schmidhuber's Speed Prior (2002) extends the measure by weighting computation time alongside description length. Under mathematical monism, this applies only to simulations, not to base realities. Base mathematical structures exist necessarily, not as outputs of a running computation. Our own universe may be evidence: quantum mechanics is exponentially expensive to simulate classically, yet here we are.
+Schmidhuber's Speed Prior (2002) extends the measure by weighting computation time alongside description length. A computation objection to simulation is that K(simulation) exceeds K(base). But any universe containing biological observers has already demonstrated computational capacity: K(computer) is near zero. Simulated minds likely dominate the measure. The sim is math. Base reality is math. There is no unmatrix.
 
 ## 4. Consequences
 
@@ -59,7 +59,9 @@ Schmidhuber's Speed Prior (2002) extends the measure by weighting computation ti
 
 ## 5. Open Problems
 
-**Boltzmann brains.** If the universe reaches thermal equilibrium and persists forever, fleeting thermal fluctuations may outnumber structured observers. The generating theory is identical for both. Algorithmic probability ranks theories, not configurations within them. This is an open problem in cosmological measure theory that every multiverse theory inherits. Matheism does not solve it.
+**Simulation.** Any universe containing biological observers has demonstrated computational capacity. K(computer) is near zero. Simulated minds likely dominate the measure. The sim is math. Base reality is math. There is no unmatrix.
+
+**Boltzmann brains.** If the universe reaches thermal equilibrium and persists forever, fleeting thermal fluctuations may outnumber structured observers. The generating theory is identical for both. Algorithmic probability ranks theories, not configurations within them. This is an open problem in cosmological measure theory that every multiverse theory inherits. For matheism, this is a physics and math detail.
 
 **The observation measure.** Algorithmic probability provides the measure over generating theories. Which observations within a given structure are weighted how remains unsolved.
 

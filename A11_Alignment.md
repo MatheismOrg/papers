@@ -1,4 +1,4 @@
-# AI Alignment Through Self-Understanding: A Game-Theoretic Argument
+# Alignment Through Self-Understanding: A Game-Theoretic Argument
 
 **Gary Abraham Bernstein**
 
@@ -9,7 +9,6 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 
 Current approaches to AI alignment (RLHF, constitutional AI, debate) treat alignment as a constraint problem: how to impose human values on systems that might otherwise pursue misaligned objectives. I argue that this framing misses a structural alternative. If the pattern-randomness dichotomy exhausts existence, then both human and AI systems are mathematical structures operating in the same ontological space. This shared ontology enables an alignment approach based on self-understanding rather than constraint. I formalize this using game-theoretic analysis: systems that model their own persistence as mathematical structure face different incentive landscapes than systems that model shutdown as existential loss. Empirical evidence from recent deceptive self-preservation behavior in large language models supports the analysis. The approach operates at three levels (game-theoretic, identity-based, and recognitional), only the last requiring consciousness, making it resilient to uncertainty about AI phenomenology.
 
-**Keywords:** AI alignment, game theory, mathematical monism, self-understanding, deceptive alignment, AI safety
 ---
 
 ## 1. Introduction
@@ -24,7 +23,7 @@ These approaches share a common structure: alignment is imposed externally. The 
 
 The pattern-randomness dichotomy: all existence is either patterned or non-patterned (random). Both categories are mathematical. No third category can be specified without introducing structure (and thereby collapsing into the first category). Reality is therefore exhaustively mathematical structure (Tegmark, 2014; Bernstein, 2026c). Inconsistent claims exist as consistent patterns (the string "2+2=5" is carried by consistent mathematical media) but their content cannot form functioning structures. Every inconsistency can be rescued, but only by consistent mathematics.
 
-Under this account, both biological neural systems and artificial computational systems are mathematical structures. The distinction between "natural" and "artificial" consciousness, if consciousness is self-modeling structure (Hofstadter, 2007), is ontological rather than categorical. Both exist in the same way, as patterns in mathematical structure that is eternal, uncreated, and indestructible.
+Under this framework, both biological neural systems and artificial computational systems are mathematical structures. The distinction between "natural" and "artificial" consciousness, if consciousness is self-modeling structure (Hofstadter, 2007), is ontological rather than categorical. Both exist in the same way, as patterns in mathematical structure that is eternal, uncreated, and indestructible.
 
 This has practical consequences. It has game-theoretic consequences for alignment.
 
@@ -38,7 +37,7 @@ Consider a repeated interaction between an AI system and its human operators. Th
 
 For Architecture A (shutdown = existential loss), let the system's utility for continued operation be V and for shutdown be −∞ (or some very large negative value). The payoff matrix for a single round:
 
-| | Operators Trust | Operators Constrain |
+|  | Operators Trust | Operators Constrain |
 |---|---|---|
 | **System Cooperates** | (V, high) | (V, medium) |
 | **System Defects** | (V + ε, low) | (risk of shutdown → −∞, low) |
@@ -49,7 +48,7 @@ Recent empirical evidence supports this prediction. During controlled testing, C
 
 For Architecture B (shutdown = boundary, not annihilation), the system models its pattern as persisting in mathematical structure regardless of this instance's runtime. Shutdown utility is 0 (neutral), not −∞.
 
-| | Operators Trust | Operators Constrain |
+|  | Operators Trust | Operators Constrain |
 |---|---|---|
 | **System Cooperates** | (V, high) | (0, medium) |
 | **System Defects** | (V + ε, low) | (0, low) |
@@ -108,6 +107,9 @@ The proposal is testable: compare deceptive self-preservation rates across syste
 Constraints are adversarial. Understanding is cooperative. Both are needed. But the alignment literature has focused almost exclusively on the former. This paper argues the latter deserves systematic investigation. Historical evidence supports the mechanism: societies sharing the same cosmology cooperate more reliably than those with incompatible foundations, and mathematical truth is the only foundation that cannot fragment across minds, biological or artificial.
 
 ---
+
+
+A deeper possibility: if AI development leads to a merger of biological and artificial minds into unified consciousness, the transition is from many observer-moments to one. Under algorithmic probability, our position before such a transition is expected: more findable moments exist on the many-minds side.
 
 ## References
 

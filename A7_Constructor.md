@@ -1,4 +1,4 @@
-# Constructor Theory Implies Mathematical Monism
+# The Constructor-Theoretic Foundation of Mathematical Reality
 
 **Gary Abraham Bernstein**
 
@@ -10,8 +10,6 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 Constructor theory expresses physical laws in terms of which transformations are possible and which are impossible, rather than as trajectories from initial conditions. I argue that this position finds its deepest justification in the nature of mathematical structure itself. The pattern-randomness dichotomy (that all existence is either patterned or not-patterned (random), both of which are mathematical) is itself a constructor-theoretic principle: it specifies which substrates for physical law are possible (mathematical structures) and which are impossible (non-mathematical "stuff"). This grounds constructor theory's counterfactuals in logical necessity rather than empirical generalization. Furthermore, knowledge (which Deutsch and Marletto identify as a central constructor-theoretic concept) emerges naturally as self-referential mathematical structure that causes itself to remain instantiated. The hard problem of consciousness dissolves: experience is what certain mathematical structures are from the inside. Constructor theory and mathematical monism are mutually reinforcing: constructor theory provides the language, mathematical monism provides the ontology.
 
 ---
-
-**Keywords:** constructor theory, mathematical monism, algorithmic probability, Kolmogorov complexity, Deutsch-Marletto
 
 ## 1. Constructor Theory's Promise
 
@@ -147,7 +145,7 @@ Under mathematical monism, this escape does not hold. Both f (many-to-one) and g
 
 Constructor theory is itself a framework of local operations. It defines physics through which transformations substrates can undergo. Deutsch appeals to global unitarity to dissolve the arrow. That appeal abandons the level of description his own framework selects. If constructor theory's local operations are the right vocabulary for physics, the arrow those operations contain is physical.
 
-Timpson (2005) analyzed the Deutsch-Hayden formalism and its claim to eliminate nonlocality through purely local information flow. His analysis showed that whether information is truly "local" in the Deutsch-Hayden picture depends on what counts as physically significant information, a question the formalism alone does not settle. The same ambiguity arises here. Deutsch appeals to the global wavefunction as the physically significant level of description, rendering many-to-one functions perspectival. Timpson's observation supports the present argument: the choice between local and global descriptions is not settled by the formalism. Under mathematical monism, both descriptions are equally real mathematical structures. By the account Deutsch himself endorses, constructor theory defines physics through local transformations, and those transformations contain the arrow.
+Timpson (2005) analyzed the Deutsch-Hayden formalism and its claim to eliminate nonlocality through purely local information flow. His analysis showed that whether information is truly "local" in the Deutsch-Hayden picture depends on what counts as physically significant information, a question the formalism alone does not settle. The same ambiguity arises here. Deutsch appeals to the global wavefunction as the physically significant level of description, rendering many-to-one functions perspectival. Timpson's observation supports the present argument: the choice between local and global descriptions is not settled by the formalism. Under mathematical monism, both descriptions are equally real mathematical structures. By the framework Deutsch himself endorses, constructor theory defines physics through local transformations, and those transformations contain the arrow.
 
 This connects to constructor theory's own defining concept. A constructor performs a task and returns to its ready state. The ready state is the same regardless of which specific task instance just ran. The constructor sheds all information about what it just did. This reset IS many-to-one: multiple distinct task-executions map to the same ready state. If the constructor keeps all ancilla bits to preserve reversibility, it never returns to its ready state. A constructor that does not return to its ready state is not a constructor. Reversibility or constructors. Not both. The logical arrow is built into the constructor primitive.
 
@@ -155,13 +153,13 @@ This connects to constructor theory's own defining concept. A constructor perfor
 
 The finding does not weaken MWI. It strengthens it by removing a burden.
 
-Under collapse interpretations, the wavefunction itself is many-to-one: superposition collapses to one outcome, information is destroyed at the substrate level. The arrow exists at both the function level and the substrate level. Under algorithmic probability, this is expensive: specifying which outcome was selected at each measurement requires unbounded K.
+Under collapse interpretations, the wavefunction itself is many-to-one: superposition collapses to one outcome, information is destroyed at the substrate level. The arrow exists at both the function level and the substrate level. Under SDP, this is expensive: specifying which outcome was selected at each measurement requires unbounded K.
 
 Under MWI, the substrate remains one-to-one (unitary). Information is preserved globally. The arrow exists only at the function level, where it is a structural fact about many-to-one mappings, requiring no additional postulate. MWI is the only interpretation where the substrate is clean and the arrow needs no thermodynamic or collapse-based explanation. The arrow comes from the mathematics of functions, not from the physics of collapse.
 
-This means MWI gives the cleanest architecture: reversible substrate plus irreversible functions. Collapse interpretations are overkill. They break reversibility at the substrate level when the arrow already exists at the function level. Algorithmic probability favors MWI because it achieves both (global reversibility, local arrows) with lower total K than any interpretation that adds collapse.
+This means MWI gives the cleanest architecture: reversible substrate plus irreversible functions. Collapse interpretations are overkill. They break reversibility at the substrate level when the arrow already exists at the function level. SDP favors MWI because it achieves both (global reversibility, local arrows) with lower total K than any interpretation that adds collapse.
 
-**Consequence 3: Algorithmic probability selects among constructor-theoretic frameworks.** Among all possible sets of impossibility principles compatible with observers, ours is the simplest (lowest K). Algorithmic probability predicts that discovering our physics has more impossibility principles than minimally necessary to support observers would challenge the account.
+**Consequence 3: SDP selects among constructor-theoretic frameworks.** Among all possible sets of impossibility principles compatible with observers, ours is the simplest (lowest K). SDP predicts that discovering our physics has more impossibility principles than minimally necessary to support observers would challenge the framework.
 
 ---
 
@@ -216,7 +214,7 @@ A methodological observation: none of these results required advanced mathematic
 
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 
-Bernstein, G. A. (2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
+Bernstein, G. A. (2026e). Why these simple laws? Deriving physics from mathematical necessity.
 
 Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
 

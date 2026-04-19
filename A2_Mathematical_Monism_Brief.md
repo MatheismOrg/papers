@@ -23,6 +23,8 @@ The philosophical foundation is developed elsewhere: reality is identical to mat
 
 The argument for algorithmic probability is cumulative. Any single consequence might be coincidence. Six independent consequences from the same principle, across unrelated domains, is the kind of convergence that distinguishes a correct principle from an ad hoc hypothesis.
 
+Some consequences follow from the foundation before any physics. The hard problem of consciousness is circular reasoning, all interactive dualisms collapse to mathematical monism, and the supernatural and libertarian free will resolve as square circles. These are developed in the companion papers (Bernstein, 2026c, 2026d). The physics follows.
+
 ## 2. Occam's Razor Is a Theorem
 
 Scientists prefer simpler theories. This preference has been treated as methodological taste, aesthetic bias, or pragmatic convenience. Hossenfelder (2018) asked why physics should prefer simplicity at all, and found no satisfactory answer. Algorithmic probability provides one: lower-K structures have exponentially higher measure. The criterion is not beauty but brevity.
@@ -45,7 +47,7 @@ Change the gravitational constant slightly and stars cannot form. Adjust the str
 
 If all consistent mathematical structures exist (which follows from the null filter argument: any filter is itself a consistent structure, so all filters exist, including none), then observer-permitting structures necessarily exist among them. We find ourselves in one because we could not find ourselves anywhere else. Selection bias, not design.
 
-Algorithmic probability adds precision: among observer-permitting structures, simpler ones are exponentially more probable. This predicts that the fundamental constants are not arbitrary but among the simplest values compatible with observers. It also predicts that outstanding puzzles like dark matter will have simple solutions (lower-K explanations will be confirmed over higher-K alternatives), and that the initial conditions we observe are low in complexity because observers are more likely to find themselves computing from simple starting points. The same bias applies to temporal location: earlier observer-moments have shorter specification prefixes, but later moments have more total observers. The distribution peaks where these pressures meet. Algorithmic probability also applies to competing physical theories: string theory's total specification complexity (approximately 3,000 to 4,700 bits) dwarfs any plausible generating rule for the Standard Model's 19 to 26 scalar parameters, rendering string theory exponentially disfavored (Bernstein, 2026g). Under algorithmic probability, elegance is short description. String theory landscape-selection has so far failed its own aesthetic and parsimony criteria on the same grounds. Under mathematical monism, all string vacua exist, but low complexity of a theory itself is necessary and not sufficient: the theory must also reproduce observed physics, and no string vacuum has been shown to do so.
+Algorithmic probability adds precision: among observer-permitting structures, simpler ones are exponentially more probable. This predicts that the fundamental constants are not arbitrary but among the simplest values compatible with observers. It also predicts that outstanding puzzles like dark matter will have simple solutions (lower-K explanations will be confirmed over higher-K alternatives), and that the initial conditions we observe are low in complexity because observers are more likely to find themselves computing from simple starting points. The same bias applies to temporal location: earlier observer-moments have shorter specification prefixes, but later moments have more total observers. The distribution peaks where these pressures meet. Algorithmic probability also applies to competing physical theories: string theory's total specification complexity (approximately 3,000 to 4,700 bits) dwarfs any plausible generating rule for the Standard Model's 19 to 26 scalar parameters, rendering string theory exponentially disfavored. Under algorithmic probability, elegance is short description. String theory landscape-selection has so far failed its own aesthetic and parsimony criteria on the same grounds. Under mathematical monism, all string vacua exist, but low complexity of a theory itself is necessary and not sufficient: the theory must also reproduce observed physics, and no string vacuum has been shown to do so.
 
 ## 5. The Arrow of Time
 
@@ -55,13 +57,13 @@ A universe described forward from initial conditions I₀ has total complexity K
 
 Forward-described structures dominate the measure by 2^(K(I_f) − K(I₀)), an astronomical factor. All states exist eternally in the block universe. Observers experience the low-complexity end as the past because computation is many-to-one and consciousness can only model forward. Low entropy is low descriptive complexity. Algorithmic probability exponentially favors low complexity. The Past Hypothesis is not a brute postulate about cosmology but a consequence of what modeling means. Full development is given in Bernstein (2026e, 2026h).
 
-The computational arrow provides the structural foundation for this asymmetry. Nearly all computations are many-to-one: 1+1=2 is deterministic, but 2=x+y is not. The inverse does not exist. This is why backward description cost is high: many-to-one functions ran forward, and any backward specification would require identifying which of the many inputs produced each output. Algorithmic probability quantifies the measure-theoretic consequence of this irreversibility. The computational arrow stands without algorithmic probability. algorithmic probability's time arrow depends on it. Deutsch's constructor theory supports the point: it defines physics through local operations, not global state descriptions. When Deutsch appeals to global unitarity to dissolve the arrow, he leaves his own construction. The arrow lives at the level constructor theory selects (Bernstein, 2026h).
+The computational arrow provides the structural foundation for this asymmetry. Nearly all computations are many-to-one: 1+1=2 is deterministic, but 2=x+y is not. The inverse does not exist. This is why backward description cost is high: many-to-one functions ran forward, and any backward specification would require identifying which of the many inputs produced each output. Algorithmic probability quantifies the measure-theoretic consequence of this irreversibility. The computational arrow stands without algorithmic probability. algorithmic probability's time arrow depends on it. Deutsch's constructor theory supports the point: it defines physics through local operations, not global state descriptions. When Deutsch appeals to global unitarity to dissolve the arrow, he leaves his own construction. The arrow lives at the level constructor theory selects.
 
 ## 6. Superdeterminism Rehabilitated
 
 Bell's theorem shows that no local hidden-variable theory satisfying statistical independence (SI) can reproduce quantum predictions. The mainstream dismisses superdeterminism (rejecting SI) as requiring "implausible fine-tuning" of initial conditions.
 
-This objection conflates specificity with complexity (Bernstein, 2026b). Initial conditions generated by simple rules have low K and are measure-favored, regardless of how specific they appear. The digits of pi are specific but not complex: a short program generates all of them.
+This objection conflates specificity with complexity. Initial conditions generated by simple rules have low K and are measure-favored, regardless of how specific they appear. The digits of pi are specific but not complex: a short program generates all of them.
 
 The K-decomposition clarifies the comparison. Total specification complexity is K(L) + K(I) + K(O), where K(L) is laws, K(I) is initial conditions, and K(O) is the specification of which particular measurement outcomes occurred. Under collapse interpretations, K(O) grows without bound: each measurement selects one eigenvalue, accumulating an algorithmically incompressible string. Under both Many-Worlds and superdeterminism, K(O) = 0. No random selection occurs.
 
@@ -69,7 +71,7 @@ The fine-tuning objection inadvertently argues against collapse, not against sup
 
 ## 7. Beyond Physics
 
-The position extends beyond physics: consciousness, AI alignment, and ethics follow as structural consequences and are developed in companion papers (Bernstein, 2026f, 2026i).
+The position extends beyond physics: consciousness, AI alignment, and ethics follow as structural consequences and are developed in companion papers.
 
 ## 8. Convergence
 
@@ -83,7 +85,7 @@ Five results from algorithmic probability, one independent structural fact, two 
 6. Arrow of computation (structural foundation: many-to-one functions)
 7. Many-Worlds strengthened (algorithmic probability + computational arrow)
 8. Variational dynamics forced (many-to-one + Noether chain, Bernstein 2026k)
-9. Variational geometry forced: the metric bundle (14 dimensions over 4D spacetime) emerges necessarily from any manifold with a metric, at zero additional K. String theory pays 3,000+ bits for its extra dimensions; the metric bundle pays zero. The jet bundle tower above it is infinite and equally free. The physics is in the harmonic amplitude profile, not the dimension count (Bernstein, 2026m, 2026n)
+9. Variational geometry forced: the metric bundle (14 dimensions over 4D spacetime) emerges necessarily from any manifold with a metric, at zero additional K. String theory pays 3,000+ bits for its extra dimensions; the metric bundle pays zero. The jet bundle tower above it is infinite and equally free. The physics is in the harmonic amplitude profile, not the dimension count
 10. String theory's vibrational spectrum redeemed as derived geometric overtones rather than postulated objects (Bernstein 2026n)
 11. Encoding hierarchy: Turing mapping preserves data, the holographic principle preserves physics within entropy bounds, jet bundle reconstruction preserves geometry exactly: three distinct senses of encoding suggesting a deeper structural pattern
 
@@ -130,4 +132,14 @@ Solomonoff, R. J. (1964). A formal theory of inductive inference. *Information a
 Tegmark, M. (2014). *Our Mathematical Universe*. Knopf.
 
 Tononi, G. (2004). An information integration theory of consciousness. *BMC Neuroscience*, 5, 42.
+## References
 
+Bernstein, G. A. (2026c). Reality is mathematical structure.
+
+Bernstein, G. A. (2026d). Why these simple laws, forward time, many-worlds, and superdeterminism.
+
+Schmidhuber, J. (2000). Algorithmic theories of everything. arXiv:quant-ph/0011122.
+
+Solomonoff, R. J. (1964). A formal theory of inductive inference. *Information and Control*, 7(1), 1-22.
+
+All companion papers available at ORCID: 0009-0009-1761-2867

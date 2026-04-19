@@ -14,6 +14,8 @@ String theory is exponentially disfavored under every standard parsimony measure
 
 ---
 
+*Simple is probable.*
+
 ## 1. Introduction
 
 How many bits does it take to specify a theory of physics? Under algorithmic probability (Solomonoff, 1964), every additional bit of specification halves a theory's prior probability. A theory requiring 10 more bits than a competitor is 2^10, roughly 1,000, times less probable. A theory requiring 100 more bits is 2^100 times less probable, a number larger than the count of atoms in the universe.
