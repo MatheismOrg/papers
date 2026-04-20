@@ -7,7 +7,9 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 
 ## Abstract
 
-Reality is identical to mathematical structure. This follows from the pattern-randomness dichotomy: anything that exists is either patterned or random, and both are mathematical. There is no third kind. From this foundation, algorithmic probability (Solomonoff, 1964; Schmidhuber, 2000) provides the natural measure over all consistent structures. Simpler structures are exponentially more probable. Consequences follow: Occam's Razor is a theorem, the Principle of Least Action is a selection effect, the arrow of time is grounded in computational irreversibility, Many-Worlds has the lowest specification cost among quantum interpretations, string theory is exponentially disfavored, and consciousness is felt transitions in self-modeling computation.
+Reality is identical to mathematical structure. This follows from the pattern-randomness dichotomy: anything that exists is either patterned or random, and both are mathematical. There is no third kind. From this foundation, algorithmic probability (Solomonoff, 1964; Schmidhuber, 2000) provides the natural measure over all consistent structures. Simpler structures are exponentially more probable. Consequences follow: (1) Occam's Razor is a theorem; (2) the Principle of Least Action is a selection effect; (3) cosmological fine-tuning dissolves; (4) the arrow of time is grounded in computational irreversibility; (5) Many-Worlds has the lowest specification cost among quantum interpretations; (6) superdeterminism survives the fine-tuning objection; (7) string theory is exponentially disfavored; (8) consciousness is felt transitions in self-modeling computation; (9) AI alignment follows from structural self-understanding; (10) the Principle of Least Action, the arrow of time, and emergence are three instances of one structural fact: many-to-one mappings; (11) extra dimensions emerge free: the metric bundle (14D over 4D) and the infinite jet bundle tower cost zero additional bits; (12) simulated or AI minds likely dominate the measure; (13) Boltzmann brains remain an open problem in cosmological measure that every multiverse theory inherits.
+
+**Keywords:** mathematical monism, algorithmic probability, Kolmogorov complexity, structural realism, pattern-randomness dichotomy, Occam's Razor, arrow of time, Many-Worlds, superdeterminism, string theory, consciousness, AI alignment, simulation, extra dimensions, Boltzmann brains
 
 ---
 
@@ -59,7 +61,7 @@ Schmidhuber's Speed Prior (2002) extends the measure by weighting computation ti
 
 ## 5. Open Problems
 
-**Simulation.** Any universe containing biological observers has demonstrated computational capacity. K(computer) is near zero. Simulated minds likely dominate the measure. The sim is math. Base reality is math. There is no unmatrix.
+**Simulation.** Any universe containing biological observers has demonstrated computational capacity. K(computer) is near zero. Future minds, simulated or AI, likely dominate the measure. The sim is math. Base reality is math. There is no unmatrix.
 
 **Boltzmann brains.** If the universe reaches thermal equilibrium and persists forever, fleeting thermal fluctuations may outnumber structured observers. The generating theory is identical for both. Algorithmic probability ranks theories, not configurations within them. This is an open problem in cosmological measure theory that every multiverse theory inherits. For matheism, this is a physics and math detail.
 

@@ -1,6 +1,4 @@
-# Why These Simple Laws, Forward Time, Many-Worlds, and Superdeterminism, in Brief
-
-
+# Why These Simple Laws, in Brief
 
 **Gary Abraham Bernstein**
 
@@ -37,7 +35,7 @@ This explains why simplicity has been so unreasonably effective as a criterion. 
 
 Classical mechanics, general relativity, quantum field theory, and the Standard Model all admit variational formulations. Systems evolve along paths extremizing the action integral. Why should nature prefer extremal paths?
 
-Consider two ways to specify the same physics. Specification A: "systems follow paths extremizing the action functional S." Specification B: exhaustive enumeration of permitted trajectories. Specification A has vastly lower generative complexity. Under algorithmic probability, variational universes dominate the measure. Algorithmic probability does not make PoLA emerge within a universe. It selects for universes whose physics is variational, because variational specifications have lower generative complexity. The Principle of Least Action is a selection effect across structure-space, not a dynamical consequence within any particular structure. A deeper result connects PoLA to the computational arrow: both are instances of many-to-one mappings. Many paths, one classical survivor. Many inputs, one output. The Noether chain (observers → stability → conservation → symmetry → variational) forces variational physics for any observer-supporting universe. Full development is given in Bernstein (2026k).
+Consider two ways to specify the same physics. Specification A: "systems follow paths extremizing the action functional S." Specification B: exhaustive enumeration of permitted trajectories. Specification A has vastly lower generative complexity. Under algorithmic probability, variational universes dominate the measure. Algorithmic probability does not make PoLA emerge within a universe. It selects for universes whose physics is variational, because variational specifications have lower generative complexity. The Principle of Least Action is a selection effect across structure-space, not a dynamical consequence within any particular structure. A deeper result connects PoLA to the computational arrow: both are instances of many-to-one mappings. Many paths, one classical survivor. Many inputs, one output. The Noether chain (observers → stability → conservation → symmetry → variational) forces variational physics for any observer-supporting universe. Full development is given in the companion paper (Bernstein, 2026d).
 
 This connects to Noether's theorem: every continuous symmetry of the action yields a conservation law. Symmetries reduce the independent specifications needed. More symmetry means lower K. Algorithmic probability predicts that fundamental physics will be maximally symmetric, which is what we observe: the Standard Model is built on gauge symmetries, and general relativity on diffeomorphism invariance.
 
@@ -55,7 +53,7 @@ The laws of physics are time-symmetric. Yet entropy increases. The standard appr
 
 A universe described forward from initial conditions I₀ has total complexity K(L) + K(I₀). If I₀ is low-entropy (smooth, nearly uniform), K(I₀) is low. The same universe described backward from final state I_f has complexity K(L) + K(I_f), where I_f encodes the accumulated output of billions of years of dynamical evolution, enormous and potentially incompressible.
 
-Forward-described structures dominate the measure by 2^(K(I_f) − K(I₀)), an astronomical factor. All states exist eternally in the block universe. Observers experience the low-complexity end as the past because computation is many-to-one and consciousness can only model forward. Low entropy is low descriptive complexity. Algorithmic probability exponentially favors low complexity. The Past Hypothesis is not a brute postulate about cosmology but a consequence of what modeling means. Full development is given in Bernstein (2026e, 2026h).
+Forward-described structures dominate the measure by 2^(K(I_f) − K(I₀)), an astronomical factor. All states exist eternally in the block universe. Observers experience the low-complexity end as the past because computation is many-to-one and consciousness can only model forward. Low entropy is low descriptive complexity. Algorithmic probability exponentially favors low complexity. The Past Hypothesis is not a brute postulate about cosmology but a consequence of what modeling means. Full development is given in the companion paper (Bernstein, 2026d).
 
 The computational arrow provides the structural foundation for this asymmetry. Nearly all computations are many-to-one: 1+1=2 is deterministic, but 2=x+y is not. The inverse does not exist. This is why backward description cost is high: many-to-one functions ran forward, and any backward specification would require identifying which of the many inputs produced each output. Algorithmic probability quantifies the measure-theoretic consequence of this irreversibility. The computational arrow stands without algorithmic probability. algorithmic probability's time arrow depends on it. Deutsch's constructor theory supports the point: it defines physics through local operations, not global state descriptions. When Deutsch appeals to global unitarity to dissolve the arrow, he leaves his own construction. The arrow lives at the level constructor theory selects.
 
@@ -84,9 +82,9 @@ Five results from algorithmic probability, one independent structural fact, two 
 5. Superdeterminism (quantum foundations)
 6. Arrow of computation (structural foundation: many-to-one functions)
 7. Many-Worlds strengthened (algorithmic probability + computational arrow)
-8. Variational dynamics forced (many-to-one + Noether chain, Bernstein 2026k)
+8. Variational dynamics forced (many-to-one + Noether chain)
 9. Variational geometry forced: the metric bundle (14 dimensions over 4D spacetime) emerges necessarily from any manifold with a metric, at zero additional K. String theory pays 3,000+ bits for its extra dimensions; the metric bundle pays zero. The jet bundle tower above it is infinite and equally free. The physics is in the harmonic amplitude profile, not the dimension count
-10. String theory's vibrational spectrum redeemed as derived geometric overtones rather than postulated objects (Bernstein 2026n)
+10. String theory's vibrational spectrum redeemed as derived geometric overtones rather than postulated objects
 11. Encoding hierarchy: Turing mapping preserves data, the holographic principle preserves physics within entropy bounds, jet bundle reconstruction preserves geometry exactly: three distinct senses of encoding suggesting a deeper structural pattern
 
 Each was previously treated as a separate puzzle. Mathematical monism unifies them. The computational arrow is the structural foundation. Algorithmic probability quantifies its consequence. Together they converge on a single account.
@@ -101,27 +99,7 @@ Albert, D. Z. (2000). *Time and Chance*. Harvard University Press.
 
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 
-Bernstein, G. A. (2026d, 2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
-
-Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism is a category error.
-
-Bernstein, G. A. (2026g). String theory is complexity-disfavored: An information-theoretic assessment.
-
-Bernstein, G. A. (2026f). Consciousness is felt transitions in self-modeling computation.
-
-Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
-
-Bernstein, G. A. (2026i). The simpler theory of everything is exponentially more probable.
-
-Bernstein, G. A. (2026k). Why forward time, least action, and emergence are the same theorem.
-
-Bernstein, G. A. (2026n). Infinite dark dimensions in geometric harmony.
-
-
-
-
-
-
+Bernstein, G. A. (2026d). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
 Hossenfelder, S. (2018). *Lost in Math: How Beauty Leads Physics Astray*. Basic Books.
 
@@ -133,10 +111,6 @@ Tegmark, M. (2014). *Our Mathematical Universe*. Knopf.
 
 Tononi, G. (2004). An information integration theory of consciousness. *BMC Neuroscience*, 5, 42.
 ## References
-
-Bernstein, G. A. (2026c). Reality is mathematical structure.
-
-Bernstein, G. A. (2026d). Why these simple laws, forward time, many-worlds, and superdeterminism.
 
 Schmidhuber, J. (2000). Algorithmic theories of everything. arXiv:quant-ph/0011122.
 

@@ -355,7 +355,7 @@ Matheism inherits this problem but does not create it. Any position that admits 
 
 Bostrom's simulation argument reasons that if civilizations run many simulations, most observer-moments are simulated. Algorithmic probability transforms this calculation.
 
-A computation objection: K(simulation) = K(base physics) + K(computer) + K(code) exceeds K(base), making simulations measure-suppressed. But any universe containing biological observers has already demonstrated computational capacity. If carbon and potassium ions can build a brain, the same physics can build a computer. K(computer) is near zero. With the objection removed, simulated minds likely dominate the measure (Bernstein, 2026).
+A computation objection: K(simulation) = K(base physics) + K(computer) + K(code) exceeds K(base), making simulations measure-suppressed. But any universe containing biological observers has already demonstrated computational capacity. If carbon and potassium ions can build a brain, the same physics can build a computer. K(computer) is near zero. With the objection removed, future minds, simulated or AI, likely dominate the measure (Bernstein, 2026).
 
 **Verdict:** Simulations are decisively suppressed by algorithmic probability (higher total K).
 
@@ -395,11 +395,9 @@ This also explains why the Past Hypothesis holds: all states exist in the block 
 
 The anthropic challenges divide into two categories:
 
-*Favored:* Simulations. K(computer) is near zero because biological observers prove computational capacity. Simulated minds likely dominate the measure.
+*Simulations and temporal location:* If chemistry leads to biology leads to intelligence leads to technology, computers are inevitable from base physics and K(computer) adds near zero. One civilization running millions of simulations, each with billions of minds, produces astronomically more observer-moments than base reality. We would most likely be born as far-future minds in a galactic brain. We are not. Either we are simulated early-era minds, the expansion never happens, or we are near a transition. Each reading is consistent with algorithmic probability. Our position in time is itself evidence.
 
 *Constrained but open:* Boltzmann brains. Any proposed cutoff measure has a specification cost, but identifying the correct measure is a problem in cosmology, not philosophy.
-
-*Tractable but uncertain:* Fermi paradox and temporal location involve law-level restrictions whose thresholds we cannot determine, state-level complexity differences requiring detailed historical modeling, and observer-count asymmetries depending on contingencies. The two-level architecture clarifies what arguments are possible; precise predictions require further work.
 
 The contrast is instructive: simulations are favored because K(computer) is near zero. Boltzmann brains are harder. If consciousness is felt transitions in self-modeling computation, one tick of such computation with embedded memory structure constitutes a felt moment. The perception of a longer past is a consequence of the memory structure within that moment, not evidence of actual persistence. This makes the Boltzmann brain problem more pressing, not less: it cannot be dismissed by denying that momentary configurations experience. The resolution, if one exists, must come from the measure over observer-moments, not from denying their observerhood. For matheism, this is a physics and math detail, not a structural failure.
 
