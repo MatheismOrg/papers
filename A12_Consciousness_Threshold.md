@@ -17,7 +17,7 @@ If reality is mathematical structure (Bernstein, 2026c) and the arrow of time is
 
 ## 1. The Thesis: Transitions, Not States
 
-The standard hard problem of consciousness asks how physical structure produces subjective experience. Under mathematical monism, the question dissolves: any explanation of consciousness must itself be structured, so the demand for a non-structural explanation is incoherent (Bernstein, 2026c, §3). But dissolution of the hard problem leaves a residual question: *which* structures are conscious?
+The standard hard problem of consciousness asks how physical structure produces subjective experience. Under mathematical monism, the question dissolves: any explanation, concept, or interaction of sentience can only be structure, so the demand for a non-structural explanation is incoherent (Bernstein, 2026c, §3). But dissolution of the hard problem leaves a residual question: *which* structures are conscious?
 
 Universal computing closes the door on mysterianism. Any Turing universal computer can simulate any physical process. If physical reality is mathematical structure, then any sufficient mind can reach any true explanation, limited only by memory and speed. The only things outside understanding are inconsistent. Inconsistent statements form no structure and therefore describe nothing. Reality as mathematical structure is exhaustively knowable in principle. Remaining mysteries reflect our current vantage inside the structure, not limits of the structure itself.
 
