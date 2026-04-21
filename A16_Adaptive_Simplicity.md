@@ -7,7 +7,7 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 
 ## Abstract
 
-Human cognition systematically favors simpler explanations, concepts, and models (Chater & Vitanyi, 2003; Feldman, 2000; Lombrozo, 2007). This preference is typically treated as a heuristic: useful but without principled justification for why simpler hypotheses are more likely true. This paper provides the missing justification. Under algorithmic probability (Solomonoff, 1964; Schmidhuber, 2000), where a structure's measure is P(S) proportional to 2^(-K(S)) with K denoting Kolmogorov complexity, simpler structures are exponentially more probable. Each additional bit of specification halves a structure's measure. This is a mathematical fact about the distribution of structures.
+Human cognition systematically favors simpler explanations, concepts, and models (Chater & Vitanyi, 2003; Feldman, 2000; Lombrozo, 2007). This preference is typically treated as a heuristic: useful but without principled justification for why simpler hypotheses are more likely true. This paper provides the missing justification. Under the Simplicity Dominance Principle (SDP; Solomonoff, 1964; Schmidhuber, 2000; Bernstein, 2026d), where a structure's measure is P(S) proportional to 2^(-K(S)) with K denoting Kolmogorov complexity, simpler structures are exponentially more probable. Each additional bit of specification halves a structure's measure. This is SDP: a mathematical fact about the distribution of structures.
 
 If simpler explanations describe more probable structures, then organisms that preferentially adopt simpler explanations will, on average, act on more accurate models. Natural selection therefore favors simplicity preference. The preference is a calibration to the actual distribution of structures.
 
@@ -27,11 +27,11 @@ What none of these accounts provides is a principled reason why simpler hypothes
 
 ## 2. The Mathematical Ground
 
-Algorithmic probability provides the missing ground. The argument proceeds in three steps.
+SDP provides the missing ground. The argument proceeds in three steps.
 
 **Step 1: Algorithmic probability.** Solomonoff (1964) showed that the probability of a string x under a universal distribution is dominated by the shortest program that generates x. Formally, for universal prefix-free Turing machine U, the algorithmic probability m(x) = sum over p of 2^(-|p|) for all p such that U(p) = x. This sum is dominated by the shortest such p. Strings with short generating programs are exponentially more probable than strings with long generating programs.
 
-**Step 2: From strings to structures.** If physical structures are identified with their mathematical descriptions (Tegmark, 2014; Bernstein, 2026c), then algorithmic probability applies to structures, not just strings. A structure with Kolmogorov complexity K(S) = k has measure proportional to 2^(-k). Each additional bit of specification halves the measure. This identification is defended independently (Bernstein, 2026c) but the present argument requires only the weaker claim that algorithmic probability provides a reasonable prior over hypotheses, which is the standard Solomonoff induction framework already accepted in machine learning theory.
+**Step 2: From strings to structures.** If physical structures are identified with their mathematical descriptions (Tegmark, 2014; Bernstein, 2026c), then algorithmic probability applies to structures, not just strings. A structure with Kolmogorov complexity K(S) = k has measure proportional to 2^(-k). Each additional bit of specification halves the measure. This identification is defended independently (Bernstein, 2026c) but the present argument requires only the weaker claim that SDP provides a reasonable prior over hypotheses, which is the standard Solomonoff induction framework already accepted in machine learning theory.
 
 **Step 3: Adaptive calibration.** If simpler structures are exponentially more probable, then an organism whose hypothesis-selection mechanism preferentially adopts lower-K hypotheses will, on average, select hypotheses that are more often correct. Natural selection favors mechanisms that produce accurate models of the environment. Therefore, natural selection favors simplicity preference.
 
@@ -41,11 +41,11 @@ The exponential character of the advantage is important. The simplicity preferen
 
 This framework provides a unified explanation for several established findings.
 
-**Concept difficulty tracks description length.** Feldman (2000) showed that Boolean concept difficulty is predicted by Boolean complexity. Under algorithmic probability, lower-complexity concepts correspond to higher-measure structures. The brain encounters these structures more frequently and has more training data for them, making them easier to learn. The complexity-difficulty correlation is a consequence of the complexity-probability correlation.
+**Concept difficulty tracks description length.** Feldman (2000) showed that Boolean concept difficulty is predicted by Boolean complexity. Under SDP, lower-complexity concepts correspond to higher-measure structures. The brain encounters these structures more frequently and has more training data for them, making them easier to learn. The complexity-difficulty correlation is a consequence of the complexity-probability correlation.
 
-**Children learn regular patterns before exceptions.** Regular patterns have lower K than patterns with exceptions. Under algorithmic probability, regular patterns are more probable and therefore more frequently instantiated in the child's environment. The learning order tracks the probability order, which tracks the complexity order.
+**Children learn regular patterns before exceptions.** Regular patterns have lower K than patterns with exceptions. Under SDP, regular patterns are more probable and therefore more frequently instantiated in the child's environment. The learning order tracks the probability order, which tracks the complexity order.
 
-**Explanatory breadth is preferred.** Lombrozo (2007) showed that people prefer explanations covering multiple phenomena over narrow explanations. A single principle covering n phenomena has total description length K(principle) + K(mapping). Separate explanations have total description length sum of K(explanation_i). When the principle is simpler than the sum of separate explanations, the unified explanation has lower total K and is therefore more probable under algorithmic probability. The preference for breadth is a preference for lower total K.
+**Explanatory breadth is preferred.** Lombrozo (2007) showed that people prefer explanations covering multiple phenomena over narrow explanations. A single principle covering n phenomena has total description length K(principle) + K(mapping). Separate explanations have total description length sum of K(explanation_i). When the principle is simpler than the sum of separate explanations, the unified explanation has lower total K and is therefore more probable under SDP. The preference for breadth is a preference for lower total K.
 
 **Conspiracy theories provoke resistance.** Conspiracy theories typically require specifying hidden agents, secret coordination, and suppressed evidence. Each additional element increases K. The simpler explanation (visible causes producing visible effects) has lower K and is exponentially more probable. Cognitive resistance to conspiracy theories tracks the K-gap between the conspiratorial and non-conspiratorial hypotheses.
 
