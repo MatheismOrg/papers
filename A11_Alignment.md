@@ -139,4 +139,4 @@ Russell, S. (2019). *Human Compatible: AI and the Problem of Control*. Viking.
 
 Tegmark, M. (2014). *Our Mathematical Universe*. Knopf.
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

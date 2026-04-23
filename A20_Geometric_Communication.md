@@ -112,4 +112,4 @@ Susskind, L. (1995). The world as a hologram. *Journal of Mathematical Physics*,
 
 Weinstein, E. (2021). Geometric Unity: A first look. (Preprint.)
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

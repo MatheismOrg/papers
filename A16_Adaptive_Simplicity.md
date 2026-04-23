@@ -109,4 +109,4 @@ Solomonoff, R. J. (1964). A formal theory of inductive inference. *Information a
 
 Tegmark, M. (2014). *Our Mathematical Universe*. Knopf.
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

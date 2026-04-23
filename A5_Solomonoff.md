@@ -66,7 +66,7 @@ Algorithmic probability is uniquely motivated:
 
 **Combinatorics:** In a prefix-free coding, each program of length k occupies a fraction 2^(-k) of program-space. A 10-bit program occupies fraction 2^(-10). A 100-bit program occupies fraction 2^(-100). Shorter programs have exponentially higher measure, not because they are more numerous but because each claims a larger fraction of program-space. A "program" here is a finite description, not a process. No computation is required. The structures exist as mathematics. The measure is over specifications, not executions.
 
-**Coherence:** SDP explains why Occam's Razor works. If simpler theories were not more likely true, parsimony's success in the history of science would be miraculous.
+**Coherence:** This explains why Occam's Razor works. If simpler theories were not more likely true, parsimony's success in the history of science would be miraculous.
 
 The critic asking "why this measure?" must produce an alternative satisfying comparable desiderata. Lebesgue measure is undefined over discrete program space. Uniform measure requires arbitrary cutoffs. Complexity-favoring measures yield the Boltzmann brain catastrophe.
 
@@ -90,15 +90,15 @@ This explains the observed simplicity of physical laws. The Standard Model Lagra
 
 ### 4.3 Variational Laws Explained
 
-Physical laws take variational form: least action, Einstein-Hilbert action, path integrals. SDP explains why.
+Physical laws take variational form: least action, Einstein-Hilbert action, path integrals. This explains why.
 
 Consider two ways to specify identical physics: (a) "Systems follow paths extremizing S equal to the integral of L dt" (compact variational principle); (b) exhaustive enumeration of permitted trajectories.
 
-Specification (a) has vastly lower K(S). Variational universes dominate the measure. SDP selects for universes whose physics takes variational form, because variational specifications occupy more of program-space.
+Specification (a) has vastly lower K(S). Variational universes dominate the measure. The principle selects for universes whose physics takes variational form, because variational specifications occupy more of program-space.
 
 ### 4.4 Fine-Tuning Resolved
 
-Physical constants appear calibrated for complexity. SDP explains: among observer-supporting structures, those with simple laws dominate. Fine-tuning is what simplicity looks like from the inside. No designer is needed because no selection occurred. The appearance of tuning is a measure effect: the simplest observer-permitting structures dominate.
+Physical constants appear calibrated for complexity. This explains: among observer-supporting structures, those with simple laws dominate. Fine-tuning is what simplicity looks like from the inside. No designer is needed because no selection occurred. The appearance of tuning is a measure effect: the simplest observer-permitting structures dominate.
 
 ### 4.5 Unreasonable Effectiveness Explained
 
@@ -144,11 +144,11 @@ Third, Schmidhuber's Speed Prior adds a computational time penalty beyond algori
 
 Three standard objections to algorithmic probability require explicit acknowledgment.
 
-**Uncomputability.** Kolmogorov complexity K(S) is uncomputable: no algorithm can determine the shortest program generating an arbitrary string (Li & Vitanyi, 2008). This is true but does not undermine the framework's utility. We do not need exact values of K. We need the ordering: K(simple laws) < K(complex laws) < K(random configurations). This ordering is decidable in practice for the structures relevant to physics. The Standard Model has lower K than a random Lagrangian; general relativity has lower K than an arbitrary metric. Uncomputability limits precision, not applicability.
+**Uncomputability.** Kolmogorov complexity K(S) is uncomputable: no algorithm can determine the shortest program generating an arbitrary string (Li & Vitanyi, 2008). This is true but does not undermine the principle's utility. We do not need exact values of K. We need the ordering: K(simple laws) < K(complex laws) < K(random configurations). This ordering is decidable in practice for the structures relevant to physics. The Standard Model has lower K than a random Lagrangian; general relativity has lower K than an arbitrary metric. Uncomputability limits precision, not applicability.
 
 **UTM dependence.** K(S) depends on the choice of universal Turing machine, up to an additive constant c (the invariance theorem). For short strings, c dominates and K is meaningless. For the structures relevant to cosmology (physical laws with K in the hundreds or thousands of bits) the additive constant is negligible relative to the complexity differences between competing theories. The framework applies to the domain where it matters.
 
-**Normalization.** The sum ∑ 2^(-K(S)) over all computable structures converges to a value ≤ 1 (Solomonoff's prior is a semi-measure). This is a feature, not a bug: the "missing" probability mass corresponds to uncomputable structures, which under the framework have measure zero. The semi-measure is the correct measure over computable mathematical structures, which are the only ones with well-defined K.
+**Normalization.** The sum ∑ 2^(-K(S)) over all computable structures converges to a value ≤ 1 (Solomonoff's prior is a semi-measure). This is a feature, not a bug: the "missing" probability mass corresponds to uncomputable structures, which under the principle have measure zero. The semi-measure is the correct measure over computable mathematical structures, which are the only ones with well-defined K.
 
 These limitations are inherited from algorithmic information theory itself and apply equally to any framework using Solomonoff's prior. They do not uniquely burden the ontological extension proposed here.
 
@@ -156,7 +156,7 @@ These limitations are inherited from algorithmic information theory itself and a
 
 ## 7. Conclusion
 
-Solomonoff's algorithmic probability, initially an epistemic principle, reflects the structure of reality. We extended the framework from inference to existence via the pattern-randomness dichotomy establishing that reality is mathematical structure.
+Solomonoff's algorithmic probability, initially an epistemic principle, reflects the structure of reality. We extended the principle from inference to existence via the pattern-randomness dichotomy establishing that reality is mathematical structure.
 
 The implications are substantial: non-computable structures have measure zero, variational laws dominate, fine-tuning is explained, and Occam's Razor is grounded. We understand why simplicity tracks truth: simpler structures dominate the natural measure over structure-space.
 
@@ -184,4 +184,4 @@ Wigner, E. (1960). The unreasonable effectiveness of mathematics in the natural 
 
 Tegmark, M. (2008). The mathematical universe. *Foundations of Physics*, 38(2), 101-150.
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

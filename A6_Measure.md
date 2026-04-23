@@ -102,4 +102,4 @@ Bernstein, G. A. (2026d, 2026e). Why these simple laws? Deriving physics from ma
 
 
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

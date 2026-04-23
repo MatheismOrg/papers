@@ -111,12 +111,7 @@ The infinite jet bundle has a further structural consequence. Under superdetermi
 
 The chain developed across companion papers:
 
-- Mathematical monism: all consistent structures exist (Bernstein, 2026c)
-- SDP: simpler structures dominate (Bernstein, 2026d)
-- Simple rules: collapsed architecture is SDP-favored (Bernstein, 2026j)
-- Arrow: many-to-one creates time's direction (Bernstein, 2026h)
-- PoLA: many-to-one creates variational dynamics (Bernstein, 2026k)
-- GU: metric bundle is variational geometry (Bernstein, 2026m)
+- Mathematical monism, SDP, arrow of time, variational dynamics, and geometric unity form a unified chain from mathematical necessity to physical structure (Bernstein, 2026c-o; see companion papers)
 - Harmonics: the tower is infinite, automatic, and the source of all physics (this paper)
 
 Each result follows from the same structural fact: mathematical necessity produces structure at zero algorithmic cost. The physics is in what dominates. Everything exists. Most of it is quiet.
@@ -125,19 +120,7 @@ Each result follows from the same structural fact: mathematical necessity produc
 
 ## References
 
-Bernstein, G. A. (2026c). Reality is mathematical structure.
-
-Bernstein, G. A. (2026d). Why these simple laws? Deriving physics from mathematical necessity.
-
-Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
-
-Bernstein, G. A. (2026j). Simple rewriting rules are exponentially favored as fundamental physics.
-
-Bernstein, G. A. (2026k). Why nature minimizes: The many-to-one root of time, action, and emergence.
-
-Bernstein, G. A. (2026m). Geometric Unity as emergent variational geometry: Why 14 dimensions cost nothing.
-
-Bernstein, G. A. (2026o). Geometric hidden variables for superdeterminism: Jet bundle modes as the missing substrate.
+Bernstein, G. A. (2026c-o). Companion papers on mathematical monism, SDP, arrow of time, variational dynamics, and geometric unity. Available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).
 
 
 
@@ -155,4 +138,4 @@ Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Wolfr
 
 Zuse, K. (1969). *Rechnender Raum*. Vieweg.
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

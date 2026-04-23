@@ -103,7 +103,7 @@ Deutsch's strongest line treats the arrow as perspectival. On his view, the univ
 
 But Deutsch's own constructor theory defeats the global framing. Constructor theory defines physics through local tasks: what constructors can reliably perform on substrates and return to a ready state. Any task that returns a constructor to its ready state is many-to-one over histories. Multiple execution histories map to the same ready-state description. The arrow lives at exactly the level his own method selects.
 
-So Deutsch is right about global reversibility and wrong that it removes the arrow. Once physics is described through tasks (measurement, preparation, discrimination, memory, stabilization, resettable action), irreversibility reappears at the level that matters for agents.
+So Deutsch is right about global reversibility and wrong that it removes the arrow. A further K-based argument reinforces the point: a universe described forward from initial conditions I₀ has total complexity K(L) + K(I₀), both low. Described backward from a final state, K is enormous. The arrow follows from the K-decomposition alone, with no reference to the global wavefunction. The global wavefunction adds specification cost without adding explanatory power for the arrow. MWI adds explanatory power for the absence of collapse, not for the direction of time. Once physics is described through tasks (measurement, preparation, discrimination, memory, stabilization, resettable action), irreversibility reappears at the level that matters for agents.
 
 The right conclusion is more precise:
 
@@ -163,4 +163,4 @@ Deutsch, D. (2013). Constructor theory. *Synthese*, 190(18), 4331–4359.
 
 Landauer, R. (1961). Irreversibility and heat generation in the computing process. *IBM Journal of Research and Development*, 5(3), 183–191.
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

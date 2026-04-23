@@ -21,7 +21,7 @@ From this foundation, striking consequences follow. If existence is identical to
 
 But the multiverse raises a new puzzle: the measure problem. Among all structures, which should observers expect to inhabit? Without a measure, predictions are impossible. Certain naive measures yield catastrophe (Boltzmann brains dominating). Section 4 proposes algorithmic probability (Solomonoff, 1964; Schmidhuber, 2000): structures are weighted by SDP: P(S) ∝ 2^(−K(S)), where K(S) is Kolmogorov complexity. Algorithmic probability is uniquely motivated by information-theoretic considerations. Moreover, since reality *is* structure, the measure is not chosen but discovered: SDP is the natural measure over structure-space, not an external imposition.
 
-Section 4 derives consequences and testable predictions, including a novel explanation for why physical laws take variational form: SDP selects for universes whose physics follows the Principle of Least Action, because variational specifications have lower generative complexity. Section 5 examines implications for quantum mechanics. Section 7 responds to objections.
+Section 4 derives consequences and testable predictions, including a novel explanation for why physical laws take variational form: The principle selects for universes whose physics follows the Principle of Least Action, because variational specifications have lower generative complexity. Section 5 examines implications for quantum mechanics. Section 7 responds to objections.
 
 The position developed here (call it *mathematical monism*, or *Matheism*) completes Ontic Structural Realism (OSR) as defended by Ladyman and Ross (2007) and French (2014, 2022). Standard OSR describes structure as reality's sole constituent but does not explain *why* structure exists. The pattern-randomness dichotomy closes this gap: mathematical consistency is self-necessitating; consistent structures cannot fail to exist, just as 2+2 cannot fail to equal 4\. The philosophical derivation is given in Bernstein (2026c); the present paper develops the physical consequences.
 
@@ -67,7 +67,7 @@ where K(S) is the Kolmogorov complexity of S, that is, the length of the shortes
 
 This approach builds on Schmidhuber's (2000, 2002) algorithmic theories of everything, which first rigorously proposed that universes are weighted by SDP. Schmidhuber further refined this with the Speed Prior, incorporating computation time alongside program length. The contribution here is not scope but grounding: deriving *why* the ensemble exists (via the null filter argument) and *why* SDP governs it, rather than positing both as starting assumptions. Positing an ensemble is assertion; deriving it closes the objection "why this ensemble rather than another?" The null filter argument shows the ensemble is not one hypothesis among alternatives but the unique non-arbitrary solution. Similarly, positing SDP as the measure invites "why this measure?"; grounding it in the combinatorics of program length shows it was always there. Tegmark's (2008) Mathematical Universe Hypothesis asserts that all mathematical structures exist but does not derive it; Schmidhuber's framework provides the measure but posits the ensemble. The present work derives the ensemble a priori, then applies SDP as its natural measure.
 
-In practice, non-computable structures have undefined K, so SDP assigns them no determinate measure; only computable structures contribute to predictions. The inclusion of all consistent structures is for logical completeness, as the pattern-randomness dichotomy does not exclude them a priori. More precisely: non-computable structures require oracle machines, which depend on oracles encoding infinite brute facts (e.g., which programs halt). If there were a pattern, the oracle would be computable. So oracles are maximally random, with K = ∞, yielding measure 2^(−∞) = 0. Non-computable structures exist but have measure zero. This derives Schmidhuber's restriction to computable structures from the measure itself, rather than imposing it by fiat.
+In practice, non-computable structures have undefined K, so It assigns them no determinate measure; only computable structures contribute to predictions. The inclusion of all consistent structures is for logical completeness, as the pattern-randomness dichotomy does not exclude them a priori. More precisely: non-computable structures require oracle machines, which depend on oracles encoding infinite brute facts (e.g., which programs halt). If there were a pattern, the oracle would be computable. So oracles are maximally random, with K = ∞, yielding measure 2^(−∞) = 0. Non-computable structures exist but have measure zero. This derives Schmidhuber's restriction to computable structures from the measure itself, rather than imposing it by fiat.
 
 Note that simple, finitely specifiable laws can generate non-computable phenomena as outputs (e.g., undecidable spectral gaps, chaotic systems requiring infinite precision). The laws have low K; some consequences may not. The measure weighs structures by the complexity of their generating rules, not their outputs. Theories with continuous dynamics but finite specification (such as string theory) remain consistent with SDP; the constraint is finite specifiability, which discrete approaches satisfy manifestly.
 
@@ -93,7 +93,7 @@ Four converging justifications support algorithmic probability:
 
 **Measure-theoretic justification:** In a prefix-free coding, each program of length k occupies a fraction 2^(-k) of program-space. A 10-bit program occupies fraction 2^(-10). A 1000-bit program occupies fraction 2^(-1000). The short program has 2^990 times higher measure, not because short programs are more numerous (they are not: there are more long programs than short ones) but because each short program claims a larger fraction of the space. If we imagine a universal Turing machine fed random bits, the probability of hitting any specific short program is exponentially higher than hitting any specific long one. This is Solomonoff's (1964) foundation for inductive inference; SDP extends it from epistemology to ontology. A "program" here is a finite description, not a process requiring execution. The structures exist as mathematics. The measure is over specifications, not computations. Schmidhuber (1997, 2000, 2002) developed this into algorithmic theories of everything; the present argument provides the a priori derivation for why the ensemble exists.
 
-**Coherence justification:** SDP makes our universe not miraculous. Physical laws take simple forms (the Standard Model Lagrangian, the single function encoding all particle physics as kinetic minus potential energy, fits on a t-shirt; general relativity derives from a one-line action principle). If all structures existed with equal measure, simple laws would be vanishingly unlikely among observer-supporting structures. SDP explains why simplicity prevails.
+**Coherence justification:** SDP makes our universe not miraculous. Physical laws take simple forms (the Standard Model Lagrangian, the single function encoding all particle physics as kinetic minus potential energy, fits on a t-shirt; general relativity derives from a one-line action principle). If all structures existed with equal measure, simple laws would be vanishingly unlikely among observer-supporting structures. This explains why simplicity prevails.
 
 **Invariance justification:** SDP is the only measure invariant under computable transformations up to multiplicative constants. Any alternative measure either fails invariance (making it coordinate-dependent) or reduces to algorithmic probability. This uniqueness makes algorithmic probability not one arbitrary choice among many, but the canonical choice dictated by the structure of computation itself.
 
@@ -107,11 +107,11 @@ This uniqueness deserves emphasis. The critic asking 'why SDP rather than some o
 
 ### **3.4 Occam's Razor as Metaphysical Principle**
 
-SDP provides a grounding for Occam's Razor. Traditionally, parsimony is treated as methodological preference: we should prefer simpler theories, but without clear justification for why simpler theories are more likely true. Hossenfelder (2018) pressed this point, asking why physics should prefer simplicity at all. SDP answers: lower-K structures have exponentially higher measure. The criterion is not beauty but brevity.
+The principle provides a grounding for Occam's Razor. Traditionally, parsimony is treated as methodological preference: we should prefer simpler theories, but without clear justification for why simpler theories are more likely true. Hossenfelder (2018) pressed this point, asking why physics should prefer simplicity at all. SDP answers: lower-K structures have exponentially higher measure. The criterion is not beauty but brevity.
 
 Algorithmic probability transforms this. Since simpler structures dominate the measure over all mathematical structures, simpler theories are more likely true because they describe more probable structures. Occam's Razor is not an arbitrary aesthetic preference or pragmatic heuristic; it is a theorem about the structure of reality.
 
-This explains the otherwise mysterious success of parsimony in science. Newton's laws, Maxwell's equations, Einstein's field equations, and the Standard Model Lagrangian all exhibit striking simplicity despite describing enormously complex phenomena. If simplicity had no connection to truth, this track record would be miraculous coincidence. SDP explains it: scientists have been unconsciously tracking algorithmic probability, favoring theories that describe high-measure structures.
+This explains the otherwise mysterious success of parsimony in science. Newton's laws, Maxwell's equations, Einstein's field equations, and the Standard Model Lagrangian all exhibit striking simplicity despite describing enormously complex phenomena. If simplicity had no connection to truth, this track record would be miraculous coincidence. This explains it: scientists have been unconsciously tracking algorithmic probability, favoring theories that describe high-measure structures.
 
 ### **3.5 Limitations and Open Questions**
 
@@ -125,7 +125,7 @@ Algorithmic probability faces technical challenges that deserve acknowledgment:
 
 **Argumentative status:** Given the a priori foundation, the Level IV multiverse follows deductively: all consistent structures must exist if existence is mathematical consistency. *Which measure* governs the ensemble is not derivable a priori but is established by inference to best explanation. Algorithmic probability is the best available hypothesis for the measure problem, with theoretical virtues no competitor matches.
 
-Despite these challenges, SDP provides a principled basis where alternatives offer none.
+Despite these challenges, The principle provides a principled basis where alternatives offer none.
 
 ---
 
@@ -145,7 +145,7 @@ More precisely: let S\_obs be the set of observer-supporting structures. Algorit
 
 A striking feature of fundamental physics: laws take variational form. Classical mechanics follows from the principle of least action. General relativity derives from the Einstein-Hilbert action. Quantum mechanics admits path-integral formulation. The Standard Model is defined by a Lagrangian. Fermat's principle governs optics; Hamilton's principle governs dynamics; the Einstein-Hilbert action governs spacetime geometry.
 
-Why should nature prefer variational principles? SDP provides an answer that transforms this from brute fact to structural necessity.
+Why should nature prefer variational principles? The principle provides an answer that transforms this from brute fact to structural necessity.
 
 Consider two ways to specify the same physics:
 
@@ -313,7 +313,7 @@ Additionally, while the full Level IV multiverse remains empirically inaccessibl
 
 *Response:* Algorithmic probability is not ad hoc but uniquely motivated. Algorithmic probability is the unique measure dominating all computable alternatives (Solomonoff's completeness result). It is not one arbitrary choice among many; it is the principled choice given information-theoretic foundations.
 
-Furthermore, algorithmic probability has independent support: it explains why Occam's Razor works. If simpler theories were not more likely to be true, the historical success of parsimony would be miraculous. SDP provides the metaphysical ground for inductive methodology.
+Furthermore, algorithmic probability has independent support: it explains why Occam's Razor works. If simpler theories were not more likely to be true, the historical success of parsimony would be miraculous. The principle provides the metaphysical ground for inductive methodology.
 
 ### **6.3 'The Measure Problem Is Unsolvable'**
 
@@ -379,7 +379,7 @@ Observers in the far future require more specification than early observers. As 
 
 The implication is striking. If future civilizations produce trillions of sentient AI minds or colonize trillions of planets, most observer-moments would be in the far future. Under any self-sampling measure, we would expect to find ourselves there, not here. That we find ourselves early suggests one of two conclusions: either the large-scale expansion of sentience does not happen, or the specification cost of indexing a future observer-moment grows faster than the observer count. Both are testable in principle. Neither is comfortable.
 
-**Verdict:** SDP provides principled reason to expect early temporal location, consistent with observation. Our position in time is itself evidence about the future of sentience.
+**Verdict:** The principle provides principled reason to expect early temporal location, consistent with observation. Our position in time is itself evidence about the future of sentience.
 
 #### **6.4.5 The Arrow of Time as Consequence of Algorithmic Probability**
 

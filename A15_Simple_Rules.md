@@ -7,7 +7,7 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 
 ## Abstract
 
-Under the Simplicity Dominance Principle (SDP), where a structure's measure is P(S) ∝ 2^(−K(S)), the most probable fundamental physics is the one with the shortest generating description. This paper argues that simple rewriting rules, such as those explored by Wolfram's Physics Project, are structurally the lowest-K candidates for fundamental physics. The reason is architectural: a rewriting rule collapses framework, parameters, and dynamics into a single object. Traditional physics separates framework (quantum field theory, general relativity), parameters (coupling constants, masses), and dynamics (equations of motion). Each separation adds specification cost. A rewriting rule has no such separation: the rule IS the framework, the parameters, and the dynamics. This architectural collapse is why rewriting rules can achieve total K in the range of tens of bits, while the Standard Model plus General Relativity requires roughly 190 bits of framework plus 20 to 27 free parameter values. The paper does not claim that a specific rule has been found. It argues that SDP predicts the fundamental theory has this architectural structure, and that the search should proceed by enumeration and mathematical derivation of simple rules rather than by constructing larger frameworks.
+Under the Simplicity Dominance Principle (SDP), where a structure's measure is P(S) ∝ 2^(−K(S)), the most probable fundamental physics is the one with the shortest generating description. This paper argues that simple rewriting rules, such as those explored by Wolfram's Physics Project, are structurally the lowest-K candidates for fundamental physics. The reason is architectural: a rewriting rule collapses framework, parameters, and dynamics into a single object. Traditional physics separates framework (quantum field theory, general relativity), parameters (coupling constants, masses), and dynamics (equations of motion). Each separation adds specification cost. A rewriting rule has no such separation: the rule IS the principle, the parameters, and the dynamics. This architectural collapse is why rewriting rules can achieve total K in the range of tens of bits, while the Standard Model plus General Relativity requires roughly 190 bits of framework plus 20 to 27 free parameter values. The paper does not claim that a specific rule has been found. It argues that The principle predicts the fundamental theory has this architectural structure, and that the search should proceed by enumeration and mathematical derivation of simple rules rather than by constructing larger frameworks.
 
 **Keywords:** rewriting rules, hypergraphs, Simplicity Dominance Principle, Kolmogorov complexity, Wolfram Physics Project, Theory of Everything
 
@@ -17,7 +17,7 @@ Under the Simplicity Dominance Principle (SDP), where a structure's measure is P
 
 Two descriptions of the same physics can have vastly different Kolmogorov complexity depending on their architecture.
 
-**Separated architecture:** Specify a framework (quantum field theory: path integral, gauge principle, renormalization). Specify parameters (coupling constants, masses). Specify initial conditions. Each component is a separate specification requiring separate bits. Total K is the sum.
+**Separated architecture:** Specify a principle (quantum field theory: path integral, gauge principle, renormalization). Specify parameters (coupling constants, masses). Specify initial conditions. Each component is a separate specification requiring separate bits. Total K is the sum.
 
 **Collapsed architecture:** Specify a single rule. The rule generates spacetime, forces, particles, and constants as emergent properties of its evolution. No separate framework. No separate parameters. Total K is the length of the rule.
 
@@ -62,7 +62,7 @@ If fundamental rewriting rules operate at scales around 10^(-93) meters (as Wolf
 
 Mathematical derivation rather than brute-force simulation is required. This means proving that certain classes of rules necessarily produce certain emergent properties (dimensionality, gauge symmetry, specific particle content) without simulating every intermediate step.
 
-This gap does not weaken the SDP argument. SDP predicts that the fundamental theory has low K. It does not predict that verification is easy. A rule with K = 25 bits may require 10^400 computational steps to verify, but its measure is still 2^(-25), which exponentially dominates any candidate with K = 200. The difficulty of verification is independent of the probability of truth.
+This gap does not weaken the SDP argument. The principle predicts that the fundamental theory has low K. It does not predict that verification is easy. A rule with K = 25 bits may require 10^400 computational steps to verify, but its measure is still 2^(-25), which exponentially dominates any candidate with K = 200. The difficulty of verification is independent of the probability of truth.
 
 ## 5. Evidence from Enumeration
 
@@ -76,11 +76,11 @@ The Wolfram Physics Project has enumerated simple hypergraph rules and found sev
 
 **Quantum mechanics.** The multiway graph of all possible rewrite orderings produces branching structures analogous to quantum superposition. Branchial space, the space of simultaneous rewrite possibilities, may correspond to quantum state space. This remains conjectural but provides a concrete research direction.
 
-No specific rule has been proven to reproduce the full Standard Model. This is the principal limitation of the program and must be stated honestly. The claim is not that a specific rule has been found. The claim is that SDP predicts the fundamental theory has this architectural structure, and that the enumeration results provide preliminary evidence that physics-like behavior emerges generically from simple rules, not only from carefully constructed ones.
+No specific rule has been proven to reproduce the full Standard Model. This is the principal limitation of the program and must be stated honestly. The claim is not that a specific rule has been found. The claim is that The principle predicts the fundamental theory has this architectural structure, and that the enumeration results provide preliminary evidence that physics-like behavior emerges generically from simple rules, not only from carefully constructed ones.
 
 ## 6. Objections
 
-**"No specific rule has been found."** Correct. The program is predictive, not yet confirmatory. SDP predicts the architecture; finding the specific rule is the remaining task. This is analogous to predicting that the TOE has low K without knowing the TOE: the prediction constrains the search space even before the search succeeds.
+**"No specific rule has been found."** Correct. The program is predictive, not yet confirmatory. The principle predicts the architecture; finding the specific rule is the remaining task. This is analogous to predicting that the TOE has low K without knowing the TOE: the prediction constrains the search space even before the search succeeds.
 
 **"Continuous physics cannot emerge from discrete rules."** Continuous behavior emerges from discrete substrates routinely: fluid dynamics from molecules, thermodynamics from particles, smooth geometry from triangulations in Regge calculus. The question is whether the continuum limit of the correct discrete rule reproduces known physics. This is an open empirical question, not a principled impossibility.
 
@@ -115,7 +115,7 @@ The search program follows: enumerate simple rules, derive their emergent proper
 
 ## 9. Conclusion
 
-Simple rewriting rules are exponentially favored as fundamental physics because they achieve the lowest possible specification complexity through architectural collapse. Where traditional physics separates framework, parameters, and dynamics, a rewriting rule unifies them into a single object with K in the tens of bits. SDP predicts this architecture. Wolfram's Physics Project is the most developed research program exploring it. Whether a specific rule reproduces our physics remains open. That it should is an SDP prediction. Higher K is exponentially suppressed. The search should proceed toward the simplest possible rules.
+Simple rewriting rules are exponentially favored as fundamental physics because they achieve the lowest possible specification complexity through architectural collapse. Where traditional physics separates framework, parameters, and dynamics, a rewriting rule unifies them into a single object with K in the tens of bits. The principle predicts this architecture. Wolfram's Physics Project is the most developed research program exploring it. Whether a specific rule reproduces our physics remains open. That it should is an SDP prediction. Higher K is exponentially suppressed. The search should proceed toward the simplest possible rules.
 
 ---
 
@@ -133,4 +133,4 @@ Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Wolfr
 
 Zuse, K. (1969). *Rechnender Raum* (Calculating Space). Friedrich Vieweg & Sohn.
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

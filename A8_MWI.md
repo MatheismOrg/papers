@@ -9,6 +9,8 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 
 The Many-Worlds Interpretation adds nothing to the Schrödinger equation. Collapse interpretations add non-unitary processes; hidden-variable theories add unobservable particles and pilot waves. I argue this difference in descriptive complexity has ontological consequences. Under algorithmic probability-the Solomonoff prior extended from epistemology to ontology-interpretations with lower Kolmogorov complexity dominate the measure over physical theories. Many-Worlds, requiring only unitary evolution, has minimal K and is therefore most probable. This transforms "MWI is simpler" from aesthetic preference to measure-theoretic claim. The argument rests on establishing that reality is mathematical structure via an exhaustive pattern-randomness dichotomy, then showing that algorithmic probability provides the natural measure over structure-space. Bell correlations, rather than posing puzzles about nonlocality, become structural features of unified mathematical objects. The position explains why simpler physical theories tend to be true: they describe higher-measure structures.
 
+**Keywords:** Many-Worlds Interpretation, Simplicity Dominance Principle, Kolmogorov complexity, algorithmic probability, quantum foundations, Schrödinger equation, Born rule, measurement problem, mathematical monism
+
 ---
 
 *Simple is probable. Many-Worlds is Occam's Razor. Collapse is not.*
@@ -45,7 +47,7 @@ The only candidate is non-relational substrate. But substrate without properties
 
 ### 3.1 The Measure Problem
 
-If reality is mathematical structure, all self-consistent structures exist. This raises the measure problem: among all structures, which should observers expect to inhabit? A clarification is needed. One can write down a Lagrangian (kinetic minus potential energy) with contradictory symmetry requirements, or assert that a particle simultaneously has definite position and momentum beyond the Heisenberg bound. The notation exists as a consistent string of symbols, carried by consistent physical media. But the physics it purports to describe cannot be instantiated as a functioning structure: the constraints are mutually exclusive under standard quantum mechanics. To make such a claim coherent requires modifying the framework, and that modification is itself an act of consistent reasoning. Inconsistent content can only be rescued by consistent mathematics. This is the sole building material.
+If reality is mathematical structure, all self-consistent structures exist. This raises the measure problem: among all structures, which should observers expect to inhabit? A clarification is needed. One can write down a Lagrangian (kinetic minus potential energy) with contradictory symmetry requirements, or assert that a particle simultaneously has definite position and momentum beyond the Heisenberg bound. The notation exists as a consistent string of symbols, carried by consistent physical media. But the physics it purports to describe cannot be instantiated as a functioning structure: the constraints are mutually exclusive under standard quantum mechanics. To make such a claim coherent requires modifying the principle, and that modification is itself an act of consistent reasoning. Inconsistent content can only be rescued by consistent mathematics. This is the sole building material.
 
 Since reality *is* structure, the measure is discovered. We seek the natural measure over structure-space.
 
@@ -63,7 +65,7 @@ Algorithmic probability is uniquely motivated:
 
 **Invariance:** The measure is machine-independent up to multiplicative constants. Different universal Turing machines yield K values differing by at most an additive constant.
 
-**Coherence:** SDP explains why Occam's Razor works. If simpler theories were not more likely true, parsimony's success in science would be miraculous.
+**Coherence:** This explains why Occam's Razor works. If simpler theories were not more likely true, parsimony's success in science would be miraculous.
 
 Solomonoff intended algorithmic probability as epistemic: how to reason given uncertainty. SDP extends this to ontology: the measure governs existence as well as reasoning. We reason correctly about reality because algorithmic probability governs both inference and structure.
 
@@ -110,7 +112,7 @@ Why do observed frequencies match |Ψ|²? This remains an active research area. 
 
 The derivation is contested. Kent (2010) argues that Deutsch-Wallace assumes a specific notion of rationality that is not forced by the physics. Albert (2010) objects that the derivation smuggles in probability assumptions it claims to derive. These objections have force, but they target the specific derivation strategy, not the compatibility of the Born rule with MWI. If an additional postulate is required to recover the Born rule, K(MWI) increases by the complexity of that postulate. Under SDP, this matters: MWI's parsimony advantage over other interpretations depends on the Born rule being derivable rather than postulated. The question is open. We note that even with an additional Born rule postulate, MWI's total K remains lower than collapse interpretations, which require both the Born rule AND an infinite-K specification of which outcome was selected at each measurement event.
 
-The present framework is compatible with decision-theoretic approaches. SDP selects MWI as the dominant interpretation; within MWI, the Born rule emerges from rationality constraints (if Deutsch-Wallace succeeds) or from a compact additional postulate (if it does not). Either way, MWI avoids the infinite K(O) cost that collapse incurs. These are complementary, not competing claims.
+The present framework is compatible with decision-theoretic approaches. The principle selects MWI as the dominant interpretation; within MWI, the Born rule emerges from rationality constraints (if Deutsch-Wallace succeeds) or from a compact additional postulate (if it does not). Either way, MWI avoids the infinite K(O) cost that collapse incurs. These are complementary, not competing claims.
 
 A further SDP-compatible conjecture: high-amplitude branches may have lower K (less information needed to specify observer location within them), aligning algorithmic probability with Born probabilities at a deeper level. This remains plausible but unproven and is not required for the main argument.
 
@@ -182,7 +184,7 @@ Quantum interpretation selection is not a philosophical dispute to be settled by
 
 Collapse interpretations incur unbounded K(O), the only provably growing complexity cost. This alone places them below both deterministic alternatives. MWI currently leads on parsimony: the Schrödinger equation alone, with no additions, has minimal K among known frameworks. Superdeterminism is rehabilitated once the fine-tuning objection is recognized as a category error, specificity is not complexity.
 
-The final ranking depends on model-specific K computations that are not yet available. What SDP provides is the framework for making those computations meaningful: not which interpretation we prefer, but which interpretation the mathematics prefers.
+The final ranking depends on model-specific K computations that are not yet available. What SDP provides is the principle for making those computations meaningful: not which interpretation we prefer, but which interpretation the mathematics prefers.
 
 ---
 
@@ -222,4 +224,4 @@ Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the c
 
 Carroll, S. (2019). *Something Deeply Hidden: Quantum Worlds and the Emergence of Spacetime*. Dutton.
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

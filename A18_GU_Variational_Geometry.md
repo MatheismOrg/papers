@@ -112,4 +112,4 @@ Weinstein, E. (2021). Geometric Unity: A first look. (Preprint.)
 
 Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Wolfram Media.
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

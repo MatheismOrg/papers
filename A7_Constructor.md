@@ -240,4 +240,4 @@ Timpson, C. G. (2005). Nonlocality and information flow: The approach of Deutsch
 
 **Word count:** ~1,900
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).

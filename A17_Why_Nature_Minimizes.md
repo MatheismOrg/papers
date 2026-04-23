@@ -85,7 +85,7 @@ Both fail at observer-support. Variational physics appears forced for any univer
 
 The Simplicity Dominance Principle says structures with lower Kolmogorov complexity dominate exponentially. It selects for the simplest observer-supporting frameworks. If the Noether chain is correct, that all observer-supporting frameworks produce variational emergent physics, then SDP derives the Principle of Least Action. The derivation:
 
-1. SDP selects for lowest-K observer-supporting structures.
+1. The principle selects for lowest-K observer-supporting structures.
 2. Observer-supporting structures require stability, conservation, and symmetry (Noether chain).
 3. Conservation and symmetry require a variational formulation.
 4. Therefore observers inhabit structures with variational physics.
@@ -101,7 +101,7 @@ The computational arrow (instance one) is the structural foundation. Many-to-one
 
 The Principle of Least Action (instance two) is the coherent survivor. Many-to-one phase cancellation in the path integral produces variational classical physics from simple quantum mechanics.
 
-Coarse-graining emergence (instance three) is the bridge. Many-to-one averaging produces variational macro physics from simple discrete rules, connecting the fundamental simplicity SDP selects for to the variational physics observers inhabit.
+Coarse-graining emergence (instance three) is the bridge. Many-to-one averaging produces variational macro physics from simple discrete rules, connecting the fundamental simplicity The principle selects for to the variational physics observers inhabit.
 
 One mathematical structure. Three physical faces. One forcing argument from observers.
 
@@ -115,7 +115,7 @@ Second, it supports the hypothesis that our physics emerges from simple discrete
 
 Third, it strengthens the case that SDP is a single principle with convergent consequences rather than an ad hoc hypothesis applied separately to different domains. The arrow of time, the Principle of Least Action, and variational emergence are not three separate applications of SDP. They are one application seen at three scales.
 
-Fourth, it clarifies what would count as evidence against the framework. If a stable observer-supporting physics were found that is provably non-variational, with no action functional and no Noether symmetries yet with conservation laws arising from some other mechanism, that would challenge the Noether chain and weaken the derivation of PoLA from SDP.
+Fourth, it clarifies what would count as evidence against the principle. If a stable observer-supporting physics were found that is provably non-variational, with no action functional and no Noether symmetries yet with conservation laws arising from some other mechanism, that would challenge the Noether chain and weaken the derivation of PoLA from SDP.
 
 ---
 
@@ -139,4 +139,4 @@ Noether, E. (1918). Invariante Variationsprobleme. *Nachrichten von der Gesellsc
 
 Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Wolfram Media.
 
-All companion papers available at https://matheism.org
+Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).
