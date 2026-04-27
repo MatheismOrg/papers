@@ -109,7 +109,7 @@ The right conclusion is more precise:
 
 > **Global reversibility is compatible with a real computational arrow at the level of tasks.**
 
-That point favors Everettian pictures over collapse pictures, because collapse adds substrate-level irreversibility where task-level irreversibility already suffices. It also leaves room for superdeterministic pictures, provided they preserve the same forward-only task structure. The central thesis does not depend on choosing between those options.
+That point favors Everettian pictures over collapse pictures, because collapse adds substrate-level irreversibility where task-level irreversibility already suffices. It also leaves room for superdeterministic pictures, provided they preserve the same forward-only task structure. Einstein's own block universe implies superdeterminism: in a timeless manifold, measurement choices and hidden variables share the same geometric structure (Bernstein, 2026e). The central thesis does not depend on choosing between those options.
 
 ## 8. Thermodynamics
 
@@ -141,7 +141,7 @@ In the block universe, every temporal neighbor exists, yet the present state inh
 
 This yields a computational arrow of time. It accommodates global reversibility. It needs no collapse. It preserves retrodiction. It aligns with thermodynamic irreversibility without depending on any particular thermodynamic theory, and can be measured in part through algorithmic-probability considerations.
 
-Sentience inherits this arrow through the modeling requirement (Bernstein, 2026f): any system that models itself is subject to the same forward-only task structure.
+Sentience inherits this arrow through the modeling requirement (Bernstein, 2026f): any system that models itself is subject to the same forward-only task structure. The conscious observer effect, properly understood, is not quantum measurement collapse but the logical impossibility of computation in the underdetermined direction.
 
 One plus one leads to two. Two does not lead back to one plus one. The arrow is that inverse reconstruction is not, in general, a function. Later states need not be intrinsically more complex.
 

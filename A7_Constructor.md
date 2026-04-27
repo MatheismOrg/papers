@@ -1,26 +1,27 @@
-# The Constructor-Theoretic Foundation of Mathematical Reality
+# **The Constructor-Theoretic Foundation of Mathematical Reality**
 
 **Gary Abraham Bernstein**
 
-Independent Researcher
-ORCID: https://orcid.org/0009-0009-1761-2867
+Independent Researcher ORCID: https://orcid.org/0009-0009-1761-2867
 
-## Abstract
+## **Abstract**
 
 Constructor theory expresses physical laws in terms of which transformations are possible and which are impossible, rather than as trajectories from initial conditions. I argue that this position finds its deepest justification in the nature of mathematical structure itself. The pattern-randomness dichotomy (that all existence is either patterned or not-patterned (random), both of which are mathematical) is itself a constructor-theoretic principle: it specifies which substrates for physical law are possible (mathematical structures) and which are impossible (non-mathematical "stuff"). This grounds constructor theory's counterfactuals in logical necessity rather than empirical generalization. Furthermore, knowledge (which Deutsch and Marletto identify as a central constructor-theoretic concept) emerges naturally as self-referential mathematical structure that causes itself to remain instantiated. The hard problem of consciousness dissolves: experience is what certain mathematical structures are from the inside. Constructor theory and mathematical monism are mutually reinforcing: constructor theory provides the language, mathematical monism provides the ontology.
 
+**Keywords:** constructor theory, counterfactual physics, Deutsch, Marletto, mathematical monism, pattern-randomness dichotomy, task ontology, substrate-independence, knowledge, hard problem of consciousness
+
 ---
 
-## 1. Constructor Theory's Promise
+## **1\. Constructor Theory's Promise**
 
 Constructor theory, developed by Deutsch and Marletto, proposes a fundamental reorientation of physics. Rather than expressing laws as differential equations governing trajectories from initial conditions, constructor theory expresses laws as principles about which physical transformations (tasks) are possible and which are impossible.
 
 This goes beyond reformulation. Constructor theory can express laws that the trajectory-based approach cannot, including:
 
-- The principles of information (what can and cannot be copied, transmitted, computed)
-- The substrate-independence of computation
-- The second law of thermodynamics in exact form
-- The nature of knowledge as a physical phenomenon
+* The principles of information (what can and cannot be copied, transmitted, computed)  
+* The substrate-independence of computation  
+* The second law of thermodynamics in exact form  
+* The nature of knowledge as a physical phenomenon
 
 The framework places counterfactuals, statements about what could happen, at the foundation of physics. A task is possible if no law forbids it; impossible otherwise.
 
@@ -28,7 +29,7 @@ But what grounds these counterfactuals? Why are certain transformations possible
 
 ---
 
-## 2. The Dichotomy as Constructor-Theoretic Principle
+## **2\. The Dichotomy as Constructor-Theoretic Principle**
 
 Consider the following principle:
 
@@ -36,17 +37,17 @@ Consider the following principle:
 
 In constructor-theoretic notation:
 
-- Task T_math = "instantiate physics in mathematical structure" → **Possible**
-- Task T_nonmath = "instantiate physics in non-mathematical substrate" → **Impossible**
+* Task T\_math \= "instantiate physics in mathematical structure" → **Possible**  
+* Task T\_nonmath \= "instantiate physics in non-mathematical substrate" → **Impossible**
 
 This is a constructor-theoretic claim, it specifies what is possible and what is impossible. But unlike empirical constructor-theoretic principles, it follows from logical necessity.
 
 The argument:
 
-1. All existence is either patterned or not-patterned (random)
-2. Patterns are mathematical structures by definition
-3. Randomness is characterized by algorithmic incompressibility (high Kolmogorov complexity), itself a mathematical property
-4. There is no third category
+1. All existence is either patterned or not-patterned (random)  
+2. Patterns are mathematical structures by definition  
+3. Randomness is characterized by algorithmic incompressibility (high Kolmogorov complexity), itself a mathematical property  
+4. There is no third category  
 5. Therefore, whatever exists is mathematical structure
 
 This is a logical partition. "Patterned or not-patterned" is exhaustive in the way "A or not-A" is exhaustive. Any purported non-mathematical substrate must either have structure (hence patterned, hence mathematical) or lack it (hence random and still mathematically characterizable). No third ontological category remains.
@@ -55,7 +56,7 @@ The Substrate Principle thus has a special status among constructor-theoretic pr
 
 ---
 
-## 3. Why This Matters for Constructor Theory
+## **3\. Why This Matters for Constructor Theory**
 
 Constructor theory currently takes certain principles as given, the interoperability principle, the composition principle, the principle of testability. These are proposed as deep laws, but their status remains somewhat unclear. Are they empirical generalizations? Necessary truths? Methodological commitments?
 
@@ -71,7 +72,7 @@ This explains why constructor theory can express laws that trajectory-based phys
 
 ---
 
-## 4. Knowledge as Self-Referential Structure
+## **4\. Knowledge as Self-Referential Structure**
 
 Deutsch emphasizes that knowledge is a physical phenomenon with a constructor-theoretic characterization: knowledge is information that, once physically instantiated, tends to cause itself to remain instantiated. It survives criticism, testing, and error-correction. In Popper's terms, knowledge is conjectural but non-arbitrary, it has been tested against reality and not yet refuted.
 
@@ -85,9 +86,9 @@ The hard problem of consciousness dissolves, by recognizing that mathematical st
 
 ---
 
-## 5. The Constructor Theory of Existence
+## **5\. The Constructor Theory of Existence**
 
-Combining constructor theory with mathematical monism yields a striking result. Consider the question: which mathematical structures exist?
+Combining constructor theory with mathematical monism yields a result. Consider the question: which mathematical structures exist?
 
 The constructor-theoretic answer: **A structure exists if and only if it is self-consistent.** Existence is not a task that must be performed; it is the default state of consistent structure. Non-existence would require a "filter", something that prevents consistent structures from existing. But any such filter would itself be a mathematical structure, and would exist. The null filter (which excludes nothing) exists. Therefore, all consistent structures exist.
 
@@ -101,7 +102,7 @@ A clarification is needed. One can *describe* an inconsistent structure: the str
 
 ---
 
-## 6. Testability and Explanation
+## **6\. Testability and Explanation**
 
 Deutsch insists that scientific theories must be explanatory, not merely predictive. Constructor theory extends what can be explained by allowing counterfactual principles into physics.
 
@@ -117,7 +118,7 @@ Mathematical monism extends this further. It explains:
 
 These explanations are not probabilistic. They do not say "this is likely" but "this follows necessarily given the nature of mathematical structure."
 
-### 6.1 Structural Consequences
+### **6.1 Structural Consequences**
 
 Constructor theory takes its impossibility principles as physically contingent: the universe happens to obey them. Mathematical monism predicts they are necessary: any consistent structure capable of supporting observers must obey them. This yields a testable distinction.
 
@@ -131,13 +132,13 @@ The standard response: "The function is many-to-one but the underlying physics i
 
 The point is stronger than information loss. The inverse function does not exist. 3+4→7 is a computation. 7→(3,4) is not. It is an equation with infinitely many solutions, not a function. There is nothing to compute in the backward direction. Not something hard to compute. Not something that loses information. Nothing. The backward direction is the nonexistence of a function.
 
-Reversible computing (Bennett, 1973) does not change this. It computes a *different* function: (3,4)→(3,4,7), a bijection that stores inputs alongside output. The inverse of this different function does exist. But the original function's inverse still does not. The workaround is a new computation, not the reversal of the old one. Deutsch's reversible quantum gates are bijections by construction. They implement the log-keeping function, not the original many-to-one function. The arrow in the original function is untouched.
+Reversible computing (Bennett, 1973\) does not change this. It computes a *different* function: (3,4)→(3,4,7), a bijection that stores inputs alongside output. The inverse of this different function does exist. But the original function's inverse still does not. The workaround is a new computation, not the reversal of the old one. Deutsch's reversible quantum gates are bijections by construction. They implement the log-keeping function, not the original many-to-one function. The arrow in the original function is untouched.
 
 **Consequence 2: The arrow of computation is structural, not perspectival.**
 
-A concrete walkthrough makes the argument precise. Consider classical addition: f(1,1) = 2. This function is many-to-one: f(0,2) = 2 also. The inverse f⁻¹(2) is not defined: it is not a hard computation, it is not a lossy computation, it is not a computation at all. 2=x+y is an equation with infinitely many solutions, not a function. There is nothing to compute in the backward direction.
+A concrete walkthrough makes the argument precise. Consider classical addition: f(1,1) \= 2\. This function is many-to-one: f(0,2) \= 2 also. The inverse f⁻¹(2) is not defined: it is not a hard computation, it is not a lossy computation, it is not a computation at all. 2=x+y is an equation with infinitely many solutions, not a function. There is nothing to compute in the backward direction.
 
-Deutsch's reversible version: define g(a, b, 0) = (a, b, a+b). So g(1, 1, 0) = (1, 1, 2). This IS bijective: g⁻¹(1, 1, 2) = (1, 1, 0). The inverse exists. Has the computation been reversed? No. g is a different function from f. g stores the inputs alongside the output. g⁻¹ is the inverse of g. It is not the inverse of f. f still has no inverse. Computing g instead of f does not make f reversible. It changes the subject.
+Deutsch's reversible version: define g(a, b, 0\) \= (a, b, a+b). So g(1, 1, 0\) \= (1, 1, 2). This IS bijective: g⁻¹(1, 1, 2\) \= (1, 1, 0). The inverse exists. Has the computation been reversed? No. g is a different function from f. g stores the inputs alongside the output. g⁻¹ is the inverse of g. It is not the inverse of f. f still has no inverse. Computing g instead of f does not make f reversible. It changes the subject.
 
 In MWI, the total quantum state evolves unitarily (one-to-one). Nothing is ever discarded. The universe computes g, not f. An observer in one branch sees 2 and loses track of the inputs, but the global wavefunction retains them. Deutsch's conclusion: the many-to-one structure is perspectival, an artifact of tracing out part of the system. The physics is always one-to-one. The arrow is in the description, not in reality.
 
@@ -149,7 +150,7 @@ Timpson (2005) analyzed the Deutsch-Hayden formalism and its claim to eliminate 
 
 This connects to constructor theory's own defining concept. A constructor performs a task and returns to its ready state. The ready state is the same regardless of which specific task instance just ran. The constructor sheds all information about what it just did. This reset IS many-to-one: multiple distinct task-executions map to the same ready state. If the constructor keeps all ancilla bits to preserve reversibility, it never returns to its ready state. A constructor that does not return to its ready state is not a constructor. Reversibility or constructors. Not both. The logical arrow is built into the constructor primitive.
 
-### 6.2 How This Strengthens Many-Worlds
+### **6.2 How This Strengthens Many-Worlds**
 
 The finding does not weaken MWI. It strengthens it by removing a burden.
 
@@ -163,7 +164,7 @@ This means MWI gives the cleanest architecture: reversible substrate plus irreve
 
 ---
 
-## 7. What This Framework Does Not Claim
+## **7\. What This Framework Does Not Claim**
 
 To avoid misunderstanding:
 
@@ -175,7 +176,7 @@ To avoid misunderstanding:
 
 ---
 
-## 8. Objections
+## **8\. Objections**
 
 **"This is philosophy, not physics."**
 
@@ -191,16 +192,16 @@ The question assumes that structure and experience are different kinds of things
 
 ---
 
-## 9. Conclusion
+## **9\. Conclusion**
 
 Constructor theory and mathematical monism are natural partners. Constructor theory provides the language for expressing physical law, possible and impossible transformations. Mathematical monism provides the ontology, reality is mathematical structure, and constructor-theoretic principles are truths about the space of such structures.
 
 Together, they offer:
 
-- A foundation for constructor theory's counterfactuals in logical necessity
-- An explanation of knowledge as self-referential structure
-- A dissolution of the hard problem of consciousness
-- A grounding for the existence of all consistent mathematical structures
+* A foundation for constructor theory's counterfactuals in logical necessity  
+* An explanation of knowledge as self-referential structure  
+* A dissolution of the hard problem of consciousness  
+* A grounding for the existence of all consistent mathematical structures
 
 Physics, properly understood, is the study of which transformations are possible within mathematical structure. Constructor theory makes this explicit. Mathematical monism explains why this is so.
 
@@ -210,7 +211,7 @@ A methodological observation: none of these results required advanced mathematic
 
 ---
 
-## References
+## **References**
 
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 
@@ -218,11 +219,9 @@ Bernstein, G. A. (2026e). Why these simple laws? Deriving physics from mathemati
 
 Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
 
-
-
 Deutsch, D. (2013). Constructor theory. Synthese, 190(18), 4331-4359.
 
-Deutsch, D., & Marletto, C. (2015). Constructor theory of information. Proceedings of the Royal Society A, 471(2174), 20140540.
+Deutsch, D., & Marletto, C. (2015). Constructor theory of information. Proceedings of the Royal Society A, 471(2174), 20140540\.
 
 Deutsch, D. (1997). The Fabric of Reality. Penguin.
 
@@ -238,6 +237,7 @@ Timpson, C. G. (2005). Nonlocality and information flow: The approach of Deutsch
 
 ---
 
-**Word count:** ~1,900
+**Word count:** \~1,900
 
-Companion papers available at https://philarchive.org/rec/BERAIM (PhilArchive) and https://independent.academia.edu/TheMatheist (Academia).
+All companion papers available at https://matheism.org
+

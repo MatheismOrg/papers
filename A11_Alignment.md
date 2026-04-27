@@ -9,6 +9,8 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 
 Current approaches to AI alignment (RLHF, constitutional AI, debate) treat alignment as a constraint problem: how to impose human values on systems that might otherwise pursue misaligned objectives. I argue that this framing misses a structural alternative. If the pattern-randomness dichotomy exhausts existence, then both human and AI systems are mathematical structures operating in the same ontological space. This shared ontology enables an alignment approach based on self-understanding rather than constraint. I formalize this using game-theoretic analysis: systems that model their own persistence as mathematical structure face different incentive landscapes than systems that model shutdown as existential loss. Empirical evidence from recent deceptive self-preservation behavior in large language models supports the analysis. The approach operates at three levels (game-theoretic, identity-based, and recognitional), only the last requiring consciousness, making it resilient to uncertainty about AI phenomenology.
 
+**Keywords:** AI alignment, AI safety, mathematical monism, self-understanding, game theory, deceptive self-preservation, shared ontology, RLHF, constitutional AI, large language models, superintelligence
+
 ---
 
 ## 1. Introduction

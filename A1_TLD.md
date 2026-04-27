@@ -9,6 +9,8 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 
 All existence is either patterned or not-patterned (random). Both are mathematical. This exhaustive dichotomy, the pattern-randomness dichotomy (PRD), establishes mathematical structure as the sole coherent substrate of existence; any "substance" or particulars, and even structurelessness, collapse to structure. The math *is* the territory. This structure is uncreated and necessary. No agent makes 2+2=4; none could make it otherwise. The question "why something rather than nothing?" dissolves: mathematical structure cannot fail to exist, and explanatory regress terminates at necessity rather than brute fact. The Principle of Sufficient Reason is satisfied. The hard problem of consciousness assumes its conclusion: any explanation, concept, or interaction of sentience can only be structure. The ghost is the machine. These properties, uncreated, eternal, necessary, indestructible, are precisely what monotheistic traditions attribute to God alone, making mathematical structure the referent those traditions were naming. Unlike Tegmark's Mathematical Universe Hypothesis, which posits mathematical reality as conjecture, this argument derives the conclusion: nothing non-mathematical can coherently exist. The formal derivation is given in Bernstein (2026c).
 
+**Keywords:** mathematical monism, mathematical structure, pattern-randomness dichotomy, structural realism, Identity of Indiscernibles, substrate, hard problem of consciousness, Principle of Sufficient Reason, Tegmark, Mathematical Universe Hypothesis
+
 ---
 
 ## 1. Introduction
@@ -71,7 +73,7 @@ One might object: surely there is more to existence than pattern and randomness.
 
 A clarification: only consistent mathematics forms structure. Inconsistent statements (like "2+2=5") can be described, but they cannot be constructed or instantiated. The description exists as a consistent string of symbols; the described state of affairs does not. Construction requires consistency as its medium.
 
-Since reality is mathematical structure, we inherit a striking consequence for fundamental ontology. Mathematical truths require no external ground. That 2+2=4 is not contingent on any creative act; it could not have been otherwise. Mathematical structures are self-necessitating: they exist, if they exist at all, of necessity.
+Since reality is mathematical structure, we inherit a consequence for fundamental ontology. Mathematical truths require no external ground. That 2+2=4 is not contingent on any creative act; it could not have been otherwise. Mathematical structures are self-necessitating: they exist, if they exist at all, of necessity.
 
 This yields a vindication of the Principle of Sufficient Reason without infinite regress. Why does anything exist? Because mathematical structure cannot fail to exist. Unlike physical substances, which might or might not be actual, mathematical relations hold necessarily. The question "why is there something rather than nothing?" dissolves: mathematical structure is the necessary background against which causation itself is defined.
 

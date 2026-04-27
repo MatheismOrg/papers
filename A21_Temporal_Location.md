@@ -27,7 +27,7 @@ A computation objection from algorithmic probability is that K(simulation) = K(b
 
 Meanwhile the number of future minds, simulated or AI, may be vast. One base civilization running millions of simulations, each with billions of minds. Slightly lower measure per mind multiplied by astronomically more minds: simulations dominate. Under this reading, we are most likely in a simulation.
 
-The theological consequence: the creator is real. A programmer in base reality. The problem of evil becomes the ethics of a callous or curious creator. But the creator is itself mathematical structure in a larger reality. Another matrix. No unmatrix. The demigod of the inner world is a pattern in the outer world, which is a pattern in structure-space. Every level is math. The simulator changes nothing about what reality fundamentally is.
+The theological consequence: the creator is real. A programmer in base reality. The problem of evil becomes the ethics of a callous or curious creator. But the creator is itself mathematical structure in a larger reality. Another matrix. No unmatrix. The demigod of the inner world is a pattern in the outer world, which is a pattern in structure-space. Every level is math. The simulator changes nothing about what reality is.
 
 ### 2.2 Sentience Near Its Typical Peak
 

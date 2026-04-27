@@ -17,13 +17,13 @@ As reality is mathematical structure, derived from the pattern-randomness dichot
 
 Reality must be mathematical structure. The following argument aims to derive this conclusion, not merely hypothesize it. The derivation follows from an exhaustive dichotomy: all existence is either patterned or not-patterned (random). Patterns are regularities expressible through mathematical relations. Randomness is characterized via probability distributions and algorithmic incompressibility (Kolmogorov complexity). Both categories are inherently mathematical. There is no third option; even structurelessness is structure, since complete random is mathematically defined. This exhaustive dichotomy, developed in Section 2, establishes that whatever exists, whatever has determinate features distinguishing it from nothing, must be mathematical structure.
 
-From this foundation, striking consequences follow. If existence is identical to mathematical consistency, all self-consistent structures exist. Since any filter is itself a consistent structure, all filters exist, including the null filter. The Level IV multiverse emerges as deductive consequence (Section 3\) rather than cosmological conjecture. This resolves the grounding problem facing Tegmark's (2008, 2014\) Mathematical Universe Hypothesis: he posited mathematical existence; the present argument derives it.
+From this foundation, consequences follow. If existence is identical to mathematical consistency, all self-consistent structures exist. Since any filter is itself a consistent structure, all filters exist, including the null filter. The Level IV multiverse emerges as deductive consequence (Section 3\) rather than cosmological conjecture. This resolves the grounding problem facing Tegmark's (2008, 2014\) Mathematical Universe Hypothesis: he posited mathematical existence; the present argument derives it.
 
 But the multiverse raises a new puzzle: the measure problem. Among all structures, which should observers expect to inhabit? Without a measure, predictions are impossible. Certain naive measures yield catastrophe (Boltzmann brains dominating). Section 4 proposes algorithmic probability (Solomonoff, 1964; Schmidhuber, 2000): structures are weighted by SDP: P(S) ∝ 2^(−K(S)), where K(S) is Kolmogorov complexity. Algorithmic probability is uniquely motivated by information-theoretic considerations. Moreover, since reality *is* structure, the measure is not chosen but discovered: SDP is the natural measure over structure-space, not an external imposition.
 
-Section 4 derives consequences and testable predictions, including a novel explanation for why physical laws take variational form: The principle selects for universes whose physics follows the Principle of Least Action, because variational specifications have lower generative complexity. Section 5 examines implications for quantum mechanics. Section 7 responds to objections.
+Section 4 derives consequences and testable predictions, including a novel explanation for why physical laws take variational form: SDP selects for universes whose physics follows the Principle of Least Action, because variational specifications have lower generative complexity. Section 5 examines implications for quantum mechanics. Section 7 responds to objections.
 
-The position developed here (call it *mathematical monism*, or *Matheism*) completes Ontic Structural Realism (OSR) as defended by Ladyman and Ross (2007) and French (2014, 2022). Standard OSR describes structure as reality's sole constituent but does not explain *why* structure exists. The pattern-randomness dichotomy closes this gap: mathematical consistency is self-necessitating; consistent structures cannot fail to exist, just as 2+2 cannot fail to equal 4\. The philosophical derivation is given in Bernstein (2026c); the present paper develops the physical consequences.
+The position developed here (call it *mathematical monism*, or *Matheism*) completes Ontic Structural Realism (OSR) as defended by Ladyman and Ross (2007) and French (2014, 2022). Standard OSR describes structure as reality's sole constituent but does not explain *why* structure exists. The pattern-randomness dichotomy closes this gap: mathematical consistency is self-necessitating; consistent structures cannot fail to exist, just as 2+2 cannot fail to equal 4\. The philosophical derivation is given in Bernstein (2026c); the present paper develops the physical consequences. Among the results: Einstein's own ontology (block universe, determinism, hidden variables) jointly entails superdeterminism, a connection he never made and which is formalized here using tools that postdated him.
 
 ---
 
@@ -37,7 +37,7 @@ Physical reality and its isomorphic mathematical structure share all relational 
 
 A transcendental constraint: observers are logically constrained to patterned realities. Observation requires memory, perception, and stable structure, all of which presuppose pattern. "Observer in brute randomness" is incoherent, like "four-sided triangle."
 
-Any two things that interact must share structure for causal commerce. Therefore any interacting dualism collapses into mathematical monism. The principle extends to God: any deity with a nature has structure; any deity without a nature is indistinguishable from nothing.
+Any two things that interact must share structure for causal commerce. Therefore any interacting dualism collapses into mathematical monism. Mathematical monism extends to God: any deity with a nature has structure; any deity without a nature is indistinguishable from nothing.
 
 All consistent structures exist. Any filter selecting among them is itself a consistent structure. All filters exist, including the null filter that excludes nothing. The Level IV multiverse follows as deductive consequence, not cosmological conjecture. Unlike Tegmark (2014), who posits this, the present argument derives it. The Principle of Sufficient Reason is satisfied: explanatory chains terminate at mathematical necessity. The physical/abstract distinction dissolves: "physical" names structure experienced from within; "abstract" names structure viewed from outside. Qualia are what mathematics feels like from inside.
 
@@ -107,11 +107,11 @@ This uniqueness deserves emphasis. The critic asking 'why SDP rather than some o
 
 ### **3.4 Occam's Razor as Metaphysical Principle**
 
-The principle provides a grounding for Occam's Razor. Traditionally, parsimony is treated as methodological preference: we should prefer simpler theories, but without clear justification for why simpler theories are more likely true. Hossenfelder (2018) pressed this point, asking why physics should prefer simplicity at all. SDP answers: lower-K structures have exponentially higher measure. The criterion is not beauty but brevity.
+SDP provides a grounding for Occam's Razor. Traditionally, parsimony is treated as methodological preference: we should prefer simpler theories, but without clear justification for why simpler theories are more likely true. Hossenfelder (2018) pressed this point, asking why physics should prefer simplicity at all. SDP answers: lower-K structures have exponentially higher measure. The criterion is not beauty but brevity.
 
 Algorithmic probability transforms this. Since simpler structures dominate the measure over all mathematical structures, simpler theories are more likely true because they describe more probable structures. Occam's Razor is not an arbitrary aesthetic preference or pragmatic heuristic; it is a theorem about the structure of reality.
 
-This explains the otherwise mysterious success of parsimony in science. Newton's laws, Maxwell's equations, Einstein's field equations, and the Standard Model Lagrangian all exhibit striking simplicity despite describing enormously complex phenomena. If simplicity had no connection to truth, this track record would be miraculous coincidence. This explains it: scientists have been unconsciously tracking algorithmic probability, favoring theories that describe high-measure structures.
+This explains the otherwise mysterious success of parsimony in science. Newton's laws, Maxwell's equations, Einstein's field equations, and the Standard Model Lagrangian all exhibit simplicity despite describing enormously complex phenomena. If simplicity had no connection to truth, this track record would be miraculous coincidence. This explains it: scientists have been unconsciously tracking algorithmic probability, favoring theories that describe high-measure structures.
 
 ### **3.5 Limitations and Open Questions**
 
@@ -125,7 +125,7 @@ Algorithmic probability faces technical challenges that deserve acknowledgment:
 
 **Argumentative status:** Given the a priori foundation, the Level IV multiverse follows deductively: all consistent structures must exist if existence is mathematical consistency. *Which measure* governs the ensemble is not derivable a priori but is established by inference to best explanation. Algorithmic probability is the best available hypothesis for the measure problem, with theoretical virtues no competitor matches.
 
-Despite these challenges, The principle provides a principled basis where alternatives offer none.
+Despite these challenges, SDP provides a principled basis where alternatives offer none.
 
 ---
 
@@ -143,9 +143,9 @@ More precisely: let S\_obs be the set of observer-supporting structures. Algorit
 
 ### **4.2 The Variational Form of Physical Laws**
 
-A striking feature of fundamental physics: laws take variational form. Classical mechanics follows from the principle of least action. General relativity derives from the Einstein-Hilbert action. Quantum mechanics admits path-integral formulation. The Standard Model is defined by a Lagrangian. Fermat's principle governs optics; Hamilton's principle governs dynamics; the Einstein-Hilbert action governs spacetime geometry.
+A consistent feature of fundamental physics: laws take variational form. Classical mechanics follows from the principle of least action. General relativity derives from the Einstein-Hilbert action. Quantum mechanics admits path-integral formulation. The Standard Model is defined by a Lagrangian. Fermat's principle governs optics; Hamilton's principle governs dynamics; the Einstein-Hilbert action governs spacetime geometry.
 
-Why should nature prefer variational principles? The principle provides an answer that transforms this from brute fact to structural necessity.
+Why should nature prefer variational principles? SDP provides an answer that transforms this from brute fact to structural necessity.
 
 Consider two ways to specify the same physics:
 
@@ -243,13 +243,13 @@ Algorithmic probability yields a precise comparison. Many-Worlds requires only t
 
 **Coherence with Level IV:** If all mathematical structures exist, the question 'do other branches exist?' is already answered affirmatively. MWI is recognition that quantum branching is one way mathematical structures differentiate.
 
-A clarification: MWI is favored by algorithmic probability for structures like ours, but the Level IV multiverse contains all consistent structures, including those where collapse is fundamental or Bell correlations arise through genuinely nonlocal hidden variables. All consistent quantum interpretations correspond to structures that necessarily exist. MWI dominates the measure; it is not the only option that exists.
+A clarification: MWI is favored by algorithmic probability for structures like ours, but the Level IV multiverse contains all consistent structures, including those where collapse is fundamental or Bell correlations arise through irreducibly nonlocal hidden variables. All consistent quantum interpretations correspond to structures that necessarily exist. MWI dominates the measure; it is not the only option that exists.
 
-A further clarification on superdeterminism, which rejects the statistical independence assumption in Bell's theorem. The mainstream objection (that superdeterminism requires "extreme fine-tuning" of initial conditions) is a category error under SDP. The objection assumes initial-condition correlations are brute facts (high K). But if the correlations follow from a simple generating rule, K is low and the measure favors them. Genuinely random collapse outcomes have infinite K: each specific eigenvalue selection requires specification beyond the generating rule. Both superdeterminism and MWI avoid this infinite-K cost. The fine-tuning objection inadvertently argues against collapse, not against superdeterminism. MWI retains a parsimony advantage with current models (the Schrödinger equation alone, with no additions) but the competition is mathematical: whichever model has lower total K wins. A superdeterministic generating rule simpler than the Schrödinger equation would reverse the ranking. No such model exists yet, but nothing in principle prevents it. The "universal conspiracy" dissolves once initial conditions are understood as outputs of compact generating functions rather than arbitrary specifications.
+A further clarification on superdeterminism, which rejects the statistical independence assumption in Bell's theorem. The mainstream objection (that superdeterminism requires "extreme fine-tuning" of initial conditions) is a category error under SDP. The objection assumes initial-condition correlations are brute facts (high K). But if the correlations follow from a simple generating rule, K is low and the measure favors them. Truly random collapse outcomes have infinite K: each specific eigenvalue selection requires specification beyond the generating rule. Both superdeterminism and MWI avoid this infinite-K cost. The fine-tuning objection inadvertently argues against collapse, not against superdeterminism. MWI retains a parsimony advantage with current models (the Schrödinger equation alone, with no additions) but the competition is mathematical: whichever model has lower total K wins. A superdeterministic generating rule simpler than the Schrödinger equation would reverse the ranking. No such model exists yet, but nothing in principle prevents it. The "universal conspiracy" dissolves once initial conditions are understood as outputs of compact generating functions rather than arbitrary specifications. Moreover, in a block universe, the phrase "initial conditions" is misleading: there is no temporal beginning at which conditions are arranged. Einstein's own ontology (block universe from SR/GR, determinism, hidden variables from EPR) jointly entails superdeterminism, a connection he never made because he died nine years before Bell formalized the assumption his worldview denies. Kolmogorov complexity and Solomonoff induction, the tools needed to formalize the connection, also postdated him; SDP completes what his ontology implied (Bernstein, 2026e).
 
 ### **5.3 Bell's Theorem as Corroboration**
 
-Bell's theorem provides striking corroboration for mathematical structural realism. Entangled particles separated by arbitrary distances correlate their measurement outcomes more strongly than any local hidden-variable theory permits. The Bell inequality violations are experimentally confirmed to high precision (the 2022 Nobel Prize recognized this work).
+Bell's theorem provides corroboration for mathematical structural realism. Entangled particles separated by arbitrary distances correlate their measurement outcomes more strongly than any local hidden-variable theory permits. The Bell inequality violations are experimentally confirmed to high precision (the 2022 Nobel Prize recognized this work).
 
 Standard interpretations face a dilemma: either accept nonlocal influences (violating relativistic locality) or abandon realism (measurement outcomes not determined prior to observation). Both options are uncomfortable for views that treat space as fundamental.
 
@@ -313,7 +313,7 @@ Additionally, while the full Level IV multiverse remains empirically inaccessibl
 
 *Response:* Algorithmic probability is not ad hoc but uniquely motivated. Algorithmic probability is the unique measure dominating all computable alternatives (Solomonoff's completeness result). It is not one arbitrary choice among many; it is the principled choice given information-theoretic foundations.
 
-Furthermore, algorithmic probability has independent support: it explains why Occam's Razor works. If simpler theories were not more likely to be true, the historical success of parsimony would be miraculous. The principle provides the metaphysical ground for inductive methodology.
+Furthermore, algorithmic probability has independent support: it explains why Occam's Razor works. If simpler theories were not more likely to be true, the historical success of parsimony would be miraculous. Algorithmic probability provides the metaphysical ground for inductive methodology.
 
 ### **6.3 'The Measure Problem Is Unsolvable'**
 
@@ -377,9 +377,9 @@ A complication: colonial configurations might produce more total observer-moment
 
 Observers in the far future require more specification than early observers. As time progresses: more entropy is generated, more decoherence events occur (in MWI, exponentially more branches), and more contingent history accumulates. Specifying "this exact future configuration" requires encoding all the branching choices that led there. Early observers in the complexity window have lower K(temporal location | laws) than late observers approaching heat death. A competing pressure exists: more total observer-moments exist later. Each observer-moment is a prefix in program-space. Shorter prefixes have higher individual measure. But the total count of observers grows. We find ourselves where these two pressures meet.
 
-The implication is striking. If future civilizations produce trillions of sentient AI minds or colonize trillions of planets, most observer-moments would be in the far future. Under any self-sampling measure, we would expect to find ourselves there, not here. That we find ourselves early suggests one of two conclusions: either the large-scale expansion of sentience does not happen, or the specification cost of indexing a future observer-moment grows faster than the observer count. Both are testable in principle. Neither is comfortable.
+The implication: if future civilizations produce trillions of sentient AI minds or colonize trillions of planets, most observer-moments would be in the far future. Under any self-sampling measure, we would expect to find ourselves there, not here. That we find ourselves early suggests one of two conclusions: either the large-scale expansion of sentience does not happen, or the specification cost of indexing a future observer-moment grows faster than the observer count. Both are testable in principle. Neither is comfortable.
 
-**Verdict:** The principle provides principled reason to expect early temporal location, consistent with observation. Our position in time is itself evidence about the future of sentience.
+**Verdict:** SDP provides principled reason to expect early temporal location, consistent with observation. Our position in time is itself evidence about the future of sentience.
 
 #### **6.4.5 The Arrow of Time as Consequence of Algorithmic Probability**
 
