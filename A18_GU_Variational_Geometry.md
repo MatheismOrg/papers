@@ -19,7 +19,7 @@ A hierarchy of descriptions follows: a simple rewriting rule (few bits) generate
 
 ## 1. Two Variational Forms
 
-The Principle of Least Action is the variational form of dynamics. Systems follow extremal paths because non-extremal paths cancel under phase interference in the path integral. One principle generates every trajectory. The alternative, listing permitted trajectories individually, requires infinite specification. PoLA is what survives when everything else cancels (Bernstein, 2026k).
+The Principle of Least Action is the variational form of dynamics. Systems follow extremal paths because non-extremal paths cancel under phase interference in the path integral. One principle generates every trajectory. The alternative, listing permitted trajectories individually, requires infinite specification. PoLA is what survives when everything else cancels.
 
 This paper argues that Weinstein's 14-dimensional observerse plays an analogous role for geometry. The metric bundle over a 4D manifold is the space of all possible metrics at every point. A metric is a symmetric 4×4 matrix: 10 independent components specifying how to measure distance. To locate a point in the bundle requires 4 spacetime coordinates plus 10 metric components. 4+10=14. This is not additional structure. It is the structure that already exists the moment a manifold has a metric. GU proposes that gauge groups and gravitational dynamics emerge from the geometry of this bundle.
 
@@ -38,11 +38,11 @@ Both are the math that is already there when you look at what simpler structure 
 
 Three approaches to unification, three K profiles:
 
-**String theory:** Start with 10/11 dimensions. Specify which Calabi-Yau manifold (~1,661 bits to index from ~10^500 candidates). Specify flux configurations (~2,000 bits). Stabilize moduli (~1,000 bits). Total additional specification: 3,000 to 4,700 bits beyond the base framework (Bernstein, 2026g). Each bit halves the measure. String theory describes a structure exponentially disfavored under SDP.
+**String theory:** Start with 10/11 dimensions. Specify which Calabi-Yau manifold (~1,661 bits to index from ~10^500 candidates). Specify flux configurations (~2,000 bits). Stabilize moduli (~1,000 bits). Total additional specification: 3,000 to 4,700 bits beyond the base framework. Each bit halves the measure. String theory describes a structure exponentially disfavored under SDP.
 
 **Geometric Unity:** Start with a 4D manifold with a metric. The metric bundle (14D) follows automatically. K(metric bundle | 4D metric) ≈ 0. The gauge groups emerge from the bundle's geometry. The gravitational dynamics emerge from its curvature. Whether the specific emergence that Weinstein proposes is mathematically correct is an open question. What is not open is the K-analysis: the metric bundle adds near-zero specification beyond the base manifold.
 
-**Hypergraph rewriting rules:** A few-bit rule generates a discrete structure. Coarse-graining at large scales produces a manifold with effective dimensionality (Wolfram, 2020; Gorard, 2020). The manifold necessarily has a metric. The metric necessarily has a bundle. The bundle necessarily contains geometric structure from which gauge theory and gravity can emerge. Total K: the length of the rule, typically 15-75 bits (Bernstein, 2026j). Everything else computes.
+**Hypergraph rewriting rules:** A few-bit rule generates a discrete structure. Coarse-graining at large scales produces a manifold with effective dimensionality (Wolfram, 2020; Gorard, 2020). The manifold necessarily has a metric. The metric necessarily has a bundle. The bundle necessarily contains geometric structure from which gauge theory and gravity can emerge. Total K: the length of the rule, typically 15-75 bits. Everything else computes.
 
 The hierarchy:
 
@@ -52,7 +52,7 @@ Each arrow adds near-zero specification. The total K is dominated by the first t
 
 ## 3. Why the Hierarchy Is Forced
 
-The Noether chain (Bernstein, 2026k) argues that observers require variational dynamics: observers need stability, stability needs conservation, conservation needs symmetry, symmetry needs a variational formulation. An analogous chain argues for variational geometry:
+The following chain argues that observers require variational dynamics: observers need stability, stability needs conservation, conservation needs symmetry, symmetry needs a variational formulation. An analogous chain argues for variational geometry:
 
 Observers require forces (electromagnetism for chemistry, gravity for structure). Forces require gauge symmetry at the quantum level. Gauge symmetry requires a principal bundle. The simplest principal bundle over a manifold with a metric is the metric bundle. The metric bundle IS the 14D observerse.
 
@@ -92,15 +92,11 @@ The metric bundle is not a ceiling. Higher geometric structures exist automatica
 
 GU has not been peer-reviewed and has faced technical criticism. The present argument is independent of GU's specific machinery. It depends only on two facts: (1) the metric bundle over a 4D manifold adds near-zero K, and (2) SDP selects for lowest-K descriptions. If GU's specific construction fails, the prediction remains: whatever succeeds will have this K profile, because SDP demands it. The prediction is not "14 dimensions." It is: the minimum automatically-existing geometric structure above 4D that captures all physics.
 
+The contribution is structural understanding, not engineering. Accessing higher geometric modes requires coupling to progressively higher-energy scales, and practical applications, if any, are more likely at Standard Model scales we already have access to, where composite systems and measurement processes remain poorly understood.
+
 ---
 
 ## References
-
-Bernstein, G. A. (2026g). String theory is complexity-disfavored: An information-theoretic assessment.
-
-Bernstein, G. A. (2026j). Simple rewriting rules are exponentially favored as fundamental physics.
-
-Bernstein, G. A. (2026k). Why nature minimizes: The many-to-one root of time, action, and emergence.
 
 Bernstein, G. A. (2026n). Infinite dark dimensions in geometric harmony: From simple rules beyond the Standard Model.
 

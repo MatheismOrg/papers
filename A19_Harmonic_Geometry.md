@@ -22,7 +22,7 @@ String theory and geometric harmony make opposite moves on the same problem.
 
 **String theory:** Start with 10 or 11 dimensions. The extra dimensions are not automatically there. They must be specified: which Calabi-Yau manifold (six-dimensional shape), which flux configuration (fields through it), which moduli stabilization (fixing its size). The landscape of \~10^500 possible specifications is the tell. Each choice adds bits. Total additional specification: 3,000 to 4,700 bits beyond 4D. Under the Simplicity Dominance Principle (SDP), each bit halves the measure. String theory describes a structure exponentially disfavored.
 
-**Geometric harmony:** Start with 4D and a metric. A metric is a symmetric 4×4 matrix: 10 independent numbers specifying how to measure distance at a point. 4 spacetime coordinates plus 10 metric components \= 14 dimensions. The metric bundle is automatically there. Weinstein's Geometric Unity (2021) proposed that gauge structure and gravity emerge from this 14D geometry (Bernstein, 2026m). Whether his specific construction succeeds is open. That the 14D exists at zero cost is mathematical fact. Above it, the first jet bundle is automatically there: the space of all possible first derivatives of the metric. Above that, the second jet bundle. The tower continues without bound. Each level adds zero algorithmic complexity because each follows from the one below by mathematical necessity. It exists because calculus exists.
+**Geometric harmony:** Start with 4D and a metric. A metric is a symmetric 4×4 matrix: 10 independent numbers specifying how to measure distance at a point. 4 spacetime coordinates plus 10 metric components \= 14 dimensions. The metric bundle is automatically there. Weinstein's Geometric Unity (2021) proposed that gauge structure and gravity emerge from this 14D geometry . Whether his specific construction succeeds is open. That the 14D exists at zero cost is mathematical fact. Above it, the first jet bundle is automatically there: the space of all possible first derivatives of the metric. Above that, the second jet bundle. The tower continues without bound. Each level adds zero algorithmic complexity because each follows from the one below by mathematical necessity. It exists because calculus exists.
 
 String theory: finite extra dimensions, enormous K cost. Harmonic geometry: infinite extra dimensions, zero K cost.
 
@@ -84,6 +84,8 @@ More broadly, the holographic principle, that a boundary encodes the bulk, may b
 
 **Three generations as harmonic structure.** Three fermion generations are unexplained in the Standard Model. Each generation may correspond to a mode of the metric bundle's internal structure, with three being the count above the noise floor at accessible energies.
 
+Understanding reality's geometric structure is the contribution. Higher geometric modes require progressively higher energies to access, and practical applications, if any, are more likely at Standard Model scales we already have access to, in the composite systems and measurement processes where quantum mechanics meets the macroscopic world, than in engineering access to higher modes directly.
+
 ## **6\. Falsification**
 
 The framework predicts:
@@ -103,39 +105,21 @@ A clarification on what SDP predicts. It does not predict we observe the simples
 
 ## **7\. Connection to Superdeterminism**
 
-The infinite jet bundle has a further structural consequence. Under superdeterminism (Hossenfelder & Palmer, 2019), hidden variables correlated with measurement settings restore locality and determinism to quantum mechanics. The jet bundle tower provides a candidate substrate: the hidden variables are higher-dimensional geometric degrees of freedom, locally defined; once the base metric dynamics are fixed, jet components are fixed as derived quantities, adding no independent stochastic degrees of freedom. The correlation between measurement settings and hidden variables is not conspiratorial but geometric: both are aspects of the same metric configuration at different levels of the tower. A full development of this identification is given in Bernstein (2026o).
+The infinite jet bundle has a further structural consequence. Under superdeterminism (Hossenfelder & Palmer, 2019), hidden variables correlated with measurement settings restore locality and determinism to quantum mechanics. The jet bundle tower provides a candidate substrate: the hidden variables are higher-dimensional geometric degrees of freedom, locally defined; once the base metric dynamics are fixed, jet components are fixed as derived quantities, adding no independent stochastic degrees of freedom. The correlation between measurement settings and hidden variables is not conspiratorial but geometric: both are aspects of the same metric configuration at different levels of the tower.
 
 ---
 
 The chain developed across companion papers:
 
-* Mathematical monism: all consistent structures exist (Bernstein, 2026c)  
-* SDP: simpler structures dominate (Bernstein, 2026d)  
-* Simple rules: collapsed architecture is SDP-favored (Bernstein, 2026j)  
-* Arrow: many-to-one creates time's direction (Bernstein, 2026h)  
-* PoLA: many-to-one creates variational dynamics (Bernstein, 2026k)  
-* GU: metric bundle is variational geometry (Bernstein, 2026m)  
-* Harmonics: the tower is infinite, automatic, and the source of all physics (this paper)
-
-Each result follows from the same structural fact: mathematical necessity produces structure at zero algorithmic cost. The physics is in what dominates. Everything exists. Most of it is quiet.
+The chain from mathematical monism through simple rules, the arrow of time, variational dynamics, and variational geometry to the harmonic tower developed here follows from one structural fact: mathematical necessity produces structure at zero algorithmic cost. The physics is in what dominates. Everything exists. Most of it is quiet.
 
 ---
 
 ## **References**
 
-Bernstein, G. A. (2026c). Reality is mathematical structure.
-
-Bernstein, G. A. (2026d). Why these simple laws? Deriving physics from mathematical necessity.
-
-Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
-
-Bernstein, G. A. (2026j). Simple rewriting rules are exponentially favored as fundamental physics.
-
-Bernstein, G. A. (2026k). Why nature minimizes: The many-to-one root of time, action, and emergence.
+Bernstein, G. A. (2026c). Reality is mathematical structure. PhilArchive.
 
 Bernstein, G. A. (2026m). Geometric Unity as emergent variational geometry: Why 14 dimensions cost nothing.
-
-Bernstein, G. A. (2026o). Geometric hidden variables for superdeterminism: Jet bundle modes as the missing substrate.
 
 Bombelli, L., Lee, J., Meyer, D., & Sorkin, R. D. (1987). Space-time as a causal set. *Physical Review Letters*, 59(5), 521-524.
 

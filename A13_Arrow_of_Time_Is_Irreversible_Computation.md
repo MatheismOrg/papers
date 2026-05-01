@@ -10,11 +10,11 @@ Computation is deterministic forward: 1 + 1 = 2. It is underdetermined backward:
 
 A system running backward cannot compute, model, observe, or self-model, let alone sustain consciousness. Every operation has many possible inputs; prediction requires computing consequences from causes, and causes are underdetermined from consequences; modeling requires updating representations, and updates are many-to-one operations with no inverse. No observer can exist or experience in such a direction. Retrodiction, where it succeeds, is a new forward computation over constrained hypotheses, not inversion. Reversible computing does not evade the point: reversible machines compute a different bijection and cease to model once no compression, overwrite, or reset is allowed.
 
-In a block universe where all states exist, backward states are present but nothing can compute through them. This is the arrow of computation. It is the structural foundation for the time asymmetry that algorithmic probability quantifies. Forward computation does not increase Kolmogorov complexity relative to the generating rule: given simple laws and simple initial conditions, any later state is compactly described by "apply this rule for t steps." Running backward requires specifying which of infinitely many possible inputs produced each output, an arbitrarily high specification cost. The asymmetry is not in the end state but in the backward specification of the path. The computational arrow stands without algorithmic probability; algorithmic probability's time arrow is one way of measuring the asymmetry that irreversible computation creates.
+In a block universe where all states exist, backward states are present but nothing can compute through them. Without consciousness, time is just another math dimension in the block uni of verses. Pattern observation, felt conscious modeling, and self-modeling cannot exist in reverse, because they are forward computation. The arrow of time is not a feature consciousness observes; it is what consciousness is. This is the arrow of computation. It is the structural foundation for the time asymmetry that algorithmic probability quantifies. Forward computation does not increase Kolmogorov complexity relative to the generating rule: given simple laws and simple initial conditions, any later state is compactly described by "apply this rule for t steps." Running backward requires specifying which of infinitely many possible inputs produced each output, an arbitrarily high specification cost. The asymmetry is not in the end state but in the backward specification of the path. The computational arrow stands without algorithmic probability; algorithmic probability's time arrow is one way of measuring the asymmetry that irreversible computation creates.
 
 Deutsch argues the arrow is perspectival because the global wavefunction evolves unitarily. His own constructor theory (Deutsch, 2013) contradicts him: it defines physics through local operations, and those operations are many-to-one. The arrow lives at the level his own theory selects. This affirms Many-Worlds: MWI is the only interpretation where the substrate stays reversible while the arrow exists at the function level. Collapse breaks substrate reversibility when the arrow already exists in the function, adding specification cost for no gain. Superdeterminism is compatible for the same reason: deterministic initial conditions, forward arrow, no collapse.
 
-Consciousness is a further consequence: sentience requires modeling (Bernstein, 2026f), and modeling requires forward computation.
+Consciousness is a further consequence: sentience requires modeling , and modeling requires forward computation.
 
 **Keywords:** computation, arrow of time, irreversibility, block universe, algorithmic information
 
@@ -48,7 +48,7 @@ A model is not a bare mirror of the world. It is a selective internal representa
 
 A visual system maps many retinal microstates to one percept. A neuron fires when summed synaptic inputs cross threshold, so thousands of input combinations produce the same spike. A concept maps many token experiences to one category. A memory system maps a detailed prior episode to an encoded trace. A scientific model maps many details to a tractable state-space description. In each case, the model is useful because it throws detail away.
 
-The same logic cascades through pattern recognition, observation, and self-modeling. A pattern classifier compresses many signals into one label. Observation compresses physical state into record. Self-modeling compresses prior states into current ones. Each is forward-only for the same reason addition is: the generating function is many-to-one. On a self-modeling account of sentience (Bernstein, 2026f), feeling and consciousness inherit the arrow through this same structure.
+The same logic cascades through pattern recognition, observation, and self-modeling. A pattern classifier compresses many signals into one label. Observation compresses physical state into record. Self-modeling compresses prior states into current ones. Each is forward-only for the same reason addition is: the generating function is many-to-one. On a self-modeling account of sentience , feeling and consciousness inherit the arrow through this same structure.
 
 Once many possible antecedents map to one representational state, the inverse is underdetermined. The present representation does not uniquely contain the path by which it was formed. There is no function from the representational state alone back to its unique generating history.
 
@@ -109,7 +109,7 @@ The right conclusion is more precise:
 
 > **Global reversibility is compatible with a real computational arrow at the level of tasks.**
 
-That point favors Everettian pictures over collapse pictures, because collapse adds substrate-level irreversibility where task-level irreversibility already suffices. It also leaves room for superdeterministic pictures, provided they preserve the same forward-only task structure. Einstein's own block universe implies superdeterminism: in a timeless manifold, measurement choices and hidden variables share the same geometric structure (Bernstein, 2026e). The central thesis does not depend on choosing between those options.
+That point favors Everettian pictures over collapse pictures, because collapse adds substrate-level irreversibility where task-level irreversibility already suffices. Feynman called the double slit the only mystery of quantum mechanics. It is only a supernatural anti-causal random mystery if you add collapse. It also leaves room for superdeterministic pictures, provided they preserve the same forward-only task structure. Einstein's own block universe implies superdeterminism: in a timeless manifold, measurement choices and hidden variables share the same geometric structure . The central thesis does not depend on choosing between those options.
 
 ## 8. Thermodynamics
 
@@ -141,7 +141,7 @@ In the block universe, every temporal neighbor exists, yet the present state inh
 
 This yields a computational arrow of time. It accommodates global reversibility. It needs no collapse. It preserves retrodiction. It aligns with thermodynamic irreversibility without depending on any particular thermodynamic theory, and can be measured in part through algorithmic-probability considerations.
 
-Sentience inherits this arrow through the modeling requirement (Bernstein, 2026f): any system that models itself is subject to the same forward-only task structure. The conscious observer effect, properly understood, is not quantum measurement collapse but the logical impossibility of computation in the underdetermined direction.
+Sentience inherits this arrow through the modeling requirement : any system that models itself is subject to the same forward-only task structure. The conscious observer effect, properly understood, is not quantum measurement collapse but the logical impossibility of computation in the underdetermined direction.
 
 One plus one leads to two. Two does not lead back to one plus one. The arrow is that inverse reconstruction is not, in general, a function. Later states need not be intrinsically more complex.
 
@@ -149,11 +149,6 @@ One plus one leads to two. Two does not lead back to one plus one. The arrow is 
 
 Bennett, C. H. (1973). Logical reversibility of computation. *IBM Journal of Research and Development*, 17(6), 525–532.
 
-Bernstein, G. A. (2026e). Why these simple laws, forward time, many-worlds, and superdeterminism.
-
-Bernstein, G. A. (2026f). Consciousness is felt transitions in self-modeling computation.
-
-Bernstein, G. A. (2026k). Why forward time, least action, and emergence are the same theorem.
 
 Brown, H. R. (2005). *Physical Relativity: Space-time Structure from a Dynamical Perspective*. Oxford University Press.
 

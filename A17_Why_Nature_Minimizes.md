@@ -6,9 +6,9 @@ Independent Researcher ORCID: https://orcid.org/0009-0009-1761-2867
 
 ## **Abstract**
 
-The Principle of Least Action, the arrow of time, and the emergence of smooth physics from discrete rules are treated as separate results requiring separate explanations. This paper argues they are three instances of one structural fact: many-to-one mappings. Computation is many-to-one: 1+1=2 is deterministic, 2=x+y is not. The inverse does not exist. This is the arrow of computation (Bernstein, 2026h). Feynman's path integral is many-to-one: all quantum paths exist, but paths far from the extremal cancel under phase interference. What survives is the classical trajectory. The Principle of Least Action is what remains when everything else cancels. Coarse-graining (averaging over fine details) is many-to-one: many microstates map to one macrostate. When discrete rules are averaged at large scales, only extremal macro behavior survives, for the same structural reason. Variational emergent physics is forced by coarse-graining regardless of whether the fundamental rule is variational.
+The Principle of Least Action, the arrow of time, and the emergence of smooth physics from discrete rules are treated as separate results requiring separate explanations. This paper argues they are three instances of one structural fact: many-to-one mappings. Computation is many-to-one: 1+1=2 is deterministic, 2=x+y is not. The inverse does not exist. This is the arrow of computation. Feynman's path integral is many-to-one: all quantum paths exist, but paths far from the extremal cancel under phase interference. What survives is the classical trajectory. The Principle of Least Action is what remains when everything else cancels. Coarse-graining (averaging over fine details) is many-to-one: many microstates map to one macrostate. When discrete rules are averaged at large scales, only extremal macro behavior survives, for the same structural reason. Variational emergent physics is forced by coarse-graining regardless of whether the fundamental rule is variational.
 
-A forcing argument completes the picture. Observers require stable structures. Stable structures require conservation laws. Noether's theorem proves conservation laws require symmetries of a variational formulation. The chain from observers to variational physics runs one direction with no exit. Under the Simplicity Dominance Principle (Bernstein, 2026d), the simplest observer-supporting frameworks dominate. If all such frameworks produce variational physics through the Noether chain, SDP derives the Principle of Least Action for any universe we could inhabit.
+A forcing argument completes the picture. Observers require stable structures. Stable structures require conservation laws. Noether's theorem proves conservation laws require symmetries of a variational formulation. The chain from observers to variational physics runs one direction with no exit. Under the Simplicity Dominance Principle (SDP), the simplest observer-supporting frameworks dominate. If all such frameworks produce variational physics through the Noether chain, SDP derives the Principle of Least Action for any universe we could inhabit.
 
 **Keywords:** Principle of Least Action, many-to-one, arrow of time, path integral, coarse-graining, Noether's theorem, variational physics, Simplicity Dominance Principle, mathematical monism
 
@@ -20,6 +20,10 @@ The Principle of Least Action, the arrow of time, and the emergence of variation
 
 This paper traces the pattern across three domains, shows why they converge, and argues that variational physics is forced for any observer-supporting universe. In five words: everything happens, most cancels out.
 
+A further connection emerges at the intersection of variational physics and optimal packing. The golden ratio's continued fraction is all 1s: the most irrational number, maximally resistant to rational approximation. This is why it produces optimal packing in phyllotaxis: no rational approximation ever catches it, so seeds never align into wasteful rows. Non-repeating and variational are the same property at the golden ratio. If a hypergraph rewrite rule's stable structures require variational physics (as the Noether forcing argument demands), and if variational physics selects for optimal packing geometry, then the golden ratio enters not as numerology but as a structural consequence of the same parsimony that produces least action. The open question is whether the simplest causally invariant rewrite rule whose topological features reproduce the Standard Model: three generations, SU(3)×SU(2)×U(1), the observed mass hierarchy: inherits golden-ratio geometry from its variational structure. Current hypergraph efforts operate at 10^−93 to 10^−100 meters, a gap too vast to bridge computationally. The productive direction starts from the known sub-atomic numerical values and searches downward, using the simplest causally invariant rewrite rules. Whether φ enters the fundamental rule directly or emerges through coarse-graining of simpler causally invariant rules remains open.
+
+A broader pattern emerges: the fundamental constants themselves form a complexity hierarchy ordered by their shortest generating algorithms. The golden ratio (~3–4 bits: continued fraction all 1s) governs optimal packing. The square root of 2 (~4–5 bits: continued fraction all 2s) governs diagonals. Euler's number e (~7–10 bits: the rate that equals itself) governs exponential growth. Pi (~10–15 bits: no pattern in its continued fraction) governs circular symmetry. Under SDP, the simplest constant whose defining property matches a structural requirement is the one observers find.
+
 ## **2\. Many-to-One: The Structural Fact**
 
 Addition: 1+1=2 is deterministic. 2=x+y is not. The inverse function does not exist. Multiplication: 3×4=12 is deterministic. 12=x×y is not. Hashing: hash("hello")=0x5d41 is deterministic. 0x5d41=hash(?) is not. Neural computation: sensory inputs produce a percept. The percept does not uniquely determine which inputs produced it.
@@ -28,7 +32,7 @@ Nearly all functions are many-to-one: multiple inputs produce the same output. T
 
 ## **3\. Instance One: The Arrow of Computation**
 
-Full development is given in Bernstein (2026h). The summary:
+The summary:
 
 A system running backward cannot compute, because every operation has infinitely many possible inputs. It cannot predict, because prediction requires computing consequences from causes, and causes are underdetermined from consequences. It cannot model, because modeling is compression, compression is many-to-one, and reversible computation is bijective and cannot compress.
 
@@ -56,7 +60,7 @@ What survives coarse-graining? The same thing that survives phase cancellation i
 
 The emergent large-scale physics is variational even when the fundamental rule is not. The underlying cellular automaton has no action functional (the total kinetic-minus-potential along a path), no Lagrangian, no variational principle. The emergent physics does, because coarse-graining killed everything except the extremal survivor.
 
-This supports the hypothesis that our physics emerges from extremely simple discrete rules (Wolfram, 2020; Bernstein, 2026j). The simplest possible specification, a rewriting rule expressible in a few bits, may require a variational emergent physics not because anyone designed it that way, but because coarse-graining forces it. The fundamental rule compresses the description. The many-to-one structure of coarse-graining produces the variational form at the scale observers inhabit.
+This supports the hypothesis that our physics emerges from extremely simple discrete rules (Wolfram, 2020). The simplest possible specification, a rewriting rule expressible in a few bits, may require a variational emergent physics not because anyone designed it that way, but because coarse-graining forces it. The fundamental rule compresses the description. The many-to-one structure of coarse-graining produces the variational form at the scale observers inhabit.
 
 The connection to quantum mechanics is direct. Wolfram's multiway system applies the rewriting rule in all possible locations simultaneously. All branches coexist. When branches reconverge, they interfere: reinforcing branches survive, canceling branches vanish. This is coarse-graining over the space of branches. The multiway system IS the path integral, derived from the rule rather than postulated. The classical trajectory that survives IS what remains after many-to-one cancellation. The strongest result here is causal invariance producing general covariance (the analog of general relativity). The full correspondence between branchial space and Hilbert space remains open. The structural case is suggestive and narrowing.
 
@@ -108,7 +112,7 @@ One mathematical structure. Three physical faces. One forcing argument from obse
 
 The unification has several consequences.
 
-First, it connects papers that were previously separate: the computational arrow (Bernstein, 2026h), the SDP overview (Bernstein, 2026a), the flagship derivation (Bernstein, 2026d), and the simple rules argument (Bernstein, 2026j). Many-to-one is the thread.
+First, it connects results that were previously separate: the computational arrow, the SDP measure, the flagship derivation of mathematical monism, and the simple rules argument. Many-to-one is the thread. The full framework is developed in Bernstein (2026) and companion papers available at PhilArchive.
 
 Second, it supports the hypothesis that our physics emerges from simple discrete rewriting rules. If coarse-graining forces variational emergence, the simplest possible rule (lowest K) will produce the physics we observe at our scale. The rule does not need to encode the Standard Model. It needs to be simple. The rest is coarse-graining.
 
@@ -120,13 +124,6 @@ Fourth, it clarifies what would count as evidence against the framework. If a st
 
 ## **References**
 
-Bernstein, G. A. (2026a). Simple laws, the arrow of time, many worlds, superdeterminism and all: Convergence from mathematical monism.
-
-Bernstein, G. A. (2026d). Why these simple laws? Deriving physics from mathematical necessity.
-
-Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
-
-Bernstein, G. A. (2026j). Simple rewriting rules are exponentially favored as fundamental physics.
 
 Bennett, C. H. (1973). Logical reversibility of computation. *IBM Journal of Research and Development*, 17(6), 525-532.
 

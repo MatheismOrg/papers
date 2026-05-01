@@ -30,7 +30,7 @@ The Simplicity Dominance Principle (SDP) provides the missing ground. The argume
 
 **Step 1: Algorithmic probability.** Solomonoff (1964) showed that the probability of a string x under a universal distribution is dominated by the shortest program that generates x. Formally, for universal prefix-free Turing machine U, the algorithmic probability m(x) \= sum over p of 2^(-|p|) for all p such that U(p) \= x. This sum is dominated by the shortest such p. Strings with short generating programs are exponentially more probable than strings with long generating programs.
 
-**Step 2: From strings to structures.** If physical structures are identified with their mathematical descriptions (Tegmark, 2014; Bernstein, 2026c), then algorithmic probability applies to structures, not just strings. A structure with Kolmogorov complexity K(S) \= k has measure proportional to 2^(-k). Each additional bit of specification halves the measure. This identification is defended independently (Bernstein, 2026c) but the present argument requires only the weaker claim that algorithmic probability provides a reasonable prior over hypotheses, which is the standard Solomonoff induction framework already accepted in machine learning theory.
+**Step 2: From strings to structures.** If physical structures are identified with their mathematical descriptions (Tegmark, 2014), then algorithmic probability applies to structures, not just strings. A structure with Kolmogorov complexity K(S) \= k has measure proportional to 2^(-k). Each additional bit of specification halves the measure. This identification is defended independently but the present argument requires only the weaker claim that algorithmic probability provides a reasonable prior over hypotheses, which is the standard Solomonoff induction framework already accepted in machine learning theory.
 
 **Step 3: Adaptive calibration.** If simpler structures are exponentially more probable, then an organism whose hypothesis-selection mechanism preferentially adopts lower-K hypotheses will, on average, select hypotheses that are more often correct. Natural selection favors mechanisms that produce accurate models of the environment. Therefore, natural selection favors simplicity preference.
 
@@ -72,7 +72,7 @@ This connects the normative theory (Solomonoff) to the descriptive findings (Cha
 
 ## **7\. Scope and Limitations**
 
-This paper addresses the simplicity preference specifically. Related phenomena, such as the psychological effects of deterministic worldviews on guilt, regret, and anxiety (Bernstein, 2026a), involve different cognitive mechanisms and are addressed separately.
+This paper addresses the simplicity preference specifically. Related phenomena, such as the psychological effects of deterministic worldviews on guilt, regret, and anxiety , involve different cognitive mechanisms and are addressed separately.
 
 The paper does not claim that all cognitive biases are adaptive. It claims that one specific cognitive tendency, simplicity preference, is adaptive for a specific mathematical reason. Other biases (confirmation bias, availability heuristic) may be adaptive for different reasons or may be genuine miscalibrations.
 
@@ -84,7 +84,6 @@ Human simplicity preference is not a heuristic shortcut. It is a calibration to 
 
 ## **References**
 
-Bernstein, G. A. (2026a). Simple laws, the arrow of time, many worlds, superdeterminism and all: Convergence from mathematical monism.
 
 Bernstein, G. A. (2026c). Reality is mathematical structure.
 
