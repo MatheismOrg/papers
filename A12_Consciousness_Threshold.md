@@ -7,7 +7,7 @@ ORCID: https://orcid.org/0009-0009-1761-2867
 
 ## Abstract
 
-If reality is mathematical structure  and the arrow of time is a consequence of computational irreversibility , consciousness is the felt math transitions of modeling and self-modeling minds along that arrow. This paper distinguishes two levels: sentience (felt transitions in a modeling mind: perception, location, sensation) and consciousness (felt transitions in a self-modeling mind: awareness of awareness, knowing that you feel). The core thesis is that consciousness lives in the transitions, not in the states alone. A dead brain contains a self-model but does not run it. A frozen computer stores a program but does not compute. The difference between a corpse and a person is not structural but dynamic: the same math, but only one is transitioning along the arrow. This reframes the hard problem as a question about dynamics rather than ontology, and identifies the threshold question as the central open problem: where does modeling begin? The paper maps the terrain without closing the question prematurely, arguing that resolution may require in vivo first-person experimentation and reports rather than third-person observation alone.
+If reality is mathematical structure  and the arrow of time is a consequence of computational irreversibility, consciousness is the felt math transitions of modeling and self-modeling minds along that arrow. This paper distinguishes two levels: sentience (felt transitions in a modeling mind: perception, location, sensation) and consciousness (felt transitions in a self-modeling mind: awareness of awareness, knowing that you feel). The core thesis is that consciousness lives in the transitions, not in the states alone. A dead brain contains a self-model but does not run it. A frozen computer stores a program but does not compute. The difference between a corpse and a person is not structural but dynamic: the same math, but only one is transitioning along the arrow. This reframes the hard problem as a question about dynamics rather than ontology, and identifies the threshold question as the central open problem: where does modeling begin? The paper maps the terrain without closing the question prematurely, arguing that resolution may require in vivo first-person experimentation and reports rather than third-person observation alone.
 
 **Keywords:** consciousness, sentience, self-modeling, hard problem, mathematical monism, arrow of time, transitions
 
@@ -17,7 +17,7 @@ If reality is mathematical structure  and the arrow of time is a consequence of 
 
 ## 1. The Thesis: Transitions, Not States
 
-The standard hard problem of consciousness asks how physical structure produces subjective experience. Under mathematical monism, the question dissolves: any explanation, concept, or interaction of sentience can only be structure, so the demand for a non-structural explanation is incoherent . But dissolution of the hard problem leaves a residual question: *which* structures are conscious?
+The standard hard problem of consciousness asks how physical structure produces subjective experience. Under mathematical monism, the question dissolves: any explanation, concept, or interaction of sentience can only be structure, so the demand for a non-structural explanation is incoherent. But dissolution of the hard problem leaves a residual question: *which* structures are conscious?
 
 Universal computing closes the door on mysterianism. Any Turing universal computer can simulate any physical process. If physical reality is mathematical structure, then any sufficient mind can reach any true explanation, limited only by memory and speed. The only things outside understanding are inconsistent. Inconsistent statements form no structure and therefore describe nothing. Reality as mathematical structure is exhaustively knowable in principle. Remaining mysteries reflect our current vantage inside the structure, not limits of the structure itself.
 
@@ -25,14 +25,14 @@ The present paper proposes a specific answer. Consciousness is not a property of
 
 This is not an appeal to vitalism or élan vital. The transitions are mathematical: state S₁ evolving to state S₂ according to the structure's generating rules. What the transitions thesis claims is that the *felt* character of consciousness, the "what it is like" that Nagel (1974) identified, is constituted by the transition itself, not by the state at either end.
 
-The arrow of time is essential. Without consciousness, time is just another math dimension in the block uni of verses. The arrow derives from the Simplicity Dominance Principle: forward descriptions from simple initial conditions have lower Kolmogorov complexity than backward descriptions from the current state, so forward-described structures exponentially dominate the measure. Consciousness requires this directionality. A block universe without an arrow has all the states but no transitions. The arrow creates the temporal asymmetry that makes transitions possible, and transitions are what consciousness is.
+The arrow of time is essential. Without consciousness, time is just another math dimension in the block universe. The arrow derives from the Simplicity Dominance Principle: forward descriptions from simple initial conditions have lower Kolmogorov complexity than backward descriptions from the current state, so forward-described structures exponentially dominate the measure. Consciousness requires this directionality. A block universe without an arrow has all the states but no transitions. The arrow creates the temporal asymmetry that makes transitions possible, and transitions are what consciousness is.
 
 Three papers form a chain:
 - reality is mathematical structure (via the PRD)
 - structure has a directed timeline (via SDP and descriptive asymmetry)
 - The present paper: directed transitions in modeling structures are consciousness
 
-A further argument grounds the arrow of consciousness in the same structural foundation as the arrow of time: computational irreversibility. Computation is deterministic forward: 1+1=2. It is underdetermined backward: 2=x+y has infinitely many solutions. No mind can model the underdetermined direction because modeling is computation. Backward states exist in the block universe. But no mind can think that way. The computational arrow is the structural foundation. SDP quantifies its measure-theoretic consequence.
+A further argument grounds the arrow of consciousness in the same structural foundation as the arrow of time: computational irreversibility. Computation is deterministic forward: 1+1=2. It is underdetermined backward: 2=x+y has infinitely many solutions. No mind can model the underdetermined direction because modeling is computation. Time-symmetric laws are not violated; the information cost to apply them is asymmetric. Backward states exist in the block universe. But no mind can think that way. No observer can model the underdetermined direction. The computational arrow is the structural foundation. SDP quantifies its measure-theoretic consequence.
 
 *If there is no self, what is reborn?*
 
@@ -52,11 +52,6 @@ Global Workspace Theory (Baars, 1988; Dehaene et al., 2011) identifies conscious
 
 Higher-Order Theories (Rosenthal, 2005; Lau & Rosenthal, 2011) require a representation of a representation for consciousness. This maps directly onto the self-modeling criterion: consciousness is the felt transition in a mind that models its own modeling. The present framework agrees with Higher-Order theories on the architectural requirement but derives it from mathematical monism rather than stipulating it.
 
-Kolak, D. (2004). *I Am You: The Metaphysical Foundations for Global Ethics*. Springer.
-
-Parfit, D. (1984). *Reasons and Persons*. Oxford University Press.
-
-Schrödinger, E. (1958). *Mind and Matter*. Cambridge University Press.
 Zuboff's (2023) universalism approaches from a different direction entirely: probabilistic reasoning about personal identity. If consciousness is one subject, your existence is guaranteed wherever consciousness arises. If selves are truly distinct, your existence requires an astronomically improbable chain of events. Kolak (2004) reached the same conclusion through philosophical argument ("I Am You"), and Schrödinger (1958) asserted from physical intuition that "the total number of minds in the universe is one." Parfit (1984) dissolved the importance of personal identity without identifying what replaces it. Each dissolves the boundary between selves without specifying what consciousness is. The present framework supplies what each lacks: the identification of consciousness with self-modeling mathematical structure, and a derivation from the pattern-randomness dichotomy rather than assertion or probabilistic wager.
 
 ## 3. The Threshold Question

@@ -6,15 +6,7 @@ ORCID: 0009-0009-1761-2867
 
 ## Abstract
 
-Computation is deterministic forward: 1 + 1 = 2. It is underdetermined backward: 2 = x + y has infinitely many solutions. The inverse function does not exist. This is a fact about mathematics, true in every possible world.
-
-A system running backward cannot compute, model, observe, or self-model, let alone sustain consciousness. Every operation has many possible inputs; prediction requires computing consequences from causes, and causes are underdetermined from consequences; modeling requires updating representations, and updates are many-to-one operations with no inverse. No observer can exist or experience in such a direction. Retrodiction, where it succeeds, is a new forward computation over constrained hypotheses, not inversion. Reversible computing does not evade the point: reversible machines compute a different bijection and cease to model once no compression, overwrite, or reset is allowed.
-
-In a block universe where all states exist, backward states are present but nothing can compute through them. Without consciousness, time is just another math dimension in the block uni of verses. Pattern observation, felt conscious modeling, and self-modeling cannot exist in reverse, because they are forward computation. The arrow of time is not a feature consciousness observes; it is what consciousness is. This is the arrow of computation. It is the structural foundation for the time asymmetry that algorithmic probability quantifies. Forward computation does not increase Kolmogorov complexity relative to the generating rule: given simple laws and simple initial conditions, any later state is compactly described by "apply this rule for t steps." Running backward requires specifying which of infinitely many possible inputs produced each output, an arbitrarily high specification cost. The asymmetry is not in the end state but in the backward specification of the path. The computational arrow stands without algorithmic probability; algorithmic probability's time arrow is one way of measuring the asymmetry that irreversible computation creates.
-
-Deutsch argues the arrow is perspectival because the global wavefunction evolves unitarily. His own constructor theory (Deutsch, 2013) contradicts him: it defines physics through local operations, and those operations are many-to-one. The arrow lives at the level his own theory selects. This affirms Many-Worlds: MWI is the only interpretation where the substrate stays reversible while the arrow exists at the function level. Collapse breaks substrate reversibility when the arrow already exists in the function, adding specification cost for no gain. Superdeterminism is compatible for the same reason: deterministic initial conditions, forward arrow, no collapse.
-
-Consciousness is a further consequence: sentience requires modeling , and modeling requires forward computation.
+Computation is deterministic forward: 1 + 1 = 2. It is underdetermined backward: 2 = x + y has infinitely many solutions. The inverse function does not exist. This is a fact about mathematics, true in every possible world. A billiard break run forward needs one cue strike; the laws handle the rest. Run backward, every particle in the universe that absorbed dissipated energy must be specified, because there is no causal function in the reverse direction. Many possible histories could produce similar scattered states; hands could have placed each ball after a failed break. Time-symmetric laws are not violated; the information cost to apply them is asymmetric. The laws permit reversal. Nothing in the reversed direction can observe it as reversal, because modeling is many-to-one and many-to-one has no inverse. Every physical operation that models, observes, or records compresses many inputs into fewer outputs. Compression loses information; lost information cannot be recovered. A system running backward cannot compute, model, observe, or self-model, let alone sustain consciousness of time. In a block universe, backward states are present but nothing can compute through them. The arrow of time is not a feature consciousness observes; it is what consciousness is. Consciousness requires forward computation; no observer can model the underdetermined direction.
 
 **Keywords:** computation, arrow of time, irreversibility, block universe, algorithmic information
 
@@ -48,7 +40,7 @@ A model is not a bare mirror of the world. It is a selective internal representa
 
 A visual system maps many retinal microstates to one percept. A neuron fires when summed synaptic inputs cross threshold, so thousands of input combinations produce the same spike. A concept maps many token experiences to one category. A memory system maps a detailed prior episode to an encoded trace. A scientific model maps many details to a tractable state-space description. In each case, the model is useful because it throws detail away.
 
-The same logic cascades through pattern recognition, observation, and self-modeling. A pattern classifier compresses many signals into one label. Observation compresses physical state into record. Self-modeling compresses prior states into current ones. Each is forward-only for the same reason addition is: the generating function is many-to-one. On a self-modeling account of sentience , feeling and consciousness inherit the arrow through this same structure.
+The same logic cascades through pattern recognition, observation, and self-modeling. A pattern classifier compresses many signals into one label. Observation compresses physical state into record. Self-modeling compresses prior states into current ones. Each is forward-only for the same reason addition is: the generating function is many-to-one. On a self-modeling account of sentience, feeling and consciousness inherit the arrow through this same structure.
 
 Once many possible antecedents map to one representational state, the inverse is underdetermined. The present representation does not uniquely contain the path by which it was formed. There is no function from the representational state alone back to its unique generating history.
 
@@ -109,13 +101,13 @@ The right conclusion is more precise:
 
 > **Global reversibility is compatible with a real computational arrow at the level of tasks.**
 
-That point favors Everettian pictures over collapse pictures, because collapse adds substrate-level irreversibility where task-level irreversibility already suffices. Feynman called the double slit the only mystery of quantum mechanics. It is only a supernatural anti-causal random mystery if you add collapse. It also leaves room for superdeterministic pictures, provided they preserve the same forward-only task structure. Einstein's own block universe implies superdeterminism: in a timeless manifold, measurement choices and hidden variables share the same geometric structure . The central thesis does not depend on choosing between those options.
+That point favors Everettian pictures over collapse pictures, because collapse adds substrate-level irreversibility where task-level irreversibility already suffices. Feynman called the double slit the only mystery of quantum mechanics. It is only a supernatural anti-causal random mystery if you add collapse. It also leaves room for superdeterministic pictures, provided they preserve the same forward-only task structure. Einstein's own block universe implies superdeterminism: in a timeless manifold, measurement choices and hidden variables share the same geometric structure. The central thesis does not depend on choosing between those options.
 
 ## 8. Thermodynamics
 
 How does this relate to entropy?
 
-Thermodynamic irreversibility concerns physical implementation: dissipative processes, record formation, erasure costs, and low-entropy boundary conditions. The computational arrow defended here concerns logical structure: whether a task defines a function in one direction and only a relation in the other.
+Thermodynamic irreversibility concerns physical implementation: dissipative processes, record formation, erasure costs (Landauer, 1961), and low-entropy boundary conditions. The computational arrow defended here concerns logical structure: whether a task defines a function in one direction and only a relation in the other.
 
 These are different. Thermodynamics explains why one temporal direction in our universe is associated with increasing entropy and robust records. The computational argument explains why record-like systems, once they exist at all, operate from input to output rather than output to unique input.
 
@@ -141,16 +133,15 @@ In the block universe, every temporal neighbor exists, yet the present state inh
 
 This yields a computational arrow of time. It accommodates global reversibility. It needs no collapse. It preserves retrodiction. It aligns with thermodynamic irreversibility without depending on any particular thermodynamic theory, and can be measured in part through algorithmic-probability considerations.
 
-Sentience inherits this arrow through the modeling requirement : any system that models itself is subject to the same forward-only task structure. The conscious observer effect, properly understood, is not quantum measurement collapse but the logical impossibility of computation in the underdetermined direction.
+Sentience inherits this arrow through the modeling requirement: any system that models itself is subject to the same forward-only task structure. The conscious observer effect, properly understood, is not quantum measurement collapse but the logical impossibility of computation in the underdetermined direction.
+
+A backward universe has structure but no observers. Consciousness requires forward computation. No mind can exist, experience, or be aware in the backward direction. The block contains backward states; nothing in them can process and be aware of patterns. Existence without experience. Structure without consciousness. The block is complete but awareness is one-directional.
 
 One plus one leads to two. Two does not lead back to one plus one. The arrow is that inverse reconstruction is not, in general, a function. Later states need not be intrinsically more complex.
 
 ## References
 
 Bennett, C. H. (1973). Logical reversibility of computation. *IBM Journal of Research and Development*, 17(6), 525–532.
-
-
-Brown, H. R. (2005). *Physical Relativity: Space-time Structure from a Dynamical Perspective*. Oxford University Press.
 
 Cover, T. M., & Thomas, J. A. (2006). *Elements of Information Theory* (2nd ed.). Wiley.
 
