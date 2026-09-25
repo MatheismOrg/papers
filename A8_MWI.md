@@ -1,26 +1,32 @@
-# **Many-Worlds Is the Simplest Interpretation: An Algorithmic Argument**
+# Quantum Mechanics Without Collapse: The Simplicity Argument
 
 **Gary Abraham Bernstein**
 
 Independent Researcher ORCID: https://orcid.org/0009-0009-1761-2867
 
+> **Argument.** Universal unitary evolution is the dynamical baseline in this comparison. Added mechanisms must justify their explanatory cost. The comparison includes boundary data and the probability of observer records.
+
 ## **Abstract**
 
-The Many-Worlds Interpretation adds nothing to the Schrödinger equation. Collapse interpretations add non-unitary processes; hidden-variable theories add unobservable particles and pilot waves. I argue this difference in descriptive complexity has ontological consequences. Under algorithmic probability-the Solomonoff prior extended from epistemology to ontology-interpretations with lower Kolmogorov complexity dominate the measure over physical theories. Many-Worlds, requiring only unitary evolution, has minimal K and is therefore most probable. This transforms "MWI is simpler" from aesthetic preference to measure-theoretic claim. The argument rests on establishing that reality is mathematical structure via an exhaustive pattern-randomness dichotomy, then showing that algorithmic probability provides the natural measure over structure-space. Bell correlations, rather than posing puzzles about nonlocality, become structural features of unified mathematical objects. The position explains why simpler physical theories tend to be true: they describe higher-measure structures. Einstein's own ontology (block universe, determinism, hidden variables) independently entails superdeterminism, leaving MWI and superdeterminism as the two measure-favored interpretations. Einstein's block ontology perfectly fits both. Bell's theorem is often misread as proving non-determinism; it proves that statistical independence must fail. Everything Einstein wanted follows from the theory he fought.
+Quantum mechanics can apply the same evolution rule to a particle, a measuring device and the observer. This is the starting economy of the many-worlds interpretation. Adding collapse or a separately selected particle configuration needs an explanatory benefit that justifies the extra structure. The comparison must count the complete theories, including their starting conditions and predicted observation probabilities. Many branches do not automatically mean many independent rules. Under the specified simplicity rule, a shorter complete account receives greater initial weight. The paper develops this case for Everett's interpretation and explains why the probabilities of its recorded outcomes remain essential to the comparison.
 
 **Keywords:** Many-Worlds Interpretation, Simplicity Dominance Principle, Kolmogorov complexity, algorithmic probability, quantum foundations, Schrödinger equation, Born rule, measurement problem, mathematical monism
 
 ---
 
-*Simple is probable. Many-Worlds is Occam's Razor. Collapse is not.*
+*A short law can describe a vast world. Compare the complete accounts.*
 
 ## **1\. Introduction**
 
-Physicists often prefer the Many-Worlds Interpretation on grounds of parsimony: it adds nothing to quantum mechanics beyond the Schrödinger equation. But what justifies this preference? Is simplicity merely aesthetic, or does it track something deeper?
+Why add a special change in the laws when a measurement occurs? Quantum evolution without collapse applies one rule to the measured system, the apparatus and the observer. A collapse theory changes that evolution. A Bohmian theory adds a selected configuration of particles and a rule guiding it. The question is what each complete account explains for the information it requires.
 
-I argue the preference is justified by measure theory. Under algorithmic probability-Solomonoff's framework extended from epistemology to ontology-simpler descriptions correspond to higher-measure structures. MWI dominates because structures describable with minimal Kolmogorov complexity are more probable.
+I propose an algorithmic prior for explicitly described candidates. A shorter complete description receives greater prior weight under the chosen convention. Its posterior weight also depends on its observational likelihood. Extending the prior to a measure of physical realization is a further philosophical premise.
 
-The argument proceeds in three steps. Section 2 establishes that reality is mathematical structure. Section 3 introduces the Simplicity Dominance Principle (SDP): the measure over structures is algorithmic probability. Section 4 applies SDP to quantum interpretation selection.
+Section 2 states the monist motivation. Section 3 distinguishes a proposed measure from the results of algorithmic information theory. The remaining sections apply that distinction to quantum accounts and identify what must be specified before a ranking is justified.
+
+The comparison contains both deductive and empirical questions. Given a prior proportional to 2^(−K), the weight ratio for specified descriptions follows mathematically. Given dynamics and a state, deriving predicted probabilities is likewise a mathematical task. Neither implication needs experimental confirmation to be valid. The further questions are whether the premises are justified, whether an ontological argument establishes them a priori, and which models describe the observed world. Empirically equivalent accounts cannot be distinguished by the very observations on which they agree; their assessment can still involve logical coherence and explanatory economy.
+
+Matheism’s intended contribution is an a priori account of what physical mathematics is: the structure itself, rather than a description of a second substance. That claim is different from saying that every mathematical construction belongs to our universe. Even granting the identity, a further argument must identify which structure the universe is and how representational decompositions relate to its constituents. The same quantum formalism can support competing interpretations unless additional premises select one.
 
 ---
 
@@ -30,15 +36,15 @@ The argument proceeds in three steps. Section 2 establishes that reality is math
 
 All existence is either patterned or not-patterned (random). Both are mathematical.
 
-Patterns are regularities expressible through mathematical relations. Randomness is characterized via algorithmic incompressibility-a string is random if and only if its Kolmogorov complexity K approximately equals its length. There is no third category. For something to exist determinately, it must have features distinguishing it from nonexistence. Those features are either patterned or random, and thus mathematical.
+The rule and randomness argument motivates the monist position. Algorithmic incompressibility is defined relative to an encoding, and absence of a particular pattern is not equivalent to absence of every pattern. The exhaustive partition alone does not establish the identity of reality and mathematical description.
 
-This is a logical partition, exhaustive in the way "A or not-A" is exhaustive.
+The present comparison is conditional on explicit predictive models. It can be carried out whether or not a reader accepts the further ontological identity.
 
 ### **2.2 From Isomorphism to Identity**
 
-Physical structures are isomorphic to mathematical structures by definition of "physical structure." What distinguishes them? Not their relationships (identical by isomorphism). Not causal powers (supervening on relations). Not observables (reducing to relations).
+Matheism argues that causal powers and observable distinctions are structural. A proposed additional substance must explain what role it plays. This motivates identifying the physical account with its structure rather than adding an unspecified bearer.
 
-The only candidate is non-relational substrate. But substrate without properties is indistinguishable from nothing. By the Identity of Indiscernibles, physical and mathematical structure are identical. Reality is mathematical structure, identical to it.
+Isomorphism alone does not imply numerical identity: distinct copies can be isomorphic. The monist identity is therefore the interpretive claim, not a consequence of using the word isomorphism. It also does not independently select a probability measure or quantum interpretation.
 
 ---
 
@@ -46,9 +52,9 @@ The only candidate is non-relational substrate. But substrate without properties
 
 ### **3.1 The Measure Problem**
 
-If reality is mathematical structure, all self-consistent structures exist. This raises the measure problem: among all structures, which should observers expect to inhabit? A clarification is needed. One can write down a Lagrangian (kinetic minus potential energy) with contradictory symmetry requirements, or assert that a particle simultaneously has definite position and momentum beyond the Heisenberg bound. The notation exists as a consistent string of symbols, carried by consistent physical media. But the physics it purports to describe cannot be instantiated as a functioning structure: the constraints are mutually exclusive under standard quantum mechanics. To make such a claim coherent requires modifying the framework, and that modification is itself an act of consistent reasoning. Inconsistent content can only be rescued by consistent mathematics. This is the sole building material.
+Universal realization of consistent structures is an additional commitment of the broader programme. Mathematical monism alone does not determine which structures observers should expect to inhabit. A description can also contain mutually incompatible requirements while remaining a consistent inscription.
 
-Since reality *is* structure, the measure is discovered. We seek the natural measure over structure-space.
+A measure and an observer selection rule must be stated. Calling reality structure does not uniquely supply either.
 
 ### **3.2 Algorithmic Probability**
 
@@ -56,17 +62,17 @@ I propose:
 
 **SDP:** P(S) ∝ 2^(−K(S))
 
-where K(S) is the Kolmogorov complexity of S's generating rules.
+Here K is defined relative to a fixed reference machine and an effective description of the complete model. It is not merely the length of its displayed equation. This weighting is a proposed prior, to be combined with observational likelihoods.
 
-Algorithmic probability is uniquely motivated:
+Algorithmic probability has useful formal properties within its stated domain:
 
-**Dominance:** Solomonoff's completeness theorem establishes that algorithmic probability dominates all computable measures. No computable alternative systematically outperforms it.
+**Dominance:** Universal constructions dominate appropriate effective classes up to multiplicative constants. This is not a guarantee of best prediction on every finite dataset and does not uniquely determine an ontological measure.
 
-**Invariance:** The measure is machine-independent up to multiplicative constants. Different universal Turing machines yield K values differing by at most an additive constant.
+**Invariance:** Changing a universal description language changes K by an additive constant depending on the two languages. This does not guarantee preservation of finite model rankings or of a small bit advantage.
 
-**Coherence:** SDP explains why Occam's Razor works. If simpler theories were not more likely true, parsimony's success in science would be miraculous.
+**Prediction:** Simplicity can support generalization, but its contribution must be assessed together with fit to evidence. Prior preference alone cannot rescue a model with poor likelihood.
 
-Solomonoff intended algorithmic probability as epistemic: how to reason given uncertainty. SDP extends this to ontology: the measure governs existence as well as reasoning. We reason correctly about reality because algorithmic probability governs both inference and structure.
+The proposed extension from inductive inference to physical realization is substantive. The mathematical results about universal priors do not prove that extension. Hutter’s account of algorithmic probability states the formal setting: https://www.hutter1.net/ai/algprob.pdf.
 
 ---
 
@@ -74,54 +80,70 @@ Solomonoff intended algorithmic probability as epistemic: how to reason given un
 
 ### **4.1 Comparing Interpretations**
 
-Consider the major quantum interpretations by descriptive complexity:
+The comparison begins with the work each account performs. This inventory separates the shared quantum machinery from the additional task each interpretation undertakes:
 
-| Interpretation | What it adds to Schrödinger equation | Relative K |
-| ----- | ----- | ----- |
-| Many-Worlds | Nothing | Minimal |
-| Copenhagen | Collapse postulate, measurement definition, classical/quantum cut | Higher |
-| Bohmian | Hidden variables, pilot wave, guiding equation | Higher |
-| GRW | Spontaneous collapse mechanism, two new constants | Higher |
+| Account | Complete specification includes | Explanatory task |
+|---|---|---|
+| Everett | State space, Hamiltonian, boundary, subsystem structure and record weights | Explain stable records and their probabilities within unitary dynamics |
+| Operational quantum account | Preparations, operations and measurement probabilities | Predict observations with a specified scope of application |
+| Bohmian account | Wave dynamics, configuration, guidance and preparation measure | Account for the selected configuration and observed statistics |
+| Objective collapse | State, modified dynamics and collapse parameters | Account for outcomes through a distinct dynamical process |
 
-MWI takes the formalism literally: unitary evolution is complete. The wavefunction never collapses; all branches exist. This requires no additional postulates.
+Everett treats unitary evolution as complete dynamics and interprets emergent branches as realized. Those commitments avoid a dynamical collapse mechanism, but still require a definite model and an account of observed probabilities.
 
-Why does each branch yield a definite value? A measurement couples the system to an apparatus through a specific observable. Observables are Hermitian operators (mathematical objects whose outputs are always real numbers), whose eigenvalues (the specific values a measurement can yield) are the possible outcomes. Decoherence does the rest (Zurek, 2003). The apparatus entangles with the environment (air molecules, photons, thermal noise). States corresponding to different eigenvalues become effectively independent: they can no longer interfere. Each becomes its own branch with one definite eigenvalue. Decoherence is coarse-graining (averaging over fine details so many microstates map to one macrostate): the environment averages over quantum details. Many microstates, one macrostate per branch. The eigenvalue is what survives environmental averaging.
+Measurement interactions correlate a system with an apparatus and environment. Suppression of off diagonal terms in a reduced state can make interference between records effectively inaccessible. The relevant stable states depend on the interaction and dynamics; they are not universally position eigenstates. Decoherence does not itself select a unique global outcome or establish a particular ontology (Zurek, 2003).
 
-Collapse interpretations must specify: When does collapse occur? What counts as measurement? Where is the classical/quantum boundary? These are not answers within quantum mechanics but additions to it. Feynman called the double slit the only mystery of quantum mechanics. It is only a supernatural anti-causal random mystery if you add collapse. Remove it, and the equation explains everything. Von Neumann's 1932 "proof" that hidden variables are impossible assumed what it aimed to prove: that hidden variables must obey quantum additivity even for incompatible observables. Hermann (1935) identified the flaw; Bell (1966) confirmed it. The false proof delayed alternatives to collapse by a generation.
+Objective collapse proposals such as GRW and CSL specify modified quantum dynamics; CSL uses stochastic nonlinear evolution (Bassi et al., 2013). They therefore cannot be dismissed as lacking any mathematical proposal. Their extra laws and parameters require justification, and specifying them is different from demonstrating a collapse process in nature. Everett's case is that universal unitary evolution can account for measurement without those additions. That argument must include an account of observed probabilities.
 
-Hidden-variable theories add entire ontological layers: particles with definite positions guided by waves, nonlocal influences that somehow avoid signaling paradoxes.
+Bohmian mechanics retains a wavefunction and adds an actual configuration and a guidance law (Bohm, 1952). The parsimony objection is direct: if universal unitary evolution already accounts for records and their probabilities, what requires this extra structure? The Bohmian answer is that a definite configuration supplies a definite realized outcome. A comparison must evaluate that contribution alongside the Everettian account of records and probability. Under the proposed prior, a shorter complete account wins when likelihoods are equal. Merely counting named ingredients does not establish the shortest description.
 
-Under SDP, the interpretation with minimal K dominates the measure. MWI wins.
+Experimental exclusion is a different claim. In quantum equilibrium, Bohmian mechanics reproduces the usual nonrelativistic quantum statistics (Dürr, Goldstein and Zanghì, 1992). Bell violations do not exclude it through the local hidden variable bound because its guidance is nonlocal. A claimed contrary experiment must identify the particular model, preparation and differing prediction. The simplicity objection can stand without claiming such a refutation.
 
-A deeper argument reinforces this beyond parsimony. Under collapse interpretations, a specific measurement outcome is selected from the probability distribution. The generating rule (the wavefunction) has finite K. But the specific random outcome is algorithmically incompressible: it requires infinite specification complexity to determine why THIS value rather than another. There is a missing explanatory level between the finitely specifiable rule and the infinitely complex instantiation. Under MWI, this gap vanishes: all outcomes occur, no specific value requires selection, no infinite K appears at any level. MWI thus wins on explanatory completeness as well as parsimony. Discrete structures share this property: every element exists because a generating rule placed it, with no explanatory gap at any level.
+The present inventory does not calculate a winning complete description. Everett offers an economical candidate to assess.
+
+One finite random measurement result has finite description length. A short stochastic law can assign a likelihood to a long record without listing that record as part of the law. Everett must likewise explain the weights of observed records. Charging exact historical selections to only one account would compare different tasks.
 
 ### **4.2 Bell Correlations as Structure**
 
-Bell's theorem shows entangled particles correlate more strongly than any local hidden-variable theory permits. This is often framed as a puzzle about nonlocality.
+Bell inequalities constrain combinations of assumptions including local factorization and measurement independence. Observed violations do not refute every deterministic model or independently confirm mathematical monism.
 
-Mathematical structural realism dissolves the puzzle. If reality is mathematical structure, and space is structure within mathematics (not the container of mathematics), then spatially separated particles need not "signal" across distance. They are one mathematical pattern described by a single entangled state vector.
+An entangled state is a joint mathematical description of the systems. Calling it one structure does not by itself answer Bell’s questions about locality and independence. Those conditions must be evaluated in the proposed model.
 
-Bell correlations are not spooky action at a distance. They are mathematics. The correlations are structural features of a unified mathematical object, not causal influences propagating through space.
+The observed correlations do not allow controllable signalling merely by choosing a remote measurement setting. This operational fact is distinct from whether a proposed underlying ontology is local in Bell’s sense.
 
-Many-worlds treats branches as interacting. Matheism treats the whole wavefunction as one mathematical structure; what looks like branches interacting is global reversible math viewed from inside irreversible functions, our forward arrow of time. Without consciousness, time is just another math dimension in the block universe. The arrow is not a feature consciousness observes; it is what consciousness is. The statue does not argue with itself. The photon is not in two places talking. One structure, multiple perspectives; the arithmetic of reality seen from inside any of its parts.
+Matheism treats the wavefunction and its correlations as structure. Different interpretations also use mathematical descriptions, so that shared feature does not choose between them. The structural reading must recover the same observations and state what additional explanatory advantage it provides.
 
 ### **4.3 The Born Rule**
 
-Why do observed frequencies match |Ψ|²? This remains an active research area. Deutsch (1999) and Wallace (2012) have argued that the Born rule follows from decision-theoretic rationality constraints within MWI: rational agents in branching universes must weight outcomes by squared amplitudes. This derivation does not require counting branches or assigning them intrinsic probabilities.
+Why do observed frequencies match |Ψ|²? This remains an active research area. Deutsch (1999) and Wallace (2012) have argued that the Born rule follows from decision-theoretic rationality constraints within MWI: rational agents in branching universes must weight outcomes by squared amplitudes. Their decision-theoretic arguments use explicit assumptions about rational preferences and do not obtain weights by counting branches.
 
-The derivation is contested. Kent (2010) argues that Deutsch-Wallace assumes a specific notion of rationality that is not forced by the physics. Albert (2010) objects that the derivation smuggles in probability assumptions it claims to derive. These objections have force, but they target the specific derivation strategy, not the compatibility of the Born rule with MWI. If an additional postulate is required to recover the Born rule, K(MWI) increases by the complexity of that postulate. Under SDP, this matters: MWI's parsimony advantage over other interpretations depends on the Born rule being derivable rather than postulated. The question is open. We note that even with an additional Born rule postulate, MWI's total K remains lower than collapse interpretations, which require both the Born rule AND an infinite-K specification of which outcome was selected at each measurement event.
+The Born rule proposals use substantive premises about rational decision, symmetries or an observer’s uncertainty about location. Sebens and Carroll (2018), for example, make an explicit separability principle central to their argument. Their conclusion cannot be treated as obtained with no premises beyond the Schrödinger equation. A simplicity comparison should state which account it adopts and include the assumptions doing the work.
 
-The present framework is compatible with decision-theoretic approaches. SDP selects MWI as the dominant interpretation; within MWI, the Born rule emerges from rationality constraints (if Deutsch-Wallace succeeds) or from a compact additional postulate (if it does not). Either way, MWI avoids the infinite K(O) cost that collapse incurs. These are complementary, not competing claims.
+Decision theoretic accounts of Born weights and algorithmic model comparison address different questions. A successful comparison must include how each interpretation assigns probabilities to observations. A stochastic collapse law need not encode every outcome as part of its law, and an Everettian law does not remove the need for observational weights. This paper has not selected an interpretation merely by assigning infinite outcome cost to its rival.
 
-A further SDP-compatible conjecture: high-amplitude branches may have lower K (less information needed to specify observer location within them), aligning algorithmic probability with Born probabilities at a deeper level. This remains plausible but unproven and is not required for the main argument.
+A short code assigned using known Born weights would encode those weights, not independently derive them. No general theorem here identifies a branch’s Kolmogorov complexity with the negative logarithm of its squared amplitude. That proposed connection remains a separate research question.
+
+### 4.3.1 A refinement test for record weights
+
+Consider orthogonal records |0> and |1> correlated with orthogonal environmental states, with global state
+
+$$|\Psi\rangle=\frac{\sqrt{3}}2|0,E_0\rangle+\frac12|1,E_1\rangle.$$
+
+The squared norms of the two record components are 3/4 and 1/4. Now refine only the environment correlated with record 0 by an isometry sending E_0 to an equal superposition of m orthogonal substates E_0j, while E_1 remains orthogonal to them. Such an isometry can be extended to a unitary on a sufficiently large environment. The resulting expression is
+
+$$|\Psi_m\rangle=\sum_{j=1}^{m}\frac{\sqrt{3}}{2\sqrt{m}}|0,E_{0j}\rangle+\frac12|1,E_1\rangle.$$
+
+Tracing out the environment gives the same record state, diag(3/4,1/4), for every positive integer m. Counting the displayed terms instead would assign record 0 the fraction m/(m+1), changing from 1/2 at m=1 to 3/4 at m=3 and 9/10 at m=9. The observed record distinction has not changed.
+
+This calculation gives an exact consistency requirement: an account that assigns record weights from the reduced record state must be invariant under this environmental refinement. Squared-norm weights satisfy it; naive equal counting of displayed components does not. Treating reduced-state invariance as a requirement on rational expectation is an additional premise. The example does not derive the Born rule from unitary evolution alone. It identifies why an invariant weighting rule, rather than a count of written branches, belongs in the complete comparison. Wallace’s decision-theoretic programme makes its rationality assumptions explicit (Wallace, 2009).
 
 ### **4.4 Clarification**
 
-MWI is favored by SDP for structures like ours, but the Level IV multiverse contains all consistent structures. Structures where collapse is fundamental exist. Structures with irreducibly nonlocal hidden variables exist. All consistent quantum interpretations correspond to structures that exist.
+The universal realization premise permits considering different consistent dynamics. It does not say that every informal interpretation is a complete model or that all such models recover our observations.
 
-A note on superdeterminism, which rejects statistical independence between experimenter choices and hidden variables. The mainstream "extreme fine-tuning" objection is a category error under algorithmic probability. It assumes initial-condition correlations are brute facts with high K. But if the correlations follow from a simple generating rule, K is low and the measure favors them. Truly random collapse outcomes have infinite K: every specific eigenvalue selection requires specification beyond the wave function. Both superdeterminism and MWI avoid this infinite-K cost. The fine-tuning objection inadvertently argues against collapse interpretations, not against superdeterminism. MWI retains a parsimony advantage (the Schrödinger equation alone requires no additional postulates) but this advantage holds only until a superdeterministic generating rule with lower total K is discovered. The competition is mathematical, not philosophical: whichever model has lower K wins. The "universal conspiracy" dissolves once correlations are recognized as outputs of compact generating functions. Moreover, Einstein's own ontology (block universe, determinism, hidden variables) jointly entails superdeterminism. In a block universe, there is no temporal beginning at which conditions are arranged; the correlations are geometric features of a timeless structure.
+A stochastic model can have a short law even when a typical individual outcome sequence is incompressible. Its outcome probabilities enter the likelihood. A deterministic model must likewise account for initial conditions and observed records, and an Everettian model must connect branch weights to observations. Charging random outcomes only to collapse models while charging no observational selection to rivals does not provide a fair comparison.
 
-MWI dominates the measure. It is not the only option that exists.
+No ranking of the complete candidate models has been established here.
 
 ---
 
@@ -133,65 +155,67 @@ Branches are consequences, not axioms. Complexity is measured by description len
 
 **"This is untestable metaphysics."**
 
-The position makes predictions. If the final theory of physics has irreducibly high complexity, SDP is effectively falsified. More immediately: quantum computing provides indirect evidence for Many-Worlds. Superposition doing computational work suggests branches exist rather than being mere mathematical fiction.
+A specified dynamical collapse model can make different predictions from unitary quantum mechanics. Those predictions can be tested. Quantum computation by itself does not select Everett over other accounts reproducing the same quantum statistics. Likewise, a simplicity prior need not assign zero probability to a complex model; a difficult outcome is not automatically a logical falsification of the prior.
 
 **"Why algorithmic probability?"**
 
-Algorithmic probability has unique mathematical properties: dominance over computable measures, invariance under machine choice. The critic asking "why this measure?" must produce an alternative satisfying comparable desiderata. None exists.
+Universal induction has precise dominance properties over specified computable model classes. The choice of reference machine, model class and physical observation rule still matters. These results do not establish a unique ontological measure.
 
 **"The ontological question is misguided."**
 
-Healey (2017) argues from a pragmatist position that quantum states guide agents without depicting reality, making the question "which interpretation is real?" ill-posed. Fuchs's QBism (Fuchs, Mermin, and Schack, 2014\) similarly treats quantum states as expressions of agent beliefs. Both approaches sidestep the interpretive competition by declining ontological commitment. The present argument engages this challenge indirectly: SDP is not a claim about which interpretation "really" describes the world. It is a claim about measure over mathematical structures. If all consistent structures exist (as PRD entails), then structures with lower K have higher measure, and the question "which structure do we inhabit?" is answered by self-location within the measure-dominant class. Pragmatism and QBism are correct that agents need not settle the ontological question to use quantum mechanics successfully. But the measure question remains: among all structures containing agents who use quantum mechanics, which interpretive architecture dominates? SDP answers this without requiring the ontological commitment that pragmatism declines.
+Pragmatist and Bayesian interpretations pose a different question about the role of quantum states. The present proposal compares explicitly predictive models rather than claiming that a measure argument has already refuted those interpretations.
 
 ---
 
 ## **6\. The Three-Way K-Comparison**
 
-SDP is not merely an argument for MWI. It is a principled framework for evaluating all quantum interpretations. The total specification complexity of a physical theory is K(L) \+ K(I) \+ K(O):
+Use one explanatory task and encoding. For predictive comparison, the score includes a model description and the information cost of its data under its likelihood. A joint description can exploit shared information; K(L,I,O) is not generally the sum of three unconditional complexities.
 
-**Collapse interpretations:** K(L\_collapse) includes the Schrödinger equation plus the measurement postulate (Born rule and projection). K(O) grows without bound: each measurement event selects one eigenvalue from the probability distribution, and that selection is additional information not determined by the theory. Over a universe's history, K(O) is effectively infinite, an algorithmically incompressible sequence of random outcomes.
+**Collapse:** Include the actual stochastic dynamics and its parameters. Evaluate observed outcomes through its likelihood. A finite observed bit string is not an infinite specification of the law.
 
-**Many-Worlds:** K(L\_MWI) \= K(Schrödinger equation) alone. K(O) \= 0: all outcomes occur, no selection needed. The cost is ontological (branching multiverse) but not complexity-theoretic (no additional specification).
+**Everett:** Include the quantum dynamics, boundary data and the account assigning weights to observers’ records. Saying that all outcomes occur does not make every observed record equally probable or remove the need to explain observed frequencies.
 
-**Superdeterminism:** K(L\_SD) \+ K(I\_SD), with K(O) \= 0: outcomes follow from initial conditions. The fine-tuning objection claims K(I\_SD) is large, but this assumes initial-condition correlations are brute facts.
+**Superdeterminism:** Include the common generator, preparation measure and response rules. Measurement dependence can have a short description while still failing empirical or robustness tests.
 
-MWI currently leads. However, two unresolved problems may represent hidden K costs for MWI:
+Two additional points need explicit treatment in an Everettian comparison:
 
-*The Born rule.* If the Deutsch-Wallace derivation fails (Kent, 2010; Albert, 2010), an additional postulate is required, increasing K(L\_MWI). Even with this postulate, MWI avoids the unbounded K(O) of collapse, but the gap between MWI and superdeterminism narrows.
+*The Born rule.* State the assumptions used to obtain observational weights and include them in the account. Its cost cannot be declared zero simply because an argument is labelled a derivation.
 
-*The preferred basis.* Decoherence selects the position basis in practice (Zurek, 2003; Wallace, 2012). If decoherence requires supplementary assumptions about the Hamiltonian structure or the initial state, K(I) increases. This is a shared cost with superdeterminism: both depend on initial conditions, and the question is whose initial conditions have lower K.
+*The stable record basis.* Specify the interactions, subsystem decomposition and initial data underlying decoherence. Reusable structure may compress these commitments, but they cannot be omitted from one candidate and counted against another.
 
-The competition is mathematical. The framework decides it.
+The comparison is conditional on complete models, the coding convention and the evidence. If their likelihoods agree, a justified shorter description retains its prior advantage. If the likelihoods differ, those differences also matter.
 
-## **7\. The Collapse Specification Gap**
+## 7. Exact histories and predictive laws
 
-A deeper argument against collapse emerges from the distinction between generating rules and outputs. A short rule can generate a continuum distribution: quantum mechanics does exactly this, where the wavefunction is finitely specifiable and measurement outcomes follow the Born rule. The randomness does not add to specification complexity because it is drawn from the distribution, not specified point by point. But this saving works cleanly only under Many-Worlds, where all outcomes occur and no specific random value needs specification. Under collapse, the specific outcome at each measurement has no generating reason: infinite specification complexity hiding behind a short instruction. MWI is the only interpretation with no explanatory gap at the instantiation level. Collapse is not merely expensive under SDP. It requires the unconstructible: specific random outcomes with no generating rule. Permitting the unconstructible borders on square circles.
+A demand for causal completeness can motivate rejecting irreducible outcome selection. The strongest form of that objection asks for a generator of the particular history, rather than stopping at its probability distribution. The mathematical consistency of a stochastic law and the explanatory sufficiency of irreducible chance are separate questions.
 
-## **8\. The Arrow of Computation Strengthens MWI**
+An insistence that every realized history must have a finite deterministic generator is a further constructive premise. Probability theory can consistently describe measures whose typical infinite realizations lack such generators. Excluding those realizations by premise is not a proof that stochastic laws are contradictory. Deterministic theories must also constrain their initial states if every history is to be computable. The preference for a fully constructive account belongs in the research programme, with its assumptions explicit.
 
-A further independent argument favors MWI from the structure of computation itself. Nearly all computations are many-to-one functions: 1+1=2 is deterministic, but 2=x+y has infinitely many solutions. The inverse function does not exist: not hard to compute, but nonexistent. This is a structural fact about mathematics, independent of physics.
+## 8. Records within a unitary substrate
 
-Reversible computing (Bennett, 1973\) does not change this. It computes a different bijective function that stores inputs alongside outputs. The original function's inverse still does not exist. Each timeline lacks the backward path, even if the multiverse globally stores all paths. The arrow is absolute.
+A unitary evolution can support records whose local description is effectively lossy because information remains in environmental correlations. A many to one map of local records has no unique inverse on its full input domain. Reversible computation can retain inputs in an enlarged state; the lack of a local inverse does not prohibit reversed physical solutions or their observers.
 
-Under collapse interpretations, the wavefunction itself is many-to-one: superposition collapses to one outcome, destroying information at the substrate level. The arrow exists at both the function level and the substrate level. Under MWI, the substrate remains unitary (one-to-one). The arrow exists only at the function level, where it is a structural fact requiring no additional postulate.
+This compatibility removes the need to introduce collapse solely to account for inaccessible local information. It does not independently derive the thermodynamic arrow or decide between complete quantum interpretations. Boundary conditions, record reliability, outcome probabilities and observational predictions remain part of the comparison. SDP offers a proposed prior for complete descriptions; it has not established that low entropy boundaries dominate that prior.
 
-MWI thus provides the cleanest architecture: reversible substrate plus irreversible functions. The arrow of time needs no thermodynamic explanation and no collapse mechanism. It follows from the mathematics of many-to-one functions operating within a unitary substrate. Collapse interpretations are overkill: they break reversibility at the substrate level when the arrow already exists at the function level. Under SDP, overkill means higher K and lower measure.
+### Observer development within the quantum account
 
-## **9\. Conclusion**
+Simple laws can remain unchanged while the structures they generate acquire the organization required for observers. Suppose the starting state lacks that organization and a later state contains observers who require it. The history must then develop the missing organization. This is a necessary consequence of those premises, not merely a possible outcome. The growing quantity is the observer relevant organization of the generated states; the law and the shortest description of the history can remain simple.
 
-Quantum interpretation selection is not a philosophical dispute to be settled by taste. Under algorithmic probability extended to ontology, the total specification complexity K(L) \+ K(I) \+ K(O) determines which interpretations dominate the measure.
+The requirement applies to any interpretation offered as an account of our developmental history. It does not by itself select MWI over another interpretation that recovers that history.
 
-Collapse interpretations incur unbounded K(O), the only provably growing complexity cost. This alone places them below both deterministic alternatives. MWI currently leads on parsimony: the Schrödinger equation alone, with no additions, has minimal K among known frameworks. Superdeterminism is rehabilitated once the fine-tuning objection is recognized as a category error, specificity is not complexity.
+## **9. Conclusion**
 
-The final ranking depends on model-specific K computations that are not yet available. What SDP provides is the framework for making those computations meaningful: not which interpretation we prefer, but which interpretation the mathematics prefers.
+The economy of quantum mechanics without collapse is that one evolution rule covers systems, apparatus and observers. Many outcomes within its solution do not require a separate law for each outcome.
 
----
+The simplicity argument becomes decisive between specified candidates only when their complete descriptions and predicted probabilities are compared. Starting conditions count. The explanation of recorded outcomes counts. Under the declared weighting rule, a shorter account with the same fit to observations has the corresponding advantage. That is the case for Everett developed here and the standard its competitors can answer.
 
 ## **References**
 
-Bernstein, G. A. (2026b). The fine-tuning objection to superdeterminism is a category error.
+Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of Hidden Variables. I. Physical Review 85, 166. https://doi.org/10.1103/PhysRev.85.166
 
-Bernstein, G. A. (2026h). The arrow of time is irreversible computation.
+Dürr, D., Goldstein, S., and Zanghì, N. (1992). Quantum Equilibrium and the Origin of Absolute Uncertainty. Journal of Statistical Physics 67, 843 to 907. https://arxiv.org/abs/quant-ph/0308039
+
+Bassi, A., Lochan, K., Satin, S., Singh, T. P., and Ulbricht, H. (2013). Models of Wave function Collapse, Underlying Theories, and Experimental Tests. Reviews of Modern Physics 85, 471 to 527. https://arxiv.org/abs/1204.4325
 
 Albert, D. (2010). Probability in the Everett picture. In S. Saunders et al. (Eds.), *Many Worlds?* Oxford University Press.
 
@@ -221,5 +245,10 @@ Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the c
 
 Carroll, S. (2019). *Something Deeply Hidden: Quantum Worlds and the Emergence of Spacetime*. Dutton.
 
-All companion papers available at https://matheism.org
+Sebens, C. T., & Carroll, S. M. (2018). Self-locating uncertainty and the origin of probability in Everettian quantum mechanics. *British Journal for the Philosophy of Science*, 69(1), 25-74.
 
+Vaidman, L. (2012). Probability in the many-worlds interpretation of quantum mechanics. In Y. Ben-Menahem & M. Hemmo (Eds.), *Probability in Physics* (pp. 299-311). Springer.
+
+Vaidman, L. (2021). Many-worlds interpretation of quantum mechanics. In E. N. Zalta (Ed.), *Stanford Encyclopedia of Philosophy* (Fall 2021 Edition).
+
+Wallace, D. (2009). A formal proof of the Born rule from decision-theoretic assumptions. https://arxiv.org/abs/0906.2718

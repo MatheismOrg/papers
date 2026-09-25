@@ -1,109 +1,87 @@
-# **Simplicity Preference Is Adaptive**
+# When Simpler Explanations Help Minds Learn and Survive
 
 **Gary Abraham Bernstein**
 
-Independent Researcher ORCID: https://orcid.org/0009-0009-1761-2867
+Independent Researcher · ORCID: https://orcid.org/0009-0009-1761-2867
 
-## **Abstract**
+## Abstract
 
-Human cognition systematically favors simpler explanations, concepts, and models (Chater & Vitanyi, 2003; Feldman, 2000; Lombrozo, 2007). This preference is typically treated as a heuristic: useful but without principled justification for why simpler hypotheses are more likely true. This paper provides the missing justification. Under the Simplicity Dominance Principle (SDP), where a structure's measure is P(S) proportional to 2^(-K(S)) with K denoting Kolmogorov complexity, simpler structures are exponentially more probable. Each additional bit of specification halves a structure's measure. This is a mathematical fact about the distribution of structures.
+A short explanation can help a mind learn more from less evidence and reuse what it learns. It helps survival only if the saved effort does not discard distinctions needed for action. This paper states that trade-off as an evolutionary comparison: benefits across encountered environments, less learning and implementation costs. It also identifies an exact information limit. When two situations look identical but require incompatible responses, no strategy using only those observations can guarantee success in both. Simplicity must therefore preserve the information that matters. Mathematical work on prediction supports the account, and cognitive findings motivate testing it in learners. The proposal explains why economical explanations may be adaptive and why perceived elegance can mislead; a large description-weight advantage is not automatically a large survival advantage.
 
-If simpler explanations describe more probable structures, then organisms that preferentially adopt simpler explanations will, on average, act on more accurate models. Natural selection therefore favors simplicity preference. The preference is a calibration to the actual distribution of structures.
+**Keywords:** simplicity preference, learning, algorithmic probability, evolutionary epistemology, explanation
 
-This framework unifies several findings in cognitive science: why children learn regular patterns before exceptions, why concept difficulty tracks description length, why explanatory breadth is preferred over narrowness, and why conspiracy theories provoke cognitive resistance despite fitting the data. The paper also distinguishes the mathematical criterion (brevity of generating description) from the aesthetic response (perceived elegance or beauty), arguing that the latter is an evolved proxy for the former.
+## 1. When simplicity helps
 
-**Keywords:** simplicity preference, Occam's Razor, Kolmogorov complexity, algorithmic probability, cognitive parsimony, Solomonoff induction, evolutionary epistemology
+A learner cannot keep every detail or test every explanation. A short rule can identify a regularity that works across many encounters. It saves effort when the same rule can be reused, and it can support predictions beyond the examples already seen. This gives simplicity a practical role. The question is when that role improves decisions enough to favor its evolution.
 
----
+Existing research already gives this question a mathematical foundation. Chater and Vitányi (2003) develop simplicity as a unifying principle in cognition; Feldman (2000) relates the difficulty of learning Boolean concepts to their complexity; Lombrozo (2007) examines simplicity and probability in causal explanation. These findings motivate an evolutionary account without, by themselves, establishing one. The present contribution is to make the required connection explicit: which environments, decisions and costs make a simplicity preference advantageous?
 
-## **1\. The Puzzle**
+## 2. What a shorter description buys
 
-Human cognition prefers simpler explanations. This has been demonstrated across perception (Hochberg & McAlister, 1953), concept learning (Feldman, 2000), causal reasoning (Lombrozo, 2007), and general inductive inference (Chater & Vitanyi, 2003). The preference is robust, early-developing, and cross-cultural.
+Fix a language for describing candidate explanations. Suppose each complete description of length L receives initial weight proportional to 2^(−L). In a prefix-free language, no complete description begins with another complete description, so programs can be distinguished without an extra end marker. Under this rule, five fewer bits give an individual description 32 times the initial weight. This is an exact consequence of the chosen weighting.
 
-The standard treatment in cognitive science characterizes this preference as a heuristic. Chater and Vitanyi (2003) proposed simplicity as a unifying principle in cognitive science, connecting diverse phenomena through Kolmogorov complexity. Feldman (2000) showed that the subjective difficulty of learning Boolean concepts tracks their Boolean complexity. Lombrozo (2007, 2012\) demonstrated that people prefer explanations covering more phenomena with fewer causes, a preference she connects to inference quality.
+An explanation's initial weight is not its probability after evidence. A shorter explanation that predicts the observations badly can lose to a longer one that predicts them well. Nor does a ratio between individual descriptions equal a ratio between entire classes of explanations. Several programs can describe the same output, and their weights must be combined under a mixture account.
 
-What none of these accounts provides is a principled reason why simpler hypotheses are more likely true. Without this, simplicity preference remains a useful heuristic without theoretical grounding, analogous to a compass that points north without a magnetic field to explain why.
+Solomonoff's approach sums over programs rather than invariably choosing the shortest explanation compatible with the data. Mathematical results on Bayesian mixtures relate prediction loss to the weight assigned to the true environment when it belongs to the model class (Hutter, 2003). Their stated assumptions matter. They supply a reason to investigate economical prediction; they do not show that a finite organism implementing a rough brevity rule always outperforms every alternative.
 
-## **2\. The Mathematical Ground**
+The broader matheist proposal extends simplicity weighting to accounts of physical reality. The cognitive argument can be assessed without first accepting that extension. It needs an account of the regularities organisms actually encounter and the cost of exploiting them. A short description of an environment is useful only if the learner can access or approximate the relevant rule with its available resources.
 
-The Simplicity Dominance Principle (SDP) provides the missing ground. The argument proceeds in three steps.
+## 3. The evolutionary comparison
 
-**Step 1: Algorithmic probability.** Solomonoff (1964) showed that the probability of a string x under a universal distribution is dominated by the shortest program that generates x. Formally, for universal prefix-free Turing machine U, the algorithmic probability m(x) \= sum over p of 2^(-|p|) for all p such that U(p) \= x. This sum is dominated by the shortest such p. Strings with short generating programs are exponentially more probable than strings with long generating programs.
+Consider two inherited learning strategies in the same population and conditions. Each strategy earns different reproductive benefits in different environments and costs something to build and run. In a simplified model, define its expected net benefit as
 
-**Step 2: From strings to structures.** If physical structures are identified with their mathematical descriptions (Tegmark, 2014), then algorithmic probability applies to structures, not just strings. A structure with Kolmogorov complexity K(S) \= k has measure proportional to 2^(-k). Each additional bit of specification halves the measure. This identification is defended independently but the present argument requires only the weaker claim that algorithmic probability provides a reasonable prior over hypotheses, which is the standard Solomonoff induction framework already accepted in machine learning theory.
+F(P) = Σ_e q(e)u(P,e) − c(P).
 
-**Step 3: Adaptive calibration.** If simpler structures are exponentially more probable, then an organism whose hypothesis-selection mechanism preferentially adopts lower-K hypotheses will, on average, select hypotheses that are more often correct. Natural selection favors mechanisms that produce accurate models of the environment. Therefore, natural selection favors simplicity preference.
+Here P is the strategy, q(e) is the frequency of environment e, u(P,e) is its reproductive benefit there, and c(P) is its implementation cost in the same units. The sum averages over the environments encountered. Within a model where these quantities determine expected reproductive success, a simpler strategy is favored over a rival when its F is greater. Applying that comparison to evolution also requires heritable variation and the relevant population conditions.
 
-The exponential character of the advantage is important. The simplicity preference is not marginally better than random hypothesis selection. It is exponentially better. An organism that consistently selects the lowest-K hypothesis compatible with the evidence will outperform an organism that selects among compatible hypotheses uniformly, by a factor that grows exponentially with the complexity difference between the selected hypotheses.
+This compact calculation states the mechanism. Reusable regularities can let a short model earn comparable benefits at lower cost, or better benefits for the same cost. Conversely, a costly exception may be worth learning if missing it is dangerous. Predictive accuracy, description length and reproductive success are related through the task; they are not interchangeable quantities.
 
-## **3\. Unifying Existing Findings**
+The environment frequencies cannot simply be replaced by a simplicity prior and treated as measured facts. A simplicity-weighted distribution is one proposed model for q. Evidence about actual encounters, rewards and costs is needed to establish whether it explains the observed preference. Even within that model, exponential ratios of prior weights do not become exponential fitness ratios without a derivation linking them.
 
-This framework provides a unified explanation for several established findings.
+## 4. As simple as the task allows
 
-**Concept difficulty tracks description length.** Feldman (2000) showed that Boolean concept difficulty is predicted by Boolean complexity. Under SDP, lower-complexity concepts correspond to higher-measure structures. The brain encounters these structures more frequently and has more training data for them, making them easier to learn. The complexity-difficulty correlation is a consequence of the complexity-probability correlation.
+Compression can remove detail that makes no difference to a decision. Removing a crucial distinction defeats the point. Suppose two situations supply identical observations and memory, but successful action requires incompatible responses. A strategy based only on that information must respond identically, or use the same probabilities, in both. It cannot guarantee success in both. More computation cannot replace the missing distinction.
 
-**Children learn regular patterns before exceptions.** Regular patterns have lower K than patterns with exceptions. Under SDP, regular patterns are more probable and therefore more frequently instantiated in the child's environment. The learning order tracks the probability order, which tracks the complexity order.
+Later evidence can support a reconstruction of what happened. It does not make that evidence available to the earlier choice. This matters for the proposed connection between learning and the arrow of time: an environment requiring recurrent reconstruction after consequential events may offer less usable guidance for action. Establishing a temporal asymmetry still requires comparing learners and environments in both orientations. The information limit itself applies in either direction.
 
-**Explanatory breadth is preferred.** Lombrozo (2007) showed that people prefer explanations covering multiple phenomena over narrow explanations. A single principle covering n phenomena has total description length K(principle) \+ K(mapping). Separate explanations have total description length sum of K(explanation\_i). When the principle is simpler than the sum of separate explanations, the unified explanation has lower total K and is therefore more probable under SDP. The preference for breadth is a preference for lower total K.
+Useful simplicity therefore compresses the account while preserving the distinctions needed for the task. The best model for an organism may be more elaborate than the shortest explanation of its observations, because a rare hazard matters greatly to its survival. This yields a clear comparative prediction: as the cost of missing an exception rises, an adaptive learner should become more willing to pay for a model that represents it.
 
-**Conspiracy theories provoke resistance.** Conspiracy theories typically require specifying hidden agents, secret coordination, and suppressed evidence. Each additional element increases K. The simpler explanation (visible causes producing visible effects) has lower K and is exponentially more probable. Cognitive resistance to conspiracy theories tracks the K-gap between the conspiratorial and non-conspiratorial hypotheses.
+## 5. Cognitive findings and perceived elegance
 
-## **4\. Elegance as Evolved Proxy**
+A relation between concept difficulty and description length fits the proposal: a reusable rule can be easier to acquire than a list of unrelated cases. But learning difficulty also depends on representation, exposure and the learner's capacities. The evolutionary explanation should compete with those accounts, rather than infer selection directly from a correlation.
 
-That physicists are drawn to calling low-K solutions elegant may itself be adaptive. The aesthetic response to a short derivation producing rich consequences, or a single principle unifying diverse phenomena, correlates with low K(generating rule) relative to high K(output). If low-K hypotheses are more often correct, organisms that experienced positive affect in response to low-K/high-output-complexity ratios would preferentially adopt better hypotheses.
+Explanatory breadth can save description length when one rule and its application explain several observations more economically than separate accounts. The comparison must count the application too. A slogan that appears to explain everything by leaving out the difficult details has not achieved the same result.
 
-This distinguishes the mathematical criterion (brevity of generating description) from the aesthetic response (perceived elegance, beauty, or satisfaction). The criterion is objective and measurable. The response is subjective and evolved. The response tracks the criterion because natural selection favored organisms in which it did.
+Perceived elegance may guide the search toward such economies. A compact derivation with many consequences can be rewarding to understand. That response is a possible aid to discovery, with possible errors. Familiarity or presentation may make one explanation feel simpler while another predicts better. Establishing that the response evolved because it improved decisions requires evidence beyond the existence of the response.
 
-Hossenfelder (2018) asked why physics should prefer simple or beautiful theories, and found no satisfactory answer in existing justifications based on aesthetics or naturalness. The present framework provides one: the criterion is brevity, and brevity has measurable consequences for probability. The aesthetic response is a separate, evolved phenomenon that happens to track the mathematical criterion.
+Shortest program length, or Kolmogorov complexity, is defined relative to a description language and is uncomputable in general. Practical studies must use specified approximations, such as a fitted grammar or a compression scheme. These are measurable model choices; they cannot be treated as exact measurements of an object's shortest possible description. Nor does an elaborate-looking output necessarily have a complex generator.
 
-## **5\. Relationship to Solomonoff Induction**
+## 6. Comparisons that could support the account
 
-Solomonoff induction is the normative ideal: a perfect Bayesian reasoner using the universal prior assigns probabilities to hypotheses in proportion to 2^(-K). Human cognition approximates this ideal imperfectly, with known deviations (availability bias, representativeness heuristic, anchoring). The claim here is not that human cognition implements Solomonoff induction. It is that the simplicity preference component of human cognition is an evolved approximation of the Solomonoff prior, and that this approximation is adaptive because the Solomonoff prior tracks truth.
+The central test is whether a simplicity preference improves decisions after its costs are counted. Compare learners on the same observations and tasks, measuring predictive success, consequential mistakes and the effort needed to acquire and use their models. Include environments with reusable rules and environments in which exceptions matter. This asks when the preference earns its keep.
 
-This connects the normative theory (Solomonoff) to the descriptive findings (Chater, Feldman, Lombrozo) through evolutionary epistemology: natural selection built approximate Solomonoff induction into cognitive architecture because approximate Solomonoff induction produces better models than the alternatives.
+A second comparison varies the consequences while holding the observations fixed. If a previously negligible exception becomes dangerous, the expected benefit of representing it increases. A learner that adapts its model accordingly fits the task-sensitive account better than an unconditional rule to choose the shortest explanation.
 
-## **6\. Objections**
+A third comparison separates felt elegance from performance. Do judgments of simplicity help identify models that generalize to unseen cases once familiarity and presentation are controlled? Agreement would support elegance as a useful proxy in that setting. Disagreement would locate its limits. Neither outcome alone establishes an evolutionary origin.
 
-**"Simplicity preference is sometimes wrong."** Correct. The claim is that simplicity preference is calibrated to the actual distribution of structures. A calibrated instrument can be wrong on individual measurements while being right on average. The exponential advantage means that systematic simplicity preference outperforms any alternative that does not penalize complexity.
+These tests do not require identical learning rates across sensory systems, an exact 2^(−L) curve for every human judgment, or a universal ordering of explanations across cultures. Those stronger predictions require additional models of encoding and learning. The contribution here is a common comparison of usefulness and cost, with those choices made explicit.
 
-**"Kolmogorov complexity is uncomputable."** True in general. Human cognition does not compute K exactly. It approximates K through proxies: number of free parameters, number of independent causes, length of verbal or mathematical description. These proxies are imperfect but correlated with K. The evolutionary argument requires only that the proxies are correlated, not that they are exact.
+## 7. Conclusion
 
-**"This is just Bayesian inference with a simplicity prior."** Yes. The contribution is identifying why this prior is correct: simpler structures are exponentially more probable. The prior is not arbitrary. It tracks the distribution of existence.
+Simplicity can help a mind reuse what it learns, generalize from limited evidence and act at lower cost. It is adaptive when those gains improve reproductive success in the environments encountered. The comparison must include the cost of missed distinctions as well as the cost of representing them.
 
-## **7\. Scope and Limitations**
+A prior favoring short descriptions supplies a possible basis for economical prediction. Existing mathematical results establish benefits under specified assumptions; they do not establish a universal evolutionary advantage for choosing the shortest account. The evolutionary hypothesis becomes stronger by identifying the conditions under which simplicity succeeds, and the information it must preserve.
 
-This paper addresses the simplicity preference specifically. Related phenomena, such as the psychological effects of deterministic worldviews on guilt, regret, and anxiety , involve different cognitive mechanisms and are addressed separately.
+## References
 
-The paper does not claim that all cognitive biases are adaptive. It claims that one specific cognitive tendency, simplicity preference, is adaptive for a specific mathematical reason. Other biases (confirmation bias, availability heuristic) may be adaptive for different reasons or may be genuine miscalibrations.
+Chater, N., and Vitányi, P. (2003). Simplicity: A unifying principle in cognitive science? Trends in Cognitive Sciences 7(1), 19–22. https://doi.org/10.1016/S1364-6613(02)00005-0
 
-## **8\. Conclusion**
+Feldman, J. (2000). Minimization of Boolean complexity in human concept learning. Nature 407, 630–633. https://doi.org/10.1038/35036586
 
-Human simplicity preference is not a heuristic shortcut. It is a calibration to the mathematical distribution of structures, where simpler structures are exponentially more probable. Natural selection built this calibration into cognitive architecture because organisms with simplicity preference construct more accurate models. The aesthetic response to elegance is an evolved proxy for the mathematical criterion of brevity. The compass points north because there is a magnetic field.
+Hutter, M. (2003). Optimality of Universal Bayesian Sequence Prediction for General Loss and Alphabet. Journal of Machine Learning Research 4, 971–1000. https://www.jmlr.org/papers/v4/hutter03a.html
 
----
+Kolmogorov, A. N. (1965). Three approaches to the quantitative definition of information. Problems of Information Transmission 1(1), 1–7.
 
-## **References**
+Lombrozo, T. (2007). Simplicity and probability in causal explanation. Cognitive Psychology 55(3), 232–257. https://doi.org/10.1016/j.cogpsych.2006.09.006
 
-
-Bernstein, G. A. (2026c). Reality is mathematical structure.
-
-Chater, N., & Vitanyi, P. (2003). Simplicity: A unifying principle in cognitive science? *Trends in Cognitive Sciences*, 7(1), 19-22.
-
-Feldman, J. (2000). Minimization of Boolean complexity in human concept learning. *Nature*, 407(6804), 630-633.
-
-Hochberg, J., & McAlister, E. (1953). A quantitative approach to figural "goodness." *Journal of Experimental Psychology*, 46(5), 361-364.
-
-Hossenfelder, S. (2018). *Lost in Math: How Beauty Leads Physics Astray*. Basic Books.
-
-Kolmogorov, A. N. (1965). Three approaches to the quantitative definition of information. *Problems of Information Transmission*, 1(1), 1-7.
-
-Lombrozo, T. (2007). Simplicity and probability in causal explanation. *Cognitive Psychology*, 55(3), 232-257.
-
-Lombrozo, T. (2012). Explanation and abductive inference. In K. J. Holyoak & R. G. Morrison (Eds.), *Oxford Handbook of Thinking and Reasoning* (pp. 260-276). Oxford University Press.
-
-Solomonoff, R. J. (1964). A formal theory of inductive inference. *Information and Control*, 7(1), 1-22.
-
-Tegmark, M. (2014). *Our Mathematical Universe*. Knopf.
-
-All companion papers available at https://independent.academia.edu/TheMatheist
-
+Solomonoff, R. J. (1964). A formal theory of inductive inference. Information and Control 7, 1–22 and 224–254.
