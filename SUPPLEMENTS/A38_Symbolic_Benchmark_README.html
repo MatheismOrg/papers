@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A38 symbolic benchmark</title>
+<style>
+body { font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.7; max-width: 800px; margin: 0 auto; padding: 20px; }
+h1 { font-size: 20px; text-align: center; }
+h2 { font-size: 16px; margin-top: 24px; }
+h3 { font-size: 15px; margin-top: 18px; }
+h4 { font-size: 15px; font-style: italic; margin-top: 12px; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+th { background: #f5f5f5; font-weight: bold; }
+.math { font-family: 'Courier New', monospace; text-align: center; margin: 12px 0; }
+.keywords { font-style: italic; font-size: 14px; }
+hr { border: none; border-top: 1px solid #ccc; margin: 16px 0; }
+</style>
+</head>
+<body>
+<h1>A38 symbolic benchmark</h1><p><b>Task:</b> print <code>A38_Symbolic_Benchmark_Spec.txt</code> exactly. That text states the Standard Model with general relativity completely: the gauge group, the matter fields and their charges, the action, the quantum rule, and 28 declared inputs rounded to at most five significant figures.</p><p><b>Run:</b> <code>python3 A38_Symbolic_Benchmark.py</code>. It uses only the Python standard library. It compresses the target with raw LZMA2, writes the counted program <code>A38_Symbolic_Benchmark_Program.py</code>, runs that program, checks its output against the target by SHA-256 (exact match), and writes <code>A38_Symbolic_Benchmark_Results.json</code>.</p><p><b>Result (Python 3.13, CPython):</b></p><table><tr><th>What</th><th>Bytes</th><th>Bits</th></tr><tr><td>The statement as plain text</td><td>2,549</td><td>20,392</td></tr><tr><td>The statement compressed (raw LZMA2)</td><td>1,416</td><td>11,328</td></tr><tr><td>The self-contained program that prints it</td><td>1,900</td><td>15,200</td></tr></table><p><b>What it shows:</b> a complete statement of the Standard Model with general relativity, laws and constants together, prints from a program of 15,200 bits in a declared language, and its compressed core is 11,328 bits. That is an upper bound for this task in this language. A shorter program may exist.</p><p><b>What it does not do:</b> it computes no predictions. A program that derives observable predictions from these laws is the next, predictive task, and it has to be compared with rivals doing the same task in the same language. The inputs are rounded values near current central values, declared for the count, and not a new fit.</p><p>The other A38 supplements still run and reproduce their shipped outputs: <code>A38_Coupling_Code_Benchmark.py</code> reproduces <code>A38_Coupling_Code_Results.json</code> exactly, and <code>A38_physics_spec.c</code> compiles and prints a CKM matrix that is unitary to within 2.2e-16. Their scope is stated in <code>A38_C_BINARY_BIT_COUNT.md</code>.</p>
+</body>
+</html>

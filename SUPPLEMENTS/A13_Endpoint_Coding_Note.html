@@ -1,0 +1,157 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Supplementary Coding Calculations for A13</title><style>body{max-width:900px;margin:2.5rem auto;padding:0 1rem;font:18px/1.65 Georgia,serif;color:#202b35}h1,h2,h3{line-height:1.2}a{color:#165b90}table{border-collapse:collapse;font:14px/1.5 system-ui;width:100%}td,th{border:1px solid #ccd5dd;padding:.5rem;text-align:left}pre{white-space:pre-wrap;overflow-wrap:anywhere}details{margin:1rem 0}summary{cursor:pointer;font-weight:bold}.note{background:#f0f4f6;padding:1rem}ins{font-weight:bold;background:#e4f4e4;text-decoration:none}del{background:#ffe7e7}</style><body><h1 id="supplementary-coding-calculations-for-a13">Supplementary Coding
+Calculations for A13</h1>
+<p>This optional note supplies the endpoint calculations behind A13’s
+brief numerical illustration. It is separate from the main paper so the
+temporal argument does not depend on a lengthy discussion of clocks or
+encoding formats.</p>
+<h2 id="cosmological-scale-and-fixed-width-addresses">Cosmological scale
+and fixed-width addresses</h2>
+<p>The age of our universe gives the choice a concrete scale. Taking
+13.8 billion years as the interval, with 365.25 days per year, gives
+about
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4.35</mn><mo>×</mo><msup><mn>10</mn><mn>17</mn></msup></mrow><annotation encoding="application/x-tex">4.35\times10^{17}</annotation></semantics></math>
+seconds.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Resolution</th>
+<th style="text-align: right;">Approximate number of positions</th>
+<th style="text-align: right;">Fixed-width address</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>One second</td>
+<td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4.35</mn><mo>×</mo><msup><mn>10</mn><mn>17</mn></msup></mrow><annotation encoding="application/x-tex">4.35\times10^{17}</annotation></semantics></math></td>
+<td style="text-align: right;">59 bits</td>
+</tr>
+<tr class="even">
+<td>One Planck time</td>
+<td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8.08</mn><mo>×</mo><msup><mn>10</mn><mn>60</mn></msup></mrow><annotation encoding="application/x-tex">8.08\times10^{60}</annotation></semantics></math></td>
+<td style="text-align: right;">203 bits</td>
+</tr>
+</tbody>
+</table>
+<p>The second row uses
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mi>P</mi></msub><mo>≈</mo><mn>5.39</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>44</mn></mrow></msup></mrow><annotation encoding="application/x-tex">t_P\approx5.39\times10^{-44}</annotation></semantics></math>
+seconds (NIST, 2022 CODATA). Planck time is the time light takes to
+travel one Planck length; using it here does not establish that physical
+time advances in such ticks. If 203 bits are additional to an otherwise
+unchanged description, the weight factor is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mo>−</mo><mn>203</mn></mrow></msup><annotation encoding="application/x-tex">2^{-203}</annotation></semantics></math>,
+approximately
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7.78</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>62</mn></mrow></msup></mrow><annotation encoding="application/x-tex">7.78\times10^{-62}</annotation></semantics></math>.
+The reduction is about
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.29</mn><mo>×</mo><msup><mn>10</mn><mn>61</mn></msup></mrow><annotation encoding="application/x-tex">1.29\times10^{61}</annotation></semantics></math>,
+not
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mn>203</mn></msup><annotation encoding="application/x-tex">10^{203}</annotation></semantics></math>.</p>
+<h3 id="what-compression-can-change">What compression can change</h3>
+<p>A fixed-width address can select any position in the interval. A
+description of one particular position may be much shorter. For example,
+a rule can specify
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>203</mn></msup><annotation encoding="application/x-tex">2^{203}</annotation></semantics></math>
+steps by encoding the base, exponent and operation. That expression does
+not specify our exact age; it demonstrates why a large integer need not
+have a comparably long shortest description. The measured age is itself
+approximate, rather than an exact Planck-time address.</p>
+<p>The proposed two five-bit number fields do not settle the minimum.
+Even if each field represents values from 1 through 32,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>32</mn><mn>32</mn></msup><mo>=</mo><msup><mn>2</mn><mn>160</mn></msup></mrow><annotation encoding="application/x-tex">32^{32}=2^{160}</annotation></semantics></math>
+falls below the illustrated scale. This excludes that particular
+single-power format. It does not exclude short encodings using other
+operations or information already supplied by the model. An exact bit
+count requires a defined language. The next section gives a 16-bit
+stacked-exponent example:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><msup><mn>3</mn><mn>5</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>=</mo><msup><mn>2</mn><mn>243</mn></msup></mrow><annotation encoding="application/x-tex">2^{(3^5)}=2^{243}</annotation></semantics></math>.
+Sixteen bits is the minimum for reaching this scale within that stated
+grammar. This illustrates a duration cost; if all sixteen bits are
+additional to the reverse account, their weight factor is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mo>−</mo><mn>16</mn></mrow></msup><mo>=</mo><mn>1</mn><mi>/</mi><mn>65</mn><mo>,</mo><mn>536</mn></mrow><annotation encoding="application/x-tex">2^{-16}=1/65{,}536</annotation></semantics></math>.</p>
+<p>The same principle applies to an endpoint defined by an event. A rule
+such as “stop at the first observer satisfying criterion C” must specify
+the criterion and how it is evaluated. If that rule is effective and the
+event occurs, it can identify a time without listing a timestamp.
+Whether it costs more or less than a numerical address is a question for
+the complete encoding. Our existence does not establish that we are the
+first observers anywhere in the universe.</p>
+<p>Most possible endpoints cannot all receive very short descriptions.
+For a fixed background, fewer than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>m</mi></msup><annotation encoding="application/x-tex">2^m</annotation></semantics></math>
+endpoints can have descriptions shorter than m bits, because there are
+only
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>m</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^m-1</annotation></semantics></math>
+binary strings of those lengths. Among N uniformly sampled endpoints,
+the fraction with such descriptions is therefore less than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>m</mi></msup><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">2^m/N</annotation></semantics></math>.
+This counting result does not establish the length of our particular
+endpoint, whose selection is tied to observer evidence.</p>
+<h2 id="a-sixteen-bit-stacked-exponent-illustration">A sixteen-bit
+stacked-exponent illustration</h2>
+<p>For an explicit compressed integer language, let tag 0 introduce a
+positive integer literal in Elias gamma code and tag 1 introduce a power
+followed by two recursively encoded expressions. A literal n then uses
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo stretchy="false" form="prefix">⌊</mo><msub><mo>log</mo><mn>2</mn></msub><mi>n</mi><mo stretchy="false" form="postfix">⌋</mo><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2\lfloor\log_2 n\rfloor+2</annotation></semantics></math>
+bits including its tag. The expression
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>203</mn></msup><annotation encoding="application/x-tex">2^{203}</annotation></semantics></math>
+uses
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>16</mn><mo>=</mo><mn>21</mn></mrow><annotation encoding="application/x-tex">1+4+16=21</annotation></semantics></math>
+bits, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mn>61</mn></msup><annotation encoding="application/x-tex">10^{61}</annotation></semantics></math>
+uses
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>12</mn><mo>=</mo><mn>21</mn></mrow><annotation encoding="application/x-tex">1+8+12=21</annotation></semantics></math>
+bits. The shared decoder defines the language. These are exact lengths
+in this grammar, not universal minima or specifications of our exact
+endpoint.</p>
+<p>Stacking improves the threshold example. Encode
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><msup><mn>3</mn><mn>5</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>=</mo><msup><mn>2</mn><mn>243</mn></msup></mrow><annotation encoding="application/x-tex">2^{(3^5)}=2^{243}</annotation></semantics></math>
+with two one-bit power tags and literal codes of four, four and six bits
+for 2, 3 and 5. The total is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>16</mn></mrow><annotation encoding="application/x-tex">1+4+1+4+6=16</annotation></semantics></math>
+bits; the actual codeword is <code>1001010011000101</code>. This exceeds
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>203</mn></msup><annotation encoding="application/x-tex">2^{203}</annotation></semantics></math>
+ticks. It specifies a duration beyond the cosmological threshold, not
+our exact measured age or the complete reversal procedure.
+Exponentiation is supplied by the shared decoder, so its implementation
+is not charged afresh at each call.</p>
+<p>Sixteen is minimal for reaching that threshold in this grammar. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">M(c)</annotation></semantics></math>
+be the greatest integer expressible in exactly c bits. Its possibilities
+are a literal of that cost or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msup></mrow><annotation encoding="application/x-tex">M(a)^{M(b)}</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mn>1</mn><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a+b+1=c</annotation></semantics></math>.
+Exponentiation is monotone for positive integer arguments, so this
+recurrence covers every expression tree. Across all costs below sixteen,
+its largest value is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mn>31</mn></msup><mo>=</mo><mn>617</mn><mo>,</mo><mn>673</mn><mo>,</mo><mn>396</mn><mo>,</mo><mn>283</mn><mo>,</mo><mn>947</mn></mrow><annotation encoding="application/x-tex">3^{31}=617{,}673{,}396{,}283{,}947</annotation></semantics></math>,
+far below the threshold. The sixteen-bit expression above reaches it.
+This supplies a checked lower bound within the declared format.</p>
+<p>The bound is grammar-relative. Another prefix-free universal decoder
+can reserve <code>0</code> followed by eight bits for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup><annotation encoding="application/x-tex">2^n</annotation></semantics></math>,
+and <code>1p</code> for simulation of a fixed universal prefix-free
+machine on p. Its nine-bit code <code>011001011</code> produces
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>203</mn></msup><annotation encoding="application/x-tex">2^{203}</annotation></semantics></math>.
+Both functions and decoder are fixed before comparison. Thus sixteen is
+a shortest encoding in the worked grammar, not a minimum over all
+universal computers. The physical comparison must use one justified
+common language and count only the information the reverse account
+additionally needs.</p>
+<h2 id="reproducing-the-grammar-bound">Reproducing the grammar
+bound</h2>
+<p>The recurrence check and its output are in the portfolio’s EDITORIAL
+/ ENDPOINT_CODING directory. Values are capped at the target without
+changing whether it is reached. The chosen clock and horizon remain
+illustrative; the reversal comparison concerns additional
+information.</p>
+<h2 id="references">References</h2>
+<p>Grünwald, P. D., and Vitányi, P. M. B. (2008). Algorithmic
+information theory. <a href="https://arxiv.org/abs/0809.2754"
+class="uri">https://arxiv.org/abs/0809.2754</a></p>
+<p>National Institute of Standards and Technology. 2022 CODATA
+recommended values: Planck time. <a
+href="https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+class="uri">https://physics.nist.gov/cuu/Constants/Table/allascii.txt</a></p>
+</body></html>

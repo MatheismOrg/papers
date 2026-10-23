@@ -1,0 +1,411 @@
+# Why Everything Exists as Math, with Simple Laws and Forward Discrete Time
+
+## Abstract
+
+Every consistent structure exists as mathematics, since that takes nothing beyond consistency; whatever let one exist and not another would itself be structure, so the point is a priori. Physics is transitions in mathematics, and we observe only the transitions we take part in, so the question is which structures we should expect to observe. The laws of physics are short because every bit of a complete description is a yes-or-no that no rule decides, so each added bit halves the description's probability. The universe therefore starts simple, laws and starting state together; if that reason fails, observation still shows the simple start, and the rest of the argument needs only the fact. Minds like ours are complex, so complexity has to grow from that simple start, as it does under simple rules from the Game of Life to physics, where classical paths emerge from the sum over all paths. Growth takes causal steps. On the view taken here they are discrete, since a continuum has no next step for a cause to produce, though some hold that continuous dynamics can cause; either way, time runs forward from simple to complex, and an endless history has no last moment to run back from.
+
+The measure behind this is exact. A shortest description has no pattern left to compress, so its bits are random in the sense of the rule-random dichotomy: nothing favors 0 over 1, and no bit depends on another, since a preference or a dependence would itself be a rule that has to be written down. Longer descriptions are more numerous and still lose in total: whether to add another bit is a second unruled yes-or-no, so all descriptions one bit longer weigh half as much together. Added laws more often break the conditions observers need than create them, so at least half the weight sits at the shortest description that can produce observers. A complete account counts the laws, the starting conditions and the rules connecting states to observations, so hiding information in the starting state saves nothing. Applied to physics, the measure favors action principles, quantum mechanics without collapse, a shared cause for particles and measurement settings, and histories grown from a first state.
+
+Keywords: Simplicity Dominance Principle, mathematical universe, algorithmic probability, Kolmogorov complexity, many-worlds, superdeterminism, arrow of time, fine-tuning, string theory, mathematical monism
+
+---
+
+## 1. Introduction
+
+The argument runs in nine steps.
+
+1. Everything that exists is ruled or random, and both are mathematical; anything outside mathematics would be outside logic, and nothing could be reasoned about it.
+2. The universe starts simple, because each bit of its description halves its probability.
+3. It grows complex, because minds like ours are complex and the probable universes grow them instead of writing them in.
+4. It grows in causal steps: a cause, then its effect.
+5. On the view taken here the steps are discrete, since a continuum has no next step for a cause to produce, an a priori proof in the logician's sense; others hold that continuous dynamics can cause.
+6. On the same view, change without a cause is outside logic and reason; indeterministic readings of quantum theory disagree.
+7. Time is the causal steps, each a rule applied to rules, and it runs forward, from simple to complex; space is how far the steps spread, at the base rate of the speed of light (Section 4.7). Light, which crosses space while no time passes for it, is the limit of a moving clock running slow, not an exception.
+8. An endless chain of steps has no last step to run back from.
+9. A finite reversal must specify the step it turns back from, and each bit of that address halves its weight, so we find ourselves in the forward history, not a reversed one (Section 6.4.3).
+
+Each step uses the facts before it, not their reasons, so a reason can fail without taking the rest of the chain with it. The laws are simple and the start was simple, as observation shows: a reader who rejects the measure in step 2 still faces every later step except the price in step 9, and one who allows causes in a continuum, or change without a cause, still faces a simple start that has to grow complex minds, toward a future with no last step.
+
+One rule can explain many facts without listing each separately, and that economy is what this paper measures. Universal quantum evolution needs no separate collapse law, a rule that picks one outcome at measurement, and a common generator could explain correlations between particles and measurement settings. Each proposal must recover the observations after its laws, starting conditions and probability rules are counted, since a short equation with unexplained inputs may be a long explanation in disguise. This paper carries out that comparison across quantum theory, geometry and time.
+
+Every consistent structure exists as mathematics, fictions included, since that takes nothing beyond consistency, and every plot hole is fixed by some consistent math. Mathematical existence already supplies the complete structure, and structural identity leaves no extra substance to add. Matheism rejects a primitive actuality property (a basic, unexplained mark of existing) that would select some existing structures and exclude others: any such property would either enter determinate relations with the structure, and so belong to it, or make no difference to anything (compare the modal realism of David Lewis, who held every possible world equally real; Lewis, 1986). What a mind can experience is narrower: experiencing is processing, and processing takes steps, so a mind experiences only what takes part in the same steps as it does. That part is a mind's physics, transitions in mathematics, much as Lewis read "actual" as the world one is part of.
+
+Once every structure exists, the question is which ones we should expect to observe, and the answer is a weight that halves with every bit of description. The weight comes from the rule-random dichotomy itself: the bits of a shortest description are random, and an unruled bit is 0 or 1 with equal chance (Section 3.3). A structure whose shortest complete description has K bits therefore carries weight proportional to 2^(-K), and observations then update those weights. Whether to add another bit is a second 50/50, so longer descriptions lose in total as well as one by one.
+
+Matheism, or mathematical monism (the view that reality is mathematical structure alone), extends the structural approach of James Ladyman and Don Ross (2007) and Steven French (2014). It grounds existence in mathematical necessity: structural truths need no external maker. The physical comparisons below state which of its commitments they use.
+
+Section 3 derives the measure, Section 4 examines description savings, Section 5 compares quantum interpretations, and Section 6 answers objections. In the Bell comparison, which concerns correlations between distant measurements, responses stay local and outcomes definite, so reproducing the observed violations requires dependence between the hidden state and the measurement settings.
+
+---
+
+## 2. Foundation
+
+Matheism identifies reality with mathematics, on three arguments. The rule-random argument: everything is ruled or random, and both regularity and chance are mathematical, since probabilities and determinate outcomes stand in mathematical relations too. The interaction argument: anything that affects a physical system must enter determinate relations with it. The identity argument: a complete account of properties, relations and causal powers exhausts what a thing is, so an additional substance either adds a further determinate feature, which extends the structure, or leaves the explanation unchanged. The rule-random argument is an a priori proof in the logician's sense: a pattern either has a shorter rule or it does not, both kinds are mathematics, and only a coherent feature that is neither could refute it.
+
+Three commitments are kept apart below, because they do different work: the identity thesis, the claim that every consistent structure exists, and the measure that weights observations.
+
+The identity thesis meets a literature of objections, and each has a short answer. Structural realism (the view that what science reliably captures is structure) and its critics (Russell, 1927; Saunders, 2006; Esfeld and Lam, 2008) ask whether science reaches only structure; on the identity thesis there is nothing else to reach. Newman's objection is that a bare claim of structure is met by any domain of the right size (Newman, 1928). It targets the claim that some structure or other exists; the identity thesis concerns the actual relations, causal ones included, which observers pick out through their own relations to the rest. Primitive identity (identity not fixed by a thing's qualities; Black, 1952; Adams, 1979) fails in Black's own example. Each of two identical spheres stands at a distance from the other and at none from itself, so a relation shows that there are two. A primitive thisness that no feature marks is a label where an explanation should go.
+
+Ontic vagueness (vagueness in the world itself; E. Barnes, 2010) has a mathematical account too: a theory can say which facts are indeterminate without giving each vague property a sharp boundary. Knowledge of abstract objects (Benacerraf, 1973) leaves no gap, since knowers are parts of the structure they know and stand in relations to the rest of it. Nominalist physics (physics stated without numbers or other abstract objects; Melia, 1998) replaces numbers with relations of the same form, which are structure again. Fundamentality (Sider, 2011) finds nothing beneath the structure, since an extra substance either adds a determinate feature, which extends the structure, or adds nothing.
+
+Observers belong inside the same account, so a history that explains our evidence must also produce the observers who hold it. It must recover their organization, their records and their physical interactions. It must also keep structure apart from how structure is represented: coordinate systems can describe the same geometry, a complex variable can encode two real components without creating two substances, and continuum measure assigns length to intervals without adding the zero lengths of individual points. These distinctions constrain the geometric and quantum proposals below.
+
+Minds belong to the same structure. The hard problem of consciousness assumes its conclusion: it takes feeling to be something other than structure and then finds no structure that explains it. The flaw is in the argument's own logic, so exposing it is a priori too. Feeling is a mind's states producing one another as it models its world, so a photograph or a recording of a brain, which produces nothing, feels nothing. Panpsychism cannot say how tiny feelers add up to one mind, and idealism cannot say how separate minds find the same mathematics. The bare form of being a subject, with memories and traits set aside, has no feature that differs from one mind to another. So there is one self in every mind, as two is one number however many pairs there are. A choice is ruled or random, so a free choice that is neither is the one option the dichotomy excludes.
+
+## 3. The Measure Problem and the Simplicity Dominance Principle
+
+### 3.1 The Measure Problem
+
+Every consistent structure exists, so predictions need a weight for each one. The Level IV multiverse, Max Tegmark's term for the ensemble of all consistent mathematical structures (Tegmark, 1998, 2008, 2014), resolves fine-tuning (the way physical constants seem set just right for life) in principle and raises exactly that question: among all consistent structures, which should we expect to observe? Without a measure nothing can be predicted, and some measures make the predictions absurd: under certain measures almost all observers are Boltzmann brains, observers formed by rare random fluctuations, with false memories (Carroll, 2010).
+
+The answer is a weight set by description length, halved by every bit of the shortest complete description. Stated precisely, for effectively specifiable complete candidates S, those a computer program could generate, the shortest-description prior (the weighting assigned before any evidence) in a fixed universal prefix-free language U is
+
+$$P(S) \propto 2^{-K(S)}$$
+
+where K(S) means K_U(S): the length of the shortest description of the complete candidate for the stated task. A prefix-free language is one in which no complete description is the beginning of another, so each description settles where it ends. A predictive candidate includes laws, boundary or preparation information (the particular conditions the laws apply to) and the rule assigning probabilities to observations, and information they share is counted once. Section 3.3 gives the reason for the halving.
+
+The prior sits next to Ray Solomonoff's algorithmic probability, which adds up every description of the same output. Stated precisely, Solomonoff-style algorithmic probability sums 2^(-|p|) over all programs p producing the specified output (Solomonoff, 1964). By the coding theorem, that sum is within a constant factor of 2^(-K) for finite strings of symbols (Levin, 1974; Li and Vitanyi, 2008): the shortest description carries a fixed share of the total, and the many longer descriptions of the same output cannot swamp it. The exact powers of two below refer to the shortest-description prior.
+
+The weight covers whatever finite descriptions produce, which includes every law a finite program can state. Stated precisely, a noncomputable infinite object has no finite program generating all its digits, yet an object can be noncomputable without being maximally random, and a computable stochastic law, one that sets the chances of outcomes, can give total probability one to individually noncomputable sequences. Restricting the prior to programs therefore does not show that noncomputable structures carry no weight; it shows that every law we can state is covered.
+
+A short rule can fix an object of unlimited detail, which is why short laws can produce a rich world. The Mandelbrot set shows it: one line defines endless structure. The example does not license omitting the starting or boundary information a physical candidate needs, so every comparison below encodes laws and inputs together.
+
+### One rule doing several jobs
+
+The strongest economy comes from one construction explaining features that would otherwise be specified separately: the laws, the special starting conditions and the particle content. A common geometric or dynamical rule is charged once, and any extra choices each result needs are still counted.
+
+Counting in bits shows how large such a saving can be. Written out, suppose a code needs 100 bits for one account and another independent 100 bits for a second. A joint program of 130 bits that recovers both saves 70 bits against the 200-bit concatenation, so its weight is larger by 2^70. These numbers illustrate the comparison; they are not measured lengths of physical theories.
+
+### 3.2 Three Types of Probability
+
+Three different things travel under the word "probability" here, and keeping them apart prevents confusion.
+
+*Quantum probability* is expectation inside one universe. If Many-Worlds is correct, all measurement outcomes occur, and the Born rule, quantum theory's rule for outcome probabilities, governs rational expectation about which branch contains one's continuation. This is uncertainty about where one is located, not indeterminacy in what exists.
+
+*Measure-theoretic weight* is the weight of whole structures. Long descriptions outnumber short ones, twice as many at each added bit, so if number decided, we should expect to find ourselves in an extremely long one, a world of endless special cases and arbitrary detail. We find ourselves under laws that fit on a page. The Simplicity Dominance Principle says why: each added bit halves a description's weight, and whether to add another bit is itself a 50/50, so everything longer than a given length weighs exactly as much as that length alone (Section 3.3).
+
+*Anthropic constraint* is the filter of observation: only structures with observers are seen. Combined with measure, it predicts that observers find themselves in high-measure structures that support observers.
+
+Quantum probability works within a structure, measure-theoretic weight works over structures, and the anthropic constraint selects the structures that matter for prediction.
+
+### 3.3 Why Each Bit Halves
+
+Each bit of a shortest description is a yes-or-no that no rule decides, so 0 and 1 are equally likely, and each added bit halves the chance of reaching that description. Stated precisely, a shortest description cannot be compressed: if it could, the compressed version plus an instruction to unpack it would be a shorter description of the original. Its bits are therefore random in exactly the sense of the rule-random dichotomy. With no rule to favor either value, each has probability 1/2; any lean toward 0 or 1 would itself be a rule, and would have to be written into the description, making it longer. A biased coin is mathematical too, but its bias is a number that has to be written into the description; one half is the only chance that needs no such number, because it is the only one that treats 0 and 1 alike. Because every structure exists, the half is also a count and not a guess. Take all strings of some length n. Exactly half begin with 0, and when n is at least k, exactly one in 2^k begins with any given k bits, so the weight of a k-bit description is the share of all strings that begin with it. On a computer it is a share of tapes. Fill a universal machine's tape with fair coin flips, and every tape that begins with a given k-bit program computes the same history, since the machine reads no further than the program's end. That is probability as Pascal and Fermat counted it in 1654, a share of equally possible cases (Hacking, 1975), and the count carries independence with it: a quarter of all strings begin with 0 and then 1, the product of the two halves, with no further assumption. A particular description of k bits is then reached with probability 2^(-k), the chance of k fair coin flips coming out one exact way. A 10-bit program carries 2^990 times the weight of a particular 1000-bit program.
+
+Half is also the gentlest rate any weighting can have, because each added bit doubles the number of possible descriptions. Stated precisely, if equally long descriptions are weighted alike, a factor milder than one half per bit, applied to all 2^k descriptions of each length k, would give each length more total weight than the one before, without limit. At exactly one half every length carries the same total, so the total over all lengths still needs the choice to stop or go on, below, to stay finite.
+
+Longer descriptions are more numerous, and they still lose in total, because whether to add another bit at all is also an unruled yes-or-no. Each description can be extended by a 0 or by a 1, and each extension carries half its parent's weight, so the two together carry as much as the parent. If every string at every length counted as a complete description, each length would carry the full weight again and the total would be infinite. The choice to stop or go on is unruled, so it is 50/50: half the weight stays with the description as it is, and half goes on to longer ones. In symbols, all descriptions of n bits together then weigh 2^(-(n+1)), half the total at n-1 bits, and everything longer than n bits, added up, weighs exactly as much as length n alone: the tail equals the peak. Picture every universe as a fresh run of fair coin flips, one flip deciding whether its laws go on and the next deciding the added bit: any laws can come up, yet at every step half the runs still going stop, so most runs end with short laws. Counted once each in a catalog, long laws would win by number; counted as runs, they lose, since each has to win every stop-or-go flip along the way.
+
+One particular description, in this picture, loses three quarters of its weight with each added bit: a half for going on and a half for the bit's value. A code that states the length once, in a short header, loses only about half per bit (Li and Vitanyi, 2008). Ratios between particular descriptions in this paper use that smaller factor, so each such ratio is the lower of the two codes' values.
+
+Among descriptions that produce observers, at least half the weight sits at the shortest length that can, because added laws more often break the conditions observers need than create them. Stated precisely, under the stop-or-go weights, let M be the shortest length that produces observers. Producing observers means producing structures that record and model their surroundings; the test mentions none of our own laws, so the count does not build in its answer. If no longer length is more often able to produce observers than length M, length M carries at least half of the observer-producing weight. If the share also does not rise from one length to the next, lengths M and M+1 carry at least three quarters, and lengths M through M+2 at least seven eighths; without that second condition a share of one at M, none at M+1 and one again after leaves the first two lengths only two thirds. The condition does real work: under the stop-or-go weights above, if one description in sixteen of length four produced observers and all thirty-two of length five did, length five would carry eight times the observer weight of length four. Fine-tuning studies find that small changes to the constants or laws of our physics often remove stable nuclei, long-lived stars or chemistry (L. A. Barnes, 2012), and some lengths of description cannot produce observers at all. Each such gap moves more weight onto the shortest length that works. For a single output, the coding theorem of Section 3.1 makes the same point: all its longer descriptions together cannot outweigh its shortest one by more than a fixed factor.
+
+Ray Solomonoff introduced these weights for induction, reasoning from past observations to predictions (Solomonoff, 1964), and the Simplicity Dominance Principle applies them to what exists, with universal realization, the claim that every consistent structure exists, as its further premise. Jürgen Schmidhuber developed algorithmic accounts of whole universes (Schmidhuber, 1997, 2000); his Speed Prior also charges for computation time (Schmidhuber, 2002), a cost distinct from the length-only weighting used here.
+
+A short hypothesis need not permit more possibilities than a long one. A compact rule can be highly restrictive, and a long specification can describe a broad family, so description length and the volume of allowed states cannot be traded for each other without a model relating them.
+
+Changing the description language changes the weights by at most a fixed factor, while differences of many bits still dominate. Stated precisely, universal description languages agree on complexity up to additive constants (Kolmogorov, 1965; Levin, 1974; Chaitin, 1987), so the weights under two languages differ by a bounded factor, and each bit of real difference between two accounts still halves the weight. Comparisons are made within one stated language, because the constants can reorder close finite rankings.
+
+Defining the weight with machines that are themselves mathematical structures is consistent, not circular. Stated precisely, algorithmic probability is defined relative to Turing machines (idealized models of a computer), which are mathematical structures; the formal models of effective computation are provably equivalent, and the Church-Turing thesis connects them with the informal idea of effective calculation. The 50/50 weight of each unruled bit does not depend on the machine. Only the lengths do, and only up to the constant above.
+
+### 3.4 Occam's Razor as Metaphysical Principle
+
+Simpler explanations are more likely to be true because simpler structures carry exponentially more weight, so Occam's Razor follows from the measure. The physicist Sabine Hossenfelder asked why physics should prefer simplicity at all (Hossenfelder, 2018); The Simplicity Dominance Principle answers that structures with shorter descriptions have exponentially more weight, half as much for each added bit. The criterion is brevity, not beauty. A complete comparison includes starting conditions and observational predictions, so that apparent economy in an equation does not hide information elsewhere.
+
+### 3.5 Scope
+
+Exact shortest lengths cannot be computed in general, so comparisons use lengths actually achieved. Stated precisely, Kolmogorov complexity is uncomputable, though an explicit generating program gives an upper bound. Comparisons must use a declared language, since the additive constants relating universal machines can change close finite rankings; the language and those constants are inputs to every physical comparison.
+
+## 4. Consequences and Predictions
+
+### 4.1 Explaining Fine-Tuning
+
+Our constants allow observers because we can only observe where observers can exist, and among those places the shortest complete descriptions carry the most weight. The explanation combines observer selection, which Steven Weinberg used to bound the cosmological constant, a measure of the energy of empty space (Weinberg, 1987), with description economy: compare complete accounts that support observers and recover their evidence, then ask which needs less independently supplied information. A short law alone need not yield life or our constants; the gain comes when one construction derives conditions that competing accounts must specify separately.
+
+The bit count decides the odds when both accounts predict the evidence equally well. Stated precisely, for two complete candidates with equal likelihood for the evidence, a k-bit difference gives the prior ratio 2^k. A claim about whole classes of worlds sums their weights and accounts for where observers sit in them (Section 6.4).
+
+The prediction runs forward: the complete laws of our world should lie near the shortest description that can produce observers. The length of today's theories is an upper bound, not a floor. A shorter complete account of the same observations would be the better theory, and the search for unification is the search for it.
+
+### 4.2 The Variational Form of Physical Laws
+
+An action principle is one short rule that selects allowed motion from all candidate paths, and that economy is the proposed reason physics takes variational form. A differential equation, one relating quantities to their rates of change, can also be compact, so neither form wins a description comparison by its name. In Richard Feynman's path integral (Feynman, 1948), action-dependent complex phases weight the contributions of all paths, and in a suitable semiclassical regime, where quantum effects are small, cancellation away from stationary action (where small shifts of the path leave the action nearly unchanged) yields the classical path. The action is stationary there, not necessarily minimal.
+
+Emmy Noether's theorem ties the continuous symmetries (smooth changes, such as shifts in time, that leave the laws unchanged) of a variational problem to conservation laws under its hypotheses (Noether, 1918). It does not prove that stable structures require an action formulation, and whether every universe with observers must have variational dynamics remains a separate conjecture.
+
+### 4.3 What a Discrete Account Must Recover
+
+A discrete account earns its place by recovering everything the continuum account delivers. Stated precisely, a proposed discrete account (compare Stephen Wolfram's hypergraph models, networks whose links can join more than two points; Wolfram, 2020) needs an explicit map from its microscopic states to effective observables: a specified metric (the rule giving distances and time intervals) or causal structure, the right symmetries, quantitative propagation and interaction laws, and observation probabilities. Branch reconvergence by itself does not provide complex amplitudes (numbers whose squared sizes give probabilities), destructive interference (contributions that cancel each other) or the Born rule.
+
+### 4.4 Testable Predictions
+
+The proposal predicts repeated, matched success: observations once thought independent following from one economical construction. It favors complete accounts that explain the same observations with fewer independent inputs, at the rate of Section 4.1. The posterior, the weighting once evidence is counted, also weighs observational fit, so a less accurate model can lose despite a shorter code. The Standard Model's gauge group (the symmetry behind its forces), its three generations of matter particles and its twenty or so measured constants are inputs today. The measure predicts that a deeper theory will produce them from fewer independent ingredients, and it ranks rival theories by how much they save; this paper claims no such derivation.
+
+### 4.5 String Theory and the Complexity Test
+
+String theory is not needed in the first place for its main job, keeping gravity finite at the shortest distances: if causes take discrete steps (Section 4.7), nothing happens at shorter distances, and there is nothing there to keep finite. String theory's vacua (its allowed stable states, each with its own particles and constants) exist under universal realization; the question is how much weight an account of our world built on them receives. Under universal realization, consistent string vacua are among the realized structures (Bousso and Polchinski, 2000; Susskind, 2003; Hawking and Mlodinow, 2010). The test is whether a string-based account receives much less posterior weight than an alternative after explaining the same observations.
+
+Two quantities decide which theory the evidence favors: how long each description is and how well it predicts. In symbols, let T include its laws, preparation measure and observation rule, with prior p(T) proportional to 2^(-L(T)). Then
+
+log_2[P(T_S|D)/P(T_A|D)] = -[L(T_S)-L(T_A)] + log_2[P(D|T_S)/P(D|T_A)].
+
+Counting vacua does not by itself fix how well a landscape model, one built on the vast set of string vacua, predicts the data. The likelihood averages each vacuum's fit to the evidence, weighted by how much of the model sits on that vacuum. Written out, for a landscape model with vacua v, P(D|T_S) = Σ_v p(v|T_S) P(D|v,T_S). If N vacua have equal weight and exactly m reproduce an evidence event D with unit likelihood, this is m/N, and enlarging N and m in the same proportion leaves it unchanged.
+
+The likelihood can cancel a large code advantage: a model twenty bits shorter but assigning D only 2^(-20) of its rival's likelihood has equal posterior weight.
+
+Length and likelihood fold into one cost, so a sweeping dismissal has a price in bits. Stated precisely, define the predictive description cost C(T;D) = L(T) - log_2 P(D|T). Odds below 10^(-100) for a string account against a stated alternative require C(T_S;D) - C(T_A;D) > 100 log_2 10, about 332.2 bits. Michael Douglas and Frederik Denef provide statistical tools for specified vacuum ensembles (Douglas, 2003; Denef and Douglas, 2004); a raw landscape count does not replace a physical selection measure.
+
+### 4.5.1 Parameters as addresses
+
+A generator can turn separately specified parameters into consequences, and then the parameters cost only an address. Stated precisely, if a shared decoding rule distinguishes M candidate regions, a fixed-width selector needs at most ceil(log_2 M) bits; the complete account must also specify the generator, the candidate family, the precision and any remaining data. *How Many Bits Is Physics?* develops the detailed coding benchmark.
+
+### 4.6 Emergent Geometry
+
+One rule can generate a whole hierarchy of geometric data, and then the hierarchy costs only the rule. Counting starts with the metric and continues into its derivatives. On a four-dimensional spacetime a symmetric metric has ten independent components, so the metric bundle has fourteen local coordinates, four for position and ten for the metric values, and tracking how the metric changes adds data at every order of derivative. Written out, recording derivatives through order n gives the jet-bundle count 4+10*C(n+4,4).
+
+A fixed computable construction adds only a bounded description cost. In symbols, for an effectively described input geometry D and a fixed computable construction F, K(F(D)|D) <= c_F. *Can Geometric Harmonics Explain Particles?* develops the coordinate count and a worked gravitational response.
+
+### 4.7 Complexity Grows in Causal Steps, and Time Runs Forward
+
+The measure makes the universe start simple, and our existence makes it grow complex. Observation shows the same start, whatever explains it: the laws we know fit on a page, and the early universe was smooth to about one part in a hundred thousand, with no structures yet, let alone minds (Planck Collaboration, 2020). A brain holds an enormous amount of organized information, and each bit of it is either written into the description, halving the weight, or grown by the laws from a simpler state. The probable universes grow their observers. Many simple rules do that. The Game of Life updates a grid of cells by one rule about how many neighbors are alive; started with five live cells, the R-pentomino, it churns for more than a thousand generations, throwing off gliders, small patterns that travel across the grid, and suitable patterns in it can run any computation (Gardner, 1970; Berlekamp, Conway and Guy, 1982). What grows is organization; the description stays short, since every later state is fixed by the rule, the start and the number of steps. Physics grows structure the same way, from the classical paths that emerge from the sum over all paths (Section 4.2) to stars, chemistry and life, with entropy rising as each step spreads energy into more arrangements.
+
+Growth takes causal steps, and on the view taken here they are discrete. A cause produces its effect, and producing an effect takes a step from one state to the next. A continuum has no next state: between any two instants lies a third, so no state is the first one a cause produces. That is an a priori proof in the logician's sense. Others answer that a continuous law can make each state depend on earlier ones without a first effect, as in Russell's account of motion as being at different places at different times (Russell, 1903). Positions at every instant with nothing producing the next are the emperor's new points. This paper's conclusions hold on either reading, since growth from a simple start runs one way whether its steps are discrete or continuous. Continuum mathematics stays a sound tool for describing many steps at once. Laws can be written in it, a perfect sphere or Einstein's smooth equations, and on this view still act only through definite values, one step at a time. A length can be measured, and its points do not cause it.
+
+On this view, change without a cause is outside logic and reason. Nothing could derive it from anything, explain it or predict it, and an account that allows it undermines physics, science and argument, since none of them could then say why anything happens. Indeterministic readings of quantum theory accept such change; the arguments here for simple laws and forward time do not depend on rejecting them.
+
+Random, in the rule-random dichotomy, means a structure with no shorter rule: a pattern nothing compresses, which is mathematics. It does not mean an event that happens without a cause. A random string of digits is still produced, step by step, by whatever wrote it, and what looks random from inside a history is the part of the whole that an observer cannot hold.
+
+Time is the chain of causal steps, so it runs from the simple start toward complex observers. An endless chain has a first step and no last one, so the whole history has no end from which to run backward, and a finite reversal must pay for the step it turns back from (Section 6.4.3). Minds run forward too. A thought merges many possible states into one, so only the forward step is produced by the mind's own present state, and memories are built by steps already taken. That is why observers remember the past and not the future.
+
+Everything that happens is such a step. On the view taken here, the rules are the only things. A structure that only sat there would still exist, as mathematics does, and do nothing and know nothing, like a dead brain with every connection intact. What happens is a rule applied to a state, itself structure, giving the next state: rules applied to rules. Time is that application, and space is how far it spreads. A distance is counted in the steps an effect needs, and the speed of light is the base layer's rate, shared by each body between moving and changing in place, so a moving clock runs slow. Light, which crosses space while no time passes for it, is the limit and no exception: it spends every step moving, so nothing within it could move relative to the rest. A theory of everything is then a rule for transitions, a rewriting system of the kind Stephen Wolfram explores on hypergraphs (Wolfram, 2020). Its causal graph, the record of which update depends on which, is a causal order of the kind causal-set theory builds spacetime from (Surya, 2019), so the two discrete programs meet: the target is one short rewriting rule whose causal graph matches a random, four-dimensional causal set at large scales, run as a unitary quantum rule, and the measure orders the search, shortest rule first. The search can also run from the other end, program first. Write the known laws as a program of discrete steps without a grid, and remove their infinities, as loop quantum cosmology does when it replaces the big bang with a bounce (Ashtekar, Pawlowski and Singh, 2006). Then shorten the program while its outputs still match.
+
+## 5. Quantum Mechanics and Many-Worlds
+
+### 5.1 The Wavefunction as Mathematical Structure
+
+On the present view the wavefunction, a system's quantum state, is reality at the quantum level, not a description of something else. Stated precisely, the wavefunction Ψ is a vector in Hilbert space, the space of a system's possible quantum states, evolving unitarily (smoothly and reversibly, keeping total probability at one) under the Schrödinger equation, and a measurement is an interaction between physical systems. Interaction with the environment suppresses interference between stable records, the process called decoherence (Zurek, 2003). In an Everettian account these records belong to branches of the joint state; decoherence alone is not a physical collapse selecting one global outcome.
+
+### 5.2 Many-Worlds as Natural Interpretation
+
+Hugh Everett's many-worlds interpretation (MWI) takes the Schrödinger equation literally: all branches exist, and the apparent collapse is what each observer-branch sees, one outcome. It fits the present position in three ways.
+
+**Parsimony:** Everett needs no physical collapse mechanism. Objective collapse models, where collapse is a real physical process, add specified stochastic dynamics, and Bohmian models, where particles have definite positions guided by the wavefunction, add a configuration and a guidance rule. Compared under one coding convention, the shorter complete description carries the prior advantage.
+
+**Predictive completeness:** A finite random outcome has finite description length, and a stochastic law supplies a likelihood without listing each outcome. An Everettian account must also explain the weights of the records observers encounter.
+
+**Universal realization:** If every admissible mathematical structure exists, structures with other dynamics exist too, and that premise does not by itself decide which quantum account describes our observations.
+
+A fair comparison charges every account the same way. A stochastic model can have a short law even when a typical outcome sequence is incompressible, and a deterministic model must account for its starting conditions and observed records. Charging random outcomes to collapse models while charging rivals nothing for observational selection would be unfair.
+
+### 5.3 Bell's Theorem
+
+Violations of John Bell's inequality rule out one combination of assumptions and leave several accounts standing. They prove neither fundamental randomness nor hidden variables, unobserved properties underlying the outcomes: the bounds constrain local deterministic and stochastic models under measurement independence, the assumption that settings are uncorrelated with the hidden state, and the other stated experimental assumptions. Bohmian models relax locality, superdeterminist models relax measurement independence, and Everett applies universal unitary evolution without selecting one global outcome. Bell's theorem does not choose among these responses.
+
+### 5.4 The Born Rule
+
+The Born rule has to be recovered, and algorithmic probability does not supply it alone. Stated precisely, the Born rule assigns probabilities from squared amplitudes: for a normalized state |Ψ> and a projector P onto an outcome subspace, the probability is <Ψ|P|Ψ>. David Deutsch (1999) and David Wallace (2012) develop a decision-theoretic route (one based on the theory of rational choice) in Everettian quantum mechanics. A code built from Born weights already uses the probabilities it would explain, so an Everettian comparison must state how it obtains observational weights and stable records.
+
+### 5.5 Reversible Evolution and Records
+
+Information can leave a system without being destroyed, because unitary evolution keeps it in correlations with the surroundings. Local loss of accessible information therefore needs no collapse. A many-to-one description, giving the same output for different inputs, need not imply irreversible microscopic laws, as Charles Bennett showed for computation (Bennett, 1973), and the direction in which reliable records form depends on the history of the system and its environment.
+
+### 5.6 Superdeterminism Rehabilitated
+
+Superdeterminism puts the particle source and the devices that choose measurement settings inside one physical generator, so their correlation needs no signal. A model that keeps local responses and definite outcomes reproduces Bell violations only if the hidden source information and the settings are correlated. The two setting devices can still be statistically independent of each other.
+
+Detector disturbance differs from measurement dependence. Bell models already let local outcomes depend on local settings; superdeterminism adds a correlation between the settings and the hidden source data. A shared history motivates a common generator, and the model must still derive the required statistics.
+
+Shared information is counted once. Encoding laws, preparation and prediction rules together reuses details that separate descriptions would repeat. For a complete model M, the likelihood P(D|M) measures how well it accounts for observations D, and random outcome records are data, not extra instructions in the law.
+
+A short rule can also overshoot, so shortness alone does not recover quantum physics. In symbols, a counter can cycle over balanced binary settings a,b and a shared bit r, with outputs A=r and B=r XOR (a AND b). This gives balanced one-wing marginals (each side's results, taken alone, split evenly) and a value of 4 for CHSH, the standard Bell test statistic, above the quantum bound of about 2.83. Shortness and the absence of observable signaling therefore do not alone pick out quantum physics.
+
+The Deterministic Constructible Universe Principle adds that only histories with deterministic constructive accounts are physically realized. It is a further premise: stochastic transition laws are mathematical too, and a computable distribution can have typical infinite realizations with no finite deterministic generator.
+
+---
+
+## 6. Objections and Responses
+
+### 6.1 'This Is Untestable Metaphysics'
+
+*Objection:* The Level IV multiverse is empirically inaccessible.
+
+*Response:* Models motivated by the prior are compared through their predictions, as science compares every theory with unobservable parts. Quarks, the particles inside protons and neutrons, cannot be isolated, the wavefunction cannot be measured directly, and much of the early universe is inferred indirectly. Quantum computing tests predictions of quantum dynamics, though its success alone does not separate Everett from other accounts predicting the same computation.
+
+### 6.2 'The Measure Is Ad Hoc'
+
+*Objection:* Algorithmic probability is chosen to deliver the desired conclusions.
+
+*Response:* The measure comes from the dichotomy, not from its conclusions. A shortest description's bits are unruled. A bit has two values, and with no rule to favor either, each has chance 1/2; a lean toward one would itself be a rule, written into the description and paid for in bits. In standard terms this is the uniform, maximum-entropy measure on bits, the starting point of Solomonoff's algorithmic probability. The choice to stop or go on is unruled in the same way (Section 3.3, Why Each Bit Halves). Universal algorithmic constructions also dominate every computable weighting up to a constant factor (Li and Vitanyi, 2008; Hutter, Legg and Vitanyi, 2007), so no computable alternative beats them on any data by more than a factor fixed in advance for that alternative. Parsimony is then tested the way any method is, by its predictions.
+
+### 6.3 'The Measure Problem Is Unsolvable'
+
+*Objection:* Any measure faces the question "why this measure?", so the problem has only moved back one level.
+
+*Response:* The question has an answer: everything is ruled or random, and the bits of a shortest description are the random part, each one 50/50. That replaces "why these laws?" with a fact about randomness that needs no further law. Algorithmic probability also has properties that physical laws lack, dominance over computable measures and invariance under the choice of machine up to constants, and explanation ends there, at the structure of computation and information.
+
+### 6.4 Anthropic Challenges
+
+Where an observer sits within a history needs its own weight, separate from the weight of the history, as Nick Bostrom stresses (Bostrom, 2002). The Conditional Parsimony Postulate proposes a description-based rule for that location.
+
+**Two Levels of Complexity.** The same coding rule applies twice: once to which history, and once to where in it an observer sits, and a shorter answer receives more weight in both. Stated precisely, at Level 1 the prior assigns weight proportional to 2^(-K_U(S)) to effectively described candidates S. At Level 2, for a specified class of effectively described locations j within S, the Conditional Parsimony Postulate (CPP) proposes q(j|S) proportional to 2^(-K_U(j|S)). This is a normalized location prior, not identical to the Born rule or a thermal distribution (the spread of states set by temperature).
+
+#### 6.4.1 Boltzmann Brains
+
+Whether fluctuation observers dominate depends on the cosmology, so the question is answered model by model. Some cosmologies permit observers that form as chance fluctuations, Boltzmann brains, and these could dominate an observation measure. Eternal duration alone does not create the problem. A constant positive formation rate over unlimited time gives an unbounded expected count, which lets fluctuation observers dominate if ordinary observers are produced only finitely often; a decreasing rate with finite integral (a finite total over all time), a dynamical obstruction or a different observation measure changes that conclusion. Description length gives no independent suppression theorem, since a simple cosmological generator may produce both kinds of observer. The question stays open for a given cosmology until its dynamics, observer criterion and measure are supplied.
+
+#### 6.4.2 Simulations
+
+A simulated observer is weighed by the same rule as any other, with the simulator's machinery counted once. If a complete history generates a computer and its program, that machinery is not charged a second time as independent information. Conversely, laws permitting computers do not guarantee that any particular simulation develops, and neither decisive suppression nor dominance of simulated observers has been established.
+
+#### 6.4.3 Temporal Location and the Arrow of Time
+
+Time runs forward because a process that generates each event from the previous one needs a starting state, and an endless future has no last event from which to generate the whole history backward. If every event waited for another and none had occurred, the process could not start.
+
+One event following another in time is one event being generated after another, and two consequences follow. A universal code can charge the same shortest length for a finite history and its reversal, so no universal reversal penalty is claimed, and time's direction rests on the missing last event. Physical succession generates each state from the previous one, so a continuum of zero-length points cannot be the fundamental structure, though continuum mathematics itself stays consistent.
+
+A simple beginning is favored because the laws and the starting state are counted together. The simplicity prior favors an economical joint description of both, a description-based reading of the Past Hypothesis, the assumption that the universe began in a low-entropy state (Albert, 2000; Loewer, 2007, 2012; Wallace, 2010, 2011; compare Lazarovici and Reichert, 2020). Simple and low-entropy are different properties: a gas spread evenly through a box is simple to describe in bulk and already at maximum entropy. Gravity lines them up, because under gravity clumping is the direction of rising entropy, so a smooth early universe, the simplest start, is also a low-entropy one (Penrose, 2004). Among accounts with equal likelihood for the evidence, fewer total bits receive greater weight. If a history starts without the organization its later observers require, that organization must develop: organisms build and maintain themselves by using energy differences while dispersing heat and waste, increasing total entropy as local organization grows.
+
+Learning works forward because a reversed world hides the information its convergences depend on. Run a process backward and its parts converge in coordinated ways (Price, 1996) that may depend on details a local learner cannot sense. If the same available evidence hides situations that require incompatible responses, no decision based on that evidence can guarantee success in both, and that limits which reliable learners can evolve. Leonard Mlodinow and Todd Brun (2014) argue that the memory and thermodynamic arrows, the time directions set by memory and by rising entropy, align under explicit robustness conditions.
+
+Reversing a finite history costs whatever the reversal operation adds, one halving per bit, and the operation must specify the step it turns back from, a cost the endless forward history does not pay. A finite reverse history can be specified with the forward generator plus a reversal operation, which avoids listing every coordinated particle. Ten added bits leave it one-1,024th of the weight, and naming the turning step takes about as many bits as writing its number in binary: about 20 for a typical step near one million, which leaves about a millionth. The comparison counts laws, starting information and interpreters in the same code.
+
+### 6.5 'Logic Is Revisable'
+
+*Objection:* The identity thesis makes logic the ground of everything, yet W. V. O. Quine argued that no statement is immune to revision, and Hilary Putnam proposed that quantum mechanics makes the distributive law fail for physical propositions (Quine, 1951; Putnam, 1968).
+
+*Response:* Science tests theories by logic: a theory with its conditions implies a prediction, and an observation that contradicts the prediction refutes the theory by modus tollens (Popper, 1959). Quantum mechanics is stated, solved and tested in classical mathematics, and the lattice of its propositions is one more structure inside that mathematics. Quine himself declined to revise classical logic (Quine, 1970). Any argument for revising logic must be valid to persuade, so it uses the logic it would revise. Nor does the case assume its conclusion. Aristotle showed that the first law of logic cannot be demonstrated, only defended by refutation, since whoever denies it and says anything has used it (Aristotle, 1908, *Metaphysics* IV.4, 1006a5-28).
+
+## 7. Conclusion
+
+The laws of physics are short because every bit of a complete description is an unruled 50/50 choice, so each bit saved doubles a description's probability, and the choice to stop or go on makes longer descriptions lose in total as well as one by one. At least half the weight then sits at the shortest description that can produce observers, because added laws more often break the conditions observers need than create them. The hard part is establishing a real saving once laws, starting conditions and prediction rules are counted together.
+
+Quantum mechanics without collapse and a common generator for particles and measurement settings are the leading candidates for such savings. Each must reproduce the observed probabilities, and neither gains a bit advantage merely by being described in fewer words. Observers are complex, so the probable universes start simple and grow them in causal steps, discrete on the view taken here, since a continuum has no next state. Time is those steps. It runs forward from the simple start, an endless chain has no last step to run back from, and a reversal must pay for the step it turns back from.
+
+The unifying claim is that the same mathematical rules do several jobs at once. A successful account exhibits those rules, recovers the observations and shows where the shorter explanation comes from, and the prediction is that the complete laws sit near the shortest description that can produce observers.
+
+## References
+
+Adams, R. M. (1979). Primitive thisness and primitive identity. *Journal of Philosophy*, 76(1), 5-26.
+
+Albert, D. Z. (2000). *Time and Chance*. Harvard University Press.
+
+Aristotle (1908). *Metaphysica* (W. D. Ross, Trans.). In J. A. Smith & W. D. Ross (Eds.), *The Works of Aristotle Translated into English*, Vol. 8. Clarendon Press.
+
+Ashtekar, A., Pawlowski, T., & Singh, P. (2006). Quantum nature of the big bang. *Physical Review Letters*, 96, 141301. https://arxiv.org/abs/gr-qc/0602086
+
+Barnes, E. (2010). Ontic vagueness: A guide for the perplexed. *Nous*, 44(4), 601-627.
+
+Barnes, L. A. (2012). The fine-tuning of the universe for intelligent life. *Publications of the Astronomical Society of Australia*, 29(4), 529-564.
+
+Benacerraf, P. (1973). Mathematical truth. *Journal of Philosophy*, 70(19), 661-679.
+
+Bennett, C. H. (1973). Logical reversibility of computation. *IBM Journal of Research and Development*, 17(6), 525-532. https://doi.org/10.1147/rd.176.0525
+
+Berlekamp, E. R., Conway, J. H., and Guy, R. K. (1982). *Winning Ways for Your Mathematical Plays*, Volume 2. Academic Press.
+
+Black, M. (1952). The identity of indiscernibles. *Mind*, 61(242), 153-164.
+
+Bostrom, N. (2002). *Anthropic bias: Observation selection effects in science and philosophy*. Routledge.
+
+Bousso, R., & Polchinski, J. (2000). Quantization of four-form fluxes and dynamical neutralization of the cosmological constant. *Journal of High Energy Physics*, 2000(06), 006.
+
+Carroll, S. (2010). *From Eternity to Here: The Quest for the Ultimate Theory of Time*. Dutton.
+
+Chaitin, G. J. (1987). *Algorithmic information theory*. Cambridge University Press.
+
+Denef, F., and Douglas, M. R. (2004). Distributions of flux vacua. *Journal of High Energy Physics*, 2004(05), 072. https://doi.org/10.1088/1126-6708/2004/05/072
+
+Deutsch, D. (1999). Quantum theory of probability and decisions. *Proceedings of the Royal Society of London A*, 455, 3129-3137.
+
+Douglas, M. R. (2003). The statistics of string/M theory vacua. *Journal of High Energy Physics*, 2003(05), 046.
+
+Esfeld, M., & Lam, V. (2008). Moderate structural realism about space-time. *Synthese*, 160(1), 27-46.
+
+Feynman, R. P. (1948). Space-time approach to non-relativistic quantum mechanics. *Reviews of Modern Physics*, 20(2), 367-387. https://doi.org/10.1103/RevModPhys.20.367
+
+French, S. (2014). *The Structure of the World: Metaphysics and Representation*. Oxford University Press.
+
+Gardner, M. (1970). Mathematical games: The fantastic combinations of John Conway's new solitaire game "life". *Scientific American*, 223(4), 120-123.
+
+Hacking, I. (1975). *The Emergence of Probability*. Cambridge University Press.
+
+Hawking, S., & Mlodinow, L. (2010). *The Grand Design*. Bantam Books.
+
+Hossenfelder, S. (2018). *Lost in Math: How Beauty Leads Physics Astray*. Basic Books.
+
+Hutter, M., Legg, S., and Vitanyi, P. M. B. (2007). Algorithmic probability. *Scholarpedia*, 2(8), 2572. https://www.hutter1.net/ai/algprob.pdf
+
+Kolmogorov, A. N. (1965). Three approaches to the quantitative definition of information. *Problems of Information Transmission*, 1(1), 1-7.
+
+Ladyman, J., & Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford University Press.
+
+Lazarovici, D., and Reichert, P. (2020). Arrow(s) of time without a past hypothesis. arXiv:1809.04646. https://arxiv.org/abs/1809.04646
+
+Levin, L. A. (1974). Laws of information conservation (non-growth) and aspects of the foundation of probability theory. *Problems of Information Transmission*, 10(3), 206-210.
+
+Lewis, D. (1986). *On the Plurality of Worlds*. Blackwell.
+
+Li, M., & Vitanyi, P. (2008). *An introduction to Kolmogorov complexity and its applications* (3rd ed.). Springer.
+
+Loewer, B. (2007). Counterfactuals and the Second Law. In H. Price and R. Corry (Eds.), *Causation, Physics, and the Constitution of Reality* (pp. 293-326). Oxford University Press.
+
+Loewer, B. (2012). Two accounts of laws and time. *Philosophical Studies*, 160(1), 115-137.
+
+Melia, J. (1998). Field's programme: Some interference. *Analysis*, 58(2), 63-71.
+
+Mlodinow, L., and Brun, T. A. (2014). Relation between the psychological and thermodynamic arrows of time. *Physical Review E*, 89, 052102. https://doi.org/10.1103/PhysRevE.89.052102
+
+Newman, M. H. A. (1928). Mr. Russell's 'causal theory of perception.' *Mind*, 37(146), 137-148.
+
+Noether, E. (1918). Invariante Variationsprobleme. *Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse*, 1918, 235-257.
+
+Penrose, R. (2004). *The Road to Reality*. Jonathan Cape.
+
+Planck Collaboration (2020). Planck 2018 results. I. Overview and the cosmological legacy of Planck. *Astronomy & Astrophysics*, 641, A1.
+
+Popper, K. R. (1959). *The Logic of Scientific Discovery*. Hutchinson.
+
+Price, H. (1996). *Time's Arrow and Archimedes' Point*. Oxford University Press.
+
+Putnam, H. (1968). Is logic empirical? In R. S. Cohen & M. W. Wartofsky (Eds.), *Boston Studies in the Philosophy of Science* (Vol. 5, pp. 216-241). D. Reidel.
+
+Quine, W. V. O. (1951). Two dogmas of empiricism. *The Philosophical Review*, 60(1), 20-43.
+
+Quine, W. V. O. (1970). *Philosophy of Logic*. Prentice-Hall.
+
+Russell, B. (1903). *The Principles of Mathematics*. Cambridge University Press.
+
+Russell, B. (1927). *The Analysis of Matter*. Kegan Paul.
+
+Saunders, S. (2006). Are quantum particles objects? *Analysis*, 66(1), 52-63.
+
+Schmidhuber, J. (1997). A computer scientist's view of life, the universe, and everything. In C. Freksa (Ed.), *Foundations of computer science* (pp. 201-208). Springer.
+
+Schmidhuber, J. (2000). Algorithmic theories of everything. arXiv:quant-ph/0011122.
+
+Schmidhuber, J. (2002). The Speed Prior: A new simplicity measure yielding near-optimal computable predictions. *Proceedings of COLT 2002*, LNAI 2375, 216-228.
+
+Sider, T. (2011). *Writing the Book of the World*. Oxford University Press.
+
+Solomonoff, R. J. (1964). A formal theory of inductive inference, Parts I and II. *Information and Control*, 7(1-2), 1-22, 224-254.
+
+Surya, S. (2019). The causal set approach to quantum gravity. *Living Reviews in Relativity*, 22(1), 5. https://arxiv.org/abs/1903.11544
+
+Susskind, L. (2003). *The anthropic landscape of string theory.* arXiv:hep-th/0302219.
+
+Tegmark, M. (1998). Is "the theory of everything" merely the ultimate ensemble theory? *Annals of Physics*, 270(1), 1-51.
+
+Tegmark, M. (2008). The mathematical universe. *Foundations of Physics*, 38(2), 101-150.
+
+Tegmark, M. (2014). *Our Mathematical Universe: My quest for the ultimate nature of reality*. Alfred A. Knopf.
+
+Wallace, D. (2010). Gravity, entropy, and cosmology: In search of clarity. *British Journal for the Philosophy of Science*, 61(3), 513-540.
+
+Wallace, D. (2011). The logic of the Past Hypothesis. arXiv:1105.5563.
+
+Wallace, D. (2012). *The emergent multiverse: Quantum theory according to the Everett interpretation*. Oxford University Press.
+
+Weinberg, S. (1987). Anthropic bound on the cosmological constant. *Physical Review Letters*, 59(22), 2607-2610.
+
+Wolfram, S. (2020). *A project to find the fundamental theory of physics*. Wolfram Media.
+
+Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics*, 75(3), 715.

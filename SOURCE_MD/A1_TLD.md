@@ -1,0 +1,125 @@
+# Mathematical Reality, Forward Discrete Time and Complexity from the Simplest Laws
+
+## Abstract
+
+Matheism holds that reality is mathematical structure, because all existence is either ruled or random, and both are mathematical. The complete structure is the thing itself, with no separate substance left to explain. The view is monism, not Platonism: Plato set the Forms apart from a world they do nothing in, and his One, with no properties, is nothing, a problem Neoplatonic emanations only multiply. The hard problem of consciousness assumes its conclusion, that sentience cannot be structure, then finds that structure cannot explain it. Panpsychism cannot say how tiny feelers add up to one mind, and idealism cannot say how separate minds find the same mathematics without using it. The claim is necessary, as 2 + 2 = 4 is, and it has teeth: it rules out every rival that needs something with no structure, and one coherent feature that is neither ruled nor random would refute it. Mathematics needs no maker, and that necessity is the ground of existence. Every consistent structure exists, fictions included, each plot hole fixed by some consistent math. The same dichotomy suggests a measure: each bit of a shortest description is an unruled 50/50 choice, so each added bit halves a description's weight. The universe therefore starts simple and grows complex, since minds like ours are complex, and it grows in causal steps, since a cause produces its effect as the next state and a continuum has none. Time is those steps, and it runs forward from the simple start.
+
+Keywords: mathematical monism, mathematical structure, rule-random dichotomy, structural realism, Platonism, Neoplatonism, substrate, hard problem of consciousness, panpsychism, idealism, Principle of Sufficient Reason, Mathematical Universe Hypothesis
+
+---
+
+> Argument and scope. The paper defends the identity thesis by showing that structure leaves nothing out. Algorithmic definitions apply within their stated domains, and what no program can compute is still mathematical. The paper separates what it deduces from what it adds as a further commitment.
+
+## 1. Introduction
+
+We are mathematical structure, as a triangle is geometric structure. Mathematics is what we are, not an external maker. An extra ingredient must make a definite difference or explain nothing. Consciousness tests this identity: could experience differ while its complete constitution stayed the same? The paper argues that it could not. The hard problem of consciousness assumes its conclusion: it takes sentience to be something structure cannot be, then finds that structure cannot explain it.
+
+Matheism is mathematical monism, the view that reality is one kind of thing, mathematical structure. It is expressed here as *Deus sive Mathematica*, God or mathematics, after Baruch Spinoza's identification of God with the one necessary substance, with mathematical structure in that role. It is not Platonism, which is dualism: Plato's Forms do nothing in the world, and his One, with no size or properties, is nothing (Section 3).
+
+The dichotomy is a tautology with teeth, because both of its exits lead to the same building and it still rules out real positions. A natural objection calls it trivial: everything is A or not-A. The partition is logic, and the force lies in two further steps: both branches belong to mathematics by mathematics' own standards, and complete structure leaves no further constituent. Those steps exclude a bare substrate (featureless stuff that bears properties), a soul that moves a body by no law, a free choice that is neither caused nor random and a creator outside mathematics, each a position with defenders. Necessary truth is not a defect. A necessary claim is tested by counterexample: one coherent feature that is neither ruled nor random would refute it. The empirical side is the weighting of descriptions, and a failure there would leave the ontology (the account of what exists) standing.
+
+Two results follow for physics, and a third for minds. Each bit of a shortest description is an unruled 50/50 choice, so each added bit halves a description's weight, and since whether to add another bit is a second 50/50, longer descriptions lose in total as well. Time runs forward because an endless generated history has no last state to run back from, and a reversed history must also specify its turning point, each bit of which halves its weight again. Minds like ours are complex, so a history that starts simple must grow them, and it grows them in causal steps, since a cause needs a next state and a continuum has none. The argument is an a priori proof in the logician's sense. Russell's answer, that motion is only being at different places at different times (Russell, 1903), offers the emperor's new points: a position for every instant and nothing that produces the next.
+
+Chance offers no escape from mathematics, because a probability law and its outcomes are mathematical too. A probability law gives weights to possible outcomes without selecting the outcome that occurs. The position defended here adds a generator that produces each particular outcome, and the monism argument holds even without that addition: if fundamental chance is granted, its states, dependencies and probability law still admit mathematical description. Calling an outcome random therefore supplies no way out of that description, and whether description exhausts reality is the identity claim the paper defends. Quantum theory does not force brute chance either: on the many-worlds and superdeterministic readings, every outcome follows a rule (Everett, 1957; Hossenfelder and Palmer, 2020).
+
+Max Tegmark's Mathematical Universe Hypothesis posits that reality is mathematical structure (Tegmark, 2014); the argument here concludes that reality *must* be mathematical structure. A hypothesis invites the question "why this rather than something else?" The dichotomy leaves that question no room, since whatever is ruled or random is mathematical and no coherent third option has been produced. The step from there to identity, that complete structure is the thing itself, is what this paper argues and what critics dispute.
+
+## 2. The Dichotomy
+
+Every aspect of reality either follows a rule or does not, and there is no third option. Consider any aspect of reality. It either exhibits discoverable regularities or it does not; this is a logical partition.
+
+Both branches are mathematical. Ruled features are mathematical structures, regularities a formal rule can capture: the laws of physics, the distribution of primes and the branching of trees. Algorithmic randomness, the lack of any much shorter description, is equally mathematical (Solomonoff, 1964). Stated precisely, for a finite binary encoding s, fix a universal description language U and a deficiency threshold c, a set margin in bits. Then either K_U(s) < |s| - c or K_U(s) >= |s| - c, where K_U(s) is the length of the shortest description of s. No formal system, a fixed set of axioms and rules for deriving theorems, can certify incompressibility beyond a fixed length (Chaitin, 1974). The partition needs no certificate: every string, any sequence of symbols, falls on one side whether or not anyone can prove which. An incompressible finite string still has determinate entries and mathematical relations; it is not structureless.
+
+The partition becomes ontology through the identity argument, which asks what a proposed alternative contributes. Two outcomes are possible. A definite contribution adds properties or relations to the account, and so adds structure. A contribution with no determinate character explains no difference.
+
+Writing something down is not the same as there being such a thing. One can write "2+2=5" or "square circle," and the string exists as a consistent structure (one free of contradiction), as does every medium carrying it. All consistent structures exist, yet the state of affairs these strings describe cannot be instantiated (made real in any actual case). An inconsistency exists only as a consistent string that describes it, because construction of any kind needs consistency as its medium.
+
+### The transcendental constraint
+
+Observation requires structure. Reliable memory requires a relation between the record and its source, and useful prediction requires a relation between an available cue and what follows. This constrains the relations supporting observation, not the compressibility of everything observed.
+
+### Closing the escape routes
+
+Every proposed escape from structure either adds structure or adds nothing.
+
+**Qualia and the hard problem of consciousness.** Experience is the complete organization that constitutes a conscious system, felt by being it, from inside. The hard problem of consciousness expects to feel it from outside, and it assumes its conclusion, that sentience cannot be structure. Qualia, taken as something beyond structure, are a label for the gap, not a bridge across it. Anything extra that influences a conscious system needs a structural coupling to it, and anything inert cannot cause our reports. Any account of what feeling adds would itself be structure.
+
+**Bare particulars.** A bare particular with no distinguishing features is indistinguishable from nothing. For anything to exist determinately, it must have some feature, and that feature is ruled or random, and thus mathematical.
+
+**Fundamental stuff.** Describe "stuff" and you either describe structural relations, such as mass, charge and spin (an intrinsic, rotation-like property of particles), or describe nothing determinate. Substance without properties is indistinguishable from nothing. The dichotomy applies again at every level: any proposed substance must have determinate features, and those features have features of their own, each ruled or random.
+
+**The interaction problem.** If a proposed extra ingredient affects bodily events, its coupling belongs in the structural account, and if it affects nothing, it cannot cause our reports. Princess Elisabeth of Bohemia posed this to René Descartes in 1643: how can an unextended mind (one that takes up no space) move an extended body? His pineal gland (a small gland deep in the brain) answered where, not how, and his fallback analogy to weight borrowed a cause he had himself denied was real. Any causal relation requires a common structure within which cause and effect are defined. A conversation runs the loop both ways: words arrive as sound waves and change what the listener feels, and the feeling moves the listener's mouth to answer, physics in and physics out. A consciousness in an ineffable dimension beyond mathematics and beyond words would need a crossing out of the mathematics and a crossing back.
+
+**Panpsychism.** Panpsychism, the view that all matter has some form of mind, cannot explain how tiny feelers add up to one mind. A combination principle must specify which parts combine, under what conditions and with what experience, and those relations are structure. Mathematical monism must likewise identify the organization that constitutes unified experience; rejecting elementary subjects does not by itself do that work.
+
+**Idealism.** Making reality out of mind removes the interaction problem between two substances, and it still owes an account of order. Separate minds discover the same mathematics, and whatever makes them agree is a regularity, so it is structure. Idealism needs math, and math does not need it.
+
+Nothing is left to tell a physical system apart from its complete mathematical structure. The complete structure of a system, including its environment, shares all relational properties with its mathematical description. What else could distinguish the two? Not their relationships, which are all included. Not their causal powers, which supervene on (that is, are fixed by) relational structure. Not their observable properties, which all reduce to relations. The only remaining candidate is a nonrelational substrate, and substrate without properties is indistinguishable from nothing. The math is the territory.
+
+## 3. Mathematical Structure as Self-Grounding
+
+Mathematics needs no maker, so explanation ends at it without regress, an endless chain of further explanations. That 2+2=4 is not contingent on any creative act; it could not have been otherwise. This satisfies the Principle of Sufficient Reason, the demand that everything have a reason, without an infinite regress. Why does anything exist? Because mathematical structure cannot fail to exist. The question "why is there something rather than nothing?" dissolves, since mathematical structure is the necessary background against which causation itself is defined.
+
+The position is not Platonism (the view that mathematical objects exist outside space and time), because concrete reality is mathematical structure. Physical existence and mathematical existence coincide. This completes the program of structural realism (Worrall, 1989) in its ontic form, the view that structure is all there is to the physical world (Ladyman and Ross, 2007; French, 2014).
+
+Platonism puts mathematics in a second realm, outside nature, and that makes it supernatural. It places mathematical objects outside space and time and denies them causal power (Linnebo, 2023). A realm outside nature that does nothing in nature fits the plain meaning of "supernatural." Plato needed a divine craftsman, the demiurge, to copy his Forms (perfect, eternal patterns of things) into the world (*Timaeus* 28a-29b). Aristotle reports that the Pythagoreans held things are numbers, and that Plato departed from them by setting the numbers apart from sensible things, those perceived by the senses (*Metaphysics* I.6, 987b27-29). Matheism takes the Pythagorean side. Plato's departure was a late Athenian anti-philosophy. Athens' early thinkers sought reason inside nature; once the Forms stand outside it, the Forms, the world or the link between them lies beyond reason, and reality cannot be known. Both halves turn supernatural: the Forms stand outside nature, and nature, emptied of them, follows no logic. That refuses knowledge where philosophy loves it, and it fails a priori: outside logic is illogical, as impossible as a square circle. An explanation cannot be supernatural in any case, since to explain is to connect, and a connection is structure.
+
+Plato's highest principle fares worse. The One of his *Parmenides*, taken strictly as one, has no parts, shape, place or time, and Plato concluded that such a One in no way is (*Parmenides* 137c-142a). A point so pure that it has no size or properties is nothing at all. It contains nothing, relates to nothing and affects nothing: a fake monism over a real dualism. Plotinus made such a One the source of everything, with Intellect, Soul and the material world emanating from it level by level (*Enneads* V.1-2). The levels multiply the problem. They are more dualism, solving only the problems dualism itself creates. Each must relate to the One, and a relation gives each of its terms a property, which the One cannot have. If the levels act on one another, their relations are already structure. Plotinus's own images, an overflow and light around the sun (V.2.1, V.1.6), are metaphors, not relations, and the layers are unnecessary.
+
+Mathematical structure has the attributes monotheism reserves for God. It is uncreated, necessary and indestructible: no agent makes 2+2=4, and none could make it otherwise. Monotheism insists there can be only one such ground, so mathematical structure is what those traditions were describing. The formula is *Deus sive Mathematica*, not *Deus sive Natura* (God or Nature).
+
+## 4. Implications
+
+Physics that asks which changes are possible fits the structural account without proving it. David Deutsch and Chiara Marletto's constructor theory asks which physical transformations are possible and which are impossible (Deutsch and Marletto, 2015). That emphasis on possible changes is compatible with the structural account defended here, and it does not by itself establish that physical reality is identical to mathematics.
+
+The changes are the deeper point. The rules are the only things. A structure that only sat there would still exist, as mathematics does, and do nothing and know nothing, like a dead brain with every connection intact. What happens is rules applied to rules, one transition after the next; time is that application, and space is how far it spreads.
+
+Mathematics describes reality so well because reality is mathematics. That answers the physicist Eugene Wigner's puzzle about "the unreasonable effectiveness of mathematics in the natural sciences" (Wigner, 1960).
+
+Every consistent structure exists, because no primitive actuality property selects some and excludes others. The step is a priori: such a property would itself be structure. Such a property would either enter determinate relations with the structure, and so belong to it, or make no difference to anything. Fictions are no exception. A story is a structure, and a consistent one exists as such. A plot hole is a contradiction and exists only as a description, while the versions of the story in which a further fact explains the hole are consistent, so they exist: every plot hole is fixed by some consistent math.
+
+The same dichotomy fixes how descriptions are weighted. A shortest description has no pattern left to compress, so its bits are random in the dichotomy's sense and nothing favors 0 over 1: each bit is a 50/50 choice, and each added bit halves a description's weight. Whether to add another bit at all is a second 50/50, so longer descriptions lose in total as well as one by one. Simpler laws therefore carry more weight, and observations update those weights.
+
+Time runs forward because a generated history starts from a first event, and an endless one has no last event from which to generate the whole history backward. The arrow of time connects timeless structure with the order of events within it. A process generating one event from the previous one needs a starting state, and simplicity favors a compact account of the laws and the starting state together. A reversal must also specify the point it turns back from, a cost the endless forward history does not pay, and each bit of that name halves its weight again. Between a finite history and its own reversal, a universal code can charge the same shortest length, so no universal penalty is claimed there.
+
+The problem of consciousness changes shape: the question becomes which structures feel, not how mind arises from nonmental stuff. Physical processes are mathematical structures, so mental processes are too. Matheism identifies consciousness with felt transitions in self-modeling computation: feeling is a mind's states producing one another as it models its world, so a photograph or a recording of a brain, which produces nothing, feels nothing. Since the dichotomy leaves no third category, all minds, biological or artificial, inhabit the same structure, and mathematical structure already includes consciousness through every conscious pattern it contains.
+
+## Conclusion
+
+Reality is mathematical structure, because the rule-random dichotomy admits no nonmathematical third category. Two things cannot interact, and nothing can be explained, without definite relations, and mathematical physics specifies those relations as states and dynamics. The first point is a priori, from what interacting and explaining are. The complete structure is the thing itself, with no Forms apart from the world and no propertyless One above it. An additional substrate faces two outcomes: if it contributes a determinate feature, that feature belongs in the structure, and if it contributes none, it makes no explanatory difference.
+
+The claim is necessary, as 2 + 2 = 4 is, and it has teeth. It rules out a bare substrate, a soul that moves a body by no law, a free choice that is neither caused nor random and a creator outside mathematics. One coherent feature that is neither ruled nor random would refute it. A measure follows from the same dichotomy, on the view taken here. Each bit of a shortest description is an unruled 50/50 choice, so each added bit halves a description's weight, and since whether to add another bit is a second 50/50, longer descriptions lose in total as well. Time runs forward because an endless generated history has no last state to run back from, and a reversed history must also specify its turning point, each bit of which halves its weight again.
+
+The same argument reaches mind, where the hard problem of consciousness assumes its conclusion. A structural account must identify the organization that constitutes experience, and a critic who excludes every such account in advance has assumed the split between structure and experience that is in dispute. Mathematical monism places matter and experience within one ontology. The further physical task is to identify our structure and explain its observations.
+
+## References
+
+Aristotle (1908). *Metaphysica* (W. D. Ross, Trans.). In J. A. Smith and W. D. Ross (Eds.), *The Works of Aristotle Translated into English*, Vol. 8. Clarendon Press.
+
+Chaitin, G. J. (1974). Information-theoretic limitations of formal systems. *Journal of the ACM*, 21(3), 403-424.
+
+Deutsch, D., and Marletto, C. (2015). Constructor theory of information. *Proceedings of the Royal Society A*, 471, 20140540. https://doi.org/10.1098/rspa.2014.0540
+
+Everett, H., III (1957). "Relative State" Formulation of Quantum Mechanics. *Reviews of Modern Physics*, 29, 454-462.
+
+French, S. (2014). *The Structure of the World: Metaphysics and Representation*. Oxford University Press.
+
+Hossenfelder, S., and Palmer, T. (2020). Rethinking Superdeterminism. *Frontiers in Physics*, 8, 139.
+
+Ladyman, J., and Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford University Press.
+
+Linnebo, Ø. (2023). Platonism in the Philosophy of Mathematics. In E. N. Zalta and U. Nodelman (Eds.), *The Stanford Encyclopedia of Philosophy* (Winter 2025 Edition). https://plato.stanford.edu/archives/win2025/entries/platonism-mathematics/
+
+Plato (1997). *Complete Works* (J. M. Cooper, Ed.). Hackett. (*Parmenides*, M. L. Gill & P. Ryan, Trans.; *Timaeus*, D. J. Zeyl, Trans.)
+
+Plotinus (1969). *The Enneads* (S. MacKenna, Trans.; 4th ed., rev. B. S. Page). Faber and Faber.
+
+Russell, B. (1903). *The Principles of Mathematics*. Cambridge University Press.
+
+Solomonoff, R. J. (1964). A Formal Theory of Inductive Inference. *Information and Control* 7, 1-22 and 224-254.
+
+Tegmark, M. (2014). *Our Mathematical Universe*. Knopf.
+
+Wigner, E. P. (1960). The Unreasonable Effectiveness of Mathematics in the Natural Sciences. *Communications in Pure and Applied Mathematics* 13, 1-14.
+
+Worrall, J. (1989). Structural Realism: The Best of Both Worlds? *Dialectica* 43, 99-124.

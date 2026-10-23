@@ -1,0 +1,259 @@
+# Why Gravity, Space and Time Can Only Be Discrete Causal Transitions
+
+## Abstract
+
+Everything that happens must be discrete, in any universe, because a cause produces its effect as the next state, and a continuum has no next state for a cause to produce: like Zeno's runner, who must reach every halfway mark first, a continuum has no first step to take. The argument is an a priori proof in the logician's sense. Our physics agrees. Gravity and quantum theory together let a region of finite size hold only finitely many distinguishable states: the covariant entropy bound caps a region's entropy by the area of its boundary. A finite description singles out only countably many states, and continuous amplitudes, like every continuum, are analysis, a description of many steps at once. Gravity, space and time are then causal transitions. The relations they change exist as mathematics, with zero-width points for nodes, so discreteness gives nothing a size; what it supplies is a next step. Each transition is a rule applied to rules, and nothing outside the mathematics applies it: time is that application, and space is how far it spreads at the base rate, the speed of light. General relativity's smooth spacetime is their large-scale behavior. The result cuts off the infinities of continuum quantum gravity at their source, makes black-hole entropy a count of states, and sets aside a continuum base and, with observed Lorentz symmetry, a regular lattice. That leaves discreteness without a grid, as in causal sets, whose random count estimated the cosmological constant before it was measured. A theory of everything is a rule for transitions, a rewriting system.
+
+Keywords: quantum gravity; discreteness; causal transitions; rewriting systems; holographic principle; entropy bounds; causal sets; theory of everything; algorithmic probability
+
+## 1. Introduction
+
+Gravity and quantum theory have resisted unification for a century, and the main programs split on the most basic question: is spacetime smooth all the way down? Asymptotic safety, the proposal that gravity's strength levels off at short distances so that a continuum theory stays predictive, and the continuum formulations of string theory, in which tiny vibrating strings move through smooth space, keep a continuum at the base. Loop quantum gravity, which applies quantum theory to the geometry of space itself, finds discrete structure there, and causal sets, which build spacetime from events and their order, start from it. This paper argues that the continuum cannot be the base, and shows what that buys the search.
+
+All of physics is mathematical, and that alone selects nothing, since continuous and discrete structures are both mathematics. The selection comes from how states are produced. Each physical state is produced by a cause from the one before, a cause needs a next state to produce, and a continuum has no next state, so in any universe where anything happens, change comes in steps. Alfred North Whitehead reached the same conclusion from Zeno's paradoxes (Whitehead, 1978). Our physics agrees: gravity and quantum theory together cap the information a region can hold. A finite description can single out only countably many states (at most as many as the counting numbers). All three point the same way: the base has finitely many distinguishable states in any finite region, and it changes in steps. Continua still exist in mathematics, as analysis (the mathematics of limits and continuous quantities), and analysis describes steps without producing any.
+
+Discrete has a precise meaning here. A region of finite size has finitely many distinguishable states, succession runs in steps rather than through a continuum of instants, and every value a history produces, amplitudes included (the numbers quantum theory squares to get probabilities), is fixed by its rule, its start and the number of steps, so the values that occur form a countable set, not a continuum. A qubit's continuum of states, the states of a two-level quantum system, is analysis: it describes every state a rule could reach, while a history reaches its states one step at a time. A fixed rotation by an irrational angle (an angle that is no whole-number fraction of a full turn), applied step after step, reaches countably many states that come arbitrarily close to every point of its circle: a short rule, a countable history, and a continuum only in the description. The structure need not be a lattice, a regular repeating grid. General relativity remains exact enough wherever counts are large, the way fluid dynamics remains exact enough for water.
+
+What is discrete is the transitions. A cause produces its effect as a change from one state to the next, and the change is what happens; a state is only a cut between one transition and the next, and in relativity no single cut is everyone's present. There is no stuff beneath the transitions. The relations they change exist as mathematics, and their nodes are zero-width points; what happens, and so what can be observed, is how the relations change, and a distance or a duration is a pattern in how transitions follow one another. Causal-set theory builds spacetime this way: the order of its events and their number give its geometry (Surya, 2019). Gravity, space and time are those transitions, counted at large scale.
+
+Discreteness does not solve the problem of size, and it does not need to. A block of space would be continuous, since a block has a surface and a surface is a continuum, and so would a sphere. Zoom in on a discrete structure and you find nodes and their relations, not small blocks. The nodes have no width, as a continuum's points have none, and a size is the extent of the relations over which the nodes spread. Zero-width points are no flaw of the continuum, since a discrete structure has them too. A block can still exist as a rule: fixed by its corners, it needs no surface built point by point, and it acts when a step crosses it, as when something entering is turned back.
+
+Motion is not built point by point either. A body at x is next at a definite place, x + 3 or x + 3.25, the result of one step, with no place in between visited. More important is the next point in time: without one there is no causality, no event and nothing moving, and a continuum has no next point.
+
+Each transition is a rule applied to rules. On the view taken here, the rules are the only things. A structure that only sat there would still exist, as all mathematics does, and it would do nothing and know nothing, like a dead brain with every connection intact: noticing anything, even that nothing changes, takes a change in whatever notices. What happens is a rule applied to a state, whose relations are rules too, giving the next state, much as every computation in the lambda calculus, a formal language of pure functions, is functions applied to functions (Church, 1941). Time is that application, step after step.
+
+What causes the change? The math rules themselves. Nothing outside the mathematics applies a rule, as nothing outside arithmetic makes 2 + 2 equal 4. Stephen Hawking called a unified theory just a set of rules and equations, and asked what breathes fire into the equations and makes a universe for them to describe (Hawking, 1988). The question has its force for smooth equations, which relate states at different times without taking any state to a next one, so nothing in them goes by itself. It also assumes the equations only describe a world apart from them. In a world that is mathematics, the fire is the application of a rule that takes each state to the next, and the structure contains it: a history includes its transitions, while a frozen record of one state, like the dead brain, does not.
+
+Space is tied to time because both are counted in the same steps. A distance is the number of steps an effect needs to get from one place to another, and the speed of light is the base layer's rate. Our units already count distance this way: since 1983 the meter has been the distance light travels in 1/299,792,458 of a second. A body's steps at that rate are shared between moving and changing in place, so a moving clock runs slow. Stated precisely, the shares add like the sides of a right triangle, (c dt)^2 = dx^2 + (c dτ)^2, the invariant interval of special relativity, the spacetime separation every observer agrees on, rearranged, with τ the moving clock's own time. The picture restates relativity rather than deriving it: a candidate must reproduce the interval from its rules (Section 4.5). Light, which crosses space while no time passes for it, is the limit and no exception: it spends every step moving, so nothing within it could move relative to the rest (Section 5).
+
+The Game of Life (a grid of cells that live or die by simple rules) has the same speed limit: no pattern spreads faster than one cell per generation, which Life's players call the speed of light, and a glider, a small pattern that travels across the grid, crawls at a quarter of it (Gardner, 1970; Berlekamp, Conway and Guy, 1982). Life's limit comes from a grid, and a grid picks out a rest frame, a state of motion that counts as standing still, so relativity needs discreteness without a grid (Section 4.3).
+
+The starting points are Jacob Bekenstein's black-hole entropy, which measures how many internal states a black hole has (Bekenstein, 1973), the entropy bounds that followed ('t Hooft, 1993; Susskind, 1995; Bousso, 2002), the argument that the Hilbert space of quantum gravity, the space of its possible quantum states, is locally finite-dimensional, allowing only finitely many distinguishable states in any finite region (Bao, Carroll and Singh, 2017), and the discrete programs of causal sets and loop quantum gravity (Bombelli, Lee, Meyer and Sorkin, 1987; Rovelli and Smolin, 1995). This paper's contribution is to join the physical, generative and descriptive routes into one selection principle for the search, and to show what the principle buys: finite sums where continuum calculations diverge (run off to infinity), black-hole entropy as a count, a narrowing of the candidates to discrete order without a grid, and a list of targets any candidate must meet. Its decisive premises are that a cause produces its effect as the next state, and that the entropy bounds hold in the fundamental theory, region by region. It rules out a fundamental continuum of physical values, amplitudes included, and a regular spacetime lattice, as the base of physics.
+
+The argument is one link in a larger chain. Everything that exists is ruled or random, and both are mathematical, so anything outside mathematics would be outside logic. Each unruled bit halves a description's weight, so short laws dominate, and short laws grow complex observers in causal steps from a simple start. An endless chain of steps has no last step to run back from, so time runs forward. This too is a priori.
+
+## 2. Gravity and quantum theory cap the information in a region
+
+### 2.1 Nothing smaller than the Planck length can be resolved
+
+To see something small you need short waves, and short waves carry more energy. Squeeze enough energy into a small enough space and it becomes a black hole. At about 1.6 x 10^-35 meters, the Planck length, the black hole a probe would make is as large as the distance being probed, so the probe hides what it was meant to show. Stated precisely, resolving a distance d takes momentum of about h-bar/d and energy E of about h-bar c/d, whose Schwarzschild radius, the size of the black hole that energy would make, 2GE/c^4, about 2G h-bar/(c^3 d), exceeds d once d falls below roughly the Planck length, the square root of h-bar G/c^3 (Garay, 1995; Hossenfelder, 2013).
+
+### 2.2 A region can hold only finitely many states
+
+A black hole's entropy, read as a count of its states, equals a quarter of the horizon's area in Planck units (counted in squares of the Planck length), as Bekenstein and Stephen Hawking found (Bekenstein, 1973; Hawking, 1975). No region can hold more states than the black hole it would become if matter kept being added: if it could, adding matter until it collapsed would lower the entropy, which the second law (total entropy cannot decrease) forbids (Susskind, 1995). So a region's capacity is capped by the area of its boundary. A ball one centimeter in radius can hold at most about 1.7 x 10^66 bits, and a ball one meter in radius about 1.7 x 10^70.
+
+Stated precisely, the Bekenstein-Hawking entropy is S = k_B A/(4 l_P^2), where A is the horizon area and l_P the Planck length. The holographic bound limits the entropy of any region to the same expression in its boundary area ('t Hooft, 1993; Susskind, 1995). The spacelike form of that bound, which counts the entropy inside a region at one instant, fails in some cosmological and collapsing settings; the covariant form, which bounds the entropy passing through light-sheets, the surfaces traced by light rays leaving a surface without spreading apart, has held in every case examined (Bousso, 1999, 2002). A Hilbert space whose dimension is at most exp(S/k_B) then describes each region, finite for every finite region (Bao, Carroll and Singh, 2017).
+
+### 2.3 Why the count matters, and the map does not
+
+Any set can be mapped onto any other set of the same size, so a map from a region onto its surface proves nothing by itself. The part of the holographic principle used here is a statement about counting. Without gravity, the room for information grows with volume: double a region's width and it holds eight times as much. With gravity it grows with surface area: double the width and it holds four times as much. A region has fewer states than its volume suggests, as though it were a surface.
+
+Another sign of the same thinning shows up in dimension. Several quantum gravity programs find that the effective dimension felt by a diffusing particle (one spreading out by random steps) falls toward two at the smallest scales (Ambjørn, Jurkiewicz and Loll, 2005; Carlip, 2017). Holography and this dimensional reduction are different results. Both suggest that the smallest scales carry fewer independent degrees of freedom (separate quantities free to vary) than a smooth four-dimensional continuum would.
+
+### 2.4 Finite states rule out a fundamental continuum
+
+A continuum field gives every point its own real number, a region has infinitely many points, and each real number carries infinitely many digits. A continuum region therefore offers infinitely many distinguishable states. Gravity and quantum theory together allow finitely many. The smooth fields of general relativity and quantum field theory, the framework of particle physics, are then approximations, accurate wherever the counts are large. Stated precisely, a classical (non-quantum) field on a region of positive volume ranges over an infinite-dimensional space, and its quantization (its conversion into a quantum theory) gives an infinite-dimensional Hilbert space for the region; the bound of Section 2.2 requires a finite one, so the continuum fields become effective variables, convenient large-scale descriptions, over finitely many states (Bao, Carroll and Singh, 2017).
+
+## 3. Causes and descriptions lead to the same conclusion
+
+### 3.1 Causes produce their effects in steps, in any universe
+
+Causality needs a cause and an effect, and the effect is a state the cause produces. In a continuum no state has a next one: between any two instants lies a third. Pick any instant after a cause and another instant still lies between them, so no state is the first one the cause produces, and the chain of production cannot take its first step. This is an a priori proof in the logician's sense: the conclusion follows from what a cause is and what a continuum is, and only a counterexample to one of those premises could undo it.
+
+Zeno's runner faces the same regress: he must reach the halfway mark before the finish and the quarter mark before that, so no first stretch exists for him to run (Aristotle, 1984, *Physics* VI.9). Analysis solves the paradox in the abstract, describing the run as a smooth path whose endless stretches add up to a finite time. Discrete steps solve it in the only way causality and spacetime can happen: each step produces the next, and finitely many reach the finish. A history built by causes therefore runs in steps. This holds in any universe where anything happens, not only in ours, since every cause needs a next state to produce and a continuum has no next state. A change that nothing produces would be a change without a cause, and nothing in an account that allows one says why the change happens. Whether each next state is fixed in advance or left to chance is a separate question: either way, a cause needs a next state to produce.
+
+Stated precisely, a process that adds finitely or countably many events at each natural-number stage produces at most a countable set of events, and no uncountable continuum of them. A continuum law can still make every state depend on earlier ones: a differential equation fixes how a solution's values at different times relate. That is causation as dependence, and this argument concerns causation as production, the two concepts Ned Hall separates (Hall, 2004). Everyday cases show the difference. A plant that dies because nobody watered it depends on an omission, yet not watering produced nothing; the plant's own chemistry, running without water, produced the death. Each frame of a film fits the physics of the frame before, yet no frame produces the next; the projector does. A reversible rule lets yesterday's state be computed from today's, yet a history run in either direction has each of its states produced by a step from the one before. In each case the dependence is real, and something else does the producing: chemistry, a projector, a step.
+
+The case for a physical continuum takes dependence to be all of causation. A continuous law makes every state depend on earlier ones, a hybrid model adds discrete switches to smooth motion without inconsistency, and later need not mean next. Under x = vt every position depends on the start and the speed, and Bertrand Russell met the demand for a next place by holding that motion is nothing more than being at different places at different times (Russell, 1903).
+
+The everyday cases show what this misses. In them, dependence is carried by production at a level below, and a continuum offers no level below. Its law can be read as a rule for transitions, a flow taking each state to the state a time t later, for every positive t. A flow has no smallest transition, since each one it defines is the composition of two smaller ones (one applied after the other), so applying it would take infinitely many applications before any, and the chain of production has no first link. Read the other way, the flow hands out every later state at once from the start. That pairs times with places, as Russell's answer does, without any state producing the next. These are the emperor's new points: they look like motion and produce none, and the pairing exists as mathematics whether or not anything moves, as a frozen record does. Hall lets production run through continuous intermediates; the argument here is that it cannot, since a production with no first effect produces nothing. Whitehead, arguing by Zeno's method, put it this way: once anything becomes, there is "no continuity of becoming" (Whitehead, 1978, p. 35).
+
+We do change: our states follow one another. In a world that is mathematics, then, rules take each state to a next one, and a rule that takes a state to its next needs a next state. A reader who still takes dependence to be all there is to causation finds no contradiction in a continuum's mathematics. For that reader the case rests on physics: if the entropy bounds hold, a region of finite size holds finitely many distinguishable states (Section 2), and a system with finite energy passes through only finitely many of them in a finite time, since reaching a distinguishable state takes a minimum time set by the energy (Margolus and Levitin, 1998). Nothing observable needs a continuum beneath them, since finite steps come as close to any state as measurement can tell (Section 5). Dependence describes a history; production generates one, and generation comes in steps. Continuum mathematics stays a tool for describing the steps in bulk, as calculus describes a crowd of molecules.
+
+### 3.2 A finite description reaches only countably many states
+
+Algorithmic probability, which gives outputs of short programs more weight, is defined over countably many programs, each producing its output. Structures requiring selection from an uncountable continuum are unreachable by this measure and have measure zero: together they carry no weight. A continuous theory is still fine when a finite rule and finite starting data produce it; what has no weight is a continuum whose states must be selected one real number at a time. On the view that physical reality is itself a mathematical structure, this measure weighs what exists, and it gives weight only to what finite rules reach: countably many states, gravity's included.
+
+Stated precisely, the universal prior gives an output x the weight of the programs that produce it, summed over programs p with weight 2^-|p| (Solomonoff, 1964). Only computable outputs, those a finite program can produce, receive positive weight, and they form a countable set; a real number chosen at random from an interval is computable with probability zero. Marian Pour-El and Ian Richards (1981) found computable but rough starting data for the three-dimensional wave equation whose later solution is not computable. Roughness of that kind is what a finite count of states per region excludes, so the routes of Sections 2 and 3 support each other.
+
+## 4. What discreteness does for the search
+
+### 4.1 The infinities lose their source
+
+The infinities of quantum field theory come from adding up contributions from shorter and shorter distances. Gravity is the worst case. Einstein's theory, treated as a quantum field theory, needs a new adjustable constant at each order of calculation, and at two loops, the second order of approximation, it already produces an infinity that no redefinition of its constants removes (Goroff and Sagnotti, 1986). With finitely many states per region there are no arbitrarily short distances to sum over, and every such sum over a finite region is finite. Hartland Snyder proposed quantized spacetime for this reason in 1947 (Snyder, 1947). Discreteness supplies the cutoff as physics, where the continuum treats it as a calculational device to be removed at the end. Two open problems take their difficulty from that removal. The Yang-Mills existence and mass gap problem, one of the Millennium Prize problems, asks for a proof that the strong force's mass gap survives as the cutoff goes to zero (Jaffe and Witten, 2000), and the simplest field of the Higgs type, taken alone, loses its interaction entirely in that limit (Aizenman and Duminil-Copin, 2021). The limit is analysis, a statement about the formulas as a description of many steps at once, and it stays good mathematics. Applied, the formulas act in steps, since a cause needs a next state, and a region holds finitely many states, so physics does not wait on the limit. What remains for physics is the span of scales, from the finest resolution, near the Planck length, to the gap, about 10^19 times larger, and bridging it is most of the work.
+
+### 4.2 Black-hole entropy becomes a count
+
+In Ludwig Boltzmann's physics, entropy counts states. Black-hole entropy fits that picture only if a black hole has finitely many states. The successful microscopic derivations of the area law count a finite set. Andrew Strominger and Cumrun Vafa counted string states for a class of extremal black holes, which carry the most charge their mass allows, and recovered the quarter exactly (Strominger and Vafa, 1996). Loop quantum gravity counts the discrete pieces of area where the horizon is pierced, with its free parameter set to give the quarter (Rovelli, 1996; Ashtekar, Baez, Corichi and Krasnov, 1998). If evaporation (a black hole's slow loss of mass as radiation) is unitary, losing no information, finitely many states make the entropy of the radiation follow the curve Don Page computed: it rises and then falls as the black hole shrinks (Page, 1993). Discreteness is the setting in which these counts are literal.
+
+### 4.3 The candidates narrow
+
+If the base is discrete, a theory whose base is a continuum can at most approximate the final one. A continuum quantum field theory of the metric (the field that sets distances and durations in spacetime), as asymptotic safety proposes (Reuter, 1998), must then reproduce the finite count of states as an output, and its continuum variables become labels for finitely many states. String theory may lean the same way: its strings cannot probe distances below a minimal length (Hossenfelder, 2013), though a limit on what strings can resolve is not yet a limit on what exists.
+
+Observation removes the simplest discrete option, a regular grid. A grid picks out directions and a rest frame. If spacetime were a grid at the Planck length, light of different energies would generically travel at slightly different speeds. Photons from the gamma-ray burst GRB 090510, a flash of gamma rays from billions of light-years away, arrived together closely enough to push any such linear effect (a speed shift proportional to energy) beyond 1.2 times the Planck energy, the scale at which gravity's quantum effects become strong (Abdo et al., 2009). Lorentz symmetry, the rule that physics looks the same to every observer moving steadily, also resists being broken: a break at small scales leaks into everyday physics through quantum corrections unless it is finely tuned away (Collins, Perez, Sudarsky, Urrutia and Vucetich, 2004).
+
+Random discreteness keeps the symmetry. In a causal set, spacetime events are scattered at random with a density fixed by volume, and the scattering favors no direction and no frame (Bombelli, Henson and Sorkin, 2009). Discrete quantum geometry, in which area and volume have discrete spectra (possible values that come in separate steps), can also respect it, since a discrete spectrum is not a grid of locations (Rovelli and Smolin, 1995; Rovelli and Speziale, 2003). The base is then discrete without being a grid, and the leading candidates for such a base are random discrete order of the causal-set kind (Surya, 2019) and discrete quantum geometry.
+
+### 4.4 An estimate made before the measurement
+
+Random discreteness gave an order-of-magnitude estimate before the data existed. A random count fluctuates by about its square root. If spacetime is a random scattering of elements, the count in our past fluctuates the same way, and Rafael Sorkin argued, treating the constant and spacetime volume as a pair whose uncertainties trade off, like position and momentum, as unimodular gravity does, that the fluctuation leaves a cosmological constant (the energy of empty space, which speeds up cosmic expansion) of about one over the square root of the number of elements, around 10^-120 in Planck units (Sorkin, 1997; Ahmed, Dodelson, Greene and Sorkin, 2004). The accelerating expansion found in 1998 implies a cosmological constant of that order (Riess et al., 1998; Perlmutter et al., 1999). Quantum field theory on a continuum, cut off at the Planck scale, overshoots by about 120 orders of magnitude. The same causal-set model predicts that the constant fluctuates over cosmic time, which cosmological surveys can test (Zwane, Afshordi and Sorkin, 2018).
+
+### 4.5 What any candidate must recover
+
+A discrete candidate earns its place by recovering what the continuum already delivers. It must yield smooth geometry obeying Einstein's equations at large scales; Lorentz symmetry to the precision observed; quantum interference, with amplitudes that cancel before probabilities are taken, and the Born rule, which turns amplitudes into probabilities; the area law with its quarter; and the fields and interactions of the Standard Model, the established theory of particles and forces apart from gravity. It must give an effective dimension of four at the scales we probe, and say what happens to dimension at the smallest. Each candidate also gets a definite description length, a fixed rule plus a finite count of elements per region, which makes rival candidates comparable bit for bit.
+
+### 4.6 Where a theory of everything must reside
+
+If everything that happens is a transition, a theory of everything is a rule for transitions: a set of relations and a rule that rewrites them, applied again and again to its own output. Its mathematics is the mathematics of rewriting. Stephen Wolfram's models rewrite hypergraphs, networks whose links can join any number of nodes, and he argues that light cones, the regions a signal can reach, and curved geometry emerge from the causal order of the updates (Wolfram, 2020). Causal sets can grow one element at a time under classical sequential growth, a rule that adds each new element with set probabilities (Rideout and Sorkin, 2000). Spin foams, the histories of loop quantum gravity's geometry, carry one quantum geometry to the next (Perez, 2013). Quantum circuits apply gates, the elementary operations of a quantum computer, to a state to produce the next state. Smooth spacetime and continuous fields are the analysis of such rewriting at large scale.
+
+The leading discrete programs can meet. A rewriting system's causal graph, the record of which update depends on which, is itself a causal order, the structure a causal set is made of. The target is then one short rewriting rule whose causal graph matches a random, four-dimensional causal set at large scales, run as a unitary quantum rule, so that its branching is the branching of many worlds. The match cannot reach single updates. An update that rewrites a few relations has a few direct causes, and a graph with a bounded number of edges per element picks out a frame on a random causal set (Bombelli, Henson and Sorkin, 2009). The frame must then stay hidden at every scale we can test, unless each update draws on an unbounded part of its past, as in sequential growth. Quantum cellular automata already recover the equations of light and of the electron at long wavelengths (Bialynicki-Birula, 1994; D'Ariano and Perinotti, 2014). Since each candidate has a definite description length (Section 4.5), the search can run shortest rule first: list rules from shortest to longest, keep those whose causal graphs approximate a four-dimensional spacetime with no preferred frame at large scales, and test the survivors against everything Section 4.5 lists, together with a cosmological constant that fluctuates (Section 4.4). The search can also run from the other end, program first. Write the known laws as a program of discrete steps without a grid, and remove their infinities, as loop quantum cosmology does when it replaces the big bang with a bounce (Ashtekar, Pawlowski and Singh, 2006). Then shorten the program while its outputs still match.
+
+The idea that physics computes is old: Konrad Zuse proposed in 1969 that space itself calculates (Zuse, 1969). This paper's contribution is the argument that it must, because a cause needs a next state, and the constraint that follows: a candidate has to state its update rule and derive everything else from the updates. No candidate has yet recovered general relativity and the Standard Model together, and Section 4.5 lists what the winner must deliver. The search belongs among the rewriting systems.
+
+### 4.7 How light moves
+
+Light is motion by steps in its plainest form. An effect spreads at most one step of distance per step of time (Section 1), and light is an effect spreading at that rate, as a glider in the Game of Life is a pattern spreading at a quarter of it. Iwo Bialynicki-Birula (1994) wrote Maxwell's equations, the laws of electricity, magnetism and light, as a unitary cellular automaton, a reversible quantum rule for a grid of cells, each cell's state updated from its neighbors at every tick, and recovered the continuum equations at long wavelengths; since a regular lattice picks out directions, the steps of our physics belong to a discrete order without a grid (Section 4.3). Light also spends all its steps moving. Its proper time, the time a clock carried along would record, is zero, so along a light path nothing changes in place, the limit of a moving clock running slow.
+
+The paths light can take carry most of general relativity. In a spacetime without causal pathologies, such as paths that loop back into their own past, the order of which events can influence which fixes the topology, how its regions connect, the smooth structure (which functions on it count as smooth) and the geometry up to a local scale (Hawking, King and McCarthy, 1976; Malament, 1977), and counting supplies the scale. A causal set needs only an order and a count to give geometry for this reason (Surya, 2019), and the question of how light moves leads straight to what spacetime is: the order of the steps, counted.
+
+## 5. Objections
+
+**"Continuum mathematics is consistent, so the base could be continuous."** Consistency is not in dispute. Continuous and discrete structures are both consistent mathematics, and the selection between them comes from physics: gravity and quantum theory cap the states in a region, and production comes in steps. The two reasons are independent. A reader who doubts that causes produce next states still faces the entropy bounds and the finite rate of change (Section 3.1), and a reader who doubts the bounds still faces the regress of Section 3.1.
+
+**"The laws themselves are continuous: a perfect sphere, a field, Einstein's equations."** A law can be stated with continuum mathematics and still act only in steps, which is how this paper reads general relativity. A hybrid model, smooth motion with a discrete switch when a body crosses a perfect sphere, is consistent mathematics too (Goebel, Sanfelice and Teel, 2012), but it describes: to produce the switch, something must first produce the motion to the boundary, and a continuum gives that motion no first step (Section 3.1). Once production runs in steps, a law cannot act on its continuum. Each step takes a definite state to a definite next one in finitely many operations, while a test that needs every digit of a real number, such as whether a point lies exactly on a perfect sphere, cannot be finished in finitely many: given two real numbers digit by digit, a strict inequality between them is confirmed at some finite stage when it holds, but equality is confirmed at none (Weihrauch, 2000). A law that acts on definite values does not need such a test. Physics agrees, since no region holds infinitely many distinguishable positions, so no boundary is tested beyond the precision the states carry. The continuous law is the analysis of the discrete one. A continuous formula need not describe a continuum that physically exists, in this universe or any other. It can be the rule that fixes how strongly, in which direction and with what amplitude each discrete transition acts, and its continuous arguments need not each be a place or an event. Einstein's equations are written on a continuum, and their success leaves open whether that continuum is the physics or an effective description of it; this paper argues for the second, since only the transitions produce anything. Work on quantum fields on causal sets pursues this reading, recovering the continuum's propagation of a free field (a field without interactions) from discrete order (Johnston, 2009).
+
+**"Finite information is not discreteness: a qubit has continuously many states."** The continuum of a qubit's states is analysis, the description of every state a rule could reach. A history reaches its states in steps, so the amplitudes it produces are each fixed by finitely many steps and form a countable set. Nothing observable needs the rest: a finite set of quantum gates reaches states arbitrarily close to every state of the continuum, with a gate count that grows only as a power of the logarithm of one over the error (Dawson and Nielsen, 2006).
+
+**"The entropy bounds are conjectures."** The covariant bound has held in every case examined, and the spacelike version's failures are why the covariant form is used (Bousso, 2002). A quantum version has been proven for free fields in weak gravity, with entropy counted relative to the vacuum, the lowest-energy state of the fields (Bousso, Casini, Fisher and Maldacena, 2014). A region that broke the bound would hold more states than the black hole it could collapse into, and collapsing it would lower the entropy, against the second law. That a region's whole space of states is finite in the full theory is widely expected in quantum gravity (Bao, Carroll and Singh, 2017) and remains the second of this paper's two decisive premises (Section 1).
+
+**"Asymptotic safety may make a continuum theory of the metric complete."** Then its states per region must still obey the bound. Its continuum variables would describe finitely many states redundantly, as gauge variables, labels with built-in redundancy like the choice of where voltage counts as zero, describe fewer physical states than they appear to.
+
+**"Lorentz symmetry forbids discreteness."** It forbids a grid. Random discreteness keeps the symmetry, as the causal-set theorem shows (Bombelli, Henson and Sorkin, 2009).
+
+**"A real cutoff brings back the hierarchy problem."** It makes the problem explicit. The Higgs mass is sensitive to any heavy physics above it, gravity's included, so why it sits some seventeen orders of magnitude below the Planck mass needs an answer with or without a step; a real step only keeps the question from hiding inside a calculational convention. Discreteness does not answer it, and this paper claims no answer.
+
+**"Light has no path in quantum field theory, so nothing moves step by step."** A photon is an excitation (a ripple carrying one packet of energy) of a field spread through space, and no point-to-point path is needed. What spreads is the change: each region's field is set from its neighbors', which is what a local wave equation states, and in a discrete account each such update is a step (Section 4.7).
+
+**"Light crosses space while no time passes for it, so the steps cannot be time."** A thing's time is its transitions in place, and each body shares the base rate between moving and changing in place (Section 1). A moving body's transitions therefore run slower, and light spends every step moving, so nothing within it could move relative to the rest. Its zero proper time is the limit of a moving clock running slow, not a step taken outside time.
+
+## 6. Conclusion
+
+Everything that happens must be discrete, in any universe, because causality produces each state from the one before, and a continuum has no next state to produce. Gravity and spacetime are no exception: gravity and quantum theory together allow only finitely many distinguishable states in any finite region, while a continuum would allow infinitely many, and algorithmic probability gives no weight to states that must be selected from an uncountable continuum. Continua, amplitudes included, stay what they are in mathematics: analysis that describes many steps at once. Gravity, space and time are these causal transitions, applied by the math rules themselves, and general relativity's smooth spacetime is their large-scale behavior.
+
+The conclusion is useful. It cuts off the infinities of quantum gravity at their source, makes black-hole entropy a count, sets aside continuum bases and regular grids, and leaves discrete structures without a grid, among them causal sets, whose estimate of the cosmological constant came before the measurement. All of physics is mathematics; the useful claim is that its base is a rule applied to rules, discrete transitions rewriting relations step by step, and the search for a theory of everything belongs among such rules.
+
+## References
+
+Abdo, A. A., et al. (2009). A limit on the variation of the speed of light arising from quantum gravity effects. *Nature*, 462, 331-334. https://arxiv.org/abs/0908.1832
+
+Ahmed, M., Dodelson, S., Greene, P. B., & Sorkin, R. (2004). Everpresent Λ. *Physical Review D*, 69, 103523. https://arxiv.org/abs/astro-ph/0209274
+
+Aizenman, M., & Duminil-Copin, H. (2021). Marginal triviality of the scaling limits of critical 4D Ising and φ⁴₄ models. *Annals of Mathematics*, 194, 163-235. https://arxiv.org/abs/1912.07973
+
+Ambjørn, J., Jurkiewicz, J., & Loll, R. (2005). Spectral dimension of the universe is scale dependent. *Physical Review Letters*, 95, 171301. https://arxiv.org/abs/hep-th/0505113
+
+Aristotle. (1984). Physics (R. P. Hardie & R. K. Gaye, Trans.). In J. Barnes (Ed.), *The Complete Works of Aristotle: The Revised Oxford Translation* (Vol. 1). Princeton University Press.
+
+Ashtekar, A., Baez, J., Corichi, A., & Krasnov, K. (1998). Quantum geometry and black hole entropy. *Physical Review Letters*, 80, 904-907. https://arxiv.org/abs/gr-qc/9710007
+
+Ashtekar, A., Pawlowski, T., & Singh, P. (2006). Quantum nature of the big bang. *Physical Review Letters*, 96, 141301. https://arxiv.org/abs/gr-qc/0602086
+
+Bao, N., Carroll, S. M., & Singh, A. (2017). The Hilbert space of quantum gravity is locally finite-dimensional. *International Journal of Modern Physics D*, 26, 1743013. https://arxiv.org/abs/1704.00066
+
+Bekenstein, J. D. (1973). Black holes and entropy. *Physical Review D*, 7, 2333-2346.
+
+Berlekamp, E. R., Conway, J. H., & Guy, R. K. (1982). *Winning Ways for Your Mathematical Plays* (Vol. 2). Academic Press.
+
+Bialynicki-Birula, I. (1994). Weyl, Dirac, and Maxwell equations on a lattice as unitary cellular automata. *Physical Review D*, 49, 6920. https://arxiv.org/abs/hep-th/9304070
+
+Bombelli, L., Henson, J., & Sorkin, R. D. (2009). Discreteness without symmetry breaking: A theorem. *Modern Physics Letters A*, 24, 2579-2587. https://arxiv.org/abs/gr-qc/0605006
+
+Bombelli, L., Lee, J., Meyer, D., & Sorkin, R. D. (1987). Space-time as a causal set. *Physical Review Letters*, 59, 521-524.
+
+Bousso, R. (1999). A covariant entropy conjecture. *Journal of High Energy Physics*, 1999(07), 004. https://arxiv.org/abs/hep-th/9905177
+
+Bousso, R. (2002). The holographic principle. *Reviews of Modern Physics*, 74, 825-874. https://arxiv.org/abs/hep-th/0203101
+
+Bousso, R., Casini, H., Fisher, Z., & Maldacena, J. (2014). Proof of a quantum Bousso bound. *Physical Review D*, 90, 044002. https://arxiv.org/abs/1404.5635
+
+Carlip, S. (2017). Dimension and dimensional reduction in quantum gravity. *Classical and Quantum Gravity*, 34, 193001. https://arxiv.org/abs/1705.05417
+
+Church, A. (1941). *The Calculi of Lambda-Conversion*. Princeton University Press.
+
+Collins, J., Perez, A., Sudarsky, D., Urrutia, L., & Vucetich, H. (2004). Lorentz invariance and quantum gravity: An additional fine-tuning problem? *Physical Review Letters*, 93, 191301. https://arxiv.org/abs/gr-qc/0403053
+
+D'Ariano, G. M., & Perinotti, P. (2014). Derivation of the Dirac equation from principles of information processing. *Physical Review A*, 90, 062106. https://arxiv.org/abs/1306.1934
+
+Dawson, C. M., & Nielsen, M. A. (2006). The Solovay-Kitaev algorithm. *Quantum Information and Computation*, 6(1), 81-95. https://arxiv.org/abs/quant-ph/0505030
+
+Garay, L. J. (1995). Quantum gravity and minimum length. *International Journal of Modern Physics A*, 10, 145-165. https://arxiv.org/abs/gr-qc/9403008
+
+Gardner, M. (1970). Mathematical games: The fantastic combinations of John Conway's new solitaire game "life". *Scientific American*, 223(4), 120-123.
+
+Goebel, R., Sanfelice, R. G., & Teel, A. R. (2012). *Hybrid Dynamical Systems: Modeling, Stability, and Robustness*. Princeton University Press.
+
+Goroff, M. H., & Sagnotti, A. (1986). The ultraviolet behavior of Einstein gravity. *Nuclear Physics B*, 266, 709-736.
+
+Hall, N. (2004). Two concepts of causation. In J. Collins, N. Hall, & L. A. Paul (Eds.), *Causation and Counterfactuals* (pp. 225-276). MIT Press.
+
+Hawking, S. W. (1975). Particle creation by black holes. *Communications in Mathematical Physics*, 43, 199-220.
+
+Hawking, S. W. (1988). *A Brief History of Time*. Bantam.
+
+Hawking, S. W., King, A. R., & McCarthy, P. J. (1976). A new topology for curved space-time which incorporates the causal, differential, and conformal structures. *Journal of Mathematical Physics*, 17, 174-181.
+
+'t Hooft, G. (1993). Dimensional reduction in quantum gravity. https://arxiv.org/abs/gr-qc/9310026
+
+Hossenfelder, S. (2013). Minimal length scale scenarios for quantum gravity. *Living Reviews in Relativity*, 16, 2. https://arxiv.org/abs/1203.6191
+
+Jaffe, A., & Witten, E. (2000). Quantum Yang-Mills theory. Clay Mathematics Institute, Millennium Prize Problems. https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf
+
+Johnston, S. (2009). Feynman propagator for a free scalar field on a causal set. *Physical Review Letters*, 103, 180401. https://arxiv.org/abs/0909.0944
+
+Malament, D. B. (1977). The class of continuous timelike curves determines the topology of spacetime. *Journal of Mathematical Physics*, 18, 1399-1404.
+
+Margolus, N., & Levitin, L. B. (1998). The maximum speed of dynamical evolution. *Physica D*, 120, 188-195. https://arxiv.org/abs/quant-ph/9710043
+
+Page, D. N. (1993). Information in black hole radiation. *Physical Review Letters*, 71, 3743-3746. https://arxiv.org/abs/hep-th/9306083
+
+Perez, A. (2013). The spin-foam approach to quantum gravity. *Living Reviews in Relativity*, 16, 3. https://arxiv.org/abs/1205.2019
+
+Perlmutter, S., et al. (1999). Measurements of Omega and Lambda from 42 high-redshift supernovae. *The Astrophysical Journal*, 517, 565-586. https://arxiv.org/abs/astro-ph/9812133
+
+Pour-El, M. B., & Richards, I. (1981). The wave equation with computable initial data such that its unique solution is not computable. *Advances in Mathematics*, 39, 215-239.
+
+Reuter, M. (1998). Nonperturbative evolution equation for quantum gravity. *Physical Review D*, 57, 971-985. https://arxiv.org/abs/hep-th/9605030
+
+Rideout, D. P., & Sorkin, R. D. (2000). A classical sequential growth dynamics for causal sets. *Physical Review D*, 61, 024002. https://arxiv.org/abs/gr-qc/9904062
+
+Riess, A. G., et al. (1998). Observational evidence from supernovae for an accelerating universe and a cosmological constant. *The Astronomical Journal*, 116, 1009-1038. https://arxiv.org/abs/astro-ph/9805201
+
+Rovelli, C. (1996). Black hole entropy from loop quantum gravity. *Physical Review Letters*, 77, 3288-3291. https://arxiv.org/abs/gr-qc/9603063
+
+Rovelli, C., & Smolin, L. (1995). Discreteness of area and volume in quantum gravity. *Nuclear Physics B*, 442, 593-619. https://arxiv.org/abs/gr-qc/9411005
+
+Rovelli, C., & Speziale, S. (2003). Reconcile Planck-scale discreteness and the Lorentz-Fitzgerald contraction. *Physical Review D*, 67, 064019. https://arxiv.org/abs/gr-qc/0205108
+
+Russell, B. (1903). *The Principles of Mathematics*. Cambridge University Press.
+
+Snyder, H. S. (1947). Quantized space-time. *Physical Review*, 71, 38-41.
+
+Solomonoff, R. J. (1964). A formal theory of inductive inference. Part I. *Information and Control*, 7, 1-22.
+
+Sorkin, R. D. (1997). Forks in the road, on the way to quantum gravity. *International Journal of Theoretical Physics*, 36, 2759-2781. https://arxiv.org/abs/gr-qc/9706002
+
+Strominger, A., & Vafa, C. (1996). Microscopic origin of the Bekenstein-Hawking entropy. *Physics Letters B*, 379, 99-104. https://arxiv.org/abs/hep-th/9601029
+
+Surya, S. (2019). The causal set approach to quantum gravity. *Living Reviews in Relativity*, 22, 5. https://arxiv.org/abs/1903.11544
+
+Susskind, L. (1995). The world as a hologram. *Journal of Mathematical Physics*, 36, 6377-6396. https://arxiv.org/abs/hep-th/9409089
+
+Weihrauch, K. (2000). *Computable Analysis: An Introduction*. Springer.
+
+Whitehead, A. N. (1978). *Process and Reality* (corrected ed., D. R. Griffin & D. W. Sherburne, Eds.). Free Press. (Original work published 1929)
+
+Wolfram, S. (2020). A class of models with the potential to represent fundamental physics. *Complex Systems*, 29(2), 107-536. https://arxiv.org/abs/2004.08210
+
+Zuse, K. (1969). *Rechnender Raum* (Calculating Space). Friedrich Vieweg & Sohn.
+
+Zwane, N., Afshordi, N., & Sorkin, R. D. (2018). Cosmological tests of Everpresent Λ. *Classical and Quantum Gravity*, 35, 194002. https://arxiv.org/abs/1703.06265

@@ -1,0 +1,129 @@
+# How Many Bits Is Physics? Comparing Complete Theories
+
+## Abstract
+
+A physical theory's simplicity can be measured instead of praised: count every bit it needs to run, its equations, parameters, boundary information and the rules that decode its output into predictions, at the same precision for every rival. A working program of 15,200 bits prints a complete statement of the Standard Model with general relativity, laws and constants together, so the length of known fundamental physics, as a symbolic statement, is a number anyone can check and try to beat. Count selectively and the comparison means nothing, as a code audit here shows: a small compiled file can omit the physics claimed for it. Each added bit halves a description's weight, yet a worked example encodes two couplings three ways and finds that each format carries the same total weight, so individual description weights cannot stand in for the probability of a whole family of theories. The proposed benchmark publishes complete descriptions and checks their outputs, and a working program sets an achievable length that a shorter one would improve. String theory is the test case on two counts. It is not needed for its main job, keeping gravity finite at the shortest distances, if change comes in discrete steps, as argued here: a cause needs a next state, and a continuum has none. Selecting our world among its estimated 10^500 vacua costs about 1,661 bits unless a far shorter selector exists.
+
+## 1. The benchmark question
+
+Calling a theory elegant does not tell us how much information it needs. Replace the compliment with a test: write a program that performs a stated predictive task, publish it, then count everything required to run it. The shortest such program fixes the information the task needs. Formally, the shortest program producing the agreed output defines its Kolmogorov complexity K, the measure Andrey Kolmogorov introduced (Kolmogorov, 1965), in the chosen programming language. An actual program gives a demonstrated length to compare; a shorter one may still exist. Length matters because, on the measure used here, each bit of a shortest description is an unruled 50/50 choice, so each added bit halves the description's weight; a reader who rejects that measure can still read the counts as a comparison by minimum description length, a method favoring the shortest joint description of model and data (Rissanen, 1978).
+
+First choose what the program must produce. Recovering symbolic equations and calculating numerical predictions are different tasks. State which mathematical tools both programs may use and which information each must supply. One rule can do several jobs at once and cut the total: an action (a single quantity from which the equations of motion follow) covers many trajectories instead of one, a preparation rule ties the source to the settings, a generator supplies a later state for a reversal. Each saving counts only when the same observations remain recoverable.
+
+Kolmogorov complexity and algorithmic probability (the chance that a program of random bits produces a given output) are established tools (Kolmogorov, 1965; Solomonoff, 1964; Li and Vitanyi, 2019), and appeals to the length of physical theories are common. This paper's contribution is the accounting those appeals need: count everything the declared task uses, treat a working program as an upper bound (a length the shortest program cannot exceed) for that task in its language, and compare lengths only between descriptions that do the same job. A supplementary program applies it to the symbolic task. Its decisive premise is that a length comparison means something only for a shared task in a shared language. It rules out odds drawn by subtracting two upper bounds, and it rules out counting a theory's equations while leaving its parameters, starting data and decoder uncharged.
+
+String theory shows that the count is the second question. The first is whether a theory is needed at all. String theory's main job is to keep a quantum theory of gravity finite at the shortest distances, where a smooth spacetime fills the calculations with infinities. The view taken here is that the base is not smooth. A cause produces its effect as the next state, and a continuum has no next state, so change comes in steps, as Zeno's runner, who must first reach every halfway mark, has no first stretch to run. That is an a priori proof in the logician's sense. Russell's continuum, in which motion is only being at different places at different times (Russell, 1903), is the emperor's new points: every instant gets a position, and nothing produces the next. A world that changes in steps has no shorter distances than a step, and so no source for those infinities. Physics agrees in its own terms: gravity and quantum theory together let a region of finite size hold only finitely many distinguishable states (Bousso, 2002). The same view carries a chain of further claims. Everything that exists is either ruled or random, and both are mathematical. Each bit a description needs halves its weight, so simple laws and a simple start are favored. Complex minds then have to grow from that start, step by step. Steps that merge states run one way, so time runs forward. The counter is that a continuum is consistent mathematics, which nobody disputes; the claim concerns what produces change, and the bit counts below hold either way. On this view string theory is not needed, though some discrete rule could still look like strings at some scale. Section 4 asks what it costs if it is chosen anyway.
+
+## 2. What the program must contain
+
+A symbolic description of the selected particle and gravitational model must identify five kinds of content, whose encoding costs depend on the declared language and shared decoder.
+
+Component 1: The gauge group (the symmetries that define the forces). Encode SU(3) x SU(2) x U(1), including conventions needed to recover its role in the theory.
+
+Component 2: The matter content. Specify field types, representations (how each field transforms under the symmetries), charges and generation multiplicities (the number of repeated particle families). Repeated generation structure can be shared rather than listed three times.
+
+Component 3: The dynamical rules. Specify the action or equivalent dynamics, including the assumptions restricting allowed terms and the scalar sector (the Higgs field and its interactions).
+
+Component 4: Parameter values. State the selected extension, units, ranges and precision. How precisely each value must be stated sets what it costs to store. As an illustrative storage calculation, 26 independent values at 15 bits each use 390 bits; at 64 bits each they use 1,664 bits.
+
+Component 5: General relativity. State the gravitational action, its parameters and the conventions linking it to observables, the quantities that can be measured. Shared parameters should be charged once.
+
+The audit of the earlier 9,216 bit result found a mislabeled constant count, an incorrect matrix calculation and physical equations present only as comments (notes in code that the computer ignores): that figure was extracted from an illustrative compiled file (a program translated into machine-readable form), not a complete predictive implementation. A runnable artifact for the symbolic task now supplies one such budget (Section 6, the program as an artifact); for the predictive task, any budget stays provisional until someone supplies a complete runnable artifact and an output specification. A functioning program supplies an upper bound for its declared task in its declared language. A parameter printer does not establish an upper bound for a simulator reproducing all known physics.
+
+## 3. What this excludes
+
+A symbolic specification of laws and parameters is only one possible benchmark. Initial conditions are additional content whenever the task requires a particular history or a predictive preparation measure (a weighting of possible starting states). Low thermodynamic entropy (roughly, a high degree of order) is a property of a specified macrostate (a coarse description by bulk quantities such as temperature) and measure (compare Carroll, 2010); it is not by itself a bound on the description length of each compatible microstate (an exact arrangement of every part). An exact observer record is also additional content if the task demands it. A branch label (a tag marking which many-worlds branch is meant) is not automatically a new cost growing with every elapsed moment, and record information already generated by counted inputs must not be charged again.
+
+## 4. String theory: not needed, and costly to select
+
+String theory earns its place in quantum gravity by doing one job well. Its strings are extended, so the interactions that make a point-particle theory of gravity blow up at short distances are smeared out. That job exists only if spacetime is smooth all the way down. If change comes in discrete steps, nothing happens at distances shorter than a step, the infinities have no source, and the job is done without strings. Discrete models of spacetime can also keep relativity's symmetry, as causal sets do by scattering their events at random (Surya, 2019). String theory might still describe some scale of a deeper rule, but nothing requires it. The rest of this section asks what it costs if it is chosen anyway.
+
+A theory can specify an observed model directly or generate a family and select a member. Selecting a member costs the bits needed to write down its position in the list. Stated precisely, for an agreed enumeration of N alternatives, a fixed-length binary index uses ceil(log2 N) bits. If N is 10^500, a common estimate for the string landscape, the vast set of possible universes string theory allows, after Raphael Bousso and Joseph Polchinski's flux counting and Leonard Susskind's landscape proposal (Bousso and Polchinski, 2000; Susskind, 2003), this index has 1,661 bits. A particular member can have a much shorter selector. "Choose the first member with property P" may be economical if P and the enumeration are economical and actually determine the desired member. Conversely, a short theory name can conceal a long unexplained choice.
+
+Geometry, fluxes and stabilized parameters cannot be added as independent costs if the selected index already determines them. If the index leaves any open, encode the remaining information conditionally.
+
+Two measured implementation lengths do not bound the ratio of their unknown shortest lengths. Written out, for theories T1 and T2 with measured lengths L1 and L2, knowing K(T1) <= L1 and K(T2) <= L2 does not prove K(T2)-K(T1) >= L2-L1. Odds of 2^(-2940) against string theory, obtained by subtracting two such upper bounds, rest on that invalid step. The comparison that does work takes two descriptions that do the same job and asks which is shorter. Stated precisely, it assigns each declared description a weight proportional to 2^(-L). If both recover the same targets and likelihoods and one is k bits shorter, its assigned weight is exactly 2^k times larger. Extending that result to whole theory families requires their alternative descriptions and weights.
+
+## 5. Comparison with Wolfram's hypergraph physics
+
+A candidate without the required predictions cannot yet enter the matched benchmark. Stephen Wolfram (2020) proposes that physics emerges from a simple rewriting rule (a rule that replaces one pattern of links with another) applied to a hypergraph, a network whose links can join any number of nodes. The rule may have very low Kolmogorov complexity. Nobody has shown that it can do the specified task. Large output or state space size does not imply a long generating program; runtime and memory are separate costs.
+
+If a rewriting rule recovers the target physical description or predictions, compare its complete encoding with the competing account. Include its seed, decoder, output map and required precision. The present unmatched artifacts do not establish either competitor's size for a shared task. The same accounting orders a search: list rewriting rules from shortest to longest, and keep those whose causal graphs, the records of which update depends on which, approximate at large scales a four-dimensional spacetime with no preferred frame, as a random causal set, a scattering of events ordered by cause and effect, does (Surya, 2019). The search can also run from the other end, program first. Write the known laws as a program of discrete steps without a grid, and remove their infinities, as loop quantum cosmology does when it replaces the big bang with a bounce (Ashtekar, Pawlowski and Singh, 2006). Then shorten the program while its outputs still match.
+
+The continuum such a program replaces is in trouble at the smallest scales. The simplest field of the Higgs type, taken alone, loses its interaction entirely as the cutoff is removed (Aizenman and Duminil-Copin, 2021), and whether the gluon theory survives that limit with a mass gap is still one of the Millennium Prize problems (Jaffe and Witten, 2000). A program applies its formulas in steps, so it does not take the limit, which stays a question about the formulas as a description. Discrete simulations also favor causal steps: spacetime built from four-dimensional pieces grows into a four-dimensional universe, shaped like a solution of Einstein's equations, once every piece carries a direction of time (Ambjørn, Jurkiewicz and Loll, 2004; Ambjørn, Görlich, Jurkiewicz and Loll, 2008).
+
+## 6. The program as an artifact
+
+The benchmark should publish its counted artifact with a fixed interpreter (the program that runs the code) or decoder, enough documentation to recover the advertised output and the exact accounting convention. For the symbolic benchmark, the program would recover the gauge group, representations, Lagrangian terms (the pieces of the formula from which the action is built) and the declared parameter set at specified precision. If equations occur only in comments discarded by compilation, that compiled output cannot establish their description cost.
+
+The symbolic task now has one. A supplementary Python program of 1,900 bytes, 15,200 bits, prints a complete statement of the Standard Model, the established theory of particles and forces apart from gravity, with general relativity: the gauge group, the fields and their charges, the action, the quantum rule and 28 declared inputs at five significant figures. Its output matches the target text exactly by checksum (a short fingerprint computed from the text), and the compressed statement inside it is 11,328 bits. That is an upper bound for the symbolic task in Python with its standard library (the built-in code that ships with the language); a shorter program may exist. The next task is the predictive one: a published program that derives observable predictions from the laws, with its environment, checksums, output targets and tolerances, and then competing encodings for the same task.
+
+## 7. Why shorter means more probable
+
+Each bit of a shortest program is a 50/50 choice that no rule makes, so each added bit halves the program's weight. A shortest program cannot be compressed, since a shorter program for it, followed by running it, would be a shorter program for the same output, so its bits are random in exactly the sense of the rule-random dichotomy. A bit no rule fixes has no reason to be 0 rather than 1; any lean toward one value, or any dependence of one bit on another, would itself be a rule, and would have to be written into the program. Stated precisely, fix a binary prefix language, in which no complete program is the beginning of another, so each program settles where it ends. With fair independent input bits, a specified program of length n has weight 2^(-n), and a specified program k bits longer has 2^k times less weight (Solomonoff, 1964). Jürgen Schmidhuber applied such weights to whole universes (Schmidhuber, 2000; compare Tegmark, 2014). Half is also the gentlest rate possible: each added bit doubles the number of programs, so with equally long programs weighted alike, any milder factor would give longer programs more total weight than shorter ones. Prefix-free programs, none of which extends another, keep the total at one or less. The choice of language remains part of the model (Section 8).
+
+Longer programs that produce different outputs can collectively outweigh one shorter program, so a whole class needs its members' weights added. With the choice to stop or add another bit counted as one more unruled 50/50, all programs one bit longer weigh half as much together, and everything longer than a given length adds up to that length's weight (*Why These Simple Laws?*, Section 3.3). For a single output, the many longer programs cannot swamp the shortest: by the coding theorem, all programs for one output together weigh at most a fixed multiple of its shortest program (Li and Vitanyi, 2019). Any count has to handle prefix code normalization (keeping the total weight at one or less) and the number of programs producing each output.
+
+## 8. Dependence on the encoding
+
+Changing description language carries a cost that cannot be assumed small. The invariance constant (the largest change in K that switching languages can cause) depends on the pair of languages. It is not generally bounded by tens or hundreds of bits, and the invariance theorem alone does not protect a finite ranking. Repeat the comparison under defensible alternative encodings.
+
+### A worked comparison: symmetry, zero and independent values
+
+Three ways of writing a pair of couplings, numbers setting how strongly particles interact, can be encoded side by side and compared. Fix a common precision of n bits for each coupling. Use two-bit tags to distinguish three formats: an equal pair (g,g), a one-sided pair (g,0), and a generic pair (g_L,g_R). The first two formats need one n-bit value; the third needs two. Written out, their lengths are n+2, n+2 and 2n+2. At n=16, the first two descriptions are 18 bits and the third is 34. Distinct tags and fixed payload lengths make this a prefix-free code.
+
+Equality saves repeating a value; zero saves supplying one. Under this code, the equal and one-sided descriptions tie. Each has 2^16 times the weight of a particular generic 34-bit description.
+
+A whole format has a different weight. Under this code a format with fewer values holds fewer descriptions, each one weighing more, and the two effects cancel. Written out, each one-value format contains 2^n descriptions weighted 2^(-n-2), giving total weight 1/4. The generic format contains 2^(2n) descriptions weighted 2^(-2n-2), also totaling 1/4. Conditional on these three formats, each has weight 1/3. The equal class weights come from the chosen equal-length tags; they are no universal result about symmetry.
+
+These are classes of encodings, not disjoint classes of physical pairs: the generic format also encodes equal and one-sided pairs. To weight a particular pair, add the weights of every encoding that produces it. The accompanying executable supplement implements these three formats, exhaustively checks n=1 through n=5, and compares encodings at n=16. The result defeats a shortcut: calling symmetry an added constraint does not establish that it costs more information. A physical comparison must also count the field representations, equations, parameters and observation model needed to recover the same evidence.
+
+## 9. Implications for theory selection
+
+A demonstrated saving buys a weight advantage that can be stated exactly, by the rule of Section 7. Actual artifacts supply measurable lengths and upper bounds on K; they do not reveal K itself. The Standard Model provides a concrete target for compression. A deeper account earns a description advantage if its full rule, inputs and decoder recover the same physical content with fewer bits. A search for unification is then a search for shared generative structure, with a declared task and a measurable saving.
+
+## Conclusion
+
+A theory costs everything it needs to do the agreed job, because any part left out of the count makes a long account look short: equations, parameters, starting data, shared software and the required precision all count. Each counted bit is a 50/50 choice that no rule makes, so each one halves the account's weight, and a measured saving converts directly into odds. A working implementation demonstrates one length; it does not establish the shortest possible length.
+
+The audited example failed to supply all the physics claimed for it. A reproducible replacement can make the comparison meaningful: publish the descriptions and decoder, verify matching outputs, and apply the stated simplicity rule to the measured difference. For the symbolic task that replacement now exists: 15,200 bits print a complete statement of the Standard Model with general relativity, checked against its target. The predictive task, and a rival doing the same job, come next.
+
+String theory shows both questions a theory must answer: whether it is needed, and what it costs. If change comes in steps, its main job disappears, and selecting our world among its vacua costs about 1,661 bits unless a far shorter selector exists.
+
+## References
+
+Aizenman, M., & Duminil-Copin, H. (2021). Marginal triviality of the scaling limits of critical 4D Ising and φ⁴₄ models. *Annals of Mathematics* 194, 163-235. https://arxiv.org/abs/1912.07973
+
+Ambjørn, J., Görlich, A., Jurkiewicz, J., & Loll, R. (2008). Planckian birth of a quantum de Sitter universe. *Physical Review Letters* 100, 091304. https://arxiv.org/abs/0712.2485
+
+Ambjørn, J., Jurkiewicz, J., & Loll, R. (2004). Emergence of a 4D world from causal quantum gravity. *Physical Review Letters* 93, 131301. https://arxiv.org/abs/hep-th/0404156
+
+Ashtekar, A., Pawlowski, T., & Singh, P. (2006). Quantum nature of the big bang. *Physical Review Letters* 96, 141301. https://arxiv.org/abs/gr-qc/0602086
+
+Bousso, R. (2002). The holographic principle. *Reviews of Modern Physics* 74, 825-874. https://arxiv.org/abs/hep-th/0203101
+
+Bousso, R., & Polchinski, J. (2000). Quantization of Four-form Fluxes and Dynamical Neutralization of the Cosmological Constant. *JHEP* 06, 006. https://arxiv.org/abs/hep-th/0004134
+
+Carroll, S. M. (2010). From Eternity to Here. Dutton.
+
+Jaffe, A., & Witten, E. (2000). Quantum Yang-Mills theory. Clay Mathematics Institute, Millennium Prize Problems. https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf
+
+Kolmogorov, A. N. (1965). Three approaches to the quantitative definition of information. *Problems of Information Transmission* 1, 1.
+
+Li, M., and Vitanyi, P. (2019). *An Introduction to Kolmogorov Complexity and Its Applications* (4th ed.). Springer.
+
+Rissanen, J. (1978). Modeling by shortest data description. *Automatica* 14, 465-471.
+
+Russell, B. (1903). *The Principles of Mathematics*. Cambridge University Press.
+
+Schmidhuber, J. (2000). Algorithmic theories of everything. arXiv:quant-ph/0011122.
+
+Solomonoff, R. J. (1964). A formal theory of inductive inference. *Information and Control* 7, 1-22.
+
+Surya, S. (2019). The causal set approach to quantum gravity. *Living Reviews in Relativity* 22, 5. https://arxiv.org/abs/1903.11544
+
+Susskind, L. (2003). The anthropic landscape of string theory. arXiv:hep-th/0302219.
+
+Tegmark, M. (2014). Our Mathematical Universe. Knopf.
+
+Wolfram, S. (2020). A Project to Find the Fundamental Theory of Physics. Wolfram Media.

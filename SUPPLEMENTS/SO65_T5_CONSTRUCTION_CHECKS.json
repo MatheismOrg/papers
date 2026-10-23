@@ -1,0 +1,64 @@
+{
+  "A9": {
+    "method": "Deterministic azimuth quadrature on rotationally reduced sphere; analytic endpoint cases included.",
+    "grid_points": 131072,
+    "results": [
+      {
+        "theta": 0,
+        "normalization": 1.0,
+        "correlation": -1.0,
+        "target": -1.0,
+        "max_joint_error": 0.0
+      },
+      {
+        "theta": 0.17,
+        "normalization": 1.000004595371887,
+        "correlation": -0.9855906981446955,
+        "target": -0.9855847669095608,
+        "max_joint_error": 2.6316517554580976e-06
+      },
+      {
+        "theta": 0.7,
+        "normalization": 0.9999956388119476,
+        "correlation": -0.7648302522774912,
+        "target": -0.7648421872844885,
+        "max_joint_error": 4.074048762570115e-06
+      },
+      {
+        "theta": 0.7853981633974483,
+        "normalization": 0.9999999999999996,
+        "correlation": -0.7071067811865472,
+        "target": -0.7071067811865476,
+        "max_joint_error": 1.1102230246251565e-16
+      },
+      {
+        "theta": 1.5707963267948966,
+        "normalization": 1.0,
+        "correlation": -5.551115123125783e-17,
+        "target": -6.123233995736766e-17,
+        "max_joint_error": 0.0
+      },
+      {
+        "theta": 2.31,
+        "normalization": 0.9999972295686399,
+        "correlation": 0.67369031985488,
+        "target": 0.6736996355945609,
+        "max_joint_error": 3.0215427602731104e-06
+      },
+      {
+        "theta": 3.141592653589793,
+        "normalization": 1.0,
+        "correlation": 1.0,
+        "target": 1.0,
+        "max_joint_error": 0.0
+      }
+    ],
+    "common_preparation_identity": "passed"
+  },
+  "A28": {
+    "scheduler_first_50_stages": "passed",
+    "reversible_XOR_workspace_check": "passed",
+    "finite_clock_permutation_inverse": "passed",
+    "scope": "Finite sanity checks do not replace the infinite-dimensional basis-bijection proof in A28; no claim that our cosmology implements the system."
+  }
+}

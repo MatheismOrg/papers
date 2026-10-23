@@ -1,0 +1,86 @@
+{
+  "scope": "Finite conditional coding illustration, not a physical theory comparison or Kolmogorov minimum.",
+  "shared_inputs": [
+    "precision n",
+    "the decoder and tag definitions"
+  ],
+  "exhaustive_checks": [
+    {
+      "n": 1,
+      "codewords": 8,
+      "distinct_outputs": 4,
+      "format_weights": {
+        "00": "1/4",
+        "01": "1/4",
+        "10": "1/4"
+      },
+      "output_weight_sum": "3/4",
+      "zero_pair_weight": "5/16"
+    },
+    {
+      "n": 2,
+      "codewords": 24,
+      "distinct_outputs": 16,
+      "format_weights": {
+        "00": "1/4",
+        "01": "1/4",
+        "10": "1/4"
+      },
+      "output_weight_sum": "3/4",
+      "zero_pair_weight": "9/64"
+    },
+    {
+      "n": 3,
+      "codewords": 80,
+      "distinct_outputs": 64,
+      "format_weights": {
+        "00": "1/4",
+        "01": "1/4",
+        "10": "1/4"
+      },
+      "output_weight_sum": "3/4",
+      "zero_pair_weight": "17/256"
+    },
+    {
+      "n": 4,
+      "codewords": 288,
+      "distinct_outputs": 256,
+      "format_weights": {
+        "00": "1/4",
+        "01": "1/4",
+        "10": "1/4"
+      },
+      "output_weight_sum": "3/4",
+      "zero_pair_weight": "33/1024"
+    },
+    {
+      "n": 5,
+      "codewords": 1088,
+      "distinct_outputs": 1024,
+      "format_weights": {
+        "00": "1/4",
+        "01": "1/4",
+        "10": "1/4"
+      },
+      "output_weight_sum": "3/4",
+      "zero_pair_weight": "65/4096"
+    }
+  ],
+  "matched_example": {
+    "output": [
+      137,
+      137
+    ],
+    "n": 16,
+    "equal_code": "000000000010001001",
+    "generic_code": "1000000000100010010000000010001001",
+    "equal_bits": 18,
+    "generic_bits": 34,
+    "individual_weight_ratio": 65536
+  },
+  "implementation": {
+    "utf8_bytes": 2858,
+    "sha256": "dd5c8249223cd68ae1499f0028b3ca1bc04dd3cec21c3206cb903a5f8217093d",
+    "charged": "Shared implementation; not included in the conditional tag/payload lengths."
+  }
+}

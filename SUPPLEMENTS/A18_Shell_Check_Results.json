@@ -1,0 +1,96 @@
+{
+ "paper": "A18, Appendix A",
+ "units": "G = 1",
+ "eq1_shell_average": [
+  {
+   "r": 1.0,
+   "a": 2.0,
+   "m": 5.0,
+   "Ms": 100.0,
+   "numerical": -0.033688205466979995,
+   "closed_form": -0.033688205483824826,
+   "relative_error": 5.000216201375733e-10
+  },
+  {
+   "r": 1.0,
+   "a": 2.0,
+   "m": 1.0,
+   "Ms": 100.0,
+   "numerical": -7.9523093197859565,
+   "closed_form": -7.9523093200894595,
+   "relative_error": 3.816539174887054e-11
+  },
+  {
+   "r": 0.5,
+   "a": 2.0,
+   "m": 1.0,
+   "Ms": 1.0,
+   "numerical": -0.07052258076196008,
+   "closed_form": -0.07052258076226553,
+   "relative_error": 4.331238396956584e-12
+  },
+  {
+   "r": 1.5,
+   "a": 2.0,
+   "m": 3.0,
+   "Ms": 1.0,
+   "numerical": -0.012394590177613213,
+   "closed_form": -0.01239459020550445,
+   "relative_error": 2.250275117442582e-09
+  }
+ ],
+ "eq2_derivative": [
+  {
+   "r": 1.0,
+   "a": 2.0,
+   "m": 5.0,
+   "Ms": 100.0,
+   "finite_difference": -0.13476811709239866,
+   "closed_form": -0.1347681170513244,
+   "relative_error": 3.0477724262185567e-10
+  },
+  {
+   "r": 1.0,
+   "a": 2.0,
+   "m": 1.0,
+   "Ms": 100.0,
+   "finite_difference": -2.4893534184222688,
+   "closed_form": -2.4893534183931973,
+   "relative_error": 1.1678298360374787e-11
+  },
+  {
+   "r": 0.3,
+   "a": 2.0,
+   "m": 2.0,
+   "Ms": 1.0,
+   "finite_difference": -0.001139012169712114,
+   "closed_form": -0.0011390121697013745,
+   "relative_error": 9.428745789567446e-12
+  }
+ ],
+ "eq2_negative_inside_shell": true,
+ "point_source": {
+  "f_nonincreasing_on_0_to_10": true,
+  "max_F_on_grid": 1.3326674676968169,
+  "ceiling": 1.3333333333333333
+ },
+ "eq4_instance": {
+  "r": 1.0,
+  "a": 2.0,
+  "m0": 5.0,
+  "m2": 1.0,
+  "Mc": 1.0,
+  "Ms": 100.0,
+  "central_mass_term": 0.03246405087432469,
+  "shell_scalar_term": -0.0449227056837748,
+  "shell_spin2_term": 3.31913789119093,
+  "v_c2_over_v_N2": 3.3066792363814796,
+  "exceeds_point_source_ceiling": true,
+  "paper_values": {
+   "ratio": 3.307,
+   "spin2_term": 3.319,
+   "scalar_term": -0.045
+  }
+ },
+ "all_checks_passed": true
+}

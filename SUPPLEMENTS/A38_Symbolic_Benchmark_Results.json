@@ -1,0 +1,27 @@
+{
+  "task": "Print A38_Symbolic_Benchmark_Spec.txt exactly: the Standard Model with general relativity, stated completely.",
+  "declared_language": "Python 3 with its standard library (lzma, base64)",
+  "environment": {
+    "python": "3.13.16",
+    "implementation": "CPython"
+  },
+  "target": {
+    "bytes": 2549,
+    "bits": 20392,
+    "sha256": "3affd5f9b9f6a5348255f696adb903f2b74566e2b586df6d929374cd4ed3cc5d"
+  },
+  "compressed_statement": {
+    "format": "raw LZMA2, preset 9 extreme",
+    "bytes": 1416,
+    "bits": 11328
+  },
+  "program": {
+    "file": "A38_Symbolic_Benchmark_Program.py",
+    "bytes": 1900,
+    "bits": 15200,
+    "sha256": "a7ee0dbefd206554d15b4651cfe47669ac2ef0766c9856ddda7e76b13ac67f08"
+  },
+  "output_matches_target": true,
+  "tolerance": "exact match",
+  "scope": "An upper bound for the symbolic task in the declared language. The program states the laws and inputs; it computes no predictions. A shorter program may exist; the predictive task is the next benchmark."
+}
