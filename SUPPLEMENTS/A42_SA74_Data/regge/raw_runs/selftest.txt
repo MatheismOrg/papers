@@ -1,0 +1,19 @@
+COUNTS L=4 N0=256  edges=3840 (15.0000/vertex)  triangles=12800 (50.0000/vertex)  tetrahedra=15360 (60.0000/vertex)  4-simplices=6144 (24.0000/vertex)
+EULER chi = 0
+COUNTS_OK 1 (canonical ids: 3840 edges, 12800 triangles)
+SIMPLICES_PER_EDGE: 12:2560 24:1280   max affected hinges per edge = 110
+SIMPLICES_PER_TRIANGLE: 4:7680 6:5120
+FLAT invalid=0  max|delta_h|=1.776e-15  sumV=255.999999999977 (L^4=256)  V in [0.0416666666666667, 0.0416666666666667] (1/24=0.0416666666666667)  sum delta*A=-3.151e-12
+REGULAR theta=1.318116071652818  arccos(1/4)=1.318116071652818  max|diff|=2.220e-16  V=0.023292374765623 (sqrt5/96=0.023292374765623)
+RANDOM 2000 simplices: max|theta_gram - theta_embed|=7.736e-11  max rel|V diff|=2.369e-08  max Schlaefli residual (rel)=6.169e-08
+INCREMENTAL after 3 sweeps (k=0.05, acc=0.794): max|dV|=0.00e+00 max|dthsum|=1.24e-14 max|dA|=0.00e+00  sumV inc-full=-2.50e-11  sumDA inc-full=-1.82e-12
+
+COUNTS L=3 N0=81  edges=1215 (15.0000/vertex)  triangles=4050 (50.0000/vertex)  tetrahedra=4860 (60.0000/vertex)  4-simplices=1944 (24.0000/vertex)
+EULER chi = 0
+COUNTS_OK 1 (canonical ids: 1215 edges, 4050 triangles)
+SIMPLICES_PER_EDGE: 12:810 24:405   max affected hinges per edge = 110
+SIMPLICES_PER_TRIANGLE: 4:2430 6:1620
+FLAT invalid=0  max|delta_h|=1.776e-15  sumV=81.0000000000005 (L^4=81)  V in [0.0416666666666667, 0.0416666666666667] (1/24=0.0416666666666667)  sum delta*A=-9.969e-13
+REGULAR theta=1.318116071652818  arccos(1/4)=1.318116071652818  max|diff|=2.220e-16  V=0.023292374765623 (sqrt5/96=0.023292374765623)
+RANDOM 2000 simplices: max|theta_gram - theta_embed|=7.736e-11  max rel|V diff|=2.369e-08  max Schlaefli residual (rel)=6.169e-08
+INCREMENTAL after 3 sweeps (k=0.05, acc=0.810): max|dV|=0.00e+00 max|dthsum|=1.07e-14 max|dA|=0.00e+00  sumV inc-full=3.69e-13  sumDA inc-full=-1.85e-13

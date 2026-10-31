@@ -1,0 +1,71 @@
+[
+ {
+  "tag": "L6_k0.070",
+  "dir": "runs2",
+  "L": 6,
+  "k": 0.07,
+  "ntherm": 1200,
+  "nmeas": 5000,
+  "seed": 6001,
+  "eps0": 0.5,
+  "nscale": 10
+ },
+ {
+  "tag": "L6_k0.065",
+  "dir": "runs2",
+  "L": 6,
+  "k": 0.065,
+  "ntherm": 1200,
+  "nmeas": 5000,
+  "seed": 6002,
+  "eps0": 0.5,
+  "nscale": 10
+ },
+ {
+  "tag": "L6_k0.050",
+  "dir": "runs2",
+  "L": 6,
+  "k": 0.05,
+  "ntherm": 1200,
+  "nmeas": 5000,
+  "seed": 6003,
+  "eps0": 0.5,
+  "nscale": 10
+ },
+ {
+  "tag": "F1_L4_k0.070",
+  "dir": "runs2",
+  "L": 4,
+  "k": 0.07,
+  "ntherm": 1000,
+  "nmeas": 3000,
+  "seed": 7001,
+  "eps0": 0.5,
+  "nscale": 0,
+  "freeze": 1
+ },
+ {
+  "tag": "F1_L4_k0.080",
+  "dir": "runs2",
+  "L": 4,
+  "k": 0.08,
+  "ntherm": 1000,
+  "nmeas": 3000,
+  "seed": 7002,
+  "eps0": 0.5,
+  "nscale": 0,
+  "freeze": 1
+ },
+ {
+  "tag": "F1_L4_k0.100",
+  "dir": "runs2",
+  "L": 4,
+  "k": 0.1,
+  "ntherm": 1000,
+  "nmeas": 3000,
+  "seed": 7003,
+  "eps0": 0.5,
+  "nscale": 0,
+  "freeze": 1
+ }
+]

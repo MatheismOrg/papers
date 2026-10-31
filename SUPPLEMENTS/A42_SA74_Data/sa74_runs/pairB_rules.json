@@ -1,0 +1,1 @@
+[{"rule": "{{x,y},{x,z}}->{{z,x},{x,w},{x,y}}", "group": "2D pair, right side listed in another order"}]

@@ -1,0 +1,233 @@
+{
+ "started": "2026-10-31T09:19:49Z",
+ "two_d": [
+  {
+   "triangles": 512,
+   "slices": 16,
+   "slice_min": 9,
+   "slice_max": 23,
+   "euler": 0,
+   "zero_modes_by_degree": [
+    1,
+    2,
+    1
+   ],
+   "zero_modes_total": 4,
+   "low_modes_over_weyl": {
+    "0.1": 0.283,
+    "0.25": 0.907,
+    "0.5": 1.077
+   },
+   "kind": "causal, sampled"
+  },
+  {
+   "triangles": 512,
+   "slices": 16,
+   "slice_min": 8,
+   "slice_max": 29,
+   "euler": 0,
+   "zero_modes_by_degree": [
+    1,
+    2,
+    1
+   ],
+   "zero_modes_total": 4,
+   "low_modes_over_weyl": {
+    "0.1": 0.283,
+    "0.25": 0.907,
+    "0.5": 1.02
+   },
+   "kind": "causal, sampled"
+  },
+  {
+   "triangles": 512,
+   "slices": 16,
+   "slice_min": 16,
+   "slice_max": 16,
+   "euler": 0,
+   "zero_modes_by_degree": [
+    1,
+    2,
+    1
+   ],
+   "zero_modes_total": 4,
+   "low_modes_over_weyl": {
+    "0.1": 0.0,
+    "0.25": 1.36,
+    "0.5": 0.68
+   },
+   "kind": "regular control"
+  },
+  {
+   "triangles": 1008,
+   "slices": 24,
+   "slice_min": 7,
+   "slice_max": 37,
+   "euler": 0,
+   "zero_modes_by_degree": [
+    1,
+    2,
+    1
+   ],
+   "zero_modes_total": 4,
+   "low_modes_over_weyl": {
+    "0.1": 0.864,
+    "0.25": 0.979,
+    "0.5": 1.094
+   },
+   "kind": "causal, sampled"
+  },
+  {
+   "triangles": 1008,
+   "slices": 24,
+   "slice_min": 12,
+   "slice_max": 33,
+   "euler": 0,
+   "zero_modes_by_degree": [
+    1,
+    2,
+    1
+   ],
+   "zero_modes_total": 4,
+   "low_modes_over_weyl": {
+    "0.1": 0.72,
+    "0.25": 0.979,
+    "0.5": 1.123
+   },
+   "kind": "causal, sampled"
+  },
+  {
+   "triangles": 1008,
+   "slices": 24,
+   "slice_min": 21,
+   "slice_max": 21,
+   "euler": 0,
+   "zero_modes_by_degree": [
+    1,
+    2,
+    1
+   ],
+   "zero_modes_total": 4,
+   "low_modes_over_weyl": {
+    "0.1": 0.576,
+    "0.25": 0.691,
+    "0.5": 1.036
+   },
+   "kind": "regular control"
+  },
+  {
+   "triangles": 2048,
+   "slices": 32,
+   "slice_min": 15,
+   "slice_max": 64,
+   "euler": 0,
+   "zero_modes_by_degree": [
+    1,
+    2,
+    1
+   ],
+   "zero_modes_total": 4,
+   "low_modes_over_weyl": {
+    "0.1": 0.992,
+    "0.25": 1.049,
+    "0.5": 1.091
+   },
+   "kind": "causal, sampled"
+  },
+  {
+   "triangles": 2048,
+   "slices": 32,
+   "slice_min": 18,
+   "slice_max": 50,
+   "euler": 0,
+   "zero_modes_by_degree": [
+    1,
+    2,
+    1
+   ],
+   "zero_modes_total": 4,
+   "low_modes_over_weyl": {
+    "0.1": 0.921,
+    "0.25": 1.077,
+    "0.5": 1.105
+   },
+   "kind": "causal, sampled"
+  },
+  {
+   "triangles": 2048,
+   "slices": 32,
+   "slice_min": 32,
+   "slice_max": 32,
+   "euler": 0,
+   "zero_modes_by_degree": [
+    1,
+    2,
+    1
+   ],
+   "zero_modes_total": 4,
+   "low_modes_over_weyl": {
+    "0.1": 0.85,
+    "0.25": 1.02,
+    "0.5": 1.02
+   },
+   "kind": "regular control"
+  }
+ ],
+ "four_d": [
+  {
+   "lattice": "3^4 Freudenthal",
+   "cells": [
+    81,
+    1215,
+    4050,
+    4860,
+    1944
+   ],
+   "euler": 0,
+   "weight_spread": 0.0,
+   "zero_modes_by_degree": [
+    1,
+    4,
+    6,
+    4,
+    1
+   ],
+   "zero_modes_total": 16,
+   "smallest_nonzero_by_degree": [
+    24.0,
+    2.5072,
+    0.8801,
+    0.4194,
+    0.4194
+   ]
+  },
+  {
+   "lattice": "3^4 Freudenthal",
+   "cells": [
+    81,
+    1215,
+    4050,
+    4860,
+    1944
+   ],
+   "euler": 0,
+   "weight_spread": 1.0,
+   "zero_modes_by_degree": [
+    1,
+    4,
+    6,
+    4,
+    1
+   ],
+   "zero_modes_total": 16,
+   "smallest_nonzero_by_degree": [
+    5.4203,
+    0.5776,
+    0.3398,
+    0.0854,
+    0.0854
+   ]
+  }
+ ],
+ "finished": "2026-10-31T09:22:13Z"
+}

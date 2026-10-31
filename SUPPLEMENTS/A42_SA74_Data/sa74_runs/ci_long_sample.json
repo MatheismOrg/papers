@@ -1,0 +1,210 @@
+[
+ {
+  "rule": "{{x,y},{z,y}}->{{x,z},{x,w},{y,x},{w,y}}",
+  "pairs": 65,
+  "resolved": 25,
+  "unresolved_example": {
+   "state": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "m1": [
+    0,
+    1
+   ],
+   "m2": [
+    2,
+    1
+   ]
+  },
+  "capped": 0,
+  "causally_invariant_within_steps": false,
+  "steps": 2,
+  "sec": 0.06
+ },
+ {
+  "rule": "{{x,y},{x,z}}->{{x,y},{z,y},{z,w},{w,z}}",
+  "pairs": 65,
+  "resolved": 32,
+  "unresolved_example": {
+   "state": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "m1": [
+    0,
+    1
+   ],
+   "m2": [
+    2,
+    1
+   ]
+  },
+  "capped": 0,
+  "causally_invariant_within_steps": false,
+  "steps": 2,
+  "sec": 0.08
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{x,y},{y,x},{z,y},{w,y}}",
+  "pairs": 62,
+  "resolved": 62,
+  "unresolved_example": null,
+  "capped": 0,
+  "causally_invariant_within_steps": true,
+  "steps": 2,
+  "sec": 0.23
+ },
+ {
+  "rule": "{{x,y},{z,y}}->{{x,y},{y,w},{u,x},{u,z}}",
+  "pairs": 65,
+  "resolved": 32,
+  "unresolved_example": {
+   "state": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "m1": [
+    0,
+    1
+   ],
+   "m2": [
+    2,
+    1
+   ]
+  },
+  "capped": 0,
+  "causally_invariant_within_steps": false,
+  "steps": 2,
+  "sec": 4.59
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{x,y},{y,w},{z,y},{w,y}}",
+  "pairs": 62,
+  "resolved": 47,
+  "unresolved_example": {
+   "state": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "m1": [
+    0,
+    1
+   ],
+   "m2": [
+    2,
+    0
+   ]
+  },
+  "capped": 0,
+  "causally_invariant_within_steps": false,
+  "steps": 2,
+  "sec": 0.12
+ },
+ {
+  "rule": "{{x,y},{z,y}}->{{x,z},{x,w},{w,y},{u,z}}",
+  "pairs": 65,
+  "resolved": 20,
+  "unresolved_example": {
+   "state": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "m1": [
+    0,
+    1
+   ],
+   "m2": [
+    2,
+    1
+   ]
+  },
+  "capped": 0,
+  "causally_invariant_within_steps": false,
+  "steps": 2,
+  "sec": 11.08
+ },
+ {
+  "rule": "{{x,y},{x,z}}->{{x,y},{y,w},{z,u},{u,y}}",
+  "pairs": 65,
+  "resolved": 32,
+  "unresolved_example": {
+   "state": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "m1": [
+    0,
+    1
+   ],
+   "m2": [
+    2,
+    1
+   ]
+  },
+  "capped": 0,
+  "causally_invariant_within_steps": false,
+  "steps": 2,
+  "sec": 6.24
+ }
+]

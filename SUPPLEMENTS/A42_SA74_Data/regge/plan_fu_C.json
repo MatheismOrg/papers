@@ -1,0 +1,26 @@
+[
+ {
+  "tag": "P4_L4_k0.080",
+  "dir": "runs2",
+  "L": 4,
+  "k": 0.08,
+  "ntherm": 1000,
+  "nmeas": 4000,
+  "seed": 8010,
+  "eps0": 0.5,
+  "nscale": 10,
+  "nphi": 4
+ },
+ {
+  "tag": "P4_L4_k0.100",
+  "dir": "runs2",
+  "L": 4,
+  "k": 0.1,
+  "ntherm": 1000,
+  "nmeas": 4000,
+  "seed": 8011,
+  "eps0": 0.5,
+  "nscale": 10,
+  "nphi": 4
+ }
+]

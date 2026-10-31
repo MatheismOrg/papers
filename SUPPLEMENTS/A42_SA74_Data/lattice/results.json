@@ -1,0 +1,261 @@
+{
+ "started": "2026-10-31T08:42:50Z",
+ "bits": {
+  "A38 statement": 11328,
+  "plus lattice form": 14472,
+  "plus declared completion": 13192,
+  "plus SMASH completion": 14112,
+  "plus lattice and declared": 16272,
+  "plus lattice and SMASH": 17200
+ },
+ "tuning": {
+  "Planck mass GeV": 1.2208929262323177e+19,
+  "vacuum energy in lattice units": 1.134472349853339e-123,
+  "Lambda extra bits": 408.4151342240706,
+  "Higgs ratio": 1.6606313439561178e-32,
+  "Higgs extra bits": 105.56996720227504,
+  "total extra bits": 513.9851014263456
+ },
+ "bits_cap": {
+  "lattice + declared + tuning": 16785.985101426344,
+  "lattice + SMASH + tuning": 17713.985101426344
+ },
+ "texts": {
+  "lattice": "\nLattice form (the 4-dimensional lattice supplied as data):\nLattice: periodic hypercubic in 4 dimensions, spacing a = sqrt(GN) (the Planck length), physical rather than a regulator.\nGauge fields: link variables U_m(x) = exp(i a k X_m(x)) for each gauge field X with coupling k, Wilson plaquette action.\nMetric: the lengths of the edges of the Freudenthal triangulation of each cell; the term (R - 2 Lambda)/(16 pi GN) by the Regge action.\nFermions: overlap operator D = (1 + gamma5 sign(gamma5 (a D_W - 1)))/a with D_W the Wilson operator;\nleft-handed fields f = (1 - gamma5 (1 - a D)) f/2 and fbar = fbar (1 + gamma5)/2 (Luscher).\nAmplitudes: the Euclidean lattice path integral; one time step is the transfer matrix along a lattice direction.\nBare Lambda and mu^2 at the lattice scale are tuned so that the measured values above result.\n",
+  "declared": "\nCompletion by declared data:\nDark matter: a real scalar S (1, 1, 0) with action - (1/2) (d_m S)(d^m S) - (1/2) mS^2 S^2, coupled only through the metric; mS = 100 (declared).\nInitial state: a spatially flat expanding universe at temperature 1e10 in thermal equilibrium, with adiabatic Gaussian perturbations\nof amplitude A_s = 2.100e-9 and tilt n_s = 0.9649 at k = 0.05/Mpc, baryon-to-photon ratio 6.12e-10, dark-to-baryon mass ratio 5.36.\n",
+  "smash": "\nCompletion by mechanisms (SMASH):\nAdd a complex scalar s (1, 1, 0) and Weyl fermions q (3, 1, -1/3), qc (3bar, 1, 1/3).\nGlobal U(1) charges: s 1, q -1/2, qc -1/2, L_n 1/2, ec_n -1/2, nc_n -1/2, all others 0.\nAdd - ( (1/2) yN_jk s nc_j nc_k + yq s q qc + h.c. ), replace the Higgs potential by\nlam (H^dagger H - v^2/2)^2 + ls (s* s - vs^2/2)^2 + 2 lhs (H^dagger H - v^2/2)(s* s - vs^2/2),\nand the gravity term by (1/(16 pi GN) + xs s* s) R - Lambda/(8 pi GN).\nInputs: vs = 1.0e11, ls = 1.0e-10, lhs = 1.0e-6, xs = 0.10, yq = 0.010, yN = diag(1.00e-4, 1.04e-4, 2.00e-4);\nyn = (sqrt(2)/v) U diag(sqrt(m_1 M_1), sqrt(m_2 M_2), sqrt(m_3 M_3)) with M = yN vs/sqrt(2); th dropped (the phase of s absorbs it).\nInitial state: inflation driven by |s| in a generic patch.\n"
+ },
+ "chirality": {
+  "rows": [
+   {
+    "L": 16,
+    "Q_set": 0,
+    "noise": 0,
+    "Q_measured": 0.0,
+    "max_plaquette_angle": 0.0,
+    "overlap_n_plus": 1,
+    "overlap_n_minus": 1,
+    "index_n_minus_minus_n_plus": 0,
+    "overlap_modes_at_2": 6,
+    "GW_violation_rel": 2.07217205533631e-15,
+    "H_W_gap": 1.0,
+    "wilson_smallest_abs_eig": 0.0
+   },
+   {
+    "L": 16,
+    "Q_set": 1,
+    "noise": 0,
+    "Q_measured": 1.0,
+    "max_plaquette_angle": 0.025,
+    "overlap_n_plus": 0,
+    "overlap_n_minus": 1,
+    "index_n_minus_minus_n_plus": 1,
+    "overlap_modes_at_2": 3,
+    "GW_violation_rel": 2.575578988202896e-15,
+    "H_W_gap": 0.9877,
+    "wilson_smallest_abs_eig": 0.0122
+   },
+   {
+    "L": 16,
+    "Q_set": -1,
+    "noise": 0,
+    "Q_measured": -1.0,
+    "max_plaquette_angle": 0.025,
+    "overlap_n_plus": 1,
+    "overlap_n_minus": 0,
+    "index_n_minus_minus_n_plus": -1,
+    "overlap_modes_at_2": 3,
+    "GW_violation_rel": 2.611627210040296e-15,
+    "H_W_gap": 0.9877,
+    "wilson_smallest_abs_eig": 0.0122
+   },
+   {
+    "L": 16,
+    "Q_set": 2,
+    "noise": 0,
+    "Q_measured": 2.0,
+    "max_plaquette_angle": 0.049,
+    "overlap_n_plus": 0,
+    "overlap_n_minus": 2,
+    "index_n_minus_minus_n_plus": 2,
+    "overlap_modes_at_2": 6,
+    "GW_violation_rel": 2.324297145860909e-15,
+    "H_W_gap": 0.9754,
+    "wilson_smallest_abs_eig": 0.0244
+   },
+   {
+    "L": 16,
+    "Q_set": -2,
+    "noise": 0,
+    "Q_measured": -2.0,
+    "max_plaquette_angle": 0.049,
+    "overlap_n_plus": 2,
+    "overlap_n_minus": 0,
+    "index_n_minus_minus_n_plus": -2,
+    "overlap_modes_at_2": 6,
+    "GW_violation_rel": 2.411216316794651e-15,
+    "H_W_gap": 0.9754,
+    "wilson_smallest_abs_eig": 0.0244
+   },
+   {
+    "L": 16,
+    "Q_set": 3,
+    "noise": 0,
+    "Q_measured": 3.0,
+    "max_plaquette_angle": 0.074,
+    "overlap_n_plus": 0,
+    "overlap_n_minus": 3,
+    "index_n_minus_minus_n_plus": 3,
+    "overlap_modes_at_2": 9,
+    "GW_violation_rel": 2.345731268377601e-15,
+    "H_W_gap": 0.9629,
+    "wilson_smallest_abs_eig": 0.0365
+   },
+   {
+    "L": 16,
+    "Q_set": 1,
+    "noise": 0.3,
+    "Q_measured": 1.0,
+    "max_plaquette_angle": 1.361,
+    "overlap_n_plus": 0,
+    "overlap_n_minus": 1,
+    "index_n_minus_minus_n_plus": 1,
+    "overlap_modes_at_2": 1,
+    "GW_violation_rel": 2.9497486558491193e-15,
+    "H_W_gap": 0.6624,
+    "wilson_smallest_abs_eig": 0.0663
+   },
+   {
+    "L": 16,
+    "Q_set": 2,
+    "noise": 0.3,
+    "Q_measured": 2.0,
+    "max_plaquette_angle": 1.834,
+    "overlap_n_plus": 0,
+    "overlap_n_minus": 2,
+    "index_n_minus_minus_n_plus": 2,
+    "overlap_modes_at_2": 2,
+    "GW_violation_rel": 2.8893274491001034e-15,
+    "H_W_gap": 0.5241,
+    "wilson_smallest_abs_eig": 0.0897
+   },
+   {
+    "L": 16,
+    "Q_set": -1,
+    "noise": 0.5,
+    "Q_measured": -1.0,
+    "max_plaquette_angle": 3.1,
+    "overlap_n_plus": 1,
+    "overlap_n_minus": 0,
+    "index_n_minus_minus_n_plus": -1,
+    "overlap_modes_at_2": 1,
+    "GW_violation_rel": 3.005355416711492e-15,
+    "H_W_gap": 0.1399,
+    "wilson_smallest_abs_eig": 0.2116
+   },
+   {
+    "L": 24,
+    "Q_set": 1,
+    "noise": 0,
+    "Q_measured": 1.0,
+    "max_plaquette_angle": 0.011,
+    "overlap_n_plus": 0,
+    "overlap_n_minus": 1,
+    "index_n_minus_minus_n_plus": 1,
+    "overlap_modes_at_2": 3,
+    "GW_violation_rel": 3.4880878091135328e-15,
+    "H_W_gap": 0.9945,
+    "wilson_smallest_abs_eig": 0.0054
+   },
+   {
+    "L": 24,
+    "Q_set": 3,
+    "noise": 0,
+    "Q_measured": 3.0,
+    "max_plaquette_angle": 0.033,
+    "overlap_n_plus": 0,
+    "overlap_n_minus": 3,
+    "index_n_minus_minus_n_plus": 3,
+    "overlap_modes_at_2": 9,
+    "GW_violation_rel": 3.0491100521903515e-15,
+    "H_W_gap": 0.9836,
+    "wilson_smallest_abs_eig": 0.0163
+   },
+   {
+    "L": 24,
+    "Q_set": -2,
+    "noise": 0.3,
+    "Q_measured": -2.0,
+    "max_plaquette_angle": 2.193,
+    "overlap_n_plus": 2,
+    "overlap_n_minus": 0,
+    "index_n_minus_minus_n_plus": -2,
+    "overlap_modes_at_2": 2,
+    "GW_violation_rel": 3.997437318827299e-15,
+    "H_W_gap": 0.4153,
+    "wilson_smallest_abs_eig": 0.0813
+   }
+  ],
+  "free_zero_modes": {
+   "naive": 8,
+   "wilson": 2,
+   "overlap": 2,
+   "continuum": 2
+  },
+  "wilson_GW_violation_rel_free": 1.224744871391589
+ },
+ "anomalies": {
+  "16 per family, one family": {
+   "grav^2 Y": "0",
+   "Y^3": "0",
+   "SU2^2 Y": "0",
+   "SU3^2 Y": "0",
+   "SU3^3": "0",
+   "SU2 doublets": "4",
+   "mod16": "16"
+  },
+  "15 per family, one family": {
+   "grav^2 Y": "0",
+   "Y^3": "0",
+   "SU2^2 Y": "0",
+   "SU3^2 Y": "0",
+   "SU3^3": "0",
+   "SU2 doublets": "4",
+   "mod16": "15"
+  },
+  "mod16 for 3 families": {
+   "16 per family": 0,
+   "15 per family": 13
+  },
+  "SMASH extra quarks": {
+   "grav^2 Y": "0",
+   "Y^3": "0",
+   "SU2^2 Y": "0",
+   "SU3^2 Y": "0",
+   "SU3^3": "0",
+   "SU2 doublets": "0",
+   "mod16": "0"
+  }
+ },
+ "lorentz": {
+  "axis": {
+   "c": 0.08333229168690225,
+   "EQG2_times_a": 2.44950505194019,
+   "a_max_m": 7.005122947597129e-28,
+   "a_max_planck": 43341693.90100652
+  },
+  "face diagonal": {
+   "c": 0.06249925782637888,
+   "EQG2_times_a": 2.8284439183677654,
+   "a_max_m": 8.088816711300812e-28,
+   "a_max_planck": 50046661.642505735
+  },
+  "body diagonal": {
+   "c": 0.055554907415697456,
+   "EQG2_times_a": 3.0000174999292915,
+   "a_max_m": 8.57948482910938e-28,
+   "a_max_planck": 53082495.20718809
+  }
+ },
+ "finished": "2026-10-31T08:43:29Z"
+}

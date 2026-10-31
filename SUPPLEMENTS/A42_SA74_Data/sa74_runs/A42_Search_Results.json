@@ -1,0 +1,4834 @@
+{
+ "about": "A42 search, first and second passes (SO70 T213 and T214, October 11, 2026). Produced by A42_Rule_Search.py and compiled by A42_Compile_Results.py; see A42_Search_README.md.",
+ "classes": {
+  "stops or stays small": "fewer than 300 updates before no match is left or the run ends",
+  "tree": "every update has one direct cause, so the causal order is a tree (dimension 1)",
+  "exponential": "updates per generation grow by more than 10 percent per generation over the second half of the run",
+  "polynomial": "the rest; updates per generation grow as a power p of the generation, a volume dimension of about p + 1"
+ },
+ "runs": {
+  "scan": "up to 3,000 updates, 400 generations, 60,000 relations or 8 seconds per rule",
+  "long": "27 rules up to 20,000 updates or 60 seconds, with a size series of intervals"
+ },
+ "intervals": "root: from the root event to the six events with the largest pasts; mid: from the event 30 percent of the way up with the largest interval; series: one top event, bottom tips at growing depth; at least 120 elements (60 in a series)",
+ "long_runs_second_pass": [
+  {
+   "rule": "{{x,y},{x,z}}->{{x,y},{x,w},{z,x}}",
+   "bits": 20.0,
+   "gens": 652,
+   "relations": 120271,
+   "nodes": 120270,
+   "fit": {
+    "exp_rate": 0.002,
+    "power": 1.008
+   },
+   "run_sec": 131.06,
+   "events": 120269,
+   "top": 120269,
+   "past_of_top": 44991,
+   "depth": 652,
+   "tree": false,
+   "past_max": 44990,
+   "max_causes": 2,
+   "max_effects": 2,
+   "cone_dim": 1.883,
+   "root": {
+    "diamonds": 1,
+    "n": 44991,
+    "f": 0.6185,
+    "mm": 1.711,
+    "mid": 1.709,
+    "chain": 653.0,
+    "chain_d": 1.844,
+    "coarse_d": 2.119
+   },
+   "mid": {
+    "diamonds": 1,
+    "n": 27097,
+    "f": 0.54,
+    "mm": 1.897,
+    "mid": 1.89,
+    "chain": 457.0,
+    "chain_d": 1.871,
+    "coarse_d": 2.053
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 44991,
+     "f": 0.6185,
+     "mm": 1.711,
+     "mid": 1.709,
+     "chain": 653,
+     "chain_d": 1.844,
+     "coarse_d": 2.119,
+     "height": 652
+    },
+    {
+     "frac": 0.1,
+     "n": 42079,
+     "f": 0.5807,
+     "mm": 1.798,
+     "mid": 1.764,
+     "chain": 588,
+     "chain_d": 1.866,
+     "coarse_d": 2.133,
+     "height": 587
+    },
+    {
+     "frac": 0.2,
+     "n": 35019,
+     "f": 0.5672,
+     "mm": 1.83,
+     "mid": 1.795,
+     "chain": 523,
+     "chain_d": 1.872,
+     "coarse_d": 2.188,
+     "height": 522
+    },
+    {
+     "frac": 0.3,
+     "n": 27097,
+     "f": 0.54,
+     "mm": 1.897,
+     "mid": 1.89,
+     "chain": 457,
+     "chain_d": 1.871,
+     "coarse_d": 2.053,
+     "height": 456
+    },
+    {
+     "frac": 0.4,
+     "n": 19099,
+     "f": 0.5681,
+     "mm": 1.828,
+     "mid": 1.824,
+     "chain": 392,
+     "chain_d": 1.859,
+     "coarse_d": 2.14,
+     "height": 391
+    },
+    {
+     "frac": 0.5,
+     "n": 13791,
+     "f": 0.5614,
+     "mm": 1.844,
+     "mid": 1.852,
+     "chain": 327,
+     "chain_d": 1.862,
+     "coarse_d": 2.25,
+     "height": 326
+    },
+    {
+     "frac": 0.6,
+     "n": 9282,
+     "f": 0.5517,
+     "mm": 1.868,
+     "mid": 1.881,
+     "chain": 262,
+     "chain_d": 1.865,
+     "coarse_d": 2.023,
+     "height": 261
+    },
+    {
+     "frac": 0.7,
+     "n": 5483,
+     "f": 0.536,
+     "mm": 1.907,
+     "mid": 1.914,
+     "chain": 197,
+     "chain_d": 1.866,
+     "coarse_d": 2.19,
+     "height": 196
+    }
+   ],
+   "status": "measured",
+   "sec": 139.9,
+   "group": "two-dimensional control"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{x,y},{y,z},{w,y}}",
+   "bits": 20.0,
+   "gens": 600,
+   "relations": 120003,
+   "nodes": 120002,
+   "fit": {
+    "exp_rate": 0.002,
+    "power": 1.001
+   },
+   "run_sec": 130.68,
+   "events": 120001,
+   "top": 119962,
+   "past_of_top": 49220,
+   "depth": 600,
+   "tree": false,
+   "past_max": 49219,
+   "max_causes": 2,
+   "max_effects": 2,
+   "cone_dim": 1.942,
+   "root": {
+    "diamonds": 1,
+    "n": 49220,
+    "f": 0.5955,
+    "mm": 1.764,
+    "mid": 1.777,
+    "chain": 601.0,
+    "chain_d": 1.886,
+    "coarse_d": 2.377
+   },
+   "mid": {
+    "diamonds": 1,
+    "n": 30498,
+    "f": 0.5104,
+    "mm": 1.972,
+    "mid": 1.979,
+    "chain": 421.0,
+    "chain_d": 1.922,
+    "coarse_d": 2.329
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 49220,
+     "f": 0.5955,
+     "mm": 1.764,
+     "mid": 1.777,
+     "chain": 601,
+     "chain_d": 1.886,
+     "coarse_d": 2.377,
+     "height": 600
+    },
+    {
+     "frac": 0.1,
+     "n": 46067,
+     "f": 0.5561,
+     "mm": 1.857,
+     "mid": 1.84,
+     "chain": 541,
+     "chain_d": 1.91,
+     "coarse_d": 2.345,
+     "height": 540
+    },
+    {
+     "frac": 0.2,
+     "n": 38598,
+     "f": 0.5387,
+     "mm": 1.9,
+     "mid": 1.887,
+     "chain": 481,
+     "chain_d": 1.918,
+     "coarse_d": 2.415,
+     "height": 480
+    },
+    {
+     "frac": 0.3,
+     "n": 30498,
+     "f": 0.5104,
+     "mm": 1.972,
+     "mid": 1.979,
+     "chain": 421,
+     "chain_d": 1.922,
+     "coarse_d": 2.329,
+     "height": 420
+    },
+    {
+     "frac": 0.4,
+     "n": 21051,
+     "f": 0.5295,
+     "mm": 1.923,
+     "mid": 1.934,
+     "chain": 361,
+     "chain_d": 1.907,
+     "coarse_d": 2.235,
+     "height": 360
+    },
+    {
+     "frac": 0.5,
+     "n": 15044,
+     "f": 0.5187,
+     "mm": 1.951,
+     "mid": 1.956,
+     "chain": 301,
+     "chain_d": 1.91,
+     "coarse_d": 2.261,
+     "height": 300
+    },
+    {
+     "frac": 0.6,
+     "n": 9838,
+     "f": 0.5124,
+     "mm": 1.967,
+     "mid": 1.965,
+     "chain": 241,
+     "chain_d": 1.91,
+     "coarse_d": 2.207,
+     "height": 240
+    },
+    {
+     "frac": 0.7,
+     "n": 5581,
+     "f": 0.5162,
+     "mm": 1.957,
+     "mid": 1.953,
+     "chain": 181,
+     "chain_d": 1.905,
+     "coarse_d": 2.426,
+     "height": 180
+    }
+   ],
+   "status": "measured",
+   "sec": 140.8,
+   "group": "two-dimensional control"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{x,y},{y,w},{z,y}}",
+   "bits": 20.0,
+   "gens": 349,
+   "relations": 120069,
+   "nodes": 120068,
+   "fit": {
+    "exp_rate": 0.004,
+    "power": 1.012
+   },
+   "run_sec": 403.84,
+   "events": 120067,
+   "top": 120062,
+   "past_of_top": 30157,
+   "depth": 349,
+   "tree": false,
+   "past_max": 30156,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 2.008,
+   "root": {
+    "diamonds": 1,
+    "n": 30157,
+    "f": 0.275,
+    "mm": 2.77,
+    "mid": 3.079,
+    "chain": 350.0,
+    "chain_d": 1.988,
+    "coarse_d": 0.981
+   },
+   "mid": {
+    "diamonds": 1,
+    "n": 7066,
+    "f": 0.0381,
+    "mm": 5.131,
+    "mid": 5.403,
+    "chain": 200.0,
+    "chain_d": 1.915,
+    "coarse_d": 0.975
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 30157,
+     "f": 0.275,
+     "mm": 2.77,
+     "mid": 3.079,
+     "chain": 350,
+     "chain_d": 1.988,
+     "coarse_d": 0.981,
+     "height": 349
+    },
+    {
+     "frac": 0.1,
+     "n": 27483,
+     "f": 0.163,
+     "mm": 3.414,
+     "mid": 3.866,
+     "chain": 299,
+     "chain_d": 2.033,
+     "coarse_d": 1.03,
+     "height": 314
+    },
+    {
+     "frac": 0.2,
+     "n": 19499,
+     "f": 0.0436,
+     "mm": 4.975,
+     "mid": 5.46,
+     "chain": 252,
+     "chain_d": 2.034,
+     "coarse_d": 1.05,
+     "height": 279
+    },
+    {
+     "frac": 0.3,
+     "n": 7066,
+     "f": 0.0381,
+     "mm": 5.131,
+     "mid": 5.403,
+     "chain": 200,
+     "chain_d": 1.915,
+     "coarse_d": 0.975,
+     "height": 244
+    },
+    {
+     "frac": 0.4,
+     "n": 1667,
+     "f": 0.0858,
+     "mm": 4.181,
+     "mid": 4.088,
+     "chain": 148,
+     "chain_d": 1.714,
+     "coarse_d": 1.138,
+     "height": 209
+    },
+    {
+     "frac": 0.5,
+     "n": 356,
+     "f": 0.4278,
+     "mm": 2.206,
+     "mid": 2.016,
+     "chain": 176,
+     "chain_d": 1.305,
+     "coarse_d": 1.033,
+     "height": 175
+    },
+    {
+     "frac": 0.6,
+     "n": 192,
+     "f": 0.634,
+     "mm": 1.677,
+     "mid": 1.435,
+     "chain": 141,
+     "chain_d": 1.229,
+     "coarse_d": 1.092,
+     "height": 140
+    },
+    {
+     "frac": 0.7,
+     "n": 106,
+     "f": 1.0,
+     "mm": 1.0,
+     "mid": 1.0,
+     "chain": 106,
+     "chain_d": 1.168,
+     "coarse_d": 1.0,
+     "height": 105
+    }
+   ],
+   "status": "measured",
+   "sec": 409.24,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{x,z}}->{{y,y},{z,w},{w,y}}",
+   "bits": 20.0,
+   "gens": 41,
+   "relations": 123649,
+   "nodes": 123648,
+   "fit": {
+    "exp_rate": 0.24,
+    "power": 6.946
+   },
+   "run_sec": 41.95,
+   "events": 123647,
+   "top": 123647,
+   "past_of_top": 2725,
+   "depth": 41,
+   "tree": false,
+   "past_max": 2724,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 3.477,
+   "root": {
+    "diamonds": 1,
+    "n": 2725,
+    "f": 0.0916,
+    "mm": 4.104,
+    "mid": 4.812,
+    "chain": 42.0,
+    "chain_d": 2.605,
+    "coarse_d": 2.076
+   },
+   "mid": {
+    "diamonds": 1,
+    "n": 1366,
+    "f": 0.0582,
+    "mm": 4.638,
+    "mid": 5.661,
+    "chain": 30.0,
+    "chain_d": 2.678,
+    "coarse_d": 1.967
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 2725,
+     "f": 0.0916,
+     "mm": 4.104,
+     "mid": 4.812,
+     "chain": 42,
+     "chain_d": 2.605,
+     "coarse_d": 2.076,
+     "height": 41
+    },
+    {
+     "frac": 0.1,
+     "n": 2678,
+     "f": 0.0806,
+     "mm": 4.255,
+     "mid": 4.832,
+     "chain": 38,
+     "chain_d": 2.692,
+     "coarse_d": 2.68,
+     "height": 37
+    },
+    {
+     "frac": 0.2,
+     "n": 2388,
+     "f": 0.0609,
+     "mm": 4.584,
+     "mid": 5.222,
+     "chain": 34,
+     "chain_d": 2.761,
+     "coarse_d": 2.095,
+     "height": 33
+    },
+    {
+     "frac": 0.3,
+     "n": 1366,
+     "f": 0.0582,
+     "mm": 4.638,
+     "mid": 5.661,
+     "chain": 30,
+     "chain_d": 2.678,
+     "coarse_d": 1.967,
+     "height": 29
+    },
+    {
+     "frac": 0.4,
+     "n": 565,
+     "f": 0.0881,
+     "mm": 4.151,
+     "mid": 4.75,
+     "chain": 26,
+     "chain_d": 2.472,
+     "coarse_d": 2.549,
+     "height": 25
+    },
+    {
+     "frac": 0.5,
+     "n": 194,
+     "f": 0.1695,
+     "mm": 3.366,
+     "mid": 3.512,
+     "chain": 22,
+     "chain_d": 2.185,
+     "coarse_d": 1.617,
+     "height": 21
+    }
+   ],
+   "status": "measured",
+   "sec": 42.1,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{y,x},{y,w},{z,x}}",
+   "bits": 20.0,
+   "gens": 48,
+   "relations": 123263,
+   "nodes": 123262,
+   "fit": {
+    "exp_rate": 0.215,
+    "power": 7.395
+   },
+   "run_sec": 8.14,
+   "events": 123261,
+   "top": 123226,
+   "past_of_top": 1099,
+   "depth": 48,
+   "tree": false,
+   "past_max": 1098,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 3.23,
+   "root": {
+    "diamonds": 1,
+    "n": 1099,
+    "f": 0.2382,
+    "mm": 2.949,
+    "mid": 3.159,
+    "chain": 49.0,
+    "chain_d": 2.18,
+    "coarse_d": 1.746
+   },
+   "mid": {
+    "diamonds": 1,
+    "n": 809,
+    "f": 0.1328,
+    "mm": 3.661,
+    "mid": 3.96,
+    "chain": 34.0,
+    "chain_d": 2.36,
+    "coarse_d": 3.015
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 1099,
+     "f": 0.2382,
+     "mm": 2.949,
+     "mid": 3.159,
+     "chain": 49,
+     "chain_d": 2.18,
+     "coarse_d": 1.746,
+     "height": 48
+    },
+    {
+     "frac": 0.1,
+     "n": 1086,
+     "f": 0.2201,
+     "mm": 3.046,
+     "mid": 3.29,
+     "chain": 44,
+     "chain_d": 2.254,
+     "coarse_d": 1.658,
+     "height": 43
+    },
+    {
+     "frac": 0.2,
+     "n": 1012,
+     "f": 0.1708,
+     "mm": 3.357,
+     "mid": 3.661,
+     "chain": 39,
+     "chain_d": 2.325,
+     "coarse_d": 1.401,
+     "height": 38
+    },
+    {
+     "frac": 0.3,
+     "n": 809,
+     "f": 0.1328,
+     "mm": 3.661,
+     "mid": 3.96,
+     "chain": 34,
+     "chain_d": 2.36,
+     "coarse_d": 3.015,
+     "height": 34
+    },
+    {
+     "frac": 0.4,
+     "n": 401,
+     "f": 0.1542,
+     "mm": 3.481,
+     "mid": 3.84,
+     "chain": 29,
+     "chain_d": 2.232,
+     "coarse_d": 1.788,
+     "height": 29
+    },
+    {
+     "frac": 0.5,
+     "n": 134,
+     "f": 0.2648,
+     "mm": 2.817,
+     "mid": 2.744,
+     "chain": 22,
+     "chain_d": 2.024,
+     "coarse_d": 1.286,
+     "height": 24
+    }
+   ],
+   "status": "measured",
+   "sec": 8.27,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{x,z}}->{{x,y},{z,y},{z,w},{w,z}}",
+   "bits": 24.0,
+   "gens": 26,
+   "relations": 288044,
+   "nodes": 144022,
+   "fit": {
+    "exp_rate": 0.443,
+    "power": 8.154
+   },
+   "run_sec": 5.34,
+   "events": 144021,
+   "top": 144017,
+   "past_of_top": 1102,
+   "depth": 26,
+   "tree": false,
+   "past_max": 1101,
+   "max_causes": 2,
+   "max_effects": 4,
+   "cone_dim": 3.236,
+   "root": {
+    "diamonds": 1,
+    "n": 1102,
+    "f": 0.088,
+    "mm": 4.151,
+    "mid": 4.614,
+    "chain": 27.0,
+    "chain_d": 2.705,
+    "coarse_d": 2.352
+   },
+   "mid": {
+    "diamonds": 1,
+    "n": 465,
+    "f": 0.0803,
+    "mm": 4.26,
+    "mid": 4.691,
+    "chain": 19.0,
+    "chain_d": 2.747,
+    "coarse_d": 2.36
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 1102,
+     "f": 0.088,
+     "mm": 4.151,
+     "mid": 4.614,
+     "chain": 27,
+     "chain_d": 2.705,
+     "coarse_d": 2.352,
+     "height": 26
+    },
+    {
+     "frac": 0.1,
+     "n": 1091,
+     "f": 0.075,
+     "mm": 4.34,
+     "mid": 4.882,
+     "chain": 24,
+     "chain_d": 2.838,
+     "coarse_d": 2.959,
+     "height": 23
+    },
+    {
+     "frac": 0.2,
+     "n": 876,
+     "f": 0.0687,
+     "mm": 4.444,
+     "mid": 4.821,
+     "chain": 22,
+     "chain_d": 2.85,
+     "coarse_d": 2.557,
+     "height": 21
+    },
+    {
+     "frac": 0.3,
+     "n": 465,
+     "f": 0.0803,
+     "mm": 4.26,
+     "mid": 4.691,
+     "chain": 19,
+     "chain_d": 2.747,
+     "coarse_d": 2.36,
+     "height": 18
+    },
+    {
+     "frac": 0.4,
+     "n": 254,
+     "f": 0.1179,
+     "mm": 3.804,
+     "mid": 4.082,
+     "chain": 17,
+     "chain_d": 2.597,
+     "coarse_d": 2.015,
+     "height": 16
+    },
+    {
+     "frac": 0.5,
+     "n": 63,
+     "f": 0.3405,
+     "mm": 2.5,
+     "mid": 2.392,
+     "chain": 14,
+     "chain_d": 2.11,
+     "coarse_d": 1.615,
+     "height": 13
+    }
+   ],
+   "status": "measured",
+   "sec": 5.44,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{x,z},{x,w},{y,x},{w,y}}",
+   "bits": 24.0,
+   "gens": 22,
+   "relations": 243800,
+   "nodes": 121900,
+   "fit": {
+    "exp_rate": 0.529,
+    "power": 8.197
+   },
+   "run_sec": 3.9,
+   "events": 121899,
+   "top": 121899,
+   "past_of_top": 786,
+   "depth": 22,
+   "tree": false,
+   "past_max": 785,
+   "max_causes": 2,
+   "max_effects": 4,
+   "cone_dim": 3.375,
+   "root": {
+    "diamonds": 1,
+    "n": 786,
+    "f": 0.1225,
+    "mm": 3.758,
+    "mid": 4.37,
+    "chain": 23.0,
+    "chain_d": 2.747,
+    "coarse_d": 2.658
+   },
+   "mid": {
+    "diamonds": 1,
+    "n": 360,
+    "f": 0.1036,
+    "mm": 3.958,
+    "mid": 4.492,
+    "chain": 16.0,
+    "chain_d": 2.859,
+    "coarse_d": 2.265
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 786,
+     "f": 0.1225,
+     "mm": 3.758,
+     "mid": 4.37,
+     "chain": 23,
+     "chain_d": 2.747,
+     "coarse_d": 2.658,
+     "height": 22
+    },
+    {
+     "frac": 0.1,
+     "n": 784,
+     "f": 0.118,
+     "mm": 3.803,
+     "mid": 4.367,
+     "chain": 21,
+     "chain_d": 2.86,
+     "coarse_d": 2.358,
+     "height": 20
+    },
+    {
+     "frac": 0.2,
+     "n": 732,
+     "f": 0.0942,
+     "mm": 4.071,
+     "mid": 4.428,
+     "chain": 19,
+     "chain_d": 2.964,
+     "coarse_d": 3.387,
+     "height": 18
+    },
+    {
+     "frac": 0.3,
+     "n": 360,
+     "f": 0.1036,
+     "mm": 3.958,
+     "mid": 4.492,
+     "chain": 16,
+     "chain_d": 2.859,
+     "coarse_d": 2.265,
+     "height": 15
+    },
+    {
+     "frac": 0.4,
+     "n": 144,
+     "f": 0.1875,
+     "mm": 3.243,
+     "mid": 3.469,
+     "chain": 14,
+     "chain_d": 2.562,
+     "coarse_d": 1.995,
+     "height": 13
+    },
+    {
+     "frac": 0.5,
+     "n": 67,
+     "f": 0.2777,
+     "mm": 2.758,
+     "mid": 2.744,
+     "chain": 12,
+     "chain_d": 2.34,
+     "coarse_d": 2.066,
+     "height": 11
+    }
+   ],
+   "status": "measured",
+   "sec": 3.99,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{x,y},{y,w},{z,y},{w,y}}",
+   "bits": 24.0,
+   "gens": 320,
+   "relations": 203528,
+   "nodes": 101764,
+   "fit": {
+    "exp_rate": 0.004,
+    "power": 1.007
+   },
+   "run_sec": 605.69,
+   "events": 101763,
+   "top": 101756,
+   "past_of_top": 14867,
+   "depth": 320,
+   "tree": false,
+   "past_max": 14866,
+   "max_causes": 2,
+   "max_effects": 4,
+   "cone_dim": 1.934,
+   "root": {
+    "diamonds": 1,
+    "n": 14867,
+    "f": 0.1994,
+    "mm": 3.168,
+    "mid": 3.599,
+    "chain": 321.0,
+    "chain_d": 1.883,
+    "coarse_d": 1.088
+   },
+   "mid": {
+    "diamonds": 1,
+    "n": 874,
+    "f": 0.1999,
+    "mm": 3.165,
+    "mid": 2.889,
+    "chain": 225.0,
+    "chain_d": 1.427,
+    "coarse_d": 0.954
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 14867,
+     "f": 0.1994,
+     "mm": 3.168,
+     "mid": 3.599,
+     "chain": 321,
+     "chain_d": 1.883,
+     "coarse_d": 1.088,
+     "height": 320
+    },
+    {
+     "frac": 0.1,
+     "n": 11586,
+     "f": 0.0602,
+     "mm": 4.598,
+     "mid": 5.016,
+     "chain": 263,
+     "chain_d": 1.909,
+     "coarse_d": 0.995,
+     "height": 288
+    },
+    {
+     "frac": 0.2,
+     "n": 4260,
+     "f": 0.0531,
+     "mm": 4.744,
+     "mid": 4.799,
+     "chain": 209,
+     "chain_d": 1.789,
+     "coarse_d": 1.098,
+     "height": 256
+    },
+    {
+     "frac": 0.3,
+     "n": 874,
+     "f": 0.1999,
+     "mm": 3.165,
+     "mid": 2.889,
+     "chain": 225,
+     "chain_d": 1.427,
+     "coarse_d": 0.954,
+     "height": 224
+    },
+    {
+     "frac": 0.4,
+     "n": 325,
+     "f": 0.4877,
+     "mm": 2.033,
+     "mid": 1.744,
+     "chain": 193,
+     "chain_d": 1.259,
+     "coarse_d": 1.031,
+     "height": 192
+    },
+    {
+     "frac": 0.5,
+     "n": 162,
+     "f": 0.9901,
+     "mm": 1.016,
+     "mid": 1.0,
+     "chain": 161,
+     "chain_d": 1.153,
+     "coarse_d": 1.004,
+     "height": 160
+    },
+    {
+     "frac": 0.6,
+     "n": 129,
+     "f": 1.0,
+     "mm": 1.0,
+     "mid": 0.989,
+     "chain": 129,
+     "chain_d": 1.16,
+     "coarse_d": 1.0,
+     "height": 128
+    },
+    {
+     "frac": 0.7,
+     "n": 97,
+     "f": 1.0,
+     "mm": 1.0,
+     "mid": 0.985,
+     "chain": 97,
+     "chain_d": 1.172,
+     "coarse_d": 1.0,
+     "height": 96
+    }
+   ],
+   "status": "measured",
+   "sec": 606.66,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{x,y},{y,x},{z,y},{w,y}}",
+   "bits": 24.0,
+   "gens": 200,
+   "relations": 234054,
+   "nodes": 117027,
+   "fit": {
+    "exp_rate": 0.007,
+    "power": 1.022
+   },
+   "run_sec": 606.02,
+   "events": 117026,
+   "top": 117025,
+   "past_of_top": 12376,
+   "depth": 200,
+   "tree": false,
+   "past_max": 12375,
+   "max_causes": 2,
+   "max_effects": 4,
+   "cone_dim": 2.019,
+   "root": {
+    "diamonds": 1,
+    "n": 12376,
+    "f": 0.1433,
+    "mm": 3.569,
+    "mid": 4.161,
+    "chain": 201.0,
+    "chain_d": 2.035,
+    "coarse_d": 1.202
+   },
+   "mid": {
+    "diamonds": 1,
+    "n": 259,
+    "f": 0.4827,
+    "mm": 2.047,
+    "mid": 1.75,
+    "chain": 141.0,
+    "chain_d": 1.299,
+    "coarse_d": 0.969
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 12376,
+     "f": 0.1433,
+     "mm": 3.569,
+     "mid": 4.161,
+     "chain": 201,
+     "chain_d": 2.035,
+     "coarse_d": 1.202,
+     "height": 200
+    },
+    {
+     "frac": 0.1,
+     "n": 7578,
+     "f": 0.0314,
+     "mm": 5.355,
+     "mid": 5.728,
+     "chain": 169,
+     "chain_d": 2.003,
+     "coarse_d": 1.015,
+     "height": 180
+    },
+    {
+     "frac": 0.2,
+     "n": 1485,
+     "f": 0.0753,
+     "mm": 4.335,
+     "mid": 4.179,
+     "chain": 130,
+     "chain_d": 1.74,
+     "coarse_d": 1.123,
+     "height": 160
+    },
+    {
+     "frac": 0.3,
+     "n": 259,
+     "f": 0.4827,
+     "mm": 2.047,
+     "mid": 1.75,
+     "chain": 141,
+     "chain_d": 1.299,
+     "coarse_d": 0.969,
+     "height": 140
+    },
+    {
+     "frac": 0.4,
+     "n": 153,
+     "f": 0.7265,
+     "mm": 1.485,
+     "mid": 1.327,
+     "chain": 121,
+     "chain_d": 1.219,
+     "coarse_d": 0.994,
+     "height": 120
+    },
+    {
+     "frac": 0.5,
+     "n": 103,
+     "f": 0.9718,
+     "mm": 1.046,
+     "mid": 1.014,
+     "chain": 101,
+     "chain_d": 1.175,
+     "coarse_d": 0.99,
+     "height": 100
+    },
+    {
+     "frac": 0.6,
+     "n": 81,
+     "f": 1.0,
+     "mm": 1.0,
+     "mid": 0.982,
+     "chain": 81,
+     "chain_d": 1.18,
+     "coarse_d": 1.0,
+     "height": 80
+    },
+    {
+     "frac": 0.7,
+     "n": 61,
+     "f": 1.0,
+     "mm": 1.0,
+     "mid": 0.977,
+     "chain": 61,
+     "chain_d": 1.195,
+     "coarse_d": 1.0,
+     "height": 60
+    }
+   ],
+   "status": "measured",
+   "sec": 606.78,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{x,y},{y,w},{u,x},{u,z}}",
+   "bits": 27.86,
+   "gens": 497,
+   "relations": 240156,
+   "nodes": 240155,
+   "fit": {
+    "exp_rate": 0.003,
+    "power": 1.027
+   },
+   "run_sec": 203.21,
+   "events": 120077,
+   "top": 120038,
+   "past_of_top": 58939,
+   "depth": 497,
+   "tree": false,
+   "past_max": 58938,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 2.022,
+   "root": {
+    "diamonds": 1,
+    "n": 58939,
+    "f": 0.5894,
+    "mm": 1.778,
+    "mid": 1.954,
+    "chain": 498.0,
+    "chain_d": 1.983,
+    "coarse_d": 3.061
+   },
+   "mid": {
+    "diamonds": 1,
+    "n": 41690,
+    "f": 0.4354,
+    "mm": 2.183,
+    "mid": 2.269,
+    "chain": 349.0,
+    "chain_d": 2.053,
+    "coarse_d": 3.157
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 58939,
+     "f": 0.5894,
+     "mm": 1.778,
+     "mid": 1.954,
+     "chain": 498,
+     "chain_d": 1.983,
+     "coarse_d": 3.061,
+     "height": 497
+    },
+    {
+     "frac": 0.1,
+     "n": 57053,
+     "f": 0.5638,
+     "mm": 1.838,
+     "mid": 1.998,
+     "chain": 447,
+     "chain_d": 2.016,
+     "coarse_d": 3.038,
+     "height": 447
+    },
+    {
+     "frac": 0.2,
+     "n": 50527,
+     "f": 0.4814,
+     "mm": 2.05,
+     "mid": 2.166,
+     "chain": 399,
+     "chain_d": 2.037,
+     "coarse_d": 3.057,
+     "height": 398
+    },
+    {
+     "frac": 0.3,
+     "n": 41690,
+     "f": 0.4354,
+     "mm": 2.183,
+     "mid": 2.269,
+     "chain": 349,
+     "chain_d": 2.053,
+     "coarse_d": 3.157,
+     "height": 348
+    },
+    {
+     "frac": 0.4,
+     "n": 30290,
+     "f": 0.3833,
+     "mm": 2.348,
+     "mid": 2.378,
+     "chain": 299,
+     "chain_d": 2.052,
+     "coarse_d": 3.096,
+     "height": 298
+    },
+    {
+     "frac": 0.5,
+     "n": 15750,
+     "f": 0.5079,
+     "mm": 1.979,
+     "mid": 1.989,
+     "chain": 250,
+     "chain_d": 1.992,
+     "coarse_d": 3.005,
+     "height": 249
+    },
+    {
+     "frac": 0.6,
+     "n": 10100,
+     "f": 0.5099,
+     "mm": 1.974,
+     "mid": 1.986,
+     "chain": 200,
+     "chain_d": 1.992,
+     "coarse_d": 3.077,
+     "height": 199
+    },
+    {
+     "frac": 0.7,
+     "n": 5700,
+     "f": 0.5131,
+     "mm": 1.966,
+     "mid": 1.981,
+     "chain": 150,
+     "chain_d": 1.992,
+     "coarse_d": 2.764,
+     "height": 149
+    }
+   ],
+   "status": "measured",
+   "sec": 218.01,
+   "group": "sample 2->4 candidate"
+  }
+ ],
+ "desitter": [
+  {
+   "expansion": 1.01,
+   "efolds": 0.01,
+   "n": 800,
+   "mm": 3.916,
+   "mid": 4.064,
+   "chain": 12.0,
+   "chain_d": 3.871
+  },
+  {
+   "expansion": 2.718,
+   "efolds": 1.0,
+   "n": 800,
+   "mm": 3.777,
+   "mid": 3.977,
+   "chain": 12.0,
+   "chain_d": 3.871
+  },
+  {
+   "expansion": 7.389,
+   "efolds": 2.0,
+   "n": 800,
+   "mm": 3.437,
+   "mid": 3.694,
+   "chain": 12.33,
+   "chain_d": 3.809
+  },
+  {
+   "expansion": 20.086,
+   "efolds": 3.0,
+   "n": 800,
+   "mm": 3.044,
+   "mid": 3.192,
+   "chain": 14.0,
+   "chain_d": 3.527
+  },
+  {
+   "expansion": 54.598,
+   "efolds": 4.0,
+   "n": 800,
+   "mm": 2.689,
+   "mid": 2.709,
+   "chain": 15.0,
+   "chain_d": 3.394
+  }
+ ],
+ "four_dimensional_criterion": "Myrheim-Meyer, midpoint and longest-chain readings all between 3.5 and 4.5 on the same interval",
+ "validation": {
+  "diamonds": [
+   {
+    "d": 2,
+    "n": 400,
+    "mm": 1.959,
+    "mid": 1.945,
+    "chain": 39.67,
+    "coarse_d": 1.904,
+    "chain_d": 1.992
+   },
+   {
+    "d": 2,
+    "n": 800,
+    "mm": 1.988,
+    "mid": 1.998,
+    "chain": 54.67,
+    "coarse_d": 1.93,
+    "chain_d": 2.008
+   },
+   {
+    "d": 3,
+    "n": 400,
+    "mm": 2.933,
+    "mid": 3.048,
+    "chain": 15.0,
+    "coarse_d": 3.16,
+    "chain_d": 3.019
+   },
+   {
+    "d": 3,
+    "n": 800,
+    "mm": 2.983,
+    "mid": 2.982,
+    "chain": 19.33,
+    "coarse_d": 2.862,
+    "chain_d": 2.983
+   },
+   {
+    "d": 4,
+    "n": 400,
+    "mm": 3.87,
+    "mid": 4.056,
+    "chain": 9.67,
+    "coarse_d": 4.453,
+    "chain_d": 3.979
+   },
+   {
+    "d": 4,
+    "n": 800,
+    "mm": 3.884,
+    "mid": 3.996,
+    "chain": 11.33,
+    "coarse_d": 4.151,
+    "chain_d": 4.019
+   },
+   {
+    "d": 5,
+    "n": 400,
+    "mm": 4.661,
+    "mid": 4.92,
+    "chain": 7.67,
+    "coarse_d": 5.0,
+    "chain_d": 4.863
+   },
+   {
+    "d": 5,
+    "n": 800,
+    "mm": 4.825,
+    "mid": 5.189,
+    "chain": 8.33,
+    "coarse_d": 4.95,
+    "chain_d": 5.099
+   },
+   {
+    "d": 6,
+    "n": 400,
+    "mm": 5.424,
+    "mid": 5.996,
+    "chain": 6.0,
+    "coarse_d": 7.076,
+    "chain_d": 5.974
+   },
+   {
+    "d": 6,
+    "n": 800,
+    "mm": 5.738,
+    "mid": 6.339,
+    "chain": 6.67,
+    "coarse_d": 5.585,
+    "chain_d": 6.024
+   }
+  ],
+  "chain_m": {
+   "2": 1.9544,
+   "3": 2.0567,
+   "4": 2.1443,
+   "5": 2.2492,
+   "6": 2.1979
+  },
+  "links": [
+   {
+    "d": 4,
+    "n": 200,
+    "mean_links": 11.86,
+    "max_links": 41
+   },
+   {
+    "d": 4,
+    "n": 400,
+    "mean_links": 18.62,
+    "max_links": 72
+   },
+   {
+    "d": 4,
+    "n": 800,
+    "mean_links": 31.8,
+    "max_links": 134
+   },
+   {
+    "d": 4,
+    "n": 1600,
+    "mean_links": 47.64,
+    "max_links": 171
+   }
+  ],
+  "controls": [
+   {
+    "order": "lattice 1+1, n=29",
+    "n": 900,
+    "mm": 1.916,
+    "mid": 1.907,
+    "chain": 59,
+    "chain_d": 1.996,
+    "coarse_d": 2.288,
+    "mean_links": 3.87,
+    "max_links": 4
+   },
+   {
+    "order": "cellular automaton 3+1, T=10",
+    "n": 3781,
+    "mm": 3.693,
+    "mid": 3.627,
+    "chain": 11,
+    "chain_d": 5.177,
+    "coarse_d": Infinity,
+    "mean_links": 34.99,
+    "max_links": 54
+   }
+  ]
+ },
+ "census": {
+  "two relations into three, all": {
+   "rules": 2935,
+   "classes": {
+    "exponential": 825,
+    "tree": 808,
+    "stops or stays small": 928,
+    "polynomial": 374
+   },
+   "polynomial_growth_power": {
+    "near 0 (volume about 1D)": 291,
+    "near 1 (about 2D)": 75,
+    "near 2 (about 3D)": 4,
+    "near 3 (about 4D)": 4
+   },
+   "exponential_with_interval_120_or_more": 42,
+   "trees_that_are_single_chains": 808,
+   "read_four_on_mm_and_midpoint": [
+    {
+     "rule": "{{x,y},{y,z}}->{{y,x},{y,w},{z,y}}",
+     "interval": "mid",
+     "diamonds": 6,
+     "n": 325,
+     "f": 0.1471,
+     "mm": 3.543,
+     "mid": 3.773
+    },
+    {
+     "rule": "{{x,y},{y,z}}->{{y,x},{y,z},{w,y}}",
+     "interval": "mid",
+     "diamonds": 6,
+     "n": 318,
+     "f": 0.148,
+     "mm": 3.536,
+     "mid": 3.746
+    }
+   ],
+   "read_two_on_mm_and_midpoint_in_largest_intervals": [
+    {
+     "rule": "{{x,y},{x,z}}->{{x,w},{y,z},{z,w}}",
+     "diamonds": 6,
+     "n": 1021,
+     "f": 0.5525,
+     "mm": 1.867,
+     "mid": 1.857
+    },
+    {
+     "rule": "{{x,y},{x,z}}->{{x,x},{x,w},{y,x}}",
+     "diamonds": 6,
+     "n": 1560,
+     "f": 0.57,
+     "mm": 1.827,
+     "mid": 2.05
+    },
+    {
+     "rule": "{{x,y},{x,z}}->{{x,y},{x,w},{y,x}}",
+     "diamonds": 6,
+     "n": 1560,
+     "f": 0.57,
+     "mm": 1.827,
+     "mid": 2.05
+    },
+    {
+     "rule": "{{x,y},{x,z}}->{{x,y},{x,w},{y,y}}",
+     "diamonds": 6,
+     "n": 1560,
+     "f": 0.57,
+     "mm": 1.827,
+     "mid": 2.05
+    },
+    {
+     "rule": "{{x,y},{x,z}}->{{x,y},{x,w},{z,x}}",
+     "diamonds": 6,
+     "n": 1474,
+     "f": 0.5794,
+     "mm": 1.805,
+     "mid": 1.918
+    },
+    {
+     "rule": "{{x,y},{x,z}}->{{x,y},{y,w},{z,w}}",
+     "diamonds": 6,
+     "n": 1560,
+     "f": 0.5965,
+     "mm": 1.762,
+     "mid": 1.961
+    },
+    {
+     "rule": "{{x,y},{x,z}}->{{y,w},{z,w},{w,x}}",
+     "diamonds": 6,
+     "n": 164,
+     "f": 0.6162,
+     "mm": 1.831,
+     "mid": 1.866
+    },
+    {
+     "rule": "{{x,y},{x,z}}->{{y,x},{y,w},{z,x}}",
+     "diamonds": 6,
+     "n": 1534,
+     "f": 0.5059,
+     "mm": 1.993,
+     "mid": 1.971
+    },
+    {
+     "rule": "{{x,y},{x,z}}->{{y,x},{z,w},{w,x}}",
+     "diamonds": 6,
+     "n": 193,
+     "f": 0.5699,
+     "mm": 1.967,
+     "mid": 2.023
+    },
+    {
+     "rule": "{{x,y},{y,z}}->{{x,y},{x,w},{z,w}}",
+     "diamonds": 6,
+     "n": 423,
+     "f": 0.4908,
+     "mm": 2.033,
+     "mid": 1.881
+    },
+    {
+     "rule": "{{x,y},{y,z}}->{{y,z},{w,x},{w,z}}",
+     "diamonds": 6,
+     "n": 423,
+     "f": 0.4908,
+     "mm": 2.033,
+     "mid": 1.881
+    },
+    {
+     "rule": "{{x,y},{z,y}}->{{x,y},{w,x},{w,z}}",
+     "diamonds": 6,
+     "n": 1560,
+     "f": 0.5965,
+     "mm": 1.762,
+     "mid": 1.961
+    },
+    {
+     "rule": "{{x,y},{z,y}}->{{x,y},{y,z},{w,y}}",
+     "diamonds": 6,
+     "n": 1408,
+     "f": 0.5732,
+     "mm": 1.821,
+     "mid": 1.925
+    },
+    {
+     "rule": "{{x,y},{z,y}}->{{x,z},{w,x},{w,y}}",
+     "diamonds": 6,
+     "n": 1521,
+     "f": 0.5588,
+     "mm": 1.851,
+     "mid": 1.929
+    },
+    {
+     "rule": "{{x,y},{z,y}}->{{y,x},{y,w},{w,z}}",
+     "diamonds": 6,
+     "n": 193,
+     "f": 0.5699,
+     "mm": 1.967,
+     "mid": 2.023
+    },
+    {
+     "rule": "{{x,y},{z,y}}->{{y,x},{y,y},{w,y}}",
+     "diamonds": 6,
+     "n": 1521,
+     "f": 0.5269,
+     "mm": 1.93,
+     "mid": 1.93
+    },
+    {
+     "rule": "{{x,y},{z,y}}->{{y,x},{y,z},{w,x}}",
+     "diamonds": 6,
+     "n": 1565,
+     "f": 0.5534,
+     "mm": 1.865,
+     "mid": 1.903
+    },
+    {
+     "rule": "{{x,y},{z,y}}->{{w,x},{w,u},{u,z}}",
+     "diamonds": 6,
+     "n": 193,
+     "f": 0.5699,
+     "mm": 1.967,
+     "mid": 2.023
+    }
+   ],
+   "bits_range": [
+    0.0,
+    23.22
+   ],
+   "hit_8_second_limit": 24,
+   "rerun_with_30_seconds": 5
+  },
+  "two relations into four, random sample": {
+   "rules": 1500,
+   "classes": {
+    "tree": 760,
+    "exponential": 357,
+    "stops or stays small": 279,
+    "polynomial": 104
+   },
+   "polynomial_growth_power": {
+    "near 0 (volume about 1D)": 92,
+    "near 1 (about 2D)": 9,
+    "near 2 (about 3D)": 3
+   },
+   "exponential_with_interval_120_or_more": 15,
+   "trees_that_are_single_chains": 180,
+   "read_four_on_mm_and_midpoint": [],
+   "read_two_on_mm_and_midpoint_in_largest_intervals": [
+    {
+     "rule": "{{x,x},{x,y}}->{{x,x},{x,y},{x,z},{y,x}}",
+     "diamonds": 6,
+     "n": 314,
+     "f": 0.5959,
+     "mm": 1.764,
+     "mid": 1.902
+    },
+    {
+     "rule": "{{x,x},{x,y}}->{{x,y},{y,x},{y,y},{y,z}}",
+     "diamonds": 6,
+     "n": 810,
+     "f": 0.4784,
+     "mm": 2.119,
+     "mid": 2.157
+    },
+    {
+     "rule": "{{x,x},{y,x}}->{{x,x},{x,y},{y,x},{z,x}}",
+     "diamonds": 6,
+     "n": 328,
+     "f": 0.5956,
+     "mm": 1.764,
+     "mid": 1.898
+    },
+    {
+     "rule": "{{x,x},{y,x}}->{{x,y},{x,y},{y,y},{z,y}}",
+     "diamonds": 6,
+     "n": 976,
+     "f": 0.5765,
+     "mm": 1.809,
+     "mid": 1.89
+    },
+    {
+     "rule": "{{x,y},{z,y}}->{{x,y},{y,w},{u,x},{u,z}}",
+     "diamonds": 6,
+     "n": 1560,
+     "f": 0.5965,
+     "mm": 1.762,
+     "mid": 1.961
+    }
+   ],
+   "bits_range": [
+    0.0,
+    27.86
+   ],
+   "hit_8_second_limit": 59,
+   "rerun_with_30_seconds": 7
+  },
+  "three relations into four, random sample": {
+   "rules": 1000,
+   "classes": {
+    "exponential": 496,
+    "stops or stays small": 344,
+    "tree": 95,
+    "polynomial": 65
+   },
+   "polynomial_growth_power": {
+    "near 0 (volume about 1D)": 60,
+    "3.5 or more": 1,
+    "near 1 (about 2D)": 3,
+    "near 2 (about 3D)": 1
+   },
+   "exponential_with_interval_120_or_more": 7,
+   "trees_that_are_single_chains": 95,
+   "read_four_on_mm_and_midpoint": [],
+   "read_two_on_mm_and_midpoint_in_largest_intervals": [
+    {
+     "rule": "{{x,x},{y,x},{z,y}}->{{x,x},{x,z},{z,x},{w,x}}",
+     "diamonds": 6,
+     "n": 488,
+     "f": 0.5818,
+     "mm": 1.794,
+     "mid": 1.871,
+     "chain": 58.8,
+     "chain_d": 1.82,
+     "coarse_d": 1.656
+    }
+   ],
+   "bits_range": [
+    0.0,
+    36.19
+   ],
+   "hit_8_second_limit": 9,
+   "rerun_with_30_seconds": 14
+  },
+  "two three-node relations into three, random sample": {
+   "rules": 1000,
+   "classes": {
+    "exponential": 494,
+    "stops or stays small": 348,
+    "tree": 104,
+    "polynomial": 54
+   },
+   "polynomial_growth_power": {
+    "near 0 (volume about 1D)": 46,
+    "near 1 (about 2D)": 7,
+    "near 2 (about 3D)": 1
+   },
+   "exponential_with_interval_120_or_more": 5,
+   "trees_that_are_single_chains": 104,
+   "read_four_on_mm_and_midpoint": [],
+   "read_two_on_mm_and_midpoint_in_largest_intervals": [
+    {
+     "rule": "{{x,y,x},{z,w,x}}->{{x,y,y},{x,u,x},{w,z,x}}",
+     "diamonds": 6,
+     "n": 1350,
+     "f": 0.5293,
+     "mm": 1.926,
+     "mid": 2.036,
+     "chain": 90.7,
+     "chain_d": 1.878,
+     "coarse_d": 1.925
+    }
+   ],
+   "bits_range": [
+    0.0,
+    42.11
+   ],
+   "hit_8_second_limit": 20,
+   "rerun_with_30_seconds": 4
+  }
+ },
+ "long_runs": [
+  {
+   "rule": "{{x,y},{x,z}}->{{x,w},{y,z},{z,w}}",
+   "bits": 20.0,
+   "gens": 121,
+   "relations": 20171,
+   "nodes": 20170,
+   "fit": {
+    "exp_rate": 0.038,
+    "power": 3.299
+   },
+   "events": 20169,
+   "depth": 121,
+   "tree": false,
+   "past_max": 2324,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 1.85,
+   "root": {
+    "diamonds": 6,
+    "n": 2314,
+    "f": 0.6059,
+    "mm": 1.741,
+    "mid": 1.705,
+    "chain": 121.7,
+    "chain_d": 1.875,
+    "coarse_d": 1.985
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 1492,
+    "f": 0.5379,
+    "mm": 1.908,
+    "mid": 1.872,
+    "chain": 85.7,
+    "chain_d": 1.933,
+    "coarse_d": 1.992
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 2325,
+     "f": 0.6052,
+     "mm": 1.741,
+     "mid": 1.705,
+     "chain": 122,
+     "chain_d": 1.875,
+     "coarse_d": 1.985,
+     "height": 121
+    },
+    {
+     "frac": 0.1,
+     "n": 2272,
+     "f": 0.5874,
+     "mm": 1.782,
+     "mid": 1.751,
+     "chain": 110,
+     "chain_d": 1.918,
+     "coarse_d": 1.908,
+     "height": 109
+    },
+    {
+     "frac": 0.2,
+     "n": 1939,
+     "f": 0.5465,
+     "mm": 1.881,
+     "mid": 1.792,
+     "chain": 97,
+     "chain_d": 1.939,
+     "coarse_d": 1.992,
+     "height": 97
+    },
+    {
+     "frac": 0.3,
+     "n": 1504,
+     "f": 0.5351,
+     "mm": 1.909,
+     "mid": 1.882,
+     "chain": 86,
+     "chain_d": 1.933,
+     "coarse_d": 2.049,
+     "height": 85
+    },
+    {
+     "frac": 0.4,
+     "n": 1207,
+     "f": 0.4952,
+     "mm": 2.013,
+     "mid": 1.943,
+     "chain": 73,
+     "chain_d": 1.96,
+     "coarse_d": 1.984,
+     "height": 73
+    },
+    {
+     "frac": 0.5,
+     "n": 764,
+     "f": 0.4829,
+     "mm": 2.046,
+     "mid": 2.031,
+     "chain": 58,
+     "chain_d": 1.958,
+     "coarse_d": 2.035,
+     "height": 61
+    },
+    {
+     "frac": 0.6,
+     "n": 478,
+     "f": 0.4814,
+     "mm": 2.05,
+     "mid": 2.068,
+     "chain": 44,
+     "chain_d": 1.981,
+     "coarse_d": 2.172,
+     "height": 48
+    },
+    {
+     "frac": 0.7,
+     "n": 282,
+     "f": 0.5019,
+     "mm": 1.995,
+     "mid": 2.01,
+     "chain": 33,
+     "chain_d": 1.996,
+     "coarse_d": 2.06,
+     "height": 36
+    }
+   ],
+   "status": "measured",
+   "sec": 1.64,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{x,z}}->{{y,w},{z,w},{w,x}}",
+   "bits": 20.0,
+   "gens": 79,
+   "relations": 20109,
+   "nodes": 20108,
+   "fit": {
+    "exp_rate": 0.08,
+    "power": 4.501
+   },
+   "events": 20107,
+   "depth": 79,
+   "tree": false,
+   "past_max": 259,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 1.339,
+   "root": {
+    "diamonds": 6,
+    "n": 257,
+    "f": 0.7515,
+    "mm": 1.438,
+    "mid": 1.302,
+    "chain": 79.0,
+    "chain_d": 1.502,
+    "coarse_d": 1.314
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 179,
+    "f": 0.6686,
+    "mm": 1.603,
+    "mid": 1.531,
+    "chain": 55.7,
+    "chain_d": 1.551,
+    "coarse_d": 1.346
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 260,
+     "f": 0.7541,
+     "mm": 1.431,
+     "mid": 1.308,
+     "chain": 80,
+     "chain_d": 1.498,
+     "coarse_d": 1.314,
+     "height": 79
+    },
+    {
+     "frac": 0.1,
+     "n": 244,
+     "f": 0.7282,
+     "mm": 1.482,
+     "mid": 1.346,
+     "chain": 72,
+     "chain_d": 1.524,
+     "coarse_d": 1.286,
+     "height": 71
+    },
+    {
+     "frac": 0.2,
+     "n": 211,
+     "f": 0.7009,
+     "mm": 1.536,
+     "mid": 1.346,
+     "chain": 64,
+     "chain_d": 1.534,
+     "coarse_d": 1.359,
+     "height": 63
+    },
+    {
+     "frac": 0.3,
+     "n": 181,
+     "f": 0.67,
+     "mm": 1.6,
+     "mid": 1.546,
+     "chain": 56,
+     "chain_d": 1.549,
+     "coarse_d": 1.346,
+     "height": 55
+    },
+    {
+     "frac": 0.4,
+     "n": 151,
+     "f": 0.6389,
+     "mm": 1.667,
+     "mid": 1.484,
+     "chain": 48,
+     "chain_d": 1.567,
+     "coarse_d": 1.341,
+     "height": 47
+    },
+    {
+     "frac": 0.5,
+     "n": 117,
+     "f": 0.6248,
+     "mm": 1.697,
+     "mid": 1.7,
+     "chain": 40,
+     "chain_d": 1.578,
+     "coarse_d": 1.416,
+     "height": 39
+    },
+    {
+     "frac": 0.6,
+     "n": 89,
+     "f": 0.6093,
+     "mm": 1.732,
+     "mid": 1.569,
+     "chain": 33,
+     "chain_d": 1.588,
+     "coarse_d": 1.375,
+     "height": 32
+    }
+   ],
+   "status": "measured",
+   "sec": 0.94,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{x,z}}->{{y,x},{z,w},{w,y}}",
+   "bits": 20.0,
+   "gens": 78,
+   "relations": 20914,
+   "nodes": 20913,
+   "fit": {
+    "exp_rate": 0.078,
+    "power": 4.381
+   },
+   "events": 20912,
+   "depth": 78,
+   "tree": false,
+   "past_max": 264,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 1.287,
+   "root": {
+    "diamonds": 6,
+    "n": 262,
+    "f": 0.8517,
+    "mm": 1.26,
+    "mid": 1.115,
+    "chain": 79.0,
+    "chain_d": 1.505,
+    "coarse_d": 1.484
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 192,
+    "f": 0.7965,
+    "mm": 1.342,
+    "mid": 1.159,
+    "chain": 56.0,
+    "chain_d": 1.567,
+    "coarse_d": 1.438
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 265,
+     "f": 0.8597,
+     "mm": 1.237,
+     "mid": 1.131,
+     "chain": 79,
+     "chain_d": 1.508,
+     "coarse_d": 1.424,
+     "height": 78
+    },
+    {
+     "frac": 0.1,
+     "n": 249,
+     "f": 0.8443,
+     "mm": 1.264,
+     "mid": 1.179,
+     "chain": 71,
+     "chain_d": 1.536,
+     "coarse_d": 1.475,
+     "height": 70
+    },
+    {
+     "frac": 0.2,
+     "n": 223,
+     "f": 0.8234,
+     "mm": 1.302,
+     "mid": 1.231,
+     "chain": 63,
+     "chain_d": 1.557,
+     "coarse_d": 1.515,
+     "height": 62
+    },
+    {
+     "frac": 0.3,
+     "n": 194,
+     "f": 0.8045,
+     "mm": 1.336,
+     "mid": 1.191,
+     "chain": 56,
+     "chain_d": 1.57,
+     "coarse_d": 1.469,
+     "height": 55
+    },
+    {
+     "frac": 0.4,
+     "n": 162,
+     "f": 0.7773,
+     "mm": 1.387,
+     "mid": 1.317,
+     "chain": 48,
+     "chain_d": 1.589,
+     "coarse_d": 1.427,
+     "height": 47
+    },
+    {
+     "frac": 0.5,
+     "n": 128,
+     "f": 0.7392,
+     "mm": 1.46,
+     "mid": 1.272,
+     "chain": 40,
+     "chain_d": 1.607,
+     "coarse_d": 1.505,
+     "height": 39
+    },
+    {
+     "frac": 0.6,
+     "n": 94,
+     "f": 0.6943,
+     "mm": 1.549,
+     "mid": 1.555,
+     "chain": 32,
+     "chain_d": 1.625,
+     "coarse_d": 1.384,
+     "height": 31
+    },
+    {
+     "frac": 0.7,
+     "n": 70,
+     "f": 0.6422,
+     "mm": 1.659,
+     "mid": 1.544,
+     "chain": 24,
+     "chain_d": 1.694,
+     "coarse_d": 1.67,
+     "height": 23
+    }
+   ],
+   "status": "measured",
+   "sec": 0.92,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{x,z}}->{{y,y},{y,w},{z,y}}",
+   "bits": 20.0,
+   "gens": 100,
+   "relations": 20399,
+   "nodes": 20398,
+   "fit": {
+    "exp_rate": 0.028,
+    "power": 2.033
+   },
+   "events": 20397,
+   "depth": 100,
+   "tree": false,
+   "past_max": 266,
+   "max_causes": 2,
+   "max_effects": 2,
+   "cone_dim": 1.051,
+   "root": {
+    "diamonds": 6,
+    "n": 266,
+    "f": 0.9686,
+    "mm": 1.052,
+    "mid": 1.033,
+    "chain": 101.0,
+    "chain_d": 1.415,
+    "coarse_d": 1.514
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 187,
+    "f": 0.9557,
+    "mm": 1.073,
+    "mid": 1.039,
+    "chain": 71.0,
+    "chain_d": 1.456,
+    "coarse_d": 1.527
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 267,
+     "f": 0.9684,
+     "mm": 1.052,
+     "mid": 1.038,
+     "chain": 101,
+     "chain_d": 1.416,
+     "coarse_d": 1.532,
+     "height": 100
+    },
+    {
+     "frac": 0.1,
+     "n": 243,
+     "f": 0.9651,
+     "mm": 1.057,
+     "mid": 1.042,
+     "chain": 91,
+     "chain_d": 1.43,
+     "coarse_d": 1.588,
+     "height": 90
+    },
+    {
+     "frac": 0.2,
+     "n": 217,
+     "f": 0.961,
+     "mm": 1.064,
+     "mid": 1.034,
+     "chain": 81,
+     "chain_d": 1.445,
+     "coarse_d": 1.52,
+     "height": 80
+    },
+    {
+     "frac": 0.3,
+     "n": 188,
+     "f": 0.9553,
+     "mm": 1.074,
+     "mid": 1.031,
+     "chain": 71,
+     "chain_d": 1.458,
+     "coarse_d": 1.516,
+     "height": 70
+    },
+    {
+     "frac": 0.4,
+     "n": 162,
+     "f": 0.9482,
+     "mm": 1.085,
+     "mid": 1.054,
+     "chain": 61,
+     "chain_d": 1.479,
+     "coarse_d": 1.581,
+     "height": 60
+    },
+    {
+     "frac": 0.5,
+     "n": 133,
+     "f": 0.9378,
+     "mm": 1.103,
+     "mid": 1.078,
+     "chain": 51,
+     "chain_d": 1.499,
+     "coarse_d": 1.501,
+     "height": 50
+    },
+    {
+     "frac": 0.6,
+     "n": 107,
+     "f": 0.9233,
+     "mm": 1.127,
+     "mid": 1.069,
+     "chain": 41,
+     "chain_d": 1.535,
+     "coarse_d": 1.563,
+     "height": 40
+    },
+    {
+     "frac": 0.7,
+     "n": 78,
+     "f": 0.8981,
+     "mm": 1.17,
+     "mid": 1.076,
+     "chain": 31,
+     "chain_d": 1.576,
+     "coarse_d": 1.526,
+     "height": 30
+    }
+   ],
+   "status": "measured",
+   "sec": 1.32,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{x,z}}->{{y,y},{z,w},{w,y}}",
+   "bits": 20.0,
+   "gens": 34,
+   "relations": 22924,
+   "nodes": 22923,
+   "fit": {
+    "exp_rate": 0.237,
+    "power": 5.749
+   },
+   "events": 22922,
+   "depth": 34,
+   "tree": false,
+   "past_max": 917,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 3.212,
+   "root": {
+    "diamonds": 6,
+    "n": 894,
+    "f": 0.1658,
+    "mm": 3.412,
+    "mid": 4.009,
+    "chain": 35.0,
+    "chain_d": 2.378,
+    "coarse_d": 1.876
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 547,
+    "f": 0.1035,
+    "mm": 3.978,
+    "mid": 4.679,
+    "chain": 25.0,
+    "chain_d": 2.507,
+    "coarse_d": 2.045
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 918,
+     "f": 0.1642,
+     "mm": 3.405,
+     "mid": 4.009,
+     "chain": 35,
+     "chain_d": 2.381,
+     "coarse_d": 1.739,
+     "height": 34
+    },
+    {
+     "frac": 0.1,
+     "n": 915,
+     "f": 0.1587,
+     "mm": 3.446,
+     "mid": 4.03,
+     "chain": 32,
+     "chain_d": 2.46,
+     "coarse_d": 1.879,
+     "height": 31
+    },
+    {
+     "frac": 0.2,
+     "n": 802,
+     "f": 0.1182,
+     "mm": 3.801,
+     "mid": 4.221,
+     "chain": 28,
+     "chain_d": 2.538,
+     "coarse_d": 2.102,
+     "height": 27
+    },
+    {
+     "frac": 0.3,
+     "n": 560,
+     "f": 0.1025,
+     "mm": 3.971,
+     "mid": 4.67,
+     "chain": 25,
+     "chain_d": 2.509,
+     "coarse_d": 2.045,
+     "height": 24
+    },
+    {
+     "frac": 0.4,
+     "n": 210,
+     "f": 0.1722,
+     "mm": 3.347,
+     "mid": 3.714,
+     "chain": 21,
+     "chain_d": 2.265,
+     "coarse_d": 1.827,
+     "height": 20
+    },
+    {
+     "frac": 0.5,
+     "n": 98,
+     "f": 0.2544,
+     "mm": 2.867,
+     "mid": 3.155,
+     "chain": 18,
+     "chain_d": 2.068,
+     "coarse_d": 1.679,
+     "height": 17
+    }
+   ],
+   "status": "measured",
+   "sec": 1.55,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{x,y},{x,w},{w,z}}",
+   "bits": 20.0,
+   "gens": 91,
+   "relations": 20235,
+   "nodes": 20234,
+   "fit": {
+    "exp_rate": 0.018,
+    "power": 1.176
+   },
+   "events": 20233,
+   "depth": 91,
+   "tree": false,
+   "past_max": 226,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 1.071,
+   "root": {
+    "diamonds": 6,
+    "n": 225,
+    "f": 0.4981,
+    "mm": 2.008,
+    "mid": 1.849,
+    "chain": 91.7,
+    "chain_d": 1.408,
+    "coarse_d": 1.109
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 227,
+     "f": 0.4941,
+     "mm": 2.016,
+     "mid": 1.849,
+     "chain": 92,
+     "chain_d": 1.408,
+     "coarse_d": 1.078,
+     "height": 91
+    },
+    {
+     "frac": 0.1,
+     "n": 146,
+     "f": 0.5048,
+     "mm": 1.987,
+     "mid": 1.73,
+     "chain": 70,
+     "chain_d": 1.393,
+     "coarse_d": 0.999,
+     "height": 82
+    },
+    {
+     "frac": 0.2,
+     "n": 74,
+     "f": 1.0,
+     "mm": 1.0,
+     "mid": 1.0,
+     "chain": 74,
+     "chain_d": 1.184,
+     "coarse_d": 1.0,
+     "height": 73
+    },
+    {
+     "frac": 0.3,
+     "n": 65,
+     "f": 1.0,
+     "mm": 1.0,
+     "mid": 0.978,
+     "chain": 65,
+     "chain_d": 1.191,
+     "coarse_d": 1.0,
+     "height": 64
+    }
+   ],
+   "status": "measured",
+   "sec": 1.37,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{x,y},{y,w},{z,y}}",
+   "bits": 20.0,
+   "gens": 144,
+   "relations": 20029,
+   "nodes": 20028,
+   "fit": {
+    "exp_rate": 0.01,
+    "power": 1.03
+   },
+   "events": 20027,
+   "depth": 144,
+   "tree": false,
+   "past_max": 5063,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 2.012,
+   "root": {
+    "diamonds": 6,
+    "n": 5038,
+    "f": 0.2945,
+    "mm": 2.684,
+    "mid": 3.027,
+    "chain": 145.0,
+    "chain_d": 1.979,
+    "coarse_d": 1.246
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 1330,
+    "f": 0.0786,
+    "mm": 4.291,
+    "mid": 4.552,
+    "chain": 84.7,
+    "chain_d": 1.915,
+    "coarse_d": 1.179
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 5064,
+     "f": 0.294,
+     "mm": 2.686,
+     "mid": 3.037,
+     "chain": 145,
+     "chain_d": 1.981,
+     "coarse_d": 1.238,
+     "height": 144
+    },
+    {
+     "frac": 0.1,
+     "n": 4730,
+     "f": 0.2098,
+     "mm": 3.106,
+     "mid": 3.575,
+     "chain": 127,
+     "chain_d": 2.028,
+     "coarse_d": 1.245,
+     "height": 130
+    },
+    {
+     "frac": 0.2,
+     "n": 3289,
+     "f": 0.0758,
+     "mm": 4.328,
+     "mid": 5.054,
+     "chain": 103,
+     "chain_d": 2.044,
+     "coarse_d": 1.212,
+     "height": 115
+    },
+    {
+     "frac": 0.3,
+     "n": 1361,
+     "f": 0.0765,
+     "mm": 4.317,
+     "mid": 4.552,
+     "chain": 84,
+     "chain_d": 1.919,
+     "coarse_d": 1.18,
+     "height": 101
+    },
+    {
+     "frac": 0.4,
+     "n": 383,
+     "f": 0.1634,
+     "mm": 3.411,
+     "mid": 3.259,
+     "chain": 64,
+     "chain_d": 1.705,
+     "coarse_d": 1.192,
+     "height": 86
+    },
+    {
+     "frac": 0.5,
+     "n": 78,
+     "f": 0.5844,
+     "mm": 1.789,
+     "mid": 1.893,
+     "chain": 41,
+     "chain_d": 1.431,
+     "coarse_d": 1.154,
+     "height": 72
+    }
+   ],
+   "status": "measured",
+   "sec": 13.03,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{x,z},{x,w},{w,z}}",
+   "bits": 20.0,
+   "gens": 73,
+   "relations": 20018,
+   "nodes": 20017,
+   "fit": {
+    "exp_rate": 0.04,
+    "power": 2.093
+   },
+   "events": 20016,
+   "depth": 73,
+   "tree": false,
+   "past_max": 141,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 1.047,
+   "root": {
+    "diamonds": 6,
+    "n": 142,
+    "f": 0.6939,
+    "mm": 1.551,
+    "mid": 1.565,
+    "chain": 74.0,
+    "chain_d": 1.364,
+    "coarse_d": 1.137
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 142,
+     "f": 0.6829,
+     "mm": 1.573,
+     "mid": 1.565,
+     "chain": 74,
+     "chain_d": 1.364,
+     "coarse_d": 1.133,
+     "height": 73
+    },
+    {
+     "frac": 0.1,
+     "n": 131,
+     "f": 0.6693,
+     "mm": 1.601,
+     "mid": 1.574,
+     "chain": 67,
+     "chain_d": 1.379,
+     "coarse_d": 1.125,
+     "height": 66
+    },
+    {
+     "frac": 0.2,
+     "n": 114,
+     "f": 0.6755,
+     "mm": 1.588,
+     "mid": 1.547,
+     "chain": 59,
+     "chain_d": 1.39,
+     "coarse_d": 1.216,
+     "height": 58
+    },
+    {
+     "frac": 0.3,
+     "n": 101,
+     "f": 0.6701,
+     "mm": 1.6,
+     "mid": 1.571,
+     "chain": 52,
+     "chain_d": 1.407,
+     "coarse_d": 1.194,
+     "height": 51
+    },
+    {
+     "frac": 0.4,
+     "n": 87,
+     "f": 0.6707,
+     "mm": 1.598,
+     "mid": 1.585,
+     "chain": 45,
+     "chain_d": 1.424,
+     "coarse_d": 1.166,
+     "height": 44
+    },
+    {
+     "frac": 0.5,
+     "n": 72,
+     "f": 0.6808,
+     "mm": 1.577,
+     "mid": 1.585,
+     "chain": 38,
+     "chain_d": 1.441,
+     "coarse_d": 1.111,
+     "height": 37
+    }
+   ],
+   "status": "measured",
+   "sec": 1.11,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{y,x},{y,w},{z,x}}",
+   "bits": 20.0,
+   "gens": 40,
+   "relations": 22371,
+   "nodes": 22370,
+   "fit": {
+    "exp_rate": 0.218,
+    "power": 6.236
+   },
+   "events": 22369,
+   "depth": 40,
+   "tree": false,
+   "past_max": 963,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 3.237,
+   "root": {
+    "diamonds": 6,
+    "n": 935,
+    "f": 0.226,
+    "mm": 3.016,
+    "mid": 3.207,
+    "chain": 41.0,
+    "chain_d": 2.261,
+    "coarse_d": 1.857
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 766,
+    "f": 0.13,
+    "mm": 3.682,
+    "mid": 4.084,
+    "chain": 28.3,
+    "chain_d": 2.512,
+    "coarse_d": 1.839
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 964,
+     "f": 0.2258,
+     "mm": 3.015,
+     "mid": 3.226,
+     "chain": 41,
+     "chain_d": 2.268,
+     "coarse_d": 1.857,
+     "height": 40
+    },
+    {
+     "frac": 0.1,
+     "n": 956,
+     "f": 0.2128,
+     "mm": 3.088,
+     "mid": 3.331,
+     "chain": 37,
+     "chain_d": 2.348,
+     "coarse_d": 1.961,
+     "height": 36
+    },
+    {
+     "frac": 0.2,
+     "n": 927,
+     "f": 0.1745,
+     "mm": 3.331,
+     "mid": 3.553,
+     "chain": 33,
+     "chain_d": 2.437,
+     "coarse_d": 1.972,
+     "height": 32
+    },
+    {
+     "frac": 0.3,
+     "n": 793,
+     "f": 0.1305,
+     "mm": 3.682,
+     "mid": 4.108,
+     "chain": 29,
+     "chain_d": 2.499,
+     "coarse_d": 1.831,
+     "height": 28
+    },
+    {
+     "frac": 0.4,
+     "n": 459,
+     "f": 0.1136,
+     "mm": 3.848,
+     "mid": 4.142,
+     "chain": 24,
+     "chain_d": 2.468,
+     "coarse_d": 1.99,
+     "height": 24
+    },
+    {
+     "frac": 0.5,
+     "n": 249,
+     "f": 0.1295,
+     "mm": 3.691,
+     "mid": 4.153,
+     "chain": 21,
+     "chain_d": 2.341,
+     "coarse_d": 1.796,
+     "height": 20
+    },
+    {
+     "frac": 0.6,
+     "n": 79,
+     "f": 0.2444,
+     "mm": 2.917,
+     "mid": 3.134,
+     "chain": 17,
+     "chain_d": 2.021,
+     "coarse_d": 1.606,
+     "height": 16
+    }
+   ],
+   "status": "measured",
+   "sec": 0.76,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{y,x},{y,w},{z,y}}",
+   "bits": 20.0,
+   "gens": 145,
+   "relations": 20173,
+   "nodes": 20172,
+   "fit": {
+    "exp_rate": 0.01,
+    "power": 1.036
+   },
+   "events": 20171,
+   "depth": 145,
+   "tree": false,
+   "past_max": 5129,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 2.034,
+   "root": {
+    "diamonds": 6,
+    "n": 5120,
+    "f": 0.2906,
+    "mm": 2.701,
+    "mid": 3.024,
+    "chain": 146.0,
+    "chain_d": 1.98,
+    "coarse_d": 1.232
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 1353,
+    "f": 0.077,
+    "mm": 4.315,
+    "mid": 4.599,
+    "chain": 84.0,
+    "chain_d": 1.923,
+    "coarse_d": 1.219
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 5130,
+     "f": 0.2902,
+     "mm": 2.702,
+     "mid": 2.994,
+     "chain": 146,
+     "chain_d": 1.98,
+     "coarse_d": 1.203,
+     "height": 145
+    },
+    {
+     "frac": 0.1,
+     "n": 4830,
+     "f": 0.2143,
+     "mm": 3.079,
+     "mid": 3.437,
+     "chain": 128,
+     "chain_d": 2.029,
+     "coarse_d": 1.167,
+     "height": 131
+    },
+    {
+     "frac": 0.2,
+     "n": 3474,
+     "f": 0.0767,
+     "mm": 4.314,
+     "mid": 4.904,
+     "chain": 107,
+     "chain_d": 2.038,
+     "coarse_d": 1.146,
+     "height": 116
+    },
+    {
+     "frac": 0.3,
+     "n": 1353,
+     "f": 0.0776,
+     "mm": 4.3,
+     "mid": 4.647,
+     "chain": 83,
+     "chain_d": 1.923,
+     "coarse_d": 1.237,
+     "height": 101
+    },
+    {
+     "frac": 0.4,
+     "n": 441,
+     "f": 0.1429,
+     "mm": 3.573,
+     "mid": 3.463,
+     "chain": 67,
+     "chain_d": 1.723,
+     "coarse_d": 1.13,
+     "height": 87
+    },
+    {
+     "frac": 0.5,
+     "n": 101,
+     "f": 0.4883,
+     "mm": 2.031,
+     "mid": 2.199,
+     "chain": 44,
+     "chain_d": 1.482,
+     "coarse_d": 1.193,
+     "height": 73
+    }
+   ],
+   "status": "measured",
+   "sec": 12.78,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{y,x},{y,z},{w,y}}",
+   "bits": 20.0,
+   "gens": 144,
+   "relations": 20029,
+   "nodes": 20028,
+   "fit": {
+    "exp_rate": 0.01,
+    "power": 1.03
+   },
+   "events": 20027,
+   "depth": 144,
+   "tree": false,
+   "past_max": 5077,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 2.023,
+   "root": {
+    "diamonds": 6,
+    "n": 5058,
+    "f": 0.2907,
+    "mm": 2.701,
+    "mid": 3.043,
+    "chain": 145.0,
+    "chain_d": 1.98,
+    "coarse_d": 1.259
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 1384,
+    "f": 0.0748,
+    "mm": 4.337,
+    "mid": 4.629,
+    "chain": 85.2,
+    "chain_d": 1.918,
+    "coarse_d": 1.173
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 5078,
+     "f": 0.29,
+     "mm": 2.703,
+     "mid": 3.053,
+     "chain": 145,
+     "chain_d": 1.981,
+     "coarse_d": 1.303,
+     "height": 144
+    },
+    {
+     "frac": 0.1,
+     "n": 4745,
+     "f": 0.2063,
+     "mm": 3.126,
+     "mid": 3.505,
+     "chain": 126,
+     "chain_d": 2.033,
+     "coarse_d": 1.213,
+     "height": 130
+    },
+    {
+     "frac": 0.2,
+     "n": 3355,
+     "f": 0.0738,
+     "mm": 4.359,
+     "mid": 4.984,
+     "chain": 105,
+     "chain_d": 2.039,
+     "coarse_d": 1.232,
+     "height": 115
+    },
+    {
+     "frac": 0.3,
+     "n": 1423,
+     "f": 0.0707,
+     "mm": 4.409,
+     "mid": 4.667,
+     "chain": 84,
+     "chain_d": 1.931,
+     "coarse_d": 1.257,
+     "height": 101
+    },
+    {
+     "frac": 0.4,
+     "n": 369,
+     "f": 0.167,
+     "mm": 3.384,
+     "mid": 3.206,
+     "chain": 65,
+     "chain_d": 1.687,
+     "coarse_d": 1.134,
+     "height": 86
+    },
+    {
+     "frac": 0.5,
+     "n": 106,
+     "f": 0.4422,
+     "mm": 2.162,
+     "mid": 2.268,
+     "chain": 43,
+     "chain_d": 1.509,
+     "coarse_d": 1.16,
+     "height": 72
+    }
+   ],
+   "status": "measured",
+   "sec": 12.72,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{y,x},{z,y},{w,y}}",
+   "bits": 20.0,
+   "gens": 144,
+   "relations": 20029,
+   "nodes": 20028,
+   "fit": {
+    "exp_rate": 0.01,
+    "power": 1.03
+   },
+   "events": 20027,
+   "depth": 144,
+   "tree": false,
+   "past_max": 5049,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 2.011,
+   "root": {
+    "diamonds": 6,
+    "n": 5044,
+    "f": 0.2945,
+    "mm": 2.684,
+    "mid": 3.056,
+    "chain": 145.0,
+    "chain_d": 1.98,
+    "coarse_d": 1.263
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 1324,
+    "f": 0.0792,
+    "mm": 4.297,
+    "mid": 4.533,
+    "chain": 84.7,
+    "chain_d": 1.915,
+    "coarse_d": 1.185
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 5050,
+     "f": 0.2944,
+     "mm": 2.685,
+     "mid": 3.061,
+     "chain": 145,
+     "chain_d": 1.98,
+     "coarse_d": 1.292,
+     "height": 144
+    },
+    {
+     "frac": 0.1,
+     "n": 4710,
+     "f": 0.2086,
+     "mm": 3.113,
+     "mid": 3.583,
+     "chain": 127,
+     "chain_d": 2.027,
+     "coarse_d": 1.162,
+     "height": 130
+    },
+    {
+     "frac": 0.2,
+     "n": 3276,
+     "f": 0.0756,
+     "mm": 4.331,
+     "mid": 5.063,
+     "chain": 103,
+     "chain_d": 2.043,
+     "coarse_d": 1.196,
+     "height": 115
+    },
+    {
+     "frac": 0.3,
+     "n": 1347,
+     "f": 0.0769,
+     "mm": 4.311,
+     "mid": 4.538,
+     "chain": 84,
+     "chain_d": 1.916,
+     "coarse_d": 1.178,
+     "height": 101
+    },
+    {
+     "frac": 0.4,
+     "n": 375,
+     "f": 0.168,
+     "mm": 3.377,
+     "mid": 3.229,
+     "chain": 64,
+     "chain_d": 1.699,
+     "coarse_d": 1.182,
+     "height": 86
+    },
+    {
+     "frac": 0.5,
+     "n": 78,
+     "f": 0.5844,
+     "mm": 1.789,
+     "mid": 1.893,
+     "chain": 41,
+     "chain_d": 1.431,
+     "coarse_d": 1.154,
+     "height": 72
+    }
+   ],
+   "status": "measured",
+   "sec": 12.44,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{z,x},{z,w},{w,x}}",
+   "bits": 20.0,
+   "gens": 26,
+   "relations": 22514,
+   "nodes": 22513,
+   "fit": {
+    "exp_rate": 0.365,
+    "power": 6.718
+   },
+   "events": 22512,
+   "depth": 26,
+   "tree": false,
+   "past_max": 413,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 3.007,
+   "root": {
+    "diamonds": 6,
+    "n": 394,
+    "f": 0.2122,
+    "mm": 3.136,
+    "mid": 3.509,
+    "chain": 26.8,
+    "chain_d": 2.292,
+    "coarse_d": 1.964
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 232,
+    "f": 0.1606,
+    "mm": 3.495,
+    "mid": 3.957,
+    "chain": 18.8,
+    "chain_d": 2.442,
+    "coarse_d": 2.008
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 414,
+     "f": 0.2046,
+     "mm": 3.136,
+     "mid": 3.739,
+     "chain": 27,
+     "chain_d": 2.309,
+     "coarse_d": 1.964,
+     "height": 26
+    },
+    {
+     "frac": 0.1,
+     "n": 411,
+     "f": 0.1929,
+     "mm": 3.208,
+     "mid": 3.776,
+     "chain": 24,
+     "chain_d": 2.421,
+     "coarse_d": 2.028,
+     "height": 23
+    },
+    {
+     "frac": 0.2,
+     "n": 375,
+     "f": 0.146,
+     "mm": 3.547,
+     "mid": 4.091,
+     "chain": 22,
+     "chain_d": 2.473,
+     "coarse_d": 2.014,
+     "height": 21
+    },
+    {
+     "frac": 0.3,
+     "n": 244,
+     "f": 0.1524,
+     "mm": 3.495,
+     "mid": 3.931,
+     "chain": 19,
+     "chain_d": 2.442,
+     "coarse_d": 2.008,
+     "height": 18
+    },
+    {
+     "frac": 0.4,
+     "n": 110,
+     "f": 0.2219,
+     "mm": 3.037,
+     "mid": 3.322,
+     "chain": 17,
+     "chain_d": 2.183,
+     "coarse_d": 1.767,
+     "height": 16
+    }
+   ],
+   "status": "measured",
+   "sec": 0.58,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{x,w},{y,x},{w,z}}",
+   "bits": 20.0,
+   "gens": 77,
+   "relations": 20912,
+   "nodes": 20911,
+   "fit": {
+    "exp_rate": 0.078,
+    "power": 4.3
+   },
+   "events": 20910,
+   "depth": 77,
+   "tree": false,
+   "past_max": 262,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 1.278,
+   "root": {
+    "diamonds": 6,
+    "n": 260,
+    "f": 0.8497,
+    "mm": 1.264,
+    "mid": 1.128,
+    "chain": 78.0,
+    "chain_d": 1.508,
+    "coarse_d": 1.44
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 190,
+    "f": 0.7926,
+    "mm": 1.349,
+    "mid": 1.17,
+    "chain": 55.0,
+    "chain_d": 1.571,
+    "coarse_d": 1.502
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 263,
+     "f": 0.8578,
+     "mm": 1.24,
+     "mid": 1.144,
+     "chain": 78,
+     "chain_d": 1.511,
+     "coarse_d": 1.471,
+     "height": 77
+    },
+    {
+     "frac": 0.1,
+     "n": 246,
+     "f": 0.8412,
+     "mm": 1.27,
+     "mid": 1.174,
+     "chain": 70,
+     "chain_d": 1.538,
+     "coarse_d": 1.429,
+     "height": 69
+    },
+    {
+     "frac": 0.2,
+     "n": 223,
+     "f": 0.8234,
+     "mm": 1.302,
+     "mid": 1.231,
+     "chain": 63,
+     "chain_d": 1.557,
+     "coarse_d": 1.515,
+     "height": 62
+    },
+    {
+     "frac": 0.3,
+     "n": 193,
+     "f": 0.8025,
+     "mm": 1.34,
+     "mid": 1.2,
+     "chain": 55,
+     "chain_d": 1.577,
+     "coarse_d": 1.404,
+     "height": 54
+    },
+    {
+     "frac": 0.4,
+     "n": 159,
+     "f": 0.771,
+     "mm": 1.399,
+     "mid": 1.359,
+     "chain": 47,
+     "chain_d": 1.594,
+     "coarse_d": 1.472,
+     "height": 46
+    },
+    {
+     "frac": 0.5,
+     "n": 128,
+     "f": 0.7392,
+     "mm": 1.46,
+     "mid": 1.272,
+     "chain": 40,
+     "chain_d": 1.607,
+     "coarse_d": 1.505,
+     "height": 39
+    },
+    {
+     "frac": 0.6,
+     "n": 94,
+     "f": 0.6943,
+     "mm": 1.549,
+     "mid": 1.555,
+     "chain": 32,
+     "chain_d": 1.625,
+     "coarse_d": 1.384,
+     "height": 31
+    },
+    {
+     "frac": 0.7,
+     "n": 70,
+     "f": 0.6422,
+     "mm": 1.659,
+     "mid": 1.544,
+     "chain": 24,
+     "chain_d": 1.694,
+     "coarse_d": 1.67,
+     "height": 23
+    }
+   ],
+   "status": "measured",
+   "sec": 0.8,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{x,x},{x,w},{w,z}}",
+   "bits": 20.0,
+   "gens": 34,
+   "relations": 22924,
+   "nodes": 22923,
+   "fit": {
+    "exp_rate": 0.237,
+    "power": 5.749
+   },
+   "events": 22922,
+   "depth": 34,
+   "tree": false,
+   "past_max": 917,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 3.212,
+   "root": {
+    "diamonds": 6,
+    "n": 894,
+    "f": 0.1658,
+    "mm": 3.412,
+    "mid": 4.009,
+    "chain": 35.0,
+    "chain_d": 2.378,
+    "coarse_d": 1.876
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 547,
+    "f": 0.1035,
+    "mm": 3.978,
+    "mid": 4.679,
+    "chain": 25.0,
+    "chain_d": 2.507,
+    "coarse_d": 2.045
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 918,
+     "f": 0.1642,
+     "mm": 3.405,
+     "mid": 4.009,
+     "chain": 35,
+     "chain_d": 2.381,
+     "coarse_d": 1.739,
+     "height": 34
+    },
+    {
+     "frac": 0.1,
+     "n": 915,
+     "f": 0.1587,
+     "mm": 3.446,
+     "mid": 4.03,
+     "chain": 32,
+     "chain_d": 2.46,
+     "coarse_d": 1.879,
+     "height": 31
+    },
+    {
+     "frac": 0.2,
+     "n": 802,
+     "f": 0.1182,
+     "mm": 3.801,
+     "mid": 4.221,
+     "chain": 28,
+     "chain_d": 2.538,
+     "coarse_d": 2.102,
+     "height": 27
+    },
+    {
+     "frac": 0.3,
+     "n": 560,
+     "f": 0.1025,
+     "mm": 3.971,
+     "mid": 4.67,
+     "chain": 25,
+     "chain_d": 2.509,
+     "coarse_d": 2.045,
+     "height": 24
+    },
+    {
+     "frac": 0.4,
+     "n": 210,
+     "f": 0.1722,
+     "mm": 3.347,
+     "mid": 3.714,
+     "chain": 21,
+     "chain_d": 2.265,
+     "coarse_d": 1.827,
+     "height": 20
+    },
+    {
+     "frac": 0.5,
+     "n": 98,
+     "f": 0.2544,
+     "mm": 2.867,
+     "mid": 3.155,
+     "chain": 18,
+     "chain_d": 2.068,
+     "coarse_d": 1.679,
+     "height": 17
+    }
+   ],
+   "status": "measured",
+   "sec": 1.57,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{y,w},{w,x},{w,z}}",
+   "bits": 20.0,
+   "gens": 70,
+   "relations": 20425,
+   "nodes": 20424,
+   "fit": {
+    "exp_rate": 0.096,
+    "power": 4.819
+   },
+   "events": 20423,
+   "depth": 70,
+   "tree": false,
+   "past_max": 226,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 1.427,
+   "root": {
+    "diamonds": 6,
+    "n": 222,
+    "f": 0.7026,
+    "mm": 1.484,
+    "mid": 1.422,
+    "chain": 70.3,
+    "chain_d": 1.51,
+    "coarse_d": 1.311
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 152,
+    "f": 0.6303,
+    "mm": 1.643,
+    "mid": 1.556,
+    "chain": 49.5,
+    "chain_d": 1.565,
+    "coarse_d": 1.304
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 227,
+     "f": 0.7324,
+     "mm": 1.473,
+     "mid": 1.335,
+     "chain": 71,
+     "chain_d": 1.51,
+     "coarse_d": 1.311,
+     "height": 70
+    },
+    {
+     "frac": 0.1,
+     "n": 211,
+     "f": 0.7048,
+     "mm": 1.528,
+     "mid": 1.312,
+     "chain": 64,
+     "chain_d": 1.534,
+     "coarse_d": 1.306,
+     "height": 63
+    },
+    {
+     "frac": 0.2,
+     "n": 192,
+     "f": 0.6707,
+     "mm": 1.598,
+     "mid": 1.415,
+     "chain": 57,
+     "chain_d": 1.559,
+     "coarse_d": 1.298,
+     "height": 56
+    },
+    {
+     "frac": 0.3,
+     "n": 160,
+     "f": 0.6739,
+     "mm": 1.592,
+     "mid": 1.415,
+     "chain": 50,
+     "chain_d": 1.565,
+     "coarse_d": 1.287,
+     "height": 49
+    },
+    {
+     "frac": 0.4,
+     "n": 136,
+     "f": 0.6249,
+     "mm": 1.697,
+     "mid": 1.473,
+     "chain": 43,
+     "chain_d": 1.589,
+     "coarse_d": 1.369,
+     "height": 42
+    },
+    {
+     "frac": 0.5,
+     "n": 107,
+     "f": 0.5965,
+     "mm": 1.761,
+     "mid": 1.697,
+     "chain": 36,
+     "chain_d": 1.604,
+     "coarse_d": 1.434,
+     "height": 35
+    },
+    {
+     "frac": 0.6,
+     "n": 79,
+     "f": 0.5755,
+     "mm": 1.811,
+     "mid": 1.66,
+     "chain": 29,
+     "chain_d": 1.62,
+     "coarse_d": 1.543,
+     "height": 28
+    }
+   ],
+   "status": "measured",
+   "sec": 0.81,
+   "group": "scan 2->3 candidate"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{x,z},{x,w},{y,x},{w,y}}",
+   "bits": 24.0,
+   "gens": 19,
+   "relations": 49728,
+   "nodes": 24864,
+   "fit": {
+    "exp_rate": 0.532,
+    "power": 6.916
+   },
+   "events": 24863,
+   "depth": 19,
+   "tree": false,
+   "past_max": 400,
+   "max_causes": 2,
+   "max_effects": 4,
+   "cone_dim": 3.116,
+   "root": {
+    "diamonds": 6,
+    "n": 336,
+    "f": 0.2014,
+    "mm": 3.201,
+    "mid": 3.537,
+    "chain": 20.0,
+    "chain_d": 2.516,
+    "coarse_d": 2.248
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 196,
+    "f": 0.1515,
+    "mm": 3.532,
+    "mid": 3.958,
+    "chain": 14.0,
+    "chain_d": 2.733,
+    "coarse_d": 2.542
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 401,
+     "f": 0.1769,
+     "mm": 3.314,
+     "mid": 3.789,
+     "chain": 20,
+     "chain_d": 2.613,
+     "coarse_d": 2.111,
+     "height": 19
+    },
+    {
+     "frac": 0.1,
+     "n": 399,
+     "f": 0.1686,
+     "mm": 3.373,
+     "mid": 3.885,
+     "chain": 18,
+     "chain_d": 2.745,
+     "coarse_d": 2.464,
+     "height": 17
+    },
+    {
+     "frac": 0.2,
+     "n": 353,
+     "f": 0.135,
+     "mm": 3.642,
+     "mid": 4.142,
+     "chain": 16,
+     "chain_d": 2.849,
+     "coarse_d": 3.298,
+     "height": 15
+    },
+    {
+     "frac": 0.3,
+     "n": 229,
+     "f": 0.1347,
+     "mm": 3.644,
+     "mid": 4.139,
+     "chain": 14,
+     "chain_d": 2.82,
+     "coarse_d": 2.464,
+     "height": 13
+    },
+    {
+     "frac": 0.4,
+     "n": 86,
+     "f": 0.215,
+     "mm": 3.075,
+     "mid": 3.426,
+     "chain": 12,
+     "chain_d": 2.489,
+     "coarse_d": 2.255,
+     "height": 11
+    }
+   ],
+   "status": "measured",
+   "sec": 0.61,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{x,z}}->{{x,y},{z,y},{z,w},{w,z}}",
+   "bits": 24.0,
+   "gens": 22,
+   "relations": 49036,
+   "nodes": 24518,
+   "fit": {
+    "exp_rate": 0.444,
+    "power": 6.873
+   },
+   "events": 24517,
+   "depth": 22,
+   "tree": false,
+   "past_max": 615,
+   "max_causes": 2,
+   "max_effects": 4,
+   "cone_dim": 3.446,
+   "root": {
+    "diamonds": 6,
+    "n": 477,
+    "f": 0.1552,
+    "mm": 3.505,
+    "mid": 3.994,
+    "chain": 22.8,
+    "chain_d": 2.531,
+    "coarse_d": 2.049
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 208,
+    "f": 0.1677,
+    "mm": 3.365,
+    "mid": 3.671,
+    "chain": 16.0,
+    "chain_d": 2.531,
+    "coarse_d": 2.295
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 616,
+     "f": 0.1248,
+     "mm": 3.736,
+     "mid": 4.267,
+     "chain": 23,
+     "chain_d": 2.641,
+     "coarse_d": 2.112,
+     "height": 22
+    },
+    {
+     "frac": 0.1,
+     "n": 614,
+     "f": 0.1191,
+     "mm": 3.792,
+     "mid": 4.355,
+     "chain": 21,
+     "chain_d": 2.748,
+     "coarse_d": 2.436,
+     "height": 20
+    },
+    {
+     "frac": 0.2,
+     "n": 554,
+     "f": 0.0916,
+     "mm": 4.104,
+     "mid": 4.792,
+     "chain": 19,
+     "chain_d": 2.831,
+     "coarse_d": 2.222,
+     "height": 18
+    },
+    {
+     "frac": 0.3,
+     "n": 276,
+     "f": 0.1241,
+     "mm": 3.742,
+     "mid": 4.021,
+     "chain": 16,
+     "chain_d": 2.721,
+     "coarse_d": 2.155,
+     "height": 15
+    },
+    {
+     "frac": 0.4,
+     "n": 135,
+     "f": 0.1578,
+     "mm": 3.453,
+     "mid": 3.907,
+     "chain": 14,
+     "chain_d": 2.526,
+     "coarse_d": 2.082,
+     "height": 13
+    },
+    {
+     "frac": 0.5,
+     "n": 61,
+     "f": 0.2689,
+     "mm": 2.798,
+     "mid": 3.123,
+     "chain": 12,
+     "chain_d": 2.284,
+     "coarse_d": 1.983,
+     "height": 11
+    }
+   ],
+   "status": "measured",
+   "sec": 0.58,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{x,y},{y,x},{z,y},{w,y}}",
+   "bits": 24.0,
+   "gens": 85,
+   "relations": 40854,
+   "nodes": 20427,
+   "fit": {
+    "exp_rate": 0.017,
+    "power": 1.053
+   },
+   "events": 20426,
+   "depth": 85,
+   "tree": false,
+   "past_max": 2199,
+   "max_causes": 2,
+   "max_effects": 4,
+   "cone_dim": 1.972,
+   "root": {
+    "diamonds": 6,
+    "n": 2192,
+    "f": 0.1791,
+    "mm": 3.301,
+    "mid": 3.94,
+    "chain": 86.0,
+    "chain_d": 2.034,
+    "coarse_d": 1.253
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 2200,
+     "f": 0.1789,
+     "mm": 3.301,
+     "mid": 3.943,
+     "chain": 86,
+     "chain_d": 2.035,
+     "coarse_d": 1.208,
+     "height": 85
+    },
+    {
+     "frac": 0.1,
+     "n": 1680,
+     "f": 0.0727,
+     "mm": 4.377,
+     "mid": 4.933,
+     "chain": 74,
+     "chain_d": 2.045,
+     "coarse_d": 1.206,
+     "height": 77
+    },
+    {
+     "frac": 0.2,
+     "n": 344,
+     "f": 0.1459,
+     "mm": 3.548,
+     "mid": 3.382,
+     "chain": 53,
+     "chain_d": 1.77,
+     "coarse_d": 1.182,
+     "height": 68
+    },
+    {
+     "frac": 0.3,
+     "n": 85,
+     "f": 0.4297,
+     "mm": 2.2,
+     "mid": 2.087,
+     "chain": 39,
+     "chain_d": 1.484,
+     "coarse_d": 1.111,
+     "height": 59
+    }
+   ],
+   "status": "measured",
+   "sec": 23.83,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{x,y},{y,w},{u,x},{u,z}}",
+   "bits": 27.86,
+   "gens": 206,
+   "relations": 40040,
+   "nodes": 40039,
+   "fit": {
+    "exp_rate": 0.007,
+    "power": 1.055
+   },
+   "events": 20019,
+   "depth": 206,
+   "tree": false,
+   "past_max": 10100,
+   "max_causes": 2,
+   "max_effects": 3,
+   "cone_dim": 2.052,
+   "root": {
+    "diamonds": 6,
+    "n": 10098,
+    "f": 0.5795,
+    "mm": 1.801,
+    "mid": 1.985,
+    "chain": 207.0,
+    "chain_d": 1.977,
+    "coarse_d": 2.326
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 7393,
+    "f": 0.4215,
+    "mm": 2.225,
+    "mid": 2.317,
+    "chain": 145.0,
+    "chain_d": 2.07,
+    "coarse_d": 2.277
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 10101,
+     "f": 0.5794,
+     "mm": 1.801,
+     "mid": 1.985,
+     "chain": 207,
+     "chain_d": 1.978,
+     "coarse_d": 2.348,
+     "height": 206
+    },
+    {
+     "frac": 0.1,
+     "n": 9828,
+     "f": 0.5566,
+     "mm": 1.856,
+     "mid": 2.015,
+     "chain": 186,
+     "chain_d": 2.018,
+     "coarse_d": 2.338,
+     "height": 185
+    },
+    {
+     "frac": 0.2,
+     "n": 9089,
+     "f": 0.4978,
+     "mm": 2.006,
+     "mid": 2.134,
+     "chain": 166,
+     "chain_d": 2.053,
+     "coarse_d": 2.253,
+     "height": 165
+    },
+    {
+     "frac": 0.3,
+     "n": 7396,
+     "f": 0.4213,
+     "mm": 2.226,
+     "mid": 2.317,
+     "chain": 145,
+     "chain_d": 2.07,
+     "coarse_d": 2.256,
+     "height": 144
+    },
+    {
+     "frac": 0.4,
+     "n": 5502,
+     "f": 0.3664,
+     "mm": 2.406,
+     "mid": 2.474,
+     "chain": 125,
+     "chain_d": 2.073,
+     "coarse_d": 2.277,
+     "height": 124
+    },
+    {
+     "frac": 0.5,
+     "n": 2833,
+     "f": 0.4665,
+     "mm": 2.092,
+     "mid": 2.038,
+     "chain": 104,
+     "chain_d": 2.0,
+     "coarse_d": 2.267,
+     "height": 103
+    },
+    {
+     "frac": 0.6,
+     "n": 1764,
+     "f": 0.5233,
+     "mm": 1.939,
+     "mid": 1.933,
+     "chain": 83,
+     "chain_d": 1.994,
+     "coarse_d": 2.244,
+     "height": 82
+    },
+    {
+     "frac": 0.7,
+     "n": 1024,
+     "f": 0.5303,
+     "mm": 1.921,
+     "mid": 1.913,
+     "chain": 63,
+     "chain_d": 1.996,
+     "coarse_d": 2.423,
+     "height": 62
+    }
+   ],
+   "status": "measured",
+   "sec": 7.56,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{y,z}}->{{x,y},{y,w},{z,y},{w,y}}",
+   "bits": 24.0,
+   "gens": 143,
+   "relations": 40334,
+   "nodes": 20167,
+   "fit": {
+    "exp_rate": 0.01,
+    "power": 1.015
+   },
+   "events": 20166,
+   "depth": 143,
+   "tree": false,
+   "past_max": 3099,
+   "max_causes": 2,
+   "max_effects": 4,
+   "cone_dim": 1.888,
+   "root": {
+    "diamonds": 6,
+    "n": 3090,
+    "f": 0.2296,
+    "mm": 2.995,
+    "mid": 3.443,
+    "chain": 144.0,
+    "chain_d": 1.869,
+    "coarse_d": 1.13
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 256,
+    "f": 0.2849,
+    "mm": 2.738,
+    "mid": 2.596,
+    "chain": 66.7,
+    "chain_d": 1.577,
+    "coarse_d": 1.186
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 3100,
+     "f": 0.2295,
+     "mm": 2.995,
+     "mid": 3.418,
+     "chain": 144,
+     "chain_d": 1.87,
+     "coarse_d": 1.146,
+     "height": 143
+    },
+    {
+     "frac": 0.1,
+     "n": 2522,
+     "f": 0.0981,
+     "mm": 4.023,
+     "mid": 4.628,
+     "chain": 130,
+     "chain_d": 1.866,
+     "coarse_d": 1.074,
+     "height": 129
+    },
+    {
+     "frac": 0.2,
+     "n": 966,
+     "f": 0.0999,
+     "mm": 4.001,
+     "mid": 3.85,
+     "chain": 115,
+     "chain_d": 1.687,
+     "coarse_d": 1.048,
+     "height": 114
+    },
+    {
+     "frac": 0.3,
+     "n": 266,
+     "f": 0.2764,
+     "mm": 2.764,
+     "mid": 2.596,
+     "chain": 66,
+     "chain_d": 1.586,
+     "coarse_d": 1.234,
+     "height": 100
+    },
+    {
+     "frac": 0.4,
+     "n": 101,
+     "f": 0.4808,
+     "mm": 2.052,
+     "mid": 1.958,
+     "chain": 44,
+     "chain_d": 1.482,
+     "coarse_d": 1.182,
+     "height": 86
+    },
+    {
+     "frac": 0.5,
+     "n": 72,
+     "f": 1.0,
+     "mm": 1.0,
+     "mid": 1.0,
+     "chain": 72,
+     "chain_d": 1.186,
+     "coarse_d": 1.0,
+     "height": 71
+    }
+   ],
+   "status": "measured",
+   "sec": 24.52,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{x,z},{x,w},{w,y},{u,z}}",
+   "bits": 27.86,
+   "gens": 65,
+   "relations": 41176,
+   "nodes": 41175,
+   "fit": {
+    "exp_rate": 0.045,
+    "power": 2.123
+   },
+   "events": 20587,
+   "depth": 65,
+   "tree": false,
+   "past_max": 110,
+   "max_causes": 2,
+   "max_effects": 4,
+   "cone_dim": 1.068,
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 111,
+     "f": 0.7096,
+     "mm": 1.519,
+     "mid": 1.437,
+     "chain": 66,
+     "chain_d": 1.338,
+     "coarse_d": 1.071,
+     "height": 65
+    },
+    {
+     "frac": 0.1,
+     "n": 102,
+     "f": 0.6608,
+     "mm": 1.619,
+     "mid": 1.463,
+     "chain": 60,
+     "chain_d": 1.351,
+     "coarse_d": 1.117,
+     "height": 59
+    },
+    {
+     "frac": 0.2,
+     "n": 77,
+     "f": 0.6377,
+     "mm": 1.669,
+     "mid": 1.459,
+     "chain": 53,
+     "chain_d": 1.316,
+     "coarse_d": 1.063,
+     "height": 52
+    }
+   ],
+   "status": "measured",
+   "sec": 1.86,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{x,z}}->{{x,y},{y,w},{z,u},{u,y}}",
+   "bits": 27.86,
+   "gens": 37,
+   "relations": 40872,
+   "nodes": 40871,
+   "fit": {
+    "exp_rate": 0.228,
+    "power": 5.949
+   },
+   "events": 20435,
+   "depth": 37,
+   "tree": false,
+   "past_max": 341,
+   "max_causes": 2,
+   "max_effects": 4,
+   "cone_dim": 2.249,
+   "root": {
+    "diamonds": 6,
+    "n": 318,
+    "f": 0.338,
+    "mm": 2.565,
+    "mid": 2.4,
+    "chain": 37.8,
+    "chain_d": 1.947,
+    "coarse_d": 1.587
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 196,
+    "f": 0.3199,
+    "mm": 2.662,
+    "mid": 2.62,
+    "chain": 26.8,
+    "chain_d": 2.024,
+    "coarse_d": 1.705
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 342,
+     "f": 0.3059,
+     "mm": 2.636,
+     "mid": 2.487,
+     "chain": 38,
+     "chain_d": 1.966,
+     "coarse_d": 1.512,
+     "height": 37
+    },
+    {
+     "frac": 0.1,
+     "n": 337,
+     "f": 0.2852,
+     "mm": 2.724,
+     "mid": 2.589,
+     "chain": 34,
+     "chain_d": 2.039,
+     "coarse_d": 1.767,
+     "height": 33
+    },
+    {
+     "frac": 0.2,
+     "n": 284,
+     "f": 0.2258,
+     "mm": 3.015,
+     "mid": 3.292,
+     "chain": 31,
+     "chain_d": 2.046,
+     "coarse_d": 1.649,
+     "height": 30
+    },
+    {
+     "frac": 0.3,
+     "n": 209,
+     "f": 0.2918,
+     "mm": 2.695,
+     "mid": 2.62,
+     "chain": 27,
+     "chain_d": 2.036,
+     "coarse_d": 1.561,
+     "height": 26
+    },
+    {
+     "frac": 0.4,
+     "n": 142,
+     "f": 0.2522,
+     "mm": 2.878,
+     "mid": 3.342,
+     "chain": 23,
+     "chain_d": 2.011,
+     "coarse_d": 1.716,
+     "height": 22
+    },
+    {
+     "frac": 0.5,
+     "n": 110,
+     "f": 0.2726,
+     "mm": 2.781,
+     "mid": 3.322,
+     "chain": 20,
+     "chain_d": 2.022,
+     "coarse_d": 1.716,
+     "height": 19
+    },
+    {
+     "frac": 0.6,
+     "n": 66,
+     "f": 0.3366,
+     "mm": 2.515,
+     "mid": 2.874,
+     "chain": 16,
+     "chain_d": 1.993,
+     "coarse_d": 1.85,
+     "height": 15
+    }
+   ],
+   "status": "measured",
+   "sec": 0.74,
+   "group": "sample 2->4 candidate"
+  },
+  {
+   "rule": "{{x,y},{x,z}}->{{y,x},{y,w},{z,x}}",
+   "bits": 20.0,
+   "gens": 266,
+   "relations": 20107,
+   "nodes": 20106,
+   "fit": {
+    "exp_rate": 0.005,
+    "power": 1.007
+   },
+   "events": 20105,
+   "depth": 266,
+   "tree": false,
+   "past_max": 9911,
+   "max_causes": 2,
+   "max_effects": 2,
+   "cone_dim": 1.951,
+   "root": {
+    "diamonds": 6,
+    "n": 9803,
+    "f": 0.4882,
+    "mm": 2.037,
+    "mid": 1.851,
+    "chain": 266.3,
+    "chain_d": 1.871,
+    "coarse_d": 1.681
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 5918,
+    "f": 0.2689,
+    "mm": 2.815,
+    "mid": 3.043,
+    "chain": 185.5,
+    "chain_d": 1.91,
+    "coarse_d": 1.644
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 9912,
+     "f": 0.4862,
+     "mm": 2.037,
+     "mid": 1.851,
+     "chain": 267,
+     "chain_d": 1.871,
+     "coarse_d": 1.666,
+     "height": 266
+    },
+    {
+     "frac": 0.1,
+     "n": 9570,
+     "f": 0.4515,
+     "mm": 2.135,
+     "mid": 1.922,
+     "chain": 239,
+     "chain_d": 1.907,
+     "coarse_d": 1.693,
+     "height": 239
+    },
+    {
+     "frac": 0.2,
+     "n": 8389,
+     "f": 0.3557,
+     "mm": 2.444,
+     "mid": 2.187,
+     "chain": 213,
+     "chain_d": 1.926,
+     "coarse_d": 1.613,
+     "height": 213
+    },
+    {
+     "frac": 0.3,
+     "n": 6004,
+     "f": 0.2652,
+     "mm": 2.815,
+     "mid": 3.044,
+     "chain": 186,
+     "chain_d": 1.91,
+     "coarse_d": 1.616,
+     "height": 186
+    },
+    {
+     "frac": 0.4,
+     "n": 4560,
+     "f": 0.2971,
+     "mm": 2.673,
+     "mid": 2.881,
+     "chain": 160,
+     "chain_d": 1.913,
+     "coarse_d": 1.678,
+     "height": 160
+    },
+    {
+     "frac": 0.5,
+     "n": 3242,
+     "f": 0.2879,
+     "mm": 2.713,
+     "mid": 2.911,
+     "chain": 133,
+     "chain_d": 1.916,
+     "coarse_d": 1.671,
+     "height": 133
+    },
+    {
+     "frac": 0.6,
+     "n": 1795,
+     "f": 0.2956,
+     "mm": 2.679,
+     "mid": 2.85,
+     "chain": 106,
+     "chain_d": 1.876,
+     "coarse_d": 1.57,
+     "height": 106
+    },
+    {
+     "frac": 0.7,
+     "n": 597,
+     "f": 0.5496,
+     "mm": 1.873,
+     "mid": 1.855,
+     "chain": 80,
+     "chain_d": 1.722,
+     "coarse_d": 1.628,
+     "height": 80
+    }
+   ],
+   "status": "measured",
+   "sec": 5.65,
+   "group": "two-dimensional control"
+  },
+  {
+   "rule": "{{x,y},{x,z}}->{{x,y},{x,w},{z,x}}",
+   "bits": 20.0,
+   "gens": 268,
+   "relations": 20131,
+   "nodes": 20130,
+   "fit": {
+    "exp_rate": 0.005,
+    "power": 1.013
+   },
+   "events": 20129,
+   "depth": 268,
+   "tree": false,
+   "past_max": 9354,
+   "max_causes": 2,
+   "max_effects": 2,
+   "cone_dim": 1.977,
+   "root": {
+    "diamonds": 6,
+    "n": 9330,
+    "f": 0.5518,
+    "mm": 1.865,
+    "mid": 1.983,
+    "chain": 268.5,
+    "chain_d": 1.857,
+    "coarse_d": 1.883
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 5845,
+    "f": 0.4726,
+    "mm": 2.075,
+    "mid": 2.076,
+    "chain": 187.5,
+    "chain_d": 1.901,
+    "coarse_d": 1.912
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 9355,
+     "f": 0.5531,
+     "mm": 1.864,
+     "mid": 1.982,
+     "chain": 269,
+     "chain_d": 1.857,
+     "coarse_d": 1.883,
+     "height": 268
+    },
+    {
+     "frac": 0.1,
+     "n": 8915,
+     "f": 0.5162,
+     "mm": 1.957,
+     "mid": 2.048,
+     "chain": 242,
+     "chain_d": 1.887,
+     "coarse_d": 1.964,
+     "height": 241
+    },
+    {
+     "frac": 0.2,
+     "n": 7386,
+     "f": 0.4804,
+     "mm": 2.053,
+     "mid": 2.077,
+     "chain": 214,
+     "chain_d": 1.897,
+     "coarse_d": 1.9,
+     "height": 214
+    },
+    {
+     "frac": 0.3,
+     "n": 5884,
+     "f": 0.4728,
+     "mm": 2.074,
+     "mid": 2.073,
+     "chain": 188,
+     "chain_d": 1.901,
+     "coarse_d": 1.912,
+     "height": 188
+    },
+    {
+     "frac": 0.4,
+     "n": 4402,
+     "f": 0.4815,
+     "mm": 2.05,
+     "mid": 2.062,
+     "chain": 162,
+     "chain_d": 1.899,
+     "coarse_d": 1.897,
+     "height": 161
+    },
+    {
+     "frac": 0.5,
+     "n": 2929,
+     "f": 0.4947,
+     "mm": 2.014,
+     "mid": 2.014,
+     "chain": 135,
+     "chain_d": 1.885,
+     "coarse_d": 1.898,
+     "height": 134
+    },
+    {
+     "frac": 0.6,
+     "n": 1736,
+     "f": 0.5305,
+     "mm": 1.921,
+     "mid": 1.954,
+     "chain": 108,
+     "chain_d": 1.859,
+     "coarse_d": 1.901,
+     "height": 107
+    },
+    {
+     "frac": 0.7,
+     "n": 1008,
+     "f": 0.5377,
+     "mm": 1.902,
+     "mid": 1.89,
+     "chain": 81,
+     "chain_d": 1.857,
+     "coarse_d": 1.832,
+     "height": 80
+    }
+   ],
+   "status": "measured",
+   "sec": 5.86,
+   "group": "two-dimensional control"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{x,y},{y,z},{w,y}}",
+   "bits": 20.0,
+   "gens": 245,
+   "relations": 20011,
+   "nodes": 20010,
+   "fit": {
+    "exp_rate": 0.006,
+    "power": 1.003
+   },
+   "events": 20009,
+   "depth": 245,
+   "tree": false,
+   "past_max": 9219,
+   "max_causes": 2,
+   "max_effects": 2,
+   "cone_dim": 1.971,
+   "root": {
+    "diamonds": 6,
+    "n": 9207,
+    "f": 0.5515,
+    "mm": 1.867,
+    "mid": 1.98,
+    "chain": 245.8,
+    "chain_d": 1.888,
+    "coarse_d": 1.963
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 5689,
+    "f": 0.4754,
+    "mm": 2.068,
+    "mid": 2.079,
+    "chain": 171.3,
+    "chain_d": 1.933,
+    "coarse_d": 1.995
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 9220,
+     "f": 0.5496,
+     "mm": 1.873,
+     "mid": 1.994,
+     "chain": 246,
+     "chain_d": 1.888,
+     "coarse_d": 1.961,
+     "height": 245
+    },
+    {
+     "frac": 0.1,
+     "n": 8749,
+     "f": 0.5111,
+     "mm": 1.971,
+     "mid": 2.064,
+     "chain": 222,
+     "chain_d": 1.918,
+     "coarse_d": 2.044,
+     "height": 221
+    },
+    {
+     "frac": 0.2,
+     "n": 7195,
+     "f": 0.4768,
+     "mm": 2.063,
+     "mid": 2.087,
+     "chain": 196,
+     "chain_d": 1.927,
+     "coarse_d": 1.966,
+     "height": 196
+    },
+    {
+     "frac": 0.3,
+     "n": 5661,
+     "f": 0.475,
+     "mm": 2.068,
+     "mid": 2.083,
+     "chain": 171,
+     "chain_d": 1.933,
+     "coarse_d": 1.995,
+     "height": 171
+    },
+    {
+     "frac": 0.4,
+     "n": 4205,
+     "f": 0.483,
+     "mm": 2.046,
+     "mid": 2.052,
+     "chain": 147,
+     "chain_d": 1.931,
+     "coarse_d": 1.962,
+     "height": 147
+    },
+    {
+     "frac": 0.5,
+     "n": 2845,
+     "f": 0.4943,
+     "mm": 2.015,
+     "mid": 2.003,
+     "chain": 123,
+     "chain_d": 1.92,
+     "coarse_d": 2.041,
+     "height": 123
+    },
+    {
+     "frac": 0.6,
+     "n": 1683,
+     "f": 0.5291,
+     "mm": 1.924,
+     "mid": 1.955,
+     "chain": 99,
+     "chain_d": 1.893,
+     "coarse_d": 2.003,
+     "height": 98
+    },
+    {
+     "frac": 0.7,
+     "n": 974,
+     "f": 0.537,
+     "mm": 1.904,
+     "mid": 1.945,
+     "chain": 74,
+     "chain_d": 1.894,
+     "coarse_d": 1.934,
+     "height": 73
+    }
+   ],
+   "status": "measured",
+   "sec": 5.53,
+   "group": "two-dimensional control"
+  },
+  {
+   "rule": "{{x,y},{z,y}}->{{y,x},{y,z},{w,x}}",
+   "bits": 20.0,
+   "gens": 282,
+   "relations": 20024,
+   "nodes": 20023,
+   "fit": {
+    "exp_rate": 0.005,
+    "power": 0.997
+   },
+   "events": 20022,
+   "depth": 282,
+   "tree": false,
+   "past_max": 10082,
+   "max_causes": 2,
+   "max_effects": 2,
+   "cone_dim": 1.97,
+   "root": {
+    "diamonds": 6,
+    "n": 10082,
+    "f": 0.5227,
+    "mm": 1.941,
+    "mid": 1.96,
+    "chain": 282.7,
+    "chain_d": 1.853,
+    "coarse_d": 1.832
+   },
+   "mid": {
+    "diamonds": 6,
+    "n": 6498,
+    "f": 0.3849,
+    "mm": 2.345,
+    "mid": 2.55,
+    "chain": 198.0,
+    "chain_d": 1.9,
+    "coarse_d": 1.771
+   },
+   "series": [
+    {
+     "frac": 0.0,
+     "n": 10083,
+     "f": 0.5227,
+     "mm": 1.941,
+     "mid": 1.96,
+     "chain": 283,
+     "chain_d": 1.853,
+     "coarse_d": 1.839,
+     "height": 282
+    },
+    {
+     "frac": 0.1,
+     "n": 9692,
+     "f": 0.4955,
+     "mm": 2.012,
+     "mid": 2.026,
+     "chain": 255,
+     "chain_d": 1.884,
+     "coarse_d": 1.9,
+     "height": 254
+    },
+    {
+     "frac": 0.2,
+     "n": 8516,
+     "f": 0.4428,
+     "mm": 2.161,
+     "mid": 2.195,
+     "chain": 227,
+     "chain_d": 1.903,
+     "coarse_d": 1.802,
+     "height": 226
+    },
+    {
+     "frac": 0.3,
+     "n": 6471,
+     "f": 0.3843,
+     "mm": 2.345,
+     "mid": 2.543,
+     "chain": 198,
+     "chain_d": 1.9,
+     "coarse_d": 1.771,
+     "height": 197
+    },
+    {
+     "frac": 0.4,
+     "n": 3699,
+     "f": 0.3365,
+     "mm": 2.515,
+     "mid": 2.605,
+     "chain": 170,
+     "chain_d": 1.84,
+     "coarse_d": 1.594,
+     "height": 169
+    },
+    {
+     "frac": 0.5,
+     "n": 2592,
+     "f": 0.5272,
+     "mm": 1.929,
+     "mid": 1.924,
+     "chain": 142,
+     "chain_d": 1.834,
+     "coarse_d": 1.812,
+     "height": 141
+    },
+    {
+     "frac": 0.6,
+     "n": 1682,
+     "f": 0.5336,
+     "mm": 1.913,
+     "mid": 1.905,
+     "chain": 114,
+     "chain_d": 1.827,
+     "coarse_d": 1.861,
+     "height": 113
+    },
+    {
+     "frac": 0.7,
+     "n": 968,
+     "f": 0.544,
+     "mm": 1.887,
+     "mid": 1.88,
+     "chain": 86,
+     "chain_d": 1.817,
+     "coarse_d": 1.796,
+     "height": 85
+    }
+   ],
+   "status": "measured",
+   "sec": 5.6,
+   "group": "two-dimensional control"
+  }
+ ]
+}

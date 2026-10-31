@@ -1,0 +1,325 @@
+{
+ "description": "Follow-up runs: (1) local roughness in the smooth phase, (2) L=6 near the edge of the smooth phase incl. a degenerate start, (3) N_s=4 free massless scalars acting back (S_phi = 1/2 sum_ij W_ij (phi_i-phi_j)^2, W_ij = V_ij/q_ij, V_ij = sum_s V_s/10; exact heat bath per vertex each sweep, zero mode removed by subtracting each field's mean after every sweep; dS_phi included in every edge Metropolis step and in the global dilation, S_phi -> s S_phi), (4) time slicing: freeze=1 fixes edges along e_0 alone at q=1, freeze=2 fixes all edges whose step set contains axis 0 at their flat values; the global dilation is switched off in frozen runs (pure single-edge Metropolis on the free edges, exact detailed balance). Same analysis conventions as results.json (blocking errors; plateau=False means error likely underestimated).",
+ "checks": {
+  "selftest_L6.txt": "COUNTS L=6 N0=1296  edges=19440 (15.0000/vertex)  triangles=64800 (50.0000/vertex)  tetrahedra=77760 (60.0000/vertex)  4-simplices=31104 (24.0000/vertex)\nEULER chi = 0\nCOUNTS_OK 1 (canonical ids: 19440 edges, 64800 triangles)\nSIMPLICES_PER_EDGE: 12:12960 24:6480   max affected hinges per edge = 110\nSIMPLICES_PER_TRIANGLE: 4:38880 6:25920\nFLAT invalid=0  max|delta_h|=1.776e-15  sumV=1296.00000000012 (L^4=1296)  V in [0.0416666666666667, 0.0416666666666667] (1/24=0.0416666666666667)  sum delta*A=-1.595e-11\nREGULAR theta=1.318116071652818  arccos(1/4)=1.318116071652818  max|diff|=2.220e-16  V=0.023292374765623 (sqrt5/96=0.023292374765623)\nRANDOM 2000 simplices: max|theta_gram - theta_embed|=7.736e-11  max rel|V diff|=2.369e-08  max Schlaefli residual (rel)=6.169e-08\nINCREMENTAL after 3 sweeps (k=0.05, acc=0.796): max|dV|=0.00e+00 max|dthsum|=1.24e-14 max|dA|=0.00e+00  sumV inc-full=1.09e-10  sumDA inc-full=1.09e-11\n\nreal\t0m0.490s\nuser\t0m0.481s\nsys\t0m0.008s\n",
+  "phitest.txt": "PHITEST L=4 nphi=4 geometry=- sweeps=40000: <S_phi>/nphi = 127.4806 +- 0.0339   expected (N0-1)/2 = 127.5   (R of geometry = -0.0000)\nPHITEST L=4 nphi=4 geometry=runs/L4_k0.040.cfg sweeps=40000: <S_phi>/nphi = 127.4959 +- 0.0250   expected (N0-1)/2 = 127.5   (R of geometry = -1.2937)\nPHITEST L=3 nphi=4 geometry=runs/L3_k0.100.cfg sweeps=40000: <S_phi>/nphi = 39.9954 +- 0.0148   expected (N0-1)/2 = 40.0   (R of geometry = 26.9186)\n",
+  "regression": "new binary with nphi=0, freeze=0 reproduces round-1 run L4_k0.000 (seed 1006) bit-for-bit over 60 sweeps (max |diff| = 0.0)",
+  "coupled_scalar_test_L4_k0.04": {
+   "Sphi_per_field": {
+    "mean": 127.44712129999999,
+    "err": 0.21042490354717855,
+    "tau_int": 0.5,
+    "plateau": true
+   },
+   "exact": 127.5,
+   "virial_ratio_with_Sphi": {
+    "mean": 0.9997600405614568,
+    "err": 0.0010757658380564324,
+    "tau_int": 0.8230020630286369,
+    "plateau": false
+   },
+   "max_drift_incremental_vs_full": 1.742e-14
+  }
+ },
+ "runs": [],
+ "reference_round1": {
+  "L4_k0.060": {
+   "R": -0.88563798682405,
+   "R_err": 0.0210841800239407,
+   "meanq": 5.584591005949375,
+   "acc": 0.49326211375,
+   "R_times_meanq": -4.945925935744701,
+   "sumV_per_N0": 7.399251662007812,
+   "status": "stationary (smooth, R<0)",
+   "R_quarters": [
+    -0.8634151462728501,
+    -0.9360392851151,
+    -0.93660227162405,
+    -0.8064952442842
+   ],
+   "nmeas": 8000
+  },
+  "L4_k0.070": {
+   "R": -0.3949156193650523,
+   "R_err": 0.06524134810486554,
+   "meanq": 5.760056742209124,
+   "acc": 0.49750431624999997,
+   "R_times_meanq": -2.2747363759273616,
+   "sumV_per_N0": 7.4497271077148435,
+   "status": "left smooth state during run: R crossed to positive values",
+   "R_quarters": [
+    -0.6110816182468,
+    -0.67562060254455,
+    -0.40476286388659005,
+    0.11180260721773101
+   ],
+   "nmeas": 8000
+  },
+  "L4_k0.050": {
+   "R": -0.9776157805269875,
+   "R_err": 0.032663384598950816,
+   "meanq": 5.576252561961875,
+   "acc": 0.49494403375,
+   "R_times_meanq": -5.451432500777972,
+   "sumV_per_N0": 7.409570889294433,
+   "status": "smooth (R<0) but slow drift/fluctuation between halves (z=3.7)",
+   "R_quarters": [
+    -1.1250833596203,
+    -1.03872526788795,
+    -0.8221423108568,
+    -0.9245121837429
+   ],
+   "nmeas": 8000
+  },
+  "L4_k0.080": {
+   "R": 8.27574421168386,
+   "R_err": 1.9388127877170416,
+   "meanq": 12.576242820639123,
+   "acc": 0.41736328375,
+   "R_times_meanq": 104.07776872763492,
+   "sumV_per_N0": 10.016765454804688,
+   "status": "runaway: R rises to large positive values, still rising at end (no equilibrium)",
+   "R_quarters": [
+    0.28278266555133436,
+    1.3404665826020998,
+    5.755038673452001,
+    25.724688925130003
+   ],
+   "nmeas": 8000
+  },
+  "L4_k0.040": {
+   "R": -1.2556734315991875,
+   "R_err": 0.022474544823018534,
+   "meanq": 5.496058971283875,
+   "acc": 0.49942261250000003,
+   "R_times_meanq": -6.9012552287435245,
+   "sumV_per_N0": 7.407374523290039,
+   "status": "stationary (smooth, R<0)",
+   "R_quarters": [
+    -1.3071669346127999,
+    -1.216393341536,
+    -1.3147082994897001,
+    -1.1844251507582502
+   ],
+   "nmeas": 8000
+  },
+  "L4_k0.100": {
+   "R": 21.640881429756327,
+   "R_err": 1.7751900067657325,
+   "meanq": 33.599938577292,
+   "acc": 0.2238428425,
+   "R_times_meanq": 727.1322867982717,
+   "sumV_per_N0": 20.1134456700918,
+   "status": "degenerate runaway continues: R large and rising, edges growing (no equilibrium)",
+   "R_quarters": [
+    5.8619491024003,
+    23.45105962605,
+    28.03880703225,
+    29.211709958325002
+   ],
+   "nmeas": 8000
+  },
+  "L4_k0.000": {
+   "R": -1.840940475735375,
+   "R_err": 0.011932763420727783,
+   "meanq": 5.411228585888125,
+   "acc": 0.50045852375,
+   "R_times_meanq": -9.961749727217745,
+   "sumV_per_N0": 7.499789089715332,
+   "status": "stationary (smooth, R<0)",
+   "R_quarters": [
+    -1.8520919874464998,
+    -1.7930861186915,
+    -1.8576473184989999,
+    -1.8609364783045002
+   ],
+   "nmeas": 8000
+  },
+  "L4_k0.020": {
+   "R": -1.530046649873125,
+   "R_err": 0.018910258984046885,
+   "meanq": 5.4657471596630005,
+   "acc": 0.50861058125,
+   "R_times_meanq": -8.362848130695923,
+   "sumV_per_N0": 7.444556065560058,
+   "status": "stationary (smooth, R<0)",
+   "R_quarters": [
+    -1.4923319026105,
+    -1.5143635844780001,
+    -1.522063782387,
+    -1.591427330017
+   ],
+   "nmeas": 8000
+  },
+  "L4_k0.065": {
+   "R": -0.76982773849612,
+   "R_err": 0.05014303388732773,
+   "meanq": 5.6229443841948,
+   "acc": 0.500682764,
+   "R_times_meanq": -4.328698558974141,
+   "sumV_per_N0": 7.407503196216407,
+   "status": "smooth (R<0) but slow drift/fluctuation between halves (z=4.8)",
+   "R_quarters": [
+    -0.8585570968455999,
+    -1.01678491750112,
+    -0.70886073014952,
+    -0.49510820948824
+   ],
+   "nmeas": 5000
+  },
+  "L3_k0.000": {
+   "R": -1.9319192634738,
+   "R_err": 0.026905751861018897,
+   "meanq": 5.3716045869364,
+   "acc": 0.494143904,
+   "R_times_meanq": -10.377506377266657,
+   "sumV_per_N0": 7.502100855833827,
+   "status": "stationary (smooth, R<0)",
+   "R_quarters": [
+    -1.8171389969824001,
+    -1.9997466017088001,
+    -1.9674418373815998,
+    -1.9433496178224
+   ],
+   "nmeas": 5000
+  },
+  "L3_k0.020": {
+   "R": -1.52851783273128,
+   "R_err": 0.02217809219097694,
+   "meanq": 5.44901036177,
+   "acc": 0.49371211000000004,
+   "R_times_meanq": -8.328909508702969,
+   "sumV_per_N0": 7.447036146068887,
+   "status": "stationary (smooth, R<0)",
+   "R_quarters": [
+    -1.5235705488548,
+    -1.5681589983631998,
+    -1.5381157918158401,
+    -1.48422599189128
+   ],
+   "nmeas": 5000
+  },
+  "L3_k0.040": {
+   "R": -1.36782700494038,
+   "R_err": 0.03302959273605734,
+   "meanq": 5.4489358893512,
+   "acc": 0.510960854,
+   "R_times_meanq": -7.453201657643398,
+   "sumV_per_N0": 7.396923851221975,
+   "status": "stationary (smooth, R<0)",
+   "R_quarters": [
+    -1.3639028157952,
+    -1.46519707138624,
+    -1.3315922411319199,
+    -1.31061589144816
+   ],
+   "nmeas": 5000
+  },
+  "L3_k0.050": {
+   "R": -1.1954457842864,
+   "R_err": 0.05781985724961045,
+   "meanq": 5.487661009545801,
+   "acc": 0.498686218,
+   "R_times_meanq": -6.560201219454377,
+   "sumV_per_N0": 7.393711471298765,
+   "status": "stationary (smooth, R<0)",
+   "R_quarters": [
+    -0.8656328202079201,
+    -1.3259210026583998,
+    -1.30984185131896,
+    -1.28038746296032
+   ],
+   "nmeas": 5000
+  },
+  "L3_k0.060": {
+   "R": -0.6657224171351046,
+   "R_err": 0.05615717274627281,
+   "meanq": 5.6677279948964,
+   "acc": 0.513167004,
+   "R_times_meanq": -3.773133580426731,
+   "sumV_per_N0": 7.418521841738025,
+   "status": "smooth (R<0) but slow drift/fluctuation between halves (z=5.7)",
+   "R_quarters": [
+    -0.8411052706065598,
+    -0.8813394564644,
+    -0.38190016437153956,
+    -0.5585447770979185
+   ],
+   "nmeas": 5000
+  },
+  "L3_k0.070": {
+   "R": -0.6132622581861275,
+   "R_err": 0.05947992288623243,
+   "meanq": 5.664988084304,
+   "acc": 0.500882028,
+   "R_times_meanq": -3.4741233851777755,
+   "sumV_per_N0": 7.414646359476296,
+   "status": "stationary (smooth, R<0)",
+   "R_quarters": [
+    -0.50378514828056,
+    -0.8756503180195199,
+    -0.5130705045916696,
+    -0.5605430618527601
+   ],
+   "nmeas": 5000
+  },
+  "L3_k0.080": {
+   "R": 6.539382957086959,
+   "R_err": 1.7298239459444427,
+   "meanq": 9.831210080661002,
+   "acc": 0.43273428199999997,
+   "R_times_meanq": 64.29004764901606,
+   "sumV_per_N0": 9.010635298569136,
+   "status": "runaway: R rises to large positive values, still rising at end (no equilibrium)",
+   "R_quarters": [
+    -0.5153396931403263,
+    1.71285423439696,
+    6.3310430544031995,
+    18.628974232687998
+   ],
+   "nmeas": 5000
+  },
+  "L3_k0.100": {
+   "R": 13.250218894982906,
+   "R_err": 2.295013852007471,
+   "meanq": 18.127459439354,
+   "acc": 0.337317126,
+   "R_times_meanq": 240.19280558136458,
+   "sumV_per_N0": 13.165090589145432,
+   "status": "runaway: R rises to large positive values, still rising at end (no equilibrium)",
+   "R_quarters": [
+    1.30582406355642,
+    6.858235249063199,
+    19.095512820375998,
+    25.741303446936
+   ],
+   "nmeas": 5000
+  },
+  "L4_k0.060_fromRough": {
+   "R": 32.954244556275,
+   "R_err": 0.782133545975796,
+   "meanq": 31.005678778393747,
+   "acc": 0.48068910312499996,
+   "R_times_meanq": 1021.7687210964934,
+   "sumV_per_N0": 15.033802264342041,
+   "status": "degenerate runaway continues: R large and rising, edges growing (no equilibrium)",
+   "R_quarters": [
+    28.622242359637504,
+    30.456514776375,
+    34.5597829713875,
+    38.1784381177
+   ],
+   "nmeas": 3200
+  },
+  "L4_k0.070_pre_escape": {
+   "k": 0.07,
+   "segment_meas_sweeps": 6800,
+   "escape_near_sweep": 8500,
+   "R_mean": -0.5183904127900416,
+   "R_err": 0.03817981201296956,
+   "tau_int": 101.14103576919801,
+   "plateau": false,
+   "note": "smooth-branch value conditioned on not having escaped yet (biased selection; indicative only)"
+  }
+ }
+}

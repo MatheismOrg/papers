@@ -1,0 +1,9 @@
+{"model": "sprinkled", "d": 4, "N": 8000, "seed": 1, "n": 8002, "chain": 21, "chain_d": 3.9343, "f": 0.101148, "mm": 3.9864, "mid": 4.0325, "sec": 0.12}
+{"model": "sprinkled", "d": 4, "N": 8000, "seed": 2, "n": 8002, "chain": 20, "chain_d": 4.0274, "f": 0.098536, "mm": 4.0175, "mid": 4.0896, "sec": 0.11}
+{"model": "sprinkled", "d": 4, "N": 8000, "seed": 3, "n": 8002, "chain": 20, "chain_d": 4.0274, "f": 0.101504, "mm": 3.9823, "mid": 4.0236, "sec": 0.11}
+{"model": "sprinkled", "d": 4, "N": 32000, "seed": 1, "n": 32002, "chain": 30, "chain_d": 3.9274, "f": 0.101658, "mm": 3.9805, "mid": 4.0492, "sec": 1.85}
+{"model": "sprinkled", "d": 4, "N": 32000, "seed": 2, "n": 32002, "chain": 29, "chain_d": 3.9818, "f": 0.098609, "mm": 4.0166, "mid": 4.0545, "sec": 1.92}
+{"model": "sprinkled", "d": 4, "N": 64000, "seed": 1, "n": 64002, "chain": 36, "chain_d": 3.9187, "f": 0.100749, "mm": 3.9911, "mid": 4.0638, "sec": 7.34}
+{"model": "sprinkled", "d": 4, "N": 64000, "seed": 2, "n": 64002, "chain": 35, "chain_d": 3.9607, "f": 0.099131, "mm": 4.0104, "mid": 4.0436, "sec": 7.22}
+{"model": "sprinkled", "d": 4, "N": 128000, "seed": 1, "n": 128002, "chain": 42, "chain_d": 3.9504, "f": 0.100328, "mm": 3.9961, "mid": 4.0198, "sec": 30.00}
+DONE

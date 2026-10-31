@@ -1,0 +1,46 @@
+[
+ {
+  "tag": "L4_k0.050_fromMildRough",
+  "L": 4,
+  "k": 0.05,
+  "ntherm": 300,
+  "nmeas": 3200,
+  "seed": 5000,
+  "eps0": 1.7,
+  "nscale": 10,
+  "load": "/home/claude/sa74/regge/runs/pilot_L4_k0.08_cont.cfg"
+ },
+ {
+  "tag": "L4_k0.060_fromMildRough",
+  "L": 4,
+  "k": 0.06,
+  "ntherm": 300,
+  "nmeas": 3200,
+  "seed": 5001,
+  "eps0": 1.7,
+  "nscale": 10,
+  "load": "/home/claude/sa74/regge/runs/pilot_L4_k0.08_cont.cfg"
+ },
+ {
+  "tag": "L4_k0.060_fromRough",
+  "L": 4,
+  "k": 0.06,
+  "ntherm": 300,
+  "nmeas": 3200,
+  "seed": 5002,
+  "eps0": 1.7,
+  "nscale": 10,
+  "load": "/home/claude/sa74/regge/runs/L4_k0.100.cfg"
+ },
+ {
+  "tag": "L4_k0.070_cont",
+  "L": 4,
+  "k": 0.07,
+  "ntherm": 200,
+  "nmeas": 3300,
+  "seed": 5003,
+  "eps0": 1.7,
+  "nscale": 10,
+  "load": "/home/claude/sa74/regge/runs/L4_k0.070.cfg"
+ }
+]
