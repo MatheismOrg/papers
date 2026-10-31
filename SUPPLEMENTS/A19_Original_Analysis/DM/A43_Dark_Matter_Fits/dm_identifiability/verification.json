@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "tables_checked": 10,
+  "files": [
+    "RAR_group_holdout.csv",
+    "RAR_host_M31.csv",
+    "RAR_host_MW.csv",
+    "RAR_population_holdout.csv",
+    "kernel_group_holdout.csv",
+    "kernel_host_M31.csv",
+    "kernel_host_MW.csv",
+    "kernel_population_holdout.csv",
+    "nearest_cross_population.csv",
+    "nearest_distinct_group.csv"
+  ],
+  "checks": [
+    "input and protocol hashes",
+    "input-only nearest neighbors from distinct groups",
+    "kernel and baseline predictions evaluated independently",
+    "equal population/group metric",
+    "unsplit outer validation groups",
+    "complete 26/18 host exclusions",
+    "bandwidth minimizes recorded inner score",
+    "analytic curl and finite differences"
+  ]
+}

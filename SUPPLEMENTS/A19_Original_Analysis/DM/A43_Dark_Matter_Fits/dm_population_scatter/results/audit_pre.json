@@ -1,0 +1,18 @@
+{
+  "derivative_errors": {
+    "NFW_response_mc_D": 2.141637978070321e-10,
+    "NFW_response_mc_Y": 2.5614077525659695e-10,
+    "RAR_nuisance_D": 3.78578279836006e-11,
+    "RAR_nuisance_Y": 9.267031586546182e-11,
+    "Blend_offset_D": 1.6164913851923757e-10,
+    "Blend_offset_Y": 1.6207457598227393e-10,
+    "NFW_M": 1.5779809403593248e-10,
+    "NFW_C": 1.6300905070210092e-10
+  },
+  "max_direct_covariance_score_difference": 2.220446049250313e-15,
+  "baseline_max_log_prediction_difference": 2.121520426417237e-15,
+  "galaxies": 149,
+  "rows": 2700,
+  "max_fractional_distance_error": 0.303921568627451,
+  "passed": true
+}

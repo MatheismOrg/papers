@@ -1,0 +1,78 @@
+A43 continuation, 29 October 2026 (Los Angeles). Frozen before new fits.
+
+QUESTION
+Can a finite NFW concentration-response correction improve point predictions?
+Does marginalizing a population distribution of halo states improve held-out
+predictive calibration, rather than merely widening arbitrary error bars?
+
+DATA
+Same 149 SPARC galaxies and 2700 radii, original three NumPy fivefold assignments,
+and four 37-galaxy photometric tails. Restore velocity errors, signed gas/star
+components, distance errors and inclination errors from archived SPARC originals.
+No new astronomical sample. This is exploratory reuse of inspected data.
+Frozen full-SPARC point predictors transfer to 44 dwarf half-mass estimators;
+no refit to dwarfs and no claim that this substitutes for a Jeans likelihood.
+No new cluster/CMB/Solar-System likelihood is computed.
+
+POINT REPAIR
+NFW retains the previous reference mass mapping and finite truncation at R200.
+Add one shared concentration offset K: log10(c)=0.905-0.101 log10(Mref*h/1e12)+K.
+K is bounded [-0.5,+0.5], the previous A/B/C bounds are unchanged. Four coefficients.
+Fit the original equal-galaxy squared log-acceleration error with three starts and
+retain the exact K=0 baseline fit. Compare all original folds/tails and dwarfs.
+This is a standard phenomenological concentration response, with no novelty claim.
+
+UNCERTAINTY MODEL
+First-order Gaussian marginalization, NOT full nonlinear hierarchical Bayes.
+For each galaxy, C=diag((2 eV/(ln(10)V))^2+s^2)+U U^T, in log10 acceleration.
+Columns of U propagate galaxy-shared distance and inclination uncertainties and
+one common stellar mass-to-light perturbation (0.1 dex). Distance changes r,Re by D,
+stellar/gas proxy masses by D^2, leaving nominal baryonic acceleration unchanged.
+Its residual derivative includes the change in observed acceleration (1/D).
+Inclination propagation uses the kinematic sin(i) correction only. Photometric
+inclination covariance and gas/distance systematics beyond these columns omitted.
+Stellar amplitude changes both the measured stellar field and stellar proxy mass.
+A common disk+bulge multiplier is an approximation to separate stellar priors.
+No predictor is adjusted using a held-out galaxy's inferred latent state.
+
+Dutton & Maccio 2014 supply sigma_logc=0.11 dex. Where allowed, excess halo mass
+(the positive second term of the existing Mref mapping) has fitted log scatter
+sigma_m in [0,0.6] dex, independent of concentration. This is an empirical
+conditional scatter, not the inverse of a published stellar-mass scatter.
+An independent row residual s in [0.005,0.5] dex is fitted in all likelihood models.
+
+Declared likelihood families:
+1 RAR_nuisance: mean a0 and row scatter s (2).
+2 RAR_offset: same plus a marginalized galaxy-wide log-acceleration offset
+  tau in [0,0.5] dex (3). Descriptive scatter, not variable universal a0.
+3 NFW_c: A/B/C, s; fixed published concentration scatter (4).
+4 NFW_mc: A/B/C, s, sigma_m; fixed concentration scatter (5).
+5 NFW_response_mc: A/B/C/K, s, sigma_m; fixed concentration scatter (6).
+6 Blend_offset: freeze the previous training-only five-coefficient force blend,
+  fit s and tau on training galaxies (7 total estimated global quantities).
+
+Fit the mean per-galaxy joint Gaussian negative log density divided by that
+curve's number of radii, preserving equal system weights. This is a weighted
+composite marginal log score, not a full posterior or independent-row likelihood.
+Use Woodbury covariance identities and direct-matrix audit. Three declared starts,
+L-BFGS-B maxiter1000 and bounded Powell polish only if selected attempts fail.
+Preserve all starts/failures. Compare mean log scores, unadjusted central-prediction
+RMS, median speed error, and equal-galaxy 68%/95% marginal coverage. Broader intervals
+are penalized by the determinant term. Do not rank likelihood fits solely against
+old MSE fits. Paired whole-galaxy bootstrap conditions on fitted predictions.
+
+AUDIT/SENSITIVITY
+Check analytic derivatives by finite differences, covariance via direct Cholesky,
+exact recovery of the archived zero-response NFW, and system exclusions. Quantify
+first-order accuracy with nonlinear Monte Carlo for mass/concentration scatter in
+all-data NFW_mc and NFW_response_mc; report mean shift and variance error. An
+approximation that fails is not promoted as a validated population likelihood.
+All fits use catalog error estimates conditional on the observed measurements;
+errors are not new physical predictor variables. No model is added based on test
+outcomes, and no claim of independent confirmation or a new gravity law is made.
+
+Primary sources:
+Dutton & Maccio 2014, https://arxiv.org/pdf/1402.7073 (0.11 dex concentration scatter).
+Li et al. 2020, https://arxiv.org/html/2001.10538v2 (0.1 dex stellar priors and
+catalog distance/inclination errors; their full MCMC is not reproduced here).
+Lelli et al. 2016, archived SPARC catalog and Rotmod_LTG.zip, credited in A43.

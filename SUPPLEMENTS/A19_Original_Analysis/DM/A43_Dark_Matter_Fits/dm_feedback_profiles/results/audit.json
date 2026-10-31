@@ -1,0 +1,15 @@
+{
+  "input.csv_sha256": "54fcd6ae207e78bd0f43a5f9627abea93d535f4f084b9f3372dc346a7f5a633e",
+  "galaxy_features.csv_sha256": "d537ad985160d5373aef23f6081377441a172567c85e27af7feb51ae9240ba64",
+  "maximum_recomputed_metric_difference": 1.0658141036401503e-14,
+  "stored_optimizer_attempts": 500,
+  "failed_attempts": 2,
+  "selected_failures": [],
+  "actual_profile_quadrature_cases": 596,
+  "actual_profile_max_mass_relative_error": 1.2989609388114332e-14,
+  "actual_profile_min_mass_increment": 7.568853017415633e-22,
+  "actual_profile_boundary_mass_error": 0.0,
+  "dwarf_rows": 44,
+  "baseline_max_log_prediction_difference": 4.61996671465887e-08,
+  "passed": true
+}

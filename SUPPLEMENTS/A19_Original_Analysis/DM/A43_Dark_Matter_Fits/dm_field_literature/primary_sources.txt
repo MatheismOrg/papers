@@ -1,0 +1,139 @@
+A43 field-law literature -- 28 October 2026
+All entries are primary papers; no literature-wide superiority claim.
+Each source summary below is below the retrieved 200-word source limit.
+Web refs are for parent retrieval; root must open sources itself before citing.
+
+[1] Milgrom, M. (2010), Quasi-linear formulation of MOND.
+MNRAS 403, 886. DOI 10.1111/j.1365-2966.2009.16184.x.
+https://arxiv.org/abs/0911.5464
+https://arxiv.org/html/0911.5464v2
+Web refs: turn132view0, turn133view2. Word limit: 200.
+The field equations are Laplacian Phi_N=4piG rho and
+Laplacian Phi=div[nu(|grad Phi_N|/a0) grad Phi_N]. They follow from an action
+and preserve the standard conservation laws. The easily fitted algebraic
+relation g=nu(g_N/a0)g_N is generally not a potential field; it is exact only
+under appropriate symmetry, or for circular trajectories in relevant modified-
+inertia models. This is the important distinction between a universal field law
+and a fitted radial curve.
+
+[2] Milgrom, M. (2023), Generalizations of Quasilinear MOND (QUMOND).
+Physical Review D 108, 084005. DOI 10.1103/PhysRevD.108.084005.
+https://arxiv.org/abs/2305.01589
+https://arxiv.org/html/2305.01589v2
+Web refs: turn132view3, turn134view0, turn134view1, turn139view1.
+Word limit: 200 total across this source.
+Equations 6-7 permit a scalar function of the Newtonian potential and its
+derivatives in a two-potential action. Variation retains two Poisson solves but
+changes the effective source, including higher-derivative terms. Equation 15 uses
+|grad psi|^2/||Hess psi||^2 as a local squared length. Section III.3 uses
+|grad psi|^2/||Hess psi|| as a potential-dimensioned proxy, explicitly distinct
+from the actual local potential. These are direct prior art for a derivative/jet
+route. Particular choices screen small systems, short dynamical times, or local
+Solar-System external-field effects. These possibilities are model constructions,
+not a demonstrated joint fit. Higher derivatives require care at discontinuities
+and degenerate fields. The source explicitly warns that one shared theory need
+not impose the same algebraic interpolation curve on every phenomenon.
+
+[3] Zhao, H., and Famaey, B. (2012), Unifying all mass discrepancies with one
+effective gravity law? Physical Review D 86, 067301.
+DOI 10.1103/PhysRevD.86.067301.
+https://arxiv.org/abs/1207.6232
+https://arxiv.org/html/1207.6232v1
+Web refs: turn132view1, turn134view2. Word limit: 200.
+EMOND promotes the MOND acceleration scale to A0(Phi) within an AQUAL-like
+action. Varying the action adds an explicit derivative-of-A0 source term; simply
+substituting A0(Phi) into the algebraic MOND relation is an approximation even
+in spherical symmetry. Boundary potential matters. The authors discuss bounded
+potential dependence to avoid enormous strong-field corrections. This establishes
+prior art for potential-dependent cross-scale response, but does not validate
+A43's local g_bar*r proxy or its coefficients.
+
+[4] Park, R. S., Hees, A., Famaey, B., Desmond, H., and Durakovic, A. (2026),
+Improved constraints on modified Newtonian gravity from Cassini radio tracking
+data. Physical Review D 114, 024066. DOI 10.1103/R7N8-KW38.
+https://arxiv.org/abs/2602.17884
+https://doi.org/10.1103/R7N8-KW38
+Web refs: turn135academia6, turn138view0; author-university record turn135search0.
+Word limit: 200.
+The updated DE440-based analysis gives Q2=(1.6 +/- 1.8)*10^-27 s^-2 at one
+standard deviation, 40% tighter than earlier estimates. Within tested classical
+MOND modified-gravity formulations and galaxy modeling assumptions, the authors
+find 3-15 sigma tension with rotation-curve fits. This is a constraint on the
+external-field quadrupole, which an isolated high-acceleration asymptote does
+not test. It is not a blanket exclusion of every possible modified-gravity law.
+
+[5] Skordis, C., and Zlosnik, T. (2021), A new relativistic theory for Modified
+Newtonian Dynamics. Physical Review Letters 127, 161302.
+DOI 10.1103/PhysRevLett.127.161302.
+https://arxiv.org/abs/2007.00082
+https://arxiv.org/html/2007.00082v3
+Web refs: turn132view2, turn133view3. Word limit: 200.
+AeST is a covariant action with additional scalar/vector degrees of freedom. The
+authors calculate linear CMB and matter power spectra and discuss stability.
+It is an example of the added dynamical content needed beyond a galaxy RAR,
+not proof that a fitted A43 curve has those cosmological properties. Extra
+gravitational fields carry dynamical state and can play a dark-sector role.
+
+[6] Rahvar, S., and Mashhoon, B. (2014), Observational Tests of Nonlocal Gravity:
+Galaxy Rotation Curves and Clusters of Galaxies. Physical Review D 89, 104011.
+DOI 10.1103/PhysRevD.89.104011.
+https://arxiv.org/abs/1401.4819
+https://journals.aps.org/prd/abstract/10.1103/PhysRevD.89.104011
+Web refs: turn136academia37, turn138view2. Word limit: 200.
+Their causal nonlocal framework has a Newtonian limit
+Laplacian Phi=4piG[rho+q*rho], with convolution kernel
+q(r)=(1+mu*r)exp(-mu*r)/(4pi lambda0 r^2).
+The point-source acceleration multiplier is
+1+alpha-alpha(1+mu*r/2)exp(-mu*r), alpha*mu*lambda0=2.
+For extended bodies the integral over the actual density is needed; replacing
+the entire source by enclosed mass violates the theory's shell behavior. The
+stationary spatial kernel is not a measured temporal memory history. Their two
+parameters are calibrated on galaxies and considered for clusters. The adopted
+kernel has finite total effective mass, so ultimate far-field acceleration
+returns to an enhanced inverse-square form.
+
+[7] Moffat, J. W., and Toth, V. T. (2009), Fundamental parameter-free solutions
+in Modified Gravity. Classical and Quantum Gravity 26, 085002.
+DOI 10.1088/0264-9381/26/8/085002.
+https://arxiv.org/abs/0712.1796
+https://arxiv.org/html/0712.1796v5
+Web refs: turn137view2, turn143view2. Word limit: 200.
+Equations 65 and 70-71 give a point-source force
+g=GM/r^2 [1+alpha-alpha(1+mu*r)exp(-mu*r)],
+mu=D/sqrt(M), alpha=(G_inf/G_N-1) M/(sqrt(M)+E)^2.
+D, E and G_inf are common constants. This is explicit prior art for shared
+mass-dependent response and transition scale. It is a spherical weak-field
+construction; direct enclosed-mass substitution is not an exact treatment of
+arbitrary extended geometry. Its ultimate far field is inverse-square, even if
+the finite observed range can look flatter.
+
+[8] Pizzuti, L., et al. (2025), Testing refracted gravity with the kinematics of
+galaxy clusters. Astronomy & Astrophysics 698, A83.
+DOI 10.1051/0004-6361/202452739.
+https://doi.org/10.1051/0004-6361/202452739
+Web ref: turn135search2. Word limit: 200.
+The two cluster fits were individually viable, but required inconsistent values
+of parameters proposed to be universal. The authors discuss geometry and
+equilibrium assumptions as possible systematics. This supplies a concrete warning
+that fitting separate objects with the same functional family does not establish
+one common parameter set.
+
+[9] Dantas, C. C., Ribeiro, A. L. B., and Capelato, H. V. (2026), The Radial
+Acceleration Relation in Galaxies and Clusters from a Two-Component,
+Virial-Motivated Framework. arXiv:2607.29314.
+https://arxiv.org/abs/2607.29314
+https://arxiv.org/pdf/2607.29314
+Web ref: turn136academia36. Full PDF downloaded directly and inspected this turn;
+the web open tool returns DisabledError, but search indexes the primary abstract.
+Word limit: 200.
+The CIA relation is g_obs approximately g_b+g_int, with g_int=G*a_M. The full
+paper explicitly makes this interaction scale system-dependent; cluster data are
+fit in separate radial-aperture subsets. Its section 4.1 says G is not universal.
+For very-low-acceleration lensing a separate VIM uses halo normalization, radius
+and interaction parameters. Thus broad coverage is not a demonstration of one
+fixed coefficient set predicting all populations. This clarifies the comparison
+in current A43, whose earlier version checked the abstract only.
+
+Source PDFs and extracted text are internal reading intermediates. Do not include
+them in the delivered numerical supplement. Reuse these concise notes or cite
+the original URLs instead.

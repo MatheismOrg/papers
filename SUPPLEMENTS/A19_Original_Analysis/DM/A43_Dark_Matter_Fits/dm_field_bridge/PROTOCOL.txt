@@ -1,0 +1,56 @@
+A43 physical-source bridge: positive convolution kernels, 29 October 2026
+Written before this run. Exploratory reuse of previously inspected data.
+
+Start from published nonlocal gravity (NLG) and constant-parameter weak-field
+MOG/STVG, not a new curve family. In the spherical isolated Newtonian regime:
+ Laplacian Phi=4 pi G(rho_b+q*rho_b).
+ NLG q(d)=alpha mu(1+mu d) exp(-mu d)/(8 pi d^2).
+ MOG q(d)=alpha mu^2 exp(-mu d)/(4 pi d).
+Both kernels are nonnegative and integrate to alpha. Frozen galaxy/cluster
+parameters are NLG alpha=10.94,mu=.059/kpc (Rahvar & Mashhoon2014), and
+MOG alpha=8.89,mu=.042/kpc (Moffat & Rahvar2014). These are not new measurements
+or every variant of either theory. The NLG kernel here is its zero-small-length
+astronomical limit; Solar work includes an additional short-distance parameter.
+
+Rigorous diagnostic independent of the radial shape: for an isolated finite
+positive baryon source, total effective extra mass is alpha M_b. In spherical
+symmetry, at a baryonic half-mass radius, g/g_b <=1+2alpha. This is a necessary
+condition, not a sufficient successful fit. The data use nominal stellar mass
+M/L_V=2 and Wolf half-light acceleration estimates; inspect M/L=1 and3 as the
+same predeclared sensitivity. The observed dispersions, equilibrium, stellar
+population masses and baryon-only mass accounting remain assumptions. No
+confidence-level exclusion of a complete theory is claimed.
+
+Conditional source model: spherical Plummer baryons, total M_star from the same
+input and a=r_half/sqrt(1/(2^(2/3)-1)), hence M(<r_half)=M_star/2 exactly. Full
+source convolution includes baryons outside r_half; never substitute an enclosed
+point mass in the modified-force law. Integrate the normalized kernel's radial
+probability density p(t) (t=mu d): .5(1+t)exp(-t) for NLG and t exp(-t) for MOG,
+against the Plummer mass inside a sphere of radius r_half displaced by d. At
+r_half, g/g_b=1+2alpha H(mu a), where H is that integral. Tabulate H on401log
+spaced z values1e-8..1e8, PCHIP log interpolation, and independently check its
+accuracy and kernel normalization. Plummer's radial decrease gives the tighter
+H<=1/2, so conditional g/g_b<=1+alpha. This tighter bound is not used as the
+general-profile diagnostic. Nuclear/stellar binary or host fields are unmodeled.
+
+Six fixed candidate entries: frozenNLG, shared-fittedNLG, frozenMOG,
+shared-fittedMOG, fixed exponentialRAR a0=1.2e-10, shared-fittedRAR.
+For each M/L=1,2,3, fit common log10alpha in[-3,5], log10mu/kpc^-1 in[-5,5],
+from four starts [1,-1.2],[2,0],[3,-2],[1,2]. RAR log10a0/1e-10 in[-3,3],
+starts[0],[1]. No extra model or bound tuning after scores. Least squares of
+log10 acceleration with equal dwarf weights. All44 dwarfs selected by earlier
+A43 curation are retained; use exact44 broad-table rows and corrected full
+MW={Milky_Way,G/L}=26, M31={M31,A/L}=18 exclusions. Test five group folds at
+seeds20261027,7331,48105 and both complete host exclusions. Frozen entries have
+no new fitted coefficients and get corresponding descriptive row tables.
+Log all optimizer starts/failures; select minimum cost; max2000evaluations.
+
+Report all-data descriptions, everyfold'spredictions, completehosttransfer,
+medianaccelerationerrors, RMSdex and mass-budget requiredalpha counts at all
+three stellar M/L values. Check predicted inferredmass/nonnegativity and
+pointsourceforcesmall/large-distance limits. No disk/cluster likelihood is
+fitted in this scoped test: complete baryon geometry and host contributions are
+not available uniformly, and a new Plummer assumption for satellites does not
+supply them. The purpose is a concrete constraint on taking published shared
+kernel parameters across scales. No arbitrary hot-gas zeros or population flags
+enter prediction. No temporal memory kernel is measured by a stationary fit.

@@ -1,0 +1,21 @@
+Published interpolation-function benchmarks
+
+Harry Desmond, Aurelien Hees & Benoit Famaey (2024), On the tension between the
+Radial Acceleration Relation and Solar System quadrupole in modified gravity MOND.
+MNRAS 530(2), 1781-1795; DOI 10.1093/mnras/stae955.
+https://arxiv.org/abs/2401.04796
+https://academic.oup.com/mnras/article/530/2/1781/7641422
+Their eqs.4-7 define simple, standard, RAR and generalized nu_n benchmarks.
+Our formulas are the same algebraic interpolation family, without their full
+SPARC nuisance treatment, flattened-field corrections, EFE, quadrupole or binary
+likelihoods. Their reported tension cannot be imported as our likelihood result.
+Search service retrieved primary journal formula text on 28 October 2026; journal
+full open redirected unsuccessfully, author/institutional abstract/full-PDF
+catalog and arXiv metadata verified bibliographic information.
+
+Benoit Famaey & Stacy McGaugh (2012), Modified Newtonian Dynamics (MOND):
+Observational Phenomenology and Relativistic Extensions. Living Reviews in
+Relativity 15, 10. https://arxiv.org/abs/1112.3960
+The review organizes the standard families and asymptotic requirements. Mentioned
+for provenance, not a claim that this limited algebraic implementation evaluates
+all successful formulations of MOND.

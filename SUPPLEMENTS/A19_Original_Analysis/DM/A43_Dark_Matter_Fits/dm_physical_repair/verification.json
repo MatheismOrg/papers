@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "prediction_files": [
+    {
+      "file": "bounded_U_cv_20261027.csv",
+      "independent_B_dex": 0.24646128782605495
+    },
+    {
+      "file": "bounded_U_cv_48105.csv",
+      "independent_B_dex": 0.24310170250993576
+    },
+    {
+      "file": "bounded_U_cv_7331.csv",
+      "independent_B_dex": 0.24291769219027665
+    },
+    {
+      "file": "bounded_U_population_holdout.csv",
+      "independent_B_dex": 0.33994544377189007
+    },
+    {
+      "file": "half_power_cv_20261027.csv",
+      "independent_B_dex": 0.26090624761208936
+    },
+    {
+      "file": "half_power_cv_48105.csv",
+      "independent_B_dex": 0.25803649506420034
+    },
+    {
+      "file": "half_power_cv_7331.csv",
+      "independent_B_dex": 0.2593658566231437
+    },
+    {
+      "file": "half_power_population_holdout.csv",
+      "independent_B_dex": 0.2639607582535988
+    },
+    {
+      "file": "softened_power_cv_20261027.csv",
+      "independent_B_dex": 0.2515523404487866
+    },
+    {
+      "file": "softened_power_cv_48105.csv",
+      "independent_B_dex": 0.24763906928231358
+    },
+    {
+      "file": "softened_power_cv_7331.csv",
+      "independent_B_dex": 0.24810665542441981
+    },
+    {
+      "file": "softened_power_population_holdout.csv",
+      "independent_B_dex": 0.34978147377452273
+    }
+  ],
+  "training_formulas_independently_evaluated": [
+    "softened_power",
+    "bounded_U",
+    "half_power"
+  ],
+  "rows": 2910
+}

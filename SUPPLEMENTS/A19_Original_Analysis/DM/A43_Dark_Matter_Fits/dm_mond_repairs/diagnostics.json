@@ -1,0 +1,415 @@
+{
+  "status": "Illustrative isolated scalar force diagnostics; no external field or observation likelihood.",
+  "models": {
+    "RAR": {
+      "asymptotic_a_inf_m_s2": 5.055515855529776e-10,
+      "a_inf_over_canonical_1p2e10": 4.212929879608146,
+      "velocity_ratio_to_canonical_at_fixed_mass": 1.43266963975205,
+      "fixed_radius_monotonicity": {
+        "grid_points": 144981,
+        "slope_intervals": 144800,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.5000000000114397,
+        "x_range": [
+          -20,
+          20
+        ],
+        "u_range": [
+          -9,
+          9
+        ],
+        "minimum_location": {
+          "gbar_m_s2": 1.0592537251772854e-30,
+          "radius_kpc": 1e-09
+        }
+      },
+      "observed_input_monotonicity": {
+        "points": 2931,
+        "negative_slopes": 0,
+        "minimum_logarithmic_slope": 0.5008000462769502,
+        "difference_step_dex": 1e-05
+      },
+      "point_source_inferred_extra_mass": {
+        "masses_solar": [
+          1e-06,
+          0.0001,
+          0.01,
+          1.0,
+          100.0,
+          10000.0,
+          1000000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          100000000000000.0,
+          1e+16
+        ],
+        "radius_kpc_range": [
+          1e-09,
+          1000000000.0
+        ],
+        "radii_per_mass": 2001,
+        "finite_slope_intervals": 24000,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.9999999999988157,
+        "masses_with_negative_intervals": [],
+        "caveat": "Stable log extra mass used for every family; inferred density is a point-source diagnostic, not a full field equation."
+      },
+      "boundary_contacts_all": []
+    },
+    "simple": {
+      "asymptotic_a_inf_m_s2": 4.9713429059597e-10,
+      "a_inf_over_canonical_1p2e10": 4.142785754966416,
+      "velocity_ratio_to_canonical_at_fixed_mass": 1.4266686517036864,
+      "fixed_radius_monotonicity": {
+        "grid_points": 144981,
+        "slope_intervals": 144800,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.5000000000115818,
+        "x_range": [
+          -20,
+          20
+        ],
+        "u_range": [
+          -9,
+          9
+        ],
+        "minimum_location": {
+          "gbar_m_s2": 1.0592537251772854e-30,
+          "radius_kpc": 1e-09
+        }
+      },
+      "observed_input_monotonicity": {
+        "points": 2931,
+        "negative_slopes": 0,
+        "minimum_logarithmic_slope": 0.5008072206491576,
+        "difference_step_dex": 1e-05
+      },
+      "point_source_inferred_extra_mass": {
+        "masses_solar": [
+          1e-06,
+          0.0001,
+          0.01,
+          1.0,
+          100.0,
+          10000.0,
+          1000000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          100000000000000.0,
+          1e+16
+        ],
+        "radius_kpc_range": [
+          1e-09,
+          1000000000.0
+        ],
+        "radii_per_mass": 2001,
+        "finite_slope_intervals": 24000,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.9999999999992105,
+        "masses_with_negative_intervals": [],
+        "caveat": "Stable log extra mass used for every family; inferred density is a point-source diagnostic, not a full field equation."
+      },
+      "boundary_contacts_all": []
+    },
+    "standard": {
+      "asymptotic_a_inf_m_s2": 6.177991308078809e-10,
+      "a_inf_over_canonical_1p2e10": 5.148326090065674,
+      "velocity_ratio_to_canonical_at_fixed_mass": 1.5063174656045162,
+      "fixed_radius_monotonicity": {
+        "grid_points": 144981,
+        "slope_intervals": 144800,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.4999999999999645,
+        "x_range": [
+          -20,
+          20
+        ],
+        "u_range": [
+          -9,
+          9
+        ],
+        "minimum_location": {
+          "gbar_m_s2": 9.440608762859264e-25,
+          "radius_kpc": 1e-09
+        }
+      },
+      "observed_input_monotonicity": {
+        "points": 2931,
+        "negative_slopes": 0,
+        "minimum_logarithmic_slope": 0.5000020973255914,
+        "difference_step_dex": 1e-05
+      },
+      "point_source_inferred_extra_mass": {
+        "masses_solar": [
+          1e-06,
+          0.0001,
+          0.01,
+          1.0,
+          100.0,
+          10000.0,
+          1000000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          100000000000000.0,
+          1e+16
+        ],
+        "radius_kpc_range": [
+          1e-09,
+          1000000000.0
+        ],
+        "radii_per_mass": 2001,
+        "finite_slope_intervals": 24000,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.9999999999992105,
+        "masses_with_negative_intervals": [],
+        "caveat": "Stable log extra mass used for every family; inferred density is a point-source diagnostic, not a full field equation."
+      },
+      "boundary_contacts_all": []
+    },
+    "nu_n": {
+      "asymptotic_a_inf_m_s2": 4.1656213068318825e-10,
+      "a_inf_over_canonical_1p2e10": 3.4713510890265686,
+      "velocity_ratio_to_canonical_at_fixed_mass": 1.3649748045373176,
+      "fixed_radius_monotonicity": {
+        "grid_points": 144981,
+        "slope_intervals": 144800,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.5000000021321966,
+        "x_range": [
+          -20,
+          20
+        ],
+        "u_range": [
+          -9,
+          9
+        ],
+        "minimum_location": {
+          "gbar_m_s2": 1.0592537251772854e-30,
+          "radius_kpc": 1e-09
+        }
+      },
+      "observed_input_monotonicity": {
+        "points": 2931,
+        "negative_slopes": 0,
+        "minimum_logarithmic_slope": 0.5029928026090147,
+        "difference_step_dex": 1e-05
+      },
+      "point_source_inferred_extra_mass": {
+        "masses_solar": [
+          1e-06,
+          0.0001,
+          0.01,
+          1.0,
+          100.0,
+          10000.0,
+          1000000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          100000000000000.0,
+          1e+16
+        ],
+        "radius_kpc_range": [
+          1e-09,
+          1000000000.0
+        ],
+        "radii_per_mass": 2001,
+        "finite_slope_intervals": 24000,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.9959701083966921,
+        "masses_with_negative_intervals": [],
+        "caveat": "Stable log extra mass used for every family; inferred density is a point-source diagnostic, not a full field equation."
+      },
+      "boundary_contacts_all": []
+    },
+    "mixed_transient": {
+      "asymptotic_a_inf_m_s2": 8.809886676623764e-11,
+      "a_inf_over_canonical_1p2e10": 0.7341572230519804,
+      "velocity_ratio_to_canonical_at_fixed_mass": 0.9256509879527575,
+      "fixed_radius_monotonicity": {
+        "grid_points": 144981,
+        "slope_intervals": 144800,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.024999999999905854,
+        "x_range": [
+          -20,
+          20
+        ],
+        "u_range": [
+          -9,
+          9
+        ],
+        "minimum_location": {
+          "gbar_m_s2": 1.6788040181225658e-30,
+          "radius_kpc": 1.2589254117941688e-05
+        }
+      },
+      "observed_input_monotonicity": {
+        "points": 2931,
+        "negative_slopes": 0,
+        "minimum_logarithmic_slope": 0.025804619618874366,
+        "difference_step_dex": 1e-05
+      },
+      "point_source_inferred_extra_mass": {
+        "masses_solar": [
+          1e-06,
+          0.0001,
+          0.01,
+          1.0,
+          100.0,
+          10000.0,
+          1000000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          100000000000000.0,
+          1e+16
+        ],
+        "radius_kpc_range": [
+          1e-09,
+          1000000000.0
+        ],
+        "radii_per_mass": 2001,
+        "finite_slope_intervals": 24000,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.07648207950293613,
+        "masses_with_negative_intervals": [],
+        "caveat": "Stable log extra mass used for every family; inferred density is a point-source diagnostic, not a full field equation."
+      },
+      "boundary_contacts_all": [
+        3,
+        4,
+        5
+      ]
+    },
+    "mixed_potential_taper": {
+      "asymptotic_a_inf_m_s2": 7.889661093035222e-11,
+      "a_inf_over_canonical_1p2e10": 0.6574717577529351,
+      "velocity_ratio_to_canonical_at_fixed_mass": 0.9004700560866763,
+      "fixed_radius_monotonicity": {
+        "grid_points": 144981,
+        "slope_intervals": 144800,
+        "negative_intervals": 683,
+        "minimum_logarithmic_slope": -0.12679796265931562,
+        "x_range": [
+          -20,
+          20
+        ],
+        "u_range": [
+          -9,
+          9
+        ],
+        "minimum_location": {
+          "gbar_m_s2": 1.0592537251772897e-07,
+          "radius_kpc": 1000000000.0
+        }
+      },
+      "observed_input_monotonicity": {
+        "points": 2931,
+        "negative_slopes": 0,
+        "minimum_logarithmic_slope": 0.026105621797611885,
+        "difference_step_dex": 1e-05
+      },
+      "point_source_inferred_extra_mass": {
+        "masses_solar": [
+          1e-06,
+          0.0001,
+          0.01,
+          1.0,
+          100.0,
+          10000.0,
+          1000000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          100000000000000.0,
+          1e+16
+        ],
+        "radius_kpc_range": [
+          1e-09,
+          1000000000.0
+        ],
+        "radii_per_mass": 2001,
+        "finite_slope_intervals": 24000,
+        "negative_intervals": 0,
+        "minimum_logarithmic_slope": 0.5000109250594744,
+        "masses_with_negative_intervals": [],
+        "caveat": "Stable log extra mass used for every family; inferred density is a point-source diagnostic, not a full field equation."
+      },
+      "boundary_contacts_all": [
+        3,
+        5,
+        6
+      ]
+    },
+    "two_log_bumps": {
+      "asymptotic_a_inf_m_s2": 1.6857608068925258e-10,
+      "a_inf_over_canonical_1p2e10": 1.404800672410438,
+      "velocity_ratio_to_canonical_at_fixed_mass": 1.0886886032570124,
+      "fixed_radius_monotonicity": {
+        "grid_points": 144981,
+        "slope_intervals": 144800,
+        "negative_intervals": 2900,
+        "minimum_logarithmic_slope": -2.316097230749306,
+        "x_range": [
+          -20,
+          20
+        ],
+        "u_range": [
+          -9,
+          9
+        ],
+        "minimum_location": {
+          "gbar_m_s2": 1.0592537251772854e-23,
+          "radius_kpc": 1000000000.0
+        }
+      },
+      "observed_input_monotonicity": {
+        "points": 2931,
+        "negative_slopes": 37,
+        "minimum_logarithmic_slope": -2.2486016692413457,
+        "difference_step_dex": 1e-05
+      },
+      "point_source_inferred_extra_mass": {
+        "masses_solar": [
+          1e-06,
+          0.0001,
+          0.01,
+          1.0,
+          100.0,
+          10000.0,
+          1000000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          100000000000000.0,
+          1e+16
+        ],
+        "radius_kpc_range": [
+          1e-09,
+          1000000000.0
+        ],
+        "radii_per_mass": 2001,
+        "finite_slope_intervals": 24000,
+        "negative_intervals": 613,
+        "minimum_logarithmic_slope": -8.774003814803631,
+        "masses_with_negative_intervals": [
+          0.0001,
+          0.01,
+          1.0,
+          100.0,
+          10000.0,
+          1000000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0
+        ],
+        "caveat": "Stable log extra mass used for every family; inferred density is a point-source diagnostic, not a full field equation."
+      },
+      "boundary_contacts_all": []
+    }
+  }
+}

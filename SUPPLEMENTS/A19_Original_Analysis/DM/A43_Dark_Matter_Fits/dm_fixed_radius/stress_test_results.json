@@ -1,0 +1,3005 @@
+{
+  "status": "Exploratory stress check on previously inspected clusters, not external validation.",
+  "sampling": "Fixed physical radii 500, 750, 1000 kpc, chosen independently of each cluster overdensity radius. No radius extrapolation.",
+  "target": "Primary: archived forward hydrostatic mass profile M_FORW; NFW and Einasto profiles are sensitivity cases. All are model-derived.",
+  "baryons": "Gas mass profile plus 0.75 projected stellar mass; the 0.75 factor is not derived at these radii. Also test zero and full projected stellar mass. These are sensitivity cases, not confidence bounds.",
+  "validation": "Leave one whole cluster out for fitted models. Joint polynomial trains on all 149 galaxies and six clusters; only cluster prediction is evaluated. Every system has total weight one. Three radii per cluster are correlated and are not independent observations.",
+  "prior_transfer": "Previous R500 polynomial is frozen, but its training already included the same seven clusters at R500. Its physical-radius transfer is a within-cluster radial stress test, not held-out-cluster validation.",
+  "counts": {
+    "clusters": 7,
+    "radii_per_cluster": 3,
+    "cluster_rows": 21,
+    "galaxies": 149,
+    "galaxy_rows": 2700
+  },
+  "skipped": [],
+  "galaxy_RAR_a0_m_s2": 1.1603274962269242e-10,
+  "previous_R500_coefficients": [
+    0.2534992013492719,
+    0.7059508692471491,
+    -0.08231767363199732,
+    0.043451308314610755,
+    -0.018769858317053235,
+    0.039950267539170525
+  ],
+  "input_rows": [
+    {
+      "cluster": "A1795",
+      "radius_kpc": 500.0,
+      "mgas_msun": 22034453530549.035,
+      "mstar_projected_msun": 1995508399745.0967,
+      "gbar": 1.311935501448734e-11,
+      "gbar_no_stars": 1.2284933758963481e-11,
+      "gbar_full_projected_stars": 1.339749543299529e-11,
+      "gobs_forward": 1.1085339128759784e-10,
+      "gobs_nfw": 1.0856656950179654e-10,
+      "gobs_einasto": 1.0768309866886303e-10
+    },
+    {
+      "cluster": "A1795",
+      "radius_kpc": 750.0,
+      "mgas_msun": 38522135956111.11,
+      "mstar_projected_msun": 2594764533069.134,
+      "gbar": 1.00277155217043e-11,
+      "gbar_no_stars": 9.545493284838325e-12,
+      "gbar_full_projected_stars": 1.018845626732629e-11,
+      "gobs_forward": 7.656329292525436e-11,
+      "gobs_nfw": 7.585494451929538e-11,
+      "gobs_einasto": 7.69149389555536e-11
+    },
+    {
+      "cluster": "A1795",
+      "radius_kpc": 1000.0,
+      "mgas_msun": 55123013966886.734,
+      "mstar_projected_msun": 3777675471029.405,
+      "gbar": 8.078132546875382e-12,
+      "gbar_no_stars": 7.683224072686463e-12,
+      "gbar_full_projected_stars": 8.209768704938356e-12,
+      "gobs_forward": 5.2742473158589015e-11,
+      "gobs_nfw": 5.66671670760257e-11,
+      "gobs_einasto": 5.867198807723668e-11
+    },
+    {
+      "cluster": "A2029",
+      "radius_kpc": 500.0,
+      "mgas_msun": 31852905829915.02,
+      "mstar_projected_msun": 3120718365858.551,
+      "gbar": 1.9063971855364444e-11,
+      "gbar_no_stars": 1.775904438058725e-11,
+      "gbar_full_projected_stars": 1.9498947680290177e-11,
+      "gobs_forward": 1.611381530979646e-10,
+      "gobs_nfw": 1.5521164426025164e-10,
+      "gobs_einasto": 1.5107517445716838e-10
+    },
+    {
+      "cluster": "A2029",
+      "radius_kpc": 750.0,
+      "mgas_msun": 55923786196232.39,
+      "mstar_projected_msun": 4692055345815.117,
+      "gbar": 1.472948211755462e-11,
+      "gbar_no_stars": 1.385749030653597e-11,
+      "gbar_full_projected_stars": 1.5020146054560837e-11,
+      "gobs_forward": 1.2159729230390312e-10,
+      "gobs_nfw": 1.1273633123151119e-10,
+      "gobs_einasto": 1.083041783802565e-10
+    },
+    {
+      "cluster": "A2029",
+      "radius_kpc": 1000.0,
+      "mgas_msun": 80600329462090.33,
+      "mstar_projected_msun": 6114758267484.639,
+      "gbar": 1.187355585132395e-11,
+      "gbar_no_stars": 1.1234334754656157e-11,
+      "gbar_full_projected_stars": 1.2086629550213215e-11,
+      "gobs_forward": 8.655388924754812e-11,
+      "gobs_nfw": 8.642549764161492e-11,
+      "gobs_einasto": 8.268250748942881e-11
+    },
+    {
+      "cluster": "A2142",
+      "radius_kpc": 500.0,
+      "mgas_msun": 31675593560394.84,
+      "mstar_projected_msun": 2835620461183.197,
+      "gbar": 1.884590081791566e-11,
+      "gbar_no_stars": 1.7660186948852584e-11,
+      "gbar_full_projected_stars": 1.9241138774270015e-11,
+      "gobs_forward": 1.4480736659966118e-10,
+      "gobs_nfw": 1.381401110672243e-10,
+      "gobs_einasto": 1.6188241567610436e-10
+    },
+    {
+      "cluster": "A2142",
+      "radius_kpc": 750.0,
+      "mgas_msun": 60026868850630.76,
+      "mstar_projected_msun": 4259998144721.052,
+      "gbar": 1.5665899522654183e-11,
+      "gbar_no_stars": 1.487420308615231e-11,
+      "gbar_full_projected_stars": 1.5929798334821477e-11,
+      "gobs_forward": 1.0846033687257858e-10,
+      "gobs_nfw": 1.0611261682007712e-10,
+      "gobs_einasto": 1.0809448248240886e-10
+    },
+    {
+      "cluster": "A2142",
+      "radius_kpc": 1000.0,
+      "mgas_msun": 90623427150301.42,
+      "mstar_projected_msun": 5994983817545.315,
+      "gbar": 1.3258086730459076e-11,
+      "gbar_no_stars": 1.2631386546621169e-11,
+      "gbar_full_projected_stars": 1.3466986791738379e-11,
+      "gobs_forward": 8.848421414505646e-11,
+      "gobs_nfw": 8.471216303149696e-11,
+      "gobs_einasto": 7.854423499121467e-11
+    },
+    {
+      "cluster": "A2319",
+      "radius_kpc": 500.0,
+      "mgas_msun": 28291933782703.887,
+      "mstar_projected_msun": 2744706201462.5005,
+      "gbar": 1.692138324742902e-11,
+      "gbar_no_stars": 1.5773685149560325e-11,
+      "gbar_full_projected_stars": 1.730394928005192e-11,
+      "gobs_forward": 1.5274093454425004e-10,
+      "gobs_nfw": 1.4722343020365506e-10,
+      "gobs_einasto": 1.4857522817041932e-10
+    },
+    {
+      "cluster": "A2319",
+      "radius_kpc": 750.0,
+      "mgas_msun": 58236584425913.46,
+      "mstar_projected_msun": 3712063217010.0776,
+      "gbar": 1.5120450021677034e-11,
+      "gbar_no_stars": 1.4430584176402353e-11,
+      "gbar_full_projected_stars": 1.535040530343526e-11,
+      "gobs_forward": 1.1381248386223744e-10,
+      "gobs_nfw": 1.0530154852037116e-10,
+      "gobs_einasto": 1.0390382393805411e-10
+    },
+    {
+      "cluster": "A2319",
+      "radius_kpc": 1000.0,
+      "mgas_msun": 91624379940733.88,
+      "mstar_projected_msun": 5348640676982.853,
+      "gbar": 1.3330035720673343e-11,
+      "gbar_no_stars": 1.2770902585778483e-11,
+      "gbar_full_projected_stars": 1.3516413432304963e-11,
+      "gobs_forward": 8.968672590359975e-11,
+      "gobs_nfw": 7.986190567757952e-11,
+      "gobs_einasto": 7.79532892936698e-11
+    },
+    {
+      "cluster": "A644",
+      "radius_kpc": 500.0,
+      "mgas_msun": 23046358358717.445,
+      "mstar_projected_msun": 2247520850756.355,
+      "gbar": 1.3788904225875797e-11,
+      "gbar_no_stars": 1.2849104037440748e-11,
+      "gbar_full_projected_stars": 1.4102170955354146e-11,
+      "gobs_forward": 1.7901940045129013e-10,
+      "gobs_nfw": 1.3433136591375093e-10,
+      "gobs_einasto": 1.3102938985227054e-10
+    },
+    {
+      "cluster": "A644",
+      "radius_kpc": 750.0,
+      "mgas_msun": 40385676372729.21,
+      "mstar_projected_msun": 3599999706132.4785,
+      "gbar": 1.0676303952962064e-11,
+      "gbar_no_stars": 1.0007264474087009e-11,
+      "gbar_full_projected_stars": 1.0899317112587082e-11,
+      "gobs_forward": 1.1640774323120749e-10,
+      "gobs_nfw": 9.243461878484405e-11,
+      "gobs_einasto": 8.906107341181313e-11
+    },
+    {
+      "cluster": "A644",
+      "radius_kpc": 1000.0,
+      "mgas_msun": 59270284546755.625,
+      "mstar_projected_msun": 4283360707656.8774,
+      "gbar": 8.709055575023457e-12,
+      "gbar_no_stars": 8.261284067271202e-12,
+      "gbar_full_projected_stars": 8.858312744274208e-12,
+      "gobs_forward": 6.903173178182236e-11,
+      "gobs_nfw": 6.829498271273159e-11,
+      "gobs_einasto": 6.54881293771576e-11
+    },
+    {
+      "cluster": "A85",
+      "radius_kpc": 500.0,
+      "mgas_msun": 23581034132219.41,
+      "mstar_projected_msun": 1439290973738.8647,
+      "gbar": 1.3749042496849053e-11,
+      "gbar_no_stars": 1.314720339583362e-11,
+      "gbar_full_projected_stars": 1.3949655530520865e-11,
+      "gobs_forward": 1.1232140783484223e-10,
+      "gobs_nfw": 1.0865530194744852e-10,
+      "gobs_einasto": 1.0639054392599515e-10
+    },
+    {
+      "cluster": "A85",
+      "radius_kpc": 750.0,
+      "mgas_msun": 43693936777478.02,
+      "mstar_projected_msun": 1937624405072.6216,
+      "gbar": 1.1187122805156155e-11,
+      "gbar_no_stars": 1.0827026325143365e-11,
+      "gbar_full_projected_stars": 1.1307154965160418e-11,
+      "gobs_forward": 8.390537987915241e-11,
+      "gobs_nfw": 8.087937559335118e-11,
+      "gobs_einasto": 7.871592591160117e-11
+    },
+    {
+      "cluster": "A85",
+      "radius_kpc": 1000.0,
+      "mgas_msun": 64714077122546.336,
+      "mstar_projected_msun": 2370001592850.2197,
+      "gbar": 9.267811362136202e-12,
+      "gbar_no_stars": 9.020057493378717e-12,
+      "gbar_full_projected_stars": 9.350395985055363e-12,
+      "gobs_forward": 6.268609045725426e-11,
+      "gobs_nfw": 6.31433681203884e-11,
+      "gobs_einasto": 6.163354403164636e-11
+    },
+    {
+      "cluster": "ZW1215",
+      "radius_kpc": 500.0,
+      "mgas_msun": 19793316617221.812,
+      "mstar_projected_msun": 1810000193726.1604,
+      "gbar": 1.1792277149748513e-11,
+      "gbar_no_stars": 1.1035426096482923e-11,
+      "gbar_full_projected_stars": 1.2044560834170374e-11,
+      "gobs_forward": 1.1649988901102491e-10,
+      "gobs_nfw": 1.0784735447280652e-10,
+      "gobs_einasto": 1.1394444838519268e-10
+    },
+    {
+      "cluster": "ZW1215",
+      "radius_kpc": 750.0,
+      "mgas_msun": 38489033306034.2,
+      "mstar_projected_msun": 2880002435855.99,
+      "gbar": 1.0072522778554542e-11,
+      "gbar_no_stars": 9.537290699073624e-12,
+      "gbar_full_projected_stars": 1.0250933471714849e-11,
+      "gobs_forward": 9.375781772656978e-11,
+      "gobs_nfw": 8.760564523865146e-11,
+      "gobs_einasto": 8.073777471082824e-11
+    },
+    {
+      "cluster": "ZW1215",
+      "radius_kpc": 1000.0,
+      "mgas_msun": 57260274450055.125,
+      "mstar_projected_msun": 3544589513341.0425,
+      "gbar": 8.3516646231893e-12,
+      "gbar_no_stars": 7.981122355312034e-12,
+      "gbar_full_projected_stars": 8.47517871248172e-12,
+      "gobs_forward": 7.339000846472077e-11,
+      "gobs_nfw": 7.2872181721885e-11,
+      "gobs_einasto": 6.110061564159148e-11
+    }
+  ],
+  "cases": {
+    "forward__gbar": {
+      "models": {
+        "galaxy_RAR_transfer": {
+          "rmse_dex": 0.36567740365690915,
+          "median_absolute_acceleration_fraction": 0.5615554726164459,
+          "maximum_absolute_acceleration_fraction": 0.7358423601218042,
+          "median_observed_over_predicted": 2.280790242650682,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.48578602750470934,
+              "rmse_dex": 0.2956526330860333
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.5958590961274284,
+              "rmse_dex": 0.3860697456207086
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.5302731637334492,
+              "rmse_dex": 0.3426855565998053
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.5615554726164459,
+              "rmse_dex": 0.37385410340104097
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.6494716353735679,
+              "rmse_dex": 0.45429768913141266
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.5004927701615383,
+              "rmse_dex": 0.3063898956061371
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.5790208400733806,
+              "rmse_dex": 0.37698538044712965
+            }
+          }
+        },
+        "previous_R500_quadratic_transfer": {
+          "rmse_dex": 0.2379430588534809,
+          "median_absolute_acceleration_fraction": 0.39017670923351866,
+          "maximum_absolute_acceleration_fraction": 0.6550514747023053,
+          "median_observed_over_predicted": 1.639819297067367,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.28355563044918686,
+              "rmse_dex": 0.17536366096539363
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.43782827593368456,
+              "rmse_dex": 0.25324670659775456
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.34676355518854507,
+              "rmse_dex": 0.21008481831354747
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.39017670923351866,
+              "rmse_dex": 0.24325092315349225
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.5117556623219306,
+              "rmse_dex": 0.3282954165217529
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.30438796974575444,
+              "rmse_dex": 0.1787378225774794
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.4134701789352282,
+              "rmse_dex": 0.24166144619336913
+            }
+          }
+        },
+        "cluster_RAR_LOCO": {
+          "rmse_dex": 0.09678201140017643,
+          "median_absolute_acceleration_fraction": 0.15982169447892725,
+          "maximum_absolute_acceleration_fraction": 0.5648967333918062,
+          "median_observed_over_predicted": 1.0245609247968095,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.2080307182484391,
+              "rmse_dex": 0.12226093296902299
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.12223010943553425,
+              "rmse_dex": 0.07482133153824343
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.1275264910557179,
+              "rmse_dex": 0.05580867081635901
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.15787787269901687,
+              "rmse_dex": 0.07466544545697362
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.22656654023483513,
+              "rmse_dex": 0.15748335235344202
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.15982169447892725,
+              "rmse_dex": 0.09346636003817993
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.10478969985724218,
+              "rmse_dex": 0.05286618503536478
+            }
+          }
+        },
+        "joint_quadratic_LOCO": {
+          "rmse_dex": 0.1285880079195894,
+          "median_absolute_acceleration_fraction": 0.21020958925362554,
+          "maximum_absolute_acceleration_fraction": 0.5235247172299224,
+          "median_observed_over_predicted": 1.0792846116648172,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.22023670656426964,
+              "rmse_dex": 0.12437941948749563
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.15291837790106833,
+              "rmse_dex": 0.11538322647244882
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.22101208859944843,
+              "rmse_dex": 0.08905046454460006
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.19541820978897806,
+              "rmse_dex": 0.11748249805612024
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.29393432635197925,
+              "rmse_dex": 0.20796706457873929
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.21020958925362554,
+              "rmse_dex": 0.10219646170932754
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.13977754683559795,
+              "rmse_dex": 0.10739675135375819
+            }
+          }
+        },
+        "radius_power_law_LOCO": {
+          "rmse_dex": 0.09001644230170813,
+          "median_absolute_acceleration_fraction": 0.17958634791132178,
+          "maximum_absolute_acceleration_fraction": 0.5024515716371285,
+          "median_observed_over_predicted": 1.0440544057660033,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.32839767735807945,
+              "rmse_dex": 0.14115831288109154
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.15796876661440473,
+              "rmse_dex": 0.08808258679675653
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.12148577547476747,
+              "rmse_dex": 0.05913843340841678
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.16783382526196367,
+              "rmse_dex": 0.07472393540016573
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.17958634791132178,
+              "rmse_dex": 0.09211534881886217
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.2294339467999471,
+              "rmse_dex": 0.09262071663217102
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.04746101580472328,
+              "rmse_dex": 0.05377408609344765
+            }
+          }
+        }
+      },
+      "fold_parameters": [
+        {
+          "held_out_cluster": "A1795",
+          "cluster_RAR_a0_m_s2": 7.61434886849062e-10,
+          "joint_quadratic_coefficients": [
+            0.24603421935150152,
+            0.6959865296594545,
+            -0.10614084768362575,
+            0.0507092123028208,
+            0.012400453326907573,
+            0.07977771512189577
+          ],
+          "radius_power_coefficients": [
+            2.5015422415945032,
+            -0.8675270895773263
+          ]
+        },
+        {
+          "held_out_cluster": "A2029",
+          "cluster_RAR_a0_m_s2": 6.984692350321475e-10,
+          "joint_quadratic_coefficients": [
+            0.24582268965629436,
+            0.6961581577835696,
+            -0.10296606390690131,
+            0.050312320498618515,
+            0.01135988166138178,
+            0.0767590884445251
+          ],
+          "radius_power_coefficients": [
+            2.5541139969489324,
+            -0.8971664028306089
+          ]
+        },
+        {
+          "held_out_cluster": "A2142",
+          "cluster_RAR_a0_m_s2": 7.22199571829131e-10,
+          "joint_quadratic_coefficients": [
+            0.245072769846193,
+            0.6954092345929783,
+            -0.10314503712870704,
+            0.05082285675709689,
+            0.013625642366533642,
+            0.07832418677825245
+          ],
+          "radius_power_coefficients": [
+            2.641118676152972,
+            -0.9259277230896864
+          ]
+        },
+        {
+          "held_out_cluster": "A2319",
+          "cluster_RAR_a0_m_s2": 7.06267265542253e-10,
+          "joint_quadratic_coefficients": [
+            0.24527178464900004,
+            0.6956658295886106,
+            -0.10265998685189277,
+            0.050660871416151575,
+            0.012866778716972246,
+            0.07741786475202403
+          ],
+          "radius_power_coefficients": [
+            2.612363643715348,
+            -0.9168373963985493
+          ]
+        },
+        {
+          "held_out_cluster": "A644",
+          "cluster_RAR_a0_m_s2": 6.701121966067704e-10,
+          "joint_quadratic_coefficients": [
+            0.24487935995254162,
+            0.6956528517420797,
+            -0.09993526459961129,
+            0.050632392386583555,
+            0.012837855664005075,
+            0.07515321072956706
+          ],
+          "radius_power_coefficients": [
+            2.333794137990715,
+            -0.8186884292091477
+          ]
+        },
+        {
+          "held_out_cluster": "A85",
+          "cluster_RAR_a0_m_s2": 7.501488445890853e-10,
+          "joint_quadratic_coefficients": [
+            0.2453194868905728,
+            0.6954910729460753,
+            -0.1045080748593194,
+            0.05089743127981616,
+            0.013628238101650392,
+            0.0793395329503089
+          ],
+          "radius_power_coefficients": [
+            2.6033499543622285,
+            -0.9054911895816947
+          ]
+        },
+        {
+          "held_out_cluster": "ZW1215",
+          "cluster_RAR_a0_m_s2": 7.067696807902012e-10,
+          "joint_quadratic_coefficients": [
+            0.24411460940309324,
+            0.694938190405443,
+            -0.10015657267933875,
+            0.051053961259372845,
+            0.014912607551523112,
+            0.07684793911841434
+          ],
+          "radius_power_coefficients": [
+            2.6795035592217156,
+            -0.934713369303706
+          ]
+        }
+      ],
+      "full_cluster_RAR_a0_m_s2": 7.159144282666642e-10
+    },
+    "forward__gbar_no_stars": {
+      "models": {
+        "galaxy_RAR_transfer": {
+          "rmse_dex": 0.379437483611613,
+          "median_absolute_acceleration_fraction": 0.5733492301511529,
+          "maximum_absolute_acceleration_fraction": 0.7464374994948414,
+          "median_observed_over_predicted": 2.3438373270820017,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.5000076651929977,
+              "rmse_dex": 0.3092319178986053
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.6099753587586387,
+              "rmse_dex": 0.4019859218355704
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.5443141901617374,
+              "rmse_dex": 0.35684167760042584
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.5733492301511529,
+              "rmse_dex": 0.38769967246398596
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.662186228554797,
+              "rmse_dex": 0.46985076066431913
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.5097707662506108,
+              "rmse_dex": 0.315287654606506
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.5919021624313208,
+              "rmse_dex": 0.3908701907793293
+            }
+          }
+        },
+        "previous_R500_quadratic_transfer": {
+          "rmse_dex": 0.2511490221119992,
+          "median_absolute_acceleration_fraction": 0.40646675294912604,
+          "maximum_absolute_acceleration_fraction": 0.66887013611892,
+          "median_observed_over_predicted": 1.6848255846976778,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.30320455808039803,
+              "rmse_dex": 0.18747758144640753
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.4573300185216185,
+              "rmse_dex": 0.2687519551665161
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.36615324043658537,
+              "rmse_dex": 0.2238762248111734
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.40646675294912604,
+              "rmse_dex": 0.2568770787957961
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.5293260842010176,
+              "rmse_dex": 0.34315662061916763
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.31721133391722467,
+              "rmse_dex": 0.18728753241549745
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.43126743187742056,
+              "rmse_dex": 0.25537399727548
+            }
+          }
+        },
+        "cluster_RAR_LOCO": {
+          "rmse_dex": 0.09917919034121403,
+          "median_absolute_acceleration_fraction": 0.16990112754157793,
+          "maximum_absolute_acceleration_fraction": 0.5693725785200983,
+          "median_observed_over_predicted": 1.0207296793584921,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.21164802477198408,
+              "rmse_dex": 0.12334078643544653
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.12085216961758039,
+              "rmse_dex": 0.0773777804798412
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.1333178918044099,
+              "rmse_dex": 0.0574311668823193
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.1648667819827454,
+              "rmse_dex": 0.07731177059027095
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.23114025697232132,
+              "rmse_dex": 0.16024038712488756
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.17540037286195442,
+              "rmse_dex": 0.09846806272202349
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.11069287040259113,
+              "rmse_dex": 0.05483541030429828
+            }
+          }
+        },
+        "joint_quadratic_LOCO": {
+          "rmse_dex": 0.13313858989358024,
+          "median_absolute_acceleration_fraction": 0.2111123154114949,
+          "maximum_absolute_acceleration_fraction": 0.5320789724845648,
+          "median_observed_over_predicted": 1.0788580940090868,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.23255369385040758,
+              "rmse_dex": 0.12732269569272273
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.1611230075162946,
+              "rmse_dex": 0.12100200581119759
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.2246654546523843,
+              "rmse_dex": 0.09309320498456031
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.20371114472910978,
+              "rmse_dex": 0.12268757850330826
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.30131386868827104,
+              "rmse_dex": 0.2135637187596284
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.2111123154114949,
+              "rmse_dex": 0.10692098540058022
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.14247603490594585,
+              "rmse_dex": 0.1116623874023225
+            }
+          }
+        },
+        "radius_power_law_LOCO": {
+          "rmse_dex": 0.09001644230170813,
+          "median_absolute_acceleration_fraction": 0.17958634791132178,
+          "maximum_absolute_acceleration_fraction": 0.5024515716371285,
+          "median_observed_over_predicted": 1.0440544057660033,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.32839767735807945,
+              "rmse_dex": 0.14115831288109154
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.15796876661440473,
+              "rmse_dex": 0.08808258679675653
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.12148577547476747,
+              "rmse_dex": 0.05913843340841678
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.16783382526196367,
+              "rmse_dex": 0.07472393540016573
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.17958634791132178,
+              "rmse_dex": 0.09211534881886217
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.2294339467999471,
+              "rmse_dex": 0.09262071663217102
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.04746101580472328,
+              "rmse_dex": 0.05377408609344765
+            }
+          }
+        }
+      },
+      "fold_parameters": [
+        {
+          "held_out_cluster": "A1795",
+          "cluster_RAR_a0_m_s2": 8.095896212429821e-10,
+          "joint_quadratic_coefficients": [
+            0.24697989715247368,
+            0.6963176672146508,
+            -0.11028071358996121,
+            0.05063144580008224,
+            0.011650452183741179,
+            0.08253147017313942
+          ],
+          "radius_power_coefficients": [
+            2.5015422415945032,
+            -0.8675270895773263
+          ]
+        },
+        {
+          "held_out_cluster": "A2029",
+          "cluster_RAR_a0_m_s2": 7.41686902510614e-10,
+          "joint_quadratic_coefficients": [
+            0.24677453941822777,
+            0.6965118097672216,
+            -0.107023348165498,
+            0.05022129334220515,
+            0.01054391541395253,
+            0.07940914391233933
+          ],
+          "radius_power_coefficients": [
+            2.5541139969489324,
+            -0.8971664028306089
+          ]
+        },
+        {
+          "held_out_cluster": "A2142",
+          "cluster_RAR_a0_m_s2": 7.678465010145626e-10,
+          "joint_quadratic_coefficients": [
+            0.24605078363788763,
+            0.6957593532641808,
+            -0.1073190659928593,
+            0.05072391936581135,
+            0.012802080428186579,
+            0.08105771372193575
+          ],
+          "radius_power_coefficients": [
+            2.641118676152972,
+            -0.9259277230896864
+          ]
+        },
+        {
+          "held_out_cluster": "A2319",
+          "cluster_RAR_a0_m_s2": 7.512382281214073e-10,
+          "joint_quadratic_coefficients": [
+            0.2461917278182133,
+            0.6959693426646394,
+            -0.10676739203487638,
+            0.05059406662281856,
+            0.012185220500175255,
+            0.08018437505542579
+          ],
+          "radius_power_coefficients": [
+            2.612363643715348,
+            -0.9168373963985493
+          ]
+        },
+        {
+          "held_out_cluster": "A644",
+          "cluster_RAR_a0_m_s2": 7.117976024362323e-10,
+          "joint_quadratic_coefficients": [
+            0.24568568935513846,
+            0.6958679485870503,
+            -0.10379366157169054,
+            0.05059705663182456,
+            0.012376282552844476,
+            0.07786691237645209
+          ],
+          "radius_power_coefficients": [
+            2.333794137990715,
+            -0.8186884292091477
+          ]
+        },
+        {
+          "held_out_cluster": "A85",
+          "cluster_RAR_a0_m_s2": 8.006219865929609e-10,
+          "joint_quadratic_coefficients": [
+            0.24627861675980967,
+            0.6957942381919491,
+            -0.10884470943030827,
+            0.0508310997193718,
+            0.012947847626965013,
+            0.0822854621281178
+          ],
+          "radius_power_coefficients": [
+            2.6033499543622285,
+            -0.9054911895816947
+          ]
+        },
+        {
+          "held_out_cluster": "ZW1215",
+          "cluster_RAR_a0_m_s2": 7.516771145551845e-10,
+          "joint_quadratic_coefficients": [
+            0.2450366120928864,
+            0.6952229168632895,
+            -0.10427674939230305,
+            0.05097551061035955,
+            0.014245844856286967,
+            0.07963389323177927
+          ],
+          "radius_power_coefficients": [
+            2.6795035592217156,
+            -0.934713369303706
+          ]
+        }
+      ],
+      "full_cluster_RAR_a0_m_s2": 7.614288192154279e-10
+    },
+    "forward__gbar_full_projected_stars": {
+      "models": {
+        "galaxy_RAR_transfer": {
+          "rmse_dex": 0.3612566073076818,
+          "median_absolute_acceleration_fraction": 0.5576660715778865,
+          "maximum_absolute_acceleration_fraction": 0.7323679780810028,
+          "median_observed_over_predicted": 2.260735466454459,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.48110243632509,
+              "rmse_dex": 0.2912898797492625
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.5912191440759749,
+              "rmse_dex": 0.38096897876951863
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.5256476984341938,
+              "rmse_dex": 0.33812913769437114
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.5576660715778865,
+              "rmse_dex": 0.36940135386977174
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.6452993286985171,
+              "rmse_dex": 0.4493209712969715
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.49742449975181535,
+              "rmse_dex": 0.3034929696274315
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.5747840786911416,
+              "rmse_dex": 0.37252007405759535
+            }
+          }
+        },
+        "previous_R500_quadratic_transfer": {
+          "rmse_dex": 0.2337184041066121,
+          "median_absolute_acceleration_fraction": 0.3848056160823812,
+          "maximum_absolute_acceleration_fraction": 0.6505202186061301,
+          "median_observed_over_predicted": 1.6255024852988755,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.2770838091994947,
+              "rmse_dex": 0.17152428325867614
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.4314196426748199,
+              "rmse_dex": 0.2482905584887127
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.34037781000858247,
+              "rmse_dex": 0.2056588884086555
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.3848056160823812,
+              "rmse_dex": 0.2388797266924225
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.5059892290327662,
+              "rmse_dex": 0.323555789653115
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.30014709514931337,
+              "rmse_dex": 0.17596408215408696
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.40761567779527086,
+              "rmse_dex": 0.2372560985779727
+            }
+          }
+        },
+        "cluster_RAR_LOCO": {
+          "rmse_dex": 0.09604033616346133,
+          "median_absolute_acceleration_fraction": 0.1557077260421884,
+          "maximum_absolute_acceleration_fraction": 0.5635005560223603,
+          "median_observed_over_predicted": 1.0257451744091945,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.2069100695452839,
+              "rmse_dex": 0.12192797534140493
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.12267064956960727,
+              "rmse_dex": 0.07402867770404531
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.12569289311577192,
+              "rmse_dex": 0.05530641690498381
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.1557077260421884,
+              "rmse_dex": 0.07384424040696208
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.22513852996365358,
+              "rmse_dex": 0.15662697780173254
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.1549561067754548,
+              "rmse_dex": 0.09189840203426014
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.10294630599638066,
+              "rmse_dex": 0.052253696858374984
+            }
+          }
+        },
+        "joint_quadratic_LOCO": {
+          "rmse_dex": 0.12716231404386977,
+          "median_absolute_acceleration_fraction": 0.2098727576262569,
+          "maximum_absolute_acceleration_fraction": 0.5215645740694324,
+          "median_observed_over_predicted": 1.0794002150711817,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.21628692080229694,
+              "rmse_dex": 0.12347224483182674
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.15031671632309362,
+              "rmse_dex": 0.11362479032280476
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.21985740248377716,
+              "rmse_dex": 0.087783454241072
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.19280696164813338,
+              "rmse_dex": 0.11584480236950363
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.29158764270519577,
+              "rmse_dex": 0.20620438779257488
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.2098727576262569,
+              "rmse_dex": 0.10071868054517778
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.1388850999263238,
+              "rmse_dex": 0.10604402548486394
+            }
+          }
+        },
+        "radius_power_law_LOCO": {
+          "rmse_dex": 0.09001644230170813,
+          "median_absolute_acceleration_fraction": 0.17958634791132178,
+          "maximum_absolute_acceleration_fraction": 0.5024515716371285,
+          "median_observed_over_predicted": 1.0440544057660033,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.32839767735807945,
+              "rmse_dex": 0.14115831288109154
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.15796876661440473,
+              "rmse_dex": 0.08808258679675653
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.12148577547476747,
+              "rmse_dex": 0.05913843340841678
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.16783382526196367,
+              "rmse_dex": 0.07472393540016573
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.17958634791132178,
+              "rmse_dex": 0.09211534881886217
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.2294339467999471,
+              "rmse_dex": 0.09262071663217102
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.04746101580472328,
+              "rmse_dex": 0.05377408609344765
+            }
+          }
+        }
+      },
+      "fold_parameters": [
+        {
+          "held_out_cluster": "A1795",
+          "cluster_RAR_a0_m_s2": 7.465179822733103e-10,
+          "joint_quadratic_coefficients": [
+            0.245748919810236,
+            0.695898478819188,
+            -0.10483519987471715,
+            0.05072707395844642,
+            0.012595021940399286,
+            0.07888380479584095
+          ],
+          "radius_power_coefficients": [
+            2.5015422415945032,
+            -0.8675270895773263
+          ]
+        },
+        {
+          "held_out_cluster": "A2029",
+          "cluster_RAR_a0_m_s2": 6.850536473932313e-10,
+          "joint_quadratic_coefficients": [
+            0.24553399180023605,
+            0.696062288901369,
+            -0.10168356131512432,
+            0.05033508585496458,
+            0.01157782771551148,
+            0.07589727246722183
+          ],
+          "radius_power_coefficients": [
+            2.5541139969489324,
+            -0.8971664028306089
+          ]
+        },
+        {
+          "held_out_cluster": "A2142",
+          "cluster_RAR_a0_m_s2": 7.080595056812243e-10,
+          "joint_quadratic_coefficients": [
+            0.24477687693781083,
+            0.6953153726558986,
+            -0.10182733936876287,
+            0.05084768087373346,
+            0.01384358354528393,
+            0.07743583614146818
+          ],
+          "radius_power_coefficients": [
+            2.641118676152972,
+            -0.9259277230896864
+          ]
+        },
+        {
+          "held_out_cluster": "A2319",
+          "cluster_RAR_a0_m_s2": 6.923341093806304e-10,
+          "joint_quadratic_coefficients": [
+            0.2449936367092916,
+            0.695585822335194,
+            -0.10136283307996703,
+            0.05067568581685538,
+            0.013041722727051987,
+            0.07651981402485265
+          ],
+          "radius_power_coefficients": [
+            2.612363643715348,
+            -0.9168373963985493
+          ]
+        },
+        {
+          "held_out_cluster": "A644",
+          "cluster_RAR_a0_m_s2": 6.571780352146299e-10,
+          "joint_quadratic_coefficients": [
+            0.24463695636835175,
+            0.6955997883328856,
+            -0.0987172648464229,
+            0.050637005434997044,
+            0.012944648872912445,
+            0.07427296051055271
+          ],
+          "radius_power_coefficients": [
+            2.333794137990715,
+            -0.8186884292091477
+          ]
+        },
+        {
+          "held_out_cluster": "A85",
+          "cluster_RAR_a0_m_s2": 7.345681528582764e-10,
+          "joint_quadratic_coefficients": [
+            0.2450285486744951,
+            0.6954109116283618,
+            -0.10313809514535688,
+            0.05091230635620901,
+            0.01380360729886716,
+            0.07838504573959118
+          ],
+          "radius_power_coefficients": [
+            2.6033499543622285,
+            -0.9054911895816947
+          ]
+        },
+        {
+          "held_out_cluster": "ZW1215",
+          "cluster_RAR_a0_m_s2": 6.928571739458346e-10,
+          "joint_quadratic_coefficients": [
+            0.24383686725661732,
+            0.6948647722009759,
+            -0.09885740407098459,
+            0.05107198127759328,
+            0.015080842447903864,
+            0.07594403371005436
+          ],
+          "radius_power_coefficients": [
+            2.6795035592217156,
+            -0.934713369303706
+          ]
+        }
+      ],
+      "full_cluster_RAR_a0_m_s2": 7.018158856028485e-10
+    },
+    "nfw__gbar": {
+      "models": {
+        "galaxy_RAR_transfer": {
+          "rmse_dex": 0.337587075195548,
+          "median_absolute_acceleration_fraction": 0.5261184531614598,
+          "maximum_absolute_acceleration_fraction": 0.6479650006240157,
+          "median_observed_over_predicted": 2.110231990824318,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.48098419619302446,
+              "rmse_dex": 0.29736395224360146
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.5640940317701169,
+              "rmse_dex": 0.3686056422756822
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.5198805530736733,
+              "rmse_dex": 0.3264066715020046
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.5261184531614598,
+              "rmse_dex": 0.34427606900044355
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.5585613225747492,
+              "rmse_dex": 0.3682237742321239
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.48180430963385656,
+              "rmse_dex": 0.29610072367579676
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.5494572611666547,
+              "rmse_dex": 0.35373447726181917
+            }
+          }
+        },
+        "previous_R500_quadratic_transfer": {
+          "rmse_dex": 0.20788098809106498,
+          "median_absolute_acceleration_fraction": 0.3408881026497933,
+          "maximum_absolute_acceleration_fraction": 0.5402973999013831,
+          "median_observed_over_predicted": 1.5171930654267476,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.27686533187543316,
+              "rmse_dex": 0.1714698333400836
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.3936421496997069,
+              "rmse_dex": 0.23541612035545617
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.33231083178517273,
+              "rmse_dex": 0.19444029850055758
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.3408881026497933,
+              "rmse_dex": 0.21890118632138875
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.3851284049019237,
+              "rmse_dex": 0.23820183529094527
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.27836248464078195,
+              "rmse_dex": 0.16745879397971464
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.37228068003172265,
+              "rmse_dex": 0.21719015154495225
+            }
+          }
+        },
+        "cluster_RAR_LOCO": {
+          "rmse_dex": 0.07350377337101875,
+          "median_absolute_acceleration_fraction": 0.13612384930867594,
+          "maximum_absolute_acceleration_fraction": 0.3611599132345906,
+          "median_observed_over_predicted": 0.9976286560487951,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.13996407968621138,
+              "rmse_dex": 0.08663189144520062
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.08740452898232409,
+              "rmse_dex": 0.07342350111440471
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.13612384930867594,
+              "rmse_dex": 0.053330552216245324
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.23526562767014547,
+              "rmse_dex": 0.08638759870129961
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.14244071792221158,
+              "rmse_dex": 0.08341724987293048
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.13186851474575545,
+              "rmse_dex": 0.07640854088442832
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.05132876256973562,
+              "rmse_dex": 0.042659935087384394
+            }
+          }
+        },
+        "joint_quadratic_LOCO": {
+          "rmse_dex": 0.1067956238003619,
+          "median_absolute_acceleration_fraction": 0.20325322640798427,
+          "maximum_absolute_acceleration_fraction": 0.38085459790646836,
+          "median_observed_over_predicted": 1.045383822656745,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.24267482201395507,
+              "rmse_dex": 0.10025152129341444
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.13317155541296888,
+              "rmse_dex": 0.11212474774065972
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.20325322640798427,
+              "rmse_dex": 0.08706576406576208
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.27647397194845436,
+              "rmse_dex": 0.12424705821097284
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.13770842042606446,
+              "rmse_dex": 0.12924829522550968
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.22010096595449735,
+              "rmse_dex": 0.09112046224057936
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.1224286371263612,
+              "rmse_dex": 0.0958591208948594
+            }
+          }
+        },
+        "radius_power_law_LOCO": {
+          "rmse_dex": 0.0726471734018481,
+          "median_absolute_acceleration_fraction": 0.1604754518638143,
+          "maximum_absolute_acceleration_fraction": 0.34203565419564863,
+          "median_observed_over_predicted": 1.0009951765227503,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.25811837291479645,
+              "rmse_dex": 0.1051280376637461
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.20223844641876854,
+              "rmse_dex": 0.09529919180903429
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.1495179901910877,
+              "rmse_dex": 0.0638881176021532
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.1418341652715226,
+              "rmse_dex": 0.06226180860392546
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.05573301146688725,
+              "rmse_dex": 0.02396029529297232
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.18282698964667832,
+              "rmse_dex": 0.07451499646515782
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.06348696236442741,
+              "rmse_dex": 0.052198060599555465
+            }
+          }
+        }
+      },
+      "fold_parameters": [
+        {
+          "held_out_cluster": "A1795",
+          "cluster_RAR_a0_m_s2": 6.600355831571778e-10,
+          "joint_quadratic_coefficients": [
+            0.2461834617348357,
+            0.6967386940232138,
+            -0.10138746555289752,
+            0.05002708837929985,
+            0.009802974773390528,
+            0.07432754843962552
+          ],
+          "radius_power_coefficients": [
+            2.2488922827065254,
+            -0.7892655756404704
+          ]
+        },
+        {
+          "held_out_cluster": "A2029",
+          "cluster_RAR_a0_m_s2": 6.169594158209278e-10,
+          "joint_quadratic_coefficients": [
+            0.24650468155155755,
+            0.6972203233539526,
+            -0.09976313944470784,
+            0.04952293111050056,
+            0.008012340064986287,
+            0.07200239941916922
+          ],
+          "radius_power_coefficients": [
+            2.2650358994010866,
+            -0.80483980689788
+          ]
+        },
+        {
+          "held_out_cluster": "A2142",
+          "cluster_RAR_a0_m_s2": 6.378908968974192e-10,
+          "joint_quadratic_coefficients": [
+            0.24584887295246077,
+            0.696534389085858,
+            -0.10009722320496117,
+            0.04999919927879845,
+            0.010102811838308788,
+            0.07356252447505142
+          ],
+          "radius_power_coefficients": [
+            2.336068289704989,
+            -0.8280297063117507
+          ]
+        },
+        {
+          "held_out_cluster": "A2319",
+          "cluster_RAR_a0_m_s2": 6.325361212390251e-10,
+          "joint_quadratic_coefficients": [
+            0.24593976370080206,
+            0.696592722131373,
+            -0.10008292837210556,
+            0.04999165884527858,
+            0.009970254195095394,
+            0.07335379245891015
+          ],
+          "radius_power_coefficients": [
+            2.2518881026626767,
+            -0.7985506791417101
+          ]
+        },
+        {
+          "held_out_cluster": "A644",
+          "cluster_RAR_a0_m_s2": 6.216969792452442e-10,
+          "joint_quadratic_coefficients": [
+            0.2455340281499711,
+            0.696508668461735,
+            -0.09829319509717013,
+            0.05001603019241056,
+            0.010186659921322526,
+            0.07216429804152322
+          ],
+          "radius_power_coefficients": [
+            2.216414201458213,
+            -0.782943849029211
+          ]
+        },
+        {
+          "held_out_cluster": "A85",
+          "cluster_RAR_a0_m_s2": 6.585027527939497e-10,
+          "joint_quadratic_coefficients": [
+            0.24586286156382134,
+            0.6964759219403354,
+            -0.10087850425003854,
+            0.050135772525808676,
+            0.010468964047626936,
+            0.07437579144354271
+          ],
+          "radius_power_coefficients": [
+            2.31855562153502,
+            -0.8151022173552614
+          ]
+        },
+        {
+          "held_out_cluster": "ZW1215",
+          "cluster_RAR_a0_m_s2": 6.268761520826797e-10,
+          "joint_quadratic_coefficients": [
+            0.24471733901868714,
+            0.6959184298903531,
+            -0.09699376402328382,
+            0.0503097055403683,
+            0.011794037974906095,
+            0.07228454488280152
+          ],
+          "radius_power_coefficients": [
+            2.41689113952485,
+            -0.8513303378659202
+          ]
+        }
+      ],
+      "full_cluster_RAR_a0_m_s2": 6.361571950641007e-10
+    },
+    "nfw__gbar_no_stars": {
+      "models": {
+        "galaxy_RAR_transfer": {
+          "rmse_dex": 0.35140364143431396,
+          "median_absolute_acceleration_fraction": 0.5388654341693822,
+          "maximum_absolute_acceleration_fraction": 0.6620848265139483,
+          "median_observed_over_predicted": 2.168564393343084,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.49533863833394887,
+              "rmse_dex": 0.31106465338421047
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.5793198182992263,
+              "rmse_dex": 0.3845395338019362
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.5342322343542426,
+              "rmse_dex": 0.34055633642358885
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.5388654341693822,
+              "rmse_dex": 0.35812088656595276
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.5745734738421753,
+              "rmse_dex": 0.3838910896343735
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.49142943075601964,
+              "rmse_dex": 0.3050020391284476
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.5632431840991656,
+              "rmse_dex": 0.36760299591434736
+            }
+          }
+        },
+        "previous_R500_quadratic_transfer": {
+          "rmse_dex": 0.22123159449938135,
+          "median_absolute_acceleration_fraction": 0.358494779508292,
+          "maximum_absolute_acceleration_fraction": 0.5587131173700055,
+          "median_observed_over_predicted": 1.5588337679208737,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.296697745061272,
+              "rmse_dex": 0.18416258803166377
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.41467670943742563,
+              "rmse_dex": 0.25094843403127143
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.3521295098733923,
+              "rmse_dex": 0.2081575030064115
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.358494779508292,
+              "rmse_dex": 0.2322050003529304
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.4072557548650969,
+              "rmse_dex": 0.2532587350734026
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.2916656195159276,
+              "rmse_dex": 0.17604411860634445
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.3913277584801732,
+              "rmse_dex": 0.23093879411279078
+            }
+          }
+        },
+        "cluster_RAR_LOCO": {
+          "rmse_dex": 0.0760481809146647,
+          "median_absolute_acceleration_fraction": 0.14326194956426908,
+          "maximum_absolute_acceleration_fraction": 0.36513205965629036,
+          "median_observed_over_predicted": 0.993927829857164,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.1434188060694075,
+              "rmse_dex": 0.08796081206343287
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.09169925268600698,
+              "rmse_dex": 0.07621437794729438
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.1419428661411798,
+              "rmse_dex": 0.055036511476577316
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.24270895420505023,
+              "rmse_dex": 0.08913674778375238
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.14326194956426908,
+              "rmse_dex": 0.0859354748455337
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.14713492970377007,
+              "rmse_dex": 0.08121053509226112
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.05699410142170658,
+              "rmse_dex": 0.04453213031487469
+            }
+          }
+        },
+        "joint_quadratic_LOCO": {
+          "rmse_dex": 0.11142487176470035,
+          "median_absolute_acceleration_fraction": 0.2069963477097223,
+          "maximum_absolute_acceleration_fraction": 0.39292065048968916,
+          "median_observed_over_predicted": 1.0447827584124916,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.25452676508703964,
+              "rmse_dex": 0.10374886176602473
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.14134371442461113,
+              "rmse_dex": 0.11781104712754965
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.2069963477097223,
+              "rmse_dex": 0.09115496553425388
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.2854487206887788,
+              "rmse_dex": 0.1293621697630008
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.1466492171065592,
+              "rmse_dex": 0.13466581644022385
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.22095003641714228,
+              "rmse_dex": 0.09533931020177144
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.12519987105993968,
+              "rmse_dex": 0.09998490034410144
+            }
+          }
+        },
+        "radius_power_law_LOCO": {
+          "rmse_dex": 0.0726471734018481,
+          "median_absolute_acceleration_fraction": 0.1604754518638143,
+          "maximum_absolute_acceleration_fraction": 0.34203565419564863,
+          "median_observed_over_predicted": 1.0009951765227503,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.25811837291479645,
+              "rmse_dex": 0.1051280376637461
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.20223844641876854,
+              "rmse_dex": 0.09529919180903429
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.1495179901910877,
+              "rmse_dex": 0.0638881176021532
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.1418341652715226,
+              "rmse_dex": 0.06226180860392546
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.05573301146688725,
+              "rmse_dex": 0.02396029529297232
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.18282698964667832,
+              "rmse_dex": 0.07451499646515782
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.06348696236442741,
+              "rmse_dex": 0.052198060599555465
+            }
+          }
+        }
+      },
+      "fold_parameters": [
+        {
+          "held_out_cluster": "A1795",
+          "cluster_RAR_a0_m_s2": 7.021586750999121e-10,
+          "joint_quadratic_coefficients": [
+            0.2470191967707518,
+            0.6969870822067052,
+            -0.10533510838779366,
+            0.04999419392590345,
+            0.009285341079442344,
+            0.07707724179467577
+          ],
+          "radius_power_coefficients": [
+            2.2488922827065254,
+            -0.7892655756404704
+          ]
+        },
+        {
+          "held_out_cluster": "A2029",
+          "cluster_RAR_a0_m_s2": 6.554181758085923e-10,
+          "joint_quadratic_coefficients": [
+            0.24734432525749075,
+            0.6974958563334239,
+            -0.10362301055251645,
+            0.049480986276451845,
+            0.007427859306743624,
+            0.07464450318238242
+          ],
+          "radius_power_coefficients": [
+            2.2650358994010866,
+            -0.80483980689788
+          ]
+        },
+        {
+          "held_out_cluster": "A2142",
+          "cluster_RAR_a0_m_s2": 6.785045832129095e-10,
+          "joint_quadratic_coefficients": [
+            0.24671518631786357,
+            0.6968078980929489,
+            -0.10407299029392499,
+            0.04994942930853209,
+            0.009508241372232388,
+            0.07628596807719379
+          ],
+          "radius_power_coefficients": [
+            2.336068289704989,
+            -0.8280297063117507
+          ]
+        },
+        {
+          "held_out_cluster": "A2319",
+          "cluster_RAR_a0_m_s2": 6.730706571922622e-10,
+          "joint_quadratic_coefficients": [
+            0.24674357277561046,
+            0.6968135191084651,
+            -0.10398952376124486,
+            0.04997546546732879,
+            0.009531934801418831,
+            0.07611691347885291
+          ],
+          "radius_power_coefficients": [
+            2.2518881026626767,
+            -0.7985506791417101
+          ]
+        },
+        {
+          "held_out_cluster": "A644",
+          "cluster_RAR_a0_m_s2": 6.605497875041317e-10,
+          "joint_quadratic_coefficients": [
+            0.24629832522984432,
+            0.6967020299942778,
+            -0.10206644544152038,
+            0.05000084312144341,
+            0.009801052329873857,
+            0.07486034850790704
+          ],
+          "radius_power_coefficients": [
+            2.216414201458213,
+            -0.782943849029211
+          ]
+        },
+        {
+          "held_out_cluster": "A85",
+          "cluster_RAR_a0_m_s2": 7.031737455824135e-10,
+          "joint_quadratic_coefficients": [
+            0.24672698280223918,
+            0.6967141150458599,
+            -0.10504079169233631,
+            0.050110174443347276,
+            0.009981583628837257,
+            0.07730763620002204
+          ],
+          "radius_power_coefficients": [
+            2.31855562153502,
+            -0.8151022173552614
+          ]
+        },
+        {
+          "held_out_cluster": "ZW1215",
+          "cluster_RAR_a0_m_s2": 6.670086687315163e-10,
+          "joint_quadratic_coefficients": [
+            0.24553756230017718,
+            0.6961330450996972,
+            -0.10093105005035208,
+            0.05027536262993202,
+            0.011335170505395722,
+            0.0750590799471522
+          ],
+          "radius_power_coefficients": [
+            2.41689113952485,
+            -0.8513303378659202
+          ]
+        }
+      ],
+      "full_cluster_RAR_a0_m_s2": 6.768950180710845e-10
+    },
+    "nfw__gbar_full_projected_stars": {
+      "models": {
+        "galaxy_RAR_transfer": {
+          "rmse_dex": 0.3331465576183383,
+          "median_absolute_acceleration_fraction": 0.5219146935857003,
+          "maximum_absolute_acceleration_fraction": 0.643334795417271,
+          "median_observed_over_predicted": 2.091676917452508,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.4762568687168818,
+              "rmse_dex": 0.2929589322239703
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.5590893842025277,
+              "rmse_dex": 0.363498834478095
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.5151527502959857,
+              "rmse_dex": 0.32185245636407916
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.5219146935857003,
+              "rmse_dex": 0.33982545244599227
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.5533069188622002,
+              "rmse_dex": 0.3632073980467075
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.4786212435875241,
+              "rmse_dex": 0.29320245070923384
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.5449229700220051,
+              "rmse_dex": 0.34927414796750156
+            }
+          }
+        },
+        "previous_R500_quadratic_transfer": {
+          "rmse_dex": 0.20360759862588126,
+          "median_absolute_acceleration_fraction": 0.3350828940733196,
+          "maximum_absolute_acceleration_fraction": 0.5342587301974708,
+          "median_observed_over_predicted": 1.5039468695971085,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.2703330754847635,
+              "rmse_dex": 0.16742597919539728
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.38672980437913407,
+              "rmse_dex": 0.23045139298473935
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.3257838032926462,
+              "rmse_dex": 0.1900415358662601
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.3350828940733196,
+              "rmse_dex": 0.21464638211829967
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.3778664342841037,
+              "rmse_dex": 0.23339898328139805
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.27396294283641265,
+              "rmse_dex": 0.16467308811817138
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.36601504213516,
+              "rmse_dex": 0.2127719681518078
+            }
+          }
+        },
+        "cluster_RAR_LOCO": {
+          "rmse_dex": 0.07271612750463724,
+          "median_absolute_acceleration_fraction": 0.13427961487203988,
+          "maximum_absolute_acceleration_fraction": 0.3599209788835347,
+          "median_observed_over_predicted": 0.9987694965901933,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.1388943566446259,
+              "rmse_dex": 0.08622146180755462
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.08604439326801516,
+              "rmse_dex": 0.07255292999565141
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.13427961487203988,
+              "rmse_dex": 0.05279976535444497
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.23295745909708265,
+              "rmse_dex": 0.08553249550126765
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.14218383358552078,
+              "rmse_dex": 0.0826388064929008
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.12710065882644317,
+              "rmse_dex": 0.07491208860551253
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.0495587587436106,
+              "rmse_dex": 0.042080421834138536
+            }
+          }
+        },
+        "joint_quadratic_LOCO": {
+          "rmse_dex": 0.10534431609373386,
+          "median_absolute_acceleration_fraction": 0.20207114017595895,
+          "maximum_absolute_acceleration_fraction": 0.37700425478337973,
+          "median_observed_over_predicted": 1.0455545710083116,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.23887750654256024,
+              "rmse_dex": 0.09916148798722135
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.13058304069317983,
+              "rmse_dex": 0.1103425936775018
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.20207114017595895,
+              "rmse_dex": 0.08578180164959695
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.27365101923214774,
+              "rmse_dex": 0.1226391268104055
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.13486634730279456,
+              "rmse_dex": 0.1275457858593976
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.21978177200919768,
+              "rmse_dex": 0.0898135882283146
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.12151379644204674,
+              "rmse_dex": 0.09455265630045209
+            }
+          }
+        },
+        "radius_power_law_LOCO": {
+          "rmse_dex": 0.0726471734018481,
+          "median_absolute_acceleration_fraction": 0.1604754518638143,
+          "maximum_absolute_acceleration_fraction": 0.34203565419564863,
+          "median_observed_over_predicted": 1.0009951765227503,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.25811837291479645,
+              "rmse_dex": 0.1051280376637461
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.20223844641876854,
+              "rmse_dex": 0.09529919180903429
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.1495179901910877,
+              "rmse_dex": 0.0638881176021532
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.1418341652715226,
+              "rmse_dex": 0.06226180860392546
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.05573301146688725,
+              "rmse_dex": 0.02396029529297232
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.18282698964667832,
+              "rmse_dex": 0.07451499646515782
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.06348696236442741,
+              "rmse_dex": 0.052198060599555465
+            }
+          }
+        }
+      },
+      "fold_parameters": [
+        {
+          "held_out_cluster": "A1795",
+          "cluster_RAR_a0_m_s2": 6.469890707084377e-10,
+          "joint_quadratic_coefficients": [
+            0.24593293048689932,
+            0.6966761292839104,
+            -0.10014345102607755,
+            0.05003056552352348,
+            0.009924974098779496,
+            0.07343607796680666
+          ],
+          "radius_power_coefficients": [
+            2.2488922827065254,
+            -0.7892655756404704
+          ]
+        },
+        {
+          "held_out_cluster": "A2029",
+          "cluster_RAR_a0_m_s2": 6.050260073204014e-10,
+          "joint_quadratic_coefficients": [
+            0.24625144972402413,
+            0.6971484115104574,
+            -0.09854388870362435,
+            0.04952996194805029,
+            0.008158081340106546,
+            0.07114428244003525
+          ],
+          "radius_power_coefficients": [
+            2.2650358994010866,
+            -0.80483980689788
+          ]
+        },
+        {
+          "held_out_cluster": "A2142",
+          "cluster_RAR_a0_m_s2": 6.253102284097884e-10,
+          "joint_quadratic_coefficients": [
+            0.2455882649171272,
+            0.6964639897268832,
+            -0.09884303298855385,
+            0.05000827563158607,
+            0.010249391589199219,
+            0.07267857053291779
+          ],
+          "radius_power_coefficients": [
+            2.336068289704989,
+            -0.8280297063117507
+          ]
+        },
+        {
+          "held_out_cluster": "A2319",
+          "cluster_RAR_a0_m_s2": 6.199806519623408e-10,
+          "joint_quadratic_coefficients": [
+            0.24569827520972531,
+            0.696538048579436,
+            -0.09885006624797217,
+            0.04999026399588783,
+            0.010069429791689826,
+            0.0724580612428171
+          ],
+          "radius_power_coefficients": [
+            2.2518881026626767,
+            -0.7985506791417101
+          ]
+        },
+        {
+          "held_out_cluster": "A644",
+          "cluster_RAR_a0_m_s2": 6.096402840868857e-10,
+          "joint_quadratic_coefficients": [
+            0.24530494052608448,
+            0.6964622426043561,
+            -0.09710251934085865,
+            0.05001419990089722,
+            0.010269738355657598,
+            0.07129010274489028
+          ],
+          "radius_power_coefficients": [
+            2.216414201458213,
+            -0.782943849029211
+          ]
+        },
+        {
+          "held_out_cluster": "A85",
+          "cluster_RAR_a0_m_s2": 6.447150603253845e-10,
+          "joint_quadratic_coefficients": [
+            0.2456019362719605,
+            0.6964156486306816,
+            -0.0995643956216412,
+            0.050137601890491,
+            0.010584217131703808,
+            0.07342683575069715
+          ],
+          "radius_power_coefficients": [
+            2.31855562153502,
+            -0.8151022173552614
+          ]
+        },
+        {
+          "held_out_cluster": "ZW1215",
+          "cluster_RAR_a0_m_s2": 6.144431816768547e-10,
+          "joint_quadratic_coefficients": [
+            0.24447171869690865,
+            0.6958664751634571,
+            -0.09575311268540686,
+            0.050313611593310326,
+            0.011897540018609149,
+            0.07138533948479679
+          ],
+          "radius_power_coefficients": [
+            2.41689113952485,
+            -0.8513303378659202
+          ]
+        }
+      ],
+      "full_cluster_RAR_a0_m_s2": 6.235394156018285e-10
+    },
+    "einasto__gbar": {
+      "models": {
+        "galaxy_RAR_transfer": {
+          "rmse_dex": 0.33202889086432386,
+          "median_absolute_acceleration_fraction": 0.5197437514226909,
+          "maximum_absolute_acceleration_fraction": 0.649024381705871,
+          "median_observed_over_predicted": 2.0822217367548217,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.48813695314552497,
+              "rmse_dex": 0.3015061097753309
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.5462553674742137,
+              "rmse_dex": 0.35316301172912934
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.528683335822884,
+              "rmse_dex": 0.34952904186716655
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.5197437514226909,
+              "rmse_dex": 0.3418163389262632
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.5418400620884893,
+              "rmse_dex": 0.354127450517849
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.46756207988906706,
+              "rmse_dex": 0.28594328094272736
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.511132335707156,
+              "rmse_dex": 0.3315018426835845
+            }
+          }
+        },
+        "previous_R500_quadratic_transfer": {
+          "rmse_dex": 0.20546131931266265,
+          "median_absolute_acceleration_fraction": 0.3320216637979061,
+          "maximum_absolute_acceleration_fraction": 0.5418337989737442,
+          "median_observed_over_predicted": 1.4970545387529668,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.286831129616239,
+              "rmse_dex": 0.17293233244957884
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.36882805004739805,
+              "rmse_dex": 0.2212657848433076
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.3445526243837096,
+              "rmse_dex": 0.22573651952465584
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.3320216637979061,
+              "rmse_dex": 0.21824484167999167
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.3618376770318493,
+              "rmse_dex": 0.225737429687554
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.2585288050535527,
+              "rmse_dex": 0.15851512884515703
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.3188844224212539,
+              "rmse_dex": 0.20485145004454514
+            }
+          }
+        },
+        "cluster_RAR_LOCO": {
+          "rmse_dex": 0.08242449997060611,
+          "median_absolute_acceleration_fraction": 0.17290458566617395,
+          "maximum_absolute_acceleration_fraction": 0.32099079596572544,
+          "median_observed_over_predicted": 1.0037639751924599,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.09785220040187093,
+              "rmse_dex": 0.07136954904334049
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.09201199643032654,
+              "rmse_dex": 0.07073254614531212
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.22424137943162625,
+              "rmse_dex": 0.09754762376038992
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.24096105258696165,
+              "rmse_dex": 0.09281594541532734
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.17290458566617395,
+              "rmse_dex": 0.08339391894411695
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.14303548007946132,
+              "rmse_dex": 0.07876117290524154
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.20043243269748667,
+              "rmse_dex": 0.07856000925455471
+            }
+          }
+        },
+        "joint_quadratic_LOCO": {
+          "rmse_dex": 0.11515971290797114,
+          "median_absolute_acceleration_fraction": 0.21569748696873436,
+          "maximum_absolute_acceleration_fraction": 0.3771265680457331,
+          "median_observed_over_predicted": 1.0616842401988957,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.24735774325964033,
+              "rmse_dex": 0.09151669502011632
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.11192758374289946,
+              "rmse_dex": 0.10822532813069284
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.25993376583025607,
+              "rmse_dex": 0.13328242010917057
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.2778485339031529,
+              "rmse_dex": 0.13016873051152655
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.1499252163615008,
+              "rmse_dex": 0.12675910078317262
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.21569748696873436,
+              "rmse_dex": 0.0908058617737243
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.2101227182569001,
+              "rmse_dex": 0.11714355785085298
+            }
+          }
+        },
+        "radius_power_law_LOCO": {
+          "rmse_dex": 0.07377983102375452,
+          "median_absolute_acceleration_fraction": 0.15779500498393695,
+          "maximum_absolute_acceleration_fraction": 0.26816376697428534,
+          "median_observed_over_predicted": 0.9836333192042581,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.21400157313865908,
+              "rmse_dex": 0.08782311593821343
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.1864643197562973,
+              "rmse_dex": 0.08571365135894383
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.18901667073464934,
+              "rmse_dex": 0.09003461308634453
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.1411321213595682,
+              "rmse_dex": 0.06575305705507949
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.01663900609729474,
+              "rmse_dex": 0.017027260657564824
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.17396776277532622,
+              "rmse_dex": 0.07960745441109932
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.15779500498393695,
+              "rmse_dex": 0.0631470036491418
+            }
+          }
+        }
+      },
+      "fold_parameters": [
+        {
+          "held_out_cluster": "A1795",
+          "cluster_RAR_a0_m_s2": 6.274552131252772e-10,
+          "joint_quadratic_coefficients": [
+            0.2446532794265271,
+            0.6960418443705473,
+            -0.09654410024286673,
+            0.05021954150723674,
+            0.01143433460610798,
+            0.07194222912495805
+          ],
+          "radius_power_coefficients": [
+            2.608601660935881,
+            -0.9186505356871578
+          ]
+        },
+        {
+          "held_out_cluster": "A2029",
+          "cluster_RAR_a0_m_s2": 5.972942347063912e-10,
+          "joint_quadratic_coefficients": [
+            0.24521535685758392,
+            0.6965923521576665,
+            -0.09605704292664324,
+            0.04973612956975814,
+            0.009555300670455236,
+            0.07039953407131103
+          ],
+          "radius_power_coefficients": [
+            2.587044524530965,
+            -0.9197514268551372
+          ]
+        },
+        {
+          "held_out_cluster": "A2142",
+          "cluster_RAR_a0_m_s2": 6.023464245368019e-10,
+          "joint_quadratic_coefficients": [
+            0.24527017020751257,
+            0.6964873084002262,
+            -0.09676405131433882,
+            0.049840118353747014,
+            0.009912443332870396,
+            0.07104235099227738
+          ],
+          "radius_power_coefficients": [
+            2.5038522122982125,
+            -0.8907764128116686
+          ]
+        },
+        {
+          "held_out_cluster": "A2319",
+          "cluster_RAR_a0_m_s2": 6.063997251975184e-10,
+          "joint_quadratic_coefficients": [
+            0.24478184759561583,
+            0.6961127289570842,
+            -0.09622307414258678,
+            0.05010089557333683,
+            0.01105860556199349,
+            0.07134204538231045
+          ],
+          "radius_power_coefficients": [
+            2.560852843152946,
+            -0.9095988739183662
+          ]
+        },
+        {
+          "held_out_cluster": "A644",
+          "cluster_RAR_a0_m_s2": 6.013673807317259e-10,
+          "joint_quadratic_coefficients": [
+            0.24438727697053184,
+            0.6959987629431168,
+            -0.09475781899756226,
+            0.05016040679100134,
+            0.011394087866394101,
+            0.07048534118680023
+          ],
+          "radius_power_coefficients": [
+            2.5384249099911527,
+            -0.8979183327744262
+          ]
+        },
+        {
+          "held_out_cluster": "A85",
+          "cluster_RAR_a0_m_s2": 6.346024555811538e-10,
+          "joint_quadratic_coefficients": [
+            0.2446409614764766,
+            0.6959325386592055,
+            -0.09707192811746161,
+            0.050287365820145764,
+            0.011749906534467586,
+            0.0725422617051197
+          ],
+          "radius_power_coefficients": [
+            2.649235803321735,
+            -0.933377336294588
+          ]
+        },
+        {
+          "held_out_cluster": "ZW1215",
+          "cluster_RAR_a0_m_s2": 6.137560715923462e-10,
+          "joint_quadratic_coefficients": [
+            0.24416724151376137,
+            0.6957346141032925,
+            -0.09506442559675532,
+            0.050349518199777024,
+            0.012218960227865,
+            0.07122780860192778
+          ],
+          "radius_power_coefficients": [
+            2.5942240923441853,
+            -0.9148489448688356
+          ]
+        }
+      ],
+      "full_cluster_RAR_a0_m_s2": 6.117360347705552e-10
+    },
+    "einasto__gbar_no_stars": {
+      "models": {
+        "galaxy_RAR_transfer": {
+          "rmse_dex": 0.34583468448371907,
+          "median_absolute_acceleration_fraction": 0.5326622060879806,
+          "maximum_absolute_acceleration_fraction": 0.6622830472236017,
+          "median_observed_over_predicted": 2.139779861648123,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.5022935711834651,
+              "rmse_dex": 0.3152379272040502
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.5621042418120007,
+              "rmse_dex": 0.36908734849249536
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.5427718852240688,
+              "rmse_dex": 0.36356566681200975
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.5326622060879806,
+              "rmse_dex": 0.35565310197998257
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.558458737808756,
+              "rmse_dex": 0.3697726207184783
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.4774517404292372,
+              "rmse_dex": 0.2948469203986374
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.5260909431005174,
+              "rmse_dex": 0.34536265120092324
+            }
+          }
+        },
+        "previous_R500_quadratic_transfer": {
+          "rmse_dex": 0.21859751362688082,
+          "median_absolute_acceleration_fraction": 0.3498651874260936,
+          "maximum_absolute_acceleration_fraction": 0.5590982439805692,
+          "median_observed_over_predicted": 1.5381425216117333,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.3063902246675253,
+              "rmse_dex": 0.18587743295359743
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.3907234111439444,
+              "rmse_dex": 0.23667992253602477
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.3640079355666642,
+              "rmse_dex": 0.2388558151490053
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.3498651874260936,
+              "rmse_dex": 0.23142919935149564
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.3848031891260866,
+              "rmse_dex": 0.24063033953269036
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.2721975668660508,
+              "rmse_dex": 0.1670265361336679
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.3395517197720185,
+              "rmse_dex": 0.21797684765704628
+            }
+          }
+        },
+        "cluster_RAR_LOCO": {
+          "rmse_dex": 0.08497600791330126,
+          "median_absolute_acceleration_fraction": 0.17379217651617718,
+          "maximum_absolute_acceleration_fraction": 0.3432122765683112,
+          "median_observed_over_predicted": 1.0000182672300482,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.10122663692875422,
+              "rmse_dex": 0.07282635328923394
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.09067998927165233,
+              "rmse_dex": 0.07338229090924028
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.22778556013880014,
+              "rmse_dex": 0.09936112398798823
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.24847627412458095,
+              "rmse_dex": 0.09555997074093484
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.17379217651617718,
+              "rmse_dex": 0.0857664159024408
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.1584987409556433,
+              "rmse_dex": 0.0836455833884822
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.20545200266435248,
+              "rmse_dex": 0.08062885592862346
+            }
+          }
+        },
+        "joint_quadratic_LOCO": {
+          "rmse_dex": 0.11985065571032254,
+          "median_absolute_acceleration_fraction": 0.2184250166105679,
+          "maximum_absolute_acceleration_fraction": 0.38763906281802896,
+          "median_observed_over_predicted": 1.0650447003128378,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.25245308683429957,
+              "rmse_dex": 0.09531189538517956
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.12038886910707436,
+              "rmse_dex": 0.1138298219832798
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.2638475220868082,
+              "rmse_dex": 0.13753499043102535
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.2868177176934117,
+              "rmse_dex": 0.13531900186286966
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.15134993561331989,
+              "rmse_dex": 0.1321172005436265
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.21656360989356138,
+              "rmse_dex": 0.09515155606763526
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.2184250166105679,
+              "rmse_dex": 0.12153926437615367
+            }
+          }
+        },
+        "radius_power_law_LOCO": {
+          "rmse_dex": 0.07377983102375452,
+          "median_absolute_acceleration_fraction": 0.15779500498393695,
+          "maximum_absolute_acceleration_fraction": 0.26816376697428534,
+          "median_observed_over_predicted": 0.9836333192042581,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.21400157313865908,
+              "rmse_dex": 0.08782311593821343
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.1864643197562973,
+              "rmse_dex": 0.08571365135894383
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.18901667073464934,
+              "rmse_dex": 0.09003461308634453
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.1411321213595682,
+              "rmse_dex": 0.06575305705507949
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.01663900609729474,
+              "rmse_dex": 0.017027260657564824
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.17396776277532622,
+              "rmse_dex": 0.07960745441109932
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.15779500498393695,
+              "rmse_dex": 0.0631470036491418
+            }
+          }
+        }
+      },
+      "fold_parameters": [
+        {
+          "held_out_cluster": "A1795",
+          "cluster_RAR_a0_m_s2": 6.676762276047305e-10,
+          "joint_quadratic_coefficients": [
+            0.245524810151003,
+            0.6963016405396922,
+            -0.10055911645623591,
+            0.05016417856479473,
+            0.01085335091770482,
+            0.07470276520228958
+          ],
+          "radius_power_coefficients": [
+            2.608601660935881,
+            -0.9186505356871578
+          ]
+        },
+        {
+          "held_out_cluster": "A2029",
+          "cluster_RAR_a0_m_s2": 6.346485943719827e-10,
+          "joint_quadratic_coefficients": [
+            0.24609669550846705,
+            0.6968861947994927,
+            -0.09999150806694773,
+            0.049670061634632945,
+            0.008892301029463666,
+            0.07304889718279534
+          ],
+          "radius_power_coefficients": [
+            2.587044524530965,
+            -0.9197514268551372
+          ]
+        },
+        {
+          "held_out_cluster": "A2142",
+          "cluster_RAR_a0_m_s2": 6.408615877867885e-10,
+          "joint_quadratic_coefficients": [
+            0.24614020345011386,
+            0.6967610260242528,
+            -0.10074429449441932,
+            0.049786781174047855,
+            0.00930971949654969,
+            0.07376377058607567
+          ],
+          "radius_power_coefficients": [
+            2.5038522122982125,
+            -0.8907764128116686
+          ]
+        },
+        {
+          "held_out_cluster": "A2319",
+          "cluster_RAR_a0_m_s2": 6.454055295525649e-10,
+          "joint_quadratic_coefficients": [
+            0.24561602007520708,
+            0.6963455443478721,
+            -0.1001841961246638,
+            0.05006636467497536,
+            0.010563471952909994,
+            0.07411065110639511
+          ],
+          "radius_power_coefficients": [
+            2.560852843152946,
+            -0.9095988739183662
+          ]
+        },
+        {
+          "held_out_cluster": "A644",
+          "cluster_RAR_a0_m_s2": 6.390721145435291e-10,
+          "joint_quadratic_coefficients": [
+            0.24519053978721195,
+            0.696210772589789,
+            -0.09860004572278215,
+            0.050123343036537635,
+            0.010933215927024323,
+            0.0731865761629505
+          ],
+          "radius_power_coefficients": [
+            2.5384249099911527,
+            -0.8979183327744262
+          ]
+        },
+        {
+          "held_out_cluster": "A85",
+          "cluster_RAR_a0_m_s2": 6.777904679678345e-10,
+          "joint_quadratic_coefficients": [
+            0.24553885616236257,
+            0.6961841098812368,
+            -0.10129667223543176,
+            0.05024178243350993,
+            0.011200132168002702,
+            0.07548212689688763
+          ],
+          "radius_power_coefficients": [
+            2.649235803321735,
+            -0.933377336294588
+          ]
+        },
+        {
+          "held_out_cluster": "ZW1215",
+          "cluster_RAR_a0_m_s2": 6.531256982694325e-10,
+          "joint_quadratic_coefficients": [
+            0.24500530184526065,
+            0.6959567668597507,
+            -0.09903219637002392,
+            0.050304336533488786,
+            0.01172570590200514,
+            0.07400376368737345
+          ],
+          "radius_power_coefficients": [
+            2.5942240923441853,
+            -0.9148489448688356
+          ]
+        }
+      ],
+      "full_cluster_RAR_a0_m_s2": 6.510462146276503e-10
+    },
+    "einasto__gbar_full_projected_stars": {
+      "models": {
+        "galaxy_RAR_transfer": {
+          "rmse_dex": 0.32759285026130996,
+          "median_absolute_acceleration_fraction": 0.5154834424546715,
+          "maximum_absolute_acceleration_fraction": 0.6446671851315405,
+          "median_observed_over_predicted": 2.063912954938482,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.48347477479244116,
+              "rmse_dex": 0.2970899174684519
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.5410459137456994,
+              "rmse_dex": 0.3480597626012006
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.5240422152677131,
+              "rmse_dex": 0.34501533761766773
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.5154834424546715,
+              "rmse_dex": 0.33736911950637866
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.5363866267602921,
+              "rmse_dex": 0.34911895991157404
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.4642915295992962,
+              "rmse_dex": 0.2830443475022814
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.5062123400440397,
+              "rmse_dex": 0.3270471748574109
+            }
+          }
+        },
+        "previous_R500_quadratic_transfer": {
+          "rmse_dex": 0.2012644321658592,
+          "median_absolute_acceleration_fraction": 0.32613836297780474,
+          "maximum_absolute_acceleration_fraction": 0.5361628297166132,
+          "median_observed_over_predicted": 1.4839841668669775,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.2803888967700764,
+              "rmse_dex": 0.16879785980497455
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.3616328294815705,
+              "rmse_dex": 0.21634384029731513
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.33814526614029594,
+              "rmse_dex": 0.2215468852925323
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.32613836297780474,
+              "rmse_dex": 0.21403269477691808
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.35430063014963764,
+              "rmse_dex": 0.22099346683323717
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.25400834505878833,
+              "rmse_dex": 0.15575604013736755
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.3120858048878121,
+              "rmse_dex": 0.20065680560960786
+            }
+          }
+        },
+        "cluster_RAR_LOCO": {
+          "rmse_dex": 0.08163302501574876,
+          "median_absolute_acceleration_fraction": 0.17262598691559283,
+          "maximum_absolute_acceleration_fraction": 0.31403024086224973,
+          "median_observed_over_predicted": 1.0049178548034023,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.09680489620463506,
+              "rmse_dex": 0.07091846269323118
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.09244205827133878,
+              "rmse_dex": 0.069908956190081
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.22315774714371717,
+              "rmse_dex": 0.09697859593594642
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.23863149967876907,
+              "rmse_dex": 0.09196214240106933
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.17262598691559283,
+              "rmse_dex": 0.0826623879766833
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.13820297229866352,
+              "rmse_dex": 0.077235699067629
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.19886508304317985,
+              "rmse_dex": 0.07791442488409948
+            }
+          }
+        },
+        "joint_quadratic_LOCO": {
+          "rmse_dex": 0.11368769112595542,
+          "median_absolute_acceleration_fraction": 0.21537261061746293,
+          "maximum_absolute_acceleration_fraction": 0.3737730337547762,
+          "median_observed_over_predicted": 1.060579225635159,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.24580560363724313,
+              "rmse_dex": 0.09032587694270171
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.1092466462861642,
+              "rmse_dex": 0.10647161853569515
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.25869757731688403,
+              "rmse_dex": 0.13194237849337428
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.2750266183347312,
+              "rmse_dex": 0.1285492375843781
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.1495060074978043,
+              "rmse_dex": 0.12507688413458862
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.21537261061746293,
+              "rmse_dex": 0.0894573717766088
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.20756259379225805,
+              "rmse_dex": 0.11575284946715732
+            }
+          }
+        },
+        "radius_power_law_LOCO": {
+          "rmse_dex": 0.07377983102375452,
+          "median_absolute_acceleration_fraction": 0.15779500498393695,
+          "maximum_absolute_acceleration_fraction": 0.26816376697428534,
+          "median_observed_over_predicted": 0.9836333192042581,
+          "per_cluster": {
+            "A1795": {
+              "median_absolute_acceleration_fraction": 0.21400157313865908,
+              "rmse_dex": 0.08782311593821343
+            },
+            "A2029": {
+              "median_absolute_acceleration_fraction": 0.1864643197562973,
+              "rmse_dex": 0.08571365135894383
+            },
+            "A2142": {
+              "median_absolute_acceleration_fraction": 0.18901667073464934,
+              "rmse_dex": 0.09003461308634453
+            },
+            "A2319": {
+              "median_absolute_acceleration_fraction": 0.1411321213595682,
+              "rmse_dex": 0.06575305705507949
+            },
+            "A644": {
+              "median_absolute_acceleration_fraction": 0.01663900609729474,
+              "rmse_dex": 0.017027260657564824
+            },
+            "A85": {
+              "median_absolute_acceleration_fraction": 0.17396776277532622,
+              "rmse_dex": 0.07960745441109932
+            },
+            "ZW1215": {
+              "median_absolute_acceleration_fraction": 0.15779500498393695,
+              "rmse_dex": 0.0631470036491418
+            }
+          }
+        }
+      },
+      "fold_parameters": [
+        {
+          "held_out_cluster": "A1795",
+          "cluster_RAR_a0_m_s2": 6.149962813286995e-10,
+          "joint_quadratic_coefficients": [
+            0.24439158753566995,
+            0.6959761187774776,
+            -0.09527879843269933,
+            0.05023018424248755,
+            0.01157566442358089,
+            0.07104694287462752
+          ],
+          "radius_power_coefficients": [
+            2.608601660935881,
+            -0.9186505356871578
+          ]
+        },
+        {
+          "held_out_cluster": "A2029",
+          "cluster_RAR_a0_m_s2": 5.85703828324675e-10,
+          "joint_quadratic_coefficients": [
+            0.24494904903871412,
+            0.6965150715398125,
+            -0.09481409259640765,
+            0.04975086706161881,
+            0.009725244897086078,
+            0.06953868214926544
+          ],
+          "radius_power_coefficients": [
+            2.587044524530965,
+            -0.9197514268551372
+          ]
+        },
+        {
+          "held_out_cluster": "A2142",
+          "cluster_RAR_a0_m_s2": 5.904158940953688e-10,
+          "joint_quadratic_coefficients": [
+            0.24500846933642914,
+            0.6964170019604641,
+            -0.09550858247826095,
+            0.04985034074441555,
+            0.010061348155824865,
+            0.07015899672016593
+          ],
+          "radius_power_coefficients": [
+            2.5038522122982125,
+            -0.8907764128116686
+          ]
+        },
+        {
+          "held_out_cluster": "A2319",
+          "cluster_RAR_a0_m_s2": 5.943196168246174e-10,
+          "joint_quadratic_coefficients": [
+            0.2445308598599988,
+            0.6960546022843048,
+            -0.09497292739075879,
+            0.050105359877045084,
+            0.011175225502509045,
+            0.07044425262360612
+          ],
+          "radius_power_coefficients": [
+            2.560852843152946,
+            -0.9095988739183662
+          ]
+        },
+        {
+          "held_out_cluster": "A644",
+          "cluster_RAR_a0_m_s2": 5.896669873444713e-10,
+          "joint_quadratic_coefficients": [
+            0.2441459796535357,
+            0.6959468454979405,
+            -0.09354525291514197,
+            0.05016556755392299,
+            0.011500360432549159,
+            0.06960910304730414
+          ],
+          "radius_power_coefficients": [
+            2.5384249099911527,
+            -0.8979183327744262
+          ]
+        },
+        {
+          "held_out_cluster": "A85",
+          "cluster_RAR_a0_m_s2": 6.212697975828885e-10,
+          "joint_quadratic_coefficients": [
+            0.24436945739071123,
+            0.6958684038133264,
+            -0.09573799133541154,
+            0.05029558093047833,
+            0.011884338674264524,
+            0.07159039869185208
+          ],
+          "radius_power_coefficients": [
+            2.649235803321735,
+            -0.933377336294588
+          ]
+        },
+        {
+          "held_out_cluster": "ZW1215",
+          "cluster_RAR_a0_m_s2": 6.015594649824588e-10,
+          "joint_quadratic_coefficients": [
+            0.24391601551739647,
+            0.6956804366019629,
+            -0.09381407457003023,
+            0.05035688639811563,
+            0.01233310742843589,
+            0.07032798002471151
+          ],
+          "radius_power_coefficients": [
+            2.5942240923441853,
+            -0.9148489448688356
+          ]
+        }
+      ],
+      "full_cluster_RAR_a0_m_s2": 5.995595819512908e-10
+    }
+  },
+  "source_hashes": {
+    "A644_hydro_mass.fits": "b110629caea5668086c29a9f73262901de9f847ce32ae82340413db3f0ca6bfa",
+    "A1644_fgas_profile.fits": "4591ce8c09b83b19958751c6b63ff239f8986bfa1b8bd20f17bc856b6107d42e",
+    "A3158_hydro_mass.fits": "279f199bae1ac1c23b62f308d6c0d8f010265ce9ceab4eb156443eeee715ea1e",
+    "A2142_fgas_profile.fits": "0d2af4cf068aea3225c98cee51cb5ab5a50470cfcd0097e7bb589bcacbe77a42",
+    "A85_hydro_mass.fits": "618a1829321fa70e4f3950552b1b395037aa91df5aa70590f46ab8ea3ca1daf0",
+    "ZW1215_mstar.fits": "977bb510c54beb244b0a282d64fa711da930f30d03ff1d0dbb8b3b5cd28df605",
+    "A85_mstar.fits": "e6992926deb67b4b8bc863f0585d31a5df74030e149abdff39f7398fe7e7e2be",
+    "A644_mstar.fits": "68b7fb85bde0d73a970541ae87f556791a1d8fe0ddb4ac69ae87ff86c8c30920",
+    "A2029_hydro_mass.fits": "d3ec44af51eeaeefce21bbdfb7f08e9b0860fcb30b0b15250328ecb91d056884",
+    "A2142_hydro_mass.fits": "4eaaf679bbfccd29d3f45735487acff4aa8d64c18f3cacba04ddb8c8f7188b10",
+    "RXC1825_fgas_profile.fits": "3b9424d0c9e99051e65226428270a84b999918fa4fe61f904590dbf7827575d5",
+    "A3266_hydro_mass.fits": "3959469d6a0c1203d92a8821d7070c4170423ff7bab51ec905bb411e04f47cb2",
+    "A3266_fgas_profile.fits": "aa9bb7adb9f914bfaea8c3b650246dbd15c7225c1612443e75540e69297ccf5a",
+    "ZW1215_hydro_mass.fits": "f1b6761e136a112757e67e91aa90a5bc98cc295fa068884905b127c27adad894",
+    "A1644_hydro_mass.fits": "ef2443e7bfc814e11977f305bc72aeaee79129482b39ecc586ac2dc26344b02f",
+    "A1795_fgas_profile.fits": "4c033c037c56dada26e178ed8c0b0981dd5b0ed9fc110e65e22e344f05c1b90e",
+    "A2319_hydro_mass.fits": "28faad37391faceb61a2c13b7231c79e1c3882a47923d8dfbb6c60211c25afe7",
+    "A85_fgas_profile.fits": "b01ad8060b68565a82389bfeee3c0131c4f9dfad01dadb756d1786a64f7ecea9",
+    "A1795_mstar.fits": "18afc10ce2ba22630c3d2ad9a2c721e2734148e45da59532511109670e3acf27",
+    "A2255_hydro_mass.fits": "16878be48e2b7c80f286009b987be8a46760464e2a416739201304f44973d933",
+    "A3158_fgas_profile.fits": "e8c98dd005db79cf8dd692e0025a950fffd116761efa7a50ef424962ddf9f2db",
+    "A2255_fgas_profile.fits": "1f9290166e0a5cecb2dac805dee44e6f3b63c7bad1e6fb7bdd878b932bdda626",
+    "ZW1215_fgas_profile.fits": "80c9c053c249874dae45a0126bd15818ab7ff011e3b87030b20d68de9ab7f7aa",
+    "A2029_mstar.fits": "f7bdabd23395254ad30615d6302cc24e2ea957982a14df03d1b271718645038d",
+    "A2319_fgas_profile.fits": "36d767bb24e5b538cc66085c56123d42e92a6340611441e99df1ae46aa7f8262",
+    "A644_fgas_profile.fits": "3d80ee519875e827cf5767d4409fb0abb4133f95b021ae08aad499d95661d20f",
+    "A1795_hydro_mass.fits": "66c48a3aadaa1858a04b094b748a32adcb9f4aad095d9b07d34ee7fa706f714a",
+    "RXC1825_hydro_mass.fits": "78d647d232342196429fc252b1e988c76e2f9dde50467caf313095360d6f00f6",
+    "A2029_fgas_profile.fits": "eacb8e84fb5faa97db78cc8bf368b3c2da57f0b05631fbe5b5bef6d13c735153",
+    "A2142_mstar.fits": "c46bb6a972707a1af52d0c5bfcee01efda409766dbb2a1536f6a68820af71bc1",
+    "A2319_mstar.fits": "840f67549fb3806f423be363ff62c11549954ab93f363fc011e642630184c8b8"
+  }
+}

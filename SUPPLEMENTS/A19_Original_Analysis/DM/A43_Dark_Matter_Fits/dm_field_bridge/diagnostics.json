@@ -1,0 +1,169 @@
+{
+  "purpose": "Post-fit checks; no parameter or model tuning",
+  "shifted_Plummer_max_relative_error_361_distances": 1.9984014443252818e-15,
+  "kernel_normalizations": {
+    "NLG": 0.9999999999999999,
+    "MOG": 0.9999999999999998
+  },
+  "basis_max_relative_error_133_independent_points_per_kernel": {
+    "NLG": 6.6727542736844114e-06,
+    "MOG": 1.0258032774657089e-05
+  },
+  "basis_bounds": {
+    "NLG": [
+      3.234846047436319e-09,
+      0.49999999999999994
+    ],
+    "MOG": [
+      5.317763042790118e-17,
+      0.5
+    ]
+  },
+  "reconstructed_total_stellar_mass_max_relative_error": 2.220446049250313e-16,
+  "refitted_NLG_alpha_ML2": 58.413217156110896,
+  "constant_boost_analytic_optimum_alpha_ML2": 58.4132155891862,
+  "refitted_NLG_alpha_relative_difference_from_constant_boost": 2.6824831911298475e-08,
+  "kernel_fit_sets_at_mu_upper_bound": 108,
+  "kernel_fit_sets_total": 108,
+  "bound_subsets": {
+    "1": {
+      "all": {
+        "count": 44,
+        "NLG_general_violations": 35,
+        "MOG_general_violations": 37,
+        "NLG_Plummer_violations": 41,
+        "MOG_Plummer_violations": 41,
+        "median_D": 115.81148094684437,
+        "largest_required_alpha_general": 2577.661452723669,
+        "largest_required_alpha_Plummer": 5155.322905447338,
+        "largest_alpha_system": "Bootes2"
+      },
+      "classical": {
+        "count": 25,
+        "NLG_general_violations": 16,
+        "MOG_general_violations": 18,
+        "NLG_Plummer_violations": 22,
+        "MOG_Plummer_violations": 22,
+        "median_D": 44.46920741737224,
+        "largest_required_alpha_general": 198.8645074232773,
+        "largest_required_alpha_Plummer": 397.7290148465546,
+        "largest_alpha_system": "Antlia2"
+      },
+      "ultrafaint": {
+        "count": 19,
+        "NLG_general_violations": 19,
+        "MOG_general_violations": 19,
+        "NLG_Plummer_violations": 19,
+        "MOG_Plummer_violations": 19,
+        "median_D": 363.57732709308124,
+        "largest_required_alpha_general": 2577.661452723669,
+        "largest_required_alpha_Plummer": 5155.322905447338,
+        "largest_alpha_system": "Bootes2"
+      },
+      "previously_defined_higher_precision": {
+        "count": 25,
+        "NLG_general_violations": 20,
+        "MOG_general_violations": 22,
+        "NLG_Plummer_violations": 23,
+        "MOG_Plummer_violations": 23,
+        "median_D": 96.80780487917924,
+        "largest_required_alpha_general": 1067.8744049591471,
+        "largest_required_alpha_Plummer": 2135.7488099182942,
+        "largest_alpha_system": "Segue(1)"
+      }
+    },
+    "2": {
+      "all": {
+        "count": 44,
+        "NLG_general_violations": 31,
+        "MOG_general_violations": 33,
+        "NLG_Plummer_violations": 35,
+        "MOG_Plummer_violations": 36,
+        "median_D": 57.905740473422185,
+        "largest_required_alpha_general": 1288.5807263618344,
+        "largest_required_alpha_Plummer": 2577.161452723669,
+        "largest_alpha_system": "Bootes2"
+      },
+      "classical": {
+        "count": 25,
+        "NLG_general_violations": 12,
+        "MOG_general_violations": 14,
+        "NLG_Plummer_violations": 16,
+        "MOG_Plummer_violations": 17,
+        "median_D": 22.23460370868612,
+        "largest_required_alpha_general": 99.18225371163865,
+        "largest_required_alpha_Plummer": 198.3645074232773,
+        "largest_alpha_system": "Antlia2"
+      },
+      "ultrafaint": {
+        "count": 19,
+        "NLG_general_violations": 19,
+        "MOG_general_violations": 19,
+        "NLG_Plummer_violations": 19,
+        "MOG_Plummer_violations": 19,
+        "median_D": 181.78866354654062,
+        "largest_required_alpha_general": 1288.5807263618344,
+        "largest_required_alpha_Plummer": 2577.161452723669,
+        "largest_alpha_system": "Bootes2"
+      },
+      "previously_defined_higher_precision": {
+        "count": 25,
+        "NLG_general_violations": 17,
+        "MOG_general_violations": 18,
+        "NLG_Plummer_violations": 20,
+        "MOG_Plummer_violations": 21,
+        "median_D": 48.40390243958962,
+        "largest_required_alpha_general": 533.6872024795736,
+        "largest_required_alpha_Plummer": 1067.3744049591471,
+        "largest_alpha_system": "Segue(1)"
+      }
+    },
+    "3": {
+      "all": {
+        "count": 44,
+        "NLG_general_violations": 29,
+        "MOG_general_violations": 29,
+        "NLG_Plummer_violations": 33,
+        "MOG_Plummer_violations": 34,
+        "median_D": 38.60382698228145,
+        "largest_required_alpha_general": 858.8871509078897,
+        "largest_required_alpha_Plummer": 1717.7743018157794,
+        "largest_alpha_system": "Bootes2"
+      },
+      "classical": {
+        "count": 25,
+        "NLG_general_violations": 11,
+        "MOG_general_violations": 11,
+        "NLG_Plummer_violations": 14,
+        "MOG_Plummer_violations": 15,
+        "median_D": 14.82306913912408,
+        "largest_required_alpha_general": 65.9548358077591,
+        "largest_required_alpha_Plummer": 131.9096716155182,
+        "largest_alpha_system": "Antlia2"
+      },
+      "ultrafaint": {
+        "count": 19,
+        "NLG_general_violations": 18,
+        "MOG_general_violations": 18,
+        "NLG_Plummer_violations": 19,
+        "MOG_Plummer_violations": 19,
+        "median_D": 121.19244236436043,
+        "largest_required_alpha_general": 858.8871509078897,
+        "largest_required_alpha_Plummer": 1717.7743018157794,
+        "largest_alpha_system": "Bootes2"
+      },
+      "previously_defined_higher_precision": {
+        "count": 25,
+        "NLG_general_violations": 16,
+        "MOG_general_violations": 16,
+        "NLG_Plummer_violations": 18,
+        "MOG_Plummer_violations": 19,
+        "median_D": 32.26926829305975,
+        "largest_required_alpha_general": 355.62480165304896,
+        "largest_required_alpha_Plummer": 711.2496033060979,
+        "largest_alpha_system": "Segue(1)"
+      }
+    }
+  },
+  "limitations": "All bound counts use central estimates and selected stellar M/L; they are not significance levels. Higher-precision criterion was defined in the earlier dwarf curation. Isolation, spherical equilibrium and Wolf acceleration reconstruction are conditional assumptions. No host source or Jeans profiles are fitted."
+}

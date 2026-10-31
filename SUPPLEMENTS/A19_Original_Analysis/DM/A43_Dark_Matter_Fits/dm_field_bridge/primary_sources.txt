@@ -1,0 +1,76 @@
+Primary literature consulted for the physical-source bridge, 29 October 2026
+
+Rahvar, S.; Mashhoon, B. (2014). Observational Tests of Nonlocal Gravity:
+Galaxy Rotation Curves and Clusters of Galaxies. Physical Review D89,104011.
+DOI:10.1103/PhysRevD.89.104011
+https://arxiv.org/abs/1401.4819
+The positive astronomical q0 kernel, alpha mu lambda0=2, and frozen values
+alpha=10.94+/-2.56 and mu=.059+/-.028/kpc appear in the primary article.
+They were inferred in prior work; this run does not remeasure them.
+
+Moffat, J.W.; Rahvar, S. (2013). The MOG weak field approximation and
+observational test of galaxy rotation curves. MNRAS436,1439-1451.
+DOI:10.1093/mnras/stt1670
+https://arxiv.org/abs/1306.6383
+Moffat, J.W.; Rahvar, S. (2014). The MOG Weak Field approximation II.
+Observational test of Chandra X-ray Clusters. MNRAS441,3724-3732.
+DOI:10.1093/mnras/stu855
+https://arxiv.org/abs/1309.5077
+The latter explicitly states alpha=8.89+/-.34 and mu=.042+/-.004/kpc,
+from galaxy fits, then tests that pair on clusters. This bridge tests that
+particular constant-parameter weak-field prescription.
+
+Chicone, C.; Mashhoon, B. (2016). Nonlocal Gravity in the Solar System.
+Classical and Quantum Gravity33,075005.
+DOI:10.1088/0264-9381/33/7/075005
+https://arxiv.org/abs/1508.01508
+Solar applications retain the additional short-distance kernel parameter;
+the astronomical q0 approximation is not a complete Solar prediction.
+
+Haghi, H.; Amiri, V. (2016). Testing modified gravity with dwarf spheroidal
+galaxies. MNRAS463,1944-1951.
+DOI:10.1093/mnras/stw2140
+https://academic.oup.com/mnras/article/463/2/1944/2892799
+Primary Jeans-profile study of eight classical dwarfs reports fixed-MOG
+coefficient difficulties with stellar mass-to-light ratios and no common
+pair across the objects under their assumptions.
+
+De Martino, I.; Della Monica, R.; Roshan, M. (2025). Dwarf galaxies in
+non-local gravity. Physics of the Dark Universe49,102044.
+DOI:10.1016/j.dark.2025.102044
+https://arxiv.org/abs/2507.21986
+https://arxiv.org/html/2507.21986v1
+Uses the same q0 kernel and Plummer sources for eight classical dwarf
+dispersion profiles. Includes individual and joint fits, with stellar M/L
+and anisotropy nuisance parameters; reports broad compatibility with earlier
+work and some parameter tension. Our fixed-M/L half-mass stress test does
+not duplicate or supersede that full-profile analysis.
+
+De Martino, I. (2023). Dynamics of dwarf galaxies in scalar-tensor-vector
+gravity. Physical Review D108,044074.
+DOI:10.1103/PhysRevD.108.044074
+https://arxiv.org/abs/2308.15908
+https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.044074
+Another primary full-Jeans dSph test; notes tensions in alpha.
+
+Zhoolideh Haghighi, M.H.; Rahvar, S. (2017). Testing MOG, non-local gravity
+and MOND with rotation curves of dwarf galaxies. MNRAS468,4048-4055.
+DOI:10.1093/mnras/stx692
+https://arxiv.org/abs/1609.07851
+Rotating LITTLE THINGS dwarfs differ from the pressure-supported dSph sample.
+The paper already compared these published coefficient pairs and emphasized
+the role of stellar mass-to-light ratios. It is not a first-proposal claim here.
+
+Input provenance follows existing benchmark files:
+McConnachie, A.W. (2012). The observed properties of dwarf galaxies in and
+around the Local Group. Astronomical Journal144,4.
+DOI:10.1088/0004-6256/144/1/4; https://arxiv.org/abs/1204.1562
+Author-maintained January2021 catalog and October2019 morphology table,
+exact selection and source hashes archived in ../dm_broad_dwarfs.
+Wolf, J., et al. (2010). Accurate masses for dispersion-supported galaxies.
+MNRAS406,1220. DOI:10.1111/j.1365-2966.2010.16753.x
+https://arxiv.org/abs/0908.2995
+The half-light estimator supplies an inferred Newtonian-equivalent acceleration,
+subject to equilibrium, deprojection and tracer assumptions.
+
+No article PDF or scraped full article is redistributed in this directory.

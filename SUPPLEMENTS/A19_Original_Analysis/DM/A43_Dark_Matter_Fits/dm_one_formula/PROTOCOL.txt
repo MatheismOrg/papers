@@ -1,0 +1,45 @@
+One-formula follow-up protocol, 28 October 2026 UTC
+Written before running the new candidate fits. Exploratory reuse of the already
+inspected A43 heterogeneous benchmark; not new independent data confirmation.
+
+Goal: a single explicit function of gbar and physical radius, with one global
+coefficient vector and no population label in prediction. Compare to the prior
+potential-proxy quadratic, common RAR, unrestricted 2D response, and the separately
+calibrated population RAR comparator. Population labels affect balancing/validation
+only, except the explicitly labeled piecewise comparator.
+
+Data: unchanged 2910 rows/279 objects/278 conservative groups. Same assumptions,
+unknown covariance and dwarf-environment limitations as A43. No new histories;
+none of the formulas represent a fitted memory effect. Only local acceleration
+rows enter; separate observables from A43 are not newly fitted in this search.
+
+Candidate list fixed for this execution:
+- Common RAR; previous potential quadratic; prior 2D response; piecewise RAR.
+- Published Lelli2017 Eq14 RAR+exponentially suppressed acceleration floor.
+- Published Santos/Felizardo2026 reciprocal-log family, independently refitted.
+- Potential-quadratic RAR plus same floor; potential-linear RAR plus same floor.
+- Constant-a0 RAR with a radius-power-law floor.
+- Potential-quadratic RAR plus linear log-radius in log(a_eff).
+- A quadratic in a learned single index x+k*u.
+- RAR with a_eff/a_ref = 10^A+10^(B-alpha*q)+10^(C+beta*q),
+  0<=alpha<=1 and0<=beta<=0.95. This gives a smooth sum, not population switching.
+- Potential cubic; full quadratic log(a_eff).
+
+x=log10(gbar/1e-10),u=log10(r/kpc),q=x+u. For new polynomial log(a_eff)
+models, divide that log by1+(gbar/1e-8)^2; the cutoff is FIXED from the previous
+post-search design, not fitted. Untapered previous models remain comparators.
+Power-sum and constant-a0 floor models do not require this polynomial regulator.
+All coefficients/bounds/start points are recorded in the script/results.
+
+Fit equal population means of equal-group log acceleration MSE. Compare5fold
+whole-group CV on originalseed20261027 and two additional fixedseeds7331,48105.
+Report every candidate, not only winners. Whole-population exclusion refits on
+otherclasses; also dwarfMW/M31host exclusions for leading models. Use3innergroup
+folds for familyselection in originalouterfolds over shared models only.
+Published families are refitted under matching weights; comparisons to original
+paper statistics are not valid unless datasets/objectives/nuisance inputs match.
+
+Report B in dex and per-pop acceleration median, plus SPARC speed separately.
+Descriptive paired group bootstrap conditions on storedCVresiduals and omits
+refitting,selection and nuisanceuncertainty. Do notclaim best in literature or
+universalDM; broader likelihoods, fittedhalos andphysicalcompletions untested.

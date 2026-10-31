@@ -1,0 +1,66 @@
+Analytic checks for the seven fixed candidates (28 October 2026)
+
+These scalar force laws are not full conservative field theories. Coordinates
+U=g_b r^2/(a_ref kpc^2) and s=g_b r/(a_ref kpc) are proxies; U is not an
+actual enclosed disk mass. Source geometry and external fields are absent.
+
+For F(g,a)=g/[1-exp(-sqrt(g/a))], write t=sqrt(g/a), so extra acceleration
+Delta g=g/(exp(t)-1). For fixed g<<a, F~sqrt(g*a). For t->infinity,
+Delta g decreases exponentially and may vanish even if a grows sublinearly.
+
+Published generalized family:
+nu_n(y)=[(1+sqrt(1+4 y^-n))/2]^(1/n), n>0. All have nu~y^-1/2 in the
+low-y limit and nu->1 for large y. In the high-y limit nu-1~y^-n/n,
+so Delta g~a0^n g^(1-n)/n. Simple n=1 leaves a constant absolute residual;
+standard n=2 gives zero absolute residual; n<1 has a growing absolute residual
+although the fractional residual vanishes. These are benchmarks, not claims
+that every shape passes Solar-System data. Asymptotic V^4=GM*a0 is common.
+
+mixed_transient:
+At fixed r>0 and g->0, a_eff~const*g^-alpha (alpha>0), so
+F~g^((1-alpha)/2)->0 since alpha<=.95. The slow exponent can matter physically.
+At fixed r and g->infinity, the positive leg is at most O(g^.95), the inverse
+leg is O(g^(-alpha-2)), and t diverges, so both absolute and relative extra
+acceleration vanish. For a smooth density core g~r, U~r^3 and s~r^2,
+the inverse leg scales as r^(4-3alpha) and goes to zero; the positive leg tends
+zero for beta>0 and stays finite for beta=0. Thus g_pred~sqrt(r)->0: a finite
+vanishing force, not a proof of finite inferred extra density. For a fixed
+isolated point mass M and r->infinity, U is constant, s~1/r, S,W->1;
+both extra terms vanish as r^-1 and r^(-1-beta), so a_eff->a_ref*C0 and
+V_infinity^4=GM*a_ref*C0. This repairs the earlier mass-dependent asymptotic
+BTFR coefficient. It does not establish the observed finite-radius BTFR.
+
+mixed_potential_taper:
+T=s/(s+s0). At fixed r and g->0, inverse and positive terms scale as
+ g^(1-alpha), g^(1+beta), respectively: both vanish and a_eff->a_ref*C0.
+At fixed r and high g, W makes them scale as g^(-alpha-2) and g^(beta-2);
+a_eff again tends a_ref*C0 and Delta g->0. For a smooth core, S~r^4 and T~r^2:
+the inverse term scales as r^(6-3alpha), positive as r^(6+2beta); force vanishes.
+For fixed M at large r, T~1/r while U is constant, so both extra terms vanish
+as r^-1 and r^(-1-beta). The common asymptotic coefficient is a_ref*C0.
+
+Point-source extra-density result, both mixed repairs:
+For fixed M, g_N=GM/r^2. Let n=d ln(a_eff)/d ln r. For a positive sum, n is a
+positive-weighted mean of component slopes. In mixed_transient, these slopes
+are 0; 4(1-S)+4(1-W)-r/(r+R)>=-1; and -beta-r/(r+R)>-1.95.
+In mixed_potential_taper they are 0; 4(1-S)+4(1-W)-(1-T)>=-1;
+and 4(1-S)+4(1-W)-beta-(1-T)>-1.95.
+Thus n>-2 for every allowed coefficient, and d ln t/d ln r=-1-n/2<0.
+M_extra=M/(exp(t)-1) therefore increases with r: its inferred point-source
+extra density is nonnegative. This does not prove positivity for arbitrary
+extended sources, nor the existence/stability of a field theory.
+
+Two log bumps:
+Both finite-width Gaussians vanish as q->+/-infinity. Fixed r, low/high g;
+smooth-density core q~2log r; and isolated point-source far field q~const-log r
+all approach a_eff=a_ref*C0. Empty-source and central forces therefore vanish,
+strong-g extra acceleration vanishes, and the far-field BTFR coefficient is
+common. However, the logarithmic slope can be arbitrarily steep in a bump's
+wing. Monotonic g(g_b) and nonnegative inferred point-source extra density
+are not guaranteed; numerical violations must not be concealed.
+
+All C0 normalizations must be reported relative to the common reference
+1.2e-10 m/s^2. Preserving the BTFR exponent and a mass-independent normalization
+is an asymptotic mathematical property, not a measured agreement with that
+normalization or a fit to independent BTFR data. No EFE, Q2, binary, lensing
+metric or cosmological data likelihood has been fitted by this stage.

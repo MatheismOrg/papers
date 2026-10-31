@@ -1,0 +1,18 @@
+{
+  "derivation_scope": "Exact for the declared constant gas-density multiplier, not finite-cutoff disk convolution",
+  "eta": 11.774379225058478,
+  "minimum_declared_gas_force_fraction": 0.5,
+  "source_ratio_lower_bound": 6.887189612529239,
+  "acceleration_ratio_lower_bound_vs_eta0": 2.624345558902112,
+  "circular_speed_ratio_lower_bound_vs_eta0": 1.6199831971048688,
+  "actual_gas_force_fraction_range": [
+    0.5015166316928157,
+    0.9540555870674986
+  ],
+  "actual_predicted_acceleration_ratio_range_vs_eta0": [
+    2.921969728865352,
+    4.72778403294017
+  ],
+  "all_points_obey_lower_bound": true,
+  "simple_MOND_response_inequality": "For t>=1 and g(x)=[x+sqrt(x*x+4*a0*x)]/2, sqrt(t)<=g(t*x)/g(x)<=t."
+}

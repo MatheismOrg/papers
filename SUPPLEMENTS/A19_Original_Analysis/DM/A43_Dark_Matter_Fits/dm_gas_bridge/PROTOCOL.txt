@@ -1,0 +1,77 @@
+A43 uniform-gas coupling bridge stress test, 29 October 2026.
+Frozen before fitting this stage; all targets were examined in earlier A43 work.
+This is an exploratory compatibility test, not independent discovery.
+
+Question: can the large gas-associated source coefficient inferred in clusters
+also describe neutral-gas-rich disk regions with the same constants?
+The cluster prescription is existing prior art, Famaey,Pizzuti,Saltas2025 Eq17:
+rho_extra=eta*rho_hot*exp(-r/Rc), a0=1.2e-10 m/s2.
+The proposed test extension to disks uses a constant gas-density multiplier,
+giving exactly g_src=g_stars+(1+eta)*g_gas for the supplied gas-force geometry.
+It is the leading uniform-weight limit, NOT the full finite-Rc convolution for
+a flattened disk and NOT what the published hot-gas-only proposal asserts.
+An evaluation radius <=30kpc alone cannot bound its convolution error; sources
+outside that radius also contribute. No unsupported finite-cutoff error bound
+or exclusion of the published model will be claimed.
+
+Data: tmp/dm_halo_benchmark/matched_components.csv supplies the unchanged2700
+SPARC measurements and independent gas/stellar force contributions. Primary
+predictor-selected subset: positive gas inward force, gas contribution >=0.5
+of the total baryonic inward force, and physical radius<=30kpc. This selects
+402rows in61galaxies. No observed velocity/target is used for this additional
+selection. Raw original SPARC quality selection remains inherited.
+Use all86 frozen cluster points in23hosts from dm_cluster_repair, with their
+unchanged numerical quadrature of the hot-gas profile. No new astronomical data.
+The joint sample has488rows in84systems. Missing hot gas elsewhere is not set
+to zero; this test explicitly compares measured cold and hot gas components.
+
+The calculation has a single source coefficient and scale: g_src=g_bar+eta*K.
+K is measured g_gas for the constant-weight disk approximation; for spherical
+clusters K=G/r^2 integral_0^r exp(-s/Rc)dM_hot(s). Different source geometry
+requires different numerical kernels, not different fitted eta values.
+Use simple MOND nu(y)=.5+sqrt(.25+1/y) and exponential RAR as two prespecified
+interpolation choices, each with fixed a0. No interpolation-shape search.
+
+Frozen comparators: eta=0; illustrative literature eta=10,Rc=400kpc;
+CLASH-trained eta,Rc from previous exact simple/exp source-exclusion fit for
+X-COP. The frozen coefficients were informed by CLASH, so scores on CLASH are
+descriptive; their disk predictions are parameter transfer, not modelselection
+independent discovery. All fitted comparators exclude testtargets.
+
+Fits: disk-only common eta in [0,1000], deterministic starts0,1,10. Rc does not
+enter disk approximation and is not fitted there. Cluster-only and joint fits
+common [eta,log10(Rc/kpc)], bounds [0,1] to[1000,4], starts
+[.1,2],[1,2.6],[10,2.6],[100,1.5]. Select lowest cost converged start, retain all
+attempts/bounds/coefficients/failures. scipy least_squares max_nfev2000,
+ftol=xtol=gtol=1e-11. No additional family or bound changes after scores.
+
+Weights: joint disk and cluster domains receive half totalweight each. Within
+clusters give CLASH and X-COP equal totals, then equal hosts and equal points
+within host. Within disks give equal galaxies and equal points within galaxy.
+If fitting/evaluating one domain or source alone, normalize only represented
+domains and sources. Loss is weighted squared log10 acceleration residual.
+Report overall RMSdex, domain/source/galaxy metrics and median fractional
+acceleration/speed errors (speed only physically interpreted for disk rows).
+
+Validation: all-data fits; five folds holding out entire hosts/galaxies,
+stratified by source, seeds20261027,7331,48105. Each model separately trains on
+disk-only, cluster-only, and joint inputs. Also joint source exclusions for
+CLASH and X-COP (all matching hosts excluded); and entire disk-domain exclusion
+(fit clusters only, predict all selected disks). Cold-to-cluster transfer uses
+disk-trained eta and the externally fixed published Rc=400kpc, explicitly not
+a disk-estimated length. No unseen-cluster prediction is claimed without that
+additional declared length assumption. Retain all variants/splits.
+
+Full2700-row diagnostics apply frozen and all-data coefficients, preserve
+nonpositive g_src as invalid rows, and never clip them or silently drop them
+from a claimed whole-sample score. Report valid-row conditional metrics alongside
+invalid counts and names. Primary subset has positive K and g_bar so all fitted
+nonnegative eta values produce positive source forces.
+
+Descriptive uncertainty: paired5000 independent galaxy/host resamplings of frozen
+prediction errors, preserving domain/source weights, seed20261029; no refit or
+selection/measurement-systematic uncertainty. Comparison of joint and separately
+calibrated CV measures an empirical tension, not a theorem about all gas physics.
+Cold/hot differing preferred coefficients would not derive temperature dependence
+or gravitational memory. Positive extra source mass has no asserted microscopic
+identity. No Solar external-field, merger, cosmological, or full disk-field fit.

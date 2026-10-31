@@ -1,0 +1,224 @@
+{
+  "formula": "g=gbar/(1-exp(-sqrt(gbar/a_eff))); s=(gbar/1e-10)*(r/kpc); a_eff=1e-10*(C0+C1*s^(-alpha)+C2*s^beta) in SI",
+  "C0_C1_C2": [
+    0.7223902816906217,
+    0.0024883167454663084,
+    0.6377653132209604
+  ],
+  "alpha": 0.9999999999999999,
+  "beta": 0.7712979735950132,
+  "scope": "Exploratory comparison, no claim of best published formula or universal physics; alpha reaches its imposed upper bound. Low-g floor remains as gbar approaches zero at fixed radius; not a valid vacuum theory.",
+  "verified_CV_files": 42,
+  "checks": [
+    {
+      "model": "RAR",
+      "seed": "20261027",
+      "B": 0.3359970620957295
+    },
+    {
+      "model": "RAR",
+      "seed": "7331",
+      "B": 0.33456206091393786
+    },
+    {
+      "model": "RAR",
+      "seed": "48105",
+      "B": 0.334473185960401
+    },
+    {
+      "model": "potential_quad",
+      "seed": "20261027",
+      "B": 0.2494610541924781
+    },
+    {
+      "model": "potential_quad",
+      "seed": "7331",
+      "B": 0.2474858834601539
+    },
+    {
+      "model": "potential_quad",
+      "seed": "48105",
+      "B": 0.24675509644932367
+    },
+    {
+      "model": "poly2D",
+      "seed": "20261027",
+      "B": 0.23549798491086854
+    },
+    {
+      "model": "poly2D",
+      "seed": "7331",
+      "B": 0.2382485746558139
+    },
+    {
+      "model": "poly2D",
+      "seed": "48105",
+      "B": 0.23720895412237306
+    },
+    {
+      "model": "piecewise_RAR",
+      "seed": "20261027",
+      "B": 0.2817370482199576
+    },
+    {
+      "model": "piecewise_RAR",
+      "seed": "7331",
+      "B": 0.27758154118564626
+    },
+    {
+      "model": "piecewise_RAR",
+      "seed": "48105",
+      "B": 0.27591429379387555
+    },
+    {
+      "model": "Lelli_floor",
+      "seed": "20261027",
+      "B": 0.3492848677485443
+    },
+    {
+      "model": "Lelli_floor",
+      "seed": "7331",
+      "B": 0.3484693475118044
+    },
+    {
+      "model": "Lelli_floor",
+      "seed": "48105",
+      "B": 0.3492711740617904
+    },
+    {
+      "model": "Santos_log",
+      "seed": "20261027",
+      "B": 0.32994999789363266
+    },
+    {
+      "model": "Santos_log",
+      "seed": "7331",
+      "B": 0.32850991054072637
+    },
+    {
+      "model": "Santos_log",
+      "seed": "48105",
+      "B": 0.3272660700065925
+    },
+    {
+      "model": "potential_floor",
+      "seed": "20261027",
+      "B": 0.24948316965783157
+    },
+    {
+      "model": "potential_floor",
+      "seed": "7331",
+      "B": 0.24748583849919062
+    },
+    {
+      "model": "potential_floor",
+      "seed": "48105",
+      "B": 0.24682270861024364
+    },
+    {
+      "model": "linear_potential_floor",
+      "seed": "20261027",
+      "B": 0.3030067703008629
+    },
+    {
+      "model": "linear_potential_floor",
+      "seed": "7331",
+      "B": 0.30125507747669444
+    },
+    {
+      "model": "linear_potential_floor",
+      "seed": "48105",
+      "B": 0.30115829771705793
+    },
+    {
+      "model": "radius_floor",
+      "seed": "20261027",
+      "B": 0.2873737553917319
+    },
+    {
+      "model": "radius_floor",
+      "seed": "7331",
+      "B": 0.28654547196875546
+    },
+    {
+      "model": "radius_floor",
+      "seed": "48105",
+      "B": 0.2869909767446899
+    },
+    {
+      "model": "potential_radius",
+      "seed": "20261027",
+      "B": 0.2446818263767029
+    },
+    {
+      "model": "potential_radius",
+      "seed": "7331",
+      "B": 0.24146077940400534
+    },
+    {
+      "model": "potential_radius",
+      "seed": "48105",
+      "B": 0.24196091973167763
+    },
+    {
+      "model": "single_index",
+      "seed": "20261027",
+      "B": 0.24908633364236915
+    },
+    {
+      "model": "single_index",
+      "seed": "7331",
+      "B": 0.24813373617683754
+    },
+    {
+      "model": "single_index",
+      "seed": "48105",
+      "B": 0.24689218787920755
+    },
+    {
+      "model": "power_sum",
+      "seed": "20261027",
+      "B": 0.24963004181765042
+    },
+    {
+      "model": "power_sum",
+      "seed": "7331",
+      "B": 0.24566922538622488
+    },
+    {
+      "model": "power_sum",
+      "seed": "48105",
+      "B": 0.2455112629991223
+    },
+    {
+      "model": "potential_cubic",
+      "seed": "20261027",
+      "B": 0.2454560201762446
+    },
+    {
+      "model": "potential_cubic",
+      "seed": "7331",
+      "B": 0.239960686135094
+    },
+    {
+      "model": "potential_cubic",
+      "seed": "48105",
+      "B": 0.24109684002852816
+    },
+    {
+      "model": "effective_quad2D",
+      "seed": "20261027",
+      "B": 0.23569100296772227
+    },
+    {
+      "model": "effective_quad2D",
+      "seed": "7331",
+      "B": 0.23719546567900407
+    },
+    {
+      "model": "effective_quad2D",
+      "seed": "48105",
+      "B": 0.24234951387702997
+    }
+  ]
+}

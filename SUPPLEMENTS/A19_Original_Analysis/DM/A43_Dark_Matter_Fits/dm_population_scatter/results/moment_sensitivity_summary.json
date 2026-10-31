@@ -1,0 +1,40 @@
+{
+  "means": {
+    "rms": 0.15823479491162232,
+    "median_speed": 9.273701365976473,
+    "mean_nll": -1.234299072420711,
+    "coverage68": 0.7916061109104655,
+    "coverage95": 0.9584254867420511
+  },
+  "repeats": {
+    "20261027": {
+      "rms": 0.1605327304571501,
+      "median_speed": 9.35996092176168,
+      "mean_nll": -1.2324036776662544,
+      "coverage68": 0.7874036183586095,
+      "coverage95": 0.9525182843247814
+    },
+    "7331": {
+      "rms": 0.15754175079693933,
+      "median_speed": 9.25214332262625,
+      "mean_nll": -1.2364421680348934,
+      "coverage68": 0.7931564337972797,
+      "coverage95": 0.9616333080035635
+    },
+    "48105": {
+      "rms": 0.15662990348077752,
+      "median_speed": 9.208999853541489,
+      "mean_nll": -1.2340513715609849,
+      "coverage68": 0.7942582805755075,
+      "coverage95": 0.961124867897808
+    }
+  },
+  "minus_RAR_offset_logscore": {
+    "difference": -0.1928505381309896,
+    "CI95": [
+      -0.30454796332174267,
+      -0.09520923296748388
+    ]
+  },
+  "scope": "Frozen linear-fit coefficients, nonlinear first two halo moments, Gaussian approximation; remaining nuisance covariance is linearized. No exact nonlinear marginal likelihood or new sample."
+}

@@ -1,0 +1,721 @@
+{
+  "status": "frozen-fit mathematical diagnostics, not Solar-System or BTFR likelihood fits",
+  "Mref_Msun": 717446392.7893277,
+  "solar_constants": {
+    "GM_sun_SI": 1.32712440018e+20,
+    "AU_m": 149597870700.0,
+    "kpc_m": 3.085677581491367e+19
+  },
+  "models": {
+    "RAR": {
+      "point_source_grid": {
+        "mass_Msun_log10": [
+          0,
+          15,
+          31
+        ],
+        "radius_kpc_log10": [
+          -9,
+          4,
+          161
+        ],
+        "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+        "negative_below_minus_1e_5_count": 0,
+        "grid_points": 4991
+      },
+      "fixed_radius_monotonicity": {
+        "log10_gbar_over_aref_range": [
+          -8,
+          8,
+          181
+        ],
+        "log10_radius_kpc_range": [
+          -9,
+          4,
+          101
+        ],
+        "min_dlogg_dloggbar": 0.5000108222619204,
+        "negative_count": 0,
+        "grid_points": 18281,
+        "observed_input_min_derivative": 0.500778726757467,
+        "observed_input_negative_count": 0
+      },
+      "uniform_density_core_path": {
+        "definition": "gbar/a_ref=r/kpc; finite central baryonic density, r->0",
+        "log10_radius_kpc": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -14.0
+        ],
+        "log10_gpred_over_aref": [
+          -3.636371650121645,
+          -4.636380110234413,
+          -5.636380956248711,
+          -6.636381040850171
+        ],
+        "last_interval_dlogg_dlogr": 0.50000004230073
+      }
+    },
+    "potential_quad": {
+      "point_source_grid": {
+        "mass_Msun_log10": [
+          0,
+          15,
+          31
+        ],
+        "radius_kpc_log10": [
+          -9,
+          4,
+          161
+        ],
+        "min_dlog_inferred_mass_dlog_radius": -1.781218317762125,
+        "negative_below_minus_1e_5_count": 1093,
+        "grid_points": 4991
+      },
+      "fixed_radius_monotonicity": {
+        "log10_gbar_over_aref_range": [
+          -8,
+          8,
+          181
+        ],
+        "log10_radius_kpc_range": [
+          -9,
+          4,
+          101
+        ],
+        "min_dlogg_dloggbar": -2.250500889502405,
+        "negative_count": 7027,
+        "grid_points": 18281,
+        "observed_input_min_derivative": -0.1603366514912885,
+        "observed_input_negative_count": 10
+      },
+      "uniform_density_core_path": {
+        "definition": "gbar/a_ref=r/kpc; finite central baryonic density, r->0",
+        "log10_radius_kpc": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -14.0
+        ],
+        "log10_gpred_over_aref": [
+          15.260319672444897,
+          25.95068597004351,
+          39.39450322568624,
+          55.59177143937312
+        ],
+        "last_interval_dlogg_dlogr": -8.098634106843438
+      }
+    },
+    "power_sum": {
+      "point_source_grid": {
+        "mass_Msun_log10": [
+          0,
+          15,
+          31
+        ],
+        "radius_kpc_log10": [
+          -9,
+          4,
+          161
+        ],
+        "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+        "negative_below_minus_1e_5_count": 0,
+        "grid_points": 4991
+      },
+      "fixed_radius_monotonicity": {
+        "log10_gbar_over_aref_range": [
+          -8,
+          8,
+          181
+        ],
+        "log10_radius_kpc_range": [
+          -9,
+          4,
+          101
+        ],
+        "min_dlogg_dloggbar": -8.881784197001252e-12,
+        "negative_count": 0,
+        "grid_points": 18281,
+        "observed_input_min_derivative": 0.002819788642582921,
+        "observed_input_negative_count": 0
+      },
+      "uniform_density_core_path": {
+        "definition": "gbar/a_ref=r/kpc; finite central baryonic density, r->0",
+        "log10_radius_kpc": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -14.0
+        ],
+        "log10_gpred_over_aref": [
+          2.6979528311111256,
+          3.697952831106768,
+          4.697952831106765,
+          5.697952831106765
+        ],
+        "last_interval_dlogg_dlogr": -0.5
+      }
+    },
+    "half_power": {
+      "point_source_grid": {
+        "mass_Msun_log10": [
+          0,
+          15,
+          31
+        ],
+        "radius_kpc_log10": [
+          -9,
+          4,
+          161
+        ],
+        "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+        "negative_below_minus_1e_5_count": 0,
+        "grid_points": 4991
+      },
+      "fixed_radius_monotonicity": {
+        "log10_gbar_over_aref_range": [
+          -8,
+          8,
+          181
+        ],
+        "log10_radius_kpc_range": [
+          -9,
+          4,
+          101
+        ],
+        "min_dlogg_dloggbar": 0.2500000051863793,
+        "negative_count": 0,
+        "grid_points": 18281,
+        "observed_input_min_derivative": 0.2509334786493511,
+        "observed_input_negative_count": 0
+      },
+      "uniform_density_core_path": {
+        "definition": "gbar/a_ref=r/kpc; finite central baryonic density, r->0",
+        "log10_radius_kpc": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -14.0
+        ],
+        "log10_gpred_over_aref": [
+          -0.39069889698108273,
+          -0.3906989022796079,
+          -0.3906989023325913,
+          -0.39069890233312243
+        ],
+        "last_interval_dlogg_dlogr": 2.6556534749033744e-13
+      }
+    },
+    "mass_power": {
+      "point_source_grid": {
+        "mass_Msun_log10": [
+          0,
+          15,
+          31
+        ],
+        "radius_kpc_log10": [
+          -9,
+          4,
+          161
+        ],
+        "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+        "negative_below_minus_1e_5_count": 0,
+        "grid_points": 4991
+      },
+      "fixed_radius_monotonicity": {
+        "log10_gbar_over_aref_range": [
+          -8,
+          8,
+          181
+        ],
+        "log10_radius_kpc_range": [
+          -9,
+          4,
+          101
+        ],
+        "min_dlogg_dloggbar": 0.02499999998128999,
+        "negative_count": 0,
+        "grid_points": 18281,
+        "observed_input_min_derivative": 0.025654252089335472,
+        "observed_input_negative_count": 0
+      },
+      "uniform_density_core_path": {
+        "definition": "gbar/a_ref=r/kpc; finite central baryonic density, r->0",
+        "log10_radius_kpc": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -14.0
+        ],
+        "log10_gpred_over_aref": [
+          5.856069733028647,
+          7.706069733028642,
+          9.556069733028643,
+          11.406069733028641
+        ],
+        "last_interval_dlogg_dlogr": -0.9249999999999989
+      },
+      "point_mass_asymptotic_BTFR": {
+        "mass_Msun": [
+          1.0,
+          100000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          1000000000000000.0
+        ],
+        "a_infinity_m_s2": [
+          2.1141742734065372e-05,
+          4.4338757730612527e-10,
+          9.524402649792271e-11,
+          2.1950951288320507e-10,
+          8.667385704642159e-10,
+          9.536179117254049e-09
+        ],
+        "dlog_vflat_dlog_M": [
+          0.012500729774128416,
+          0.04912708754928308,
+          0.27664139691395917,
+          0.31292776178508375,
+          0.3326685764941659,
+          0.338752181121865
+        ],
+        "formal_dlog_M_dlog_vflat": [
+          79.9953297182382,
+          20.355369102571462,
+          3.614787993248239,
+          3.195625707017941,
+          3.005994766739074,
+          2.9520105130784478
+        ],
+        "meaning": "v_flat^4=G*M*a_infinity(M); algebraic asymptote only, not a fitted BTFR likelihood"
+      }
+    },
+    "mass_bounded": {
+      "point_source_grid": {
+        "mass_Msun_log10": [
+          0,
+          15,
+          31
+        ],
+        "radius_kpc_log10": [
+          -9,
+          4,
+          161
+        ],
+        "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+        "negative_below_minus_1e_5_count": 0,
+        "grid_points": 4991
+      },
+      "fixed_radius_monotonicity": {
+        "log10_gbar_over_aref_range": [
+          -8,
+          8,
+          181
+        ],
+        "log10_radius_kpc_range": [
+          -9,
+          4,
+          101
+        ],
+        "min_dlogg_dloggbar": -0.025269040708764123,
+        "negative_count": 640,
+        "grid_points": 18281,
+        "observed_input_min_derivative": -0.02351698165314886,
+        "observed_input_negative_count": 3
+      },
+      "uniform_density_core_path": {
+        "definition": "gbar/a_ref=r/kpc; finite central baryonic density, r->0",
+        "log10_radius_kpc": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -14.0
+        ],
+        "log10_gpred_over_aref": [
+          0.033373965084543045,
+          -0.9600097550801614,
+          -1.9592318575427896,
+          -2.959140480604221
+        ],
+        "last_interval_dlogg_dlogr": 0.4999543115307157
+      },
+      "point_mass_asymptotic_BTFR": {
+        "mass_Msun": [
+          1.0,
+          100000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          1000000000000000.0
+        ],
+        "a_infinity_m_s2": [
+          2.4586378014309665e-05,
+          4.689373347657774e-10,
+          6.429403785036357e-11,
+          2.1295026254454128e-10,
+          9.74833015274224e-10,
+          4.3854183117453685e-09
+        ],
+        "dlog_vflat_dlog_M": [
+          0.05851830430839122,
+          0.06683391774581193,
+          0.2801536397927932,
+          0.33475375305072586,
+          0.32422963996750465,
+          0.28588059788062203
+        ],
+        "formal_dlog_M_dlog_vflat": [
+          17.08867014891621,
+          14.96246267955261,
+          3.5694699549133775,
+          2.9872704663850866,
+          3.084233755125606,
+          3.497963861183681
+        ],
+        "meaning": "v_flat^4=G*M*a_infinity(M); algebraic asymptote only, not a fitted BTFR likelihood"
+      }
+    },
+    "mass_additive": {
+      "point_source_grid": {
+        "mass_Msun_log10": [
+          0,
+          15,
+          31
+        ],
+        "radius_kpc_log10": [
+          -9,
+          4,
+          161
+        ],
+        "min_dlog_inferred_mass_dlog_radius": 4.661160346586257e-12,
+        "negative_below_minus_1e_5_count": 0,
+        "grid_points": 4991
+      },
+      "fixed_radius_monotonicity": {
+        "log10_gbar_over_aref_range": [
+          -8,
+          8,
+          181
+        ],
+        "log10_radius_kpc_range": [
+          -9,
+          4,
+          101
+        ],
+        "min_dlogg_dloggbar": 0.024999999990171773,
+        "negative_count": 0,
+        "grid_points": 18281,
+        "observed_input_min_derivative": 0.025968436683093676,
+        "observed_input_negative_count": 0
+      },
+      "uniform_density_core_path": {
+        "definition": "gbar/a_ref=r/kpc; finite central baryonic density, r->0",
+        "log10_radius_kpc": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -14.0
+        ],
+        "log10_gpred_over_aref": [
+          5.856034934529201,
+          7.706034934529195,
+          9.556034934529196,
+          11.406034934529192
+        ],
+        "last_interval_dlogg_dlogr": -0.924999999999998
+      },
+      "point_mass_asymptotic_BTFR": {
+        "mass_Msun": [
+          1.0,
+          100000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          1000000000000000.0
+        ],
+        "a_infinity_m_s2": [
+          2.113834972334268e-05,
+          4.363360372185957e-10,
+          7.300815045586125e-11,
+          1.4361649508504442e-10,
+          6.099966909743096e-10,
+          9.298827585745852e-09
+        ],
+        "dlog_vflat_dlog_M": [
+          0.012500670599241204,
+          0.04557521403231157,
+          0.26617261689956795,
+          0.3096505425541974,
+          0.3420977337440232,
+          0.3514295393469977
+        ],
+        "formal_dlog_M_dlog_vflat": [
+          79.99570839509205,
+          21.9417510423764,
+          3.7569604704202884,
+          3.229446949297602,
+          2.9231412586563827,
+          2.8455206180394836
+        ],
+        "meaning": "v_flat^4=G*M*a_infinity(M); algebraic asymptote only, not a fitted BTFR likelihood"
+      }
+    },
+    "mixed_power": {
+      "point_source_grid": {
+        "mass_Msun_log10": [
+          0,
+          15,
+          31
+        ],
+        "radius_kpc_log10": [
+          -9,
+          4,
+          161
+        ],
+        "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+        "negative_below_minus_1e_5_count": 0,
+        "grid_points": 4991
+      },
+      "fixed_radius_monotonicity": {
+        "log10_gbar_over_aref_range": [
+          -8,
+          8,
+          181
+        ],
+        "log10_radius_kpc_range": [
+          -9,
+          4,
+          101
+        ],
+        "min_dlogg_dloggbar": 0.024999999990171773,
+        "negative_count": 0,
+        "grid_points": 18281,
+        "observed_input_min_derivative": 0.02576099517703767,
+        "observed_input_negative_count": 0
+      },
+      "uniform_density_core_path": {
+        "definition": "gbar/a_ref=r/kpc; finite central baryonic density, r->0",
+        "log10_radius_kpc": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -14.0
+        ],
+        "log10_gpred_over_aref": [
+          5.847080368467319,
+          7.697080368467315,
+          9.547080368467313,
+          11.397080368467314
+        ],
+        "last_interval_dlogg_dlogr": -0.9250000000000007
+      },
+      "point_mass_asymptotic_BTFR": {
+        "mass_Msun": [
+          1.0,
+          100000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          1000000000000000.0
+        ],
+        "a_infinity_m_s2": [
+          2.028441511959158e-05,
+          4.433498888280496e-10,
+          8.314730023550452e-11,
+          8.264419530931749e-11,
+          8.263786159355375e-11,
+          8.263778095423882e-11
+        ],
+        "dlog_vflat_dlog_M": [
+          0.0125009675650265,
+          0.05676858678405039,
+          0.24854462072734762,
+          0.24998156632265503,
+          0.24999976791601256,
+          0.24999999967217196
+        ],
+        "formal_dlog_M_dlog_vflat": [
+          79.99380806311854,
+          17.615375979043367,
+          4.023422422394712,
+          4.000294960586353,
+          4.000003713347247,
+          4.000000005245249
+        ],
+        "meaning": "v_flat^4=G*M*a_infinity(M); algebraic asymptote only, not a fitted BTFR likelihood"
+      }
+    },
+    "index_power": {
+      "point_source_grid": {
+        "mass_Msun_log10": [
+          0,
+          15,
+          31
+        ],
+        "radius_kpc_log10": [
+          -9,
+          4,
+          161
+        ],
+        "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+        "negative_below_minus_1e_5_count": 0,
+        "grid_points": 4991
+      },
+      "fixed_radius_monotonicity": {
+        "log10_gbar_over_aref_range": [
+          -8,
+          8,
+          181
+        ],
+        "log10_radius_kpc_range": [
+          -9,
+          4,
+          101
+        ],
+        "min_dlogg_dloggbar": 0.024999999990171773,
+        "negative_count": 0,
+        "grid_points": 18281,
+        "observed_input_min_derivative": 0.025769998781566272,
+        "observed_input_negative_count": 0
+      },
+      "uniform_density_core_path": {
+        "definition": "gbar/a_ref=r/kpc; finite central baryonic density, r->0",
+        "log10_radius_kpc": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -14.0
+        ],
+        "log10_gpred_over_aref": [
+          5.8462844433537065,
+          7.696284443353683,
+          9.546284443353667,
+          11.39628444335365
+        ],
+        "last_interval_dlogg_dlogr": -0.9249999999999918
+      },
+      "point_mass_asymptotic_BTFR": {
+        "mass_Msun": [
+          1.0,
+          100000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          1000000000000000.0
+        ],
+        "a_infinity_m_s2": [
+          2.0210202988721404e-05,
+          4.434021978573643e-10,
+          8.4517468547472e-11,
+          8.401620431182445e-11,
+          8.400989376898164e-11,
+          8.400981342469867e-11
+        ],
+        "dlog_vflat_dlog_M": [
+          0.012500987240398942,
+          0.05749826757220333,
+          0.2485734532556396,
+          0.24998193369113442,
+          0.24999977254158331,
+          0.24999999967874656
+        ],
+        "formal_dlog_M_dlog_vflat": [
+          79.99368216042488,
+          17.391828349336823,
+          4.022955737640951,
+          4.000289081832416,
+          4.0000036393379785,
+          4.0000000051400555
+        ],
+        "meaning": "v_flat^4=G*M*a_infinity(M); algebraic asymptote only, not a fitted BTFR likelihood"
+      }
+    },
+    "mass_screened": {
+      "point_source_grid": {
+        "mass_Msun_log10": [
+          0,
+          15,
+          31
+        ],
+        "radius_kpc_log10": [
+          -9,
+          4,
+          161
+        ],
+        "min_dlog_inferred_mass_dlog_radius": -8.661515948915621e-12,
+        "negative_below_minus_1e_5_count": 0,
+        "grid_points": 4991
+      },
+      "fixed_radius_monotonicity": {
+        "log10_gbar_over_aref_range": [
+          -8,
+          8,
+          181
+        ],
+        "log10_radius_kpc_range": [
+          -9,
+          4,
+          101
+        ],
+        "min_dlogg_dloggbar": -3.950901430425091,
+        "negative_count": 2373,
+        "grid_points": 18281,
+        "observed_input_min_derivative": 0.015300229554426892,
+        "observed_input_negative_count": 0
+      },
+      "uniform_density_core_path": {
+        "definition": "gbar/a_ref=r/kpc; finite central baryonic density, r->0",
+        "log10_radius_kpc": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -14.0
+        ],
+        "log10_gpred_over_aref": [
+          5.822481553124432,
+          7.672510923787026,
+          9.522513860853287,
+          11.372514154559912
+        ],
+        "last_interval_dlogg_dlogr": -0.9250001468533124
+      },
+      "point_mass_asymptotic_BTFR": {
+        "mass_Msun": [
+          1.0,
+          100000.0,
+          100000000.0,
+          10000000000.0,
+          1000000000000.0,
+          1000000000000000.0
+        ],
+        "a_infinity_m_s2": [
+          1.8114760818448203e-05,
+          5.004064062416486e-10,
+          2.015042840923213e-10,
+          3.5573158041705736e-10,
+          1.5095119994360683e-09,
+          2.7322023766642902e-08
+        ],
+        "dlog_vflat_dlog_M": [
+          0.012502322123713938,
+          0.0973697442669117,
+          0.26242734520859323,
+          0.3047720992620515,
+          0.34628890037360893,
+          0.35838047681760443
+        ],
+        "formal_dlog_M_dlog_vflat": [
+          79.98514116855438,
+          10.270130701573807,
+          3.8105785020426857,
+          3.2811402435502215,
+          2.8877622093030015,
+          2.7903305695665557
+        ],
+        "meaning": "v_flat^4=G*M*a_infinity(M); algebraic asymptote only, not a fitted BTFR likelihood"
+      }
+    }
+  }
+}

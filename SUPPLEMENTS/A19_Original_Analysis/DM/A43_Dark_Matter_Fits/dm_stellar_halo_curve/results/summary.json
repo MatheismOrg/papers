@@ -1,0 +1,215 @@
+{
+  "means": {
+    "Moster_fixed": {
+      "rms": 0.17111433634455633,
+      "median_speed": 10.041814058343695
+    },
+    "Moster_scaled": {
+      "rms": 0.17128037759721873,
+      "median_speed": 10.6049466554875
+    },
+    "stellar_power": {
+      "rms": 0.15329242130892726,
+      "median_speed": 9.088339233023332
+    },
+    "stellar_curved": {
+      "rms": 0.15380487697281844,
+      "median_speed": 9.116518462658707
+    }
+  },
+  "repeats": {
+    "20261027": {
+      "Moster_fixed": {
+        "rms": 0.17111433634455633,
+        "median_speed": 10.041814058343695
+      },
+      "Moster_scaled": {
+        "rms": 0.1710135948185914,
+        "median_speed": 10.60727130551351
+      },
+      "stellar_power": {
+        "rms": 0.15213594415805923,
+        "median_speed": 9.008044091388944
+      },
+      "stellar_curved": {
+        "rms": 0.1528724051104684,
+        "median_speed": 9.01964067704759
+      }
+    },
+    "7331": {
+      "Moster_fixed": {
+        "rms": 0.17111433634455633,
+        "median_speed": 10.041814058343695
+      },
+      "Moster_scaled": {
+        "rms": 0.1710236408277687,
+        "median_speed": 10.574425070397474
+      },
+      "stellar_power": {
+        "rms": 0.15253974488084193,
+        "median_speed": 9.066118360642344
+      },
+      "stellar_curved": {
+        "rms": 0.15303559524496985,
+        "median_speed": 9.122147531413006
+      }
+    },
+    "48105": {
+      "Moster_fixed": {
+        "rms": 0.17111433634455633,
+        "median_speed": 10.041814058343695
+      },
+      "Moster_scaled": {
+        "rms": 0.17180389714529612,
+        "median_speed": 10.63314359055152
+      },
+      "stellar_power": {
+        "rms": 0.1552015748878806,
+        "median_speed": 9.190855247038709
+      },
+      "stellar_curved": {
+        "rms": 0.15550663056301708,
+        "median_speed": 9.207767179515525
+      }
+    }
+  },
+  "tails": {
+    "mass_high": {
+      "Moster_fixed": 0.17355462726216142,
+      "Moster_scaled": 0.1800288098504876,
+      "stellar_power": 0.12872455594553325,
+      "stellar_curved": 0.12872455594553325
+    },
+    "mass_low": {
+      "Moster_fixed": 0.2232898120644684,
+      "Moster_scaled": 0.2818314168164651,
+      "stellar_power": 0.20585120791685932,
+      "stellar_curved": 0.2068263612346858
+    },
+    "surface_high": {
+      "Moster_fixed": 0.1548794471305019,
+      "Moster_scaled": 0.14895058133946862,
+      "stellar_power": 0.13006403495348245,
+      "stellar_curved": 0.13006403952625892
+    },
+    "surface_low": {
+      "Moster_fixed": 0.2191721267072849,
+      "Moster_scaled": 0.2341473987289505,
+      "stellar_power": 0.20632010301376733,
+      "stellar_curved": 0.20878625472887233
+    }
+  },
+  "dwarfs": {
+    "Moster_fixed": 0.555906558252607,
+    "Moster_scaled": 0.5663293720723409,
+    "stellar_power": 0.4791357742325792,
+    "stellar_curved": 0.47874058180200496
+  },
+  "contrasts": {
+    "Moster_fixed minus RAR": {
+      "difference": 0.01802174305114468,
+      "CI95": [
+        0.005276179116354598,
+        0.030919302593247457
+      ]
+    },
+    "Moster_fixed minus NFW": {
+      "difference": 0.017880034250462085,
+      "CI95": [
+        0.0035867531846438317,
+        0.03319635273382793
+      ]
+    },
+    "Moster_fixed minus Blend": {
+      "difference": 0.0205123571798575,
+      "CI95": [
+        0.008248549520279407,
+        0.03334945660487419
+      ]
+    },
+    "Moster_scaled minus RAR": {
+      "difference": 0.018187784303807075,
+      "CI95": [
+        0.005175483622137293,
+        0.03200330301825204
+      ]
+    },
+    "Moster_scaled minus NFW": {
+      "difference": 0.01804607550312448,
+      "CI95": [
+        0.0028801744738910437,
+        0.03463979494494024
+      ]
+    },
+    "Moster_scaled minus Blend": {
+      "difference": 0.020678398432519896,
+      "CI95": [
+        0.007609588433308755,
+        0.03485196954258969
+      ]
+    },
+    "stellar_power minus RAR": {
+      "difference": 0.0001998280155156018,
+      "CI95": [
+        -0.008598887486368648,
+        0.009125197291038606
+      ]
+    },
+    "stellar_power minus NFW": {
+      "difference": 5.811921483300786e-05,
+      "CI95": [
+        -0.007858961650363872,
+        0.009371518879884924
+      ]
+    },
+    "stellar_power minus Blend": {
+      "difference": 0.002690442144228422,
+      "CI95": [
+        -0.0038662600747476,
+        0.009853131659810563
+      ]
+    },
+    "stellar_curved minus RAR": {
+      "difference": 0.0007122836794067888,
+      "CI95": [
+        -0.00814751075194202,
+        0.009912480490873492
+      ]
+    },
+    "stellar_curved minus NFW": {
+      "difference": 0.0005705748787241949,
+      "CI95": [
+        -0.007565771425397059,
+        0.010209282728848358
+      ]
+    },
+    "stellar_curved minus Blend": {
+      "difference": 0.003202897808119609,
+      "CI95": [
+        -0.003530028017398865,
+        0.010615518894992725
+      ]
+    }
+  },
+  "full_coefficients": {
+    "Moster_fixed": [],
+    "Moster_scaled": [
+      -0.11549013686522935,
+      -0.39227246968553087
+    ],
+    "stellar_power": [
+      11.748053375991013,
+      0.8178286921390021,
+      -0.7118654811395674
+    ],
+    "stellar_curved": [
+      11.73465357707417,
+      0.8078118663134193,
+      0.29307098977259183,
+      -0.7086321114142544,
+      0.9999999999999611
+    ]
+  },
+  "failed_selected": [],
+  "optimizer_attempts": 240
+}

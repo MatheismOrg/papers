@@ -1,0 +1,99 @@
+Physical-source bridge: derivation and limits
+
+1. Kernels and total mass
+
+NLG q0(d)=alpha mu (1+mu d) exp(-mu d)/(8 pi d^2).
+Constant-parameter weak-field MOG q(d)=alpha mu^2 exp(-mu d)/(4 pi d).
+Dimensions: q has length^-3; alpha dimensionless; mu length^-1.
+Set t=mu d. The radial integral 4 pi d^2 q(d) dd equals alpha p(t) dt,
+where p_NLG=(1+t)exp(-t)/2 and p_MOG=t exp(-t). Both integrate to one.
+
+For positive integrable baryon density rho_b of total mass M_b, Tonelli's
+theorem permits exchange of the nonnegative integrals:
+ integral (q*rho_b)(x) d^3x = integral rho_b(y) d^3y integral q(x-y) d^3x
+                            = alpha M_b.
+The same equality for the effective mass holds without spherical symmetry.
+Spherical symmetry of source AND radial kernel then permits the Newtonian
+shell theorem for the effective Poisson source. At a radius containing a
+fraction f of baryons, g/gbar=1+M_extra(<r)/(f M_b)<=1+alpha/f.
+At f=1/2 this gives 1+2alpha. This is an isolated-source theorem; other source
+mass must be included when applying it to a satellite in a host field.
+
+2. Stronger radial-decrease bound
+
+For any nonnegative radially decreasing rho_b, the mass of rho_b inside a
+fixed-radius ball is largest when that ball is centered on rho_b. One way to
+see this is layer-cake decomposition of rho_b into concentric constant-density
+balls: each intersection with the test ball is maximized at zero displacement.
+Since q/alpha is a probability density, convolution is a weighted average of
+translations. Thus M_extra(<r)<=alpha M_b(<r), and g/gbar<=1+alpha at every
+radius for this source class. This is stronger than the general spherical
+bound and applies to Plummer; it need not apply to a hollow spherical shell.
+
+3. Plummer convolution without an enclosed point-mass approximation
+
+rho_b(r)=3 M_b a^2/[4 pi (r^2+a^2)^(5/2)].
+M_b(<r)=M_b r^3/(r^2+a^2)^(3/2).
+kappa=rhalf/a=[2^(2/3)-1]^(-1/2).
+
+For lengths in units of a, define F_R(d) as the fraction of a unit Plummer
+source inside a ball of radius R displaced by d. Angular integration gives
+ F_R(d)=(1/(2d)) integral_0^R s{[1+(s-d)^2]^(-3/2)
+                            -[1+(s+d)^2]^(-3/2)} ds.
+Production integration evaluates this with a stable expm1/log1p difference.
+An independently derived algebraic expression is
+ A=sqrt[1+(R-d)^2], B=sqrt[1+(R+d)^2], D=d^2+1-R^2,
+ F_R(d)=4 R^3/[A B (A+B)(A B+D)].
+It has no subtractive large-d cancellation; at d=0 it equals the ordinary
+Plummer enclosed fraction. R=kappa makes F(0)=1/2.
+
+For z=mu a, H(z)=integral_0^infinity p(t) F_kappa(t/z) dt.
+Then M_extra(<rhalf)=alpha M_b H(z), g/gbar=1+2alpha H(z).
+All source mass is included, even outside the test ball. Positivity gives
+H>=0; radial decrease gives H<=1/2; dominated convergence gives H->1/2
+as z->infinity and H->0 as z->0. Because F decreases with displacement,
+H increases with z. Both kernels tend to alpha times a spatial delta as
+mu->infinity; the response is the local rescaling (1+alpha) rho_b.
+
+4. Point-source limits and a conditional obstruction
+
+Point-source force ratios to Newtonian are:
+ NLG: 1+alpha[1-(1+t/2)exp(-t)],
+ MOG: 1+alpha[1-(1+t)exp(-t)], t=mu r.
+At small t the excess begins alpha t/2 (NLG) or alpha t^2/2 (MOG), and both
+approach 1+alpha at large t. For an isolated finite source, far enough out,
+the field returns to an enhanced inverse-square law G(1+alpha)M_b/r^2.
+Thus a finite positive kernel does not produce an exactly flat rotation curve
+at arbitrarily large radius. Observed finite radial intervals remain the
+relevant tests; this limit alone does not rule out a finite-interval fit.
+
+If rho_b is multiplied by c at fixed geometry, the linear equation multiplies
+g by c. A homologous Plummer source therefore has the same dimensionless
+enhancement at fixed a regardless of M_b. This is a concrete structural
+restriction, unlike a nonlinear deep-MOND response proportional to sqrt(M_b).
+Mass-size correlations can affect population trends, so this observation
+alone does not prove failure of any empirical galaxy relation.
+
+5. Bound-saturating fit interpretation
+
+In the mu->infinity limit, write D_i=gobs_i/gbar_i and b=log10(1+alpha).
+The equal-weight loss is mean[(b-log10 D_i)^2], minimized at
+ b=mean(log10 D_i), alpha=10^mean(log10 D_i)-1 (if this is nonnegative).
+For ML2, exact optimum alpha=58.4132155891862, production fitted NLG
+alpha=58.413217156110896 (relative difference2.68e-8). All selected NLG/MOG
+fit sets hit the same predeclared mu upper bound. The length is consequently
+not an identified finite physical scale, and the limiting model still does
+not improve the reported RAR comparison.
+
+6. Limits of application
+
+The theorem concerns a specified source, while gobs here is an equilibrium
+Wolf-type acceleration proxy, not a direct accelerometer measurement.
+Stellar population masses, spherical geometry, complete baryon inventory,
+unresolved binary stars, tides and host contributions matter. Bounds use
+central values with M/L sensitivity; no uncertainty-marginalized exclusion
+is inferred. Regularized NLG kernels with a short-distance cutoff need their
+own integral/force, and different MOG coefficient prescriptions are not
+identical models. A spatial convolution does not establish a temporal causal
+memory law. Cosmology and relativistic light deflection require more than
+this Newtonian source equation.

@@ -1,0 +1,55 @@
+Analytical checks for the one mixed_regular family -- 28 October2026
+
+Set U=gbar*r^2/(a_ref*kpc^2), V=gbar*r/(a_ref*kpc), all positive. Write
+ a_eff/a_ref=C0+N+P,
+ N=C1*U^(-alpha)*S(r)*W(gbar), S=r^4/(r^4+l^4),
+ W=1/[1+(gbar/gc)^2], gc=1e-8m/s^2,
+ P=C2*V^beta/(1+r/R).
+
+At fixed positive r, gbar->0 still gives N~gbar^(-alpha), so
+g_pred~gbar^((1-alpha)/2)->0 for alpha<=.95. This is a limit statement, not a
+claim that a_eff itself vanishes. At fixed r and gbar->infinity, N vanishes
+as gbar^(-alpha-2), while P grows no faster than gbar^.95. Thus
+sqrt(gbar/a_eff) grows unbounded and the exponential RAR correction vanishes
+in both relative and absolute acceleration.
+
+For a smooth constant-density baryonic core, gbar~r and U~r^3, V~r^2.
+N~r^(4-3alpha), with exponent>=1.15. P tends to0 if beta>0 and to a finite
+constant if beta=0. Hence a_eff has a finite positive central limit, and
+g_pred~sqrt(r)->0. This cures the inverse-mass central divergence; it does not
+assert differentiability of the MOND-like central field at r=0.
+
+At fixed isolated point-source mass M and r->infinity, U is constant,
+S,W->1, and P~r^(-beta-1)->0. Thus
+ a_eff,infinity=a_ref*[C0+C1*U^(-alpha)],
+ g_pred~sqrt(GM*a_eff,infinity)/r.
+Flat asymptotic circular speeds survive, but their normalization is mass-dependent:
+ V_infinity^4=G*M*a_ref*[C0+C1*U^(-alpha)].
+The low-mass asymptote still gives V_infinity^4~M^(1-alpha), whereas high mass
+approaches constant a_ref*C0. The finite-radius gates do not repair a universal
+baryonic Tully-Fisher law across every mass.
+
+Point-source extra-density positivity -- analytic proof
+For fixed M, the logarithmic radius slopes of the three positive a_eff legs are
+ 0,
+ n_N=4*(1-S)+4*(1-W)>=0,
+ n_P=-beta-r/(r+R)>-(beta+1)>=-1.95.
+The logarithmic slope n=dlog(a_eff)/dlog(r) is their positive weighted average,
+so n>-2. With t=sqrt(GM/(r^2*a_eff)), the RAR gives
+ M_extra(r)=M/[exp(t)-1].
+Since dlog(t)/dlog(r)=-1-n/2<0, M_extra is increasing. More explicitly,
+ dM_extra/dr = (M/r) * t*exp(t)/[exp(t)-1]^2 * (1+n/2) >=0.
+Therefore rho_extra=(4*pi*r^2)^(-1)dM_extra/dr is nonnegative at every positive
+radius for every allowed parameter set in the point-source calculation. This
+explains choosing gate power1 rather than2. It does not prove positive effective
+density for arbitrary extended baryonic profiles, conservation, stability, or
+consistency with gravitational lensing.
+
+Solar and binary interpretation
+The chosen l>=10pc is an imposed screening prior, not a measurement of that scale.
+It suppresses the formerly enormous inverse-mass response at stellar separations.
+The constant C0 term remains, so low-acceleration wide binaries can still have
+ordinary MOND-like enhancements. solar_stress.csv reports isolated predictions
+at six separations, including1000 and10000AU; none is a fitted orbital residual.
+The Sun in the Galactic field requires a vector field calculation, and Cassini's
+external-field quadrupole cannot be inferred from this scalar radial formula.

@@ -1,0 +1,1063 @@
+{
+  "constants": {
+    "G": 6.6743e-11,
+    "solar_mass_kg": 1.98847e+30,
+    "kpc_m": 3.085677581491367e+19,
+    "AU_m": 149597870700.0
+  },
+  "datasets": {
+    "original": {
+      "smooth_core": {
+        "central_density_Msun_pc3": 1.0,
+        "smallest_radius_kpc": 1e-12,
+        "smallest_gpred_m_s2": 2.274451800999965e-16,
+        "small_radius_log_slope": 0.5000011132441882,
+        "analytic_limit": "g_pred~sqrt(a_ref*C0*gbar)~sqrt(r), except beta=0 adds finiteC2 to scale; g_pred->0."
+      },
+      "point_mass_density": {
+        "radius_grid_kpc": [
+          1e-12,
+          10000000.0
+        ],
+        "radii_per_mass": 1501,
+        "results": [
+          {
+            "mass_Msun": 1.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.5298193299220083,
+            "numerically_decreasing_extra_mass_steps": 0
+          },
+          {
+            "mass_Msun": 1000.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.5287426179458838,
+            "numerically_decreasing_extra_mass_steps": 0
+          },
+          {
+            "mass_Msun": 1000000.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.5287410127040076,
+            "numerically_decreasing_extra_mass_steps": 0
+          },
+          {
+            "mass_Msun": 1000000000.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.5287410103162634,
+            "numerically_decreasing_extra_mass_steps": 0
+          },
+          {
+            "mass_Msun": 1000000000000.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.5281023723774616,
+            "numerically_decreasing_extra_mass_steps": 0
+          },
+          {
+            "mass_Msun": 1000000000000000.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.13826482125868822,
+            "numerically_decreasing_extra_mass_steps": 0
+          }
+        ],
+        "analytic_guarantee": "Each positive a_eff component has radius-log-slope>-2 for0<=beta<=.95. Thus dM_extra/dr>=0 for every fixed point-source mass and positive radius."
+      },
+      "input_monotonicity_grid": {
+        "log10_gbar_over_aref": [
+          -30,
+          15
+        ],
+        "log10_radius_kpc": [
+          -12,
+          7
+        ],
+        "points": 60491,
+        "minimum_dlogg_dloggb": 0.025000000000000133,
+        "negative_count": 0
+      },
+      "far_field_slopes": [
+        -1.0000000020753443,
+        -1.000000000000206
+      ],
+      "coefficients": [
+        -0.052559924827792245,
+        -3.1118325299597442,
+        -0.3765300033797515,
+        0.9499999999999998,
+        0.9425179793745867,
+        -1.9999999999999998,
+        2.6905713660636965
+      ],
+      "length_l_pc": 10.000000000000005,
+      "range_R_kpc": 490.42360573324265,
+      "all_data_bound_contacts": [
+        3,
+        5
+      ],
+      "selected_fit_bound_diagnostics": [
+        {
+          "split": "all",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_20261027_0",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_20261027_1",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_20261027_2",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_20261027_3",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            5
+          ]
+        },
+        {
+          "split": "cv_20261027_4",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_48105_0",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_48105_1",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_48105_2",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_48105_3",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_48105_4",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_7331_0",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_7331_1",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_7331_2",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_7331_3",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            5
+          ]
+        },
+        {
+          "split": "cv_7331_4",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3
+          ]
+        },
+        {
+          "split": "host_M31",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "host_MW",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "population_CLASH",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "population_ETG",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "population_MaNGA_BCG",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "population_SPARC",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "population_dSph",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            0,
+            5
+          ]
+        }
+      ]
+    },
+    "augmented": {
+      "smooth_core": {
+        "central_density_Msun_pc3": 1.0,
+        "smallest_radius_kpc": 1e-12,
+        "smallest_gpred_m_s2": 2.267944591572244e-16,
+        "small_radius_log_slope": 0.5000011164407954,
+        "analytic_limit": "g_pred~sqrt(a_ref*C0*gbar)~sqrt(r), except beta=0 adds finiteC2 to scale; g_pred->0."
+      },
+      "point_mass_density": {
+        "radius_grid_kpc": [
+          1e-12,
+          10000000.0
+        ],
+        "radii_per_mass": 1501,
+        "results": [
+          {
+            "mass_Msun": 1.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.5260712595564276,
+            "numerically_decreasing_extra_mass_steps": 0
+          },
+          {
+            "mass_Msun": 1000.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.5250015166098951,
+            "numerically_decreasing_extra_mass_steps": 0
+          },
+          {
+            "mass_Msun": 1000000.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.5250000021422736,
+            "numerically_decreasing_extra_mass_steps": 0
+          },
+          {
+            "mass_Msun": 1000000000.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.5250000000030242,
+            "numerically_decreasing_extra_mass_steps": 0
+          },
+          {
+            "mass_Msun": 1000000000000.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.5082449124926222,
+            "numerically_decreasing_extra_mass_steps": 0
+          },
+          {
+            "mass_Msun": 1000000000000000.0,
+            "minimum_extra_mass_derivative_sign_factor": 0.12042597465211702,
+            "numerically_decreasing_extra_mass_steps": 0
+          }
+        ],
+        "analytic_guarantee": "Each positive a_eff component has radius-log-slope>-2 for0<=beta<=.95. Thus dM_extra/dr>=0 for every fixed point-source mass and positive radius."
+      },
+      "input_monotonicity_grid": {
+        "log10_gbar_over_aref": [
+          -30,
+          15
+        ],
+        "log10_radius_kpc": [
+          -12,
+          7
+        ],
+        "points": 60491,
+        "minimum_dlogg_dloggb": 0.025000000000000133,
+        "negative_count": 0
+      },
+      "far_field_slopes": [
+        -1.000000002081288,
+        -1.0000000000002096
+      ],
+      "coefficients": [
+        -0.05504852376935947,
+        -3.1112290095612787,
+        -0.3962426791184686,
+        0.9499999999999998,
+        0.9499999999999998,
+        -1.9999999999999998,
+        2.4888617858382966
+      ],
+      "length_l_pc": 10.000000000000005,
+      "range_R_kpc": 308.2206882210668,
+      "all_data_bound_contacts": [
+        3,
+        4,
+        5
+      ],
+      "selected_fit_bound_diagnostics": [
+        {
+          "split": "all",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_20261027_0",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_20261027_1",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_20261027_2",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_20261027_3",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_20261027_4",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_48105_0",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_48105_1",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_48105_2",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_48105_3",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_48105_4",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_7331_0",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_7331_1",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "cv_7331_2",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_7331_3",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "cv_7331_4",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "host_M31",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "host_MW",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "population_ETG",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "population_MaNGA_BCG",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "population_SPARC",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        },
+        {
+          "split": "population_clusters",
+          "selected_start": 2,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "population_dSph",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            0,
+            5
+          ]
+        },
+        {
+          "split": "source_CLASH",
+          "selected_start": 0,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "split": "source_XCOP",
+          "selected_start": 1,
+          "success": true,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "bound_contacts_absolute_1e-6": [
+            3,
+            5
+          ]
+        }
+      ]
+    }
+  },
+  "limitations": "No planetary or binary likelihood; no Galactic external-field quadrupole. Large wide-binary MOND-like response from C0 remains. Positive inferred density is proved only for point-source radial profiles, not arbitrary extended systems or a covariant theory.",
+  "results_sha256": "b3b1e35c5b1f920acba21d13fd9e34f3cf80247156f0125d2e773ef7e9bfe281"
+}

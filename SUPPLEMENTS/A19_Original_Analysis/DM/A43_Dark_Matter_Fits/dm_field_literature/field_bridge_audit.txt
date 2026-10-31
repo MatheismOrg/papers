@@ -1,0 +1,85 @@
+A43 field-law bridge audit -- 28 October 2026
+Research notes for the parent agent; this is not a fitted gravity theory.
+
+1. Distinguish a shared field law from one universal scalar curve
+
+Einstein's equation is a relation among spacetime fields, supplemented by matter
+equations and initial/boundary data. Its solutions are not one function of radius.
+Analogously, a baryonic response law must specify how it uses the distribution
+of matter, environment and, if relevant, additional state. A present-day relation
+g_pred(g_bar,r) is a useful empirical target, but does not yet have that content.
+
+Elementary consistency calculation: let g_N=-grad psi and g_trial=f(g_N) g_N.
+Then curl(g_trial)=grad f cross g_N, generally nonzero. A scalar potential force
+therefore cannot generally equal this vector field pointwise. One-dimensional
+symmetry is an important exceptional case. QUMOND instead solves for the scalar
+potential whose Laplacian equals the divergence of the trial field. This removes
+its curl component and changes predictions for general geometry.
+
+2. Check of the proposed two-invariant action (independent calculation)
+
+Let psi=Phi_N, H_ij=partial_i partial_j psi, g_N=|grad psi|, and define
+  X=(grad psi)^2/a0^2,
+  Y=ell_*^2 H_ij H_ij/a0^2.
+The gravitational Lagrangian density is
+  L_g=-(8 pi G)^(-1) [2 grad Phi dot grad psi - a0^2 Q(X,Y)],
+and the matter term is rho(v^2/2-Phi).
+Assuming boundary terms vanish under variations, varying Phi yields
+  Laplacian psi=4 pi G rho.
+Varying psi yields
+  Laplacian Phi = partial_i(Q_X partial_i psi)
+                 - ell_*^2 partial_i partial_j(Q_Y H_ij).
+Signs and factors are correct. The second term cannot be dropped when Q_Y != 0.
+For Q(X,Y)=Q0(X) this reduces to QUMOND with nu(s)=Q0'(s^2).
+Q0(X)=X gives Newtonian gravity. Q0(X)~(4/3)X^(3/4) at X->0 gives
+nu(s)~s^(-1/2), the standard deep-MOND limit. This is a specialization of the
+published GQUMOND class, not a new action class.
+
+Dimensional and point-mass checks:
+  ell_J=sqrt(6)*g_N/sqrt(H_ij H_ij),
+  P_J=sqrt(6)*g_N^2/sqrt(H_ij H_ij),
+  M_J=6*g_N^3/[G H_ij H_ij]=g_N ell_J^2/G.
+For psi=-GM/r, the Hessian eigenvalues are (-2,1,1)*GM/r^3,
+so H_ij H_ij=6(GM)^2/r^6, ell_J=r, P_J=GM/r and M_J=M.
+For arbitrary geometry they are local derivative invariants/proxies, not enclosed
+mass, absolute potential or a unique physical radius. A constant added potential
+does not change them. A uniform added field does change them, so they permit an
+external-field response. Their values can be undefined or divergent at H=0;
+regularity must be established for Q and the physical source, not merely hidden
+by choosing a tiny numerical denominator. At a force saddle g_N=0 while H may
+remain finite, these proxies vanish; this is not absence of gravitational tides.
+
+Milgrom (2023) explicitly supplies the unnormalized length and potential proxies;
+the normalized mass combination above is elementary algebra of the same
+invariants. No novelty claim follows from changing normalization or notation.
+Radial regression on m=log10(g_bar/a_ref)+2 log10(r/kpc) does not measure H,
+does not establish M_J, and does not fit Q. Replacing its m with M_J defines a
+different hypothesis that requires the full derivative term and new predictions.
+
+3. Practical next experiment
+
+Build an action-derived solver with declared Q, using smooth spherical profiles
+(e.g. Plummer/Hernquist) and then an axisymmetric disk. Verify Newtonian recovery,
+point-mass asymptotics, grid/domain convergence and global momentum conservation.
+Add an independently set uniform external field before estimating the Solar
+quadrupole. Fit shared Q parameters to reconstructed baryonic density fields,
+and compare observable velocities/dispersion/lensing through common likelihoods.
+The existing 2,910-row table lacks the full baryonic density/Hessian fields for
+most objects, so it cannot by itself perform this full field-law test. A spherical
+approximation must be labeled and cannot be treated as an exact disk evaluation.
+
+A useful narrower check on existing radial candidates is the inferred spherical
+extra density rho_extra=(4 pi G r^2)^(-1) d[r^2(g_pred-g_bar)]/dr. Negative
+values rule out interpretation as an ordinary nonnegative-density spherical halo
+over that profile. They do not alone rule out modified gravity, whose inferred
+phantom density can be negative. Conversely, positivity does not establish a
+consistent field theory.
+
+4. What successful endpoint would require
+
+One fixed action and coefficient set; source/state variables inferred without
+using the response residuals; initial/environmental data; conservational and
+stability checks; both metric potentials for lensing; cosmological background and
+perturbation predictions; Solar-System orbital and external-field constraints.
+A static acceleration fit cannot inherit these predictions from GR or from a
+different MOND theory merely by sharing its low-acceleration asymptote.

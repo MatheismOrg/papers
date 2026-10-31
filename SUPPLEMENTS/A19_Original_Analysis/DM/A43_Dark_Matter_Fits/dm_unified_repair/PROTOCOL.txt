@@ -1,0 +1,59 @@
+A43 screened response and fixed-radius cluster follow-up, 28 October 2026
+
+This second stage was chosen after inspecting the first constrained-family fits,
+their Solar point-mass failures and earlier X-COP stress results. It is explicitly
+post-selection exploratory work, not an independent confirmation. This protocol
+is fixed before any second-stage fit. Exactly two new families are tested; all
+attempts and diagnostics must remain available.
+
+Use a_ref=1e-10 m/s^2, x=log10(gbar/a_ref), u=log10(r/kpc), m=x+2u, q=x+u.
+Mass is spherical-equivalent gbar*r^2/G, not actual enclosed disk baryonic mass.
+F(g,a)=g/[1-exp(-sqrt(g/a))]. Let gc=1e-8 m/s^2, a fixed regulator scale already
+used in earlier A43 tests, NOT fitted here; W=1/[1+(gbar/gc)^2].
+
+(1) mixed_gate, 5 coefficients:
+ a_eff/a_ref = 10^A + W*10^(B-alpha*m) + 10^(C+beta*q).
+ g=F(gbar,a_eff), alpha,beta in [0,0.95].
+(2) mixed_gate_range, 6 coefficients:
+ same expression, but divide its positive-potential term by 1+(r/rc)^2.
+ log10(rc/kpc) is fitted in [0,4]. This permits a radial turn-down; it is not a
+ derived field equation. Test effective-density positivity rather than assuming it.
+
+The inverse-mass gate suppresses the first-stage finite-Solar anomaly. Both
+families retain a positive 1/r isolated point-mass far field and vanish as
+baryons vanish at fixed positive radius. Neither guarantees conserved extended-
+source dynamics, metric lensing, cosmology, the Cassini external-field response,
+or a correct baryonic Tully-Fisher relation. Mathematical spot checks are not
+observational likelihood fits. Exact starts and bounds are frozen in run.py.
+Three fixed starts per new family, capped 1600 evaluations per start.
+
+Original benchmark: unchanged 2,910 rows, 279 systems, 278 groups, 5 populations.
+Refit RAR, potential_quad, power_sum, first-stage mixed_power and both new
+variants; identical equal-population/equal-group objective; complete group five-
+fold CV seeds 20261027, 7331, 48105; full-population exclusions; full dwarf-host
+exclusions (MW 26: Milky_Way/G/L; M31 18: M31/A/L). Save all coefficients,
+predictions, bounds and optimizer diagnostics. No object/source-specific offsets.
+
+Augmented benchmark: append all 21 fixed-radius X-COP estimates from
+../dm_fixed_radius/fixed_radius_inputs.csv, primary gbar and gobs_forward.
+Preserve every original noncluster row exactly. Merge CLASH and X-COP into
+one population named clusters: 20 CLASH and 7 X-COP hosts with equal host weight.
+The other four population classes remain unchanged; total 5 classes, 286 systems, 
+285 groups, 2,931 rows. Retain source names separately. X-COP system/group IDs get
+an XCOP_ prefix to preserve identity and avoid accidental name collisions.
+This reuses previously examined measurements; it adds radial coverage and a
+source/systematic difference rather than a blinded survey.
+
+On the augmented set fit exactly the same six families, with all-data fits,
+three group folds, full-population and full-host exclusions. Additionally exclude
+all X-COP rows before predicting them, and all CLASH rows before predicting
+them. No per-source calibration. Report both source subsets in every score,
+so merging populations cannot conceal one source's failure.
+
+Compare original and augmented scores only within each stated objective; their
+sample/group composition differs. Descriptive 5,000-draw paired group-Poisson
+bootstrap on frozen primary-fold and population-holdout predictions separately
+for each benchmark. It excludes refitting, selection and input-systematic
+uncertainty. Inspect point-Solar corrections at 0.4, 1, 10, 30 AU, point-mass inferred-
+density positivity over declared radii/masses, response monotonicity, physical
+limits and parameter-bound contacts. Preserve failures without post-hoc deletion.

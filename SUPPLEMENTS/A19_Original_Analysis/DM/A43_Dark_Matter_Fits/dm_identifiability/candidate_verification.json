@@ -1,0 +1,166 @@
+{
+  "status": "passed",
+  "input_sha256": "63f63326e16297dfa9c2828c3480c00cb4f39b715911f5f6a15cae8ee3f1b3f9",
+  "candidate_results_sha256": "7b9eb30ddcbcfbfde62001e57c4d879a407ac31fa7e65ede6c8dea7603fb6172",
+  "prediction_tables_checked": 70,
+  "maximum_direct_equation_error_dex": 5.551115123125783e-16,
+  "checks": [
+    "all-data and held-out predictions",
+    "equal population/group RMS",
+    "residuals",
+    "group disjointness",
+    "26/18 host membership"
+  ],
+  "solar_probe_constants": {
+    "GM_sun_m3_s2": 1.32712440018e+20,
+    "AU_m": 149597870700.0,
+    "kpc_m": 3.085677581491367e+19
+  },
+  "solar_interpretation": "Illustrative isolated-point-source predictions against Newtonian baryonic acceleration. No actual ephemeris, external field, relativistic or Cassini likelihood fitted.",
+  "monotonicity_grid": {
+    "x_range": [
+      -15,
+      15
+    ],
+    "x_points": 601,
+    "u_range": [
+      -12,
+      6
+    ],
+    "u_points": 73,
+    "results": {
+      "RAR": {
+        "minimum_dlogg_dloggbar": 0.5000000035227465,
+        "grid_x": -15.0,
+        "grid_u": -12.0,
+        "negative_steps": 0
+      },
+      "potential_quad": {
+        "minimum_dlogg_dloggbar": -3.9671054711775757,
+        "grid_x": -15.0,
+        "grid_u": -12.0,
+        "negative_steps": 19522
+      },
+      "power_sum": {
+        "minimum_dlogg_dloggbar": -2.6645352591003378e-14,
+        "grid_x": -12.1,
+        "grid_u": -8.5,
+        "negative_steps": 1124
+      },
+      "half_power": {
+        "minimum_dlogg_dloggbar": 0.24999999999998668,
+        "grid_x": -14.95,
+        "grid_u": -12.0,
+        "negative_steps": 0
+      },
+      "mass_power": {
+        "minimum_dlogg_dloggbar": 0.024999999999905854,
+        "grid_x": -14.95,
+        "grid_u": -12.0,
+        "negative_steps": 0
+      },
+      "mass_bounded": {
+        "minimum_dlogg_dloggbar": -0.02526661377693493,
+        "grid_x": -14.65,
+        "grid_u": 4.25,
+        "negative_steps": 1141
+      },
+      "mass_additive": {
+        "minimum_dlogg_dloggbar": 0.024999999999905854,
+        "grid_x": -14.95,
+        "grid_u": -12.0,
+        "negative_steps": 0
+      },
+      "mixed_power": {
+        "minimum_dlogg_dloggbar": 0.024999999999905854,
+        "grid_x": -14.95,
+        "grid_u": -11.5,
+        "negative_steps": 0
+      },
+      "index_power": {
+        "minimum_dlogg_dloggbar": 0.024999999999905854,
+        "grid_x": -14.95,
+        "grid_u": -12.0,
+        "negative_steps": 0
+      },
+      "mass_screened": {
+        "minimum_dlogg_dloggbar": -6.532411033704473,
+        "grid_x": 2.5,
+        "grid_u": -12.0,
+        "negative_steps": 3543
+      }
+    }
+  },
+  "files": [
+    "RAR_all.csv",
+    "RAR_cv_20261027.csv",
+    "RAR_cv_48105.csv",
+    "RAR_cv_7331.csv",
+    "RAR_host_M31.csv",
+    "RAR_host_MW.csv",
+    "RAR_population_holdout.csv",
+    "half_power_all.csv",
+    "half_power_cv_20261027.csv",
+    "half_power_cv_48105.csv",
+    "half_power_cv_7331.csv",
+    "half_power_host_M31.csv",
+    "half_power_host_MW.csv",
+    "half_power_population_holdout.csv",
+    "index_power_all.csv",
+    "index_power_cv_20261027.csv",
+    "index_power_cv_48105.csv",
+    "index_power_cv_7331.csv",
+    "index_power_host_M31.csv",
+    "index_power_host_MW.csv",
+    "index_power_population_holdout.csv",
+    "mass_additive_all.csv",
+    "mass_additive_cv_20261027.csv",
+    "mass_additive_cv_48105.csv",
+    "mass_additive_cv_7331.csv",
+    "mass_additive_host_M31.csv",
+    "mass_additive_host_MW.csv",
+    "mass_additive_population_holdout.csv",
+    "mass_bounded_all.csv",
+    "mass_bounded_cv_20261027.csv",
+    "mass_bounded_cv_48105.csv",
+    "mass_bounded_cv_7331.csv",
+    "mass_bounded_host_M31.csv",
+    "mass_bounded_host_MW.csv",
+    "mass_bounded_population_holdout.csv",
+    "mass_power_all.csv",
+    "mass_power_cv_20261027.csv",
+    "mass_power_cv_48105.csv",
+    "mass_power_cv_7331.csv",
+    "mass_power_host_M31.csv",
+    "mass_power_host_MW.csv",
+    "mass_power_population_holdout.csv",
+    "mass_screened_all.csv",
+    "mass_screened_cv_20261027.csv",
+    "mass_screened_cv_48105.csv",
+    "mass_screened_cv_7331.csv",
+    "mass_screened_host_M31.csv",
+    "mass_screened_host_MW.csv",
+    "mass_screened_population_holdout.csv",
+    "mixed_power_all.csv",
+    "mixed_power_cv_20261027.csv",
+    "mixed_power_cv_48105.csv",
+    "mixed_power_cv_7331.csv",
+    "mixed_power_host_M31.csv",
+    "mixed_power_host_MW.csv",
+    "mixed_power_population_holdout.csv",
+    "potential_quad_all.csv",
+    "potential_quad_cv_20261027.csv",
+    "potential_quad_cv_48105.csv",
+    "potential_quad_cv_7331.csv",
+    "potential_quad_host_M31.csv",
+    "potential_quad_host_MW.csv",
+    "potential_quad_population_holdout.csv",
+    "power_sum_all.csv",
+    "power_sum_cv_20261027.csv",
+    "power_sum_cv_48105.csv",
+    "power_sum_cv_7331.csv",
+    "power_sum_host_M31.csv",
+    "power_sum_host_MW.csv",
+    "power_sum_population_holdout.csv"
+  ]
+}

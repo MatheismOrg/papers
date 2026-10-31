@@ -1,0 +1,873 @@
+{
+  "eligible_galaxies": 104,
+  "eligible_rows": 2470,
+  "fit_sets": 1254,
+  "optimizer_calls": 3762,
+  "optimizer_failures": [],
+  "splits": {
+    "outer_third": {
+      "test_rows": 788,
+      "disk_train_rows": 1912,
+      "broad_train_rows": 2143,
+      "models": {
+        "RAR_fixed": {
+          "test": {
+            "galaxy_RMS_dex": 0.1149362583776001,
+            "row_RMS_dex": 0.10734190708287744,
+            "median_acceleration_error_percent": 16.292915876014064,
+            "median_speed_error_percent": 8.367996540665768,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.14684223705333435,
+            "row_RMS_dex": 0.13681515944237455,
+            "median_acceleration_error_percent": 17.936743156892472,
+            "median_speed_error_percent": 8.9532917677427,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "0",
+          "selected_fits_hitting_bounds": 0,
+          "bound_details": {}
+        },
+        "RAR_shared": {
+          "test": {
+            "galaxy_RMS_dex": 0.11346283101996657,
+            "row_RMS_dex": 0.10874708143522892,
+            "median_acceleration_error_percent": 16.62912293101243,
+            "median_speed_error_percent": 8.294926166245903,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.14831380119465118,
+            "row_RMS_dex": 0.13840789984761426,
+            "median_acceleration_error_percent": 17.87211292552519,
+            "median_speed_error_percent": 9.048168049273125,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "1 shared",
+          "selected_fits_hitting_bounds": 0,
+          "bound_details": {}
+        },
+        "mixed_regular_disk": {
+          "test": {
+            "galaxy_RMS_dex": 0.11359990372078534,
+            "row_RMS_dex": 0.10957998887192263,
+            "median_acceleration_error_percent": 15.991976873386227,
+            "median_speed_error_percent": 8.127670988719998,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.14836214248568946,
+            "row_RMS_dex": 0.13798660434301532,
+            "median_acceleration_error_percent": 17.997555347410454,
+            "median_speed_error_percent": 8.999404985728477,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "7 shared",
+          "selected_fits_hitting_bounds": 1,
+          "bound_details": {
+            "(3, 1)": 1,
+            "(5, -1)": 1
+          }
+        },
+        "mixed_regular_broad": {
+          "test": {
+            "galaxy_RMS_dex": 0.16287859100274524,
+            "row_RMS_dex": 0.15519926775685514,
+            "median_acceleration_error_percent": 28.593873977705144,
+            "median_speed_error_percent": 13.727144491559606,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.19369771348396123,
+            "row_RMS_dex": 0.1863682334977138,
+            "median_acceleration_error_percent": 33.744629346006796,
+            "median_speed_error_percent": 16.105604743886893,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "7 shared",
+          "selected_fits_hitting_bounds": 1,
+          "bound_details": {
+            "(3, 1)": 1,
+            "(4, 1)": 1,
+            "(5, -1)": 1
+          }
+        },
+        "RAR_individual": {
+          "test": {
+            "galaxy_RMS_dex": 0.10481877568834062,
+            "row_RMS_dex": 0.09362518090680129,
+            "median_acceleration_error_percent": 14.242883523471333,
+            "median_speed_error_percent": 7.069803228706362,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.08025504090725746,
+            "row_RMS_dex": 0.07525992625351642,
+            "median_acceleration_error_percent": 8.016017957798644,
+            "median_speed_error_percent": 4.039819976171838,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "1 per galaxy (104 total)",
+          "selected_fits_hitting_bounds": 0,
+          "bound_details": {}
+        },
+        "NFW_fixed": {
+          "test": {
+            "galaxy_RMS_dex": 0.09005618356957466,
+            "row_RMS_dex": 0.12248076381416355,
+            "median_acceleration_error_percent": 10.72533411756313,
+            "median_speed_error_percent": 5.3775589280497975,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.06717753283283998,
+            "row_RMS_dex": 0.06529694726771966,
+            "median_acceleration_error_percent": 5.063571768496233,
+            "median_speed_error_percent": 2.545208634119839,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "2 per galaxy (208 total)",
+          "selected_fits_hitting_bounds": 41,
+          "bound_details": {
+            "(1, 1)": 41
+          }
+        },
+        "Burkert_fixed": {
+          "test": {
+            "galaxy_RMS_dex": 0.10981740615436206,
+            "row_RMS_dex": 0.12544972404887886,
+            "median_acceleration_error_percent": 11.567471520155598,
+            "median_speed_error_percent": 5.850341021051442,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.05388988871052864,
+            "row_RMS_dex": 0.05571865202979775,
+            "median_acceleration_error_percent": 4.152704950388864,
+            "median_speed_error_percent": 2.077485118928335,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "2 per galaxy (208 total)",
+          "selected_fits_hitting_bounds": 10,
+          "bound_details": {
+            "(1, 1)": 10
+          }
+        },
+        "RAR_stellar": {
+          "test": {
+            "galaxy_RMS_dex": 0.09517224987438681,
+            "row_RMS_dex": 0.08428187089492918,
+            "median_acceleration_error_percent": 11.925066016087015,
+            "median_speed_error_percent": 5.983991321299165,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.08605817859393415,
+            "row_RMS_dex": 0.07749356095246877,
+            "median_acceleration_error_percent": 7.94751980852052,
+            "median_speed_error_percent": 3.9727837188321233,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "1 per galaxy (104 total)",
+          "selected_fits_hitting_bounds": 15,
+          "bound_details": {
+            "(0, -1)": 7,
+            "(0, 1)": 8
+          }
+        },
+        "NFW_stellar": {
+          "test": {
+            "galaxy_RMS_dex": 0.09482596038336119,
+            "row_RMS_dex": 0.12204048340315354,
+            "median_acceleration_error_percent": 10.820544152547612,
+            "median_speed_error_percent": 5.423078791110081,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.04708954281360696,
+            "row_RMS_dex": 0.045092901810425946,
+            "median_acceleration_error_percent": 3.8760857407248883,
+            "median_speed_error_percent": 1.9392716436890778,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "3 per galaxy (312 total)",
+          "selected_fits_hitting_bounds": 63,
+          "bound_details": {
+            "(1, 1)": 29,
+            "(2, -1)": 34,
+            "(2, 1)": 13,
+            "(0, -1)": 1,
+            "(1, -1)": 1
+          }
+        },
+        "Burkert_stellar": {
+          "test": {
+            "galaxy_RMS_dex": 0.11949976626354879,
+            "row_RMS_dex": 0.15940782710400236,
+            "median_acceleration_error_percent": 11.43952088058215,
+            "median_speed_error_percent": 5.781616354125113,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.03129237450051691,
+            "row_RMS_dex": 0.03248068345722215,
+            "median_acceleration_error_percent": 3.3006473637889777,
+            "median_speed_error_percent": 1.6423488995508162,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "3 per galaxy (312 total)",
+          "selected_fits_hitting_bounds": 44,
+          "bound_details": {
+            "(2, -1)": 27,
+            "(2, 1)": 13,
+            "(1, 1)": 4
+          }
+        }
+      },
+      "bootstrap": {
+        "RAR_fixed minus RAR_shared": {
+          "difference_dex": 0.0014734273576335333,
+          "percentile_95_dex": [
+            -0.00295304454468805,
+            0.005818837464920495
+          ]
+        },
+        "RAR_fixed minus NFW_fixed": {
+          "difference_dex": 0.02488007480802544,
+          "percentile_95_dex": [
+            -0.001755691094517533,
+            0.05061518413793377
+          ]
+        },
+        "RAR_fixed minus Burkert_fixed": {
+          "difference_dex": 0.005118852223238046,
+          "percentile_95_dex": [
+            -0.024793450007207306,
+            0.03448150556255405
+          ]
+        },
+        "RAR_shared minus NFW_fixed": {
+          "difference_dex": 0.023406647450391907,
+          "percentile_95_dex": [
+            -0.0028185998949421657,
+            0.04865040601624183
+          ]
+        },
+        "RAR_shared minus Burkert_fixed": {
+          "difference_dex": 0.003645424865604513,
+          "percentile_95_dex": [
+            -0.02591621007376923,
+            0.032590112405319914
+          ]
+        },
+        "mixed_regular_disk minus RAR_shared": {
+          "difference_dex": 0.0001370727008187661,
+          "percentile_95_dex": [
+            -0.001967636715066789,
+            0.0022657120008306598
+          ]
+        },
+        "mixed_regular_disk minus NFW_fixed": {
+          "difference_dex": 0.023543720151210673,
+          "percentile_95_dex": [
+            -0.0026502381927751913,
+            0.048632350013350936
+          ]
+        },
+        "mixed_regular_disk minus Burkert_fixed": {
+          "difference_dex": 0.003782497566423279,
+          "percentile_95_dex": [
+            -0.025837414831855265,
+            0.032532345545379086
+          ]
+        },
+        "mixed_regular_broad minus RAR_shared": {
+          "difference_dex": 0.04941575998277867,
+          "percentile_95_dex": [
+            0.031887660120329314,
+            0.06817484494659617
+          ]
+        },
+        "mixed_regular_broad minus NFW_fixed": {
+          "difference_dex": 0.07282240743317057,
+          "percentile_95_dex": [
+            0.04428028353840706,
+            0.09916765904198986
+          ]
+        },
+        "mixed_regular_broad minus Burkert_fixed": {
+          "difference_dex": 0.05306118484838318,
+          "percentile_95_dex": [
+            0.024641983682422024,
+            0.08146011637567578
+          ]
+        },
+        "RAR_individual minus RAR_shared": {
+          "difference_dex": -0.008644055331625947,
+          "percentile_95_dex": [
+            -0.03173558820090593,
+            0.0137199803040547
+          ]
+        },
+        "RAR_individual minus NFW_fixed": {
+          "difference_dex": 0.01476259211876596,
+          "percentile_95_dex": [
+            -0.01153260041763405,
+            0.03753162893732761
+          ]
+        },
+        "RAR_individual minus Burkert_fixed": {
+          "difference_dex": -0.004998630466021434,
+          "percentile_95_dex": [
+            -0.03219632609735233,
+            0.02002853688932165
+          ]
+        },
+        "NFW_fixed minus RAR_shared": {
+          "difference_dex": -0.023406647450391907,
+          "percentile_95_dex": [
+            -0.048650406016241834,
+            0.0028185998949421458
+          ]
+        },
+        "NFW_fixed minus Burkert_fixed": {
+          "difference_dex": -0.019761222584787394,
+          "percentile_95_dex": [
+            -0.04695218960255136,
+            0.008587949522938301
+          ]
+        },
+        "Burkert_fixed minus RAR_shared": {
+          "difference_dex": -0.003645424865604513,
+          "percentile_95_dex": [
+            -0.032590112405319914,
+            0.025916210073769225
+          ]
+        },
+        "Burkert_fixed minus NFW_fixed": {
+          "difference_dex": 0.019761222584787394,
+          "percentile_95_dex": [
+            -0.008587949522938305,
+            0.04695218960255132
+          ]
+        },
+        "RAR_stellar minus RAR_shared": {
+          "difference_dex": -0.018290581145579757,
+          "percentile_95_dex": [
+            -0.030096568646728012,
+            -0.006966561042898908
+          ]
+        },
+        "RAR_stellar minus NFW_fixed": {
+          "difference_dex": 0.00511606630481215,
+          "percentile_95_dex": [
+            -0.02312559609756806,
+            0.03190868171579249
+          ]
+        },
+        "RAR_stellar minus Burkert_fixed": {
+          "difference_dex": -0.014645156279975244,
+          "percentile_95_dex": [
+            -0.04414465984259884,
+            0.01373680256449443
+          ]
+        },
+        "NFW_stellar minus RAR_shared": {
+          "difference_dex": -0.01863687063660538,
+          "percentile_95_dex": [
+            -0.04486258678377769,
+            0.00797813956602484
+          ]
+        },
+        "NFW_stellar minus NFW_fixed": {
+          "difference_dex": 0.004769776813786528,
+          "percentile_95_dex": [
+            -0.007345059328884588,
+            0.020268191334207968
+          ]
+        },
+        "NFW_stellar minus Burkert_fixed": {
+          "difference_dex": -0.014991445771000866,
+          "percentile_95_dex": [
+            -0.04484106947913243,
+            0.014328041370338315
+          ]
+        },
+        "Burkert_stellar minus RAR_shared": {
+          "difference_dex": 0.006036935243582217,
+          "percentile_95_dex": [
+            -0.03829361852691262,
+            0.04994444245517561
+          ]
+        },
+        "Burkert_stellar minus NFW_fixed": {
+          "difference_dex": 0.029443582693974124,
+          "percentile_95_dex": [
+            -0.011348423759187279,
+            0.06869640592898361
+          ]
+        },
+        "Burkert_stellar minus Burkert_fixed": {
+          "difference_dex": 0.00968236010918673,
+          "percentile_95_dex": [
+            -0.02006793353763173,
+            0.04433099919500517
+          ]
+        }
+      }
+    },
+    "middle_third": {
+      "test_rows": 788,
+      "disk_train_rows": 1912,
+      "broad_train_rows": 2143,
+      "models": {
+        "RAR_fixed": {
+          "test": {
+            "galaxy_RMS_dex": 0.12070158422496706,
+            "row_RMS_dex": 0.11084413232305496,
+            "median_acceleration_error_percent": 16.325378320493154,
+            "median_speed_error_percent": 8.214591487295685,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.14472651649346122,
+            "row_RMS_dex": 0.13550054447810045,
+            "median_acceleration_error_percent": 18.053685361069665,
+            "median_speed_error_percent": 8.973064256100216,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "0",
+          "selected_fits_hitting_bounds": 0,
+          "bound_details": {}
+        },
+        "RAR_shared": {
+          "test": {
+            "galaxy_RMS_dex": 0.1244018084911075,
+            "row_RMS_dex": 0.11469037610502873,
+            "median_acceleration_error_percent": 16.58129233082757,
+            "median_speed_error_percent": 8.247817975395222,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.14531259553422732,
+            "row_RMS_dex": 0.13746001952751455,
+            "median_acceleration_error_percent": 18.040772028363573,
+            "median_speed_error_percent": 9.013917605666771,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "1 shared",
+          "selected_fits_hitting_bounds": 0,
+          "bound_details": {}
+        },
+        "mixed_regular_disk": {
+          "test": {
+            "galaxy_RMS_dex": 0.12514838690874094,
+            "row_RMS_dex": 0.11341865683714819,
+            "median_acceleration_error_percent": 16.766176098481644,
+            "median_speed_error_percent": 8.371807674953091,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.1451170525063186,
+            "row_RMS_dex": 0.13685382243969693,
+            "median_acceleration_error_percent": 18.235718639877962,
+            "median_speed_error_percent": 9.08059561495752,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "7 shared",
+          "selected_fits_hitting_bounds": 1,
+          "bound_details": {
+            "(0, -1)": 1,
+            "(3, 1)": 1,
+            "(5, -1)": 1
+          }
+        },
+        "mixed_regular_broad": {
+          "test": {
+            "galaxy_RMS_dex": 0.1835612917219905,
+            "row_RMS_dex": 0.1771702924880476,
+            "median_acceleration_error_percent": 34.489610929713244,
+            "median_speed_error_percent": 16.270837103424352,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.18641807077899655,
+            "row_RMS_dex": 0.17840953699297907,
+            "median_acceleration_error_percent": 31.128283594071878,
+            "median_speed_error_percent": 14.940730652050549,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "7 shared",
+          "selected_fits_hitting_bounds": 1,
+          "bound_details": {
+            "(3, 1)": 1,
+            "(4, 1)": 1,
+            "(5, -1)": 1
+          }
+        },
+        "RAR_individual": {
+          "test": {
+            "galaxy_RMS_dex": 0.05642765083116638,
+            "row_RMS_dex": 0.05013751166545404,
+            "median_acceleration_error_percent": 7.157403399072665,
+            "median_speed_error_percent": 3.5716154602234984,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.09215856767105443,
+            "row_RMS_dex": 0.08519495384670887,
+            "median_acceleration_error_percent": 9.998448138076876,
+            "median_speed_error_percent": 4.982671601382127,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "1 per galaxy (104 total)",
+          "selected_fits_hitting_bounds": 0,
+          "bound_details": {}
+        },
+        "NFW_fixed": {
+          "test": {
+            "galaxy_RMS_dex": 0.05270835292765586,
+            "row_RMS_dex": 0.04849522767538048,
+            "median_acceleration_error_percent": 7.644322514643825,
+            "median_speed_error_percent": 3.8799001410892595,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.06730320832649282,
+            "row_RMS_dex": 0.06592924209061181,
+            "median_acceleration_error_percent": 5.080493184401091,
+            "median_speed_error_percent": 2.5343254173046836,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "2 per galaxy (208 total)",
+          "selected_fits_hitting_bounds": 24,
+          "bound_details": {
+            "(1, 1)": 24
+          }
+        },
+        "Burkert_fixed": {
+          "test": {
+            "galaxy_RMS_dex": 0.04817581882373876,
+            "row_RMS_dex": 0.052833116966558964,
+            "median_acceleration_error_percent": 7.76775247235908,
+            "median_speed_error_percent": 3.879505643182174,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.05627888673052019,
+            "row_RMS_dex": 0.05833295000742356,
+            "median_acceleration_error_percent": 5.006750268298993,
+            "median_speed_error_percent": 2.4862234817692785,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "2 per galaxy (208 total)",
+          "selected_fits_hitting_bounds": 2,
+          "bound_details": {
+            "(1, 1)": 2
+          }
+        },
+        "RAR_stellar": {
+          "test": {
+            "galaxy_RMS_dex": 0.07337376136099398,
+            "row_RMS_dex": 0.06483465994673827,
+            "median_acceleration_error_percent": 8.209438460429059,
+            "median_speed_error_percent": 4.114031741797031,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.09466220940133949,
+            "row_RMS_dex": 0.08549574215132764,
+            "median_acceleration_error_percent": 10.338900978167775,
+            "median_speed_error_percent": 5.246897956705493,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "1 per galaxy (104 total)",
+          "selected_fits_hitting_bounds": 14,
+          "bound_details": {
+            "(0, -1)": 7,
+            "(0, 1)": 7
+          }
+        },
+        "NFW_stellar": {
+          "test": {
+            "galaxy_RMS_dex": 0.049370155380641066,
+            "row_RMS_dex": 0.046217096857612994,
+            "median_acceleration_error_percent": 6.754797421450231,
+            "median_speed_error_percent": 3.399493175334661,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.04751956331466433,
+            "row_RMS_dex": 0.04616709515705359,
+            "median_acceleration_error_percent": 3.950733484793767,
+            "median_speed_error_percent": 1.9685898225983767,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "3 per galaxy (312 total)",
+          "selected_fits_hitting_bounds": 47,
+          "bound_details": {
+            "(1, 1)": 14,
+            "(2, -1)": 28,
+            "(2, 1)": 13,
+            "(0, -1)": 1
+          }
+        },
+        "Burkert_stellar": {
+          "test": {
+            "galaxy_RMS_dex": 0.04493355617332954,
+            "row_RMS_dex": 0.04819068896515065,
+            "median_acceleration_error_percent": 6.869645364900778,
+            "median_speed_error_percent": 3.4499263209221476,
+            "rows": 788,
+            "galaxies": 104
+          },
+          "train": {
+            "galaxy_RMS_dex": 0.033530699379076274,
+            "row_RMS_dex": 0.0349418698174569,
+            "median_acceleration_error_percent": 3.8360700849366767,
+            "median_speed_error_percent": 1.9192313769105018,
+            "rows": 1682,
+            "galaxies": 104
+          },
+          "parameters": "3 per galaxy (312 total)",
+          "selected_fits_hitting_bounds": 47,
+          "bound_details": {
+            "(2, -1)": 28,
+            "(2, 1)": 17,
+            "(1, 1)": 2
+          }
+        }
+      },
+      "bootstrap": {
+        "RAR_fixed minus RAR_shared": {
+          "difference_dex": -0.003700224266140445,
+          "percentile_95_dex": [
+            -0.008590020887251405,
+            0.0013125091779899942
+          ]
+        },
+        "RAR_fixed minus NFW_fixed": {
+          "difference_dex": 0.06799323129731119,
+          "percentile_95_dex": [
+            0.05082746841651201,
+            0.08528705743427227
+          ]
+        },
+        "RAR_fixed minus Burkert_fixed": {
+          "difference_dex": 0.07252576540122829,
+          "percentile_95_dex": [
+            0.05411470352898737,
+            0.09059574124119771
+          ]
+        },
+        "RAR_shared minus NFW_fixed": {
+          "difference_dex": 0.07169345556345164,
+          "percentile_95_dex": [
+            0.054457485284545276,
+            0.08955484048046691
+          ]
+        },
+        "RAR_shared minus Burkert_fixed": {
+          "difference_dex": 0.07622598966736874,
+          "percentile_95_dex": [
+            0.05723837190001126,
+            0.09450598332032463
+          ]
+        },
+        "mixed_regular_disk minus RAR_shared": {
+          "difference_dex": 0.0007465784176334395,
+          "percentile_95_dex": [
+            -0.0009548261866454477,
+            0.0024417578202251145
+          ]
+        },
+        "mixed_regular_disk minus NFW_fixed": {
+          "difference_dex": 0.07244003398108509,
+          "percentile_95_dex": [
+            0.054992095065690375,
+            0.09009511328925941
+          ]
+        },
+        "mixed_regular_disk minus Burkert_fixed": {
+          "difference_dex": 0.07697256808500219,
+          "percentile_95_dex": [
+            0.057845836188894564,
+            0.0954562146427528
+          ]
+        },
+        "mixed_regular_broad minus RAR_shared": {
+          "difference_dex": 0.059159483230883006,
+          "percentile_95_dex": [
+            0.039872241207817585,
+            0.07942036987843153
+          ]
+        },
+        "mixed_regular_broad minus NFW_fixed": {
+          "difference_dex": 0.13085293879433466,
+          "percentile_95_dex": [
+            0.11090993990632142,
+            0.15068067578492894
+          ]
+        },
+        "mixed_regular_broad minus Burkert_fixed": {
+          "difference_dex": 0.13538547289825176,
+          "percentile_95_dex": [
+            0.11488393657846557,
+            0.15554396579313873
+          ]
+        },
+        "RAR_individual minus RAR_shared": {
+          "difference_dex": -0.06797415765994112,
+          "percentile_95_dex": [
+            -0.0850565464249197,
+            -0.051151412988955376
+          ]
+        },
+        "RAR_individual minus NFW_fixed": {
+          "difference_dex": 0.0037192979035105198,
+          "percentile_95_dex": [
+            -0.0015731201935499433,
+            0.00920641668446
+          ]
+        },
+        "RAR_individual minus Burkert_fixed": {
+          "difference_dex": 0.008251832007427622,
+          "percentile_95_dex": [
+            0.00011696443042315599,
+            0.016510724567714834
+          ]
+        },
+        "NFW_fixed minus RAR_shared": {
+          "difference_dex": -0.07169345556345164,
+          "percentile_95_dex": [
+            -0.08955484048046694,
+            -0.05445748528454528
+          ]
+        },
+        "NFW_fixed minus Burkert_fixed": {
+          "difference_dex": 0.004532534103917102,
+          "percentile_95_dex": [
+            -0.0025296209111549013,
+            0.011541094734912749
+          ]
+        },
+        "Burkert_fixed minus RAR_shared": {
+          "difference_dex": -0.07622598966736874,
+          "percentile_95_dex": [
+            -0.09450598332032464,
+            -0.05723837190001127
+          ]
+        },
+        "Burkert_fixed minus NFW_fixed": {
+          "difference_dex": -0.004532534103917102,
+          "percentile_95_dex": [
+            -0.011541094734912749,
+            0.002529620911154897
+          ]
+        },
+        "RAR_stellar minus RAR_shared": {
+          "difference_dex": -0.051028047130113524,
+          "percentile_95_dex": [
+            -0.06257619944169675,
+            -0.03889279340935221
+          ]
+        },
+        "RAR_stellar minus NFW_fixed": {
+          "difference_dex": 0.02066540843333812,
+          "percentile_95_dex": [
+            0.009210564221244725,
+            0.03307119232877807
+          ]
+        },
+        "RAR_stellar minus Burkert_fixed": {
+          "difference_dex": 0.02519794253725522,
+          "percentile_95_dex": [
+            0.012128313335532331,
+            0.03859072918821386
+          ]
+        },
+        "NFW_stellar minus RAR_shared": {
+          "difference_dex": -0.07503165311046645,
+          "percentile_95_dex": [
+            -0.0929552639221287,
+            -0.05762698896294653
+          ]
+        },
+        "NFW_stellar minus NFW_fixed": {
+          "difference_dex": -0.0033381975470147957,
+          "percentile_95_dex": [
+            -0.005790699946294901,
+            -0.0009193491084595057
+          ]
+        },
+        "NFW_stellar minus Burkert_fixed": {
+          "difference_dex": 0.0011943365569023062,
+          "percentile_95_dex": [
+            -0.005784089566532446,
+            0.00814303919610512
+          ]
+        },
+        "Burkert_stellar minus RAR_shared": {
+          "difference_dex": -0.07946825231777796,
+          "percentile_95_dex": [
+            -0.0976301904759599,
+            -0.06102248007212775
+          ]
+        },
+        "Burkert_stellar minus NFW_fixed": {
+          "difference_dex": -0.007774796754326324,
+          "percentile_95_dex": [
+            -0.014907223678565715,
+            -0.0005787838771973012
+          ]
+        },
+        "Burkert_stellar minus Burkert_fixed": {
+          "difference_dex": -0.0032422626504092222,
+          "percentile_95_dex": [
+            -0.007170721193155704,
+            0.0003537607111409748
+          ]
+        }
+      }
+    }
+  }
+}

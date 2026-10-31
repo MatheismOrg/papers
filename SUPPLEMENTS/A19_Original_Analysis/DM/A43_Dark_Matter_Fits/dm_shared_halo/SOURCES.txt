@@ -1,0 +1,42 @@
+Primary source provenance and relevant prior work
+Accessed 29 October 2026. This file contains notes, not copies of source papers.
+
+1. SPARC database and Lelli, McGaugh & Schombert (2016), AJ 152,157,
+   "SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate
+   Rotation Curves", DOI 10.3847/0004-6256/152/6/157.
+   https://astroweb.case.edu/SPARC/
+   https://arxiv.org/abs/1606.09251
+   Original Table 1 local provenance: ../dm_fit/data/SPARC_Lelli2016c.mrt.
+   This work uses its independent total 3.6-micron luminosity, effective light
+   radius and HI mass, joining to the existing filtered149-galaxy rotation sample.
+
+2. Li, Lelli, McGaugh, Starkman & Schombert (2019), MNRAS482,5106,
+   "A constant characteristic volume density of dark matter haloes from SPARC
+   rotation curve fits", DOI 10.1093/mnras/sty2968.
+   https://arxiv.org/abs/1811.00553
+   Fits Einasto and DC14 halos to SPARC and relates halo quantities to luminosity.
+   Establishes relevant prior work for halo/baryon scaling; the present simple
+   NFW/Burkert regression is not the first proposal of shared baryon-halo relations.
+
+3. Navarro et al. (2017), MNRAS471,1841,
+   "The origin of the mass discrepancy-acceleration relation in LambdaCDM",
+   DOI 10.1093/mnras/stx1705.
+   https://academic.oup.com/mnras/article/471/2/1841/3939742
+   Relates the MDAR to conventional galaxy-formation ingredients including
+   baryonic mass, size/radial profile and the galaxy-halo mass relation.
+   Its framework is richer than the empirical affine relations tested here.
+
+4. Li et al. (2020), ApJS247,31,
+   "A comprehensive catalog of dark matter halo models for SPARC galaxies",
+   DOI 10.3847/1538-4365/ab700e.
+   https://arxiv.org/abs/2001.10538
+   Seven halo families with MCMC treatment of galaxy nuisance parameters and
+   cosmological relations. These fits are not reproduced by the frozen-nuisance,
+   shared four/six-parameter test here. Avoid claiming to outperform that catalog
+   or all halo models from the results of this narrow comparison.
+
+The familiar spherical NFW and Burkert density-profile acceleration integrals
+are explicitly recorded in PROTOCOL.txt and run.py. Existing exponential RAR and
+A43 mixed_regular implementations were preserved from the previous analysis.
+The novelty, if any, concerns this particular transparent validation comparison,
+not the halo profiles, a relation between baryons and halos, or universal gravity.

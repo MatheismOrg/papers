@@ -1,0 +1,90 @@
+Independent audit of the six new A43 shared families -- 28 October 2026
+
+Definitions: s=g_b/a_ref>0, R=r/kpc>0, U=sR^2, V=sR. Powers use positive
+quantities. P(U,W)=C0+C1*U^(-alpha)+C2*W^beta with all Cj>0 and
+0<=alpha,beta<=0.95. The coordinates m=log10(U), q=log10(V) are correct.
+U is proportional to spherical-equivalent baryonic mass, not actual enclosed
+mass in a general flattened system. No extra measured predictor is introduced.
+
+Counts: mass_power, mass_bounded, mass_additive, mixed_power, and mass_screened
+each have five fitted coefficients. index_power has six, including k in [0,2].
+The bounded family has log10(a_eff/a_ref)=A+Bz+Cz^2 with
+z=tanh((m-m0)/w), C>=0 and w>=0.2. All parameter bounds are finite.
+
+Fixed-radius limits
+For s->0 with R fixed, U~s, W~s in all power families. If alpha>0,
+a_eff~s^(-alpha), and the RAR or additive low-g term scales as
+g_pred~s^((1-alpha)/2). This vanishes because alpha<1, including the boundary
+alpha=0.95 (exponent 0.025, extremely slow). If alpha=0, a_eff tends to a
+finite positive constant and the low-g square-root limit holds. The screened
+family has exponential multiplier tending to1 at s->0, so the same result holds.
+For the bounded family, z->-1 and a_eff stays finite: g_pred~sqrt(g_b*a_eff).
+
+For s->infinity with R fixed, a_eff grows at most as s^beta. Since beta<1,
+s/(a_eff/a_ref)->infinity, so the RAR ratio g_pred/g_b->1 and its absolute
+excess also tends to0. The bounded family likewise has a finite limiting scale.
+mass_additive has ratio excess sqrt(a_eff/g_b)->0, but its absolute extra
+acceleration grows as s^((1+beta)/2): relative Newtonian recovery is not zero
+absolute anomalous force. mass_screened's explicit exp[-sqrt(s/C0)] suppresses
+its absolute correction. These are mathematical limits, not observational tests.
+
+Fixed-source far field
+For an isolated point mass M, U=GM/(a_ref*kpc^2) is constant and s=U/R^2.
+mass_power, mass_additive, mass_screened and mass_bounded have constant a_eff.
+mixed_power has W=V=U/R, so its positive leg vanishes for beta>0, or is a
+constant if beta=0. index_power has W=sR^k=UR^(k-2): it vanishes for k<2,
+beta>0, and is constant for k=2 or beta=0. Thus every new family has a finite
+strictly positive a_eff,lim(M), and g_pred~sqrt(GM*a_eff,lim(M))/r. The screened
+exponential tends to1. All claimed 1/r limits are correct, including parameter
+boundaries. Finite positive C0 prevents the leading asymptotic amplitude vanishing.
+
+These limits preserve asymptotically flat circular speeds but do not preserve a
+universal baryonic Tully-Fisher normalization:
+  V_inf^4=G M a_eff,lim(M).
+For mass_power/additive/screened, a_eff,lim=a_ref*P(U,U). Its low-M inverse
+leg gives V_inf^4 proportional to M^(1-alpha), and high-M positive leg gives
+M^(1+beta), when those legs dominate. At alpha=0.95 the former exponent is0.05.
+For mixed_power and index_power with k<2,beta>0, the positive leg vanishes in
+the ultimate far field; the surviving low-M inverse leg still breaks constant
+normalization, while large M approaches C0. index_power at exactly k=2 instead
+has mass_power asymptotics. The bounded family has finite limiting normalizations
+at both mass extremes but a variable one across the transition.
+
+Additional path: smooth baryonic center
+The fixed-radius low-g test does not imply regular behavior at a baryonic core.
+For a smooth nonzero central density, g_b is proportional to r while U is
+proportional to r^3. The negative-mass leg gives a_eff proportional to
+r^(-3alpha), hence g_pred proportional to r^((1-3alpha)/2). For alpha>1/3
+this diverges at r->0, although the baryonic density is regular. Every fitted
+power family reaches alpha=0.95, producing an exponent of -0.925. The additive
+and screened versions share the pathology because their low-g screening tends
+to1. mass_bounded avoids it because a_eff has a finite low-mass bound. This is
+a mathematical singularity outside the sampled ranges, not an empirical score
+error, but it obstructs treating the fitted expression as a globally regular
+force law. A high-g-only regulator does not cure it because g_b->0 at the center.
+A universal turnover C1*(U+U0)^(-alpha), U0>0, would cure this particular
+singularity and needs its own declared fit and transfer tests.
+
+Finite-Solar predictions are materially different from asymptotic recovery
+The all-data mixed_power fit evaluated for an isolated one-solar-mass source has
+a_eff about 2.03e-5 m/s^2. Its acceleration exceeds Newtonian by about 20.2% at
+9.58 AU and 130% at 30 AU. mass_power, mass_bounded and index_power have similar
+failures; mass_additive is already about 6% high at 1 AU. mass_screened suppresses
+those three illustrated Solar corrections, but has worse population transfer.
+The exact illustrative values and declared constants are in solar_stress.csv.
+These are not planetary-data fits or a determination of confidence exclusions.
+They demonstrate that the attractive analytic limits alone cannot certify a
+universal gravity law. Cassini's external-field quadrupole additionally requires
+the actual gravitational field equation and Galactic boundary field.
+
+Implementation audit
+run.py's logarithmic predictions match dimensionful equations independently
+evaluated in verify.py. The least-squares objective has the advertised equal
+population/group weighting. Whole groups stay together in each recorded fold.
+Population exclusions remove all groups of that population. Host tests exclude
+all 26 MW or 18 M31 dSph entries, with 2884 or 2892 remaining rows respectively.
+The sole optimizer failure in mass_screened/population_dSph start2 was not the
+selected fit; a successful start had lower objective. All attempts are retained.
+No gamma functions occur in this implementation; powers and coordinates are
+explicit and dimensionless. No field-level or gamma-function approximation is
+being smuggled into these regression formulas.

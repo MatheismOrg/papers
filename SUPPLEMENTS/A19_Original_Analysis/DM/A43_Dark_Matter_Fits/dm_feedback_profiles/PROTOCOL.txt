@@ -1,0 +1,50 @@
+29 October 2026. Exploratory continuation of A43, fixed before this branch's fits.
+
+Use the exact archived 149-galaxy/2700-row cosmological-halo input and original
+NumPy fivefold assignments, seeds 20261027,7331,48105; four 37-galaxy feature
+tails. Equal galaxy squared log acceleration loss. No test rotation measurement
+enters its predictor. Existing inputs/observations have been repeatedly inspected.
+
+Start from established DC14 and coreNFW, not newly invented unconstrained curves.
+Fit A/B/C with existing bounds and three starts. Compare:
+RAR (one scale), NFW (3), DC14-informed (3), finite-mass NFW/DC14 response (4),
+published-duration coreNFW (3). The response is rho=(1-lambda)rho_NFW+lambda*rho_DC14,
+0<=lambda<=1, same total dark mass and outer reference radius. All constituents
+are nonnegative; lambda=0 exactly recovers NFW, lambda=1 the DC14 implementation.
+Preserve exact endpoint fits. This response interpolation is phenomenological.
+
+The original reference M200c mapping is unchanged. To use DC14's virial-scale
+convention, extend the *reference* NFW profile to overdensity 92.8: f(c*u)/f(c)
+=(92.8/200)*u^3. Rvir=u*R200; dark Mvir=(1-fb)Mref*f(c*u)/f(c); cvir_DM=c*u.
+This translates a DMO-equivalent reference halo, not a self-consistent hydrodynamic
+overdensity boundary. X=log10(Mstar/dark_Mvir), Mstar=0.5 L3.6. DC14 alpha/beta/gamma
+follow original eq3 and concentration correction 1+3e-5*exp[3.4*(X+4.5)]. Convert
+r_-2 to rs using original eq2. Normalize both mass profiles exactly at Rvir.
+Below X=-4.1 use NFW; above -1.3 cap the shape/concentration recipe at -1.3 and
+report it as an extrapolation convention. Flag mass/radius calibration departures.
+DC14 primary: arxiv.org/pdf/1404.5959, eqs2/3/6, Table1 and AppendixA.
+The Planck cosmology/concentration and proxy stellar masses are declared transfers
+of a WMAP3 feedback calibration; no complete simulation or published MCMC rerun.
+
+coreNFW: rc=1.75Re, n=tanh[0.04*14Gyr/tdyn], tdyn=2pi*sqrt(rs^3/(G Mdark_NFW(rs))).
+Use exact normalization tanh(Rvir/rc)^n. This is the Li2020 assumed-duration recipe,
+not an independently measured star-formation history or detected gravity memory.
+
+DC14 mass integral uses scipy hyp2f1 and is checked against independent quad.
+Optimization: scipy least_squares three starts, max_nfev1500; response crosses
+starts with lambda=0.1,0.5,0.9 plus exact endpoints, and endpoint-start refinements.
+One bounded Powell polish from the selected solution checks piecewise transitions;
+retain every attempt and failures. No new starts/models chosen from test scores.
+
+Also evaluate the previously frozen RAR/NFW force-blend algorithm on the original
+folds: train both bases then its common weight on training predictions only.
+No tuning of that blend or selection of favorable repeats. Five estimated shared
+coefficients. Compare repeat-mean RMS, median speed errors, four tails and paired
+whole-galaxy descriptive intervals. Resample each galaxy with all repeats together.
+
+Freeze full-SPARC fitted rules before transfer to the archived 44 dSph half-mass
+estimators. Mproxy=Mstar, photometric Re, no inferred halo or observed dispersion
+in predictors. This is an isolated fixed-M/L mass-estimator stress, not a Jeans
+likelihood or exclusion of full MOND/CDM. Report all frozen candidates together.
+No extrapolation of DC14 to clusters is claimed. New outcomes cannot establish
+all-scale unification or an independently confirmed discovery.

@@ -1,0 +1,1 @@
+Initial run stopped before any fit: archive byte-column documentation does not match actual row spacing. Parser changed to whitespace columns with19fields: name0,L3.6=7,Reff=9,MHI=13. No Vflat read or used, no model/protocol/starts/bounds changed. Original pre_fit_manifest retained; corrected script hash frozen before first numerical fit in corrected_pre_fit_manifest.json.

@@ -1,0 +1,373 @@
+{
+  "status": "passed",
+  "prediction_tables_checked": 70,
+  "optimizer_fit_sets_checked": 230,
+  "optimizer_attempts_checked": 552,
+  "optimizer_failures_recorded": 1,
+  "selected_failed_fits": [],
+  "bootstrap_intervals_checked": 48,
+  "max_prediction_discrepancy_dex": 8.678947198979592e-16,
+  "input_sha256": "63f63326e16297dfa9c2828c3480c00cb4f39b715911f5f6a15cae8ee3f1b3f9",
+  "protocol_sha256": "cd335a3bdd5cdbb0e16bf41bb27158cf6bdb7b8d1ea7db88dae3db14dc8063a4",
+  "checks": [
+    {
+      "file": "RAR_all.csv",
+      "rows": 2910,
+      "B_dex": 0.3333317699001622
+    },
+    {
+      "file": "RAR_cv_20261027.csv",
+      "rows": 2910,
+      "B_dex": 0.3359970620957295
+    },
+    {
+      "file": "RAR_cv_48105.csv",
+      "rows": 2910,
+      "B_dex": 0.334473185960401
+    },
+    {
+      "file": "RAR_cv_7331.csv",
+      "rows": 2910,
+      "B_dex": 0.33456206091393786
+    },
+    {
+      "file": "RAR_host_M31.csv",
+      "rows": 18,
+      "B_dex": 0.47500431208590765
+    },
+    {
+      "file": "RAR_host_MW.csv",
+      "rows": 26,
+      "B_dex": 0.6231904376177371
+    },
+    {
+      "file": "RAR_population_holdout.csv",
+      "rows": 2910,
+      "B_dex": 0.367130169419531
+    },
+    {
+      "file": "half_power_all.csv",
+      "rows": 2910,
+      "B_dex": 0.253901278759435
+    },
+    {
+      "file": "half_power_cv_20261027.csv",
+      "rows": 2910,
+      "B_dex": 0.2609063746279967
+    },
+    {
+      "file": "half_power_cv_48105.csv",
+      "rows": 2910,
+      "B_dex": 0.2580364951787465
+    },
+    {
+      "file": "half_power_cv_7331.csv",
+      "rows": 2910,
+      "B_dex": 0.2593658940467693
+    },
+    {
+      "file": "half_power_host_M31.csv",
+      "rows": 18,
+      "B_dex": 0.4805920379180143
+    },
+    {
+      "file": "half_power_host_MW.csv",
+      "rows": 26,
+      "B_dex": 0.5383711067569007
+    },
+    {
+      "file": "half_power_population_holdout.csv",
+      "rows": 2910,
+      "B_dex": 0.26396080305748876
+    },
+    {
+      "file": "index_power_all.csv",
+      "rows": 2910,
+      "B_dex": 0.2218695235560115
+    },
+    {
+      "file": "index_power_cv_20261027.csv",
+      "rows": 2910,
+      "B_dex": 0.22828689554387474
+    },
+    {
+      "file": "index_power_cv_48105.csv",
+      "rows": 2910,
+      "B_dex": 0.22632331874043393
+    },
+    {
+      "file": "index_power_cv_7331.csv",
+      "rows": 2910,
+      "B_dex": 0.22594929719664153
+    },
+    {
+      "file": "index_power_host_M31.csv",
+      "rows": 18,
+      "B_dex": 0.3487848149478044
+    },
+    {
+      "file": "index_power_host_MW.csv",
+      "rows": 26,
+      "B_dex": 0.3232250953301007
+    },
+    {
+      "file": "index_power_population_holdout.csv",
+      "rows": 2910,
+      "B_dex": 0.2858459611339105
+    },
+    {
+      "file": "mass_additive_all.csv",
+      "rows": 2910,
+      "B_dex": 0.22467859470773366
+    },
+    {
+      "file": "mass_additive_cv_20261027.csv",
+      "rows": 2910,
+      "B_dex": 0.23099621137177143
+    },
+    {
+      "file": "mass_additive_cv_48105.csv",
+      "rows": 2910,
+      "B_dex": 0.22885719319375078
+    },
+    {
+      "file": "mass_additive_cv_7331.csv",
+      "rows": 2910,
+      "B_dex": 0.22939000019660116
+    },
+    {
+      "file": "mass_additive_host_M31.csv",
+      "rows": 18,
+      "B_dex": 0.3534308623839449
+    },
+    {
+      "file": "mass_additive_host_MW.csv",
+      "rows": 26,
+      "B_dex": 0.3243724093205265
+    },
+    {
+      "file": "mass_additive_population_holdout.csv",
+      "rows": 2910,
+      "B_dex": 0.32156832194885193
+    },
+    {
+      "file": "mass_bounded_all.csv",
+      "rows": 2910,
+      "B_dex": 0.22918663742202808
+    },
+    {
+      "file": "mass_bounded_cv_20261027.csv",
+      "rows": 2910,
+      "B_dex": 0.23477639703290326
+    },
+    {
+      "file": "mass_bounded_cv_48105.csv",
+      "rows": 2910,
+      "B_dex": 0.23439392033188253
+    },
+    {
+      "file": "mass_bounded_cv_7331.csv",
+      "rows": 2910,
+      "B_dex": 0.2334404716170747
+    },
+    {
+      "file": "mass_bounded_host_M31.csv",
+      "rows": 18,
+      "B_dex": 0.3576925300401309
+    },
+    {
+      "file": "mass_bounded_host_MW.csv",
+      "rows": 26,
+      "B_dex": 0.3181651562649711
+    },
+    {
+      "file": "mass_bounded_population_holdout.csv",
+      "rows": 2910,
+      "B_dex": 0.35432420661124747
+    },
+    {
+      "file": "mass_power_all.csv",
+      "rows": 2910,
+      "B_dex": 0.2319300009317975
+    },
+    {
+      "file": "mass_power_cv_20261027.csv",
+      "rows": 2910,
+      "B_dex": 0.2380742089299188
+    },
+    {
+      "file": "mass_power_cv_48105.csv",
+      "rows": 2910,
+      "B_dex": 0.23618544542975264
+    },
+    {
+      "file": "mass_power_cv_7331.csv",
+      "rows": 2910,
+      "B_dex": 0.23661440596845876
+    },
+    {
+      "file": "mass_power_host_M31.csv",
+      "rows": 18,
+      "B_dex": 0.35297793909316716
+    },
+    {
+      "file": "mass_power_host_MW.csv",
+      "rows": 26,
+      "B_dex": 0.3251649288306741
+    },
+    {
+      "file": "mass_power_population_holdout.csv",
+      "rows": 2910,
+      "B_dex": 0.3541693091257801
+    },
+    {
+      "file": "mass_screened_all.csv",
+      "rows": 2910,
+      "B_dex": 0.2546653368887657
+    },
+    {
+      "file": "mass_screened_cv_20261027.csv",
+      "rows": 2910,
+      "B_dex": 0.25851436352919155
+    },
+    {
+      "file": "mass_screened_cv_48105.csv",
+      "rows": 2910,
+      "B_dex": 0.25807013989415123
+    },
+    {
+      "file": "mass_screened_cv_7331.csv",
+      "rows": 2910,
+      "B_dex": 0.25781979143703854
+    },
+    {
+      "file": "mass_screened_host_M31.csv",
+      "rows": 18,
+      "B_dex": 0.36966903894515896
+    },
+    {
+      "file": "mass_screened_host_MW.csv",
+      "rows": 26,
+      "B_dex": 0.32134041736933694
+    },
+    {
+      "file": "mass_screened_population_holdout.csv",
+      "rows": 2910,
+      "B_dex": 0.423130204987356
+    },
+    {
+      "file": "mixed_power_all.csv",
+      "rows": 2910,
+      "B_dex": 0.2220996862083389
+    },
+    {
+      "file": "mixed_power_cv_20261027.csv",
+      "rows": 2910,
+      "B_dex": 0.22806467033320715
+    },
+    {
+      "file": "mixed_power_cv_48105.csv",
+      "rows": 2910,
+      "B_dex": 0.22629168017244664
+    },
+    {
+      "file": "mixed_power_cv_7331.csv",
+      "rows": 2910,
+      "B_dex": 0.2261973980179017
+    },
+    {
+      "file": "mixed_power_host_M31.csv",
+      "rows": 18,
+      "B_dex": 0.34864790934483986
+    },
+    {
+      "file": "mixed_power_host_MW.csv",
+      "rows": 26,
+      "B_dex": 0.32333647390994374
+    },
+    {
+      "file": "mixed_power_population_holdout.csv",
+      "rows": 2910,
+      "B_dex": 0.2769618555797144
+    },
+    {
+      "file": "potential_quad_all.csv",
+      "rows": 2910,
+      "B_dex": 0.2423647236832554
+    },
+    {
+      "file": "potential_quad_cv_20261027.csv",
+      "rows": 2910,
+      "B_dex": 0.2494610541836711
+    },
+    {
+      "file": "potential_quad_cv_48105.csv",
+      "rows": 2910,
+      "B_dex": 0.24675509642491714
+    },
+    {
+      "file": "potential_quad_cv_7331.csv",
+      "rows": 2910,
+      "B_dex": 0.24748588339671643
+    },
+    {
+      "file": "potential_quad_host_M31.csv",
+      "rows": 18,
+      "B_dex": 0.4165711370113613
+    },
+    {
+      "file": "potential_quad_host_MW.csv",
+      "rows": 26,
+      "B_dex": 0.4771142173047495
+    },
+    {
+      "file": "potential_quad_population_holdout.csv",
+      "rows": 2910,
+      "B_dex": 0.31581073484106664
+    },
+    {
+      "file": "power_sum_all.csv",
+      "rows": 2910,
+      "B_dex": 0.24122473446933568
+    },
+    {
+      "file": "power_sum_cv_20261027.csv",
+      "rows": 2910,
+      "B_dex": 0.24963004181765042
+    },
+    {
+      "file": "power_sum_cv_48105.csv",
+      "rows": 2910,
+      "B_dex": 0.2455112629991223
+    },
+    {
+      "file": "power_sum_cv_7331.csv",
+      "rows": 2910,
+      "B_dex": 0.24566922538622488
+    },
+    {
+      "file": "power_sum_host_M31.csv",
+      "rows": 18,
+      "B_dex": 0.4110762141533633
+    },
+    {
+      "file": "power_sum_host_MW.csv",
+      "rows": 26,
+      "B_dex": 0.440550601816177
+    },
+    {
+      "file": "power_sum_population_holdout.csv",
+      "rows": 2910,
+      "B_dex": 0.27762750192493585
+    }
+  ],
+  "solar_constants": {
+    "G_m3_kg_s2": 6.6743e-11,
+    "M_sun_kg": 1.98847e+30,
+    "kpc_m": 3.085677581491367e+19,
+    "AU_m": 149597870700.0
+  },
+  "important_scientific_limitation": "Five of six new all-data fits have large finite isolated-Solar deviations despite asymptotic Newtonian recovery; see solar_stress.csv. No ephemeris, external-field quadrupole, or covariant-gravity likelihood is evaluated.",
+  "additional_limit_failure": "At a smooth constant-density baryonic center, the inverse-mass families with alpha=0.95 give g proportional to r^(-0.925); fixed-radius low-baryon limit does not establish central regularity.",
+  "fit_script_sha256": "f4a62c81cf02daf0dd897dbb00c4850594867f95c77e6636d5d1b897ba612b6e"
+}

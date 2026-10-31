@@ -1,0 +1,41 @@
+{
+  "status": "Descriptive paired whole-galaxy bootstrap of existing five-fold predictions,10000 draws,seed123456. Conditional on those trained models; omits retraining uncertainty, nuisance-parameter uncertainty, and candidate-selection uncertainty. Not a confirmatory p-value.",
+  "quantity": "Point-weighted RMS(log10 acceleration) of candidate minus standard RAR; negative favors candidate.",
+  "comparisons": {
+    "quadratic": {
+      "point_delta_rms_dex": 0.0017756416478572068,
+      "percentile_95_interval_dex": [
+        -0.00028537004324117384,
+        0.0039595182970178265
+      ]
+    },
+    "quadratic_radius": {
+      "point_delta_rms_dex": 0.002584679843774973,
+      "percentile_95_interval_dex": [
+        0.0002587596970400876,
+        0.005009989934712219
+      ]
+    },
+    "RAR_radius": {
+      "point_delta_rms_dex": 0.0004375972227463054,
+      "percentile_95_interval_dex": [
+        -2.3626339834591217e-05,
+        0.0009359670309581538
+      ]
+    },
+    "RAR_exponent": {
+      "point_delta_rms_dex": -0.00020110551739149773,
+      "percentile_95_interval_dex": [
+        -0.0014765918918733661,
+        0.0011474549709338767
+      ]
+    },
+    "RAR_radius_exponent": {
+      "point_delta_rms_dex": 0.00017333693830634544,
+      "percentile_95_interval_dex": [
+        -0.001130338522858635,
+        0.001518302107307361
+      ]
+    }
+  }
+}

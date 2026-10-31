@@ -1,0 +1,36 @@
+A43 local-response identifiability audit
+28 October 2026; exploratory analysis of previously inspected data.
+
+Input: unchanged ../dm_broad_joint/combined_input.csv. No target-derived new predictor.
+Inputs x=log10(gbar/1e-10 m/s^2), u=log10(r/kpc), target y=log10(gobs/1e-10 m/s^2).
+
+1. Nearest-neighbor diagnostic: select nearest input in Euclidean (x,u) distance
+from a different validation group, separately with and without requiring a different
+population. At coordinatewise input tolerances 0.05, 0.10 and 0.20 dex, report
+coverage and differences in y. Matching does not use the target. Summaries use
+equal population and group weights. Pair examples are descriptive, not statistical
+rejections: heterogeneous model-dependent targets and uncertain inputs are retained.
+No universal irreducible-scatter claim follows.
+
+2. Nonparametric diagnostic: fit one common RAR scale on training rows, then add
+a Gaussian-kernel weighted average of its log residuals in (x,u). Kernel weight is
+training population/group/radial weight times exp(-distance^2/(2h^2)).
+Fixed bandwidth choices h=0.15, 0.30, 0.60, 1.20 dex. Choose h only in three
+inner group folds. Five original outer folds (seed20261027), every population
+excluded, and MW/M31 dwarf host exclusions. Inner seeds39173+outer fold;
+population inner seed=50000+population index; host seed=61000+host index.
+The host names use the previous pilot's conservative mapping: Milky_Way and
+G/L are MW (26 dwarfs); M31 and A/L are M31 (18 dwarfs). This explicit mapping
+corrected a label mismatch in the first implementation before final verification.
+All objective scores are equal population, equal group, equal radial weighting.
+Record predictions, selected bandwidths, all inner scores and baseline fits.
+This is a smooth interpolator/transfer diagnostic with many effective degrees of
+freedom, not a physical model and not an unbiased discovery test after previous
+inspection of the dataset. No target-population calibration.
+
+3. Analytic/numerical curl check: for conservative gN=-grad PhiN, algebraic
+rescaling g_alg=nu(|gN|/a0)gN generally has curl grad(nu) cross gN !=0.
+Use PhiN=(a x^2+b y^2)/2 (a!=b), nu=s^(-1/2), a0=1 and a=1,b=2.
+Compare analytic curl with central finite differences at (x,y)=(1,1).
+This demonstrates a geometry/integrability issue, not a failure of any properly
+solved AQUAL/QUMOND field equation.

@@ -1,0 +1,11 @@
+Primary sources consulted 2026-10-28:
+
+Navarro, Frenk & White (1997), A Universal Density Profile from Hierarchical Clustering, ApJ 490,493. DOI 10.1086/304888; https://arxiv.org/html/astro-ph/9611107v4 (full HTML read); https://arxiv.org/abs/astro-ph/9611107.
+Density equation (1), rho/rhocrit=delta_c/[x(1+x)^2]; equation (3) gives the integrated mass/circular-velocity factor ln(1+x)-x/(1+x). Our positive acceleration-at-rs parametrization is an algebraic reparametrization of its two scales. No cosmological concentration-mass relation from that paper is imposed here.
+
+Burkert (1995), The Structure of Dark Matter Haloes in Dwarf Galaxies, ApJ Letters447,L25. DOI10.1086/309560; https://arxiv.org/abs/astro-ph/9504041. Classic cored profile rho_s/[(1+x)(1+x^2)]. The implemented enclosed-mass factor f(x)=.5ln(1+x)+.25ln(1+x^2)-.5atan(x) is its direct spherical integral: f'=x^2/[(1+x)(1+x^2)], f(0)=0. Positive normalization g_halo=A f(x)/(x^2 f(1)) guarantees A=g_halo(rs). The original source is not evidence that our free per-object fits have physically plausible cosmological parameters.
+
+Lelli, McGaugh & Schombert (2016), SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves, AJ152,157. DOI10.3847/0004-6256/152/6/157; https://arxiv.org/abs/1606.09251. Original publicly supplied Rotmod_LTG.zip already retained in A43 supplies the gas/disk/bulge velocity components; no extra data were invented or redigitized.
+
+McGaugh, Lelli & Schombert (2016), The Radial Acceleration Relation in Rotationally Supported Galaxies, PRL117,201101. DOI10.1103/PhysRevLett.117.201101; https://arxiv.org/abs/1609.05917. Exponential RAR used as our fixed/common acceleration benchmark; a0=1.2e-10m/s^2. This algebraic radial use should not be conflated with solving AQUAL/QUMOND for full 3D disk geometry and external fields.
+Full-primary verification: Burkert PDF https://arxiv.org/pdf/astro-ph/9504041, equation (2), PDF page5 explicitly defines rho0*r0^3/[(r+r0)(r^2+r0^2)], including its status as phenomenological. RAR full HTML https://arxiv.org/html/1609.05917v1 also read; source explicitly computes baryonic Poisson potentials with disk geometry and discusses shared M/L uncertainty. Our original SPARC selection is preserved (149 galaxies) rather than pretending to duplicate its exact 153-object selection.

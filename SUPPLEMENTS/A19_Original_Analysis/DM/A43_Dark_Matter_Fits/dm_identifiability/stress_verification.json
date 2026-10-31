@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "prediction_rows_checked": 1890,
+  "cases_checked": 9,
+  "models_checked": 10,
+  "maximum_direct_equation_error_dex": 7.71461973242629e-16,
+  "input_sha256": "265d50f5a572d66f615ebb349abd4944ac92c89d400d3a65c94a22e0c96da04c",
+  "fit_result_sha256": "7b9eb30ddcbcfbfde62001e57c4d879a407ac31fa7e65ede6c8dea7603fb6172",
+  "previous_archive_compared_byte_for_byte": true,
+  "checks": [
+    "input matches frozen previous-delivery digest",
+    "21 fixed-radius inputs:7 hosts,500/750/1000 kpc",
+    "all nine model/systematic cases supplied",
+    "all ten models use frozen all-data five-population coefficients",
+    "all 1890 predictions and residuals independently recomputed",
+    "equal-host RMS,pooled median errors,per-host RMS independently recomputed",
+    "protocol/input/fit provenance hashes"
+  ],
+  "interpretation": "No fitting to X-COP occurred in the frozen transfer. The already-inspected hydrostatic source estimates are correlated and model-dependent; nine cases are sensitivities, not nine independent datasets."
+}

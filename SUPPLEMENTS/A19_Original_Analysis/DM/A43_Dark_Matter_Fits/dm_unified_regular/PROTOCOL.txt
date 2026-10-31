@@ -1,0 +1,72 @@
+A43 final regularity repair -- 28 October 2026
+
+This third stage is explicitly adaptive, selected after seeing the first-stage
+six-family results and the second-stage high-acceleration/range repairs. Those
+earlier fits exposed a central singularity and very large stellar-mass responses.
+This document and run.py are frozen before any third-stage numerical fit. Exactly
+ONE new family is tested here. Earlier unsuccessful families remain in their
+original supplements. No additional family or coefficient-bound search is allowed.
+
+Define a_ref=1e-10 m/s^2, x=log10(gbar/a_ref), u=log10(r/kpc), q=x+u, m=x+2u,
+and F(g,a)=g/[1-exp(-sqrt(g/a))]. Radius r and lengths l,R are in kpc. The new
+seven-coefficient family, mixed_regular, is
+
+ a_eff/a_ref = 10^A
+  + 10^(B-alpha*m) [r^4/(r^4+l^4)]/[1+(gbar/1e-8)^2]
+  + 10^(C+beta*q)/[1+r/R],
+ g_pred=F(gbar,a_eff).
+
+Fit A,B,C,alpha,beta,log10(l/kpc),log10(R/kpc). Bounds are
+ A:[-3,3], B,C:[-5,3], alpha,beta:[0,.95], log10(l/kpc):[-2,0],
+ log10(R/kpc):[0,4]. The minimum l=10 pc is imposed before fitting to reduce
+ the unphysical inverse-mass term in stellar systems; it is NOT inferred from
+ binary data. It does not suppress the base C0 MOND-like term and does not
+ establish wide-binary or Cassini compatibility. The gate powers 4 and 1 and
+ high-acceleration regulator 1e-8 SI are fixed, not fitted.
+
+Three fixed starts (A,B,C,alpha,beta,logl,logR):
+ [-.1,-2.,-.2,.6,.7,-2.,2.5]
+ [0.,-1.5,-.5,.3,.3,-1.,1.5]
+ [-.4,-3.,-.7,.9,.9,-1.5,3.5]
+Every start is tried independently with at most 2000 least-squares evaluations.
+Retain all costs, coefficients, convergence/bound diagnostics and any failures.
+Choose the lowest objective from the declared starts, recording its success flag.
+No per-object, population, host or source offsets occur in the model.
+
+Physical motivation and limits:
+The radius^4 gate makes the inverse leg vanish in a smooth central baryonic core,
+where gbar~r and m~3log(r): the gated leg~r^(4-3alpha), with exponent>=1.15.
+The positive gate has power1, ensuring its fixed-point-mass logarithmic radial
+slope is at least-(beta+1)>-2; this prevents a negative inferred point-source
+extra density from an excessively rapid radial cutoff. The family retains a
+positive 1/r point-mass far field and vanishes with baryons at fixed positive r.
+These are empirical coordinate-based repairs. GQUMOND screening is established
+motivation, but this formula is not derived from a GQUMOND action or any covariant
+field equation. No claim of conserved arbitrary-source dynamics follows.
+
+Frozen inputs are copied unchanged from ../dm_unified_repair/original_input.csv
+and augmented_input.csv. Original: 2,910 rows, 279 systems, 278 groups, 5 populations.
+Augmented: 2,931 rows, 286 systems, 285 groups, 5 populations. Its clusters class combines
+20 CLASH and 7 X-COP hosts with equal host weight; X-COP supplies 21 fixed-radius
+hydrostatic estimates. Preserve both source identities. This is reused previously
+inspected evidence, not an untouched survey or independent confirmation.
+
+Use exactly the second-stage equal-population/equal-group objective and folds:
+all-data; whole-group five-fold CV seeds 20261027, 7331, 48105; full-population
+exclusions; complete MW 26 and M31 18 dwarf-host exclusions; and, for augmented
+data, complete CLASH 84 and X-COP 21 source exclusions. Save every coefficient and
+prediction. Existing second-stage comparator predictions are reused only after
+checking exact input hashes, row identities and matching fold assignments.
+Compare against RAR, potential_quad, power_sum, mixed_power, mixed_gate and
+mixed_gate_range, without refitting or selecting comparator coefficients.
+
+Supply 5,000 paired group-Poisson resamples of frozen primary CV and population-
+holdout predictions for both datasets. These intervals omit refitting, model
+selection, data reconstruction and measurement-systematic uncertainty.
+
+Diagnostics: all-data and fold boundary contacts; finite isolated-Solar forces
+at 0.4, 1, 10, 30, 1,000 and 10,000 AU; smooth constant-density core path; low-baryon,
+high-acceleration and fixed-point-mass asymptotes; and inferred point-source
+extra-density positivity over declared masses/radii. Solar/binary calculations
+are illustrative force predictions, not observational likelihood fits. Report
+all remaining failures and distinguish relative from absolute Newtonian recovery.

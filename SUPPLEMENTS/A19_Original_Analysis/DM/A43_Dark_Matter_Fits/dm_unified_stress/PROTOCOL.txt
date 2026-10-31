@@ -1,0 +1,21 @@
+A43 frozen fixed-radius cluster transfer, 28 October 2026
+
+Written before the new candidates' X-COP predictions are calculated. The source
+X-COP data and prior analyses have already been inspected. This is exploratory
+transfer on previously inspected objects, not untouched survey validation.
+
+For ALL ten shared models in dm_unified_limits/results/results.json, use only
+the coefficients fitted to the original five-population, 279-system benchmark.
+No coefficient or cutoff is fitted or selected using these X-COP observations.
+Apply the frozen response to the 21 archived profiles at independently selected
+500, 750 and 1000 kpc radii in seven clusters, using dm_fixed_radius inputs.
+
+Primary case is forward hydrostatic mass and gas plus 0.75 projected stellar
+mass. Also report all nine pre-existing combinations of forward/NFW/Einasto
+target and zero/0.75/1 projected stellar-mass contribution. These are source
+model/systematic sensitivities, not independent observations or posterior draws.
+
+Score equal hosts then equal radii in logarithmic RMS and pooled median absolute
+fractional acceleration error. Record all predictions, original input hash and
+fit-result hash. No score is a claim of likelihood-based exclusion, universal
+fit, or superiority over full alternative gravitational theories.

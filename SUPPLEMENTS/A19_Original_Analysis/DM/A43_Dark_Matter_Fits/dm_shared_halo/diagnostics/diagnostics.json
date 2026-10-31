@@ -1,0 +1,116 @@
+{
+  "method": "Post-fit descriptive diagnostics only; no model or fit changes.",
+  "near_bound_rule": "within 1e-4 of coefficient range, in addition to recorded solver active flags",
+  "selected_fits_with_near_bounds_of_20_per_model": {
+    "RAR": 0,
+    "mixed_regular": 20,
+    "NFW_mass": 0,
+    "Burkert_mass": 0,
+    "NFW_size": 0,
+    "Burkert_size": 0
+  },
+  "input_feature_ranges": {
+    "mass_proxy_msun": [
+      49060000.0,
+      268868290000.0
+    ],
+    "reff_kpc": [
+      0.26,
+      12.36
+    ],
+    "sigma_proxy_msun_kpc2": [
+      5811367.56894524,
+      1888535599.7847395
+    ]
+  },
+  "tail_extrapolation": [
+    {
+      "test": "mass_low",
+      "train_galaxies": 112,
+      "test_galaxies": 37,
+      "test_rows": 321,
+      "mass_proxy_msun_train_min": 1774470000.0,
+      "mass_proxy_msun_train_max": 268868290000.0,
+      "mass_proxy_msun_test_min": 49060000.0,
+      "mass_proxy_msun_test_max": 1749020000.0000002,
+      "mass_proxy_msun_test_outside_train_range": 37,
+      "reff_kpc_train_min": 1.31,
+      "reff_kpc_train_max": 12.36,
+      "reff_kpc_test_min": 0.26,
+      "reff_kpc_test_max": 3.57,
+      "reff_kpc_test_outside_train_range": 22,
+      "sigma_proxy_msun_kpc2_train_min": 6432108.093316271,
+      "sigma_proxy_msun_kpc2_train_max": 1888535599.7847395,
+      "sigma_proxy_msun_kpc2_test_min": 5811367.56894524,
+      "sigma_proxy_msun_kpc2_test_max": 564402296.2319708,
+      "sigma_proxy_msun_kpc2_test_outside_train_range": 1,
+      "test_outside_train_log_mass_log_size_convex_hull": 37
+    },
+    {
+      "test": "mass_high",
+      "train_galaxies": 112,
+      "test_galaxies": 37,
+      "test_rows": 1109,
+      "mass_proxy_msun_train_min": 49060000.0,
+      "mass_proxy_msun_train_max": 47703890000.0,
+      "mass_proxy_msun_test_min": 47942820000.0,
+      "mass_proxy_msun_test_max": 268868290000.0,
+      "mass_proxy_msun_test_outside_train_range": 37,
+      "reff_kpc_train_min": 0.26,
+      "reff_kpc_train_max": 9.63,
+      "reff_kpc_test_min": 2.45,
+      "reff_kpc_test_max": 12.36,
+      "reff_kpc_test_outside_train_range": 7,
+      "sigma_proxy_msun_kpc2_train_min": 5811367.56894524,
+      "sigma_proxy_msun_kpc2_train_max": 1423197757.1103017,
+      "sigma_proxy_msun_kpc2_test_min": 121968387.55475426,
+      "sigma_proxy_msun_kpc2_test_max": 1888535599.7847395,
+      "sigma_proxy_msun_kpc2_test_outside_train_range": 2,
+      "test_outside_train_log_mass_log_size_convex_hull": 37
+    },
+    {
+      "test": "surface_low",
+      "train_galaxies": 112,
+      "test_galaxies": 37,
+      "test_rows": 306,
+      "mass_proxy_msun_train_min": 49060000.0,
+      "mass_proxy_msun_train_max": 268868290000.0,
+      "mass_proxy_msun_test_min": 53460000.0,
+      "mass_proxy_msun_test_max": 15893230000.0,
+      "mass_proxy_msun_test_outside_train_range": 0,
+      "reff_kpc_train_min": 0.26,
+      "reff_kpc_train_max": 12.36,
+      "reff_kpc_test_min": 0.52,
+      "reff_kpc_test_max": 9.63,
+      "reff_kpc_test_outside_train_range": 0,
+      "sigma_proxy_msun_kpc2_train_min": 44762986.260215975,
+      "sigma_proxy_msun_kpc2_train_max": 1888535599.7847395,
+      "sigma_proxy_msun_kpc2_test_min": 5811367.56894524,
+      "sigma_proxy_msun_kpc2_test_max": 43770570.889370814,
+      "sigma_proxy_msun_kpc2_test_outside_train_range": 37,
+      "test_outside_train_log_mass_log_size_convex_hull": 37
+    },
+    {
+      "test": "surface_high",
+      "train_galaxies": 112,
+      "test_galaxies": 37,
+      "test_rows": 1084,
+      "mass_proxy_msun_train_min": 49060000.0,
+      "mass_proxy_msun_train_max": 255062250000.0,
+      "mass_proxy_msun_test_min": 256060000.0,
+      "mass_proxy_msun_test_max": 268868290000.0,
+      "mass_proxy_msun_test_outside_train_range": 1,
+      "reff_kpc_train_min": 0.26,
+      "reff_kpc_train_max": 12.36,
+      "reff_kpc_test_min": 0.32,
+      "reff_kpc_test_max": 9.63,
+      "reff_kpc_test_outside_train_range": 0,
+      "sigma_proxy_msun_kpc2_train_min": 5811367.56894524,
+      "sigma_proxy_msun_kpc2_train_max": 392212226.22815996,
+      "sigma_proxy_msun_kpc2_test_min": 397755396.5864963,
+      "sigma_proxy_msun_kpc2_test_max": 1888535599.7847395,
+      "sigma_proxy_msun_kpc2_test_outside_train_range": 37,
+      "test_outside_train_log_mass_log_size_convex_hull": 37
+    }
+  ]
+}

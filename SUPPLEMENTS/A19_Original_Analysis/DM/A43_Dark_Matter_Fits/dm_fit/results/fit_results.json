@@ -1,0 +1,122 @@
+{
+  "raw_points": 3391,
+  "quality_inclination_selected_galaxies": 153,
+  "galaxies": 149,
+  "points": 2700,
+  "selection": "Q < 3, inclination >= 30 deg, errV/Vobs <= 0.1, positive radius/observed speed/net inward baryonic acceleration",
+  "mass_to_light": "disk 0.5, bulge 0.7 in solar units at 3.6 micron; published distances/inclinations fixed",
+  "objective": "Unweighted least squares in log10 acceleration; fixed observed x values; no error-in-variables or nuisance marginalization",
+  "cross_validation": "5 whole-galaxy folds, numpy default_rng seed 20261027, sorted galaxy IDs then permutation",
+  "gbar_range_m_s2": [
+    8.320764163354391e-13,
+    6.542344653053074e-09
+  ],
+  "radius_range_kpc": [
+    0.19,
+    108.31
+  ],
+  "models": {
+    "baryons_only": {
+      "coefficients": [],
+      "train_rmse_dex": 0.5145191960542318,
+      "cv_rmse_dex": 0.5145191960542318,
+      "cv_equal_galaxy_rmse_dex": 0.571530937842059,
+      "cv_median_abs_velocity_fraction": 0.39458642375085484,
+      "cv_multiplicative_acceleration_scatter": 3.2697849914385344,
+      "cv_fraction_predicted_below_baryonic": 0.0
+    },
+    "poly1": {
+      "coefficients": [
+        0.2669794154245678,
+        0.6725798750454994
+      ],
+      "train_rmse_dex": 0.13890842779009008,
+      "cv_rmse_dex": 0.14101363051268567,
+      "cv_equal_galaxy_rmse_dex": 0.1560598311063332,
+      "cv_median_abs_velocity_fraction": 0.10361208331577654,
+      "cv_multiplicative_acceleration_scatter": 1.383609803458652,
+      "cv_fraction_predicted_below_baryonic": 0.05814814814814815
+    },
+    "poly2": {
+      "coefficients": [
+        0.23565402358707016,
+        0.7168626111443495,
+        0.06634872284274239
+      ],
+      "train_rmse_dex": 0.1325800777478336,
+      "cv_rmse_dex": 0.13516582118475998,
+      "cv_equal_galaxy_rmse_dex": 0.15451127908984028,
+      "cv_median_abs_velocity_fraction": 0.0931050623730062,
+      "cv_multiplicative_acceleration_scatter": 1.3651042576382324,
+      "cv_fraction_predicted_below_baryonic": 0.027777777777777776
+    },
+    "poly3": {
+      "coefficients": [
+        0.23017675654833408,
+        0.7016746351798059,
+        0.07686804683825246,
+        0.013706353215581888
+      ],
+      "train_rmse_dex": 0.13233225006048707,
+      "cv_rmse_dex": 0.13552596760151717,
+      "cv_equal_galaxy_rmse_dex": 0.15477133263155987,
+      "cv_median_abs_velocity_fraction": 0.0936181121984675,
+      "cv_multiplicative_acceleration_scatter": 1.366236764113151,
+      "cv_fraction_predicted_below_baryonic": 0.01962962962962963,
+      "equal_galaxy_weight_fit_cv_rmse_dex": 0.13645551947184512
+    },
+    "poly5": {
+      "coefficients": [
+        0.23119704175139016,
+        0.6762150983397701,
+        0.0703325037823225,
+        0.047698366913303404,
+        0.004314823512972631,
+        -0.008047826180547777
+      ],
+      "train_rmse_dex": 0.13203407375344778,
+      "cv_rmse_dex": 0.13647472584525666,
+      "cv_equal_galaxy_rmse_dex": 0.15566125858832575,
+      "cv_median_abs_velocity_fraction": 0.0942858034041279,
+      "cv_multiplicative_acceleration_scatter": 1.369224702819683,
+      "cv_fraction_predicted_below_baryonic": 0.025925925925925925
+    },
+    "poly9": {
+      "coefficients": [
+        0.23379484481371476,
+        0.715073065371018,
+        0.054514323439846614,
+        -0.11697839612718315,
+        0.00443335534499547,
+        0.16159651657876087,
+        0.015271993344547017,
+        -0.05779881095572984,
+        -0.004920144026666473,
+        0.005664896538263972
+      ],
+      "train_rmse_dex": 0.131712318882446,
+      "cv_rmse_dex": 0.13669416345294932,
+      "cv_equal_galaxy_rmse_dex": 0.15517459786737026,
+      "cv_median_abs_velocity_fraction": 0.09576862524287055,
+      "cv_multiplicative_acceleration_scatter": 1.3699167109515245,
+      "cv_fraction_predicted_below_baryonic": 0.027407407407407408
+    },
+    "RAR": {
+      "coefficients": [
+        1.1603274962269242e-10
+      ],
+      "train_rmse_dex": 0.13265125998332247,
+      "cv_rmse_dex": 0.1333901795082272,
+      "cv_equal_galaxy_rmse_dex": 0.15402710715420206,
+      "cv_median_abs_velocity_fraction": 0.09216736896914413,
+      "cv_multiplicative_acceleration_scatter": 1.359534332970614,
+      "cv_fraction_predicted_below_baryonic": 0.0,
+      "equal_galaxy_weight_fit_cv_rmse_dex": 0.1341202558627776
+    }
+  },
+  "source_hashes": {
+    "SPARC_Lelli2016c.mrt": "5aa0501f6b0d881fa579030e315e7b5b6ef561a5bd3a07472f9929c7e5728243",
+    "Rotmod_LTG.zip": "0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588",
+    "RAR.mrt": "24aa7059dab7fa44787f7c11191052489899819370f6508621674769f3b72833"
+  }
+}

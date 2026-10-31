@@ -1,0 +1,27 @@
+A43 established-profile radial prediction benchmark, 2026-10-28
+Frozen before numerical fitting. Exploratory follow-up on repeatedly inspected SPARC data, not an independent discovery experiment.
+
+Question: how well do familiar halo and MOND/RAR forms predict omitted contiguous radii inside observed galaxies, compared with the existing shared A43 formula? This is NOT prediction of entirely new galaxies, and is NOT a global likelihood comparison of MOND against LCDM.
+
+Input: unchanged A43 augmented_input.csv, 2931 rows including 2700 retained SPARC rows in 149 galaxies. Raw SPARC Rotmod_LTG.zip provides the same fixed gas, disk and bulge components. Retain the previous quality/inclination/velocity-error selection without modification. Eligibility: at least 9 retained radii, expected 104 galaxies and 2470 rows, so each two-thirds training set has at least 6 observations. All other SPARC rows may inform shared coefficients but are never evaluated here.
+
+Splits (fixed by radius, no random search): sort each eligible galaxy by increasing radius. For n points, k=floor(n/3). Outer holdout: last k radii; train on preceding n-k. Middle holdout: positions k through 2k-1 inclusive; train on both sides. Hold out these radii in every eligible galaxy simultaneously. No held-out gobs enters fitting. Raw baryonic components at held-out radii are permitted predictors. Training different galaxies is allowed. Shared disk-only forms train on all SPARC points except held-out points, with equal galaxy total weight; the all-population mixed_regular comparison trains on every row except holdout, with previous equal-population/equal-system weight. Keep that differently trained comparison distinct.
+
+Fixed-baryon models:
+1. Exponential MOND/RAR at published a0=1.2e-10 m/s^2 (0 fitted coefficients).
+2. Exponential RAR with 1 common a0 fitted on disk training data.
+3. Exponential RAR with 1 separate a0 per galaxy (diagnostic extra freedom; not universal MOND).
+4. NFW halo + fixed baryons, 2 free positive halo coefficients per galaxy.
+5. Burkert halo + fixed baryons, 2 free positive halo coefficients per galaxy.
+6. Existing A43 mixed_regular, 7 common coefficients, refitted on disk training data only.
+7. Same A43 mixed_regular, 7 common coefficients, refitted using the five-population training objective.
+
+Nuisance sensitivity, declared before fitting: one positive multiplier lambda per galaxy on BOTH pre-existing stellar contributions (disk 0.5, bulge 0.7); gas fixed; distance/inclination fixed. lambda in [0.2,2]. If necessary raise the lower limit based only on all known baryonic components to keep the net inward baryonic acceleration positive at every radius. Test fixed-a0 RAR+lambda (1/galaxy), NFW+lambda (3/galaxy), Burkert+lambda (3/galaxy). No priors or error covariance. These are restricted illustrative fits, not full published nuisance-marginalized pipelines.
+
+Halo definitions: x=r/rs; density NFW rho_s/[x(1+x)^2], Burkert rho_s/[(1+x)(1+x^2)]. ghalo = A * f(x)/(x^2 f(1)), so A=ghalo(rs)>0. NFW f=ln(1+x)-x/(1+x); Burkert f=0.5ln(1+x)+0.25ln(1+x^2)-0.5atan(x). gtotal=gbar+ghalo. Parametrize log10(A/1e-10) in [-6,5], log10(rs/kpc) in [-2,3]. Three deterministic starts per galaxy anchored to median training radius; nuisance starts include lambda 0.5,1,1.5. RAR log10(a0/1e-10) in [-3,3]. Mixed_regular uses exactly previous 7-parameter bounds and starts; no new tuning.
+
+Objective: least squares in log10 acceleration, equal point weight within galaxy, equal galaxy weight for shared disk fits. No likelihood claim: measurement covariances, distance/inclination and mass-to-light uncertainties are not marginalized. Each model has identical train/test targets and baryonic measurements for a given split; unequal parameter freedoms explicitly reported.
+
+Primary score: square root of mean over eligible galaxies of mean held-out squared log10(gpred/gobs). Also report row median absolute acceleration and speed percentage errors, training score, coefficients, bounds and convergence, per-galaxy results and all prediction rows. A descriptive paired galaxy bootstrap (5000 resamples, seed 20261028) of frozen predictions may quantify differences; it does not refit or account for model selection/systematics.
+
+Do not select away a split or model based on performance. Report both splits, fixed and nuisance variants, all fits and failures. This benchmark cannot establish best-in-literature superiority, unseen-population transfer or a cosmological theory. Inputs and scripts will be hashed; formulas and scores independently checked.

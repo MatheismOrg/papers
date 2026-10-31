@@ -1,0 +1,1216 @@
+{
+  "means": {
+    "RAR": {
+      "rms": 0.15309259329341168,
+      "median_speed": 8.929834816754912
+    },
+    "NFW": {
+      "rms": 0.15323430209409428,
+      "median_speed": 9.302930384339243
+    },
+    "DC14": {
+      "rms": 0.18877549202911834,
+      "median_speed": 10.884925789829124
+    },
+    "DC14_response": {
+      "rms": 0.15376331138566537,
+      "median_speed": 9.288224103357873
+    },
+    "coreNFW_duration": {
+      "rms": 0.16252768818433513,
+      "median_speed": 10.018181684073804
+    },
+    "RAR_NFW_blend": {
+      "rms": 0.15060197916469886,
+      "median_speed": 8.88336616269625
+    }
+  },
+  "repeats": {
+    "20261027": {
+      "RAR": {
+        "rms": 0.152897876727425,
+        "median_speed": 8.892596604247533,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "NFW": {
+        "rms": 0.15235664943156182,
+        "median_speed": 9.29368065586782,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "DC14": {
+        "rms": 0.18638591333702492,
+        "median_speed": 10.336386810828667,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "DC14_response": {
+        "rms": 0.15257513773583167,
+        "median_speed": 9.262346241321662,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "coreNFW_duration": {
+        "rms": 0.1615789353572351,
+        "median_speed": 9.956889358755955,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "RAR_NFW_blend": {
+        "rms": 0.15029037857468025,
+        "median_speed": 8.741369537172744,
+        "galaxies": 149,
+        "rows": 2700
+      }
+    },
+    "7331": {
+      "RAR": {
+        "rms": 0.153013172854495,
+        "median_speed": 8.986424974618279,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "NFW": {
+        "rms": 0.1527902363926061,
+        "median_speed": 9.320728459111605,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "DC14": {
+        "rms": 0.1895408228291941,
+        "median_speed": 10.902521703244068,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "DC14_response": {
+        "rms": 0.15336085669325983,
+        "median_speed": 9.345703035574576,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "coreNFW_duration": {
+        "rms": 0.16233250434015076,
+        "median_speed": 10.120116730064055,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "RAR_NFW_blend": {
+        "rms": 0.150075226097174,
+        "median_speed": 8.96144239943839,
+        "galaxies": 149,
+        "rows": 2700
+      }
+    },
+    "48105": {
+      "RAR": {
+        "rms": 0.15336673029831505,
+        "median_speed": 8.910482871398928,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "NFW": {
+        "rms": 0.15455602045811487,
+        "median_speed": 9.294382038038307,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "DC14": {
+        "rms": 0.190399739921136,
+        "median_speed": 11.415868855414635,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "DC14_response": {
+        "rms": 0.1553539397279047,
+        "median_speed": 9.25662303317738,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "coreNFW_duration": {
+        "rms": 0.16367162485561945,
+        "median_speed": 9.9775389634014,
+        "galaxies": 149,
+        "rows": 2700
+      },
+      "RAR_NFW_blend": {
+        "rms": 0.15144033282224234,
+        "median_speed": 8.947286551477617,
+        "galaxies": 149,
+        "rows": 2700
+      }
+    }
+  },
+  "tails": {
+    "mass_high": {
+      "RAR": {
+        "rms": 0.12252152884252324,
+        "median_speed": 8.693750889987085,
+        "galaxies": 37,
+        "rows": 1109
+      },
+      "NFW": {
+        "rms": 0.13160604443947613,
+        "median_speed": 10.270239297816763,
+        "galaxies": 37,
+        "rows": 1109
+      },
+      "DC14": {
+        "rms": 0.1534638274268462,
+        "median_speed": 10.670463105961048,
+        "galaxies": 37,
+        "rows": 1109
+      },
+      "DC14_response": {
+        "rms": 0.13160604430886366,
+        "median_speed": 10.270239081083886,
+        "galaxies": 37,
+        "rows": 1109
+      },
+      "coreNFW_duration": {
+        "rms": 0.1336701711449685,
+        "median_speed": 10.307331096932849,
+        "galaxies": 37,
+        "rows": 1109
+      },
+      "RAR_NFW_blend": {
+        "rms": 0.12583428141700506,
+        "median_speed": 9.560780605991736,
+        "galaxies": 37,
+        "rows": 1109
+      }
+    },
+    "mass_low": {
+      "RAR": {
+        "rms": 0.19728125168406216,
+        "median_speed": 14.120749303932767,
+        "galaxies": 37,
+        "rows": 321
+      },
+      "NFW": {
+        "rms": 0.20031369917088832,
+        "median_speed": 16.24627001028669,
+        "galaxies": 37,
+        "rows": 321
+      },
+      "DC14": {
+        "rms": 0.27926787267913294,
+        "median_speed": 20.68868287840324,
+        "galaxies": 37,
+        "rows": 321
+      },
+      "DC14_response": {
+        "rms": 0.20626504097967896,
+        "median_speed": 16.563596780597422,
+        "galaxies": 37,
+        "rows": 321
+      },
+      "coreNFW_duration": {
+        "rms": 0.21015717711564488,
+        "median_speed": 15.367797908538773,
+        "galaxies": 37,
+        "rows": 321
+      },
+      "RAR_NFW_blend": {
+        "rms": 0.19464919449877408,
+        "median_speed": 15.616462015013965,
+        "galaxies": 37,
+        "rows": 321
+      }
+    },
+    "surface_high": {
+      "RAR": {
+        "rms": 0.12471043017343832,
+        "median_speed": 8.550808639662232,
+        "galaxies": 37,
+        "rows": 1084
+      },
+      "NFW": {
+        "rms": 0.1277517915608531,
+        "median_speed": 9.98015242970547,
+        "galaxies": 37,
+        "rows": 1084
+      },
+      "DC14": {
+        "rms": 0.18825654052820323,
+        "median_speed": 10.020017774705071,
+        "galaxies": 37,
+        "rows": 1084
+      },
+      "DC14_response": {
+        "rms": 0.12753991003549398,
+        "median_speed": 10.046963951949351,
+        "galaxies": 37,
+        "rows": 1084
+      },
+      "coreNFW_duration": {
+        "rms": 0.1246347672391911,
+        "median_speed": 9.804051541769438,
+        "galaxies": 37,
+        "rows": 1084
+      },
+      "RAR_NFW_blend": {
+        "rms": 0.12155527355390028,
+        "median_speed": 9.16677731531591,
+        "galaxies": 37,
+        "rows": 1084
+      }
+    },
+    "surface_low": {
+      "RAR": {
+        "rms": 0.19653038495430214,
+        "median_speed": 12.086233864599999,
+        "galaxies": 37,
+        "rows": 306
+      },
+      "NFW": {
+        "rms": 0.19198365435192083,
+        "median_speed": 9.664167735607505,
+        "galaxies": 37,
+        "rows": 306
+      },
+      "DC14": {
+        "rms": 0.21858078775527862,
+        "median_speed": 14.23589827377274,
+        "galaxies": 37,
+        "rows": 306
+      },
+      "DC14_response": {
+        "rms": 0.19311052335091525,
+        "median_speed": 9.10640357911634,
+        "galaxies": 37,
+        "rows": 306
+      },
+      "coreNFW_duration": {
+        "rms": 0.20259339030669,
+        "median_speed": 10.450059296218278,
+        "galaxies": 37,
+        "rows": 306
+      },
+      "RAR_NFW_blend": {
+        "rms": 0.18905420531994097,
+        "median_speed": 10.692056744423306,
+        "galaxies": 37,
+        "rows": 306
+      }
+    }
+  },
+  "dwarfs": {
+    "RAR": {
+      "rms": 0.6693733268310366,
+      "median_acceleration_error": 67.23199211782735
+    },
+    "NFW": {
+      "rms": 0.6675690458059649,
+      "median_acceleration_error": 64.5160803760991
+    },
+    "DC14": {
+      "rms": 1.265356236834337,
+      "median_acceleration_error": 91.45555584554363
+    },
+    "DC14_response": {
+      "rms": 0.6505161926382138,
+      "median_acceleration_error": 63.9925365361691
+    },
+    "coreNFW_duration": {
+      "rms": 0.6597690730053838,
+      "median_acceleration_error": 60.171400229376594
+    },
+    "RAR_NFW_blend": {
+      "rms": 0.6661262714783184,
+      "median_acceleration_error": 66.59768034659865
+    }
+  },
+  "contrasts": {
+    "NFW": {
+      "difference": 0.00014170880068259395,
+      "CI95": [
+        -0.010623803288240679,
+        0.010666391295166102
+      ]
+    },
+    "DC14": {
+      "difference": 0.03568289873570665,
+      "CI95": [
+        0.01693676379015932,
+        0.05402271374979821
+      ]
+    },
+    "DC14_response": {
+      "difference": 0.0006707180922536915,
+      "CI95": [
+        -0.010028995706541392,
+        0.011133589258504715
+      ]
+    },
+    "coreNFW_duration": {
+      "difference": 0.009435094890923451,
+      "CI95": [
+        -0.003572685858273586,
+        0.02274044717255008
+      ]
+    },
+    "RAR_NFW_blend": {
+      "difference": -0.0024906141287128203,
+      "CI95": [
+        -0.008800710307846106,
+        0.0040331255316668636
+      ]
+    }
+  },
+  "baseline_reproduction": {
+    "maximum_absolute_log_prediction_difference": 4.61996671465887e-08
+  },
+  "failed_attempts": [
+    {
+      "split": "cv_48105_3",
+      "model": "DC14",
+      "attempt": {
+        "method": "least_squares",
+        "start": [
+          12,
+          1.2,
+          0.5
+        ],
+        "p": [
+          11.384817692396696,
+          1.2545220945006343,
+          -0.2525855590934549
+        ],
+        "loss": 0.03539229475110913,
+        "success": false,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nfev": 1500,
+        "optimality": 0.0003771415957658058,
+        "active_bounds": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "split": "mass_high",
+      "model": "DC14",
+      "attempt": {
+        "method": "least_squares",
+        "start": [
+          11.5,
+          0.7,
+          0
+        ],
+        "p": [
+          11.429559628154802,
+          1.2607274160171988,
+          -0.17487591259080495
+        ],
+        "loss": 0.035668707038634104,
+        "success": false,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nfev": 1500,
+        "optimality": 0.000814771859852272,
+        "active_bounds": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "all_coefficients": {
+    "RAR": {
+      "p": [
+        0.015701365027560508
+      ],
+      "loss": 0.02325262804017176,
+      "attempts": [
+        {
+          "method": "bounded",
+          "success": true,
+          "nfev": 18
+        }
+      ]
+    },
+    "NFW": {
+      "p": [
+        11.46728334361566,
+        0.9937486579073265,
+        -0.6355006151189139
+      ],
+      "loss": 0.022708151126987236,
+      "selected_method": "least_squares",
+      "attempts": [
+        {
+          "method": "least_squares",
+          "start": [
+            11.5,
+            0.7,
+            0
+          ],
+          "p": [
+            11.467283438502506,
+            0.993748741335241,
+            -0.6355003646683031
+          ],
+          "loss": 0.02270815112698854,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 6,
+          "optimality": 7.11168366889135e-09,
+          "active_bounds": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            12,
+            1.2,
+            0.5
+          ],
+          "p": [
+            11.46728337098841,
+            0.9937485961506661,
+            -0.6355001084663725
+          ],
+          "loss": 0.02270815112698828,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 8,
+          "optimality": 3.238170274091996e-09,
+          "active_bounds": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            10.5,
+            0.4,
+            -0.5
+          ],
+          "p": [
+            11.46728334361566,
+            0.9937486579073265,
+            -0.6355006151189139
+          ],
+          "loss": 0.022708151126987236,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 8,
+          "optimality": 3.2550886956350416e-10,
+          "active_bounds": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "DC14": {
+      "p": [
+        11.426338463027133,
+        1.274942760702793,
+        -0.25977558473260826
+      ],
+      "loss": 0.032650750948991,
+      "selected_method": "Powell_polish",
+      "attempts": [
+        {
+          "method": "least_squares",
+          "start": [
+            11.5,
+            0.7,
+            0
+          ],
+          "p": [
+            11.426334231944846,
+            1.2749424476747773,
+            -0.2597762828277307
+          ],
+          "loss": 0.03265075094982959,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 26,
+          "optimality": 5.17782664463673e-07,
+          "active_bounds": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            12,
+            1.2,
+            0.5
+          ],
+          "p": [
+            11.426337742857125,
+            1.2749426705194062,
+            -0.25977634279263023
+          ],
+          "loss": 0.03265075094902075,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 21,
+          "optimality": 9.265479556306261e-08,
+          "active_bounds": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            10.5,
+            0.4,
+            -0.5
+          ],
+          "p": [
+            10.96155887664133,
+            0.5679985739379074,
+            0.6735821951708065
+          ],
+          "loss": 0.033347265137576826,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 25,
+          "optimality": 1.6950717336704413e-07,
+          "active_bounds": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "Powell_polish",
+          "start": [
+            11.426337742857125,
+            1.2749426705194062,
+            -0.25977634279263023
+          ],
+          "p": [
+            11.426338463027133,
+            1.274942760702793,
+            -0.25977558473260826
+          ],
+          "loss": 0.032650750948991,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "nfev": 49
+        }
+      ]
+    },
+    "DC14_response": {
+      "p": [
+        11.46132932031658,
+        0.9789072104720756,
+        -0.6395804808635795,
+        0.048935242171152
+      ],
+      "loss": 0.022684836617941555,
+      "selected_method": "Powell_polish",
+      "attempts": [
+        {
+          "method": "least_squares",
+          "start": [
+            11.5,
+            0.7,
+            0,
+            0.1
+          ],
+          "p": [
+            11.461329162780574,
+            0.9789075771698312,
+            -0.6395787352689207,
+            0.048933749446087894
+          ],
+          "loss": 0.02268483661798883,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 9,
+          "optimality": 3.2533634296117935e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            11.5,
+            0.7,
+            0,
+            0.5
+          ],
+          "p": [
+            11.461329154184188,
+            0.9789070305224603,
+            -0.6395840365830499,
+            0.04893774783041088
+          ],
+          "loss": 0.022684836618020846,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 12,
+          "optimality": 4.129893097047374e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            11.5,
+            0.7,
+            0,
+            0.9
+          ],
+          "p": [
+            11.461328952480974,
+            0.9789072493821763,
+            -0.639576047499182,
+            0.04893401633282756
+          ],
+          "loss": 0.02268483661806877,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 12,
+          "optimality": 6.55265429623719e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            12,
+            1.2,
+            0.5,
+            0.1
+          ],
+          "p": [
+            11.461329167119025,
+            0.9789076275674917,
+            -0.6395783894445517,
+            0.04893346831814539
+          ],
+          "loss": 0.022684836618005695,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 11,
+          "optimality": 3.6821972590904056e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            12,
+            1.2,
+            0.5,
+            0.5
+          ],
+          "p": [
+            11.461329152856607,
+            0.978907543172652,
+            -0.6395786357292994,
+            0.04893376856236932
+          ],
+          "loss": 0.022684836617989586,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 12,
+          "optimality": 3.2878185723107244e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            12,
+            1.2,
+            0.5,
+            0.9
+          ],
+          "p": [
+            11.46132901488129,
+            0.9789075460622575,
+            -0.6395746022528945,
+            0.04893223473387567
+          ],
+          "loss": 0.0226848366182025,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 13,
+          "optimality": 8.096296690822928e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            10.5,
+            0.4,
+            -0.5,
+            0.1
+          ],
+          "p": [
+            11.461328958413178,
+            0.978907250923421,
+            -0.6395759602179402,
+            0.04893383578713846
+          ],
+          "loss": 0.02268483661807335,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 10,
+          "optimality": 6.511936283629107e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            10.5,
+            0.4,
+            -0.5,
+            0.5
+          ],
+          "p": [
+            11.461329142992582,
+            0.9789070309209555,
+            -0.6395836762233766,
+            0.04893761372434523
+          ],
+          "loss": 0.022684836618008467,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 12,
+          "optimality": 3.552388391443743e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            10.5,
+            0.4,
+            -0.5,
+            0.9
+          ],
+          "p": [
+            11.461329153931908,
+            0.9789070409300923,
+            -0.6395840639715471,
+            0.04893777254146625
+          ],
+          "loss": 0.022684836618022026,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 13,
+          "optimality": 4.0685357771840636e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            11.46728334361566,
+            0.9937486579073265,
+            -0.6355006151189139,
+            0.02
+          ],
+          "p": [
+            11.461329251858922,
+            0.9789079095971566,
+            -0.6395780487924098,
+            0.04893229599813448
+          ],
+          "loss": 0.022684836618067868,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 11,
+          "optimality": 4.089771332409904e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            11.426338463027133,
+            1.274942760702793,
+            -0.25977558473260826,
+            0.98
+          ],
+          "p": [
+            11.461329152147119,
+            0.9789074372585888,
+            -0.639579727106008,
+            0.048934589857408096
+          ],
+          "loss": 0.022684836617954104,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 13,
+          "optimality": 2.014127850136097e-08,
+          "active_bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "exact_NFW_endpoint",
+          "p": [
+            11.46728334361566,
+            0.9937486579073265,
+            -0.6355006151189139,
+            0.0
+          ],
+          "loss": 0.02270815112698723,
+          "success": true
+        },
+        {
+          "method": "exact_DC14_endpoint",
+          "p": [
+            11.426338463027133,
+            1.274942760702793,
+            -0.25977558473260826,
+            1.0
+          ],
+          "loss": 0.032650750948991,
+          "success": true
+        },
+        {
+          "method": "Powell_polish",
+          "start": [
+            11.461329152147119,
+            0.9789074372585888,
+            -0.639579727106008,
+            0.048934589857408096
+          ],
+          "p": [
+            11.46132932031658,
+            0.9789072104720756,
+            -0.6395804808635795,
+            0.048935242171152
+          ],
+          "loss": 0.022684836617941555,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "nfev": 48
+        }
+      ]
+    },
+    "coreNFW_duration": {
+      "p": [
+        11.58072554304926,
+        0.8113843344435657,
+        -0.2101540254253421
+      ],
+      "loss": 0.025665098233072222,
+      "selected_method": "least_squares",
+      "attempts": [
+        {
+          "method": "least_squares",
+          "start": [
+            11.5,
+            0.7,
+            0
+          ],
+          "p": [
+            11.580725526089743,
+            0.8113843082366607,
+            -0.2101535168124708
+          ],
+          "loss": 0.0256650982330768,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 5,
+          "optimality": 8.819486047739739e-09,
+          "active_bounds": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            12,
+            1.2,
+            0.5
+          ],
+          "p": [
+            11.58072554542025,
+            0.8113843808368177,
+            -0.21015389940522627
+          ],
+          "loss": 0.025665098233074106,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 7,
+          "optimality": 7.516969648457677e-09,
+          "active_bounds": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "method": "least_squares",
+          "start": [
+            10.5,
+            0.4,
+            -0.5
+          ],
+          "p": [
+            11.58072554304926,
+            0.8113843344435657,
+            -0.2101540254253421
+          ],
+          "loss": 0.025665098233072222,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 7,
+          "optimality": 5.0599817117751545e-09,
+          "active_bounds": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "RAR_NFW_blend": {
+      "weight": 0.5320877746515849,
+      "loss": 0.021800862715224474,
+      "base_RAR": [
+        0.015701365027560508
+      ],
+      "base_NFW": [
+        11.46728334361566,
+        0.9937486579073265,
+        -0.6355006151189139
+      ]
+    }
+  },
+  "all_diagnostics": {
+    "DC14": {
+      "X_min": -2.656473814012477,
+      "X_max": -1.2988652549411794,
+      "below_recipe": [],
+      "upper_cap": [
+        "CamB"
+      ],
+      "outside_simulated_halo_mass": [
+        "CamB",
+        "D512-2",
+        "D564-8",
+        "DDO064",
+        "DDO154",
+        "ESO079-G014",
+        "ESO444-G084",
+        "ESO563-G021",
+        "IC4202",
+        "KK98-251",
+        "NGC0289",
+        "NGC0801",
+        "NGC0891",
+        "NGC1090",
+        "NGC2683",
+        "NGC2841",
+        "NGC2903",
+        "NGC2955",
+        "NGC2998",
+        "NGC3198",
+        "NGC3521",
+        "NGC3726",
+        "NGC3741",
+        "NGC3877",
+        "NGC3893",
+        "NGC3949",
+        "NGC3953",
+        "NGC3992",
+        "NGC4013",
+        "NGC4051",
+        "NGC4068",
+        "NGC4088",
+        "NGC4100",
+        "NGC4138",
+        "NGC4157",
+        "NGC4217",
+        "NGC5005",
+        "NGC5033",
+        "NGC5055",
+        "NGC5371",
+        "NGC5907",
+        "NGC5985",
+        "NGC6015",
+        "NGC6195",
+        "NGC6674",
+        "NGC6789",
+        "NGC6946",
+        "NGC7331",
+        "NGC7814",
+        "UGC02487",
+        "UGC02885",
+        "UGC02916",
+        "UGC02953",
+        "UGC03205",
+        "UGC03546",
+        "UGC04483",
+        "UGC05253",
+        "UGC05764",
+        "UGC05918",
+        "UGC06614",
+        "UGC06786",
+        "UGC06787",
+        "UGC07232",
+        "UGC08699",
+        "UGC09037",
+        "UGC09133",
+        "UGC11455",
+        "UGC11914",
+        "UGC12506",
+        "UGCA442",
+        "UGCA444"
+      ],
+      "rvir_over_r200": [
+        1.348782655288856,
+        1.3807511076984889
+      ],
+      "alpha_range": [
+        0.5811532389099754,
+        2.6640924547142255
+      ],
+      "gamma_range": [
+        0.2331114332967683,
+        1.2033062078950365
+      ]
+    },
+    "DC14_response": {
+      "X_min": -3.3929216169592333,
+      "X_max": -1.3267568171132529,
+      "below_recipe": [],
+      "upper_cap": [],
+      "outside_simulated_halo_mass": [
+        "CamB",
+        "D564-8",
+        "ESO563-G021",
+        "IC4202",
+        "NGC0289",
+        "NGC0801",
+        "NGC0891",
+        "NGC1090",
+        "NGC2683",
+        "NGC2841",
+        "NGC2903",
+        "NGC2955",
+        "NGC2998",
+        "NGC3198",
+        "NGC3521",
+        "NGC3726",
+        "NGC3877",
+        "NGC3893",
+        "NGC3949",
+        "NGC3953",
+        "NGC3992",
+        "NGC4013",
+        "NGC4051",
+        "NGC4088",
+        "NGC4100",
+        "NGC4138",
+        "NGC4157",
+        "NGC4217",
+        "NGC5005",
+        "NGC5033",
+        "NGC5055",
+        "NGC5371",
+        "NGC5907",
+        "NGC5985",
+        "NGC6015",
+        "NGC6195",
+        "NGC6674",
+        "NGC6789",
+        "NGC6946",
+        "NGC7331",
+        "NGC7814",
+        "UGC02487",
+        "UGC02885",
+        "UGC02916",
+        "UGC02953",
+        "UGC03205",
+        "UGC03546",
+        "UGC04483",
+        "UGC05253",
+        "UGC06614",
+        "UGC06786",
+        "UGC06787",
+        "UGC08699",
+        "UGC09037",
+        "UGC09133",
+        "UGC11455",
+        "UGC11914",
+        "UGC12506"
+      ],
+      "rvir_over_r200": [
+        1.3523890719189506,
+        1.3762559891237625
+      ],
+      "alpha_range": [
+        0.6423924917573811,
+        2.6673713082967074
+      ],
+      "gamma_range": [
+        0.233845426701145,
+        1.1769084181608378
+      ]
+    }
+  }
+}

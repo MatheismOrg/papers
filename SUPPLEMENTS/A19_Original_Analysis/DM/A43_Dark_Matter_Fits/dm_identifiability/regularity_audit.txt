@@ -1,0 +1,84 @@
+Analytic audit of proposed stage3 regularized response, 28 October 2026
+
+Definition (all coefficients and length scales positive):
+  g = gbar/[1-exp(-sqrt(gbar/a_eff))]
+  a_eff/a_ref = C0 + C1 M^(-alpha) H(r) W(gbar)
+                     + C2 s^beta/[1+r/R]
+  M = (gbar/a_ref)(r/kpc)^2  [dimensionless spherical-equivalent mass]
+  s = (gbar/a_ref)(r/kpc)
+  H = r^4/(r^4+l^4),  W = 1/[1+(gbar/gc)^2]
+  0 <= alpha,beta <= 0.95, a_ref=1e-10 m/s^2, gc=1e-8 m/s^2.
+
+These statements concern the proposed scalar response, independent of its fits.
+They do not establish a general conservative gravitational field equation.
+The final stage3 protocol imposes l>=10 pc before fitting, expressly to suppress
+the inverse-mass stellar anomaly. Any resulting stellar improvement is partly by
+construction, not a measurement of that cutoff or an independent discovery.
+
+1. Source-removal and high-acceleration limits at fixed positive radius
+
+As gbar->0, the inverse-M term grows no faster than gbar^(-alpha), so
+g ~ sqrt(gbar*a_eff) is O(gbar^((1-alpha)/2)) and tends to zero.
+For alpha=0, a_eff stays finite and the square-root limit still vanishes.
+At large gbar, that term decays as gbar^(-alpha-2), while the positive s term
+grows at most as gbar^beta. Thus a_eff/gbar->0 for beta<1 and g/gbar->1.
+For the stated power asymptotes, the exponential RAR correction also makes
+the absolute difference g-gbar tend to zero.
+
+2. Isolated point-source far field
+
+For a fixed physical point mass Mb, gbar=G*Mb/r^2 and dimensionless M is
+constant. As r->infinity, H and W tend to one, and s^beta/(1+r/R) tends to zero
+as r^(-beta-1). Hence a_eff tends to a positive finite constant,
+a_inf=a_ref(C0+C1*M^(-alpha)), and g~sqrt(G*Mb*a_inf)/r.
+The corresponding asymptotic circular speed satisfies
+V_inf^4=G*Mb*a_ref(C0+C1*M^(-alpha)).
+This is generally not a universal linear baryonic Tully-Fisher law with one
+mass-independent acceleration constant. Fit quality cannot silently waive that
+additional test. An infinite 1/r tail also has the usual logarithmic potential
+and infinite Newtonian-equivalent halo mass; environment/cosmological boundary
+conditions remain outside this isolated approximation.
+
+3. Smooth baryonic center
+
+For a regular spherical baryonic core, gbar~r and M~r^3. The inverse-M term
+therefore scales as r^(4-3*alpha) and vanishes because alpha<4/3. The positive
+term scales as r^(2*beta), tending to zero if beta>0 or a finite constant if beta=0.
+The effective acceleration scale stays finite and g~sqrt(r) tends to zero.
+This repairs an infinite-force central extrapolation, but it does not in general
+produce a finite-density core: the Newtonian-equivalent density is ~r^(-1/2).
+Use 'regular central force', not 'finite-density center'.
+
+4. Exact nonnegative point-source effective density
+
+This property has an analytic proof for the specified family, not only a grid
+check. At fixed Mb, the inverse-M coefficient is constant. Both H(r) and W(r)
+are nondecreasing with r. The last term has logarithmic slope
+  d ln[s^beta/(1+r/R)]/d ln r = -beta-r/(R+r) > -2.
+The constant term has slope zero. A positive sum has the weighted average of
+its component slopes, so d ln(a_eff)/d ln r > -2.
+Set t=sqrt(gbar/a_eff). Then
+  d ln t/d ln r = -1 - (1/2)d ln(a_eff)/d ln r < 0.
+Since nu(t)=1/[1-exp(-t)] decreases with t, it increases with r. The inferred
+enclosed total mass is M_dyn=Mb*nu, so dM_dyn/dr>=0 and the Newtonian-equivalent
+extra density is nonnegative outside the point source. The proof says nothing
+about positivity for an arbitrary extended distribution or a many-body field.
+
+5. Remaining checks
+
+At fixed r the inverse term's logarithmic slope in gbar can approach -alpha-2,
+because of W. Thus monotonicity of the full g(gbar,r) is not automatic from
+these asymptotes alone. The fitted response needs a stated broad-grid check;
+an eventual field theory also needs independent ellipticity/conservation tests.
+
+The radius cutoff l has to suppress the actual stellar-scale problem, not merely
+the mathematical r->0 divergence. If astronomical fitting drives l below the
+smallest constrained radius, wide-binary behavior can remain incorrect. Report
+finite Solar/stellar probes and bound contacts; do not treat an unobserved
+cutoff choice as measured. Modifying l after such probes is an adaptive repair,
+not independent validation. Genuine weak-binary constraints require an external
+field, binary population/selection modeling and an observational likelihood.
+
+These are direct derivations of this proposed empirical family. The earlier
+curl/integrability limitation and need for a proper field equation are standard
+results (Bekenstein-Milgrom1984; Milgrom2010), documented in README.txt.

@@ -1,0 +1,72 @@
+A43 photometry-to-halo unification test, 29 October 2026
+Fixed before this stage's numerical fitting. Reused inspected data; exploratory,
+not an independent discovery sample or exhaustive best-model comparison.
+
+Question: can familiar NFW/Burkert halo families predict entirely unseen galaxies
+with common coefficients relating halo state to independently measured baryonic
+mass/size proxies? Prior per-object radial fits did not test that proposition.
+
+Input: unchanged149SPARC galaxies/2700selected rows in
+../dm_unified_regular/augmented_input.csv. SPARC Table1 independent L3.6, MHI and
+Reff are joined by exact galaxy name. No Vflat, observed speed, dynamical mass,
+or previous per-galaxy halo coefficients enter a prediction feature.
+Mproxy=(0.5 L3.6 +1.33 MHI), using solar luminosity/mass units. This deliberately
+simple photometric/gas mass proxy gives all stellar luminosity M/L0.5; it does
+not separately treat bulges, molecular gas or uncertain stellar populations.
+It does not replace the existing radial baryonic acceleration, which retains
+disk0.5/bulge0.7 weighting. Reff is stellar light radius, not baryonic half-mass.
+
+Let m=log10(Mproxy/1e10 Msun), h=log10(Reff/3kpc).
+Halo acceleration g_h=A f(z)/[z^2 f(1)], z=r/rs, added to unchanged gbar.
+NFW: f(z)=ln(1+z)-z/(1+z).
+Burkert: f(z)=0.5ln(1+z)+0.25ln(1+z^2)-0.5atan(z).
+Hence A=g_h(rs)>0, and rs is a positive halo scale radius.
+
+Exactly four shared-halo families:
+NFW_mass, Burkert_mass: log10(A/1e-10 SI)=a0+aM*m;
+ log10(rs/kpc)=b0+bM*m. Four shared coefficients.
+NFW_size, Burkert_size: add aR*h and bR*h to those equations. Six coefficients.
+Bounds a0[-3,2], aM/aR[-1.5,1.5], b0[-1,2], bM/bR[-1.5,1.5].
+Mass-only starts [a0,aM,b0,bM]:[-.5,0,1,.4],[0,.4,.5,.2],[-1,-.2,1.5,.6].
+Mass+size starts [a0,aM,aR,b0,bM,bR]:
+ [-.5,0,0,1,.4,0],[0,.4,-.5,.5,.2,.5],[-1,-.2,.5,1.5,.6,-.3].
+No clipping of predicted halo parameters. These bounds apply to the common
+relation, not every implied individual halo parameter. Report implied ranges.
+
+Comparators: fixed exponential RAR a0=1.2e-10 SI; shared exponential RAR
+fit log10(a0/1e-10) in[-3,3], start[.1]; seven-coefficient previous A43
+mixed_regular refit on exactly the same disk training targets/weights, retaining
+its prior three starts and bounds. No per-galaxy fitted parameter in any model.
+
+Objective: equal total weight per galaxy, equal point weights within each galaxy,
+least-squares log10 acceleration residual. All-data fit plus whole-galaxy5foldCV
+seeds20261027,7331,48105, identical to previous SPARC-only partition routine.
+Additionally leave out exactly lowest/highest37galaxies by Mproxy and by
+Sigma_proxy=Mproxy/(2pi Reff^2), sorted by (feature,galaxyname) to resolve ties.
+Define strata using predictor values only. Each excludes entire test galaxies.
+These covariate-tail transfers are not new surveys or preregistered confirmations.
+
+Try every stated start independently, maximum3000least-squares evaluations,
+ftol=xtol=gtol=1e-10. Keep all attempts/convergence/bounds/costs. Select minimum
+cost, checking its success; failed attempts remain recorded. No extra candidate,
+feature, bound tuning or selective exclusion after seeing results.
+
+Report equal-galaxy RMSdex, rowRMS, median acceleration and speed fractional
+errors, per-galaxy results, exact inputfeatures/foldmembership and coefficients.
+For each validation split, paired5000galaxy-Poisson resamples of frozen test
+residuals compare each model to sharedRAR. Descriptive intervals omit refitting,
+selection and measurement/systematic uncertainty. Do not treat them as likelihoods.
+
+Physical interpretation: these are ordinary positive halo density families with
+shared state relations, not new gravity field equations. NFW has a cusp; Burkert
+a core; both have logarithmically divergent total mass if left untruncated. Thus
+they are finite-domain halo templates, requiring physical outer truncation before
+any global mass claim. They do not inherit a measured BTFR, cosmic abundance,
+halo mass-concentration prior, environmental history, Solar test or cosmology.
+Check coefficient-implied mass-zero scaling at fixed Reff and r; report failure
+if present. An arbitrary isolated stellar/Solar extrapolation is not within this
+photometric galaxy calibration and is not an ephemeris likelihood test.
+
+This is a genuine attempt to reduce object-specific halo fits to common
+source-state relations within the disk-galaxy sample. It does not by itself
+unify clusters/dwarfs/cosmology. Preserve unfavorable results.

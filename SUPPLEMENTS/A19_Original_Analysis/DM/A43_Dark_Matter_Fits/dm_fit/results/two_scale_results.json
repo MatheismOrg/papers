@@ -1,0 +1,51 @@
+{
+  "status": "Exploratory, selected after examining galaxy-to-cluster transfer failure; requires new independent data.",
+  "fit_weights": "Every galaxy and cluster has total weight 1. Cluster subset is seven R500 estimates, one per cluster.",
+  "validation": "Five whole-system folds; some clusters are now in training. This is not the galaxy-only transfer test.",
+  "basis": "x=log10(gbar/1e-10 m/s^2); z=log10(radius/kpc); 2D basis [1,x,z,x^2,x*z,z^2]",
+  "models": {
+    "quadratic_acceleration": {
+      "coefficients": [
+        0.22851504490066107,
+        0.6881534205871536,
+        0.04418316003832795
+      ],
+      "galaxy_point_cv_rmse_dex": 0.13660926464911727,
+      "galaxy_median_abs_velocity_error": 0.09323604067820052,
+      "cluster_cv_rmse_dex": 0.21301923580098947,
+      "cluster_median_abs_acceleration_error": 0.3710751887558159,
+      "cluster_cv_observed_over_predicted": [
+        1.5624030780308662,
+        1.6932462349442499,
+        1.5900151848385953,
+        1.3959327009668812,
+        1.6612880660300313,
+        1.5316696684783864,
+        1.943968193094123
+      ]
+    },
+    "quadratic_acceleration_radius": {
+      "coefficients": [
+        0.2534992013492719,
+        0.7059508692471491,
+        -0.08231767363199732,
+        0.043451308314610755,
+        -0.018769858317053235,
+        0.039950267539170525
+      ],
+      "galaxy_point_cv_rmse_dex": 0.13804129553525496,
+      "galaxy_median_abs_velocity_error": 0.09201676886527155,
+      "cluster_cv_rmse_dex": 0.05323640707397413,
+      "cluster_median_abs_acceleration_error": 0.05632403520367624,
+      "cluster_cv_observed_over_predicted": [
+        0.9772712473905262,
+        1.0615523645811968,
+        1.008036678674625,
+        0.8396539063963498,
+        1.0557635748867635,
+        0.9466792070173656,
+        1.2892140153210851
+      ]
+    }
+  }
+}

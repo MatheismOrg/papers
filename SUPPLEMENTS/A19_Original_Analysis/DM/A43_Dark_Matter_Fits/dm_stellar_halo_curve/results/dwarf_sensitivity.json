@@ -1,0 +1,108 @@
+{
+  "all44": {
+    "old_RAR": {
+      "rms": 0.6693733268310366,
+      "median_absolute_log_error": 0.3631254723242163,
+      "median_acceleration_percent": 67.23199211782735
+    },
+    "old_NFW": {
+      "rms": 0.6675690458059649,
+      "median_absolute_log_error": 0.3967108269501403,
+      "median_acceleration_percent": 64.5160803760991
+    },
+    "old_RAR_NFW_blend": {
+      "rms": 0.6661262714783184,
+      "median_absolute_log_error": 0.37015023367609956,
+      "median_acceleration_percent": 66.59768034659865
+    },
+    "stellar_power": {
+      "rms": 0.47913577423257914,
+      "median_absolute_log_error": 0.3036595250510401,
+      "median_acceleration_percent": 56.826792184726195
+    },
+    "stellar_curved": {
+      "rms": 0.4787405818020049,
+      "median_absolute_log_error": 0.29874696572477166,
+      "median_acceleration_percent": 56.27424108545409
+    },
+    "stellar_blend": {
+      "rms": 0.5052052052545675,
+      "median_absolute_log_error": 0.33425111141090225,
+      "median_acceleration_percent": 61.04086613447664
+    },
+    "Moster_fixed": {
+      "rms": 0.5559065582526069,
+      "median_absolute_log_error": 0.3182154691190101,
+      "median_acceleration_percent": 80.13222570871945
+    }
+  },
+  "archived_high_precision25": {
+    "old_RAR": {
+      "rms": 0.5692462710768978,
+      "median_absolute_log_error": 0.3269036411956311,
+      "median_acceleration_percent": 52.89181642229812
+    },
+    "old_NFW": {
+      "rms": 0.5750164057371984,
+      "median_absolute_log_error": 0.34915859163164287,
+      "median_acceleration_percent": 55.24501577687888
+    },
+    "old_RAR_NFW_blend": {
+      "rms": 0.5684629631786184,
+      "median_absolute_log_error": 0.33110787059196306,
+      "median_acceleration_percent": 54.14392503018854
+    },
+    "stellar_power": {
+      "rms": 0.33779929342458437,
+      "median_absolute_log_error": 0.1781855475307305,
+      "median_acceleration_percent": 47.22602521866281
+    },
+    "stellar_curved": {
+      "rms": 0.3369022816935986,
+      "median_absolute_log_error": 0.18051597096849592,
+      "median_acceleration_percent": 48.43825251202688
+    },
+    "stellar_blend": {
+      "rms": 0.37765274940700855,
+      "median_absolute_log_error": 0.14642686747478278,
+      "median_acceleration_percent": 32.918376118251715
+    },
+    "Moster_fixed": {
+      "rms": 0.4328560263345385,
+      "median_absolute_log_error": 0.24283200273732994,
+      "median_acceleration_percent": 69.88001987496588
+    }
+  },
+  "individual_dwarfs_improved_log_error_vs_old_NFW": {
+    "stellar_power": 30,
+    "stellar_blend": 31
+  },
+  "subset_names": [
+    "AndromedaI",
+    "AndromedaIII",
+    "AndromedaVI",
+    "AndromedaVII",
+    "AndromedaX",
+    "AndromedaXIV",
+    "AndromedaXXIII",
+    "AndromedaXXIX",
+    "Antlia2",
+    "CanesVenatici(1)",
+    "CanesVenatici2",
+    "Carina",
+    "ComaBerenices",
+    "Crater2",
+    "Draco",
+    "Fornax",
+    "Hydrus1",
+    "Leo1",
+    "Leo2",
+    "Sculptor",
+    "Segue(1)",
+    "Sextans(1)",
+    "UrsaMajor(1)",
+    "UrsaMajor2",
+    "UrsaMinor"
+  ],
+  "interpretation": "This reuses a previously declared source-quality sensitivity. It is not an independent sample and does not account for host-correlated systematics or all mass-estimator uncertainty."
+}

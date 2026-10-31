@@ -1,0 +1,690 @@
+{
+  "status": "passed",
+  "prediction_tables_checked": 16,
+  "bootstrap_comparisons_checked": 24,
+  "maximum_direct_equation_error_dex": 5.551115123125783e-16,
+  "source_results_sha256": "b3b1e35c5b1f920acba21d13fd9e34f3cf80247156f0125d2e773ef7e9bfe281",
+  "checks": [
+    "pre-fit script and protocol hashes",
+    "fixed lower length bound10pc",
+    "original inputs unchanged",
+    "augmented rows preserve original sources and append21XCOP entries",
+    "direct formula predictions",
+    "population/source/group/median metrics",
+    "three starts per selected fit and minimum-cost selection",
+    "group/source/host exclusions",
+    "baseline comparator inputs and folds",
+    "5000pairedresample24intervals"
+  ],
+  "physical_audit_note": "See regularity_audit.txt: analytic regular-force and nonnegative isolated-point-source effective-density proofs, incomplete field-theory interpretation, and imposed stellar-screening lower bound.",
+  "monotonicity_grid": {
+    "x_range": [
+      -15,
+      15
+    ],
+    "x_points": 601,
+    "u_range": [
+      -12,
+      6
+    ],
+    "u_points": 73,
+    "results": {
+      "original": {
+        "minimum_fixed_radius_dlogg_dloggbar": 0.02499999999999967,
+        "grid_x": -14.9,
+        "grid_u": -2.0,
+        "negative_beyond_1e-8_steps": 0
+      },
+      "augmented": {
+        "minimum_fixed_radius_dlogg_dloggbar": 0.025000000000000223,
+        "grid_x": -14.95,
+        "grid_u": -2.0,
+        "negative_beyond_1e-8_steps": 0
+      }
+    }
+  },
+  "selected_bound_contacts": [
+    {
+      "dataset": "original",
+      "split": "all",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_20261027_2",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_20261027_3",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_20261027_0",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_20261027_4",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_20261027_1",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_48105_2",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_48105_3",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_48105_0",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_48105_4",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_48105_1",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_7331_2",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_7331_3",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_7331_0",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_7331_4",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "cv_7331_1",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "host_M31",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "host_MW",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "population_CLASH",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "population_MaNGA_BCG",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "population_SPARC",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "population_ETG",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "original",
+      "split": "population_dSph",
+      "active_bounds": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "all",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_20261027_2",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_20261027_3",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_20261027_0",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_20261027_4",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_20261027_1",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_48105_2",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_48105_3",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_48105_0",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_48105_4",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_48105_1",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_7331_2",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_7331_3",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_7331_0",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_7331_4",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "cv_7331_1",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "host_M31",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "host_MW",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "population_clusters",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "population_MaNGA_BCG",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "population_SPARC",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "population_ETG",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "population_dSph",
+      "active_bounds": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "source_CLASH",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "dataset": "augmented",
+      "split": "source_XCOP",
+      "active_bounds": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    }
+  ],
+  "files": [
+    "original/mixed_regular_all.csv",
+    "original/mixed_regular_cv_20261027.csv",
+    "original/mixed_regular_cv_48105.csv",
+    "original/mixed_regular_cv_7331.csv",
+    "original/mixed_regular_host_M31.csv",
+    "original/mixed_regular_host_MW.csv",
+    "original/mixed_regular_population_holdout.csv",
+    "augmented/mixed_regular_all.csv",
+    "augmented/mixed_regular_cv_20261027.csv",
+    "augmented/mixed_regular_cv_48105.csv",
+    "augmented/mixed_regular_cv_7331.csv",
+    "augmented/mixed_regular_host_M31.csv",
+    "augmented/mixed_regular_host_MW.csv",
+    "augmented/mixed_regular_population_holdout.csv",
+    "augmented/mixed_regular_source_CLASH.csv",
+    "augmented/mixed_regular_source_XCOP.csv"
+  ]
+}

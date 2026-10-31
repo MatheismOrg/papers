@@ -1,0 +1,58 @@
+{
+  "max_recomputed_metric_difference": 2.220446049250313e-16,
+  "failed_selected": [],
+  "bound_hits": [
+    [
+      "cv_20261027_1",
+      "NFW_mc",
+      4,
+      0.6
+    ],
+    [
+      "cv_48105_4",
+      "NFW_mc",
+      4,
+      0.6
+    ],
+    [
+      "cv_48105_4",
+      "NFW_response_mc",
+      5,
+      0.6
+    ]
+  ],
+  "nonlinear_halo_moment_checks": {
+    "NFW_c": {
+      "mass_scatter_dex": 0.0,
+      "order_convergence_max_mean_dex": 3.375077994860476e-14,
+      "mean_shift_absolute_median_dex": 0.0020232694847299726,
+      "mean_shift_absolute_95th_dex": 0.00544193141254059,
+      "mean_shift_absolute_max_dex": 0.008126988262340262,
+      "relative_sd_error_median": -0.00911387759874921,
+      "relative_sd_error_95th_abs": 0.07689255481953755,
+      "relative_sd_error_max_abs": 0.1245996577538433
+    },
+    "NFW_mc": {
+      "mass_scatter_dex": 0.5482480810500666,
+      "order_convergence_max_mean_dex": 4.311679902002652e-10,
+      "mean_shift_absolute_median_dex": 0.01200557092917176,
+      "mean_shift_absolute_95th_dex": 0.02377074782033545,
+      "mean_shift_absolute_max_dex": 0.04202903186215856,
+      "relative_sd_error_median": -0.013051336013478021,
+      "relative_sd_error_95th_abs": 0.1256313050461439,
+      "relative_sd_error_max_abs": 0.17502114979140249
+    },
+    "NFW_response_mc": {
+      "mass_scatter_dex": 0.5436167151765612,
+      "order_convergence_max_mean_dex": 3.7976022326802195e-10,
+      "mean_shift_absolute_median_dex": 0.012235127317429928,
+      "mean_shift_absolute_95th_dex": 0.0240099086690443,
+      "mean_shift_absolute_max_dex": 0.04197471884562631,
+      "relative_sd_error_median": -0.013595092162076272,
+      "relative_sd_error_95th_abs": 0.12360194900521998,
+      "relative_sd_error_max_abs": 0.17482050291153461
+    }
+  },
+  "passed_numerical_audit": true,
+  "interpretation": "The moment check covers only halo scatter, not the complete nuisance-integrated likelihood. Large fitted scatter and linearization limit physical interpretation."
+}

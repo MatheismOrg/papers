@@ -1,0 +1,27 @@
+{
+  "inputs.csv": {
+    "row": "Joint primary row index, stable in predictions and train/test indices",
+    "origin_row": "Original disk row or cluster broad_row, interpreted with domain",
+    "ggas_m_s2": "Disk-only signed gas inward force. Cluster zeros are unused placeholders, NOT measured missing hot gas. Cluster prediction reads quadrature instead.",
+    "gstar_m_s2": "Disk-only stellar inward force. Cluster zeros unused; cluster total baryons remain in gbar.",
+    "gas_force_fraction": "Disk-only ggas/(ggas+gstar); blank for cluster; NOT gas mass fraction",
+    "cluster_quadrature_row": "Index into cluster_quadrature.json; -1 for disk",
+    "gbar_m_s2": "Existing total baryonic acceleration, unchanged",
+    "gobs_m_s2": "Existing observed/reconstructed target, unchanged"
+  },
+  "predictions.csv": {
+    "coefficients_json": "[eta, log10(Rc/kpc)]; disk-only Rc=400 is externally fixed and absent from kernel",
+    "selected_fit_id": "Index in results fits; -1 means frozen coefficients",
+    "fold": "Whole-system fold or descriptive label",
+    "split": "all, cv_SEED, or source/domain exclusion; frozen-parameter CV labels do not imply retraining"
+  },
+  "full_disk_predictions.csv": {
+    "valid_positive_source": "False when signed net inward source<=0; predicted values blank, not clipped"
+  },
+  "metrics": {
+    "B_dex": "RMS log10 acceleration residual with equal domain/source/host weighting as applicable",
+    "median_acceleration_error_percent": "Row median abs(gpred/gobs-1)*100; not host weighted",
+    "median_speed_error_percent": "Row median abs(sqrt(gpred/gobs)-1)*100; physical circular-speed interpretation only for disks",
+    "valid_conditional_row_RMS_dex": "Full-disk diagnostics only: unweighted RMS over valid rows; not primary B and not whole-sample if invalid rows exist"
+  }
+}

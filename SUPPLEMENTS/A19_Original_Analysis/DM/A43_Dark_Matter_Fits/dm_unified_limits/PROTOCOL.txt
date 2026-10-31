@@ -1,0 +1,51 @@
+A43 constrained shared-response follow-up, 28 October 2026
+Fixed before this follow-up's numerical fits, after inspection of prior A43 results
+and predictor ranges. Exploratory analysis on a repeatedly inspected benchmark;
+this is not preregistration or an untouched discovery test.
+
+Input: frozen dm_broad_joint/combined_input.csv, 2,910 rows, five populations,
+279 systems represented by 278 conservative validation groups. No new measured
+observable is introduced. x=log10(gbar/a_ref), u=log10(r/kpc), a_ref=1e-10 SI.
+q=x+u and m=x+2u. The latter is log10 of the spherical-equivalent baryonic mass
+in units a_ref*kpc^2/G. For disks this is not the actual enclosed mass.
+
+All six new families use one common coefficient set, no population label or
+object-specific adjustment. Write F(g,a)=g/[1-exp(-sqrt(g/a))]. Define
+P(s,t)=10^A+10^(B-alpha*s)+10^(C+beta*t), with alpha,beta in [0,0.95].
+1. mass_power: g=F(gbar,a_ref*P(m,m)); 5 coefficients.
+2. mass_bounded: g=F(gbar,a_ref*10^(A+B*z+C*z^2)),
+   z=tanh((m-m0)/w); 5 coefficients, C>=0, w>0.
+3. mass_additive: g=gbar+sqrt(gbar*a_ref*P(m,m)); 5 coefficients.
+4. mixed_power: g=F(gbar,a_ref*P(m,q)); 5 coefficients.
+5. index_power: g=F(gbar,a_ref*P(m,x+k*u)); 6 coefficients, k in [0,2].
+6. mass_screened: g=gbar+sqrt(gbar*a_ref*P(m,m))*
+   exp[-sqrt(gbar/(a_ref*10^A))]; 5 coefficients.
+The fitted domains, exact starts, and computational bounds are frozen in run.py.
+Three fixed starts per new family. No starts derived from test-fold targets.
+
+These are empirical closures, not new covariant theories. The mass-based negative
+leg is constant at fixed isolated source mass while r varies. The positive leg
+is constant (m), vanishes (q), or stays bounded (x+k*u, 0<=k<=2) as r->infinity.
+Thus g~constant(M)/r in that point-mass far field. At fixed positive radius,
+g->0 when gbar->0 because alpha<1; g/gbar->1 as gbar->infinity because beta<1
+(or because a_eff is bounded / the explicit screening exponential vanishes).
+Those limits do not establish Cassini, extended-source consistency, a metric,
+conservation, lensing, or cosmological predictions. A mass-dependent coefficient
+changes the baryonic Tully-Fisher normalization/slope across masses; quantify it.
+
+Matched refits of existing RAR, potential_quad, power_sum, and half_power are
+comparators. Preserve the original equal-population, equal-group, equal-row
+within-group objective and fold construction. Run all-data fits; whole-group
+five-fold CV at seeds 20261027, 7331, 48105; leave each complete population out;
+and exclude every dSph of MW or M31 before predicting that host. Retain all
+fold coefficients, raw predictions, optimizer convergence and bound diagnostics.
+No dropping failed or poor families.
+
+Primary criterion: improve group and population transfer relative to both the
+previous potential quadratic and power sum while meeting the stated limits.
+Report each population separately, including SPARC speed errors. A small gain
+in one score does not establish dominance or superiority to all published models.
+Descriptive paired 5,000-draw group-Poisson bootstrap on fixed primary fold and
+population-holdout predictions; it excludes refitting, selection and reconstruction
+uncertainty. For host tests, provide each host score without a two-host confidence
+claim. Preserve all attempted families and all successful/failed optimization calls.

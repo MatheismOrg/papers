@@ -1,0 +1,646 @@
+{
+  "status": "frozen-fit mathematical probes, not fitted physical likelihoods",
+  "Mref_Msun": 717446392.7893277,
+  "models_by_dataset": {
+    "original": {
+      "RAR": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+          "negative_below_minus_1e_5_count": 0,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 0.0,
+          "worst_log10_radius_kpc": -8.35
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": 0.5000108222619204,
+          "negative_count": 0,
+          "grid_points": 18281,
+          "observed_input_min_derivative": 0.500778726757467,
+          "observed_input_negative_count": 0
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            -3.636371650121645,
+            -4.636380110234413,
+            -5.636380956248711,
+            -6.636381040850171
+          ],
+          "last_interval_dlogg_dlogr": 0.50000004230073,
+          "asymptotic_exponent_if_inverse_mass_dominates": null
+        }
+      },
+      "potential_quad": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -1.781218317762125,
+          "negative_below_minus_1e_5_count": 1093,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 15.0,
+          "worst_log10_radius_kpc": -9.0
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": -2.250500889502405,
+          "negative_count": 7027,
+          "grid_points": 18281,
+          "observed_input_min_derivative": -0.1603366514912885,
+          "observed_input_negative_count": 10
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            15.260319672444897,
+            25.95068597004351,
+            39.39450322568624,
+            55.59177143937312
+          ],
+          "last_interval_dlogg_dlogr": -8.098634106843438,
+          "asymptotic_exponent_if_inverse_mass_dominates": null
+        }
+      },
+      "power_sum": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+          "negative_below_minus_1e_5_count": 0,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 0.0,
+          "worst_log10_radius_kpc": -8.35
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": -8.881784197001252e-12,
+          "negative_count": 0,
+          "grid_points": 18281,
+          "observed_input_min_derivative": 0.002819788642582921,
+          "observed_input_negative_count": 0
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            2.6979528311111256,
+            3.697952831106768,
+            4.697952831106765,
+            5.697952831106765
+          ],
+          "last_interval_dlogg_dlogr": -0.5,
+          "asymptotic_exponent_if_inverse_mass_dominates": null
+        }
+      },
+      "mixed_power": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+          "negative_below_minus_1e_5_count": 0,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 0.5,
+          "worst_log10_radius_kpc": -8.10625
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": 0.024999999990171773,
+          "negative_count": 0,
+          "grid_points": 18281,
+          "observed_input_min_derivative": 0.02576099517703767,
+          "observed_input_negative_count": 0
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            5.847080368467319,
+            7.697080368467315,
+            9.547080368467313,
+            11.397080368467314
+          ],
+          "last_interval_dlogg_dlogr": -0.9250000000000007,
+          "asymptotic_exponent_if_inverse_mass_dominates": -0.9249999999999996
+        }
+      },
+      "mixed_gate": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+          "negative_below_minus_1e_5_count": 0,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 0.0,
+          "worst_log10_radius_kpc": -8.35
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": -0.9692530837313029,
+          "negative_count": 951,
+          "grid_points": 18281,
+          "observed_input_min_derivative": 0.02576099565443357,
+          "observed_input_negative_count": 0
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            5.847080223824481,
+            7.697080223824479,
+            9.547080223824473,
+            11.397080223824474
+          ],
+          "last_interval_dlogg_dlogr": -0.9250000000000007,
+          "asymptotic_exponent_if_inverse_mass_dominates": -0.9249999999999996
+        }
+      },
+      "mixed_gate_range": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -0.3138348048218349,
+          "negative_below_minus_1e_5_count": 28,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 15.0,
+          "worst_log10_radius_kpc": 3.106250000000001
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": -0.9692295359053915,
+          "negative_count": 950,
+          "grid_points": 18281,
+          "observed_input_min_derivative": 0.025799333653875323,
+          "observed_input_negative_count": 0
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            5.84380275387039,
+            7.693802753870386,
+            9.543802753870384,
+            11.393802753870386
+          ],
+          "last_interval_dlogg_dlogr": -0.9250000000000007,
+          "asymptotic_exponent_if_inverse_mass_dominates": -0.9249999999999998
+        }
+      }
+    },
+    "augmented": {
+      "RAR": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+          "negative_below_minus_1e_5_count": 0,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 0.0,
+          "worst_log10_radius_kpc": -8.35
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": 0.5000111186959089,
+          "negative_count": 0,
+          "grid_points": 18281,
+          "observed_input_min_derivative": 0.5008000463102569,
+          "observed_input_negative_count": 0
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            -3.6481076039845446,
+            -4.64811629583641,
+            -5.648117165024787,
+            -6.648117251943656
+          ],
+          "last_interval_dlogg_dlogr": 0.5000000434594347,
+          "asymptotic_exponent_if_inverse_mass_dominates": null
+        }
+      },
+      "potential_quad": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -1.6103445325608163,
+          "negative_below_minus_1e_5_count": 977,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 15.0,
+          "worst_log10_radius_kpc": -9.0
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": -2.099739873351325,
+          "negative_count": 6908,
+          "grid_points": 18281,
+          "observed_input_min_derivative": -0.13103005968462256,
+          "observed_input_negative_count": 8
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            14.285608626999146,
+            24.332906881072148,
+            36.97356017797049,
+            52.20756851769417
+          ],
+          "last_interval_dlogg_dlogr": -7.61700416986184,
+          "asymptotic_exponent_if_inverse_mass_dominates": null
+        }
+      },
+      "power_sum": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+          "negative_below_minus_1e_5_count": 0,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 0.0,
+          "worst_log10_radius_kpc": -8.35
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": -1.7763568394002505e-11,
+          "negative_count": 0,
+          "grid_points": 18281,
+          "observed_input_min_derivative": 0.002646696397601289,
+          "observed_input_negative_count": 0
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            2.700095832546923,
+            3.700095832542589,
+            4.700095832542587,
+            5.700095832542587
+          ],
+          "last_interval_dlogg_dlogr": -0.5,
+          "asymptotic_exponent_if_inverse_mass_dominates": null
+        }
+      },
+      "mixed_power": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+          "negative_below_minus_1e_5_count": 0,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 0.5,
+          "worst_log10_radius_kpc": -8.10625
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": 0.024999999990171773,
+          "negative_count": 0,
+          "grid_points": 18281,
+          "observed_input_min_derivative": 0.025736659039488075,
+          "observed_input_negative_count": 0
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            5.849174091909756,
+            7.699174091909754,
+            9.549174091909752,
+            11.39917409190975
+          ],
+          "last_interval_dlogg_dlogr": -0.9249999999999989,
+          "asymptotic_exponent_if_inverse_mass_dominates": -0.9249999999999998
+        }
+      },
+      "mixed_gate": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -4.220623850414995e-12,
+          "negative_below_minus_1e_5_count": 0,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 0.0,
+          "worst_log10_radius_kpc": -8.35
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": -0.9692680339856707,
+          "negative_count": 952,
+          "grid_points": 18281,
+          "observed_input_min_derivative": 0.025736659468034162,
+          "observed_input_negative_count": 0
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            5.84917394853354,
+            7.699173948533534,
+            9.549173948533536,
+            11.399173948533534
+          ],
+          "last_interval_dlogg_dlogr": -0.9249999999999989,
+          "asymptotic_exponent_if_inverse_mass_dominates": -0.9249999999999998
+        }
+      },
+      "mixed_gate_range": {
+        "point_source_grid": {
+          "mass_Msun_log10": [
+            0,
+            15,
+            31
+          ],
+          "radius_kpc_log10": [
+            -9,
+            4,
+            161
+          ],
+          "min_dlog_inferred_mass_dlog_radius": -0.31102847877640016,
+          "negative_below_minus_1e_5_count": 26,
+          "grid_points": 4991,
+          "worst_log10_mass_Msun": 15.0,
+          "worst_log10_radius_kpc": 3.106250000000001
+        },
+        "fixed_radius_monotonicity": {
+          "log10_gbar_over_aref_range": [
+            -8,
+            8,
+            181
+          ],
+          "log10_radius_kpc_range": [
+            -9,
+            4,
+            101
+          ],
+          "min_dlogg_dloggbar": -0.969231717737884,
+          "negative_count": 950,
+          "grid_points": 18281,
+          "observed_input_min_derivative": 0.025795876057443934,
+          "observed_input_negative_count": 0
+        },
+        "uniform_density_core_path": {
+          "definition": "gbar/a_ref=r/kpc so finite central baryonic density, r->0",
+          "log10_radius_kpc": [
+            -8.0,
+            -10.0,
+            -12.0,
+            -14.0
+          ],
+          "log10_gpred_over_aref": [
+            5.844105392507123,
+            7.694105392507119,
+            9.544105392507117,
+            11.394105392507118
+          ],
+          "last_interval_dlogg_dlogr": -0.9250000000000007,
+          "asymptotic_exponent_if_inverse_mass_dominates": -0.9249999999999998
+        }
+      }
+    }
+  }
+}

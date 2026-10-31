@@ -1,0 +1,15 @@
+28 October 2026. Exploratory, not preregistered research: all benchmark populations
+have already been inspected. Before running this follow-up, fix three candidates:
+softened_power (replace s^-alpha by (s+s0)^-alpha; six parameters), bounded_U
+(a bounded quadratic in tanh(log10(s)); five parameters), and half_power (fix
+inverse exponent at 1/2; four parameters). No new object-specific coefficients.
+Use unchanged rows, weighting, three group-fold seeds and population holdouts.
+Do not select exclusively by the best score; report every candidate and every
+population, asymptotes, bounds and optimizer warnings. Compare old RAR,
+potential_quad and power_sum predictions without refitting their cached results.
+Add 5000 paired Poisson whole-group resamples of fixed OOF residuals. Same group
+multiplier across populations preserves overlap. Normalize weights separately
+inside each population; equal population weight. Intervals are descriptive and
+exclude fitting, selection and measurement/model uncertainty. They cannot turn
+reused holdouts into an independent discovery set. No temporal data: no fitted
+memory claim. A physical limit repair does not imply a complete gravity theory.

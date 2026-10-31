@@ -1,0 +1,54 @@
+A43 adaptive follow-up, 29 October 2026. Written before this branch's fits,
+after inspecting dm_population_scatter results. Not independent confirmation.
+
+MOTIVATION
+Likelihood-fitted NFW with halo variation improves frozen dwarf central-prediction
+RMS but worsens disk point RMS. Its mass scaling is shallower, suggesting that
+stellar-to-halo curvature should be tested directly. Such curvature is established
+prior art, not an original A43 concept (Moster, Naab & White 2013).
+
+Use the same 149 SPARC galaxies, 2700 rows, original 3 x 5 folds and 4 feature
+tails. Fit only disk training outcomes, preserving old RAR/NFW/blend comparators.
+Same finite NFW halo and published Planck concentration relation. Every rule
+returns Mref >= Mp/fb. No concentration offset or fitted per-galaxy state here.
+Mstar=0.5 L3.6 as before; Mp=Mstar+1.33 MHI; Re is photometric.
+
+Four families, all retained:
+(1) Moster fixed: invert the z=0 median relation Mstar/Mhalo=
+2N/[(Mhalo/M1)^-beta+(Mhalo/M1)^gamma], with logM1=11.59, N=.0351,
+beta=1.376, gamma=.608 as quoted by Li et al. 2020. Mref=max(M_AM,Mp/fb).
+This is an inverse median relation, not p(Mhalo|Mstar) with selection/scatter.
+(2) Moster scaled: Mref=Mp/fb+10^eta (Re/3)^C max(M_AM-Mp/fb,0).
+Fit eta in [-2,2] and C in [-1.5,1.5]. The exact unscaled endpoint retained.
+(3) Stellar power: Mref=Mp/fb+10^A (Mstar/1e10)^B (Re/3)^C.
+A [8,14], B [.1,2], C [-1.5,1.5]. Three old-style starts.
+(4) Stellar curved: x=log10(Mstar/1e10), z=log10(Re/3),
+soft(u)=log10(1+10^(2u))/2,
+log10(Mex)=A+B*x+Delta*[soft(x-xt)-soft(-xt)]+C*z.
+A [8,14], B [.1,2], Delta [0,2], C [-1.5,1.5], xt [-3,1].
+Thus log M is smoothly convex in log stellar mass; low/high slopes B/B+Delta.
+Transition Mstar=10^(10+xt), smoothness fixed. Five shared coefficients.
+Three declared starts plus the exact Delta=0 stellar-power endpoint and a
+near-endpoint start. This is empirical population scaling, not new field physics.
+
+Objective: original equal-galaxy mean squared log acceleration error. SciPy
+least_squares max_nfev2000, tol1e-10, retain every attempt, no outcome-selected
+new starts. Report all repeated-fold, tail and full-SPARC frozen 44-dwarf results.
+Dwarf inputs use total stellar mass and measured projected Re, not dispersion or
+an inferred halo mass. They are mass-estimator stresses, not Jeans fits. Dwarfs
+and all SPARC observations were previously inspected; no blind discovery claim.
+
+Audit: Moster root identity, exact baseline nesting, monotonic positive mass,
+shared fold exclusions, independently recomputed metrics and conditional paired
+whole-galaxy intervals. Publish all outcomes even if none beats RAR/blend.
+Primary sources: https://arxiv.org/abs/1205.5807 and
+https://arxiv.org/html/2001.10538v2; concentration source as in dm_cosmological_halo.
+
+ADAPTIVE ENSEMBLE FOLLOW-UP
+After the four declared families were evaluated, stellar_power preserved disk
+RMS approximately and improved frozen dwarf transfer. Apply the already-used
+RAR/NFW convex force-blend algorithm with stellar_power replacing the former
+baryonic-mass NFW base. No changed weight-fitting algorithm: fit one common w on
+training predictions of the separately trained bases, freeze for each test set.
+Five global estimated coefficients; no inner cross-fitting, no new physical law.
+This follow-up is explicitly post-result and retains every partition/tail/dwarf.
