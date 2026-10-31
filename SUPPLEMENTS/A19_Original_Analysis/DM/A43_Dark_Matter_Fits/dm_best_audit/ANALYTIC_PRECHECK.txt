@@ -1,0 +1,77 @@
+Independent analytical precheck, 2026-10-28
+Prepared before receiving candidate numerical results.
+
+A. Point-source monotonicity for exponential RAR
+For fixed source mass M, gb=GM/r^2, t=sqrt(gb/ae), and inferred extra mass
+Mex=M/(exp(t)-1). If n=d ln(ae)/d ln(r)>-2, then
+ d ln(t)/d ln(r)=-1-n/2<0,
+so Mex increases with r and the point-source inferred extra density is nonnegative.
+This is not a proof for arbitrary nonspherical/extended baryons or a local action.
+For a positive sum, n is a positive weighted mean of the component slopes.
+
+B. Proposed transient repair (verify exact implementation separately)
+Let U=(gb/aref)(r/kpc)^2, s=(gb/aref)(r/kpc),
+S=r^4/(r^4+ell^4), W=1/(1+(gb/gc)^2), and D=1/(1+r/R).
+ae/aref=C0+D[C1 U^-alpha S W + C2 s^beta].
+For an isolated point source U is constant, s proportional to r^-1,
+ dlnS/dlnr=4(1-S), dlnW/dlnr=4(1-W),
+ dlnD/dlnr=-(1-D).
+The inverse-mass leg has slope >=-1; the positive-potential leg has slope
+ -beta-(1-D)>-(1+beta)>-2 if beta<1. The constant leg has zero slope.
+Therefore the condition in A holds. All extra ae legs vanish as r -> infinity,
+so ae -> aref C0 and V_infinity^4=GM aref C0 for every fixed source mass.
+For a smooth baryon core gb proportional to r, U proportional to r^3,
+S proportional to r^4: inverse leg proportional to r^(4-3alpha), regular
+for alpha<4/3. Positive leg proportional to r^(2beta). For alpha<=.95 and
+beta>=0, ae is finite and force g tends to zero (normally proportional sqrt(r)).
+At fixed r and gb->0, even the inverse-mass ae divergence produces
+g proportional to gb^((1-alpha)/2) ->0 for alpha<1.
+At fixed r and gb->infinity, ae/gb ->0 if alpha>=0,beta<1 and W is present
+on the inverse-mass term; exponential interpolation makes absolute excess vanish.
+
+C. Proposed potential taper (verify exact implementation separately)
+Replace D by T=s/(s+s0) and apply W to both nonconstant legs.
+For point sources dlnT/dlnr=-(1-T), so the above n>-2 argument also holds.
+As r->infinity, T->0 and both extra legs vanish, restoring common BTFR.
+At fixed r, gb->0, inverse-mass leg now scales as gb^(1-alpha) (times S),
+which tends to zero for alpha<1; ae tends to finite baseline.
+At a smooth core the inverse-mass leg scales r^(6-3alpha), also regular.
+As gb->infinity at fixed r, W forces both added legs to zero for beta<2.
+
+D. Published MOND interpolations need distinct solar limits
+The simple function g=0.5 gb+sqrt(0.25gb^2+a0gb) has g-gb ->a0 at high gb.
+It has a Newtonian RELATIVE limit but not a vanishing absolute excess.
+The standard mu function has g-gb approximately a0^2/(2gb), which vanishes.
+The generalized nu_n=[(1+sqrt(1+4 z^-n))/2]^(1/n), z=gb/a0,
+has g-gb approximately (a0/n) z^(1-n). Thus n>1 is needed to vanish;
+n=1 is simple, n=2 is standard. An isolated limit alone says nothing
+about the external-field quadrupole constraints from Cassini.
+
+E. Halo normalization
+For rho_NFW=rho_s/[x(1+x)^2], M=4pi rho_s rs^3 f_N(x),
+f_N=ln(1+x)-x/(1+x). For rho_B=rho_s/[(1+x)(1+x^2)],
+M=4pi rho_s rs^3 f_B(x),
+f_B=0.5ln(1+x)+0.25ln(1+x^2)-0.5 atan(x).
+Therefore g=A f(x)/[x^2 f(1)] correctly normalizes A=g(rs).
+The derivative identities are f_N'=x/(1+x)^2 and
+f_B'=x^2/[(1+x)(1+x^2)], ensuring positive density.
+
+Post-implementation confirmation
+The actual potential-taper code applies S to both nonconstant legs, not only
+the inverse-mass leg. This adds another nonnegative 4(1-S) log-radius slope
+to the positive leg along a point source, preserving the proof above.
+The transient formula matches B exactly.
+
+Independent numerical diagnostics reproduce all reported counts: transient has
+zero negative response intervals on the specified fixed-radius grid and zero
+negative point-source extra-density intervals; taper has 683 negative response
+intervals despite zero negative point-source density intervals; the two log bumps
+have 2,900 negative response intervals and 613 negative extra-density intervals.
+No absence of failures on a grid is promoted to an all-domain monotonicity proof.
+The monotonic point-source extra-density proof is narrower than a general field
+law and does not imply positivity for arbitrary extended sources or conservation.
+
+The restoring scale R is about 308 kpc for the all-data transient fit. Low-mass
+systems may reach their formal common normalization only at radii well beyond
+observed flat rotation curves. Common asymptotic BTFR normalization must therefore
+not be written as an observational fit to the BTFR.

@@ -1,0 +1,85 @@
+BROAD DARK-MATTER ANALYSIS: CURATION AND REPRODUCTION
+28 October 2026 (UTC)
+
+This supplement retains reproducible numerical inputs, analysis scripts, frozen
+results, output figures, source metadata, and source acknowledgements for six
+additional analysis directories. It does not distribute research-article PDFs,
+their full-text extractions, the arXiv source archive, the 75 MB MaNGA DRPall file,
+installed dependencies, Python caches, or execution logs.
+
+CONTENTS
+dm_broad_dwarfs: author's public nearby-galaxy FITS, morphology catalog table
+text, catalog comments, references, and release update history; 44-system dwarf
+benchmark, exclusions, error approximations, and frozen predictions.
+
+dm_broad_globular: author-supplied ASCII and HTML numerical parameter tables,
+171-row extraction and 151 selected structural controls. These are not local
+acceleration-fit rows. The source HTML is a numerical catalog page needed to
+identify fitted versus luminosity-estimated masses, not article full text.
+
+dm_broad_groups: official early-type numerical catalog and rotation-model ZIP;
+the three KiDS/GAMA profiles and their three covariance matrices actually used;
+the unchanged release README; a table-only Milgrom2019 excerpt; fixed-formula
+benchmarks and plots. The table excerpt starts at the exact marker required by
+the parser and retains the full caption and 66 actual numerical rows, including
+all 11 exclusion stars. The 55 unstarred rows reproduce the selected-group test.
+Its printed caption's 67/56 counts are retained as source text and explained in
+the analysis rather than silently repaired. Unused KiDS release variants and
+the original tar archive are omitted.
+
+dm_broad_lensing: official CLASH VizieR tables, MaNGA's 50 printed numerical
+Table 1 rows, SDSS position-query data, crossmatch, 134 standardized pairs, frozen
+predictions and provenance. No figure-derived measurements are used.
+
+dm_broad_constraints: primary-source constraint assessment and Solar-System
+asymptotic calculation. These are contextual checks, not extra acceleration
+fit observations or a cosmological likelihood calculation.
+
+dm_broad_joint: nominal and higher-precision combined inputs, explicit model
+protocol, scripts, complete prediction files and results for both runs, figures,
+verification output and taper sensitivity. Execution logs are omitted because
+their quantitative results are present in structured files.
+
+PORTABILITY
+All paths used by the six directories resolve from each script's own directory
+or the sibling folders retained here. Keep these directories alongside dm_fit,
+dm_fixed_radius and dm_paper_search. Install the packages listed in the parent
+requirements.txt. No private workspace path is required. Cached numerical
+inputs permit rebuilding without network access.
+
+From this supplement's root, rebuild inputs and fixed-formula comparisons with:
+  python dm_broad_dwarfs/build_dwarfs.py
+  python dm_broad_globular/build_control.py
+  python dm_broad_groups/validate_external.py
+  python dm_broad_lensing/prepare_external.py
+  python dm_broad_joint/build_input.py
+  python dm_broad_joint/prepare_sensitivity.py
+
+The model fitting and plotting commands are documented in dm_broad_joint's
+README.txt and PROTOCOL.txt. Existing frozen fits are supplied; the curation
+check did not rerun model fitting.
+
+VERIFICATION
+The four independent input/benchmark builders and the dependent combined-input
+builders were rerun from the packaged directory. Generated numerical CSVs match
+the source analysis byte for byte. The dwarf/group summary manifests no longer
+list omitted research-reference PDFs and archives; numerical results are
+unchanged. The curation manifest hashes every file in these six directories and the curation note and rebuild-check record. Python syntax and
+source-path checks were also completed.
+
+PROVENANCE AND RIGHTS
+Original numerical input bytes, headers, attribution, catalog comments and
+available rights references are preserved. The Milgrom file is explicitly a
+numerical table excerpt, and the child READMEs have only their reproduction
+instructions adjusted to the packaged inputs. Source URLs, DOIs and required
+acknowledgements remain in the relevant READMEs/provenance files. No new data
+license is assigned here. The nearby-galaxy Update.log is an original author
+release-history record, not an execution log.
+
+SCIENTIFIC LIMITS
+Heterogeneous estimators, nuisance assumptions and omitted joint covariance
+remain those described in each analysis. CLASH central/outer points share
+hosts, two nearby MaNGA BCGs share a conservative validation group, and dwarf
+environments are separately tested. Lensing stacks, group dispersions,
+globular controls and cosmological constraints are distinct observables and
+are not silently pooled as independent local acceleration measurements.

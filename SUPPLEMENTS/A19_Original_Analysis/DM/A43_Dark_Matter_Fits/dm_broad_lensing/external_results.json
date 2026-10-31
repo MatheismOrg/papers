@@ -1,0 +1,177 @@
+{
+  "status": "Frozen-model transfer to newly acquired published acceleration estimates; no fitting to these targets in this script.",
+  "notes": [
+    "CLASH central BCG and outer points share 20 parent clusters and must stay together in splits.",
+    "CLASH mass is spherical NFW mass inferred from combined strong/weak lensing and magnification under assumed cosmology/gravity, not a theory-independent raw force measurement.",
+    "CLASH 64 outer points are at fixed 100/200/400/600 kpc, avoiding the R500 target-definition identity.",
+    "MaNGA 50 targets are published isotropic spherical Jeans/Abel estimates with photometric Sersic baryons. Radii are Re times rlast/Re from Table1.",
+    "All stored logarithms and errors are log10 SI/dex. The CLASH paper equation8 uses natural logarithms; its intercept must not be applied to these log10 numbers.",
+    "No full cross-radius covariance matrices are supplied in these tables; uncertainty is not marginalized here.",
+    "CLASH names do not match any seven X-COP names, and MaNGA redshifts .027-.148 do not overlap CLASH .187-.686.",
+    "SDSS DR17 mangaDrpAll sky positions matched to X-COP FITS cluster centers: no MaNGA/X-COP center overlap; nearest separation is 71.27 arcmin.",
+    "MaNGA table lacks host-cluster IDs. Its system and parent_system identify each observed BCG. MaNGA8989-12703 and8991-6102 lie 2.694 arcmin apart with delta-z .002943; a conservative host-based split may keep them together.",
+    "published_CLASH_sqrt uses the published g_dagger=2.02e-9 m/s^2 low-acceleration relation. Its CLASH score is in-sample to that publication, not independent validation; MaNGA was also previously compared with this relation by Tian2024."
+  ],
+  "galaxy_RAR_a0": 1.1603274962269242e-10,
+  "xcop_fixed_radius_RAR_a0": 7.159144282666642e-10,
+  "results": {
+    "CLASH_BCG": {
+      "points": 20,
+      "systems": 20,
+      "models": {
+        "baryons_only": {
+          "median_absolute_acceleration_fraction": 0.8013015225042195,
+          "rmse_dex": 0.7165004535937153,
+          "median_observed_over_predicted": 5.037261991358973
+        },
+        "galaxy_RAR": {
+          "median_absolute_acceleration_fraction": 0.6454576624779501,
+          "rmse_dex": 0.46472314927813585,
+          "median_observed_over_predicted": 2.8269447865632484
+        },
+        "xcop_fixed_radius_RAR": {
+          "median_absolute_acceleration_fraction": 0.33021013837814756,
+          "rmse_dex": 0.20083159928797759,
+          "median_observed_over_predicted": 1.4714194046990445
+        },
+        "published_CLASH_sqrt": {
+          "median_absolute_acceleration_fraction": 0.1567982230091442,
+          "rmse_dex": 0.1259451598053366,
+          "median_observed_over_predicted": 1.0329383153140044
+        },
+        "galaxy_quadratic": {
+          "median_absolute_acceleration_fraction": 0.6309344723039447,
+          "rmse_dex": 0.4523474618720224,
+          "median_observed_over_predicted": 2.7157660905614236
+        },
+        "old_R500_radius_quadratic": {
+          "median_absolute_acceleration_fraction": 0.6515243239029176,
+          "rmse_dex": 0.4715401933203777,
+          "median_observed_over_predicted": 2.875695163309013
+        }
+      }
+    },
+    "CLASH_cluster": {
+      "points": 64,
+      "systems": 20,
+      "models": {
+        "baryons_only": {
+          "median_absolute_acceleration_fraction": 0.8849150799299245,
+          "rmse_dex": 0.9305196716754568,
+          "median_observed_over_predicted": 8.689972866641178
+        },
+        "galaxy_RAR": {
+          "median_absolute_acceleration_fraction": 0.7067446747023003,
+          "rmse_dex": 0.5279021199897386,
+          "median_observed_over_predicted": 3.410002241451328
+        },
+        "xcop_fixed_radius_RAR": {
+          "median_absolute_acceleration_fraction": 0.37965839886350844,
+          "rmse_dex": 0.21221244166765987,
+          "median_observed_over_predicted": 1.6120199591544127
+        },
+        "published_CLASH_sqrt": {
+          "median_absolute_acceleration_fraction": 0.19174374253022475,
+          "rmse_dex": 0.10403916550256467,
+          "median_observed_over_predicted": 1.046730012781733
+        },
+        "galaxy_quadratic": {
+          "median_absolute_acceleration_fraction": 0.7042049410638497,
+          "rmse_dex": 0.5256358487748612,
+          "median_observed_over_predicted": 3.3810344495736366
+        },
+        "old_R500_radius_quadratic": {
+          "median_absolute_acceleration_fraction": 0.6492792834320262,
+          "rmse_dex": 0.4589594675518004,
+          "median_observed_over_predicted": 2.8512731348663682
+        }
+      }
+    },
+    "CLASH_all": {
+      "points": 84,
+      "systems": 20,
+      "models": {
+        "baryons_only": {
+          "median_absolute_acceleration_fraction": 0.8727961406887397,
+          "rmse_dex": 0.8842735584594147,
+          "median_observed_over_predicted": 7.861407121525839
+        },
+        "galaxy_RAR": {
+          "median_absolute_acceleration_fraction": 0.6876072674803719,
+          "rmse_dex": 0.5135649632023432,
+          "median_observed_over_predicted": 3.2011790444021377
+        },
+        "xcop_fixed_radius_RAR": {
+          "median_absolute_acceleration_fraction": 0.3455851186869297,
+          "rmse_dex": 0.2095587862447277,
+          "median_observed_over_predicted": 1.5280826162967753
+        },
+        "published_CLASH_sqrt": {
+          "median_absolute_acceleration_fraction": 0.17541110066230414,
+          "rmse_dex": 0.109652542959564,
+          "median_observed_over_predicted": 1.0365162476775502
+        },
+        "galaxy_quadratic": {
+          "median_absolute_acceleration_fraction": 0.6838135826850158,
+          "rmse_dex": 0.509143999631997,
+          "median_observed_over_predicted": 3.162946411604145
+        },
+        "old_R500_radius_quadratic": {
+          "median_absolute_acceleration_fraction": 0.6492792834320262,
+          "rmse_dex": 0.46198595398510145,
+          "median_observed_over_predicted": 2.8512731348663682
+        }
+      }
+    },
+    "MaNGA_BCG": {
+      "points": 50,
+      "systems": 50,
+      "models": {
+        "baryons_only": {
+          "median_absolute_acceleration_fraction": 0.578275548864036,
+          "rmse_dex": 0.43762998069145104,
+          "median_observed_over_predicted": 2.3715308671697066
+        },
+        "galaxy_RAR": {
+          "median_absolute_acceleration_fraction": 0.4835173459608498,
+          "rmse_dex": 0.32936411413603955,
+          "median_observed_over_predicted": 1.936566932293963
+        },
+        "xcop_fixed_radius_RAR": {
+          "median_absolute_acceleration_fraction": 0.1590911319419861,
+          "rmse_dex": 0.14161887066918327,
+          "median_observed_over_predicted": 1.1541004191124316
+        },
+        "published_CLASH_sqrt": {
+          "median_absolute_acceleration_fraction": 0.16309592072083162,
+          "rmse_dex": 0.09823465919019143,
+          "median_observed_over_predicted": 0.9881696493069723
+        },
+        "galaxy_quadratic": {
+          "median_absolute_acceleration_fraction": 0.45942104513691034,
+          "rmse_dex": 0.31564061806361016,
+          "median_observed_over_predicted": 1.8503004219874413
+        },
+        "old_R500_radius_quadratic": {
+          "median_absolute_acceleration_fraction": 0.5079822553485316,
+          "rmse_dex": 0.3547361314354846,
+          "median_observed_over_predicted": 2.0324471087817346
+        }
+      }
+    }
+  },
+  "sources": {
+    "CLASH_catalog": "https://doi.org/10.26093/cds/vizier.18960070",
+    "CLASH_fig2_download": "https://vizier.idia.ac.za/viz-bin/asu-tsv?-source=J%2FApJ%2F896%2F70%2Ffig2&-out.all&-out.max=100",
+    "CLASH_table1_download": "https://vizier.idia.ac.za/viz-bin/asu-tsv?-source=J%2FApJ%2F896%2F70%2Ftable1&-out.all&-out.max=100",
+    "CLASH_paper": "https://arxiv.org/abs/2001.08340",
+    "MaNGA_paper": "https://arxiv.org/abs/2402.12016",
+    "MaNGA_positions": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=select%20plateifu,objra,objdec,z%20from%20mangaDrpAll&format=csv"
+  },
+  "hashes": {
+    "clash_idia.tsv": "6f0cb5930f5baff40273accaf7dc7efcf982935aed42323a283aff8bcaf0f139",
+    "clash_table1_idia.tsv": "915f9404e7a91f2668c8cc458e995139e750499c5ee2423540506a3573fa7f67",
+    "manga_bcg_table1_extracted.txt": "b9e642fa3f3bb80ccb8700dee4f1a3691151f5429bacccb8913c5c53bc0c7731",
+    "manga_positions_sdss.csv": "33e9d5d36e7537c52723c8e7b5b8499e7b0a18708192f06771ea10a7a3a5406a"
+  }
+}

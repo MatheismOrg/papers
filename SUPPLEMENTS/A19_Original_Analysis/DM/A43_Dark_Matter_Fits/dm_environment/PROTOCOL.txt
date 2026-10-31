@@ -1,0 +1,30 @@
+Environment and history pilot, fixed before fitting, 28 October 2026.
+Prior acceleration data have already been inspected. New source predictors are
+not estimated from rotation-curve or dwarf-dispersion residuals.
+SPARC: join Chae et al. 2021 Table3 environmental Newtonian fields to existing
+quality-selected rows; exclude their Table2 fitted fields from all predictors.
+Use max-clustering field as primary; no-clustering as sensitivity. Compare
+standard RAR, simple interpolation, fixed-environment Eq2 (one a0 each), and
+Eq2 with one global field multiplier (two coefficients). Refit without test
+galaxies using five group folds (seeds 20261028,7331,48105). Also withhold full
+heliocentric-distance bands with fixed edges 10,20,40,80 Mpc. These bands stress
+spatial transfer but are NOT a verified host-membership catalog. Whole galaxies
+are never split. Equal galaxy weighting. Published environmental errors are
+model-dependent; perturb all radii of a galaxy together for sensitivity.
+Dwarfs: join all matches to Weisz2015 Table1 tau90, its quoted total errors and
+host distance. Published tau90 is a photometric stellar-history summary, NOT a
+gravity-memory measurement. Use m=exp(-tau90/5Gyr), with fixed 2 and10Gyr
+sensitivities. Compare RAR with constant log a_eff, plus history, distance, both,
+stellar-mass-only, history+mass. Hold all MW objects out against all M31 objects
+and vice versa; also leave one dwarf out as a weaker diagnostic. Stellar mass
+control uses the existing photometric stellar mass. No missing predictors filled
+with zero. No inference to all five original populations from these subset tests.
+Fit log a_eff = a + b*m + c*log10(Dhost/100kpc) as applicable. Bound intercept
+[-3,3], slopes[-3,3] in dimensionless log10 units; report boundary hits.
+Compare also original power-sum family trained on original full sample excluding
+ALL satellites in the held-out host, not only these history matches. Same frozen
+279-system input. This baseline is not a new universally history-corrected fit.
+Use 500 independent asymmetric-error perturbations of log10(tau90/yr), clipped
+at present cosmic age13.8Gyr, refit both host folds; these are sensitivity draws,
+not posterior probabilities. No host-level significance claim from two hosts.
+Report all candidates and signs, never select a timescale using its test score.

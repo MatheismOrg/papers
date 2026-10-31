@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "tables": 56,
+  "prediction_rows": 95340,
+  "fit_sets": 120,
+  "optimizer_attempts": 320,
+  "bootstrap_comparisons": 42,
+  "raw_photometric_galaxies_matched": 149,
+  "max_prediction_discrepancy_dex": 4.523464935957122e-14,
+  "max_objective_cost_discrepancy": 1.0408340855860843e-17,
+  "density_integral_checks": 82,
+  "max_density_integral_relative_discrepancy": 4.782174656270399e-12,
+  "all_group_and_feature_tail_exclusions_checked": true,
+  "no_Vflat_prediction_feature": true,
+  "result_sha256": "467788d6b4609a9a75e10e704e183ab60b856e57b8fcfdbc5c9f9abf4e3c11f3",
+  "audit_script_sha256": "e47429c02a2e171d2e359a11b2228fc8058085edce40d91c818b9585348bcb61",
+  "limits": [
+    "Whole-galaxy transfer is exploratory reuse, not an independent survey.",
+    "Mass proxy uses common stellarM/L and stellar light radius; no full baryonic geometry or nuisance likelihood.",
+    "Affine halo-state laws do not reproduce full abundance-matching/CDM priors or unify every scale."
+  ]
+}

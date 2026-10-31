@@ -1,0 +1,3052 @@
+{
+  "status": "Exploratory heterogeneous comparison. Raw observations and derived mass estimators retain different systematic assumptions. No universal-DM or memory detection claim.",
+  "inputs": {
+    "source_files": {
+      "SPARC": {
+        "path": "dm_fit/results/held_out_predictions.csv",
+        "sha256": "18c19752418ec58361ffb4dd765b75c2252c9d80fc7705ff2144f811552c5853"
+      },
+      "dSph": {
+        "path": "dm_broad_dwarfs/results/dwarfs_benchmark.csv",
+        "sha256": "8920086f8658b4726f4abde44476252daa7f4506a63e3898c9c48d09812767ae"
+      },
+      "ETG": {
+        "path": "dm_broad_groups/results/etg_external_pairs.csv",
+        "sha256": "c584911bd4bd5853cf6b1c91716ad71d890f461f34fce3dbffdb990d9f22dcf0"
+      },
+      "MaNGA_BCG": {
+        "path": "dm_broad_lensing/manga_bcg_standardized.csv",
+        "sha256": "150c1ac171112a1a2e08d67bddaa4b9c462f50207010a51a6783adf2bb1c9b72"
+      },
+      "CLASH": {
+        "path": "dm_broad_lensing/clash_standardized.csv",
+        "sha256": "1e942515e946ccfd05f38f9923d5bfc163a78d301a30e20bd14bdc7c00399432"
+      }
+    },
+    "counts": {
+      "SPARC": {
+        "rows": 2700,
+        "systems": 149,
+        "validation_groups": 149,
+        "radius_kpc": [
+          0.19,
+          108.31
+        ],
+        "gbar_m_s2": [
+          8.320764163354391e-13,
+          6.542344653053074e-09
+        ],
+        "gobs_m_s2": [
+          4.0448738213782685e-12,
+          7.037546673785805e-09
+        ]
+      },
+      "dSph": {
+        "rows": 25,
+        "systems": 25,
+        "validation_groups": 25,
+        "radius_kpc": [
+          0.02712078371961181,
+          3.067720090050447
+        ],
+        "gbar_m_s2": [
+          5.182977903010524e-15,
+          8.332110629861343e-12
+        ],
+        "gobs_m_s2": [
+          5.11466173008184e-13,
+          2.493318430329259e-10
+        ]
+      },
+      "ETG": {
+        "rows": 32,
+        "systems": 16,
+        "validation_groups": 16,
+        "radius_kpc": [
+          0.17,
+          28.61
+        ],
+        "gbar_m_s2": [
+          5.6234132519034904e-12,
+          8.128305161640994e-09
+        ],
+        "gobs_m_s2": [
+          2.6915348039269138e-11,
+          1.4125375446227554e-08
+        ]
+      },
+      "MaNGA_BCG": {
+        "rows": 50,
+        "systems": 50,
+        "validation_groups": 49,
+        "radius_kpc": [
+          3.8689999999999998,
+          24.779999999999998
+        ],
+        "gbar_m_s2": [
+          4.2657951880159344e-11,
+          1.2882495516931322e-09
+        ],
+        "gobs_m_s2": [
+          2.511886431509582e-10,
+          1.8620871366628656e-09
+        ]
+      },
+      "CLASH": {
+        "rows": 84,
+        "systems": 20,
+        "validation_groups": 20,
+        "radius_kpc": [
+          14.3,
+          600.0
+        ],
+        "gbar_m_s2": [
+          1.3091819229994098e-11,
+          2.1478304741305376e-10
+        ],
+        "gobs_m_s2": [
+          9.682778562612506e-11,
+          7.161434102129027e-10
+        ]
+      }
+    },
+    "total_rows": 2891,
+    "total_physical_systems": 260,
+    "total_validation_groups": 259,
+    "cross_population_same_systems": {},
+    "population_definition": "CLASH inner BCG and outer cluster points share one training population and one group per cluster. Classical/ultrafaint dwarfs share dSph training population and are reported separately. MaNGA and CLASH redshift ranges do not overlap. Known names normalized across SPARC/ETG. Two nearby MaNGA BCGs (8989-12703 and8991-6102;2.694arcmin,delta_z.002943) conservatively share a validation group because a common hostenvironment is possible; host identities are not fully documented.",
+    "reserved_inputs": "X-COP fixed-radius profiles remain a separate prior-inspected stress test; no X-COP R500 points. KiDS/GAMA stacked lensing have no unique physical radius; separate external one-input tests. Group dispersions are separate global virial observables. Globular central-dispersion data are controls, not pooled local RAR points.",
+    "limitations": "Fixed-input heterogeneous estimators; no errors-in-variables or covariance inference. Physical system folds do not hold out shared MilkyWay/M31 environments, which receive a separate sensitivity check. Some shared calibration/survey uncertainties remain across folds.",
+    "sensitivity": "Post-search sensitivity: retain only25dSph with maxquoteddispersionerror/sigma<=0.25 and no source caution flag; allotherpopulations unchanged. Not an independentconfirmatorytest."
+  },
+  "variables": {
+    "x": "log10(gbar/[1e-10 m/s^2])",
+    "u": "log10(radius/kpc)",
+    "y": "log10(gobs/[1e-10 m/s^2])"
+  },
+  "training": "Equal population total weights; equal validation-group weights within each population; equal radial point weights within group. dSph subtypes share one training population. Two nearby MaNGA BCGs conservatively share a group.",
+  "validation": "Five physical-system folds,3innerfolds for shared-familyselection; seed20261027,innerseed39173+outerfold. Known same systems across sources are grouped. Not all dwarfs in samehost are grouped; hostenvironment sensitivity separately.",
+  "parameter_bounds": {
+    "a": [
+      -3,
+      3
+    ],
+    "b": [
+      -2,
+      2
+    ],
+    "c": [
+      -1,
+      1
+    ],
+    "p": [
+      0.1,
+      0.9
+    ]
+  },
+  "model_definitions": {
+    "RAR": "g=gbar/[1-exp(-sqrt(gbar/a0))]",
+    "RAR_exponent": "sqrt replaced with (gbar/a0)^p",
+    "RAR_radius": "log10(a_eff/1e-10)=a+b*u",
+    "RAR_radius_quad": "log10(a_eff/1e-10)=a+b*u+c*u^2",
+    "RAR_potential_quad": "same quadratic in q=x+u; potential proxy only",
+    "RAR_density_quad": "same quadratic in q=x-u; density proxy only",
+    "quadratic_2D": "y=c0+c1*x+c2*u+c3*x*x+c4*x*u+c5*u*u",
+    "RAR_piecewise": "standard RAR with one loga0 per population, population order given"
+  },
+  "piecewise_population_order": [
+    "CLASH",
+    "ETG",
+    "MaNGA_BCG",
+    "SPARC",
+    "dSph"
+  ],
+  "frozen_SPARC_RAR": {
+    "balanced_population_system_rms_dex": 0.38660693221067843,
+    "populations": {
+      "CLASH": {
+        "rows": 84,
+        "systems": 20,
+        "validation_groups": 20,
+        "rms_log10_acceleration_dex": 0.5135649632023433,
+        "equal_system_rms_dex": 0.5146842145905446,
+        "median_absolute_acceleration_fraction": 0.687607267480372,
+        "median_observed_over_predicted": 3.201179044402138,
+        "median_absolute_speed_fraction_under_same_radius": 0.44108070822721573,
+        "median_signed_log10_residual": -0.5053045216588881,
+        "fraction_predicted_below_baryons": 0.0
+      },
+      "ETG": {
+        "rows": 32,
+        "systems": 16,
+        "validation_groups": 16,
+        "rms_log10_acceleration_dex": 0.20813389445575473,
+        "equal_system_rms_dex": 0.20813389445575473,
+        "median_absolute_acceleration_fraction": 0.34053443643560866,
+        "median_observed_over_predicted": 1.2245268827588667,
+        "median_absolute_speed_fraction_under_same_radius": 0.18792967849428976,
+        "median_signed_log10_residual": -0.0878647844308551,
+        "fraction_predicted_below_baryons": 0.0
+      },
+      "MaNGA_BCG": {
+        "rows": 50,
+        "systems": 50,
+        "validation_groups": 49,
+        "rms_log10_acceleration_dex": 0.32936411413603955,
+        "equal_system_rms_dex": 0.3305614830057327,
+        "median_absolute_acceleration_fraction": 0.48351734596084983,
+        "median_observed_over_predicted": 1.936566932293963,
+        "median_absolute_speed_fraction_under_same_radius": 0.28135097788576485,
+        "median_signed_log10_residual": -0.28698838570249874,
+        "fraction_predicted_below_baryons": 0.0
+      },
+      "SPARC": {
+        "rows": 2700,
+        "systems": 149,
+        "validation_groups": 149,
+        "rms_log10_acceleration_dex": 0.13265125998332247,
+        "equal_system_rms_dex": 0.15371357062505334,
+        "median_absolute_acceleration_fraction": 0.1793539427338633,
+        "median_observed_over_predicted": 1.0042922922976922,
+        "median_absolute_speed_fraction_under_same_radius": 0.08981673019266129,
+        "median_signed_log10_residual": -0.001860121304740947,
+        "fraction_predicted_below_baryons": 0.0
+      },
+      "dSph": {
+        "rows": 25,
+        "systems": 25,
+        "validation_groups": 25,
+        "rms_log10_acceleration_dex": 0.5533590927738544,
+        "equal_system_rms_dex": 0.5533590927738544,
+        "median_absolute_acceleration_fraction": 0.5027621536540543,
+        "median_observed_over_predicted": 1.9273297456550555,
+        "median_absolute_speed_fraction_under_same_radius": 0.294849061302514,
+        "median_signed_log10_residual": -0.2849560241869262,
+        "fraction_predicted_below_baryons": 0.0
+      }
+    },
+    "dwarf_subpopulations": {
+      "classical_dSph": {
+        "rows": 18,
+        "systems": 18,
+        "validation_groups": 18,
+        "rms_log10_acceleration_dex": 0.28595482145456763,
+        "equal_system_rms_dex": 0.28595482145456763,
+        "median_absolute_acceleration_fraction": 0.3742054573041864,
+        "median_observed_over_predicted": 1.3928949379443676,
+        "median_absolute_speed_fraction_under_same_radius": 0.19461331045039604,
+        "median_signed_log10_residual": -0.14387246678330312,
+        "fraction_predicted_below_baryons": 0.0
+      },
+      "ultrafaint_dSph": {
+        "rows": 7,
+        "systems": 7,
+        "validation_groups": 7,
+        "rms_log10_acceleration_dex": 0.9398551758079945,
+        "equal_system_rms_dex": 0.9398551758079945,
+        "median_absolute_acceleration_fraction": 0.8619599775698806,
+        "median_observed_over_predicted": 7.244275844030918,
+        "median_absolute_speed_fraction_under_same_radius": 0.6284626231048626,
+        "median_signed_log10_residual": -0.8599949788120468,
+        "fraction_predicted_below_baryons": 0.0
+      }
+    }
+  },
+  "baryons_only": {
+    "balanced_population_system_rms_dex": 0.9734247259689169,
+    "populations": {
+      "CLASH": {
+        "rows": 84,
+        "systems": 20,
+        "validation_groups": 20,
+        "rms_log10_acceleration_dex": 0.8842735584594147,
+        "equal_system_rms_dex": 0.8821285965398317,
+        "median_absolute_acceleration_fraction": 0.8727961406887397,
+        "median_observed_over_predicted": 7.86140712152584,
+        "median_absolute_speed_fraction_under_same_radius": 0.643343558645137,
+        "median_signed_log10_residual": -0.8954999999999993,
+        "fraction_predicted_below_baryons": 0.0
+      },
+      "ETG": {
+        "rows": 32,
+        "systems": 16,
+        "validation_groups": 16,
+        "rms_log10_acceleration_dex": 0.40173063114480057,
+        "equal_system_rms_dex": 0.40173063114480057,
+        "median_absolute_acceleration_fraction": 0.4889605772704709,
+        "median_observed_over_predicted": 1.9074815867894328,
+        "median_absolute_speed_fraction_under_same_radius": 0.27537198715747246,
+        "median_signed_log10_residual": -0.28000000000000025,
+        "fraction_predicted_below_baryons": 0.0
+      },
+      "MaNGA_BCG": {
+        "rows": 50,
+        "systems": 50,
+        "validation_groups": 49,
+        "rms_log10_acceleration_dex": 0.43762998069145104,
+        "equal_system_rms_dex": 0.43931184591265415,
+        "median_absolute_acceleration_fraction": 0.578275548864036,
+        "median_observed_over_predicted": 2.3715308671697066,
+        "median_absolute_speed_fraction_under_same_radius": 0.350607609158936,
+        "median_signed_log10_residual": -0.375,
+        "fraction_predicted_below_baryons": 0.0
+      },
+      "SPARC": {
+        "rows": 2700,
+        "systems": 149,
+        "validation_groups": 149,
+        "rms_log10_acceleration_dex": 0.5145191960542318,
+        "equal_system_rms_dex": 0.571530937842059,
+        "median_absolute_acceleration_fraction": 0.6350789857900404,
+        "median_observed_over_predicted": 2.715732302265852,
+        "median_absolute_speed_fraction_under_same_radius": 0.39458642375085484,
+        "median_signed_log10_residual": -0.433886939115836,
+        "fraction_predicted_below_baryons": 0.0
+      },
+      "dSph": {
+        "rows": 25,
+        "systems": 25,
+        "validation_groups": 25,
+        "rms_log10_acceleration_dex": 1.8106898171512331,
+        "equal_system_rms_dex": 1.8106898171512331,
+        "median_absolute_acceleration_fraction": 0.9793405087276166,
+        "median_observed_over_predicted": 48.40390243958964,
+        "median_absolute_speed_fraction_under_same_radius": 0.8562659008015725,
+        "median_signed_log10_residual": -1.6848803769266056,
+        "fraction_predicted_below_baryons": 0.0
+      }
+    },
+    "dwarf_subpopulations": {
+      "classical_dSph": {
+        "rows": 18,
+        "systems": 18,
+        "validation_groups": 18,
+        "rms_log10_acceleration_dex": 1.4785706295365517,
+        "equal_system_rms_dex": 1.4785706295365517,
+        "median_absolute_acceleration_fraction": 0.9671232210732922,
+        "median_observed_over_predicted": 31.02403511521276,
+        "median_absolute_speed_fraction_under_same_radius": 0.8191269588313608,
+        "median_signed_log10_residual": -1.4874045109826173,
+        "fraction_predicted_below_baryons": 0.0
+      },
+      "ultrafaint_dSph": {
+        "rows": 7,
+        "systems": 7,
+        "validation_groups": 7,
+        "rms_log10_acceleration_dex": 2.467325342809007,
+        "equal_system_rms_dex": 2.467325342809007,
+        "median_absolute_acceleration_fraction": 0.9956740556048558,
+        "median_observed_over_predicted": 231.16339662675318,
+        "median_absolute_speed_fraction_under_same_radius": 0.934228088098762,
+        "median_signed_log10_residual": -2.363919067198647,
+        "fraction_predicted_below_baryons": 0.0
+      }
+    }
+  },
+  "models": {
+    "RAR": {
+      "all_data_coefficients": [
+        0.7142914094123876
+      ],
+      "all_data_training_metrics": {
+        "balanced_population_system_rms_dex": 0.2990638524018206,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.2637209045991354,
+            "equal_system_rms_dex": 0.2653591620741199,
+            "median_absolute_acceleration_fraction": 0.4303997826872109,
+            "median_observed_over_predicted": 1.7556282745564804,
+            "median_absolute_speed_fraction_under_same_radius": 0.24528195477687192,
+            "median_signed_log10_residual": -0.2444312101311032,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.24453149474675867,
+            "equal_system_rms_dex": 0.2445314947467587,
+            "median_absolute_acceleration_fraction": 0.4880315296162686,
+            "median_observed_over_predicted": 0.8164386039422602,
+            "median_absolute_speed_fraction_under_same_radius": 0.23194751664967933,
+            "median_signed_log10_residual": 0.08857605934343413,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.17575192332787562,
+            "equal_system_rms_dex": 0.176967978100183,
+            "median_absolute_acceleration_fraction": 0.22476966100611445,
+            "median_observed_over_predicted": 1.2899392846420465,
+            "median_absolute_speed_fraction_under_same_radius": 0.11952835046339105,
+            "median_signed_log10_residual": -0.11056925427613079,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.2910321424532849,
+            "equal_system_rms_dex": 0.3317058585308527,
+            "median_absolute_acceleration_fraction": 0.7865568172408423,
+            "median_observed_over_predicted": 0.5597359180565784,
+            "median_absolute_speed_fraction_under_same_radius": 0.3366214154324265,
+            "median_signed_log10_residual": 0.25201682807432835,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.4190923053347195,
+            "equal_system_rms_dex": 0.4190923053347195,
+            "median_absolute_acceleration_fraction": 0.5820455616323466,
+            "median_observed_over_predicted": 0.9404678323357912,
+            "median_absolute_speed_fraction_under_same_radius": 0.2602231529396126,
+            "median_signed_log10_residual": 0.026656054422987907,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.2799649286087776,
+            "equal_system_rms_dex": 0.2799649286087776,
+            "median_absolute_acceleration_fraction": 0.4878217228670537,
+            "median_observed_over_predicted": 0.6730972146222264,
+            "median_absolute_speed_fraction_under_same_radius": 0.24873011696750258,
+            "median_signed_log10_residual": 0.17205744082957725,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.652480159222455,
+            "equal_system_rms_dex": 0.652480159222455,
+            "median_absolute_acceleration_fraction": 0.7107767806312779,
+            "median_observed_over_predicted": 3.4575370614526264,
+            "median_absolute_speed_fraction_under_same_radius": 0.46220522560299815,
+            "median_signed_log10_residual": -0.5387668440230263,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "cross_validation": {
+        "balanced_population_system_rms_dex": 0.299682585435038,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.2634380733602164,
+            "equal_system_rms_dex": 0.26581231664117183,
+            "median_absolute_acceleration_fraction": 0.42955337379134656,
+            "median_observed_over_predicted": 1.7530128949100936,
+            "median_absolute_speed_fraction_under_same_radius": 0.2447208564889024,
+            "median_signed_log10_residual": -0.2437850473926325,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.2450264894663806,
+            "equal_system_rms_dex": 0.24502648946638056,
+            "median_absolute_acceleration_fraction": 0.4831536355421686,
+            "median_observed_over_predicted": 0.8363452941080314,
+            "median_absolute_speed_fraction_under_same_radius": 0.23082745344936068,
+            "median_signed_log10_residual": 0.07813151761510576,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.17626291907364042,
+            "equal_system_rms_dex": 0.17746877477741352,
+            "median_absolute_acceleration_fraction": 0.22755547544242632,
+            "median_observed_over_predicted": 1.2945915711640028,
+            "median_absolute_speed_fraction_under_same_radius": 0.12111178663234218,
+            "median_signed_log10_residual": -0.11213273801995799,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.29053364054378783,
+            "equal_system_rms_dex": 0.3319982582475121,
+            "median_absolute_acceleration_fraction": 0.7758202904146386,
+            "median_observed_over_predicted": 0.5631200439593349,
+            "median_absolute_speed_fraction_under_same_radius": 0.3325990733951736,
+            "median_signed_log10_residual": 0.24939901390256636,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.42028095644033336,
+            "equal_system_rms_dex": 0.42028095644033336,
+            "median_absolute_acceleration_fraction": 0.5741448915893643,
+            "median_observed_over_predicted": 0.9511575139568629,
+            "median_absolute_speed_fraction_under_same_radius": 0.2546493102016054,
+            "median_signed_log10_residual": 0.021747556903009113,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.28042519746663325,
+            "equal_system_rms_dex": 0.28042519746663325,
+            "median_absolute_acceleration_fraction": 0.461092166759144,
+            "median_observed_over_predicted": 0.6876057197614375,
+            "median_absolute_speed_fraction_under_same_radius": 0.2411924977042753,
+            "median_signed_log10_residual": 0.16273237311751454,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.6546987108504218,
+            "equal_system_rms_dex": 0.6546987108504218,
+            "median_absolute_acceleration_fraction": 0.7133143586450061,
+            "median_observed_over_predicted": 3.4881412102593967,
+            "median_absolute_speed_fraction_under_same_radius": 0.4645696671321339,
+            "median_signed_log10_residual": -0.5425940581398535,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "fold_coefficients": [
+        [
+          0.6895356488035606
+        ],
+        [
+          0.7330412928265941
+        ],
+        [
+          0.7319052578074727
+        ],
+        [
+          0.7096230675020893
+        ],
+        [
+          0.7065787544298725
+        ]
+      ]
+    },
+    "RAR_exponent": {
+      "all_data_coefficients": [
+        0.7335096944380084,
+        0.4948093291933711
+      ],
+      "all_data_training_metrics": {
+        "balanced_population_system_rms_dex": 0.2990249904650937,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.2610489399244016,
+            "equal_system_rms_dex": 0.26266313046043854,
+            "median_absolute_acceleration_fraction": 0.4279152539217978,
+            "median_observed_over_predicted": 1.7480233419924471,
+            "median_absolute_speed_fraction_under_same_radius": 0.2436388133257456,
+            "median_signed_log10_residual": -0.24254342981340243,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.24492625899537668,
+            "equal_system_rms_dex": 0.24492625899537668,
+            "median_absolute_acceleration_fraction": 0.4910614984503525,
+            "median_observed_over_predicted": 0.8096129219702028,
+            "median_absolute_speed_fraction_under_same_radius": 0.22953036394648246,
+            "median_signed_log10_residual": 0.0922534911081507,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.17188953993082712,
+            "equal_system_rms_dex": 0.1731167664138385,
+            "median_absolute_acceleration_fraction": 0.2155525757248457,
+            "median_observed_over_predicted": 1.2735710781343,
+            "median_absolute_speed_fraction_under_same_radius": 0.11388838917069555,
+            "median_signed_log10_residual": -0.10502315972119869,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.29245486998451403,
+            "equal_system_rms_dex": 0.3324955564736447,
+            "median_absolute_acceleration_fraction": 0.7948811653233255,
+            "median_observed_over_predicted": 0.5571399485330726,
+            "median_absolute_speed_fraction_under_same_radius": 0.3397317512440198,
+            "median_signed_log10_residual": 0.2540357002789501,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.4213979381489627,
+            "equal_system_rms_dex": 0.4213979381489627,
+            "median_absolute_acceleration_fraction": 0.5292515403637463,
+            "median_observed_over_predicted": 0.9479040717633314,
+            "median_absolute_speed_fraction_under_same_radius": 0.26446034014493003,
+            "median_signed_log10_residual": 0.02323561119762174,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.2764788900238447,
+            "equal_system_rms_dex": 0.2764788900238447,
+            "median_absolute_acceleration_fraction": 0.4766541091427339,
+            "median_observed_over_predicted": 0.6836932810982677,
+            "median_absolute_speed_fraction_under_same_radius": 0.24001702044671896,
+            "median_signed_log10_residual": 0.16523632251259823,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.6615431286649005,
+            "equal_system_rms_dex": 0.6615431286649005,
+            "median_absolute_acceleration_fraction": 0.7169257302559454,
+            "median_observed_over_predicted": 3.5326418077636075,
+            "median_absolute_speed_fraction_under_same_radius": 0.46795275609768017,
+            "median_signed_log10_residual": -0.5480996043756864,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "cross_validation": {
+        "balanced_population_system_rms_dex": 0.30024714432770266,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.261065918820567,
+            "equal_system_rms_dex": 0.2634892968236948,
+            "median_absolute_acceleration_fraction": 0.4289673430212332,
+            "median_observed_over_predicted": 1.751223785109814,
+            "median_absolute_speed_fraction_under_same_radius": 0.24433353615695064,
+            "median_signed_log10_residual": -0.24334035060767897,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.24614300097637926,
+            "equal_system_rms_dex": 0.24614300097637926,
+            "median_absolute_acceleration_fraction": 0.4825133836929574,
+            "median_observed_over_predicted": 0.822958988334829,
+            "median_absolute_speed_fraction_under_same_radius": 0.23314560443181825,
+            "median_signed_log10_residual": 0.08520023155938344,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.17128980533375845,
+            "equal_system_rms_dex": 0.17246301984737628,
+            "median_absolute_acceleration_fraction": 0.22248353420329625,
+            "median_observed_over_predicted": 1.2846207907463114,
+            "median_absolute_speed_fraction_under_same_radius": 0.11823111892646154,
+            "median_signed_log10_residual": -0.10877490288224095,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.29195206346627195,
+            "equal_system_rms_dex": 0.3328354519040196,
+            "median_absolute_acceleration_fraction": 0.7838555817779483,
+            "median_observed_over_predicted": 0.5605835003312446,
+            "median_absolute_speed_fraction_under_same_radius": 0.3356105641425997,
+            "median_signed_log10_residual": 0.251359690317028,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.4245065613808216,
+            "equal_system_rms_dex": 0.4245065613808216,
+            "median_absolute_acceleration_fraction": 0.5829482098723835,
+            "median_observed_over_predicted": 0.9814384333974357,
+            "median_absolute_speed_fraction_under_same_radius": 0.26398529910744095,
+            "median_signed_log10_residual": 0.00813693893142009,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.2781111350743597,
+            "equal_system_rms_dex": 0.2781111350743597,
+            "median_absolute_acceleration_fraction": 0.4356432049918975,
+            "median_observed_over_predicted": 0.6995412259178679,
+            "median_absolute_speed_fraction_under_same_radius": 0.240184321799281,
+            "median_signed_log10_residual": 0.15518721576177086,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.6668605609487267,
+            "equal_system_rms_dex": 0.6668605609487267,
+            "median_absolute_acceleration_fraction": 0.71087336526877,
+            "median_observed_over_predicted": 3.4586920742517995,
+            "median_absolute_speed_fraction_under_same_radius": 0.4622950300292642,
+            "median_signed_log10_residual": -0.5389118986995066,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "fold_coefficients": [
+        [
+          0.7263396967821791,
+          0.4900546903285614
+        ],
+        [
+          0.7924903855982834,
+          0.48460037935109457
+        ],
+        [
+          0.7280892739524389,
+          0.5010171505741345
+        ],
+        [
+          0.719873011646441,
+          0.49716412008105293
+        ],
+        [
+          0.6993367147782533,
+          0.5020202732206299
+        ]
+      ]
+    },
+    "RAR_radius": {
+      "all_data_coefficients": [
+        0.6924213606156241,
+        0.02838211256088857
+      ],
+      "all_data_training_metrics": {
+        "balanced_population_system_rms_dex": 0.2988356065277154,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.24907238454672873,
+            "equal_system_rms_dex": 0.25093215921152123,
+            "median_absolute_acceleration_fraction": 0.42080693210525516,
+            "median_observed_over_predicted": 1.7265415018842458,
+            "median_absolute_speed_fraction_under_same_radius": 0.2389527333875856,
+            "median_signed_log10_residual": -0.237176833429284,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.24769288414650487,
+            "equal_system_rms_dex": 0.24769288414650487,
+            "median_absolute_acceleration_fraction": 0.48799333652714016,
+            "median_observed_over_predicted": 0.8109402239415406,
+            "median_absolute_speed_fraction_under_same_radius": 0.23600465051743408,
+            "median_signed_log10_residual": 0.09152451313314791,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.17350412449231498,
+            "equal_system_rms_dex": 0.17471491082825225,
+            "median_absolute_acceleration_fraction": 0.22046565393847833,
+            "median_observed_over_predicted": 1.2828171558090102,
+            "median_absolute_speed_fraction_under_same_radius": 0.1170875809602292,
+            "median_signed_log10_residual": -0.10816475225648298,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.2925998688273036,
+            "equal_system_rms_dex": 0.3319354000543305,
+            "median_absolute_acceleration_fraction": 0.7903398566841405,
+            "median_observed_over_predicted": 0.5585531707400697,
+            "median_absolute_speed_fraction_under_same_radius": 0.3380358197929536,
+            "median_signed_log10_residual": 0.25293547927741933,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.4260146422197422,
+            "equal_system_rms_dex": 0.4260146422197422,
+            "median_absolute_acceleration_fraction": 0.5735288447324081,
+            "median_observed_over_predicted": 0.9720740735665486,
+            "median_absolute_speed_fraction_under_same_radius": 0.27364596326692014,
+            "median_signed_log10_residual": 0.01230063989318686,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.27404696920634447,
+            "equal_system_rms_dex": 0.27404696920634447,
+            "median_absolute_acceleration_fraction": 0.4723046813491452,
+            "median_observed_over_predicted": 0.6989405442921209,
+            "median_absolute_speed_fraction_under_same_radius": 0.2535969366625771,
+            "median_signed_log10_residual": 0.15570609957527498,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.6745771734606457,
+            "equal_system_rms_dex": 0.6745771734606457,
+            "median_absolute_acceleration_fraction": 0.7279831152057832,
+            "median_observed_over_predicted": 3.676242380161469,
+            "median_absolute_speed_fraction_under_same_radius": 0.47844762027748655,
+            "median_signed_log10_residual": -0.5654041373431417,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "cross_validation": {
+        "balanced_population_system_rms_dex": 0.3002991753768139,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.25007871380490826,
+            "equal_system_rms_dex": 0.25175951062482416,
+            "median_absolute_acceleration_fraction": 0.42124623646461035,
+            "median_observed_over_predicted": 1.727858234895702,
+            "median_absolute_speed_fraction_under_same_radius": 0.2392417474898954,
+            "median_signed_log10_residual": -0.23750713949450286,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.24817963608906773,
+            "equal_system_rms_dex": 0.24817963608906773,
+            "median_absolute_acceleration_fraction": 0.4940149767647307,
+            "median_observed_over_predicted": 0.8276003793453465,
+            "median_absolute_speed_fraction_under_same_radius": 0.2333653831792366,
+            "median_signed_log10_residual": 0.0827199500353139,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.1736657600803812,
+            "equal_system_rms_dex": 0.1748744969208036,
+            "median_absolute_acceleration_fraction": 0.22253273114569933,
+            "median_observed_over_predicted": 1.2851452925145783,
+            "median_absolute_speed_fraction_under_same_radius": 0.11788748170644209,
+            "median_signed_log10_residual": -0.10895209616824009,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.2918866086092245,
+            "equal_system_rms_dex": 0.33215033322605475,
+            "median_absolute_acceleration_fraction": 0.7854414245532224,
+            "median_observed_over_predicted": 0.5600855997332104,
+            "median_absolute_speed_fraction_under_same_radius": 0.33620410517612676,
+            "median_signed_log10_residual": 0.2517456000046675,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.43013609144680687,
+            "equal_system_rms_dex": 0.43013609144680687,
+            "median_absolute_acceleration_fraction": 0.5559642574180856,
+            "median_observed_over_predicted": 0.9721951048766985,
+            "median_absolute_speed_fraction_under_same_radius": 0.2516318096840313,
+            "median_signed_log10_residual": 0.012246569982717337,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.2742703724146019,
+            "equal_system_rms_dex": 0.2742703724146019,
+            "median_absolute_acceleration_fraction": 0.4231374844842181,
+            "median_observed_over_predicted": 0.7273983109175821,
+            "median_absolute_speed_fraction_under_same_radius": 0.2384415359726872,
+            "median_signed_log10_residual": 0.13826441889461938,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.6836237645088118,
+            "equal_system_rms_dex": 0.6836237645088118,
+            "median_absolute_acceleration_fraction": 0.7351739000776205,
+            "median_observed_over_predicted": 3.77606285895952,
+            "median_absolute_speed_fraction_under_same_radius": 0.48538742735687124,
+            "median_signed_log10_residual": -0.5770392152531593,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "fold_coefficients": [
+        [
+          0.6525891727252968,
+          0.04708451700886924
+        ],
+        [
+          0.719762876090615,
+          0.01715139470824047
+        ],
+        [
+          0.7327618220317602,
+          -0.001114443300005203
+        ],
+        [
+          0.6774534711519736,
+          0.042034907734915354
+        ],
+        [
+          0.6785095102402854,
+          0.03689867497878835
+        ]
+      ]
+    },
+    "RAR_radius_quad": {
+      "all_data_coefficients": [
+        0.5222430018697746,
+        -0.4750896909624536,
+        0.32159461941702144
+      ],
+      "all_data_training_metrics": {
+        "balanced_population_system_rms_dex": 0.2503646192723283,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.2535637901881069,
+            "equal_system_rms_dex": 0.2524894149649662,
+            "median_absolute_acceleration_fraction": 0.4049982558613918,
+            "median_observed_over_predicted": 1.3139886359733084,
+            "median_absolute_speed_fraction_under_same_radius": 0.22569067214197785,
+            "median_signed_log10_residual": -0.11857084723439654,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.19477324229234427,
+            "equal_system_rms_dex": 0.19477324229234427,
+            "median_absolute_acceleration_fraction": 0.3932610535578391,
+            "median_observed_over_predicted": 1.004610087725577,
+            "median_absolute_speed_fraction_under_same_radius": 0.20135484973698936,
+            "median_signed_log10_residual": -0.0015227669012060074,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.25868615058706407,
+            "equal_system_rms_dex": 0.2597825425501511,
+            "median_absolute_acceleration_fraction": 0.3796184613761276,
+            "median_observed_over_predicted": 1.6119572228544514,
+            "median_absolute_speed_fraction_under_same_radius": 0.21235977872342982,
+            "median_signed_log10_residual": -0.2073473235113636,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.1966150135864573,
+            "equal_system_rms_dex": 0.22627100782668974,
+            "median_absolute_acceleration_fraction": 0.3399648791308916,
+            "median_observed_over_predicted": 0.754251149827494,
+            "median_absolute_speed_fraction_under_same_radius": 0.16142934253444796,
+            "median_signed_log10_residual": 0.12248402492839038,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.30502320229408697,
+            "equal_system_rms_dex": 0.30502320229408697,
+            "median_absolute_acceleration_fraction": 0.5618753034861219,
+            "median_observed_over_predicted": 0.9382646225944976,
+            "median_absolute_speed_fraction_under_same_radius": 0.2497500964137278,
+            "median_signed_log10_residual": 0.027674658502819582,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.2535152131021683,
+            "equal_system_rms_dex": 0.2535152131021683,
+            "median_absolute_acceleration_fraction": 0.49228201132181626,
+            "median_observed_over_predicted": 0.6715752123391834,
+            "median_absolute_speed_fraction_under_same_radius": 0.2216385130734213,
+            "median_signed_log10_residual": 0.17337812287809518,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.40867722322970723,
+            "equal_system_rms_dex": 0.40867722322970723,
+            "median_absolute_acceleration_fraction": 0.5628794235789636,
+            "median_observed_over_predicted": 1.4730794288733318,
+            "median_absolute_speed_fraction_under_same_radius": 0.33884905171282076,
+            "median_signed_log10_residual": -0.16822616475937957,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "cross_validation": {
+        "balanced_population_system_rms_dex": 0.253119048673411,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.2562952257564212,
+            "equal_system_rms_dex": 0.2553586401931579,
+            "median_absolute_acceleration_fraction": 0.4096765840891091,
+            "median_observed_over_predicted": 1.305657053237933,
+            "median_absolute_speed_fraction_under_same_radius": 0.227944397253174,
+            "median_signed_log10_residual": -0.11579900110753713,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.19668065815971258,
+            "equal_system_rms_dex": 0.19668065815971258,
+            "median_absolute_acceleration_fraction": 0.39040252393065894,
+            "median_observed_over_predicted": 1.0131223752018963,
+            "median_absolute_speed_fraction_under_same_radius": 0.19370266461991154,
+            "median_signed_log10_residual": -0.005162246732771936,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.2586085801118947,
+            "equal_system_rms_dex": 0.25967467548190953,
+            "median_absolute_acceleration_fraction": 0.3827063900949192,
+            "median_observed_over_predicted": 1.6200096683191454,
+            "median_absolute_speed_fraction_under_same_radius": 0.21432177447266176,
+            "median_signed_log10_residual": -0.20951291259134974,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.19587950378041402,
+            "equal_system_rms_dex": 0.22613269248910364,
+            "median_absolute_acceleration_fraction": 0.3350662415415231,
+            "median_observed_over_predicted": 0.7570578316747327,
+            "median_absolute_speed_fraction_under_same_radius": 0.15906941468513153,
+            "median_signed_log10_residual": 0.12087095746310472,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.31287060566985214,
+            "equal_system_rms_dex": 0.31287060566985214,
+            "median_absolute_acceleration_fraction": 0.5328931671998658,
+            "median_observed_over_predicted": 0.932429782310598,
+            "median_absolute_speed_fraction_under_same_radius": 0.2381006288665981,
+            "median_signed_log10_residual": 0.03038386332972698,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.2538088029168143,
+            "equal_system_rms_dex": 0.2538088029168143,
+            "median_absolute_acceleration_fraction": 0.4767425139936958,
+            "median_observed_over_predicted": 0.6781465669618422,
+            "median_absolute_speed_fraction_under_same_radius": 0.21814747709787108,
+            "median_signed_log10_residual": 0.16899060522463016,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.4288955992546955,
+            "equal_system_rms_dex": 0.4288955992546955,
+            "median_absolute_acceleration_fraction": 0.5871191273493357,
+            "median_observed_over_predicted": 1.429516733850319,
+            "median_absolute_speed_fraction_under_same_radius": 0.3574419305224902,
+            "median_signed_log10_residual": -0.15518924355292218,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "fold_coefficients": [
+        [
+          0.5107082435085476,
+          -0.4649861756247146,
+          0.3121836149124797
+        ],
+        [
+          0.550326377048573,
+          -0.4556435525493725,
+          0.3096725051544647
+        ],
+        [
+          0.5494764616296482,
+          -0.528458410091907,
+          0.3411760112645731
+        ],
+        [
+          0.4775472175655957,
+          -0.43840968163222965,
+          0.3217755621583622
+        ],
+        [
+          0.5214455593036248,
+          -0.49395450573785,
+          0.3262113189882296
+        ]
+      ]
+    },
+    "RAR_potential_quad": {
+      "all_data_coefficients": [
+        0.14102344100747535,
+        0.3121135383836708,
+        0.16034434140763457
+      ],
+      "all_data_training_metrics": {
+        "balanced_population_system_rms_dex": 0.21029151262697102,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.20283661205495812,
+            "equal_system_rms_dex": 0.20145001651804997,
+            "median_absolute_acceleration_fraction": 0.33345451928666403,
+            "median_observed_over_predicted": 1.134517236157016,
+            "median_absolute_speed_fraction_under_same_radius": 0.16109179796519713,
+            "median_signed_log10_residual": -0.05480554378511851,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.20751299414572993,
+            "equal_system_rms_dex": 0.20751299414572993,
+            "median_absolute_acceleration_fraction": 0.40272552589984295,
+            "median_observed_over_predicted": 0.9293062278371262,
+            "median_absolute_speed_fraction_under_same_radius": 0.20300461925767055,
+            "median_signed_log10_residual": 0.032486884166578966,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.14513635821762494,
+            "equal_system_rms_dex": 0.1465906306126363,
+            "median_absolute_acceleration_fraction": 0.2151059839970781,
+            "median_observed_over_predicted": 1.0669876658539155,
+            "median_absolute_speed_fraction_under_same_radius": 0.10830598646008222,
+            "median_signed_log10_residual": -0.028159377203317626,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.17643797797543406,
+            "equal_system_rms_dex": 0.18690887414791998,
+            "median_absolute_acceleration_fraction": 0.3028972247038415,
+            "median_observed_over_predicted": 0.7976423986544148,
+            "median_absolute_speed_fraction_under_same_radius": 0.1506620085548691,
+            "median_signed_log10_residual": 0.09819180501506727,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.2846842273495247,
+            "equal_system_rms_dex": 0.2846842273495247,
+            "median_absolute_acceleration_fraction": 0.30627808269877366,
+            "median_observed_over_predicted": 1.0822082100330246,
+            "median_absolute_speed_fraction_under_same_radius": 0.1671002957731187,
+            "median_signed_log10_residual": -0.03431082432814114,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.2951241056860665,
+            "equal_system_rms_dex": 0.2951241056860665,
+            "median_absolute_acceleration_fraction": 0.27269962950762083,
+            "median_observed_over_predicted": 0.9388807514081728,
+            "median_absolute_speed_fraction_under_same_radius": 0.14012924745742628,
+            "median_signed_log10_residual": 0.027399184924633224,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.25589044891289126,
+            "equal_system_rms_dex": 0.25589044891289126,
+            "median_absolute_acceleration_fraction": 0.3184763753829195,
+            "median_observed_over_predicted": 1.413405048253972,
+            "median_absolute_speed_fraction_under_same_radius": 0.17445555866623363,
+            "median_signed_log10_residual": -0.15026663814958807,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "cross_validation": {
+        "balanced_population_system_rms_dex": 0.21322142435229569,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.205649188555955,
+            "equal_system_rms_dex": 0.2047113553671606,
+            "median_absolute_acceleration_fraction": 0.32648085038961,
+            "median_observed_over_predicted": 1.121607620912715,
+            "median_absolute_speed_fraction_under_same_radius": 0.16678898542700715,
+            "median_signed_log10_residual": -0.04983172248977005,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.20930814017301966,
+            "equal_system_rms_dex": 0.20930814017301966,
+            "median_absolute_acceleration_fraction": 0.404394129427747,
+            "median_observed_over_predicted": 0.9357281092570227,
+            "median_absolute_speed_fraction_under_same_radius": 0.2036162474259453,
+            "median_signed_log10_residual": 0.029261595324690803,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.1457478512545405,
+            "equal_system_rms_dex": 0.1471957431576764,
+            "median_absolute_acceleration_fraction": 0.2009484743072406,
+            "median_observed_over_predicted": 1.0731023213098396,
+            "median_absolute_speed_fraction_under_same_radius": 0.10119010819848895,
+            "median_signed_log10_residual": -0.03062667765849003,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.17581133609665325,
+            "equal_system_rms_dex": 0.18662745192360078,
+            "median_absolute_acceleration_fraction": 0.3107911745657128,
+            "median_observed_over_predicted": 0.797726569073411,
+            "median_absolute_speed_fraction_under_same_radius": 0.1494298563765265,
+            "median_signed_log10_residual": 0.09814594544727265,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.29172564138231627,
+            "equal_system_rms_dex": 0.29172564138231627,
+            "median_absolute_acceleration_fraction": 0.3158641788787516,
+            "median_observed_over_predicted": 1.032980392028532,
+            "median_absolute_speed_fraction_under_same_radius": 0.17287496645232148,
+            "median_signed_log10_residual": -0.014092077846212137,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.3037914123728402,
+            "equal_system_rms_dex": 0.3037914123728402,
+            "median_absolute_acceleration_fraction": 0.2689609409654526,
+            "median_observed_over_predicted": 0.933531085727437,
+            "median_absolute_speed_fraction_under_same_radius": 0.13917107706955867,
+            "median_signed_log10_residual": 0.029880403364381136,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.2581224088991678,
+            "equal_system_rms_dex": 0.2581224088991678,
+            "median_absolute_acceleration_fraction": 0.3538825140664702,
+            "median_observed_over_predicted": 1.3383742755396957,
+            "median_absolute_speed_fraction_under_same_radius": 0.1961856645135459,
+            "median_signed_log10_residual": -0.1265775806003886,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "fold_coefficients": [
+        [
+          0.13423040939649142,
+          0.3014884116424669,
+          0.15648109560981746
+        ],
+        [
+          0.17932602207265877,
+          0.31082604897284455,
+          0.15172206132587354
+        ],
+        [
+          0.12924893862843345,
+          0.3230894687814688,
+          0.1639791272242133
+        ],
+        [
+          0.14081681908302063,
+          0.3158345518445887,
+          0.16583906269521909
+        ],
+        [
+          0.12145271270474345,
+          0.30827990429814867,
+          0.16423744607876234
+        ]
+      ]
+    },
+    "RAR_density_quad": {
+      "all_data_coefficients": [
+        0.7667942424319922,
+        0.10699553316569099,
+        0.03325032133644246
+      ],
+      "all_data_training_metrics": {
+        "balanced_population_system_rms_dex": 0.2980427884657163,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.25964461396982597,
+            "equal_system_rms_dex": 0.2619257066309327,
+            "median_absolute_acceleration_fraction": 0.4305064870689538,
+            "median_observed_over_predicted": 1.7561697025123613,
+            "median_absolute_speed_fraction_under_same_radius": 0.24536406314442505,
+            "median_signed_log10_residual": -0.24453884950141047,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.22909695463255678,
+            "equal_system_rms_dex": 0.22909695463255678,
+            "median_absolute_acceleration_fraction": 0.4791494546375387,
+            "median_observed_over_predicted": 0.818965886284442,
+            "median_absolute_speed_fraction_under_same_radius": 0.2693493282446921,
+            "median_signed_log10_residual": 0.08689207512148767,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.17675159058392,
+            "equal_system_rms_dex": 0.17801984837627333,
+            "median_absolute_acceleration_fraction": 0.22834835347471022,
+            "median_observed_over_predicted": 1.2653980462545442,
+            "median_absolute_speed_fraction_under_same_radius": 0.11792031436446637,
+            "median_signed_log10_residual": -0.10219840896824,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.2877127986369455,
+            "equal_system_rms_dex": 0.3255475910646687,
+            "median_absolute_acceleration_fraction": 0.7630859079861234,
+            "median_observed_over_predicted": 0.5671873378517117,
+            "median_absolute_speed_fraction_under_same_radius": 0.32781245168892925,
+            "median_signed_log10_residual": 0.246273473659161,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.43056326817571555,
+            "equal_system_rms_dex": 0.43056326817571555,
+            "median_absolute_acceleration_fraction": 0.5968292314598607,
+            "median_observed_over_predicted": 0.9762148068555487,
+            "median_absolute_speed_fraction_under_same_radius": 0.28659999264283664,
+            "median_signed_log10_residual": 0.010454609415728955,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.296872533410254,
+            "equal_system_rms_dex": 0.296872533410254,
+            "median_absolute_acceleration_fraction": 0.4869942094407031,
+            "median_observed_over_predicted": 0.6902729485974264,
+            "median_absolute_speed_fraction_under_same_radius": 0.2622297099311722,
+            "median_signed_log10_residual": 0.16124887770136476,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.6598937985845285,
+            "equal_system_rms_dex": 0.6598937985845285,
+            "median_absolute_acceleration_fraction": 0.7212392720622431,
+            "median_observed_over_predicted": 3.5873058855811464,
+            "median_absolute_speed_fraction_under_same_radius": 0.4720220383976649,
+            "median_signed_log10_residual": -0.5547684100621045,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "cross_validation": {
+        "balanced_population_system_rms_dex": 0.30334588043716754,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.26101773445192433,
+            "equal_system_rms_dex": 0.2630958143555359,
+            "median_absolute_acceleration_fraction": 0.42553205501792807,
+            "median_observed_over_predicted": 1.740767306778079,
+            "median_absolute_speed_fraction_under_same_radius": 0.24206478624474487,
+            "median_signed_log10_residual": -0.2407374606760294,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.2314667271198145,
+            "equal_system_rms_dex": 0.23146672711981447,
+            "median_absolute_acceleration_fraction": 0.48534583681548776,
+            "median_observed_over_predicted": 0.8273965304494069,
+            "median_absolute_speed_fraction_under_same_radius": 0.2603778202867517,
+            "median_signed_log10_residual": 0.082309063242956,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.17751426443445525,
+            "equal_system_rms_dex": 0.1786696459889905,
+            "median_absolute_acceleration_fraction": 0.23355291171146575,
+            "median_observed_over_predicted": 1.2855463571366508,
+            "median_absolute_speed_fraction_under_same_radius": 0.12453378557914935,
+            "median_signed_log10_residual": -0.10906907994637449,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.2868992155605547,
+            "equal_system_rms_dex": 0.3264727951935265,
+            "median_absolute_acceleration_fraction": 0.7481632644275055,
+            "median_observed_over_predicted": 0.5720289520266629,
+            "median_absolute_speed_fraction_under_same_radius": 0.3221812524666189,
+            "median_signed_log10_residual": 0.2425819897872762,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.44585876036782657,
+            "equal_system_rms_dex": 0.44585876036782657,
+            "median_absolute_acceleration_fraction": 0.6180353661920096,
+            "median_observed_over_predicted": 0.9642479723627151,
+            "median_absolute_speed_fraction_under_same_radius": 0.3324445169927204,
+            "median_signed_log10_residual": 0.015811265702895372,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.3237739148277879,
+            "equal_system_rms_dex": 0.3237739148277879,
+            "median_absolute_acceleration_fraction": 0.45363106158157807,
+            "median_observed_over_predicted": 0.7131711443107909,
+            "median_absolute_speed_fraction_under_same_radius": 0.24952891765180857,
+            "median_signed_log10_residual": 0.1470916251289644,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.6636284451306819,
+            "equal_system_rms_dex": 0.6636284451306819,
+            "median_absolute_acceleration_fraction": 0.7297197462708745,
+            "median_observed_over_predicted": 3.6998633314966427,
+            "median_absolute_speed_fraction_under_same_radius": 0.4801151533953645,
+            "median_signed_log10_residual": -0.5681856820472425,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "fold_coefficients": [
+        [
+          0.7418438684416206,
+          0.1132103197771297,
+          0.035363060333767085
+        ],
+        [
+          0.8288469654469889,
+          0.08800650413712173,
+          0.015520162649644228
+        ],
+        [
+          0.7915798409646795,
+          0.08263742330695968,
+          0.02123541705862672
+        ],
+        [
+          0.7354198944979592,
+          0.11704267316459181,
+          0.044542676920029486
+        ],
+        [
+          0.7127894277654948,
+          0.13402186667835558,
+          0.05643923585045969
+        ]
+      ]
+    },
+    "quadratic_2D": {
+      "all_data_coefficients": [
+        0.34278448257425154,
+        0.7493786000790338,
+        -0.0547842815655189,
+        0.06508253225931808,
+        0.1462340907157922,
+        0.12881457005194663
+      ],
+      "all_data_training_metrics": {
+        "balanced_population_system_rms_dex": 0.19959494493553046,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.21294392631164746,
+            "equal_system_rms_dex": 0.21164023966603748,
+            "median_absolute_acceleration_fraction": 0.33293487193398963,
+            "median_observed_over_predicted": 1.1804899844735393,
+            "median_absolute_speed_fraction_under_same_radius": 0.1767541161831097,
+            "median_signed_log10_residual": -0.07206142268542567,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.19529002491206807,
+            "equal_system_rms_dex": 0.19529002491206804,
+            "median_absolute_acceleration_fraction": 0.373583158094606,
+            "median_observed_over_predicted": 0.9682273563739328,
+            "median_absolute_speed_fraction_under_same_radius": 0.20844838121738762,
+            "median_signed_log10_residual": 0.014024040122868314,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.1501916858237391,
+            "equal_system_rms_dex": 0.1516111630759072,
+            "median_absolute_acceleration_fraction": 0.21797378558468505,
+            "median_observed_over_predicted": 0.9969039741389891,
+            "median_absolute_speed_fraction_under_same_radius": 0.10806309848328893,
+            "median_signed_log10_residual": 0.0013505562116478131,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.1807723754641461,
+            "equal_system_rms_dex": 0.1888556018516968,
+            "median_absolute_acceleration_fraction": 0.3118017869317205,
+            "median_observed_over_predicted": 0.8078937716750185,
+            "median_absolute_speed_fraction_under_same_radius": 0.15236687625805223,
+            "median_signed_log10_residual": 0.09264579599047185,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.24001779563823447,
+            "equal_system_rms_dex": 0.24001779563823447,
+            "median_absolute_acceleration_fraction": 0.2797660833351936,
+            "median_observed_over_predicted": 0.9002443781549946,
+            "median_absolute_speed_fraction_under_same_radius": 0.151334037052972,
+            "median_signed_log10_residual": 0.045639582029864956,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.21467043705082792,
+            "equal_system_rms_dex": 0.21467043705082792,
+            "median_absolute_acceleration_fraction": 0.2873900612760606,
+            "median_observed_over_predicted": 0.8797188114277454,
+            "median_absolute_speed_fraction_under_same_radius": 0.15584980806963955,
+            "median_signed_log10_residual": 0.05575968064626524,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.29537202154746417,
+            "equal_system_rms_dex": 0.29537202154746417,
+            "median_absolute_acceleration_fraction": 0.1952227177821434,
+            "median_observed_over_predicted": 1.0587314263397385,
+            "median_absolute_speed_fraction_under_same_radius": 0.1029062021071282,
+            "median_signed_log10_residual": -0.024785804440141446,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "cross_validation": {
+        "balanced_population_system_rms_dex": 0.20545283135829986,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.21664780749547616,
+            "equal_system_rms_dex": 0.2158050168849873,
+            "median_absolute_acceleration_fraction": 0.34689509865180806,
+            "median_observed_over_predicted": 1.1768495712966534,
+            "median_absolute_speed_fraction_under_same_radius": 0.18121916765409496,
+            "median_signed_log10_residual": -0.07071830044355576,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.19925639799525086,
+            "equal_system_rms_dex": 0.19925639799525086,
+            "median_absolute_acceleration_fraction": 0.373621386441412,
+            "median_observed_over_predicted": 0.9726407548175231,
+            "median_absolute_speed_fraction_under_same_radius": 0.20679711585334687,
+            "median_signed_log10_residual": 0.012067486646408526,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.15192225616225488,
+            "equal_system_rms_dex": 0.1533794564756274,
+            "median_absolute_acceleration_fraction": 0.2142006608450896,
+            "median_observed_over_predicted": 0.9958083098813504,
+            "median_absolute_speed_fraction_under_same_radius": 0.11242842035228612,
+            "median_signed_log10_residual": 0.001827550924608845,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.17971403123190197,
+            "equal_system_rms_dex": 0.18923575946109691,
+            "median_absolute_acceleration_fraction": 0.3047533288599874,
+            "median_observed_over_predicted": 0.8122397203025449,
+            "median_absolute_speed_fraction_under_same_radius": 0.15023545297715724,
+            "median_signed_log10_residual": 0.09031578394017942,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.2558202137896096,
+            "equal_system_rms_dex": 0.2558202137896096,
+            "median_absolute_acceleration_fraction": 0.27448139624824786,
+            "median_observed_over_predicted": 0.9317673374912859,
+            "median_absolute_speed_fraction_under_same_radius": 0.1387026872567031,
+            "median_signed_log10_residual": 0.03069251753656621,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.22973454505258384,
+            "equal_system_rms_dex": 0.22973454505258384,
+            "median_absolute_acceleration_fraction": 0.2799002542396772,
+            "median_observed_over_predicted": 0.8686184650800899,
+            "median_absolute_speed_fraction_under_same_radius": 0.14346444439577594,
+            "median_signed_log10_residual": 0.06132933121704526,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.31307147589983825,
+            "equal_system_rms_dex": 0.31307147589983825,
+            "median_absolute_acceleration_fraction": 0.22362602925555197,
+            "median_observed_over_predicted": 0.9860297888252044,
+            "median_absolute_speed_fraction_under_same_radius": 0.11887913953621088,
+            "median_signed_log10_residual": 0.006109964443184568,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "fold_coefficients": [
+        [
+          0.33843625306362085,
+          0.7472865742327556,
+          -0.0659238830875015,
+          0.0652071375786869,
+          0.14651774658760067,
+          0.13180299784924623
+        ],
+        [
+          0.37305089337708736,
+          0.7439021872102899,
+          -0.06801167525406919,
+          0.05830118689021095,
+          0.13811664434485857,
+          0.1269603076867645
+        ],
+        [
+          0.34913315592746347,
+          0.7514570240850414,
+          -0.0633606903812496,
+          0.06488515549467455,
+          0.15396944603043075,
+          0.1342576346768505
+        ],
+        [
+          0.31646696716991085,
+          0.7528054001791634,
+          -0.02549276589416131,
+          0.0726164418314429,
+          0.136388429755528,
+          0.12285865532816366
+        ],
+        [
+          0.3409676670761637,
+          0.7495283455783344,
+          -0.059023915828368675,
+          0.06360085417681281,
+          0.15790896280984268,
+          0.13101706601967403
+        ]
+      ]
+    },
+    "RAR_piecewise": {
+      "all_data_coefficients": [
+        1.2503890866525644,
+        0.23657390891216826,
+        1.106388063607408,
+        0.01570136443641439,
+        0.8073990321919166
+      ],
+      "all_data_training_metrics": {
+        "balanced_population_system_rms_dex": 0.2291581169116263,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.11153708869148532,
+            "equal_system_rms_dex": 0.1118361432036876,
+            "median_absolute_acceleration_fraction": 0.17989821040569842,
+            "median_observed_over_predicted": 1.0285045883458337,
+            "median_absolute_speed_fraction_under_same_radius": 0.0868144909300752,
+            "median_signed_log10_residual": -0.01219914801487082,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.20317602376721425,
+            "equal_system_rms_dex": 0.20317602376721428,
+            "median_absolute_acceleration_fraction": 0.3313695387133524,
+            "median_observed_over_predicted": 1.1427079466150407,
+            "median_absolute_speed_fraction_under_same_radius": 0.17794045349093657,
+            "median_signed_log10_residual": -0.05767797062483834,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.10860011016098484,
+            "equal_system_rms_dex": 0.10955062462138625,
+            "median_absolute_acceleration_fraction": 0.16006137909985885,
+            "median_observed_over_predicted": 0.9445122411598286,
+            "median_absolute_speed_fraction_under_same_radius": 0.07880752171944738,
+            "median_signed_log10_residual": 0.02480152497684851,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.13385435238590118,
+            "equal_system_rms_dex": 0.15248812425947064,
+            "median_absolute_acceleration_fraction": 0.1780179773669725,
+            "median_observed_over_predicted": 1.0412628973594782,
+            "median_absolute_speed_fraction_under_same_radius": 0.08849574081102196,
+            "median_signed_log10_residual": -0.01756039372440571,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.4165638315753948,
+            "equal_system_rms_dex": 0.4165638315753948,
+            "median_absolute_acceleration_fraction": 0.6782969917540035,
+            "median_observed_over_predicted": 0.8472406174577339,
+            "median_absolute_speed_fraction_under_same_radius": 0.3183218508769232,
+            "median_signed_log10_residual": 0.07199323194339602,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.3072903206564359,
+            "equal_system_rms_dex": 0.3072903206564359,
+            "median_absolute_acceleration_fraction": 0.6527327383247169,
+            "median_observed_over_predicted": 0.6054455766448382,
+            "median_absolute_speed_fraction_under_same_radius": 0.2854837770804888,
+            "median_signed_log10_residual": 0.21806375966805674,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.613938515229441,
+            "equal_system_rms_dex": 0.613938515229441,
+            "median_absolute_acceleration_fraction": 0.6782969917540035,
+            "median_observed_over_predicted": 3.1084570997711354,
+            "median_absolute_speed_fraction_under_same_radius": 0.43281131160257036,
+            "median_signed_log10_residual": -0.49254487798976754,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "cross_validation": {
+        "balanced_population_system_rms_dex": 0.23208841507665204,
+        "populations": {
+          "CLASH": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.11513456858017586,
+            "equal_system_rms_dex": 0.11564670335253359,
+            "median_absolute_acceleration_fraction": 0.17682619386697163,
+            "median_observed_over_predicted": 1.0313034508475432,
+            "median_absolute_speed_fraction_under_same_radius": 0.08604302048599277,
+            "median_signed_log10_residual": -0.013383506480855262,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ETG": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.2100136002798143,
+            "equal_system_rms_dex": 0.2100136002798143,
+            "median_absolute_acceleration_fraction": 0.33692740136378674,
+            "median_observed_over_predicted": 1.191554846245971,
+            "median_absolute_speed_fraction_under_same_radius": 0.18563453608240044,
+            "median_signed_log10_residual": -0.07611075806746526,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "MaNGA_BCG": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.11146827284627889,
+            "equal_system_rms_dex": 0.1124504753996737,
+            "median_absolute_acceleration_fraction": 0.16617844742453258,
+            "median_observed_over_predicted": 0.9385016017170282,
+            "median_absolute_speed_fraction_under_same_radius": 0.08314860746974462,
+            "median_signed_log10_residual": 0.027565049325726565,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "SPARC": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.13462093048183355,
+            "equal_system_rms_dex": 0.15338946065190087,
+            "median_absolute_acceleration_fraction": 0.17832738801637948,
+            "median_observed_over_predicted": 1.0408426751536113,
+            "median_absolute_speed_fraction_under_same_radius": 0.08962862839072083,
+            "median_signed_log10_residual": -0.017385090198400444,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "dSph": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.41913226278642574,
+            "equal_system_rms_dex": 0.41913226278642574,
+            "median_absolute_acceleration_fraction": 0.6261896759516943,
+            "median_observed_over_predicted": 0.8508691237758141,
+            "median_absolute_speed_fraction_under_same_radius": 0.3213204651414705,
+            "median_signed_log10_residual": 0.07013723567695951,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "dwarf_subpopulations": {
+          "classical_dSph": {
+            "rows": 18,
+            "systems": 18,
+            "validation_groups": 18,
+            "rms_log10_acceleration_dex": 0.3076751492970199,
+            "equal_system_rms_dex": 0.3076751492970199,
+            "median_absolute_acceleration_fraction": 0.6053168975557334,
+            "median_observed_over_predicted": 0.6230352956300003,
+            "median_absolute_speed_fraction_under_same_radius": 0.26698423283999595,
+            "median_signed_log10_residual": 0.2055240632430786,
+            "fraction_predicted_below_baryons": 0.0
+          },
+          "ultrafaint_dSph": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.6196593981261863,
+            "equal_system_rms_dex": 0.6196593981261863,
+            "median_absolute_acceleration_fraction": 0.6811321934281973,
+            "median_observed_over_predicted": 3.1360958346694057,
+            "median_absolute_speed_fraction_under_same_radius": 0.4353161888527327,
+            "median_signed_log10_residual": -0.4963893256425539,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      },
+      "fold_coefficients": [
+        [
+          1.23340599879958,
+          0.23143089003458933,
+          1.0829468605671608,
+          -0.005958090017822477,
+          0.7713454792272791
+        ],
+        [
+          1.268947784717054,
+          0.3154353063384102,
+          1.0794081097711192,
+          0.02004196844252567,
+          0.8315003289929528
+        ],
+        [
+          1.237716207009842,
+          0.26595884089743377,
+          1.126434316641041,
+          0.023066586865702583,
+          0.8542039929274006
+        ],
+        [
+          1.2822266441226529,
+          0.2446370506940532,
+          1.1068929008394537,
+          0.0063586356145046785,
+          0.7799615591846206
+        ],
+        [
+          1.2293890231290903,
+          0.11356478086522198,
+          1.1342999644498903,
+          0.03466659943849662,
+          0.799657619406755
+        ]
+      ]
+    }
+  },
+  "leave_population_out": {
+    "CLASH": {
+      "training_rows": 2807,
+      "test_rows": 84,
+      "models": {
+        "RAR": {
+          "coefficients": [
+            0.544697104199388
+          ],
+          "metrics": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.3306984857773835,
+            "equal_system_rms_dex": 0.3322558591441283,
+            "median_absolute_acceleration_fraction": 0.5197201994155459,
+            "median_observed_over_predicted": 2.0821256318060226,
+            "median_absolute_speed_fraction_under_same_radius": 0.30697802748018826,
+            "median_signed_log10_residual": -0.31850630444612316,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_exponent": {
+          "coefficients": [
+            0.3151996580733103,
+            0.5618368697098507
+          ],
+          "metrics": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.38326865012925565,
+            "equal_system_rms_dex": 0.385083200831454,
+            "median_absolute_acceleration_fraction": 0.5806447754895445,
+            "median_observed_over_predicted": 2.384620871290028,
+            "median_absolute_speed_fraction_under_same_radius": 0.35242383703461005,
+            "median_signed_log10_residual": -0.3774186413806031,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius": {
+          "coefficients": [
+            0.6758562346428049,
+            -0.42752891333396503
+          ],
+          "metrics": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.6211646543987627,
+            "equal_system_rms_dex": 0.6183426750655256,
+            "median_absolute_acceleration_fraction": 0.7709523918325858,
+            "median_observed_over_predicted": 4.366079934133459,
+            "median_absolute_speed_fraction_under_same_radius": 0.5214132176331783,
+            "median_signed_log10_residual": -0.6400829607467143,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius_quad": {
+          "coefficients": [
+            0.34127410067609293,
+            -0.6122731392261292,
+            0.5207941797563201
+          ],
+          "metrics": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.420294035496929,
+            "equal_system_rms_dex": 0.4038270917683556,
+            "median_absolute_acceleration_fraction": 0.5491695591492619,
+            "median_observed_over_predicted": 0.7957465818410994,
+            "median_absolute_speed_fraction_under_same_radius": 0.29592275172028176,
+            "median_signed_log10_residual": 0.0993851550730954,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_potential_quad": {
+          "coefficients": [
+            0.07527690788794926,
+            0.3207365429468927,
+            0.16870700126287666
+          ],
+          "metrics": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.20991768371648806,
+            "equal_system_rms_dex": 0.208996823601688,
+            "median_absolute_acceleration_fraction": 0.3283887900857582,
+            "median_observed_over_predicted": 1.1607529743127734,
+            "median_absolute_speed_fraction_under_same_radius": 0.16979493407019164,
+            "median_signed_log10_residual": -0.06473617707349519,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_density_quad": {
+          "coefficients": [
+            0.7972639551125648,
+            0.1863500980985514,
+            0.01678222014377753
+          ],
+          "metrics": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.37462061724672485,
+            "equal_system_rms_dex": 0.3749251532807025,
+            "median_absolute_acceleration_fraction": 0.5736661953942945,
+            "median_observed_over_predicted": 2.3455805352098333,
+            "median_absolute_speed_fraction_under_same_radius": 0.34705760173958083,
+            "median_signed_log10_residual": -0.37025028957682304,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "quadratic_2D": {
+          "coefficients": [
+            0.31364611020517913,
+            0.7571795126923081,
+            -0.09809077677739948,
+            0.06797688419597812,
+            0.13543976618981474,
+            0.16853971095729553
+          ],
+          "metrics": {
+            "rows": 84,
+            "systems": 20,
+            "validation_groups": 20,
+            "rms_log10_acceleration_dex": 0.25408271253840203,
+            "equal_system_rms_dex": 0.24759312871169914,
+            "median_absolute_acceleration_fraction": 0.4099314751402234,
+            "median_observed_over_predicted": 0.9578847579953151,
+            "median_absolute_speed_fraction_under_same_radius": 0.20725742689391174,
+            "median_signed_log10_residual": 0.01868694570149082,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      }
+    },
+    "ETG": {
+      "training_rows": 2859,
+      "test_rows": 32,
+      "models": {
+        "RAR": {
+          "coefficients": [
+            0.7712742513742024
+          ],
+          "metrics": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.2545538388314679,
+            "equal_system_rms_dex": 0.2545538388314679,
+            "median_absolute_acceleration_fraction": 0.4956396773814406,
+            "median_observed_over_predicted": 0.772062354280058,
+            "median_absolute_speed_fraction_under_same_radius": 0.23856766550658393,
+            "median_signed_log10_residual": 0.11280953681350986,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_exponent": {
+          "coefficients": [
+            0.8123340588124432,
+            0.4895440923791875
+          ],
+          "metrics": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.2557198834955547,
+            "equal_system_rms_dex": 0.25571988349555475,
+            "median_absolute_acceleration_fraction": 0.4994615806694734,
+            "median_observed_over_predicted": 0.7584326748134176,
+            "median_absolute_speed_fraction_under_same_radius": 0.2391497616014885,
+            "median_signed_log10_residual": 0.12060783152646415,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius": {
+          "coefficients": [
+            0.7254611080867577,
+            0.0631824923636374
+          ],
+          "metrics": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.26248264934323484,
+            "equal_system_rms_dex": 0.2624826493432348,
+            "median_absolute_acceleration_fraction": 0.48994993599008896,
+            "median_observed_over_predicted": 0.7582401389086151,
+            "median_absolute_speed_fraction_under_same_radius": 0.23865000912925444,
+            "median_signed_log10_residual": 0.12068421362347242,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius_quad": {
+          "coefficients": [
+            0.5408334588780166,
+            -0.41762180823276024,
+            0.29879988555897224
+          ],
+          "metrics": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.20121127114819964,
+            "equal_system_rms_dex": 0.20121127114819964,
+            "median_absolute_acceleration_fraction": 0.4266723572525784,
+            "median_observed_over_predicted": 0.9797569685148768,
+            "median_absolute_speed_fraction_under_same_radius": 0.21128039714308966,
+            "median_signed_log10_residual": 0.009015349494123415,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_potential_quad": {
+          "coefficients": [
+            0.16976220257992902,
+            0.31014821059492914,
+            0.1572943408105844
+          ],
+          "metrics": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.2090673004700743,
+            "equal_system_rms_dex": 0.2090673004700743,
+            "median_absolute_acceleration_fraction": 0.40474109379146145,
+            "median_observed_over_predicted": 0.9095423091871644,
+            "median_absolute_speed_fraction_under_same_radius": 0.20533405299245977,
+            "median_signed_log10_residual": 0.04183403437064012,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_density_quad": {
+          "coefficients": [
+            0.52424540149178,
+            -0.24710637133143729,
+            -0.04922876159642728
+          ],
+          "metrics": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.27370564123134666,
+            "equal_system_rms_dex": 0.2737056412313466,
+            "median_absolute_acceleration_fraction": 0.47921162651791294,
+            "median_observed_over_predicted": 0.7803841318455108,
+            "median_absolute_speed_fraction_under_same_radius": 0.25857638191478505,
+            "median_signed_log10_residual": 0.1078673670227211,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "quadratic_2D": {
+          "coefficients": [
+            0.09342711494884574,
+            0.545632429549689,
+            0.3410062013554629,
+            0.02991651726888474,
+            0.3111269441337999,
+            0.028501110979518757
+          ],
+          "metrics": {
+            "rows": 32,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.7114445074860337,
+            "equal_system_rms_dex": 0.7114445074860337,
+            "median_absolute_acceleration_fraction": 0.8210648533878233,
+            "median_observed_over_predicted": 2.9719276965791956,
+            "median_absolute_speed_fraction_under_same_radius": 0.5031295528529671,
+            "median_signed_log10_residual": -0.44378036894884065,
+            "fraction_predicted_below_baryons": 0.5
+          }
+        }
+      }
+    },
+    "MaNGA_BCG": {
+      "training_rows": 2841,
+      "test_rows": 50,
+      "models": {
+        "RAR": {
+          "coefficients": [
+            0.6513299463573828
+          ],
+          "metrics": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.19200627241984625,
+            "equal_system_rms_dex": 0.19320897414135196,
+            "median_absolute_acceleration_fraction": 0.25572181575378916,
+            "median_observed_over_predicted": 1.3436140371349867,
+            "median_absolute_speed_fraction_under_same_radius": 0.13728685173468957,
+            "median_signed_log10_residual": -0.12826962147496024,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_exponent": {
+          "coefficients": [
+            0.49974832901931415,
+            0.5409926022625307
+          ],
+          "metrics": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.22833291150769539,
+            "equal_system_rms_dex": 0.22944676783798484,
+            "median_absolute_acceleration_fraction": 0.32512772532560813,
+            "median_observed_over_predicted": 1.4820009504834017,
+            "median_absolute_speed_fraction_under_same_radius": 0.17851046574993457,
+            "median_signed_log10_residual": -0.17081344775010088,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius": {
+          "coefficients": [
+            0.6440379083536856,
+            0.01000866891171519
+          ],
+          "metrics": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.19110623715713662,
+            "equal_system_rms_dex": 0.19230720469312185,
+            "median_absolute_acceleration_fraction": 0.2546185832502927,
+            "median_observed_over_predicted": 1.3416187723529607,
+            "median_absolute_speed_fraction_under_same_radius": 0.1366471646868584,
+            "median_signed_log10_residual": -0.12762528267700612,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius_quad": {
+          "coefficients": [
+            0.40482734884917193,
+            -0.5989465018277774,
+            0.38523633596827184
+          ],
+          "metrics": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.2988958991332616,
+            "equal_system_rms_dex": 0.29999645430722266,
+            "median_absolute_acceleration_fraction": 0.4366165079597662,
+            "median_observed_over_predicted": 1.775031660170363,
+            "median_absolute_speed_fraction_under_same_radius": 0.24941344452186082,
+            "median_signed_log10_residual": -0.249200993168067,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_potential_quad": {
+          "coefficients": [
+            0.10983977790360336,
+            0.3025613823006604,
+            0.1605066096447242
+          ],
+          "metrics": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.15101939390900654,
+            "equal_system_rms_dex": 0.15253610176292193,
+            "median_absolute_acceleration_fraction": 0.20974889234276828,
+            "median_observed_over_predicted": 1.106637657344278,
+            "median_absolute_speed_fraction_under_same_radius": 0.10875464563139203,
+            "median_signed_log10_residual": -0.04400490848196631,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_density_quad": {
+          "coefficients": [
+            -0.6306757356722226,
+            -1.0479097016240726,
+            -0.1815535515505242
+          ],
+          "metrics": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.3311295424277674,
+            "equal_system_rms_dex": 0.33167393136986034,
+            "median_absolute_acceleration_fraction": 0.5080963448527368,
+            "median_observed_over_predicted": 2.033080417804797,
+            "median_absolute_speed_fraction_under_same_radius": 0.2986485503408696,
+            "median_signed_log10_residual": -0.3081372538507289,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "quadratic_2D": {
+          "coefficients": [
+            0.33532070359877936,
+            0.7595870123122562,
+            -0.052225773381689065,
+            0.06920321945027166,
+            0.14938896574953037,
+            0.12905071089249043
+          ],
+          "metrics": {
+            "rows": 50,
+            "systems": 50,
+            "validation_groups": 49,
+            "rms_log10_acceleration_dex": 0.15361060807402263,
+            "equal_system_rms_dex": 0.15504546282053117,
+            "median_absolute_acceleration_fraction": 0.22442560538503148,
+            "median_observed_over_predicted": 0.9925182388478169,
+            "median_absolute_speed_fraction_under_same_radius": 0.11188802103606993,
+            "median_signed_log10_residual": 0.003261774162309994,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      }
+    },
+    "SPARC": {
+      "training_rows": 191,
+      "test_rows": 2700,
+      "models": {
+        "RAR": {
+          "coefficients": [
+            0.92116212008164
+          ],
+          "metrics": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.3726489263874618,
+            "equal_system_rms_dex": 0.4165568845752571,
+            "median_absolute_acceleration_fraction": 1.1992440815422678,
+            "median_observed_over_predicted": 0.45470173432212063,
+            "median_absolute_speed_fraction_under_same_radius": 0.48298483728580155,
+            "median_signed_log10_residual": 0.34227341060359795,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_exponent": {
+          "coefficients": [
+            0.9866342854755161,
+            0.4838474521283012
+          ],
+          "metrics": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.37693324086057584,
+            "equal_system_rms_dex": 0.4184791183366972,
+            "median_absolute_acceleration_fraction": 1.2282187885145615,
+            "median_observed_over_predicted": 0.44878896624898307,
+            "median_absolute_speed_fraction_under_same_radius": 0.4927219382044239,
+            "median_signed_log10_residual": 0.34795783046514606,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius": {
+          "coefficients": [
+            0.8979418752339259,
+            0.029045294670199194
+          ],
+          "metrics": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.3739541256556879,
+            "equal_system_rms_dex": 0.4164131622539825,
+            "median_absolute_acceleration_fraction": 1.2067653756530157,
+            "median_observed_over_predicted": 0.4531519393169783,
+            "median_absolute_speed_fraction_under_same_radius": 0.4855185526810796,
+            "median_signed_log10_residual": 0.3437561591362559,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius_quad": {
+          "coefficients": [
+            0.7194669432527998,
+            -0.3391944557949248,
+            0.23644782911840204
+          ],
+          "metrics": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.27118254742666664,
+            "equal_system_rms_dex": 0.30661315827885305,
+            "median_absolute_acceleration_fraction": 0.6622948818754838,
+            "median_observed_over_predicted": 0.601577983440321,
+            "median_absolute_speed_fraction_under_same_radius": 0.28930015150129107,
+            "median_signed_log10_residual": 0.22070806707572316,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_potential_quad": {
+          "coefficients": [
+            0.25170841070435496,
+            0.2940142207897212,
+            0.1464896827659984
+          ],
+          "metrics": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.19631633308472293,
+            "equal_system_rms_dex": 0.2051070784993412,
+            "median_absolute_acceleration_fraction": 0.3804823253992937,
+            "median_observed_over_predicted": 0.7367684627025708,
+            "median_absolute_speed_fraction_under_same_radius": 0.18149568828207507,
+            "median_signed_log10_residual": 0.13266897883141515,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_density_quad": {
+          "coefficients": [
+            0.9591335502558428,
+            0.029034463564635245,
+            0.0033687387111334733
+          ],
+          "metrics": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.37357196163527345,
+            "equal_system_rms_dex": 0.41673627854941714,
+            "median_absolute_acceleration_fraction": 1.2111451601167835,
+            "median_observed_over_predicted": 0.45225440415141627,
+            "median_absolute_speed_fraction_under_same_radius": 0.48699195843518406,
+            "median_signed_log10_residual": 0.34461722491706387,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "quadratic_2D": {
+          "coefficients": [
+            0.3844707559105647,
+            0.7398384679335821,
+            -0.054914692176346105,
+            0.05827889931970508,
+            0.14293741310955013,
+            0.12068963950425625
+          ],
+          "metrics": {
+            "rows": 2700,
+            "systems": 149,
+            "validation_groups": 149,
+            "rms_log10_acceleration_dex": 0.19789298775491118,
+            "equal_system_rms_dex": 0.20403170537128687,
+            "median_absolute_acceleration_fraction": 0.37314213703589083,
+            "median_observed_over_predicted": 0.7464553130079328,
+            "median_absolute_speed_fraction_under_same_radius": 0.17682416534077738,
+            "median_signed_log10_residual": 0.12699618724450945,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      }
+    },
+    "dSph": {
+      "training_rows": 2866,
+      "test_rows": 25,
+      "models": {
+        "RAR": {
+          "coefficients": [
+            0.6736833083597589
+          ],
+          "metrics": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.42175882250059055,
+            "equal_system_rms_dex": 0.42175882250059055,
+            "median_absolute_acceleration_fraction": 0.5157365281905928,
+            "median_observed_over_predicted": 0.9841822705826598,
+            "median_absolute_speed_fraction_under_same_radius": 0.2737352913930744,
+            "median_signed_log10_residual": 0.006924462770207862,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_exponent": {
+          "coefficients": [
+            1.3503003042018376,
+            0.3051722731781309
+          ],
+          "metrics": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.6873186370003139,
+            "equal_system_rms_dex": 0.6873186370003139,
+            "median_absolute_acceleration_fraction": 0.6656637679404955,
+            "median_observed_over_predicted": 2.5945739003778487,
+            "median_absolute_speed_fraction_under_same_radius": 0.37917817311691626,
+            "median_signed_log10_residual": -0.4140660450711222,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius": {
+          "coefficients": [
+            -0.03533403407170542,
+            0.5178453277618836
+          ],
+          "metrics": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.7329731451303915,
+            "equal_system_rms_dex": 0.7329731451303915,
+            "median_absolute_acceleration_fraction": 0.6313570600943521,
+            "median_observed_over_predicted": 2.5678456962498912,
+            "median_absolute_speed_fraction_under_same_radius": 0.3928402682113644,
+            "median_signed_log10_residual": -0.40956892310374426,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius_quad": {
+          "coefficients": [
+            -0.21667486811439884,
+            0.810343912602745,
+            -0.09286277855435754
+          ],
+          "metrics": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.9074604933982279,
+            "equal_system_rms_dex": 0.9074604933982279,
+            "median_absolute_acceleration_fraction": 0.7264287262349518,
+            "median_observed_over_predicted": 3.4758050769026143,
+            "median_absolute_speed_fraction_under_same_radius": 0.46362034897819415,
+            "median_signed_log10_residual": -0.5410554132313918,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_potential_quad": {
+          "coefficients": [
+            0.1661525983586692,
+            0.38682198840182896,
+            0.10387014425520198
+          ],
+          "metrics": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.5096213284111738,
+            "equal_system_rms_dex": 0.5096213284111738,
+            "median_absolute_acceleration_fraction": 0.6039647597892155,
+            "median_observed_over_predicted": 1.970021259619259,
+            "median_absolute_speed_fraction_under_same_radius": 0.37068669153530165,
+            "median_signed_log10_residual": -0.29447091290550786,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_density_quad": {
+          "coefficients": [
+            0.6514886399173587,
+            0.21796475335835927,
+            0.09576740663066668
+          ],
+          "metrics": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.4722025974563051,
+            "equal_system_rms_dex": 0.4722025974563051,
+            "median_absolute_acceleration_fraction": 0.5456693770554216,
+            "median_observed_over_predicted": 0.9691697519793888,
+            "median_absolute_speed_fraction_under_same_radius": 0.29161856620335214,
+            "median_signed_log10_residual": 0.013600148758051045,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "quadratic_2D": {
+          "coefficients": [
+            0.3668635515154171,
+            0.7946115725978546,
+            -0.019283426127886024,
+            0.021392344232676778,
+            0.03868418697526128,
+            0.09049456939286438
+          ],
+          "metrics": {
+            "rows": 25,
+            "systems": 25,
+            "validation_groups": 25,
+            "rms_log10_acceleration_dex": 0.6866189231019397,
+            "equal_system_rms_dex": 0.6866189231019397,
+            "median_absolute_acceleration_fraction": 0.6627984552458077,
+            "median_observed_over_predicted": 2.9655854653007716,
+            "median_absolute_speed_fraction_under_same_radius": 0.41930942425919104,
+            "median_signed_log10_residual": -0.47211044449603523,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      }
+    }
+  },
+  "dwarf_host_holdout": {
+    "M31": {
+      "test_rows": 7,
+      "models": {
+        "RAR": {
+          "coefficients": [
+            0.7506158046697105
+          ],
+          "metrics": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.2152506633265414,
+            "equal_system_rms_dex": 0.2152506633265414,
+            "median_absolute_acceleration_fraction": 0.3342926156653655,
+            "median_observed_over_predicted": 0.8286346815956199,
+            "median_absolute_speed_fraction_under_same_radius": 0.18409106860224012,
+            "median_signed_log10_residual": 0.08163689373819016,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_exponent": {
+          "coefficients": [
+            0.6861049026040588,
+            0.5175335574999963
+          ],
+          "metrics": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.22504671765759096,
+            "equal_system_rms_dex": 0.22504671765759096,
+            "median_absolute_acceleration_fraction": 0.29131141651747305,
+            "median_observed_over_predicted": 0.7765532090098898,
+            "median_absolute_speed_fraction_under_same_radius": 0.15816356488773486,
+            "median_signed_log10_residual": 0.10982878129063489,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius": {
+          "coefficients": [
+            0.7729981753059313,
+            -0.030228370706242125
+          ],
+          "metrics": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.22195094862614717,
+            "equal_system_rms_dex": 0.22195094862614717,
+            "median_absolute_acceleration_fraction": 0.3028592095969912,
+            "median_observed_over_predicted": 0.7963709468326812,
+            "median_absolute_speed_fraction_under_same_radius": 0.16505042643102763,
+            "median_signed_log10_residual": 0.09888459226643054,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius_quad": {
+          "coefficients": [
+            0.5406881002875428,
+            -0.5022357796337382,
+            0.32973153690093476
+          ],
+          "metrics": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.14950899357917843,
+            "equal_system_rms_dex": 0.14950899357917843,
+            "median_absolute_acceleration_fraction": 0.2802507425742,
+            "median_observed_over_predicted": 0.7810969888518089,
+            "median_absolute_speed_fraction_under_same_radius": 0.13148165808120815,
+            "median_signed_log10_residual": 0.1072950364070655,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_potential_quad": {
+          "coefficients": [
+            0.12352542920099333,
+            0.32035776814795125,
+            0.16332770640770922
+          ],
+          "metrics": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.14037130979980228,
+            "equal_system_rms_dex": 0.14037130979980228,
+            "median_absolute_acceleration_fraction": 0.24921175763828507,
+            "median_observed_over_predicted": 0.9884963918651174,
+            "median_absolute_speed_fraction_under_same_radius": 0.13351962378729265,
+            "median_signed_log10_residual": 0.005024911576337554,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_density_quad": {
+          "coefficients": [
+            0.4911805377497433,
+            -0.2467465304541998,
+            -0.04782138122120168
+          ],
+          "metrics": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.22448848072392863,
+            "equal_system_rms_dex": 0.22448848072392863,
+            "median_absolute_acceleration_fraction": 0.2962270409249137,
+            "median_observed_over_predicted": 0.7767513156303569,
+            "median_absolute_speed_fraction_under_same_radius": 0.16108822926657762,
+            "median_signed_log10_residual": 0.10971800248171615,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "quadratic_2D": {
+          "coefficients": [
+            0.33174465369591755,
+            0.7533721843870783,
+            -0.04198197691667097,
+            0.06717470481788887,
+            0.152169957078465,
+            0.12704546397519714
+          ],
+          "metrics": {
+            "rows": 7,
+            "systems": 7,
+            "validation_groups": 7,
+            "rms_log10_acceleration_dex": 0.08994989514666184,
+            "equal_system_rms_dex": 0.08994989514666184,
+            "median_absolute_acceleration_fraction": 0.16656870752394726,
+            "median_observed_over_predicted": 0.923103884551197,
+            "median_absolute_speed_fraction_under_same_radius": 0.08007810251108571,
+            "median_signed_log10_residual": 0.034749421456668705,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      }
+    },
+    "Milky_Way": {
+      "test_rows": 16,
+      "models": {
+        "RAR": {
+          "coefficients": [
+            0.5949099863603534
+          ],
+          "metrics": {
+            "rows": 16,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.5168242588645058,
+            "equal_system_rms_dex": 0.5168242588645058,
+            "median_absolute_acceleration_fraction": 0.5068402235390345,
+            "median_observed_over_predicted": 1.393768701941518,
+            "median_absolute_speed_fraction_under_same_radius": 0.2978204003501135,
+            "median_signed_log10_residual": -0.14116636733701304,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_exponent": {
+          "coefficients": [
+            0.9800159582218212,
+            0.4019334648877728
+          ],
+          "metrics": {
+            "rows": 16,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.6274273568493769,
+            "equal_system_rms_dex": 0.6274273568493769,
+            "median_absolute_acceleration_fraction": 0.631360611689902,
+            "median_observed_over_predicted": 2.186283475979562,
+            "median_absolute_speed_fraction_under_same_radius": 0.3928514339954632,
+            "median_signed_log10_residual": -0.33630320114274725,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius": {
+          "coefficients": [
+            0.36535446078974493,
+            0.2724653208854263
+          ],
+          "metrics": {
+            "rows": 16,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.6597242088953658,
+            "equal_system_rms_dex": 0.6597242088953658,
+            "median_absolute_acceleration_fraction": 0.6768714582788351,
+            "median_observed_over_predicted": 2.1630624862165124,
+            "median_absolute_speed_fraction_under_same_radius": 0.42247139899894753,
+            "median_signed_log10_residual": -0.3350626550841639,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_radius_quad": {
+          "coefficients": [
+            0.36936878804693324,
+            -0.08008656625232677,
+            0.17677052018983444
+          ],
+          "metrics": {
+            "rows": 16,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.4895119673079378,
+            "equal_system_rms_dex": 0.4895119673079378,
+            "median_absolute_acceleration_fraction": 0.5743910930839797,
+            "median_observed_over_predicted": 1.7594302436321154,
+            "median_absolute_speed_fraction_under_same_radius": 0.34761636113924754,
+            "median_signed_log10_residual": -0.24276431279339838,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_potential_quad": {
+          "coefficients": [
+            0.17711360066327617,
+            0.3059450227805745,
+            0.14736782350509095
+          ],
+          "metrics": {
+            "rows": 16,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.34749163134734967,
+            "equal_system_rms_dex": 0.34749163134734967,
+            "median_absolute_acceleration_fraction": 0.4789028973478083,
+            "median_observed_over_predicted": 1.2762042451695081,
+            "median_absolute_speed_fraction_under_same_radius": 0.252261867728491,
+            "median_signed_log10_residual": -0.10572782832537281,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "RAR_density_quad": {
+          "coefficients": [
+            0.5968007765961205,
+            0.22649959366678915,
+            0.0976056230554318
+          ],
+          "metrics": {
+            "rows": 16,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.578825635078707,
+            "equal_system_rms_dex": 0.578825635078707,
+            "median_absolute_acceleration_fraction": 0.6302624080617562,
+            "median_observed_over_predicted": 1.3302805863756433,
+            "median_absolute_speed_fraction_under_same_radius": 0.39352051369413593,
+            "median_signed_log10_residual": -0.12392893522902748,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        },
+        "quadratic_2D": {
+          "coefficients": [
+            0.3222287703698595,
+            0.7579096660128122,
+            -0.019413999225604772,
+            0.07242615549205328,
+            0.11653008559502567,
+            0.11076931197208692
+          ],
+          "metrics": {
+            "rows": 16,
+            "systems": 16,
+            "validation_groups": 16,
+            "rms_log10_acceleration_dex": 0.3118596363696955,
+            "equal_system_rms_dex": 0.3118596363696955,
+            "median_absolute_acceleration_fraction": 0.4284997493762648,
+            "median_observed_over_predicted": 1.3238740605634127,
+            "median_absolute_speed_fraction_under_same_radius": 0.21471568500888827,
+            "median_signed_log10_residual": -0.1209306865920593,
+            "fraction_predicted_below_baryons": 0.0
+          }
+        }
+      }
+    }
+  },
+  "fit_calls": 97,
+  "fit_warnings": []
+}

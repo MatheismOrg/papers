@@ -1,0 +1,117 @@
+<?xml version='1.0'?>
+<VOTABLE version="1.3"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 3.3-3 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2021-01-19T19:56:51
+ !-->
+<RESOURCE>
+<!-- Describes BINTABLE extensions in the following HDU.-->
+<TABLE name="Joined" nrows="144">
+<PARAM arraysize="33" datatype="char" name="Match type" value="Pair match; Best match, symmetric">
+<DESCRIPTION>Type of match which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="11" datatype="char" name="Match algorithm" value="Exact Value">
+<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="89" datatype="char" name="Join Type" value="All from 1 (An output row for each matched or unmatched row in table 1 (LEFT OUTER JOIN))">
+<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="22" datatype="char" name="First input table" value="2: NearbyGalaxies.fits"/>
+<PARAM arraysize="19" datatype="char" name="Second input table" value="1: values.ascii.tex"/>
+<FIELD arraysize="16" datatype="char" name="GalaxyName">
+<DESCRIPTION>Galaxy name</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="10" datatype="char" name="RA">
+<DESCRIPTION>Right Ascension (hours minutes seconds)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="11" datatype="char" name="Dec">
+<DESCRIPTION>Declination (degrees arcminutes arcseconds)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="EB-V">
+<DESCRIPTION>Foreground reddening, E(B-V), measured directly from the Schlegel et al 1998 maps (they do not include the recalibration by Schlafly &amp; Finbiener 2011)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dmod">
+<DESCRIPTION>Distance Modulus, (m-M)o err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dmod+"/>
+<FIELD datatype="float" name="dmod-"/>
+<FIELD datatype="float" name="vh">
+<DESCRIPTION>Heliocentric radial velocity, vh(km/s) err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="vh+"/>
+<FIELD datatype="float" name="vh-"/>
+<FIELD datatype="float" name="Vmag">
+<DESCRIPTION>Apparent V magnitude in Vega mags, Vmag err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Vmag+"/>
+<FIELD datatype="float" name="Vmag-"/>
+<FIELD datatype="float" name="PA">
+<DESCRIPTION>Position Angle of major axis in degrees measured east from north, PA err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="PA+"/>
+<FIELD datatype="float" name="PA-"/>
+<FIELD datatype="float" name="e=1-b/a">
+<DESCRIPTION>Projected ellipticity, e=1-b/a err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="e+"/>
+<FIELD datatype="float" name="e-"/>
+<FIELD datatype="float" name="muVo">
+<DESCRIPTION>Central V surface brightness, muVo(mag/sq.arcsec) err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="muVo+"/>
+<FIELD datatype="float" name="muVo-"/>
+<FIELD datatype="float" name="rh">
+<DESCRIPTION>Half-light radius measured on major axis, rh(arcmins) err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="rh+"/>
+<FIELD datatype="float" name="rh-"/>
+<FIELD datatype="float" name="sigma_s">
+<DESCRIPTION>Stellar radial velocity dispersion, sigma_s(km/s) err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="sigma_s+"/>
+<FIELD datatype="float" name="sigma_s-">
+<DESCRIPTION>Stellar peak/max rotation velocity, vrot_s(km/s) err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="vrot_s"/>
+<FIELD datatype="float" name="vrot_s+"/>
+<FIELD datatype="float" name="vrot_s-"/>
+<FIELD datatype="float" name="MHI">
+<DESCRIPTION>Mass of HI (calculated for the adopted distance modulus), M_HI (10^6M_sun)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="sigma_g">
+<DESCRIPTION>HI radial velocity dispersion, sigma_g(km/s) err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="sigma_g+"/>
+<FIELD datatype="float" name="sigma_g-"/>
+<FIELD datatype="float" name="vrot_g">
+<DESCRIPTION>HI peak/max rotation velocity, vrot_g(km/s) err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="vrot_g+"/>
+<FIELD datatype="float" name="vrot_g-"/>
+<FIELD datatype="float" name="[Fe/H]">
+<DESCRIPTION>Stellar mean metallicity in dex, [Fe/H] err+ err-</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="feh+"/>
+<FIELD datatype="float" name="feh-"/>
+<FIELD datatype="short" name="F">
+<DESCRIPTION>Flag, F, for technique used to measure metallicity: 1=High res. spectroscopy; 2=Spectral synthesis; 3=CaT calibration; 4=CMD modelling; 5=Isochrones; 6=color of red giant branch</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="pmra">
+<DESCRIPTION>mu_alpha*cos(delta) - proper motion in RA direction in mas/yr,  +err, -err</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="epmra+"/>
+<FIELD datatype="float" name="epmra-"/>
+<FIELD datatype="float" name="pmdec">
+<DESCRIPTION>mu_delta - proper motion in declination direction in mas/yr, +err, -err</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="epmdec+"/>
+<FIELD datatype="float" name="epmdec-"/>
+<FIELD arraysize="53" datatype="char" name="References">
+<DESCRIPTION>References, numbers refer to list given in supplementary file "References.dat"</DESCRIPTION>
+</FIELD>
+<!-- Dummy VOTable - no DATA element -->
+</TABLE>
+</RESOURCE>
+</VOTABLE>

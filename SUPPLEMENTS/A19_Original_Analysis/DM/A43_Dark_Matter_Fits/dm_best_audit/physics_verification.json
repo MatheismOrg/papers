@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "models": {
+    "RAR": {
+      "observed_coordinate_negative_response_intervals": 0,
+      "minimum_observed_coordinate_response_slope": 0.5008000463213591,
+      "fixed_radius_negative_response_intervals": 0,
+      "minimum_fixed_radius_response_slope": 0.5000000000114042,
+      "point_source_negative_extra_density_intervals": 0,
+      "tested_point_source_intervals": 24000
+    },
+    "simple": {
+      "observed_coordinate_negative_response_intervals": 0,
+      "minimum_observed_coordinate_response_slope": 0.5008072206491576,
+      "fixed_radius_negative_response_intervals": 0,
+      "minimum_fixed_radius_response_slope": 0.5000000000115463,
+      "point_source_negative_extra_density_intervals": 0,
+      "tested_point_source_intervals": 24000
+    },
+    "standard": {
+      "observed_coordinate_negative_response_intervals": 0,
+      "minimum_observed_coordinate_response_slope": 0.5000020973477959,
+      "fixed_radius_negative_response_intervals": 0,
+      "minimum_fixed_radius_response_slope": 0.4999999999999645,
+      "point_source_negative_extra_density_intervals": 0,
+      "tested_point_source_intervals": 24000
+    },
+    "nu_n": {
+      "observed_coordinate_negative_response_intervals": 0,
+      "minimum_observed_coordinate_response_slope": 0.5029928026756281,
+      "fixed_radius_negative_response_intervals": 0,
+      "minimum_fixed_radius_response_slope": 0.5000000021321966,
+      "point_source_negative_extra_density_intervals": 0,
+      "tested_point_source_intervals": 24000
+    },
+    "mixed_transient": {
+      "observed_coordinate_negative_response_intervals": 0,
+      "minimum_observed_coordinate_response_slope": 0.025804619641078826,
+      "fixed_radius_negative_response_intervals": 0,
+      "minimum_fixed_radius_response_slope": 0.02499999999994138,
+      "point_source_negative_extra_density_intervals": 0,
+      "tested_point_source_intervals": 24000
+    },
+    "mixed_potential_taper": {
+      "observed_coordinate_negative_response_intervals": 0,
+      "minimum_observed_coordinate_response_slope": 0.026105621819816346,
+      "fixed_radius_negative_response_intervals": 683,
+      "minimum_fixed_radius_response_slope": -0.12679796265929785,
+      "point_source_negative_extra_density_intervals": 0,
+      "tested_point_source_intervals": 24000
+    },
+    "two_log_bumps": {
+      "observed_coordinate_negative_response_intervals": 37,
+      "minimum_observed_coordinate_response_slope": -2.24860166926355,
+      "fixed_radius_negative_response_intervals": 2900,
+      "minimum_fixed_radius_response_slope": -2.3160972307493237,
+      "point_source_negative_extra_density_intervals": 613,
+      "tested_point_source_intervals": 24000
+    }
+  },
+  "solar_probe_rows": 42,
+  "max_solar_log_excess_absolute_difference": 9.094947017729282e-13,
+  "interpretation": "Transient repair passes these grids and has an analytic nonnegative point-source extra-density proof for all declared positive coefficients and alpha,beta<1. This is not an arbitrary-profile, field-theory, lensing, binary or external-field solar validation. Taper and bumps fail fixed-radius response monotonicity; bumps also fail point-source density positivity. Formal far-field BTFR normalization does not establish observed finite-radius BTFR agreement.",
+  "diagnostic_result_sha256": "a3d8260972a6bdcf5845528bb7750bbd7b73c8a6798baeb793044572e3d17340"
+}

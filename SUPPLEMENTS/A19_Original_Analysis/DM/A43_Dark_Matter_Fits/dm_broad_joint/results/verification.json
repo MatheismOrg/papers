@@ -1,0 +1,24 @@
+{
+  "verified_models": [
+    "RAR",
+    "RAR_exponent",
+    "RAR_radius",
+    "RAR_radius_quad",
+    "RAR_potential_quad",
+    "RAR_density_quad",
+    "quadratic_2D",
+    "RAR_piecewise",
+    "nested_shared"
+  ],
+  "rows": 2910,
+  "objects": 279,
+  "validation_groups": 278,
+  "population_holdout_equal_weight_RMS_dex": {
+    "RAR": 0.367130169419531,
+    "RAR_radius_quad": 0.5684984790426665,
+    "RAR_potential_quad": 0.31581076927543195,
+    "RAR_density_quad": 0.4082236948764116,
+    "quadratic_2D": 0.4882852184770389
+  },
+  "caution": "Frozen SPARC RAR is calibrated on SPARC, so its SPARC row is descriptive training-sample performance. Its other population rows are frozen transfer. New model rows use matched whole-system internal validation. Error bars/covariances are not used in fitting."
+}

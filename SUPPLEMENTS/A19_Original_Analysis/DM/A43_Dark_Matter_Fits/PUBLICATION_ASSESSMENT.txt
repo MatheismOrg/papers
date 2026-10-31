@@ -1,0 +1,60 @@
+A43 editorial assessment and next research target -- 29 October 2026
+
+RECOMMENDATION
+Keep A43 as a separate working research paper and reproducible technical report.
+Its empirical subject and substantial transfer tests do not fit naturally into
+A18's geometric-harmonic proposal or A41's discreteness argument. Those papers
+need at most a short cross-reference; the fitting results are not evidence that
+spacetime must be discrete. Do not present A43 as a completed discovery paper.
+
+WHAT IS WORTH RETAINING
+The comparison distinguishes interpolation within an observed galaxy, prediction
+of an unseen galaxy, and transfer across populations. It documents an invalid
+radius-based improvement, matched tests of established halo/RAR prescriptions,
+a gas-phase transfer failure, and explicit mass-budget limits for fixed positive
+nonlocal kernels. The data, code and failures make these claims reviewable.
+Some of these ideas are known; no literature-wide priority claim is established.
+
+CURRENT IMPROVEMENT
+The new stellar-mass NFW mapping uses three coefficients, as did the prior
+baryonic-mass mapping. Disk held-out RMS is essentially unchanged, while frozen
+44-dwarf RMS is 28.2% lower. Its RAR blend improves dwarf RMS 24.2% versus the
+prior blend while preserving average disk performance. The prior 25-object
+quality sensitivity retains the gain. These are more useful transfer results
+than the earlier roughly 2% disk-only ensemble difference.
+
+The gain is not uniform: the pure stellar rule worsens classical dwarfs and
+Andromeda, and three disk feature tails. Remaining absolute dwarf errors are
+large. The new branch was chosen adaptively using already inspected outcomes.
+Conditional resampling excludes host correlations and reconstruction/search
+uncertainty. It does not establish literature-wide superiority or a new theory.
+
+The population-scatter branch improves the tested predictive log score, even
+under a nonlinear halo-moment sensitivity, but its central disk RMS worsens.
+It is a linearized/moment-matched Gaussian approximation, not a complete nonlinear
+hierarchical inference or exact predictive mixture.
+
+FOR A JOURNAL MANUSCRIPT
+The current long paper is a research record. A submission should have one clear
+question, for example predictive transfer of compact baryon-halo relations, and
+a shorter main text with the failed exploratory branches in a technical supplement.
+Establish a distinct contribution relative to published SPARC catalogs, symbolic
+regression, halo-response and cross-scale studies. Include nuisance/covariance
+treatment and independent external validation. Repeatedly re-partitioning SPARC
+does not correct adaptive model-search bias. External expert review is valuable.
+
+BEST NEXT EXPERIMENT
+Carry the stellar-based population mapping into a full nonlinear predictive
+likelihood, including concentration scatter, photometric nuisance parameters and
+selection. Compare its direct predictions with the three-coefficient stellar rule
+and the five-coefficient ensemble; gains in coverage alone are not point gains.
+For dwarfs, replace half-mass summaries by dispersion profiles, anisotropy priors
+and satellite evolution/tidal histories. Independently measured histories could
+help separate initial halo state from stripping and stellar feedback, but no new
+gravity memory is established. Obtain genuinely uninspected galaxies or surveys;
+additional SPARC partitions cannot undo adaptive search.
+
+The cluster hot-gas result and dwarf failures should remain mandatory external
+tests; do not retune them silently or average their different observables into
+a favorable aggregate. A later unified theory must specify dynamics and lensing,
+and be tested on Solar-System and cosmological likelihoods.

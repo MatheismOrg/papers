@@ -1,0 +1,24 @@
+{
+  "retrieved_user_date": "2026-10-27",
+  "files": {
+    "ETG_Lelli2017.mrt": "https://astroweb.case.edu/SPARC/ETG_Lelli2017.mrt",
+    "Rotmod_ETG.zip": "https://astroweb.case.edu/SPARC/Rotmod_ETG.zip",
+    "Lelli2017.pdf": "https://arxiv.org/pdf/1610.08981",
+    "brouwer2021_rar.tar": "https://kids.strw.leidenuniv.nl/sci_data/brouwer2021_rar.tar",
+    "brouwer2021_rar_README.txt": "https://kids.strw.leidenuniv.nl/sci_data/brouwer2021_rar_README.txt",
+    "Brouwer2021.pdf": "https://arxiv.org/pdf/2106.11677",
+    "Milgrom2019.pdf": "https://arxiv.org/pdf/1811.12233",
+    "Bilek2026.pdf": "https://arxiv.org/pdf/2603.23591"
+  },
+  "primary_release_pages": [
+    "https://astroweb.case.edu/SPARC/",
+    "https://kids.strw.leidenuniv.nl/sciencedata.php"
+  ],
+  "references": [
+    "Lelli F., McGaugh S.S., Schombert J.M., Pawlowski M.S. (2017), One Law To Rule Them All: The Radial Acceleration Relation of Galaxies, ApJ 836, 152. arXiv:1610.08981.",
+    "Brouwer M.M. et al. (2021), The Weak Lensing Radial Acceleration Relation: Constraining Modified Gravity and Cold Dark Matter theories with KiDS-1000, A&A 650, A113. doi:10.1051/0004-6361/202040108. arXiv:2106.11677.",
+    "Milgrom M. (2019), MOND in galaxy groups: A superior sample, Phys. Rev. D 99, 044041. doi:10.1103/PhysRevD.99.044041. arXiv:1811.12233v2.",
+    "Makarov D., Karachentsev I. (2011), MNRAS 412, 2498 (underlying observed group catalog reproduced in Milgrom2019 Table I).",
+    "Bilek M., Renaud F., Samurovic S. (2026), Deviations from the radial acceleration relation in the central galaxies of clusters, subclusters, and groups, arXiv:2603.23591. Context only; no numerical acceleration pairs from this paper were used."
+  ]
+}

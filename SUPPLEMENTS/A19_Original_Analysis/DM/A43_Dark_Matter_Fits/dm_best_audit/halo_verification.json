@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "prediction_tables": 20,
+  "prediction_rows": 15760,
+  "fit_sets": 1254,
+  "optimizer_attempts": 3762,
+  "failed_optimizer_attempts": 0,
+  "max_independent_prediction_error_dex": 1.0544343176377424e-13,
+  "max_independent_cost_error": 1.9081958235744878e-16,
+  "raw_sparc_rows_independently_matched": 2700,
+  "independent_halo_integral_relative_error": 4.440892098500626e-16,
+  "descriptive_bootstrap_comparisons_checked": 54,
+  "all_contiguous_splits_and_training_targets_checked": true,
+  "result_hash": "c0110f92d7195accb492a22b8432c468e3a69b2fc8c2543d6288e0021f7adf64",
+  "audit_script_hash": "9c87fe7578725a6e2be57396165fb22449c794702edca3d603a4bfbfcc16b19c",
+  "limitations": "Conditional radial prediction within measured galaxies, not prediction of entirely new systems. Counts/metrics do not equal a cosmological likelihood or best published nuisance-marginalized analysis."
+}

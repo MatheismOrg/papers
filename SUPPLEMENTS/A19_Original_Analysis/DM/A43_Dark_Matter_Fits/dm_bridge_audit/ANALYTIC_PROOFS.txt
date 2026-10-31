@@ -1,0 +1,78 @@
+Independent analytical checks and their scope
+
+Positive spatial response and mass budget
+
+For q_NLG(d)=alpha*mu*(1+mu*d)*exp(-mu*d)/(8*pi*d^2), radial integration gives
+4*pi*d^2*q(d) dd = alpha*(1+t)*exp(-t)dt/2, t=mu*d.
+For q_MOG(d)=alpha*mu^2*exp(-mu*d)/(4*pi*d), it gives alpha*t*exp(-t)dt.
+Both radial probabilities integrate to one, so integral q d^3x=alpha.
+Positivity and finite baryonic mass permit Tonelli's theorem:
+integral(q*rho_b) d^3x = alpha*M_b.
+
+For an isolated spherical source, the effective Poisson equation and shell
+theorem give g/g_b = 1 + M_extra(<r)/M_b(<r). At the baryonic half-mass radius
+M_b(<r)=M_b/2, hence g/g_b <= 1+2*alpha. For a baryonic enclosed fraction f,
+the general bound is 1+alpha/f. This is necessary, not sufficient, and does
+not bound a satellite's field when host sources have been omitted.
+
+For radially nonincreasing rho_b, the centered ball encloses maximal source
+mass among all translates of the same ball. A proof uses layer-cake
+decomposition into nested constant-density balls: each overlap volume is
+largest for coincident centers. The normalized q/alpha is a probability
+mixture of translations. Therefore M_extra(<r)<=alpha*M_b(<r), yielding
+g/g_b<=1+alpha at every radius. Plummer obeys this condition; a hollow shell
+need not. This sharpened result is not assumed for arbitrary spherical data.
+
+Exact Plummer translated-ball fraction
+
+For rho=3/(4*pi)*(1+s^2)^(-5/2), define F_R(d) as the mass in a radius-R ball
+whose center is d from the source center. Angular integration gives
+F_R(d)=(1/(2d))*integral_0^R s{[1+(s-d)^2]^(-3/2)
+                                -[1+(s+d)^2]^(-3/2)} ds.
+Let A=sqrt(1+(R-d)^2), B=sqrt(1+(R+d)^2), D=d^2+1-R^2.
+Integrating analytically yields R*(A*B-D)/(A*B*(A+B)).
+Since (A*B)^2-D^2=4R^2, rationalization gives the stable form
+
+F_R(d)=4*R^3/[A*B*(A+B)*(A*B+D)].
+
+This has no large-d subtraction and also works at d=0. At
+R=[2^(2/3)-1]^(-1/2), F_R(0)=1/2. Independently, integrate source-centered
+shells with dM=3*s^2/(1+s^2)^(5/2)ds and angular overlap fraction
+[1-(s^2+d^2-R^2)/(2*s*d)]/2 for |d-R|<s<d+R, adding fully enclosed inner
+shells when d<R. The two constructions agree in verify_field_bridge.py.
+
+H(z)=integral_0^infinity p(t)*F_R(t/z)dt, z=mu*a, includes exterior baryons.
+At the Plummer half-mass radius, g/g_b=1+2*alpha*H(z), 0<=H<=1/2.
+As mu grows, H tends to 1/2, so the model becomes g=(1+alpha)g_b.
+For equal-object squared-log loss, the optimum in that limit is exactly
+alpha=10^mean(log10(gobs/gbar))-1, provided this is nonnegative.
+All selected fitted kernels in this round reach the declared mu upper bound;
+their alpha values approach this elementary common-rescaling optimum. This
+does not measure a finite memory scale or show that time history was fitted.
+
+Constant gas multiplier and a baseline-response inequality
+
+If gbar=gstar+ggas and f=ggas/gbar>=1/2, a positive common eta gives
+gsrc/gbar=t=1+eta*f >=1+eta/2. Linearity of the supplied Newtonian force
+components makes this exact for a spatially constant density multiplier.
+It is not an exact finite-exponential-cutoff convolution for a flattened disk.
+
+For simple MOND response F(x)=[x+sqrt(x^2+4*a0*x)]/2, the logarithmic slope
+lies between 1/2 and 1. Integration of that slope between x and t*x gives
+sqrt(t)<=F(t*x)/F(x)<=t, t>=1. The circular-speed ratio is its square root.
+Thus eta=11.774... forces at least a 2.624... increase in predicted
+acceleration relative to eta=0 on the selected gas-rich sample. This is a
+comparison of model predictions, not an inequality about observational
+residuals. It neither derives gas-temperature dependence nor rules out an
+appropriately integrated spatially varying response.
+
+Cosmological reference-mass convention
+
+rho_critical=3*H0^2/(8*pi*G), Mref=(4*pi/3)*200*rho_critical*r200^3,
+so r200=[G*Mref/(100*H0^2)]^(1/3).
+The published relation uses Mref/(10^12 h^-1 Msun)=Mref*h/(10^12 Msun).
+The tested convention assigns dark mass (1-fb)*Mref, normalizes its NFW
+enclosed mass by f(c)=ln(1+c)-c/(1+c), and truncates it at r200. Adding the
+separately measured baryonic field does not require actual total mass inside
+that reference r200 to equal Mref. Thus r200 remains a DMO-equivalent
+reference radius, not an asserted measurement of the assembled halo boundary.

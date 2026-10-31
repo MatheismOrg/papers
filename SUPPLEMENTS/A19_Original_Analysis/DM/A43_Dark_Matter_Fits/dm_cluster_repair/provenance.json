@@ -1,0 +1,571 @@
+{
+  "source_urls": {
+    "CLASH_gas": "https://zenodo.org/records/15299349/files/ClusterInfo.py?download=1",
+    "paper": "https://arxiv.org/html/2410.02612v2",
+    "published_equation": 17
+  },
+  "source_hashes": {
+    "dm_unified_regular/augmented_input.csv": "37b8fde78867bbf4a2cc804288c823304c3dce47f1f1562891fe915d0e133df5",
+    "clash_gas_parameters.csv": "2d2eab67669fb7d1c10f3303b8b97a02eaa1fcbb8afe9027456a42d60114ee72",
+    "dm_fit/data/xcop/A1795_fgas_profile.fits": "4c033c037c56dada26e178ed8c0b0981dd5b0ed9fc110e65e22e344f05c1b90e",
+    "dm_fit/data/xcop/A2029_fgas_profile.fits": "eacb8e84fb5faa97db78cc8bf368b3c2da57f0b05631fbe5b5bef6d13c735153",
+    "dm_fit/data/xcop/A2142_fgas_profile.fits": "0d2af4cf068aea3225c98cee51cb5ab5a50470cfcd0097e7bb589bcacbe77a42",
+    "dm_fit/data/xcop/A2319_fgas_profile.fits": "36d767bb24e5b538cc66085c56123d42e92a6340611441e99df1ae46aa7f8262",
+    "dm_fit/data/xcop/A644_fgas_profile.fits": "3d80ee519875e827cf5767d4409fb0abb4133f95b021ae08aad499d95661d20f",
+    "dm_fit/data/xcop/A85_fgas_profile.fits": "b01ad8060b68565a82389bfeee3c0131c4f9dfad01dadb756d1786a64f7ecea9",
+    "dm_fit/data/xcop/ZW1215_fgas_profile.fits": "80c9c053c249874dae45a0126bd15818ab7ff011e3b87030b20d68de9ab7f7aa"
+  },
+  "missing_gas_exclusions": [
+    {
+      "system": "CLASH_A383",
+      "row": 2827,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_MACS0717",
+      "row": 2834,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_MACS1931",
+      "row": 2840,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_RXJ1532",
+      "row": 2843,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_A383",
+      "row": 2847,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_MACS0717",
+      "row": 2853,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_MACS1931",
+      "row": 2858,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_RXJ1532",
+      "row": 2861,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_A383",
+      "row": 2865,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_MACS0717",
+      "row": 2872,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_MACS1931",
+      "row": 2878,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_RXJ1532",
+      "row": 2881,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_A383",
+      "row": 2885,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_MACS0717",
+      "row": 2889,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_MACS1931",
+      "row": 2894,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_RXJ1532",
+      "row": 2896,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_MACS0717",
+      "row": 2902,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_MACS1931",
+      "row": 2905,
+      "reason": "No gas-profile parameters in published16-host archive"
+    },
+    {
+      "system": "CLASH_RXJ1532",
+      "row": 2907,
+      "reason": "No gas-profile parameters in published16-host archive"
+    }
+  ],
+  "quadrature_checks": [
+    {
+      "system": "CLASH_A209",
+      "r_kpc": 14.3,
+      "relative_mass_quadrature_change": 2.1538326677728037e-14
+    },
+    {
+      "system": "CLASH_A611",
+      "r_kpc": 22.2,
+      "relative_mass_quadrature_change": 1.9539925233402755e-14
+    },
+    {
+      "system": "CLASH_A2261",
+      "r_kpc": 23.6,
+      "relative_mass_quadrature_change": 2.4646951146678475e-14
+    },
+    {
+      "system": "CLASH_MACS0329",
+      "r_kpc": 22.2,
+      "relative_mass_quadrature_change": 2.220446049250313e-14
+    },
+    {
+      "system": "CLASH_MACS0416",
+      "r_kpc": 14.3,
+      "relative_mass_quadrature_change": 2.842170943040401e-14
+    },
+    {
+      "system": "CLASH_MACS0429",
+      "r_kpc": 17.2,
+      "relative_mass_quadrature_change": 2.4646951146678475e-14
+    },
+    {
+      "system": "CLASH_MACS0647",
+      "r_kpc": 14.3,
+      "relative_mass_quadrature_change": 1.9539925233402755e-14
+    },
+    {
+      "system": "CLASH_MACS0744",
+      "r_kpc": 14.3,
+      "relative_mass_quadrature_change": 1.509903313490213e-14
+    },
+    {
+      "system": "CLASH_MACS1115",
+      "r_kpc": 16.2,
+      "relative_mass_quadrature_change": 2.5979218776228663e-14
+    },
+    {
+      "system": "CLASH_MACS1149",
+      "r_kpc": 14.3,
+      "relative_mass_quadrature_change": 2.2648549702353193e-14
+    },
+    {
+      "system": "CLASH_MACS1206",
+      "r_kpc": 14.3,
+      "relative_mass_quadrature_change": 1.9539925233402755e-14
+    },
+    {
+      "system": "CLASH_MACS1720",
+      "r_kpc": 23.6,
+      "relative_mass_quadrature_change": 1.4432899320127035e-14
+    },
+    {
+      "system": "CLASH_MS2137",
+      "r_kpc": 14.3,
+      "relative_mass_quadrature_change": 1.9984014443252818e-14
+    },
+    {
+      "system": "CLASH_RXJ1347",
+      "r_kpc": 14.3,
+      "relative_mass_quadrature_change": 2.2426505097428162e-14
+    },
+    {
+      "system": "CLASH_RXJ2129",
+      "r_kpc": 14.3,
+      "relative_mass_quadrature_change": 1.709743457922741e-14
+    },
+    {
+      "system": "CLASH_RXJ2248",
+      "r_kpc": 30.3,
+      "relative_mass_quadrature_change": 2.1094237467877974e-14
+    },
+    {
+      "system": "CLASH_A209",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 2.042810365310288e-14
+    },
+    {
+      "system": "CLASH_A611",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.6653345369377348e-14
+    },
+    {
+      "system": "CLASH_A2261",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.687538997430238e-14
+    },
+    {
+      "system": "CLASH_MACS0329",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 9.769962616701378e-15
+    },
+    {
+      "system": "CLASH_MACS0429",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.1324274851176597e-14
+    },
+    {
+      "system": "CLASH_MACS0647",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.8207657603852567e-14
+    },
+    {
+      "system": "CLASH_MACS0744",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.4210854715202004e-14
+    },
+    {
+      "system": "CLASH_MACS1115",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.3766765505351941e-14
+    },
+    {
+      "system": "CLASH_MACS1206",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.7763568394002505e-14
+    },
+    {
+      "system": "CLASH_MACS1720",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.3766765505351941e-14
+    },
+    {
+      "system": "CLASH_MS2137",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 9.547918011776346e-15
+    },
+    {
+      "system": "CLASH_RXJ1347",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.4210854715202004e-14
+    },
+    {
+      "system": "CLASH_RXJ2129",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.3988810110276972e-14
+    },
+    {
+      "system": "CLASH_RXJ2248",
+      "r_kpc": 100.0,
+      "relative_mass_quadrature_change": 1.9761969838327786e-14
+    },
+    {
+      "system": "CLASH_A209",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 1.7763568394002505e-14
+    },
+    {
+      "system": "CLASH_A611",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 1.2212453270876722e-14
+    },
+    {
+      "system": "CLASH_A2261",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 1.2434497875801753e-14
+    },
+    {
+      "system": "CLASH_MACS0329",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 1.1324274851176597e-14
+    },
+    {
+      "system": "CLASH_MACS0416",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 2.375877272697835e-14
+    },
+    {
+      "system": "CLASH_MACS0429",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 8.43769498715119e-15
+    },
+    {
+      "system": "CLASH_MACS0647",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 1.5765166949677223e-14
+    },
+    {
+      "system": "CLASH_MACS0744",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 1.2434497875801753e-14
+    },
+    {
+      "system": "CLASH_MACS1115",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 1.0880185641326534e-14
+    },
+    {
+      "system": "CLASH_MACS1149",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 2.1094237467877974e-14
+    },
+    {
+      "system": "CLASH_MACS1206",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 1.4876988529977098e-14
+    },
+    {
+      "system": "CLASH_MACS1720",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 1.1546319456101628e-14
+    },
+    {
+      "system": "CLASH_MS2137",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 6.661338147750939e-15
+    },
+    {
+      "system": "CLASH_RXJ1347",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 9.769962616701378e-15
+    },
+    {
+      "system": "CLASH_RXJ2129",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 9.769962616701378e-15
+    },
+    {
+      "system": "CLASH_RXJ2248",
+      "r_kpc": 200.0,
+      "relative_mass_quadrature_change": 1.6431300764452317e-14
+    },
+    {
+      "system": "CLASH_A209",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 1.2656542480726785e-14
+    },
+    {
+      "system": "CLASH_A611",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 7.993605777301127e-15
+    },
+    {
+      "system": "CLASH_A2261",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 7.771561172376096e-15
+    },
+    {
+      "system": "CLASH_MACS0416",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 1.5765166949677223e-14
+    },
+    {
+      "system": "CLASH_MACS0744",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 8.659739592076221e-15
+    },
+    {
+      "system": "CLASH_MACS1149",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 1.7985612998927536e-14
+    },
+    {
+      "system": "CLASH_MACS1206",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 9.769962616701378e-15
+    },
+    {
+      "system": "CLASH_MACS1720",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 7.993605777301127e-15
+    },
+    {
+      "system": "CLASH_RXJ1347",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 3.9968028886505635e-15
+    },
+    {
+      "system": "CLASH_RXJ2129",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 6.217248937900877e-15
+    },
+    {
+      "system": "CLASH_RXJ2248",
+      "r_kpc": 400.0,
+      "relative_mass_quadrature_change": 9.547918011776346e-15
+    },
+    {
+      "system": "CLASH_A209",
+      "r_kpc": 600.0,
+      "relative_mass_quadrature_change": 9.547918011776346e-15
+    },
+    {
+      "system": "CLASH_A611",
+      "r_kpc": 600.0,
+      "relative_mass_quadrature_change": 5.995204332975845e-15
+    },
+    {
+      "system": "CLASH_A2261",
+      "r_kpc": 600.0,
+      "relative_mass_quadrature_change": 6.8833827526759706e-15
+    },
+    {
+      "system": "CLASH_MACS0744",
+      "r_kpc": 600.0,
+      "relative_mass_quadrature_change": 6.439293542825908e-15
+    },
+    {
+      "system": "CLASH_MACS1206",
+      "r_kpc": 600.0,
+      "relative_mass_quadrature_change": 7.327471962526033e-15
+    },
+    {
+      "system": "CLASH_RXJ1347",
+      "r_kpc": 600.0,
+      "relative_mass_quadrature_change": 4.6629367034256575e-15
+    },
+    {
+      "system": "CLASH_RXJ2129",
+      "r_kpc": 600.0,
+      "relative_mass_quadrature_change": 5.329070518200751e-15
+    },
+    {
+      "system": "CLASH_RXJ2248",
+      "r_kpc": 600.0,
+      "relative_mass_quadrature_change": 5.773159728050814e-15
+    },
+    {
+      "system": "XCOP_A1795",
+      "r_kpc": 500.0,
+      "relative_mass_quadrature_change": 0.0
+    },
+    {
+      "system": "XCOP_A1795",
+      "r_kpc": 750.0,
+      "relative_mass_quadrature_change": 2.220446049250313e-16
+    },
+    {
+      "system": "XCOP_A1795",
+      "r_kpc": 1000.0,
+      "relative_mass_quadrature_change": 0.0
+    },
+    {
+      "system": "XCOP_A2029",
+      "r_kpc": 500.0,
+      "relative_mass_quadrature_change": 2.220446049250313e-16
+    },
+    {
+      "system": "XCOP_A2029",
+      "r_kpc": 750.0,
+      "relative_mass_quadrature_change": 1.1102230246251565e-16
+    },
+    {
+      "system": "XCOP_A2029",
+      "r_kpc": 1000.0,
+      "relative_mass_quadrature_change": 2.220446049250313e-16
+    },
+    {
+      "system": "XCOP_A2142",
+      "r_kpc": 500.0,
+      "relative_mass_quadrature_change": 0.0
+    },
+    {
+      "system": "XCOP_A2142",
+      "r_kpc": 750.0,
+      "relative_mass_quadrature_change": 0.0
+    },
+    {
+      "system": "XCOP_A2142",
+      "r_kpc": 1000.0,
+      "relative_mass_quadrature_change": 2.220446049250313e-16
+    },
+    {
+      "system": "XCOP_A2319",
+      "r_kpc": 500.0,
+      "relative_mass_quadrature_change": 2.220446049250313e-16
+    },
+    {
+      "system": "XCOP_A2319",
+      "r_kpc": 750.0,
+      "relative_mass_quadrature_change": 4.440892098500626e-16
+    },
+    {
+      "system": "XCOP_A2319",
+      "r_kpc": 1000.0,
+      "relative_mass_quadrature_change": 0.0
+    },
+    {
+      "system": "XCOP_A644",
+      "r_kpc": 500.0,
+      "relative_mass_quadrature_change": 0.0
+    },
+    {
+      "system": "XCOP_A644",
+      "r_kpc": 750.0,
+      "relative_mass_quadrature_change": 2.220446049250313e-16
+    },
+    {
+      "system": "XCOP_A644",
+      "r_kpc": 1000.0,
+      "relative_mass_quadrature_change": 0.0
+    },
+    {
+      "system": "XCOP_A85",
+      "r_kpc": 500.0,
+      "relative_mass_quadrature_change": 1.1102230246251565e-16
+    },
+    {
+      "system": "XCOP_A85",
+      "r_kpc": 750.0,
+      "relative_mass_quadrature_change": 0.0
+    },
+    {
+      "system": "XCOP_A85",
+      "r_kpc": 1000.0,
+      "relative_mass_quadrature_change": 0.0
+    },
+    {
+      "system": "XCOP_ZW1215",
+      "r_kpc": 500.0,
+      "relative_mass_quadrature_change": 2.220446049250313e-16
+    },
+    {
+      "system": "XCOP_ZW1215",
+      "r_kpc": 750.0,
+      "relative_mass_quadrature_change": 0.0
+    },
+    {
+      "system": "XCOP_ZW1215",
+      "r_kpc": 1000.0,
+      "relative_mass_quadrature_change": 2.220446049250313e-16
+    }
+  ],
+  "counts": {
+    "CLASH": {
+      "rows": 65,
+      "systems": 16
+    },
+    "XCOP": {
+      "rows": 21,
+      "systems": 7
+    }
+  },
+  "gas_old_baryon_consistency_CLASH": {
+    "median_ratio": 0.6811127982952744,
+    "max_ratio": 0.9478456161598481,
+    "rows_gas_exceeds_old_total_baryons": 0
+  },
+  "CLASH_original_archive_provenance": {
+    "URL": "https://zenodo.org/records/15299349/files/ClusterInfo.py?download=1",
+    "sha256": "59bfc1d0d4dc35bf9dcc3e6b02c42d4b57bbba081d6749e0b1f08b04f23f9db4",
+    "authors": "B. Famaey, L. Pizzuti, I. D. Saltas; gas profiles credited to V. Salzano",
+    "paper": "https://doi.org/10.1103/dccw-srks",
+    "dataset_DOI": "10.5281/zenodo.15299349",
+    "extraction": "AST literal parameter rows, with MACS1720 single-beta treatment explicitly required by source; no third-party code executed",
+    "parameter_csv_sha256": "2d2eab67669fb7d1c10f3303b8b97a02eaa1fcbb8afe9027456a42d60114ee72"
+  }
+}

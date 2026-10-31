@@ -1,0 +1,17 @@
+Primary bridge tests use fivefold whole-object exclusion (seed 20261027); panels
+refer to different samples and cannot be pooled into one score. Lower is better.
+(A) Equal-galaxy RMS log10 acceleration differences relative to the refitted
+exponential RAR; bars give descriptive 95% paired galaxy-bootstrap intervals of
+fixed validation residuals. Both shared NFW relations overlap zero. The published
+c(M) relation is fixed; the three fitted coefficients relate halo mass to observed
+baryonic mass and size. (B) Equal-dwarf RMS for 44 half-light acceleration proxies,
+assuming isolated spherical Plummer stars and M/L_V=2. Fixed NLG/MOG parameters
+come from published galaxy/cluster studies; fixed RAR uses a0=1.2e-10 m/s^2.
+Shared dwarf refits are scored on excluded objects. Both kernel refits approach
+their inverse-length upper bound; this is not a full Jeans or complete-theory
+test. (C,D) Simple-MOND gas extensions on the same selected cold-disk and hot-cluster
+rows: no added gas source, one calibration shared across both domains, or separate
+domain calibrations. Each host receives equal weight; the cluster score also
+balances CLASH and X-COP sources. The disk extension uniformly weights the gas
+source; it is not a finite-cutoff disk convolution or the published hot-only
+proposal. The shared gas calibration compromises between the two samples.

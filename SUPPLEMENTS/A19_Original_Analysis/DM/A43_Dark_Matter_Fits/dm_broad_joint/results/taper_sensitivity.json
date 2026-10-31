@@ -1,0 +1,92 @@
+{
+  "status": "Post-search regulator sensitivity with existing fitted coefficients; no refitting, independent data, or confirmatory model selection.",
+  "formula": "g=gbar/[1-exp(-sqrt(gbar/a_eff))]; log10(a_eff/1e-10)=(a+b*q+c*q*q)/(1+(gbar/1e-8)^2); q=x+u",
+  "chosen_g_cut_m_s2": 1e-08,
+  "cross_validation": {
+    "CLASH": {
+      "rows": 84,
+      "median_absolute_acceleration_fraction": 0.3442555526167781,
+      "rms_log10_acceleration_dex": 0.21286292033475773,
+      "equal_group_rms_dex": 0.21109877638712146
+    },
+    "ETG": {
+      "rows": 32,
+      "median_absolute_acceleration_fraction": 0.39594959806101954,
+      "rms_log10_acceleration_dex": 0.20818230712336597,
+      "equal_group_rms_dex": 0.20818230712336597
+    },
+    "MaNGA_BCG": {
+      "rows": 50,
+      "median_absolute_acceleration_fraction": 0.2082871939393829,
+      "rms_log10_acceleration_dex": 0.14726076774548175,
+      "equal_group_rms_dex": 0.14871392805235445
+    },
+    "SPARC": {
+      "rows": 2700,
+      "median_absolute_acceleration_fraction": 0.29012772624484695,
+      "rms_log10_acceleration_dex": 0.1718603269102578,
+      "equal_group_rms_dex": 0.18390128337500955
+    },
+    "dSph": {
+      "rows": 44,
+      "median_absolute_acceleration_fraction": 0.5312626697826158,
+      "rms_log10_acceleration_dex": 0.4091947331310775,
+      "equal_group_rms_dex": 0.40919473313107757
+    }
+  },
+  "leave_population_out": {
+    "CLASH": {
+      "rows": 84,
+      "median_absolute_acceleration_fraction": 0.3553678657383862,
+      "rms_log10_acceleration_dex": 0.2209915589108995,
+      "equal_group_rms_dex": 0.21802677498438178
+    },
+    "ETG": {
+      "rows": 32,
+      "median_absolute_acceleration_fraction": 0.40006552788708966,
+      "rms_log10_acceleration_dex": 0.20752044634820652,
+      "equal_group_rms_dex": 0.20752044634820652
+    },
+    "MaNGA_BCG": {
+      "rows": 50,
+      "median_absolute_acceleration_fraction": 0.2196698254507754,
+      "rms_log10_acceleration_dex": 0.15171929650233018,
+      "equal_group_rms_dex": 0.15324647614954148
+    },
+    "SPARC": {
+      "rows": 2700,
+      "median_absolute_acceleration_fraction": 0.3140478860806605,
+      "rms_log10_acceleration_dex": 0.1791483240204536,
+      "equal_group_rms_dex": 0.18822592193338517
+    },
+    "dSph": {
+      "rows": 44,
+      "median_absolute_acceleration_fraction": 0.6066100847140824,
+      "rms_log10_acceleration_dex": 0.59110540396067,
+      "equal_group_rms_dex": 0.59110540396067
+    }
+  },
+  "solar_central_force_smoke_checks": [
+    {
+      "radius_AU": 1.0,
+      "gbar_m_s2": 0.0059300835189571065,
+      "a_eff_m_s2": 9.999999999995263e-11,
+      "log10_fractional_acceleration_correction": -3344.3730592319284
+    },
+    {
+      "radius_AU": 9.58,
+      "gbar_m_s2": 6.4614470811201e-05,
+      "a_eff_m_s2": 9.99999996287019e-11,
+      "log10_fractional_acceleration_correction": -349.09948491022266
+    },
+    {
+      "radius_AU": 30.07,
+      "gbar_m_s2": 6.5583403927108855e-06,
+      "a_eff_m_s2": 1.0000003297093259e-10,
+      "log10_fractional_acceleration_correction": -111.21957126357763
+    }
+  ],
+  "balanced_group_cv_rms_dex": 0.24951088570934038,
+  "balanced_population_holdout_rms_dex": 0.31588589363695263,
+  "solar_scope": "Only spherical central Sun acceleration is evaluated. Does not calculate external-field quadrupole, planetary ephemerides, lensing, relativistic effects or CMB. Radius is far outside the empirical training range."
+}

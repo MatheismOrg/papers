@@ -1,0 +1,632 @@
+{
+  "sagittariusdsph": {
+    "table1_name": "Sagittarius dSph",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Sagittarius dSph                          G      dSph      18h55m19.5s     -30d32m43s   Ibata et al. (1994)           Tidally disrupting"
+  },
+  "tucana3": {
+    "table1_name": "Tucana III",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Tucana III         DES J2356-5935         G      dSph?     23h56m36.0s     -59d36m00s   Drlica-Wagner et al. (2015)   Cluster? Tidally disrupting?"
+  },
+  "hydrus1": {
+    "table1_name": "Hydrus 1",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Hydrus 1                                  G      dSph       2h29m33.4s   -79m18m32.0s   Koposov et al. (2018)"
+  },
+  "draco2": {
+    "table1_name": "Draco II",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Draco II                                  G      dSph?     15h52m47.6s    +64d33m55s    Laevens et al. (2015a)"
+  },
+  "segue1": {
+    "table1_name": "Segue (I)",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Segue (I)                                 G      dSph      10h07m04.0s    +16d04m55s    Belokurov et al. (2007)"
+  },
+  "carina3": {
+    "table1_name": "Carina 3",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Carina 3                                  G      dSph       7h38m31.2s   -57m53m59.0s   Torrealba et al. (2018)"
+  },
+  "reticulum2": {
+    "table1_name": "Reticulum 2",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Reticulum 2        DES J0335.6-5403       G      dSph?      3h35m42.1s     -54d02m57s   Bechtol et al. (2015)         Cluster? LMC subgroup?"
+  },
+  "cetus2": {
+    "table1_name": "Cetus II",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Cetus II           DES J0117-1725         G      dSph?      1h17m52.8s     -17d25m12s   Drlica-Wagner et al. (2015)   Part of Sgr stream? (Conn et al. 2018b)"
+  },
+  "triangulum2": {
+    "table1_name": "Triangulum II",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Triangulum II      Laevens 2              G      dSph?      2h13m17.4s    +36d10m42s    Laevens et al. (2015b)        Cluster?"
+  },
+  "carina2": {
+    "table1_name": "Carina 2",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Carina 2                                  G      dSph       7h36m25.6s   -57m59m57.0s   Torrealba et al. (2018)"
+  },
+  "ursamajor2": {
+    "table1_name": "Ursa Major II",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Ursa Major II                             G      dSph      08h51m30.0s    +63d07m48s    Zucker et al. (2006a)"
+  },
+  "bootes2": {
+    "table1_name": "Bootes II",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Bootes II                                 G      dSph      13h58m00.0s    +12d51m00s    Walsh et al. (2007)"
+  },
+  "segue2": {
+    "table1_name": "Segue II",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Segue II                                  G      dSph      02h19m16.0s    +20d10m31s    Belokurov et al. (2009)"
+  },
+  "willman1": {
+    "table1_name": "Willman 1",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Willman 1          SDSS J1049+5103        G      dSph      10h49m21.0s    +51d03m00s    Willman et al. (2005a)        Cluster?"
+  },
+  "comaberenices": {
+    "table1_name": "Coma Berenices",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Coma Berenices                            G      dSph      12h26m59.0s    +23d54m15s    Belokurov et al. (2007)"
+  },
+  "tucana4": {
+    "table1_name": "Tucana IV",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Tucana IV          DES J0002-6051         G      dSph?      0h02m55.2s     -60d51m00s   Drlica-Wagner et al. (2015)   LMC subgroup? Cluster?"
+  },
+  "bootes3": {
+    "table1_name": "Bootes III",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Bootes III                                G      dSph?     13h57m12.0s    +26d48m00s    Grillmair (2009)              Very diffuse. Tidal remnant?"
+  },
+  "pictor2": {
+    "table1_name": "Pictor 2",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Pictor 2                                  G      dSph       6h44m43.2s   -59m53m49.0s   Drlica-Wagner et al. (2016)"
+  },
+  "grus2": {
+    "table1_name": "Grus II",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Grus II            DES J2204-4626         G      dSph?     22h04m04.8s     -46d26m24s   Drlica-Wagner et al. (2015)   LMC subgroup?"
+  },
+  "tucana5": {
+    "table1_name": "Tucana V",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Tucana V           DES J2337-6316         G      dSph?     23h37m24.0s     -63d16m12s   Drlica-Wagner et al. (2015)   Possibly non-existent? (Conn et al. 2018a)"
+  },
+  "tucana2": {
+    "table1_name": "Tucana 2",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Tucana 2           DES J2251.2-5836       G      dSph?     22h51m55.1s     -58d34m08s   Bechtol et al. (2015)         LMC subgroup?"
+  },
+  "sagittarius2": {
+    "table1_name": "Sagittarius II",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Sagittarius II                            G      dSph?     19h52m40.5s     -22d04m05s   Laevens et al. (2015a)"
+  },
+  "bootes1": {
+    "table1_name": "Bootes (I)",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Bootes (I)                                G      dSph      14h00m06.0s    +14d30m00s    Belokurov et al. (2006)"
+  },
+  "draco": {
+    "table1_name": "Draco",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Draco              UGC 10822              G      dSph      17h20m12.4s    +57d54m55s    Wilson (1955)"
+  },
+  "ursaminor": {
+    "table1_name": "Ursa Minor",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Ursa Minor          UGC 9749            G    dSph    15h09m08.5s    +67d13m21s    Wilson (1955)"
+  },
+  "horologium2": {
+    "table1_name": "Horologium II",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Horologium II                           G    dSph?   3h16m32.1s      -50d01m05s   Kim & Jerjen (2015)"
+  },
+  "horologium1": {
+    "table1_name": "Horologium 1",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Horologium 1        DES J0255.4-5406    G    dSph?   2h55m31.7s      -54d07m08s   Bechtol et al. (2015)         Cluster?"
+  },
+  "phoenix2": {
+    "table1_name": "Phoenix 2",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Phoenix 2           DES J2339.9-5424    G    dSph?   23h39m59.4s     -54d24m22s   Bechtol et al. (2015)         Cluster? LMC subgroup?"
+  },
+  "sculptor": {
+    "table1_name": "Sculptor",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Sculptor                                G    dSph    01h00m09.4s     -33d42m33s   Shapley (1938a)               The prototypical dSph"
+  },
+  "eridanus3": {
+    "table1_name": "Eridanus 3",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Eridanus 3          DES J0222.7-5217    G    dSph?   2h22m45.5s      -52d17m01s   Bechtol et al. (2015)         Cluster? (Conn et al. 2018a)"
+  },
+  "sextans1": {
+    "table1_name": "Sextans (I)",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Sextans (I)                             G    dSph    10h13m03.0s     -01d36m53s   Irwin et al. (1990)"
+  },
+  "virgo1": {
+    "table1_name": "Virgo 1",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Virgo 1                                 G    dSph     12h0m9.1s     0m40m51.6s    Homma et al. (2016)"
+  },
+  "reticulum3": {
+    "table1_name": "Reticulum III",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Reticulum III       DES J0345-6026      G    dSph?   3h45m26.4s      -60d27m00s   Drlica-Wagner et al. (2015)"
+  },
+  "indus1": {
+    "table1_name": "Indus 1",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Indus 1             Kim 2               G    dSph?   21h08m49.1s     -51d09m56s   Kim et al. (2015b)            Cluster?"
+  },
+  "ursamajor1": {
+    "table1_name": "Ursa Major (I)",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Ursa Major (I)                          G    dSph    10h34m52.8s    +51d55m12s    Willman et al. (2005b)"
+  },
+  "aquarius2": {
+    "table1_name": "Aquarius 2",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Aquarius 2                              G    dSph    22h33m55.5s   -9m19m39.0s    Torrealba et al. (2016b)"
+  },
+  "carina": {
+    "table1_name": "Carina",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Carina                                  G    dSph    06h41m36.7s     -50d57m58s   Cannon et al. (1977)"
+  },
+  "grus1": {
+    "table1_name": "Grus 1",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Grus 1                                  G    dSph?   22h56m42.4s     -50d09m48s   Koposov et al. (2015)"
+  },
+  "crater2": {
+    "table1_name": "Crater 2",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Crater 2                                G    dSph    11h49m14.4s   -18m24m47.0s   Torrealba et al. (2016a)"
+  },
+  "pictoris1": {
+    "table1_name": "Pictoris 1",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Pictoris 1          DES J0443.8-5017    G    dSph?   4h43m47.4s      -50d16m59s   Bechtol et al. (2015)         Cluster?"
+  },
+  "hercules": {
+    "table1_name": "Hercules",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Hercules                                G    dSph    16h31m02.0s    +12d47m30s    Belokurov et al. (2007)       Tidally disrupting? Remnant? Cluster?"
+  },
+  "hydra2": {
+    "table1_name": "Hydra II",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Hydra II                                G    dSph?   12h21m42.1s     -31d59m07s   Martin et al. (2015)"
+  },
+  "antlia2": {
+    "table1_name": "Antlia 2",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Antlia 2                                G    dSph    9h35m32.8s    -36m46m2.0s    Torrealba et al. (2019)"
+  },
+  "fornax": {
+    "table1_name": "Fornax",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Fornax                                  G    dSph    02h39m59.3s     -34d26m57s   Shapley (1938b)"
+  },
+  "leo4": {
+    "table1_name": "Leo IV",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Leo IV                                  G    dSph    11h32m57.0s     -00d32m00s   Belokurov et al. (2007)       Binary w/ Leo V?"
+  },
+  "canesvenatici2": {
+    "table1_name": "Canes Venatici II",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Canes Venatici II   SDSS J1257+3419     G    dSph    12h57m10.0s    +34d19m15s    Sakamoto & Hasegawa (2006)"
+  },
+  "leo5": {
+    "table1_name": "Leo V",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Leo V                                   G    dSph    11h31m09.6s    +02d13m12s    Belokurov et al. (2008)       Cluster? Binary w/ Leo IV?"
+  },
+  "pisces2": {
+    "table1_name": "Pisces II",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Pisces II                               G    dSph    22h58m31.0s    +05d57m09s    Belokurov et al. (2010)       Awaiting spectr. confirmation"
+  },
+  "columba1": {
+    "table1_name": "Columba I",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Columba I             DES J0531-2801      G          dSph?    5h31m26.4s       -28d01m48s   Drlica-Wagner et al. (2015)   Cluster?"
+  },
+  "pegasus3": {
+    "table1_name": "Pegasus 3",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Pegasus 3                                 G          dSph?    22h24m22.6s      +5d25m12s    Kim et al. (2015a)"
+  },
+  "indus2": {
+    "table1_name": "Indus 2",
+    "morphology": "dSph?",
+    "host": "G",
+    "source_line": "Indus 2               DES J2038-4609      G          dSph?    20h38m52.8s      -46d09m36s   Drlica-Wagner et al. (2015)   Cluster?"
+  },
+  "bootes4": {
+    "table1_name": "Bootes 4",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Bootes 4                                  G          dSph     15h34m45.4s    43m43m34.0s    Homma et al. (2019)"
+  },
+  "canesvenatici1": {
+    "table1_name": "Canes Venatici (I)",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Canes Venatici (I)                        G          dSph     13h28m03.5s     +33d33m21s    Zucker et al. (2006b)"
+  },
+  "leo2": {
+    "table1_name": "Leo II",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Leo II                Leo B               G          dSph     11h13m28.8s     +22d09m06s    Harrington & Wilson (1950)"
+  },
+  "cetus3": {
+    "table1_name": "Cetus 3",
+    "morphology": "dSph",
+    "host": "G",
+    "source_line": "Cetus 3                                   G          dSph      2h5m19.4s      -4m16m12.0s   Homma et al. (2018)"
+  },
+  "leo1": {
+    "table1_name": "Leo I",
+    "morphology": "dSph",
+    "host": "G/L",
+    "source_line": "Leo I                 UGC 5470           G/L         dSph     10h08m28.1s     +12d18m23s    Harrington & Wilson (1950)"
+  },
+  "andromeda9": {
+    "table1_name": "Andromeda IX",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda IX                              A          dSph     00h52m53.0s     +43d11m45s    Zucker et al. (2004)"
+  },
+  "ngc205": {
+    "table1_name": "NGC 205",
+    "morphology": "dE/dSph",
+    "host": "A",
+    "source_line": "NGC 205               M110                A         dE/dSph   00h40m22.1s     +41d41m07s    Messier (1798)"
+  },
+  "andromeda1": {
+    "table1_name": "Andromeda I",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda I                               A          dSph     00h45m39.8s     +38d02m28s    van den Bergh (1972)"
+  },
+  "andromeda17": {
+    "table1_name": "Andromeda XVII",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XVII                            A          dSph     00h37m07.0s     +44d19m20s    Irwin et al. (2008)"
+  },
+  "andromeda27": {
+    "table1_name": "Andromeda XXVII",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XXVII                           A          dSph     00h37m27.1s     +45d23m13s    Richardson et al. (2011)      Tidally disrupting? Remnant?"
+  },
+  "andromeda3": {
+    "table1_name": "Andromeda III",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda III                             A          dSph     00h35m33.8s     +36d29m52s    van den Bergh (1972)"
+  },
+  "andromeda25": {
+    "table1_name": "Andromeda XXV",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XXV                             A          dSph     00h30m08.9s     +46d51m07s    Richardson et al. (2011)"
+  },
+  "andromeda26": {
+    "table1_name": "Andromeda XXVI",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XXVI                            A          dSph     00h23m45.6s     +47d54m58s    Richardson et al. (2011)"
+  },
+  "andromeda5": {
+    "table1_name": "Andromeda V",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda V                               A          dSph     01h10m17.1s     +47d37m41s    Armandroff et al. (1998)"
+  },
+  "andromeda11": {
+    "table1_name": "Andromeda XI",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XI                              A          dSph     00h46m20.0s     +33d48m05s    Martin et al. (2006)"
+  },
+  "andromeda19": {
+    "table1_name": "Andromeda XIX",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XIX                             A          dSph     00h19m32.1s     +35d02m37s    McConnachie et al. (2008)"
+  },
+  "andromeda23": {
+    "table1_name": "Andromeda XXIII",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XXIII                           A          dSph     01h29m21.8s     +38d43m08s    Richardson et al. (2011)"
+  },
+  "andromeda20": {
+    "table1_name": "Andromeda XX",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XX                              A          dSph     00h07m30.7s     +35d07m56s    McConnachie et al. (2008)"
+  },
+  "andromeda13": {
+    "table1_name": "Andromeda XIII",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XIII                                 A        dSph        00h51m51.0s               +33d00m16s       Martin et al. (2006)                  In Pisces"
+  },
+  "andromeda10": {
+    "table1_name": "Andromeda X",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda X                                    A        dSph        01h06m33.7s               +44d48m16s       Zucker et al. (2007)"
+  },
+  "andromeda21": {
+    "table1_name": "Andromeda XXI",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XXI                                  A        dSph        23h54m47.7s               +42d28m15s       Martin et al. (2009)"
+  },
+  "andromeda32": {
+    "table1_name": "Andromeda XXXII",
+    "morphology": "dSph?",
+    "host": "A",
+    "source_line": "Andromeda XXXII          Casseopeia III        A        dSph?       00h35m59.4s               +51d33m35s       Martin et al. (2013b)"
+  },
+  "ngc147": {
+    "table1_name": "NGC 147",
+    "morphology": "dE/dSph",
+    "host": "A",
+    "source_line": "NGC 147                  UGC 326               A      dE/dSph       00h33m12.1s               +48d30m32s       Herschel (1833)                       Binary w/ NGC185? Tidal stream"
+  },
+  "andromeda30": {
+    "table1_name": "Andromeda XXX",
+    "morphology": "dSph?",
+    "host": "A",
+    "source_line": "Andromeda XXX            Casseopeia II         A        dSph?       00h36m34.9s               +49d38m48s       Irwin et al. in preparationk"
+  },
+  "andromeda14": {
+    "table1_name": "Andromeda XIV",
+    "morphology": "dSph",
+    "host": "A/L",
+    "source_line": "Andromeda XIV                                 A/L       dSph        00h51m35.0s               +29d41m49s       Majewski et al. (2007)                Unbound to M31? In Pisces"
+  },
+  "andromeda12": {
+    "table1_name": "Andromeda XII",
+    "morphology": "dSph",
+    "host": "A/L",
+    "source_line": "Andromeda XII                                 A/L       dSph        00h47m27.0s               +34d22m29s       Martin et al. (2006)                  Unbound to M31?"
+  },
+  "andromeda15": {
+    "table1_name": "Andromeda XV",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XV                                   A        dSph        01h14m18.7s               +38d07m03s       Ibata et al. (2007)"
+  },
+  "andromeda2": {
+    "table1_name": "Andromeda II",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda II                                   A        dSph        01h16m29.8s               +33d25m09s       van den Bergh (1972)                  In Pisces"
+  },
+  "ngc185": {
+    "table1_name": "NGC 185",
+    "morphology": "dE/dSph",
+    "host": "A",
+    "source_line": "NGC 185                  UGC 396               A      dE/dSph       00h38m58.0s               +48d20m15s       Herschel (1789)                       Binary w/ NGC147?"
+  },
+  "andromeda29": {
+    "table1_name": "Andromeda XXIX",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XXIX                                 A        dSph        23h58m55.6s               +30d45m20s       Bell et al. (2011)                    In Pegasus"
+  },
+  "andromeda24": {
+    "table1_name": "Andromeda XXIV",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XXIV                                 A        dSph        01h18m30.0s               +46d21m58s       Richardson et al. (2011)"
+  },
+  "andromeda7": {
+    "table1_name": "Andromeda VII",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda VII            Casseopeia dSph       A        dSph        23h26m31.7s               +50d40m33s       Karachentsev & Karachentseva (1999)"
+  },
+  "andromeda31": {
+    "table1_name": "Andromeda XXXI",
+    "morphology": "dSph?",
+    "host": "A",
+    "source_line": "Andromeda XXXI           Lacerta I             A        dSph?       22h58m16.3s               +41d17m28s       Martin et al. (2013b)"
+  },
+  "lgs3localgroup": {
+    "table1_name": "LGS 3 (Local Group",
+    "morphology": "dIrr/dSph",
+    "host": "A",
+    "source_line": "LGS 3 (Local Group       Pisces (I)            A      dIrr/dSph     01h03m55.0s               +21d53m06s       Karachentseva (1976)"
+  },
+  "andromeda6": {
+    "table1_name": "Andromeda VI",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda VI             Pegasus dSph          A        dSph        23h51m46.3s               +24d34m57s       Karachentsev & Karachentseva (1999)"
+  },
+  "andromeda22": {
+    "table1_name": "Andromeda XXII",
+    "morphology": "dSph",
+    "host": "A",
+    "source_line": "Andromeda XXII                                 A        dSph        01h27m40.0s               +28d05m25s       Martin et al. (2009)                  M33 satellite? In Pisces"
+  },
+  "andromeda16": {
+    "table1_name": "Andromeda XVI",
+    "morphology": "dSph",
+    "host": "A/L",
+    "source_line": "Andromeda XVI                                 A/L       dSph        00h59m29.8s               +32d22m36s       Ibata et al. (2007)                   In Pisces"
+  },
+  "andromeda28": {
+    "table1_name": "Andromeda XXVIII",
+    "morphology": "dSph?",
+    "host": "A/L",
+    "source_line": "Andromeda XXVIII                              A/L       dSph?       22h32m41.2s               +31d12m58s       Slater et al. (2011)                  In Pegasus"
+  },
+  "andromeda33": {
+    "table1_name": "Andromeda XXXIII",
+    "morphology": "dSph?",
+    "host": "A/L",
+    "source_line": "Andromeda XXXIII         Perseus I            A/L       dSph?       03h01m23.6s               +40d59m18s       Martin et al. (2013a)"
+  },
+  "phoenix": {
+    "table1_name": "Phoenix",
+    "morphology": "dIrr/dSph",
+    "host": "unknown",
+    "source_line": "Phoenix                                       L/G     dIrr/dSph     01h51m06.3s                -44d26m41s      Schuster & West (1976)a"
+  },
+  "eridanus2": {
+    "table1_name": "Eridanus 2",
+    "morphology": "dSph?",
+    "host": "unknown",
+    "source_line": "Eridanus 2            DES J0344.3-4331   L/G    dSph?      3h44m21.1s    -43d32m00s   Bechtol et al. (2015)"
+  },
+  "cetus": {
+    "table1_name": "Cetus",
+    "morphology": "dSph",
+    "host": "L",
+    "source_line": "Cetus                                     L      dSph      00h26m11.0s   -11d02m40s   Whiting et al. (1999)                      Isolated dSph"
+  },
+  "pegasusdirr": {
+    "table1_name": "Pegasus dIrr",
+    "morphology": "dIrr/dSph",
+    "host": "unknown",
+    "source_line": "Pegasus dIrr          UGC 12613          L/A   dIrr/dSph   23h28m36.3s   +14d44m35s   A.G. Wilson. Reported in Holmberg (1958)"
+  },
+  "leot": {
+    "table1_name": "Leo T",
+    "morphology": "dIrr/dSph",
+    "host": "unknown",
+    "source_line": "Leo T                                    L/G   dIrr/dSph   09h34m53.4s   +17d03m05s   Irwin et al. (2007)"
+  },
+  "andromeda18": {
+    "table1_name": "Andromeda XVIII",
+    "morphology": "dSph",
+    "host": "L",
+    "source_line": "Andromeda XVIII                           L      dSph      00h02m14.5s   +45d05m20s   McConnachie et al. (2008)                  Isolated dSph"
+  },
+  "aquarius": {
+    "table1_name": "Aquarius",
+    "morphology": "dIrr/dSph",
+    "host": "L",
+    "source_line": "Aquarius              DDO 210             L    dIrr/dSph   20h46m51.8s   -12d50m53s   van den Bergh (1959)                       Defines RLG"
+  },
+  "tucana": {
+    "table1_name": "Tucana",
+    "morphology": "dSph",
+    "host": "L",
+    "source_line": "Tucana                                    L      dSph      22h41m49.6s   -64d25m10s   Lavery (1990)b                             Isolated dSph; defines RLG"
+  },
+  "ugc4879": {
+    "table1_name": "UGC 4879",
+    "morphology": "dIrr/dSph",
+    "host": "L",
+    "source_line": "UGC 4879              VV 124              L    dIrr/dSph   09h16m02.2s   +52d50m24s   Kopylov et al. (2008)c                     Defines RLG"
+  },
+  "antliab": {
+    "table1_name": "Antlia B",
+    "morphology": "dSph?",
+    "host": "N",
+    "source_line": "Antlia B                                  N     dSph?      9h48m56.1s    -25d59m24s   Sand et al. (2015)                         Loose NGC3109 subgroup"
+  },
+  "eso410g005": {
+    "table1_name": "ESO 410- G 005",
+    "morphology": "dIrr/dSph",
+    "host": "N",
+    "source_line": "ESO 410- G 005        UKS 0013-324        N    dIrr/dSph   00h15m31.6s   -32d10m48s   Lauberts (1982)                            NGC 55 sub-group, forming \u201cbridge\u201d to Sculptor?"
+  },
+  "kkr25": {
+    "table1_name": "KKR 25",
+    "morphology": "dIrr/dSph",
+    "host": "N",
+    "source_line": "KKR 25                                    N    dIrr/dSph   16h13m48.0s   +54d22m16s   Karachentsev et al. (2001b)"
+  },
+  "eso294g010": {
+    "table1_name": "ESO 294- G 010",
+    "morphology": "dIrr/dSph",
+    "host": "N",
+    "source_line": "ESO 294- G 010                             N     dIrr/dSph     00h26m33.4s      -41d51m19s      Lauberts (1982)                                  NGC 55 sub-group, forming \u201cbridge\u201d to Sculptor?"
+  },
+  "kk258": {
+    "table1_name": "KK 258",
+    "morphology": "dSph",
+    "host": "N",
+    "source_line": "KK 258                ESO468-020           N        dSph       22h40m43.9s      -30d47m59s      Karachentsev et al. (2014)"
+  },
+  "kks3": {
+    "table1_name": "KKs3",
+    "morphology": "dIrr/dSph",
+    "host": "N",
+    "source_line": "KKs3                  [KK2000] 03          N     dIrr/dSph      2h24m44.4s      -73d30m51s      Karachentsev et al. (2015)"
+  }
+}

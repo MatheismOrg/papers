@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "prediction_tables": 79,
+  "prediction_rows": 146828,
+  "fit_sets": 239,
+  "optimizer_attempts": 471,
+  "failed_optimizer_attempts": 0,
+  "max_independent_prediction_error_dex": 2.886579864025407e-15,
+  "max_independent_cost_error": 2.0816681711721685e-17,
+  "input_hash": "37b8fde78867bbf4a2cc804288c823304c3dce47f1f1562891fe915d0e133df5",
+  "result_hash": "745de7fb73956f2d167c574ac0d5d742f4471675f3c678e2f851d18dfffc6457",
+  "script_hash": "8a1d6c8dab44950ae56ffc5bc5704eed573bdceb5b16ae085839b19ccf22f737",
+  "audit_script_hash": "c8aa8ccb0dac08bef7e201b3587b90b59ee19d6b0369c2f2112274d86a9554a8",
+  "all_groups_hosts_sources_and_bounds_checked": true,
+  "limitations": "No refitting, likelihood/systematic validation or universal-law claim. Physical limit audit is separate.",
+  "descriptive_bootstrap_comparisons_checked": 26,
+  "bootstrap_audit_script_sha256": "df750f1952800879b930fe423e44e760b9f174173fbeca224a1d0cac1bf11ac6"
+}

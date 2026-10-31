@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "files": {
+    "diagnostics.json": "17c2d4a4917663658b959fda3db4a5cea6f391f5d141af8041beeadb93279ef0",
+    "PROTOCOL.txt": "fd70efe936fd826380c22eefe6814e79c73bf2b4becc2d023a8b3b0311e10c0e",
+    "run.py": "2e2c7a5d28b093ab79003aee50ac075dfb7a7c26cdc621f3c39c6fe6c45a53a9",
+    "clash_gas_parameters.csv": "2d2eab67669fb7d1c10f3303b8b97a02eaa1fcbb8afe9027456a42d60114ee72",
+    "results.json": "bb9d7413f7140806628b0a30a9d57e9ea0839856d0f037944d07e688b0e5bd89",
+    "README.txt": "795190fc95ae2d244b3938c2083006c64c67c1572d79a0df4e143a39e85d67d1",
+    "source_provenance.json": "5adb9d195494bffbb1402930e314ced9d2e8408270d3061487193dc7c53f7488",
+    "gas_profiles.csv": "af105433187c66653f67f2c902690c4f3e35b10360ff7fe1c8c4c11a8c051d28",
+    "numerical_diagnostics.csv": "696d7702b3bdfca27c5ff843276fca01a14855d9128dd02a517b1ecfb54828ef",
+    "inputs.csv": "a26ed579d9c40bf1751e2118a1533aeeb2afbc82ce342320cc4fd72b8a4e51b3",
+    "predictions.csv": "fbce5eb2080048334745eeb5b973a6098231d2e30edbed292aa2419e30a08eb1",
+    "extract_parameters.py": "3d8e0dcfcbe20c3127eed39fd0a93fcb090382ce2a1e7b736e968f7b6686fc77",
+    "quadrature.json": "6fc1aaa62d731755cc0570f9073d9b76217bdfabeb42ce3c7da7998c2589259b",
+    "provenance.json": "7943aebe6dedeb91ccc42b07df49615d234b5973374308fab523e3be16470cc9",
+    "diagnostics.py": "edb111d7c331dd258f9f5bd715373beace27a70f45003f42e411eb0b3028d617"
+  },
+  "excluded_downloads": [
+    "paper.pdf",
+    "primary/"
+  ],
+  "all_original_targets_preserved": true
+}

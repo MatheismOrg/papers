@@ -1,0 +1,1 @@
+29 October 2026: Editorial revision. Title, abstract, opening, kernel heading and conclusion now lead with measured results. Added Roshan and Mashhoon 2022 prior art. No numerical experiments or coefficients changed. This A43-only archive supersedes the A43 copies in earlier portfolio packages.

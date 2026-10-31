@@ -1,0 +1,59 @@
+{
+  "independent_rebuilds": [
+    {
+      "script": "dm_broad_dwarfs/build_dwarfs.py",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_lines": 174
+    },
+    {
+      "script": "dm_broad_globular/build_control.py",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_lines": 52
+    },
+    {
+      "script": "dm_broad_groups/validate_external.py",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_lines": 239
+    },
+    {
+      "script": "dm_broad_lensing/prepare_external.py",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_lines": 4
+    }
+  ],
+  "csv_results_byte_identical": true,
+  "json_changes_only_removed_reference_hashes": [
+    "dm_broad_dwarfs/results/dwarfs_summary.json",
+    "dm_broad_groups/results/external_validation_results.json"
+  ],
+  "combined_input_rebuilds": [
+    {
+      "script": "dm_broad_joint/build_input.py",
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "script": "dm_broad_joint/prepare_sensitivity.py",
+      "exit_code": 0,
+      "stderr": ""
+    }
+  ],
+  "combined_input_and_metadata_byte_identical": true,
+  "syntax_valid_python_files": [
+    "dm_broad_lensing/prepare_external.py",
+    "dm_broad_joint/fit_broad.py",
+    "dm_broad_joint/analyze_broad.py",
+    "dm_broad_joint/prepare_sensitivity.py",
+    "dm_broad_joint/taper_sensitivity.py",
+    "dm_broad_joint/build_input.py",
+    "dm_broad_globular/build_control.py",
+    "dm_broad_dwarfs/build_dwarfs.py",
+    "dm_broad_groups/plot_external.py",
+    "dm_broad_groups/validate_external.py"
+  ],
+  "hardcoded_workspace_paths": false
+}

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "prediction_tables": 192,
+  "prediction_rows": 6128,
+  "fit_sets": 460,
+  "optimizer_attempts": 1610,
+  "failed_optimizer_attempts": 0,
+  "independent_adaptive_integral_checks": 344,
+  "max_adaptive_integral_relative_discrepancy": 4.296563105299356e-14,
+  "max_prediction_error_dex": 1.7763568394002505e-15,
+  "max_cost_error": 1.431146867680866e-17,
+  "gas_prediction_rows_refined_and_inner_bounds_checked": 3064,
+  "maximum_refined_quad_change_dex": 8.881784197001252e-15,
+  "maximum_unresolved_core_bound_span_dex": 0.0005579278836993495,
+  "primary_parameter_literal_match_performed": true,
+  "raw_XCOP_direct_MGAS_matched": true,
+  "all_case_splits_and_target_exclusions_checked": true,
+  "result_hash": "bb9d7413f7140806628b0a30a9d57e9ea0839856d0f037944d07e688b0e5bd89",
+  "audit_script_hash": "ed9fd89b6a050eb6c5e174bea7baee9856b3c0ada22f1c1f7028c5fa8bc0ede5",
+  "limitations": [
+    "Frozen literature gas parameters are CLASH-informed; repeating them with a source_CLASH label is not independent CLASH-source exclusion.",
+    "Fits add a phenomenological positive source component before MOND; neither its material identity nor gravity/memory derivation is established.",
+    "Gas profiles and reconstructed total accelerations share observational/modeling systematics; algebraic nonleakage is not statistical independence.",
+    "Checks do not establish superiority to full published cluster likelihoods."
+  ],
+  "descriptive_bootstrap_comparisons_checked": 6,
+  "bootstrap_audit_script_sha256": "aa5f17f7b57bb782e1e1a4279e4e531a8a7b695fe3f6fb8144ec5aaf6a393de2"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "independent_method": "Raw component and source joins; adaptive integration of cluster gas density and mass-profile derivatives; all forecasts, fits, objective minima, metrics, exclusions, paired host resampling and nonpositive-force retention. No analysis-code imports.",
+  "prediction_tables": 104,
+  "prediction_rows": 32380,
+  "fit_sets": 104,
+  "optimizer_attempts": 382,
+  "cluster_density_integrals": 516,
+  "max_cluster_quadrature_relative_discrepancy": 4.318767565791859e-14,
+  "max_prediction_discrepancy_dex": 1.7763568394002505e-15,
+  "max_objective_discrepancy": 2.0816681711721685e-17,
+  "descriptive_bootstrap_comparisons": 10,
+  "full_disk_diagnostic_rows": 32400,
+  "full_disk_invalid_counts": {
+    "simple:zero": 0,
+    "simple:literature": 8,
+    "simple:CLASH_frozen": 9,
+    "simple:disk_all_fit": 0,
+    "simple:cluster_all_fit": 10,
+    "simple:joint_all_fit": 0,
+    "exp:zero": 0,
+    "exp:literature": 8,
+    "exp:CLASH_frozen": 10,
+    "exp:disk_all_fit": 0,
+    "exp:cluster_all_fit": 10,
+    "exp:joint_all_fit": 0
+  },
+  "limits": [
+    "One eta is used across gas phases, but disk constant-weight source scaling and spherical finite-Rc cluster integral are different geometry calculations.",
+    "A disk evaluation radius cutoff cannot bound finite-Rc source approximation error: exterior sources contribute. No exact finite-Rc disk reconstruction is present.",
+    "The cold-HI versus hot-ICM extension is the tested hypothesis; the published hot-gas-only model is not falsified by its failure.",
+    "Cluster zero values in disk-only ggas/gstar columns are unused placeholders; measured cluster gas enters through nonzero source-density quadrature.",
+    "Disk-only fits do not identify Rc; cold-to-cluster transfer assumes external fixed Rc=400 kpc.",
+    "Frozen CLASH coefficients include CLASH targets from earlier work, so CLASH scores are descriptive. All newly refitted test targets are excluded as declared.",
+    "Cluster speed percentages are algebraic square-root transforms, not measured disk orbital-speed errors.",
+    "Resampling intervals are descriptive conditional on frozen forecasts and omit calibration/systematic/model-selection uncertainty."
+  ],
+  "result_sha256": "493d52caaaecc183e02a24067fcf8d7d98e0ddba143d2448a2555d7740e9527b",
+  "audit_script_sha256": "8c43f13101f29f973e686faae4b0e7b7ed899c545e0aa19cb039103b2ccdafd9"
+}

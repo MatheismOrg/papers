@@ -1,0 +1,9 @@
+{
+  "URL": "https://zenodo.org/records/15299349/files/ClusterInfo.py?download=1",
+  "sha256": "59bfc1d0d4dc35bf9dcc3e6b02c42d4b57bbba081d6749e0b1f08b04f23f9db4",
+  "authors": "B. Famaey, L. Pizzuti, I. D. Saltas; gas profiles credited to V. Salzano",
+  "paper": "https://doi.org/10.1103/dccw-srks",
+  "dataset_DOI": "10.5281/zenodo.15299349",
+  "extraction": "AST literal parameter rows, with MACS1720 single-beta treatment explicitly required by source; no third-party code executed",
+  "parameter_csv_sha256": "2d2eab67669fb7d1c10f3303b8b97a02eaa1fcbb8afe9027456a42d60114ee72"
+}

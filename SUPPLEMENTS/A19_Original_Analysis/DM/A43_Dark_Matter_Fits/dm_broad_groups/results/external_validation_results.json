@@ -1,0 +1,239 @@
+{
+  "status": "External sample transfer with frozen SPARC RAR a0; no refit. Published model-derived observables retain source assumptions.",
+  "frozen_a0_m_s2": 1.1603274962269242e-10,
+  "source_fit": "149SPARCgalaxies,2700radii,unweightedlogaccelerationfit",
+  "etg": {
+    "all": {
+      "n_total": 32,
+      "n_positive_for_fraction_and_log_metrics": 32,
+      "median_abs_acceleration_error": 0.3405344364356087,
+      "rms_log10_acceleration_dex": 0.20813389445575475,
+      "median_signed_log10_predicted_over_observed": -0.0878647844308551,
+      "median_abs_circular_speed_equivalent_error": 0.18792967849428982,
+      "radius_kpc_range": [
+        0.17,
+        28.61
+      ],
+      "gbar_m_s2_range": [
+        5.6234132519034904e-12,
+        8.128305161640994e-09
+      ],
+      "descriptive_spearman_residual_correlations": {
+        "radius_kpc": -0.12267352531313541,
+        "gbar_m_s2": 0.0108207266676449,
+        "log10_baryonic_potential_proxy_gbar_r_over_a0_kpc": -0.04252199413489736,
+        "log10_baryonic_density_proxy_gbar_over_r_over_a0_per_kpc": 0.07697947214076245
+      }
+    },
+    "inner_JAM": {
+      "n_total": 16,
+      "n_positive_for_fraction_and_log_metrics": 16,
+      "median_abs_acceleration_error": 0.44721050540859214,
+      "rms_log10_acceleration_dex": 0.25446601486723197,
+      "median_signed_log10_predicted_over_observed": -0.16763248746294263,
+      "median_abs_circular_speed_equivalent_error": 0.20938828619141314,
+      "radius_kpc_range": [
+        0.17,
+        1.01
+      ],
+      "gbar_m_s2_range": [
+        5.128613839913658e-10,
+        8.128305161640994e-09
+      ],
+      "descriptive_spearman_residual_correlations": {
+        "radius_kpc": -0.04870881870470524,
+        "gbar_m_s2": -0.5302858564438836,
+        "log10_baryonic_potential_proxy_gbar_r_over_a0_kpc": -0.4264705882352941,
+        "log10_baryonic_density_proxy_gbar_over_r_over_a0_per_kpc": -0.21176470588235297
+      }
+    },
+    "outer_HI": {
+      "n_total": 16,
+      "n_positive_for_fraction_and_log_metrics": 16,
+      "median_abs_acceleration_error": 0.2334050020540981,
+      "rms_log10_acceleration_dex": 0.14794081019187427,
+      "median_signed_log10_predicted_over_observed": -0.0030874567094004027,
+      "median_abs_circular_speed_equivalent_error": 0.11781762319659339,
+      "radius_kpc_range": [
+        7.68,
+        28.61
+      ],
+      "gbar_m_s2_range": [
+        5.6234132519034904e-12,
+        9.772372209558111e-11
+      ],
+      "descriptive_spearman_residual_correlations": {
+        "radius_kpc": 0.25,
+        "gbar_m_s2": -0.1162619887967889,
+        "log10_baryonic_potential_proxy_gbar_r_over_a0_kpc": 0.0058823529411764705,
+        "log10_baryonic_density_proxy_gbar_over_r_over_a0_per_kpc": -0.12352941176470587
+      }
+    }
+  },
+  "lensing": {
+    "KiDS_isolated": {
+      "all_bins": {
+        "n_total": 15,
+        "n_positive_for_fraction_and_log_metrics": 15,
+        "median_abs_acceleration_error": 0.25367087166845415,
+        "rms_log10_acceleration_dex": 0.1267886662563042,
+        "median_signed_log10_predicted_over_observed": -0.12706960805561746,
+        "median_abs_circular_speed_equivalent_error": 0.13609657464995206,
+        "chi2_statistical_covariance_only": 125.66762815027133,
+        "dof_no_refit": 15,
+        "chi2_with_independent_diagonal_0p1dex_SIS_uncertainty": 15.230048075267389,
+        "mass_scale_sensitivity_stat_chi2": {
+          "-0.2": 293.3278743630269,
+          "0": 125.66762815027133,
+          "0.2": 52.80439941650101
+        },
+        "gbar_m_s2_range": [
+          1.3822e-15,
+          3.9169e-12
+        ]
+      },
+      "gbar_ge_1e-13": {
+        "n_total": 7,
+        "n_positive_for_fraction_and_log_metrics": 7,
+        "median_abs_acceleration_error": 0.2208494081034631,
+        "rms_log10_acceleration_dex": 0.10578109679023721,
+        "median_signed_log10_predicted_over_observed": -0.05984348549137892,
+        "median_abs_circular_speed_equivalent_error": 0.1049205437964591,
+        "chi2_statistical_covariance_only": 46.527417577582504,
+        "dof_no_refit": 7,
+        "chi2_with_independent_diagonal_0p1dex_SIS_uncertainty": 5.323896876657904,
+        "mass_scale_sensitivity_stat_chi2": {
+          "-0.2": 120.30845570488097,
+          "0": 46.527417577582504,
+          "0.2": 34.798774955512
+        },
+        "gbar_m_s2_range": [
+          1.2982e-13,
+          3.9169e-12
+        ]
+      }
+    },
+    "GAMA_isolated": {
+      "all_bins": {
+        "n_total": 15,
+        "n_positive_for_fraction_and_log_metrics": 15,
+        "median_abs_acceleration_error": 0.2586393815836495,
+        "rms_log10_acceleration_dex": 0.18107762539700462,
+        "median_signed_log10_predicted_over_observed": 0.036211975827343756,
+        "median_abs_circular_speed_equivalent_error": 0.1389769930969611,
+        "chi2_statistical_covariance_only": 18.54397504244971,
+        "dof_no_refit": 15,
+        "chi2_with_independent_diagonal_0p1dex_SIS_uncertainty": 10.380458845669333,
+        "mass_scale_sensitivity_stat_chi2": {
+          "-0.2": 25.660424384954602,
+          "0": 18.54397504244971,
+          "0.2": 17.90693927808851
+        },
+        "gbar_m_s2_range": [
+          1.3822e-15,
+          3.9169e-12
+        ]
+      },
+      "gbar_ge_1e-13": {
+        "n_total": 7,
+        "n_positive_for_fraction_and_log_metrics": 7,
+        "median_abs_acceleration_error": 0.30923163217254923,
+        "rms_log10_acceleration_dex": 0.21807490240431474,
+        "median_signed_log10_predicted_over_observed": -0.004404071500319352,
+        "median_abs_circular_speed_equivalent_error": 0.16887523931274262,
+        "chi2_statistical_covariance_only": 14.528237539402754,
+        "dof_no_refit": 7,
+        "chi2_with_independent_diagonal_0p1dex_SIS_uncertainty": 7.4654379232525345,
+        "mass_scale_sensitivity_stat_chi2": {
+          "-0.2": 19.796458839546418,
+          "0": 14.528237539402754,
+          "0.2": 12.209928906066944
+        },
+        "gbar_m_s2_range": [
+          1.2982e-13,
+          3.9169e-12
+        ]
+      }
+    },
+    "KiDS_hotgas_sensitivity": {
+      "all_bins": {
+        "n_total": 15,
+        "n_positive_for_fraction_and_log_metrics": 15,
+        "median_abs_acceleration_error": 0.1742678655637765,
+        "rms_log10_acceleration_dex": 0.25551735784976015,
+        "median_signed_log10_predicted_over_observed": -0.030146241785650743,
+        "median_abs_circular_speed_equivalent_error": 0.09130195640343564,
+        "chi2_statistical_covariance_only": 404.9981774027312,
+        "dof_no_refit": 15,
+        "chi2_with_independent_diagonal_0p1dex_SIS_uncertainty": 199.25565204813032,
+        "mass_scale_sensitivity_stat_chi2": {
+          "-0.2": 337.05251117815965,
+          "0": 404.9981774027312,
+          "0.2": 759.2161027201802
+        },
+        "gbar_m_s2_range": [
+          1.3822e-15,
+          3.9169e-12
+        ]
+      },
+      "gbar_ge_1e-13": {
+        "n_total": 7,
+        "n_positive_for_fraction_and_log_metrics": 7,
+        "median_abs_acceleration_error": 0.15721254488535674,
+        "rms_log10_acceleration_dex": 0.06951809696844961,
+        "median_signed_log10_predicted_over_observed": -0.07428193748614241,
+        "median_abs_circular_speed_equivalent_error": 0.0819654390412945,
+        "chi2_statistical_covariance_only": 22.120347264607727,
+        "dof_no_refit": 7,
+        "chi2_with_independent_diagonal_0p1dex_SIS_uncertainty": 2.5429850427201064,
+        "mass_scale_sensitivity_stat_chi2": {
+          "-0.2": 92.10454323392614,
+          "0": 22.120347264607727,
+          "0.2": 28.863908155737043
+        },
+        "gbar_m_s2_range": [
+          1.2982e-13,
+          3.9169e-12
+        ]
+      }
+    }
+  },
+  "group_dispersions": {
+    "all66_tabulated": {
+      "n": 66,
+      "median_abs_dispersion_error": 0.20508117264626713,
+      "rms_log10_dispersion_dex": 0.13754929982905623,
+      "median_predicted_over_observed": 0.9971546049459474,
+      "harmonic_radius_kpc_range": [
+        23.0,
+        738.0
+      ]
+    },
+    "source_selected55_tabulated": {
+      "n": 55,
+      "median_abs_dispersion_error": 0.1884514018416994,
+      "rms_log10_dispersion_dex": 0.11727521592960459,
+      "median_predicted_over_observed": 1.0724120522442795,
+      "harmonic_radius_kpc_range": [
+        62.0,
+        738.0
+      ]
+    }
+  },
+  "group_table_count_note": "The paper text/caption say67total/56selected, but the supplied v2PDFTableI contains66tabulatedrows/55unstarredrows; we useonlythoseactualrows and do not invent the missingrow. Tablepageswerevisuallychecked.",
+  "source_hashes": {
+    "Rotmod_ETG.zip": "e640cd0f387588b83d8755321a9f385bb674369b6c42f05e89cfafdccad7af34",
+    "ETG_Lelli2017.mrt": "bf48cf65ffd0b2e9cde960d915798da3cb795527cd10f4e0de71b4ef152c4376"
+  },
+  "limitations": [
+    "The samples are external to fitting, but all RAR choices were informed by existing literature; not blindconfirmatorytesting.",
+    "ETGinnerJAM gobs is modeldependent and totalmass follows light in sourceinference; outerHI providesdifferenttracer.",
+    "ETG stellar M/L=0.8 differsfromSPARC disk0.5/bulge0.7 bysourcepopulation prescription.",
+    "Lensing gobs=4GDeltaSigma is the published singular-isothermal-sphere approximation, not directmeasurementof3Dacceleration.",
+    "Lensing statisticalcovariance omitsfullbaryonicmass, gas, isolation anddeprojection systematics. Diagonal0.1dex is a sensitivitymodel, not a validatedfullcovariance.",
+    "KiDS isolation deteriorates belowgbar~1e-13; GAMA spectroscopicselectionextendslower. KiDSandGAMAprofilesoverlap and arenotindependenttests.",
+    "Group sourceexcludes10richgroups/clusters andonebad-distanceobject; stellar-onlybaryonicproxy undercountsgas especiallyrichsystems. Sourceindividualsigmaerrorsnotprovided.",
+    "Globalpressure-supportedvirial relation is a separateMONDprediction, not proofthatlocaldiskRARworksunchanged.",
+    "Noadditionalfittohistory,potential,ordensityproxiesperformed; proxycorrelationsaredescriptiveandsharegbarwithresidual."
+  ]
+}

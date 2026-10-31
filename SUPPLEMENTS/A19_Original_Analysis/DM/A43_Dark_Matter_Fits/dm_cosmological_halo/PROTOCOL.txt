@@ -1,0 +1,86 @@
+Frozen before fitting, 2026-10-29.
+
+Question: Does a published concentration-mass relation improve held-out-galaxy
+prediction over shared RAR and purely empirical shared NFW mappings? This is a
+restricted cosmological-prior baseline, not a test of the full LCDM framework.
+
+Data: exact copy of dm_shared_halo/input.csv, 2700 SPARC rows, 149 galaxies.
+Independent catalog features: Mproxy/Msun=1e9(0.5 L3.6+1.33 MHI), Reff in kpc.
+Mproxy is an approximate cold-baryonic mass proxy, not an exact baryonic mass:
+one stellar M/L=0.5 for total luminosity, no molecular gas, no uncertainty
+propagation. Supplied radial gbar retains source disk/bulge conventions.
+No Vflat, observed velocity, or acceleration residual enters any input feature.
+
+Two and only two fitted candidate families:
+1 NFW_Planck_mass: Mref=Mproxy/fb+10^A (Mproxy/1e10 Msun)^B Msun.
+2 NFW_Planck_size: Mref=Mproxy/fb+10^A (Mproxy/1e10 Msun)^B
+  (Reff/3 kpc)^C Msun.
+Bounds: A in [8,14], B in [0.1,2], C in [-1.5,1.5].
+Starts: mass (11.5,0.7),(12,1.2),(10.5,0.4); size appends C=0,0.5,-0.5.
+These are our phenomenological shared mass mappings, not published abundance
+matching relations. The floor enforces the approximate proxy budget Mproxy<=
+fb*Mref as a model restriction, not a universal observational theorem.
+
+Published halo structural prior: Dutton & Maccio 2014, arXiv:1402.7073,
+Eq.8 (NFW, z=0, relaxed dark-matter-only Planck halos):
+log10 c200=0.905-0.101 log10[Mref/(1e12 h^-1 Msun)].
+Table1 Planck values h=0.671, Omega_m=0.3175, Omega_b=0.0490;
+fb=Omega_b/Omega_m. This uses physical solar masses: mass argument Mref*h/1e12.
+r200=(G*Mref/(100 H0^2))^(1/3), rs=r200/c200, H0=67.1 km/s/Mpc.
+Mref is explicitly the DMO-equivalent reference mass (all matter represented by
+collisionless particles), not the present dark-only or total observed M200.
+Dark component is (1-fb)*Mref, with the same NFW shape, no halo response.
+The observed baryonic field is added separately. The final total distribution
+need not have its actual 200critical radius at this reference r200.
+f(z)=ln(1+z)-z/(1+z).
+gpred(r)=gbar(r)+G*(1-fb)*Mref*f(min[r/rs,c200])/(f(c200)*r^2).
+This explicitly truncates the reference halo at r200, ensuring finite total
+dark mass; count any observed points beyond that radius. Truncation leaves
+interior force unchanged under spherical symmetry.
+All fitted halo accelerations are positive. With B>0, at fixed r>0 and Reff,
+Mproxy->0 implies Mref->0 and eventually r>r200, so the halo force vanishes.
+
+Fitting and validation (identical shared_halo protocol): equal-galaxy mean
+squared log10 acceleration residual. Each galaxy receives equal total weight;
+each retained radial point receives equal weight within its galaxy. This is
+not a measurement-error likelihood. All-data fits are descriptive only.
+Group-fivefold CV seeds: 20261027,7331,48105; RNG default_rng(seed), permute
+sorted unique group labels, assign j modulo5. All rows of each galaxy stay
+together. Four feature-only tail tests hold out exactly37 galaxies with lowest
+or highest Mproxy or Mproxy/(2*pi*Reff^2), sorted by (feature,system name).
+Training-only fits for all validation predictions. Each family has20 fit sets:
+1 all-data+15 CV+4 tails. All3 deterministic starts run for each; choose minimum
+training cost; retain convergence, boundaries, training rows and coefficients.
+Scipy least_squares, max_nfev3000, ftol=xtol=gtol=1e-10.
+
+Report all candidates, every seed and every tail. Metrics: equal-galaxy RMS dex,
+row RMS dex, row-median absolute fractional acceleration and circular-speed
+errors. Speed=the circular-speed-equivalent metric sqrt(gpred/gobs), not an
+independent observation. Compare frozen identical-split shared_halo prediction
+tables, checking row IDs, folds and numerical input fields. Record source
+hashes. Descriptive paired Poisson galaxy bootstrap5000, seed20261029, for RMS
+difference versus RAR and shared empirical NFW_mass/NFW_size. No optimizer
+refitting, model-search correction, systematic-uncertainty marginalization,
+or independent confirmatory interpretation of these bootstrap intervals.
+
+Source conventions checked, not silently mixed:
+Moster,Naab,White2013 arXiv:1205.5807 explicitly uses200critical 'virial' masses
+(intro and sec2.1), not Bryan-Norman masses in this version. It uses WMAP7
+(Omega_m=.272,h=.704), whereas the selected cM relation is Planck. No frozen
+Moster SHMR is inserted into this Planck calculation. Its satellite mapping
+depends on infall mass/redshift, also absent here. We do not claim to have
+tested the published Moster+NFW population model or abundance matching.
+
+Limitations to retain prominently: deterministic median cM and mass mappings,
+ignored intrinsic cM/SHMR scatter, no galaxy formation response or feedback,
+no external-field/environment/assembly/satellite treatment, no distance,
+inclination, M/L or feature measurement-error marginalization, and no lensing,
+cluster, CMB or growth likelihood. Published cM fits cover approximately
+1e10 to1e15 h^-1 Msun; report extrapolated predictions, do not clip masses.
+Poor performance rejects only these restricted deterministic mappings.
+
+Primary sources:
+https://arxiv.org/pdf/1402.7073
+https://academic.oup.com/mnras/article/441/4/3359/1209689
+https://arxiv.org/pdf/1205.5807
+https://academic.oup.com/mnras/article/428/4/3121/997374

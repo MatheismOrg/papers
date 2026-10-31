@@ -1,0 +1,17 @@
+A43 historical host-holdout correction, 28 October 2026
+
+Historical scripts/results are preserved unchanged for provenance. In the first
+broad analysis, exact environment labels selected 25 Milky_Way and 16 M31
+satellites. They did not include Leo1 (G/L) or AndromedaXIV/XVI (A/L). In the
+old dm_one_formula/search_one_formula.py, the loop label MW did not match
+Milky_Way, so that Milky Way test was skipped entirely; its M31 test retained
+the two A/L objects in training. Those outputs are not full host exclusions and
+must not support interpretations of transfer to a completely withheld host.
+
+The dm_environment pilot and the present dm_unified_limits, dm_unified_repair,
+dm_unified_regular and dm_identifiability tests use the conservative mappings
+MW={Milky_Way,G/L}, M31={M31,A/L}. All 26/18 objects are excluded before fitting.
+These corrected host tests supersede earlier incomplete host sensitivities.
+Original whole-system and whole-population results are unchanged by this label
+correction. The old code is historical; running it does not reproduce the
+corrected host tests. Use the named follow-up scripts and their input hashes.

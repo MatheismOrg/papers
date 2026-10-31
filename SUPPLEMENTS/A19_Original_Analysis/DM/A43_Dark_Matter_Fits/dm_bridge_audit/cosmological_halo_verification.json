@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "independent_method": "Immutable photometric-input identity; independent density integral and critical-density radius construction; all forecasts, structural states, diagnostics, fits, minima, exclusions, comparator copies and bootstraps. No analysis-code imports.",
+  "prediction_tables": 16,
+  "prediction_rows": 27240,
+  "fit_sets": 40,
+  "optimizer_attempts": 120,
+  "comparator_tables_verified": 49,
+  "bootstrap_comparisons": 42,
+  "max_prediction_discrepancy_dex": 9.603429163007604e-15,
+  "max_structural_state_relative_discrepancy": 3.8413716652030416e-14,
+  "max_objective_discrepancy": 1.734723475976807e-17,
+  "truncation_check_radii": 101,
+  "no_Vflat_prediction_feature": true,
+  "limits": [
+    "Mref is dark-matter-only-equivalent reference M200c; dark component is (1-fb)Mref. This is an explicit deterministic convention, not an empirical halo mass measurement.",
+    "Mass mapping and concentration are conditional on common photometric stellar M/L and an approximate HI-plus-stellar mass proxy.",
+    "Published concentration-mass calibration is extrapolated for some low-mass objects; scatter and baryonic halo response are omitted.",
+    "Fixed Planck cosmology and concentration-mass relation supply structural priors, not a full LambdaCDM prediction.",
+    "No observed radius tests the imposed outer truncation; finite total mass is a declared extrapolation.",
+    "The three-coefficient size-model RMS advantage is small, changes sign across CV seeds and has descriptive intervals spanning zero; median speed error is worse than RAR.",
+    "No per-galaxy target-informed halo parameter is fitted in held-out forecasts; affine mapping coefficients are shared."
+  ],
+  "result_sha256": "0300e7a68e99b827875c564911bd8fa41649711c1626e12059667cfe71e1f598",
+  "audit_script_sha256": "dc619ce51975a3ffce7e1357e9e5be202f9f7ec75157c267fc78152ce29976cf"
+}

@@ -1,0 +1,49 @@
+All URLs checked 28 October 2026. Sources are original authors/collaborations, publishers, or institutional repositories. No claim of an exhaustive all-literature ranking.
+
+Li, P., Lelli, F., McGaugh, S. S., Schombert, J. (2020). A comprehensive catalog of dark matter halo models for SPARC galaxies. ApJS 247, 31. DOI 10.3847/1538-4365/ab700e. https://arxiv.org/abs/2001.10538
+Supports 175 galaxies, 7 halo models, nuisance marginalization, and generally better cored DC14/Burkert fits than NFW. Full halo catalog available. Web refs turn152view3/turn149search0.
+
+McGaugh, S. S., Milgrom, M. (2013). Andromeda Dwarfs in Light of MOND. II. Testing Prior Predictions. ApJ 775, 139. DOI 10.1088/0004-637X/775/2/139. https://astroweb.case.edu/ssm/papers/ApJv775n139.pdf
+Supports a priori dwarf dispersion prediction tests. Web ref turn150search8.
+
+Umetsu, K. et al. (2016). CLASH: Joint Analysis of Strong-Lensing, Weak-Lensing Shear and Magnification Data for 20 Galaxy Clusters. ApJ 821, 116. https://authors.library.caltech.edu/records/hws0v-21p76
+Supports favorable stacked NFW/Einasto/DARKexp compared with cored/isothermal/Burkert, and larger-radius two-halo contribution. Web ref turn157view3.
+
+Eckert, D. et al. (2022). The gravitational field of X-COP galaxy clusters. A&A 662, A123. DOI 10.1051/0004-6361/202142507. https://arxiv.org/abs/2205.01110
+Supports less-than-10% average NFW deviations and individual profile diversity; hydrostatic modelling assumptions. Web refs turn157academia24/turn155search5.
+
+Eckert, D. et al. (2022). Constraints on dark matter self-interaction from the internal density profiles of X-COP galaxy clusters. A&A 666, A41. DOI 10.1051/0004-6361/202243205. https://arxiv.org/abs/2205.01123
+Supports high-velocity SIDM constraints and need for velocity dependence if larger dwarf-scale cross sections are desired. Web ref turn155academia7.
+
+Kelleher, R., Lelli, F. (2024). Galaxy clusters in Milgromian dynamics: Missing matter, hydrostatic bias, and the external field effect. A&A 688, A78. DOI 10.1051/0004-6361/202449968. https://arxiv.org/html/2405.08557v2
+Supports 5 X-COP MOND cluster fits requiring concentrated additional mass, cored r^-4 density useful within~1Mpc, outer EFE/hydrostatic bias. Web ref turn157view2.
+
+Jia, Z. et al. (2026). An enhanced isothermal Jeans approach to constraining dark matter self-interactions from galactic kinematics. MNRAS 549, stag969. DOI 10.1093/mnras/stag969. https://arxiv.org/abs/2601.17118 ; https://academic.oup.com/mnras/article/549/3/stag969/8691061
+Supports current velocity-dependent SIDM/core evolution fits that rival empirical feedback CDM. Web refs turn153academia25/turn153search1.
+
+Louis, T. et al. (ACT Collaboration; 2025). The Atacama Cosmology Telescope: DR6 Power Spectra, Likelihoods and LambdaCDM Parameters. https://arxiv.org/abs/2503.14452
+Journal/institutional record: https://ora.ox.ac.uk/objects/uuid%3A0033a166-c32f-4984-8438-319e0471ce6c ; https://ntrs.nasa.gov/citations/20250011191
+Supports CMB+foreground fit, cold dark matter parameter constraints, consistency within combined Planck/ACT/lensing/BAO analyses. Institutional/journal abstract includes DESI DR2 update; arXiv v2 itself is June2025. Web refs turn157view0/turn149search7/turn149search8.
+
+DESI Collaboration (2025). DESI DR2 results. II. Measurements of baryon acoustic oscillations and cosmological constraints. Official primary publication index: https://data.desi.lbl.gov/doc/papers/dr2/
+Author institutional record https://air.unimi.it/handle/2434/1190136
+Supports LambdaCDM fit, mild BAO/CMB parameter tension and dynamical-dark-energy fits; does not remove cold dark matter. Web refs turn150search4/turn150search5.
+
+Park, R. S. et al. (2026). Improved constraints on modified Newtonian gravity from Cassini radio tracking data. PRD 114, 024066. DOI 10.1103/R7N8-KW38. https://journals.aps.org/prd/abstract/10.1103/r7n8-kw38 ; https://arxiv.org/abs/2602.17884
+Supports updated Q2 and classical AQUAL/QUMOND tension, plus requirement to test Galactic EFE rather than only local high-g force. Web ref turn148search3.
+
+LIGO Scientific Collaboration, Virgo Collaboration, KAGRA Collaboration (2026). GWTC-4.0: Tests of General Relativity. I. Overview and General Tests. https://arxiv.org/abs/2603.19019 ; https://dcc-llo.ligo.org/LIGO-P2500065/public
+Supports consistency of selected strong-field GW tests with GR. Later July2026 update summary: https://ligo.org/science-summaries/o4b_tgr/ . Avoid conflating event counts between releases. Web refs turn150search3/turn155academia8/turn150search7.
+
+Skordis, C., Zlosnik, T. (2021). New Relativistic Theory for Modified Newtonian Dynamics. PRL 127, 161302. DOI 10.1103/PhysRevLett.127.161302. https://arxiv.org/abs/2007.00082 ; https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.161302
+Supports AeST demonstration of CMB and linear matter-power fits. It is not a proof of all-scale empirical superiority. Web refs turn157search0/turn157academia25.
+
+Durakovic, A., Skordis, C. (2024). Towards galaxy cluster models in Aether-Scalar-Tensor theory: isothermal spheres and curiosities. JCAP 04, 040. DOI 10.1088/1475-7516/2024/04/040. https://doi.org/10.1088/1475-7516/2024/04/040
+Supports qualitative cluster RAR enhancement/depression and explicitly deferred full quantitative observed-cluster comparison. Web ref turn158search3.
+
+Milgrom, M. (2023). MOND as manifestation of modified inertia. https://arxiv.org/abs/2310.14334
+Supports trajectory/frequency-dependent MOND effects and weaker inner-Solar external effect than AQUAL/QUMOND in the discussed nonrelativistic models. Related 2022 paper: Models of a modified-inertia formulation of MOND. PRD106064060, DOI10.1103/PhysRevD.106.064060. Web ref turn158academia12.
+
+Berkimbayev, D. (2026). A deformation memory model for galactic rotation curves. Physics Letters B 881, 140925. DOI 10.1016/j.physletb.2026.140925. Published4Sep2026. https://repo.scoap3.org/records/110958 ; https://www.sciencedirect.com/science/article/pii/S0370269326007756
+Full primary XML inspected: https://scoap3-prod-backend.s3.cern.ch/media/harvested_files/10.1016/j.physletb.2026.140925/main.xml
+Supports source-convolution law, comparative metrics, stationary interpretation, unmeasured propagation range, source-assignment limitation, and explicitly excluded solar extrapolation. Web refs turn152view0/turn148search2. Search snippet initially gave wrong volume1031; opened primary repository gives881. Use verified881 or DOI alone.

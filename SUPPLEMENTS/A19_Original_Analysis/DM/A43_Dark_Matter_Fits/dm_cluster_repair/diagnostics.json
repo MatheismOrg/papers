@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "maximum_refined_quadrature_change_dex": 7.714619732426228e-15,
+  "maximum_unresolved_core_bound_span_dex": 0.0005579278836998025,
+  "checks": 3064,
+  "bootstrap": {
+    "host_holdout repair minus simple_refit_a0": {
+      "conditional_95_interval_dex": [
+        -0.06198930258218581,
+        0.006816497361746233
+      ],
+      "finite_draws": 4994,
+      "fraction_better_descriptive": 0.9403283940728875
+    },
+    "host_holdout repair minus simple_frozen_gas": {
+      "conditional_95_interval_dex": [
+        -0.013043233956684717,
+        0.011636195392244256
+      ],
+      "finite_draws": 4994,
+      "fraction_better_descriptive": 0.6085302362835402
+    },
+    "source_CLASH repair minus simple_refit_a0": {
+      "conditional_95_interval_dex": [
+        -0.12942627706783044,
+        -0.01953852393539498
+      ],
+      "finite_draws": 5000,
+      "fraction_better_descriptive": 0.9948
+    },
+    "source_CLASH repair minus simple_frozen_gas": {
+      "conditional_95_interval_dex": [
+        -0.008183076755492123,
+        0.0054778262673329005
+      ],
+      "finite_draws": 5000,
+      "fraction_better_descriptive": 0.6744
+    },
+    "source_XCOP repair minus simple_refit_a0": {
+      "conditional_95_interval_dex": [
+        -0.17640875991411858,
+        -0.12036322562036375
+      ],
+      "finite_draws": 4998,
+      "fraction_better_descriptive": 1.0
+    },
+    "source_XCOP repair minus simple_frozen_gas": {
+      "conditional_95_interval_dex": [
+        -0.03128840241621474,
+        0.001149779921743213
+      ],
+      "finite_draws": 4998,
+      "fraction_better_descriptive": 0.9699879951980792
+    }
+  },
+  "bootstrap_caveat": "Paired source-stratified whole-host Poisson resampling of frozen predictions only. Does not include refitting, source modeling, observational covariance or candidate selection uncertainty.",
+  "parameter_bounds_hit": 0,
+  "optimizer_failures": 0
+}

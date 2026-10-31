@@ -1,0 +1,97 @@
+{
+  "seed": 20261027,
+  "purpose": "Display-only comparison; no fits or model selection performed.",
+  "source_sha256": {
+    "dm_shared_halo/results/results.json": "467788d6b4609a9a75e10e704e183ab60b856e57b8fcfdbc5c9f9abf4e3c11f3",
+    "dm_cosmological_halo/results/results.json": "0300e7a68e99b827875c564911bd8fa41649711c1626e12059667cfe71e1f598",
+    "dm_gas_bridge/results.json": "493d52caaaecc183e02a24067fcf8d7d98e0ddba143d2448a2555d7740e9527b",
+    "dm_field_bridge/results.json": "1f91f2ba5b2ddabb4f915549055744660374c781bb61ff59ed33b139baecc917"
+  },
+  "A_reference_RAR_RMS_dex": 0.15289787665139015,
+  "A": [
+    {
+      "label": "A43 disk\n7 coefficients",
+      "model": "mixed_regular",
+      "RMS_dex": 0.15416928664480473,
+      "difference_dex": 0.001271409993414574,
+      "percentile_95_dex": [
+        6.613267905665537e-05,
+        0.0025347926586800286
+      ]
+    },
+    {
+      "label": "NFW: mass + size\n6 coefficients",
+      "model": "NFW_size",
+      "RMS_dex": 0.15560127393798187,
+      "difference_dex": 0.002703397286591719,
+      "percentile_95_dex": [
+        -0.009929759040262972,
+        0.014848206958027153
+      ]
+    },
+    {
+      "label": "NFW + c(M)\n3 coefficients",
+      "model": "NFW_Planck_size",
+      "RMS_dex": 0.15235664902268842,
+      "difference_dex": -0.0005412276287017348,
+      "percentile_95_dex": [
+        -0.011441121898782042,
+        0.010199454621373968
+      ]
+    }
+  ],
+  "B": [
+    {
+      "label": "RAR",
+      "fixed_RMS_dex": 0.6508491066281139,
+      "refit_RMS_dex": 0.5484371676701437
+    },
+    {
+      "label": "NLG",
+      "fixed_RMS_dex": 1.8617046625292617,
+      "refit_RMS_dex": 0.7288453649624421
+    },
+    {
+      "label": "MOG",
+      "fixed_RMS_dex": 1.905163781437406,
+      "refit_RMS_dex": 0.7288453720876529
+    }
+  ],
+  "C": {
+    "rows": 402,
+    "systems": 61,
+    "values": [
+      {
+        "label": "No extra gas",
+        "B_dex": 0.15121420457167886
+      },
+      {
+        "label": "Shared\ncoupling",
+        "B_dex": 0.27236449917369854
+      },
+      {
+        "label": "Separate\ncalibrations",
+        "B_dex": 0.1512142045754932
+      }
+    ]
+  },
+  "D": {
+    "rows": 86,
+    "systems": 23,
+    "values": [
+      {
+        "label": "No extra gas",
+        "B_dex": 0.4405850593153354
+      },
+      {
+        "label": "Shared\ncoupling",
+        "B_dex": 0.26260026700870376
+      },
+      {
+        "label": "Separate\ncalibrations",
+        "B_dex": 0.11140538933834139
+      }
+    ]
+  },
+  "intervals": "A: paired galaxy-Poisson bootstrap 95% intervals of frozen primary CV residuals; no refitting or selection/systematics uncertainty."
+}

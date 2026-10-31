@@ -1,0 +1,52 @@
+A43 targeted hot-gas-associated MOND repair protocol, 28 October 2026.
+Written before any fit in this follow-up. Existing targets have been examined in
+prior A43 work; this is an exploratory reuse, not independent discovery.
+
+Use only the existing fixed physical radius CLASH targets with published gas
+parameters (Famaey, Pizzuti, Saltas 2025 Zenodo15299349) and the seven X-COP
+clusters at 500/750/1000 kpc. Never set missing hot-gas profiles to zero in other
+populations. Keep existing A43 baryonic acceleration for each system. The new gas
+profiles are an added measured-source predictor; their consistency with the
+existing baryon model is reported, not enforced by a target-based selection.
+
+Equation: rho_extra=eta*rho_hotgas exp(-r/Rc),
+M_extra(<r)=eta integral_0^r exp(-s/Rc) dM_hotgas(s),
+g_source=g_bar+G M_extra/r^2,
+g_prediction=nu(g_source/a0)g_source.
+Fix a0=1.2e-10 m/s2, as a published galaxy-scale value. Test separately simple
+nu(y)=1/2+sqrt(1/4+1/y), and exponential nu(y)=1/(1-exp(-sqrt(y))).
+Fit only common log10(eta) in [-3,3] and log10(Rc/kpc) in [1,4] from four starts
+(1,log10(400)),(0,2),(1,3),(2,1.5). At most 2000 function evaluations per start,
+least-squares in log10 acceleration, equal weight per host and per radius within
+host. Combined sources give each source half the total weight. Optimize all
+starts, keep all logs, use lowest-cost converged fit.
+
+Comparators: both fixed-a0 unaugmented MOND forms; frozen illustrative literature
+eta=10,Rc=400 kpc (not each published cluster's optimum, and not new coefficients);
+and cluster-sample-calibrated one-a0 versions (log10(a0/1e-10) in [-3,3]).
+Validation: whole-host leave-one-out within CLASH alone, X-COP alone and combined;
+full CLASH-source exclusion and full X-COP-source exclusion. All coefficient fits
+exclude test hosts/observables. All-data descriptions remain distinct.
+
+Gas reconstruction: CLASH beta/double-beta profiles use the authors' source
+parameters in their published units, with their required single-beta treatment
+for MACS1720. X-COP uses direct MGAS, never FGAS times target mass; physical
+radius reconstructs stored R/R500 times its header scale. The samples themselves
+remain fixed in kpc. Gas and HSE mass retain shared observational/systematic
+uncertainties despite no direct target algebra. Between X-COP gas samples use
+piecewise power-law enclosed mass; below the smallest radius use a constant-density
+inner completion matching its enclosed mass. Bound this unresolved weighted mass
+between exp(-r_min/Rc)M_min and M_min. No target interpolation beyond available
+hydrostatic range. CLASH gas-parametric continuation is an explicit source model.
+
+Sensitivity: X-COP forward/HSE main targets and NFW/Einasto reconstructions,
+with 0,0.75,1 times projected stellar mass, using exactly the original 21 radii.
+Fit same models within X-COP for all nine cases. The density repair uses the same
+gas profiles throughout. Inner-core bound effects and quadrature convergence are
+checked. Do not refit or add candidate families in reaction to scores.
+
+Metrics: group-balanced logarithmic RMS dex and median absolute acceleration
+fraction; source-balanced RMS for combined. Report parameter bounds, all host
+scores and exclusions. These are conditional scalar spherical predictions, not a
+full lensing or hydrostatic observable likelihood, and do not establish a universal
+gravity theory, a physical explanation of the added mass, or literature superiority.

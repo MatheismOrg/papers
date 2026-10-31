@@ -1,0 +1,52 @@
+{
+  "status": "Descriptive structural and dynamical M/L control only; NOT included in acceleration regression or any fit accuracy claim.",
+  "source": "Baumgardt author database, updated N-body parameter table, accessed 2026-10-27; methodology Baumgardt & Hilker 2018 plus author-listed subsequent updates.",
+  "source_urls": {
+    "combined_table.txt": "https://people.smp.uq.edu.au/HolgerBaumgardt/globular/newdata/combined_table.txt",
+    "current_parameters.html": "https://people.smp.uq.edu.au/HolgerBaumgardt/globular/newdata/parameter.html"
+  },
+  "methodology_reference": {
+    "authors": "H. Baumgardt and M. Hilker",
+    "year": 2018,
+    "title": "A catalogue of masses, structural parameters, and velocity dispersion profiles of 112 Milky Way globular clusters",
+    "doi": "10.1093/mnras/sty1057",
+    "arxiv": "https://arxiv.org/abs/1804.08359"
+  },
+  "total_catalog_rows": 171,
+  "selected_control_rows": 151,
+  "selection": "Author blue fitted-system link; mass error reported in HTML and positive in ASCII; >=20 radial-velocity or >=20 proper-motion measurements.",
+  "mass_to_light_V_quantiles": {
+    "0": 0.34,
+    "0.16": 1.41,
+    "0.5": 1.81,
+    "0.84": 2.42,
+    "1": 12.08
+  },
+  "projected_half_light_radius_pc_quantiles": {
+    "0": 1.05,
+    "0.16": 1.95,
+    "0.5": 3.13,
+    "0.84": 6.24,
+    "1": 29.04
+  },
+  "mass_Msun_quantiles": {
+    "0": 2300.0,
+    "0.16": 39800.0,
+    "0.5": 137000.0,
+    "0.84": 384000.0,
+    "1": 3320000.0
+  },
+  "fraction_ML_between_1_and_3": 0.8807947019867549,
+  "limitations": [
+    "Masses are inferred under N-body stellar models, not theory-independent measurements.",
+    "No independent stellar mass or radial luminosity-weighted global dispersion is supplied by this compact table.",
+    "Central sigma0 cannot be inserted into the Wolf half-light mass formula as if global.",
+    "Half-mass and half-light radii differ due to mass segregation; they are not interchangeable.",
+    "M/L variation is not an estimated dark-matter fraction. No direct RAR residual or dark-matter exclusion is calculated.",
+    "Radius uncertainties are not supplied in the compact table; formal parameter errors do not include every systematic."
+  ],
+  "source_sha256": {
+    "combined_table.txt": "0d947dc363acd91d0dfecf44ca87845e8a27ab4589e269c872857c265b5325d8",
+    "current_parameters.html": "f956c8b784488a5d25bb8c67151fe29271bda3688260806435f680a86a60c632"
+  }
+}

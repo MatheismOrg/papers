@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "independent_method": "Exact rationalized translated Plummer sphere; independent infinite-support scalar integrals; source joins, all predictions, objectives, minima, metrics and complete galaxy/host exclusions. No analysis-code imports.",
+  "prediction_tables": 108,
+  "prediction_rows": 3960,
+  "fit_sets": 162,
+  "optimizer_attempts": 540,
+  "kernel_normalizations": {
+    "NLG": 0.9999999999999999,
+    "MOG": 0.9999999999999998
+  },
+  "translated_sphere_checks": 52,
+  "max_translated_sphere_relative_discrepancy": 5.596056951162609e-11,
+  "independent_basis_integrals": 1602,
+  "basis_max_relative_error": {
+    "NLG": 8.583818100760254e-09,
+    "MOG": 1.3924191772929362e-06
+  },
+  "midpoint_interpolation_max_relative_error": {
+    "NLG": 7.567981129552592e-07,
+    "MOG": 1.479440716156688e-06
+  },
+  "max_prediction_discrepancy_dex": 1.2434497875801753e-14,
+  "max_all_fit_direct_integral_discrepancy_dex": 6.432757970742387e-08,
+  "max_objective_discrepancy": 1.0824674490095276e-15,
+  "bound_summary": {
+    "1": {
+      "NLG_general_violations": 35,
+      "MOG_general_violations": 37,
+      "max_alpha_required": 2577.661452723669,
+      "NLG_Plummer_violations": 41,
+      "MOG_Plummer_violations": 41
+    },
+    "2": {
+      "NLG_general_violations": 31,
+      "MOG_general_violations": 33,
+      "max_alpha_required": 1288.5807263618344,
+      "NLG_Plummer_violations": 35,
+      "MOG_Plummer_violations": 36
+    },
+    "3": {
+      "NLG_general_violations": 29,
+      "MOG_general_violations": 29,
+      "max_alpha_required": 858.8871509078897,
+      "NLG_Plummer_violations": 33,
+      "MOG_Plummer_violations": 34
+    }
+  },
+  "all_fitted_mu_at_upper_bound": [
+    {
+      "ML": 1,
+      "model": "NLG_fit",
+      "mu_kpc_inverse": 99999.99999999959,
+      "at_upper_bound": true
+    },
+    {
+      "ML": 1,
+      "model": "MOG_fit",
+      "mu_kpc_inverse": 99999.99999999919,
+      "at_upper_bound": true
+    },
+    {
+      "ML": 2,
+      "model": "NLG_fit",
+      "mu_kpc_inverse": 99999.9999999998,
+      "at_upper_bound": true
+    },
+    {
+      "ML": 2,
+      "model": "MOG_fit",
+      "mu_kpc_inverse": 99999.99985857107,
+      "at_upper_bound": true
+    },
+    {
+      "ML": 3,
+      "model": "NLG_fit",
+      "mu_kpc_inverse": 99999.9999999998,
+      "at_upper_bound": true
+    },
+    {
+      "ML": 3,
+      "model": "MOG_fit",
+      "mu_kpc_inverse": 99999.9999999998,
+      "at_upper_bound": true
+    }
+  ],
+  "selected_kernel_fit_sets_at_mu_upper_bound": 108,
+  "max_selected_alpha_relative_difference_from_analytic_infinite_mu_limit": 7.287799852484511e-08,
+  "limits": [
+    "General 1+2alpha bound is necessary only for isolated spherical finite nonnegative baryon source at its baryon half-mass radius.",
+    "Sharper 1+alpha bound needs a radially nonincreasing source density such as Plummer.",
+    "Dwarf accelerations use a half-light estimator and assumed stellar mass-to-light ratios; binaries, anisotropy, tides and host field are not modeled.",
+    "Finite satellite host density and external-field contributions are absent: this does not exclude every formulation of NLG or MOG.",
+    "Stationary kernels provide no fitted time history or evidence for discrete spacetime.",
+    "mu saturates the fitted bound and the short-range limit is effectively a common multiplicative mass enhancement, not a resolved finite length measurement."
+  ],
+  "result_sha256": "1f91f2ba5b2ddabb4f915549055744660374c781bb61ff59ed33b139baecc917",
+  "audit_script_sha256": "77ea232022ebb0033d7cea8f6c969b552aa0c61e9c2002f9d9c1b129d2650c06"
+}

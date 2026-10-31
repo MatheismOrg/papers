@@ -1,0 +1,50 @@
+Broad acceleration comparison: analysis protocol written before fitting the new populations
+27 October 2026
+
+Use selected SPARC rotation data, fixed-physical-radius X-COP mass profiles,
+independently assembled dwarf spheroidal estimates, early-type galaxy estimates,
+CLASH lensing estimates if retrieved, and MaNGA BCG estimates. Retain measurement
+provenance. Data already inspected by the collection agents and publicly studied;
+this is exploratory analysis, not a preregistered discovery experiment.
+
+Do not train on X-COP R500 points: radius encodes the mass target there.
+Retain only positive accelerations and independently specified positive physical
+radii for the joint radius-model comparison. Missing-radius samples can test
+one-input relations separately. Stacked lensing bins and group velocity dispersions
+require separate observable-level checks, not invented local accelerations.
+
+Variables: x=log10(gbar/[1e-10 m/s^2]); u=log10(radius/kpc);
+y=log10(gobs/[1e-10 m/s^2]). Candidate families:
+1. Standard RAR with shared fitted a=log10(a0/[1e-10 m/s^2]).
+2. Generalized RAR with shared a and exponent p (standard p=0.5).
+3. RAR with log10(a_eff/[1e-10])=a+b*u.
+4. RAR with log10(a_eff/[1e-10])=a+b*u+c*u^2.
+5. RAR with log10(a_eff/[1e-10])=a+b*q+c*q^2; q=x+u, a baryonic
+   potential-scale proxy. This is not the full gravitational potential.
+6. Same as5 with q=x-u, a mean baryonic-density-scale proxy under spherical
+   symmetry. It is not a new independent input beyond acceleration and radius.
+7. Descriptive quadratic y=c0+c1*x+c2*u+c3*x^2+c4*x*u+c5*u^2.
+8. Piecewise standard RAR with one fitted a per population. This is a controlled
+   descriptive comparator, not a common physical law.
+External baseline: standard RAR calibrated on SPARC, a0=1.1603274962269242e-10.
+Additional baseline: Newtonian baryons alone.
+
+Finite nonlinear bounds: a in[-3,3], b in[-2,2], c in[-1,1], p in[0.1,0.9].
+Polynomial coefficients are unconstrained. Radius-conditioned RAR forms approach
+Newtonian gravity at high gbar for fixed radius. Potential/density quadratic
+conditioning is empirical and may fail asymptotically; do not extrapolate it into
+Solar-System predictions. All fitted expressions are restricted to stated domains.
+
+Training: equal total weight per population and equal total weight per physical
+system within each population; radial points share their system's weight.
+No observational covariance likelihood or nuisance marginalization is claimed.
+Fold assignment: five folds holding out entire canonical host/system groups.
+Random seed20261027. Three inner group folds choose among shared candidates,
+minimizing the mean of population equal-system log-acceleration MSE. Report
+piecewise comparator separately. Also hold out each whole population; remove any
+overlapping host group from the training set to prevent cross-population leakage.
+
+Metrics: per-population median fractional acceleration error and log RMS; galaxy
+speed error can be reported separately. Always distinguish internal group validation
+from zero-calibration external-population transfer. Do not call all rows independent.
+Snapshot data do not identify gravitational memory. No temporal kernel is fitted.

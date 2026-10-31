@@ -1,0 +1,83 @@
+{
+  "purpose": "Negative control; target construction, not a physical fit.",
+  "identity": "g500=250 H(z)^2 R500",
+  "cosmology": "H0=70 km/s/Mpc, Omega_m=0.3, Omega_Lambda=0.7",
+  "cluster_names": [
+    "A1795",
+    "A2029",
+    "A2142",
+    "A2319",
+    "A644",
+    "A85",
+    "ZW1215"
+  ],
+  "redshifts": [
+    0.0622,
+    0.0766,
+    0.09,
+    0.0557,
+    0.0704,
+    0.0555,
+    0.0766
+  ],
+  "r500_kpc": [
+    1153.0,
+    1414.0,
+    1424.0,
+    1368.0,
+    1250.0,
+    1235.0,
+    1358.0
+  ],
+  "gobs_m_s2": [
+    4.8498621224082064e-11,
+    6.030912906701766e-11,
+    6.153542328773996e-11,
+    5.7186315096589024e-11,
+    5.299506747399275e-11,
+    5.161627919720416e-11,
+    5.7920526149620176e-11
+  ],
+  "leave_one_out_radius_only": {
+    "median_absolute_acceleration_fraction": 0.008374937773621971,
+    "maximum_absolute_acceleration_fraction": 0.02286536969216746,
+    "rms_log10_acceleration": 0.005737409322990773,
+    "predictions_m_s2": [
+      4.890479415894022e-11,
+      5.98364670956054e-11,
+      6.012839308510178e-11,
+      5.808409632045231e-11,
+      5.294942509669362e-11,
+      5.243876764573139e-11,
+      5.7466726288833414e-11
+    ]
+  },
+  "leave_one_out_radius_redshift": {
+    "median_absolute_acceleration_fraction": 1.4425958707597886e-06,
+    "maximum_absolute_acceleration_fraction": 8.424848327193146e-06,
+    "rms_log10_acceleration": 1.6739115580331982e-06,
+    "predictions_m_s2": [
+      4.8498630442548114e-11,
+      6.030906718756123e-11,
+      6.153573713624438e-11,
+      5.7185833310557946e-11,
+      5.299515328951568e-11,
+      5.161633590615376e-11,
+      5.792060970553203e-11
+    ]
+  },
+  "no_fit_overdensity_identity": {
+    "median_absolute_acceleration_fraction": 2.034041094667316e-06,
+    "maximum_absolute_acceleration_fraction": 6.423779180475542e-06,
+    "rms_log10_acceleration": 1.4759960960981302e-06,
+    "predictions_m_s2": [
+      4.849866780471132e-11,
+      6.030912412574648e-11,
+      6.153574137717513e-11,
+      5.71859477443287e-11,
+      5.299518329533468e-11,
+      5.161636897041517e-11,
+      5.7920643962350586e-11
+    ]
+  }
+}

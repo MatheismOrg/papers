@@ -1,0 +1,68 @@
+{
+  "RAR": {
+    "coefficients": [
+      0.7272379017996761
+    ],
+    "group_CV_balanced_rms_dex": 0.33599706209299796,
+    "population_CV_median_acceleration_percent": {
+      "CLASH": 43.27283231863978,
+      "ETG": 45.80405812547498,
+      "MaNGA_BCG": 21.62793640117554,
+      "SPARC": 81.79359646052107,
+      "dSph": 76.09612453605794
+    },
+    "population_holdout_balanced_rms_dex": 0.367130169419531
+  },
+  "RAR_potential_quad": {
+    "coefficients": [
+      0.06672835278988905,
+      0.35008148214287976,
+      0.1720906606037099
+    ],
+    "group_CV_balanced_rms_dex": 0.24946105226500737,
+    "population_CV_median_acceleration_percent": {
+      "CLASH": 34.425616052986236,
+      "ETG": 39.620858133797256,
+      "MaNGA_BCG": 21.143735514306762,
+      "SPARC": 29.099933641927155,
+      "dSph": 53.12626695721586
+    },
+    "population_holdout_balanced_rms_dex": 0.31581076927543195
+  },
+  "quadratic_2D": {
+    "coefficients": [
+      0.34476325720433704,
+      0.7586347387351777,
+      -0.07476096423496911,
+      0.059133637341708095,
+      0.15147874151998805,
+      0.14158151303909694
+    ],
+    "group_CV_balanced_rms_dex": 0.2354979849108686,
+    "population_CV_median_acceleration_percent": {
+      "CLASH": 34.73630706328708,
+      "ETG": 34.185815840401766,
+      "MaNGA_BCG": 21.34561317228062,
+      "SPARC": 30.404419643390067,
+      "dSph": 49.16903078285713
+    },
+    "population_holdout_balanced_rms_dex": 0.4882852184770389
+  },
+  "RAR_piecewise": {
+    "coefficients": [
+      1.250389085880234,
+      0.23657361763310772,
+      1.1063880677092552,
+      0.015701364093908373,
+      0.8499987557853145
+    ],
+    "group_CV_balanced_rms_dex": 0.28173704821286455,
+    "population_CV_median_acceleration_percent": {
+      "CLASH": 17.682619450787506,
+      "ETG": 33.69273621325064,
+      "MaNGA_BCG": 16.61784425928167,
+      "SPARC": 17.832738786522228,
+      "dSph": 81.64592273678927
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "status": "passed",
+  "prediction_tables": 291,
+  "prediction_rows": 168716,
+  "fit_sets": 1953,
+  "optimizer_attempts": 5843,
+  "failed_optimizer_attempts": 0,
+  "descriptive_bootstrap_comparisons_checked": 86,
+  "individual_reports": {
+    "mond": {
+      "status": "passed",
+      "prediction_tables": 79,
+      "prediction_rows": 146828,
+      "fit_sets": 239,
+      "optimizer_attempts": 471,
+      "failed_optimizer_attempts": 0,
+      "max_independent_prediction_error_dex": 2.886579864025407e-15,
+      "max_independent_cost_error": 2.0816681711721685e-17,
+      "input_hash": "37b8fde78867bbf4a2cc804288c823304c3dce47f1f1562891fe915d0e133df5",
+      "result_hash": "745de7fb73956f2d167c574ac0d5d742f4471675f3c678e2f851d18dfffc6457",
+      "script_hash": "8a1d6c8dab44950ae56ffc5bc5704eed573bdceb5b16ae085839b19ccf22f737",
+      "audit_script_hash": "c8aa8ccb0dac08bef7e201b3587b90b59ee19d6b0369c2f2112274d86a9554a8",
+      "all_groups_hosts_sources_and_bounds_checked": true,
+      "limitations": "No refitting, likelihood/systematic validation or universal-law claim. Physical limit audit is separate.",
+      "descriptive_bootstrap_comparisons_checked": 26,
+      "bootstrap_audit_script_sha256": "df750f1952800879b930fe423e44e760b9f174173fbeca224a1d0cac1bf11ac6"
+    },
+    "halo": {
+      "status": "passed",
+      "prediction_tables": 20,
+      "prediction_rows": 15760,
+      "fit_sets": 1254,
+      "optimizer_attempts": 3762,
+      "failed_optimizer_attempts": 0,
+      "max_independent_prediction_error_dex": 1.0544343176377424e-13,
+      "max_independent_cost_error": 1.9081958235744878e-16,
+      "raw_sparc_rows_independently_matched": 2700,
+      "independent_halo_integral_relative_error": 4.440892098500626e-16,
+      "descriptive_bootstrap_comparisons_checked": 54,
+      "all_contiguous_splits_and_training_targets_checked": true,
+      "result_hash": "c0110f92d7195accb492a22b8432c468e3a69b2fc8c2543d6288e0021f7adf64",
+      "audit_script_hash": "9c87fe7578725a6e2be57396165fb22449c794702edca3d603a4bfbfcc16b19c",
+      "limitations": "Conditional radial prediction within measured galaxies, not prediction of entirely new systems. Counts/metrics do not equal a cosmological likelihood or best published nuisance-marginalized analysis."
+    },
+    "cluster": {
+      "status": "passed",
+      "prediction_tables": 192,
+      "prediction_rows": 6128,
+      "fit_sets": 460,
+      "optimizer_attempts": 1610,
+      "failed_optimizer_attempts": 0,
+      "independent_adaptive_integral_checks": 344,
+      "max_adaptive_integral_relative_discrepancy": 4.296563105299356e-14,
+      "max_prediction_error_dex": 1.7763568394002505e-15,
+      "max_cost_error": 1.431146867680866e-17,
+      "gas_prediction_rows_refined_and_inner_bounds_checked": 3064,
+      "maximum_refined_quad_change_dex": 8.881784197001252e-15,
+      "maximum_unresolved_core_bound_span_dex": 0.0005579278836993495,
+      "primary_parameter_literal_match_performed": true,
+      "raw_XCOP_direct_MGAS_matched": true,
+      "all_case_splits_and_target_exclusions_checked": true,
+      "result_hash": "bb9d7413f7140806628b0a30a9d57e9ea0839856d0f037944d07e688b0e5bd89",
+      "audit_script_hash": "ed9fd89b6a050eb6c5e174bea7baee9856b3c0ada22f1c1f7028c5fa8bc0ede5",
+      "limitations": [
+        "Frozen literature gas parameters are CLASH-informed; repeating them with a source_CLASH label is not independent CLASH-source exclusion.",
+        "Fits add a phenomenological positive source component before MOND; neither its material identity nor gravity/memory derivation is established.",
+        "Gas profiles and reconstructed total accelerations share observational/modeling systematics; algebraic nonleakage is not statistical independence.",
+        "Checks do not establish superiority to full published cluster likelihoods."
+      ],
+      "descriptive_bootstrap_comparisons_checked": 6,
+      "bootstrap_audit_script_sha256": "aa5f17f7b57bb782e1e1a4279e4e531a8a7b695fe3f6fb8144ec5aaf6a393de2"
+    },
+    "physics": {
+      "status": "passed",
+      "models": {
+        "RAR": {
+          "observed_coordinate_negative_response_intervals": 0,
+          "minimum_observed_coordinate_response_slope": 0.5008000463213591,
+          "fixed_radius_negative_response_intervals": 0,
+          "minimum_fixed_radius_response_slope": 0.5000000000114042,
+          "point_source_negative_extra_density_intervals": 0,
+          "tested_point_source_intervals": 24000
+        },
+        "simple": {
+          "observed_coordinate_negative_response_intervals": 0,
+          "minimum_observed_coordinate_response_slope": 0.5008072206491576,
+          "fixed_radius_negative_response_intervals": 0,
+          "minimum_fixed_radius_response_slope": 0.5000000000115463,
+          "point_source_negative_extra_density_intervals": 0,
+          "tested_point_source_intervals": 24000
+        },
+        "standard": {
+          "observed_coordinate_negative_response_intervals": 0,
+          "minimum_observed_coordinate_response_slope": 0.5000020973477959,
+          "fixed_radius_negative_response_intervals": 0,
+          "minimum_fixed_radius_response_slope": 0.4999999999999645,
+          "point_source_negative_extra_density_intervals": 0,
+          "tested_point_source_intervals": 24000
+        },
+        "nu_n": {
+          "observed_coordinate_negative_response_intervals": 0,
+          "minimum_observed_coordinate_response_slope": 0.5029928026756281,
+          "fixed_radius_negative_response_intervals": 0,
+          "minimum_fixed_radius_response_slope": 0.5000000021321966,
+          "point_source_negative_extra_density_intervals": 0,
+          "tested_point_source_intervals": 24000
+        },
+        "mixed_transient": {
+          "observed_coordinate_negative_response_intervals": 0,
+          "minimum_observed_coordinate_response_slope": 0.025804619641078826,
+          "fixed_radius_negative_response_intervals": 0,
+          "minimum_fixed_radius_response_slope": 0.02499999999994138,
+          "point_source_negative_extra_density_intervals": 0,
+          "tested_point_source_intervals": 24000
+        },
+        "mixed_potential_taper": {
+          "observed_coordinate_negative_response_intervals": 0,
+          "minimum_observed_coordinate_response_slope": 0.026105621819816346,
+          "fixed_radius_negative_response_intervals": 683,
+          "minimum_fixed_radius_response_slope": -0.12679796265929785,
+          "point_source_negative_extra_density_intervals": 0,
+          "tested_point_source_intervals": 24000
+        },
+        "two_log_bumps": {
+          "observed_coordinate_negative_response_intervals": 37,
+          "minimum_observed_coordinate_response_slope": -2.24860166926355,
+          "fixed_radius_negative_response_intervals": 2900,
+          "minimum_fixed_radius_response_slope": -2.3160972307493237,
+          "point_source_negative_extra_density_intervals": 613,
+          "tested_point_source_intervals": 24000
+        }
+      },
+      "solar_probe_rows": 42,
+      "max_solar_log_excess_absolute_difference": 9.094947017729282e-13,
+      "interpretation": "Transient repair passes these grids and has an analytic nonnegative point-source extra-density proof for all declared positive coefficients and alpha,beta<1. This is not an arbitrary-profile, field-theory, lensing, binary or external-field solar validation. Taper and bumps fail fixed-radius response monotonicity; bumps also fail point-source density positivity. Formal far-field BTFR normalization does not establish observed finite-radius BTFR agreement.",
+      "diagnostic_result_sha256": "a3d8260972a6bdcf5845528bb7750bbd7b73c8a6798baeb793044572e3d17340"
+    }
+  },
+  "audit_file_hashes": {
+    "verify.py": "18d3d9d0c72a67e0b115417605ed0f074e487dc585868060b0cb050c33042567",
+    "verify_cluster.py": "ed9fd89b6a050eb6c5e174bea7baee9856b3c0ada22f1c1f7028c5fa8bc0ede5",
+    "verify_cluster_bootstrap.py": "aa5f17f7b57bb782e1e1a4279e4e531a8a7b695fe3f6fb8144ec5aaf6a393de2",
+    "verify_halo.py": "9c87fe7578725a6e2be57396165fb22449c794702edca3d603a4bfbfcc16b19c",
+    "verify_mond.py": "c8aa8ccb0dac08bef7e201b3587b90b59ee19d6b0369c2f2112274d86a9554a8",
+    "verify_mond_bootstrap.py": "df750f1952800879b930fe423e44e760b9f174173fbeca224a1d0cac1bf11ac6",
+    "verify_physics.py": "f53426676838b0c3ab01307f6656365e579ab7d3b88022b2b24bd413d3995e45"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "history_matches": 15,
+  "history_host_counts": {
+    "MW": 11,
+    "M31": 4
+  },
+  "environment_catalog": 109,
+  "SPARC_matched_galaxies": 91,
+  "SPARC_matched_rows": 1347,
+  "distance_band_counts": {
+    "0": 27,
+    "1": 42,
+    "2": 7,
+    "3": 6,
+    "4": 9
+  },
+  "input_hashes": {
+    "history_input.csv": "80167c870f42e9ab4ee2fa77aed438d01e8a17ccab16e2fab56de85982a0b922",
+    "sparc_environment_input.csv": "49f53dc405dff7e6814f0b1fc78f51bc8b191dd8fa0bffe759ac895a99e50fb8",
+    "data/Weisz2015_matched_history.csv": "67da9f7f6b947de1ed108756c6db5195f98904203efb788a0e156f274ecab978",
+    "data/Table3_Chae_etal_2021.txt": "30a46a0f3721f13e47832a7f3b3226d8c67b38a860d7c35debb854738104ae06"
+  },
+  "history_source": "Weisz et al.2015 arXiv1503.05195 Table1, p3; tau90 total errors second entries, log10 year units. Manually transcribed and visually checked against PDF. Host distances are older published photometric distances, not dynamical masses.",
+  "environment_source": "Chae et al.2021 ApJ921:104 Table3 from author download. Table2 fitted external fields explicitly excluded. eN normalized by fixed a0=1.2e-10 SI. Published MC/NC scenarios not direct field measurements."
+}

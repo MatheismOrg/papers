@@ -1,0 +1,47 @@
+{
+  "status": "Asymptotic illustrative calculation only, NOT ephemeris or Solar System data fit; isolated central Sun assumption excludes Galactic external field, other planets and relativistic terms.",
+  "mu_sun_m3_s2": 1.3271244e+20,
+  "AU_m": 149597870700.0,
+  "rows": [
+    {
+      "label": "Earth",
+      "radius_AU": 1.0,
+      "g_newton_m_s2": 0.0059300835181528,
+      "poly_prediction_m_s2": 0.6556800945854331,
+      "poly_over_newton": 110.56844184037311,
+      "isolated_RAR_over_newton": 1.0
+    },
+    {
+      "label": "Saturn",
+      "radius_AU": 9.58,
+      "g_newton_m_s2": 6.461447080243723e-05,
+      "poly_prediction_m_s2": 0.00043731120014134053,
+      "poly_over_newton": 6.76800714623891,
+      "isolated_RAR_over_newton": 1.0
+    },
+    {
+      "label": "Neptune",
+      "radius_AU": 30.07,
+      "g_newton_m_s2": 6.558340391821367e-06,
+      "poly_prediction_m_s2": 1.6905330767829994e-05,
+      "poly_over_newton": 2.5776842551374624,
+      "isolated_RAR_over_newton": 1.0
+    },
+    {
+      "label": "Outer solar system illustrative",
+      "radius_AU": 1000.0,
+      "g_newton_m_s2": 5.930083518152801e-09,
+      "poly_prediction_m_s2": 5.191327970894482e-09,
+      "poly_over_newton": 0.8754224042550349,
+      "isolated_RAR_over_newton": 1.0007863342194705
+    },
+    {
+      "label": "Oort scale illustrative",
+      "radius_AU": 7000.0,
+      "g_newton_m_s2": 1.2102211261536327e-10,
+      "poly_prediction_m_s2": 1.974750524964325e-10,
+      "poly_over_newton": 1.6317270309439618,
+      "isolated_RAR_over_newton": 1.5628321171692374
+    }
+  ]
+}

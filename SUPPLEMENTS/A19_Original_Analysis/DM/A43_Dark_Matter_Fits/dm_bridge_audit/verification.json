@@ -1,0 +1,206 @@
+{
+  "status": "PASS",
+  "audit_scope": "Independent arithmetic, density integrals, physical bounds, feature provenance and declared validation. Passing verifies reproduction and mathematical implementation, not physical truth, predictive universality, or independent-discovery status.",
+  "branches": {
+    "shared_halo": {
+      "status": "PASS",
+      "tables": 56,
+      "prediction_rows": 95340,
+      "fit_sets": 120,
+      "optimizer_attempts": 320,
+      "bootstrap_comparisons": 42,
+      "raw_photometric_galaxies_matched": 149,
+      "max_prediction_discrepancy_dex": 4.523464935957122e-14,
+      "max_objective_cost_discrepancy": 1.0408340855860843e-17,
+      "density_integral_checks": 82,
+      "max_density_integral_relative_discrepancy": 4.782174656270399e-12,
+      "all_group_and_feature_tail_exclusions_checked": true,
+      "no_Vflat_prediction_feature": true,
+      "result_sha256": "467788d6b4609a9a75e10e704e183ab60b856e57b8fcfdbc5c9f9abf4e3c11f3",
+      "audit_script_sha256": "e47429c02a2e171d2e359a11b2228fc8058085edce40d91c818b9585348bcb61",
+      "limits": [
+        "Whole-galaxy transfer is exploratory reuse, not an independent survey.",
+        "Mass proxy uses common stellarM/L and stellar light radius; no full baryonic geometry or nuisance likelihood.",
+        "Affine halo-state laws do not reproduce full abundance-matching/CDM priors or unify every scale."
+      ]
+    },
+    "cosmological_halo": {
+      "status": "PASS",
+      "independent_method": "Immutable photometric-input identity; independent density integral and critical-density radius construction; all forecasts, structural states, diagnostics, fits, minima, exclusions, comparator copies and bootstraps. No analysis-code imports.",
+      "prediction_tables": 16,
+      "prediction_rows": 27240,
+      "fit_sets": 40,
+      "optimizer_attempts": 120,
+      "comparator_tables_verified": 49,
+      "bootstrap_comparisons": 42,
+      "max_prediction_discrepancy_dex": 9.603429163007604e-15,
+      "max_structural_state_relative_discrepancy": 3.8413716652030416e-14,
+      "max_objective_discrepancy": 1.734723475976807e-17,
+      "truncation_check_radii": 101,
+      "no_Vflat_prediction_feature": true,
+      "limits": [
+        "Mref is dark-matter-only-equivalent reference M200c; dark component is (1-fb)Mref. This is an explicit deterministic convention, not an empirical halo mass measurement.",
+        "Mass mapping and concentration are conditional on common photometric stellar M/L and an approximate HI-plus-stellar mass proxy.",
+        "Published concentration-mass calibration is extrapolated for some low-mass objects; scatter and baryonic halo response are omitted.",
+        "Fixed Planck cosmology and concentration-mass relation supply structural priors, not a full LambdaCDM prediction.",
+        "No observed radius tests the imposed outer truncation; finite total mass is a declared extrapolation.",
+        "The three-coefficient size-model RMS advantage is small, changes sign across CV seeds and has descriptive intervals spanning zero; median speed error is worse than RAR.",
+        "No per-galaxy target-informed halo parameter is fitted in held-out forecasts; affine mapping coefficients are shared."
+      ],
+      "result_sha256": "0300e7a68e99b827875c564911bd8fa41649711c1626e12059667cfe71e1f598",
+      "audit_script_sha256": "dc619ce51975a3ffce7e1357e9e5be202f9f7ec75157c267fc78152ce29976cf"
+    },
+    "gas_bridge": {
+      "status": "PASS",
+      "independent_method": "Raw component and source joins; adaptive integration of cluster gas density and mass-profile derivatives; all forecasts, fits, objective minima, metrics, exclusions, paired host resampling and nonpositive-force retention. No analysis-code imports.",
+      "prediction_tables": 104,
+      "prediction_rows": 32380,
+      "fit_sets": 104,
+      "optimizer_attempts": 382,
+      "cluster_density_integrals": 516,
+      "max_cluster_quadrature_relative_discrepancy": 4.318767565791859e-14,
+      "max_prediction_discrepancy_dex": 1.7763568394002505e-15,
+      "max_objective_discrepancy": 2.0816681711721685e-17,
+      "descriptive_bootstrap_comparisons": 10,
+      "full_disk_diagnostic_rows": 32400,
+      "full_disk_invalid_counts": {
+        "simple:zero": 0,
+        "simple:literature": 8,
+        "simple:CLASH_frozen": 9,
+        "simple:disk_all_fit": 0,
+        "simple:cluster_all_fit": 10,
+        "simple:joint_all_fit": 0,
+        "exp:zero": 0,
+        "exp:literature": 8,
+        "exp:CLASH_frozen": 10,
+        "exp:disk_all_fit": 0,
+        "exp:cluster_all_fit": 10,
+        "exp:joint_all_fit": 0
+      },
+      "limits": [
+        "One eta is used across gas phases, but disk constant-weight source scaling and spherical finite-Rc cluster integral are different geometry calculations.",
+        "A disk evaluation radius cutoff cannot bound finite-Rc source approximation error: exterior sources contribute. No exact finite-Rc disk reconstruction is present.",
+        "The cold-HI versus hot-ICM extension is the tested hypothesis; the published hot-gas-only model is not falsified by its failure.",
+        "Cluster zero values in disk-only ggas/gstar columns are unused placeholders; measured cluster gas enters through nonzero source-density quadrature.",
+        "Disk-only fits do not identify Rc; cold-to-cluster transfer assumes external fixed Rc=400 kpc.",
+        "Frozen CLASH coefficients include CLASH targets from earlier work, so CLASH scores are descriptive. All newly refitted test targets are excluded as declared.",
+        "Cluster speed percentages are algebraic square-root transforms, not measured disk orbital-speed errors.",
+        "Resampling intervals are descriptive conditional on frozen forecasts and omit calibration/systematic/model-selection uncertainty."
+      ],
+      "result_sha256": "493d52caaaecc183e02a24067fcf8d7d98e0ddba143d2448a2555d7740e9527b",
+      "audit_script_sha256": "8c43f13101f29f973e686faae4b0e7b7ed899c545e0aa19cb039103b2ccdafd9"
+    },
+    "field_bridge": {
+      "status": "PASS",
+      "independent_method": "Exact rationalized translated Plummer sphere; independent infinite-support scalar integrals; source joins, all predictions, objectives, minima, metrics and complete galaxy/host exclusions. No analysis-code imports.",
+      "prediction_tables": 108,
+      "prediction_rows": 3960,
+      "fit_sets": 162,
+      "optimizer_attempts": 540,
+      "kernel_normalizations": {
+        "NLG": 0.9999999999999999,
+        "MOG": 0.9999999999999998
+      },
+      "translated_sphere_checks": 52,
+      "max_translated_sphere_relative_discrepancy": 5.596056951162609e-11,
+      "independent_basis_integrals": 1602,
+      "basis_max_relative_error": {
+        "NLG": 8.583818100760254e-09,
+        "MOG": 1.3924191772929362e-06
+      },
+      "midpoint_interpolation_max_relative_error": {
+        "NLG": 7.567981129552592e-07,
+        "MOG": 1.479440716156688e-06
+      },
+      "max_prediction_discrepancy_dex": 1.2434497875801753e-14,
+      "max_all_fit_direct_integral_discrepancy_dex": 6.432757970742387e-08,
+      "max_objective_discrepancy": 1.0824674490095276e-15,
+      "bound_summary": {
+        "1": {
+          "NLG_general_violations": 35,
+          "MOG_general_violations": 37,
+          "max_alpha_required": 2577.661452723669,
+          "NLG_Plummer_violations": 41,
+          "MOG_Plummer_violations": 41
+        },
+        "2": {
+          "NLG_general_violations": 31,
+          "MOG_general_violations": 33,
+          "max_alpha_required": 1288.5807263618344,
+          "NLG_Plummer_violations": 35,
+          "MOG_Plummer_violations": 36
+        },
+        "3": {
+          "NLG_general_violations": 29,
+          "MOG_general_violations": 29,
+          "max_alpha_required": 858.8871509078897,
+          "NLG_Plummer_violations": 33,
+          "MOG_Plummer_violations": 34
+        }
+      },
+      "all_fitted_mu_at_upper_bound": [
+        {
+          "ML": 1,
+          "model": "NLG_fit",
+          "mu_kpc_inverse": 99999.99999999959,
+          "at_upper_bound": true
+        },
+        {
+          "ML": 1,
+          "model": "MOG_fit",
+          "mu_kpc_inverse": 99999.99999999919,
+          "at_upper_bound": true
+        },
+        {
+          "ML": 2,
+          "model": "NLG_fit",
+          "mu_kpc_inverse": 99999.9999999998,
+          "at_upper_bound": true
+        },
+        {
+          "ML": 2,
+          "model": "MOG_fit",
+          "mu_kpc_inverse": 99999.99985857107,
+          "at_upper_bound": true
+        },
+        {
+          "ML": 3,
+          "model": "NLG_fit",
+          "mu_kpc_inverse": 99999.9999999998,
+          "at_upper_bound": true
+        },
+        {
+          "ML": 3,
+          "model": "MOG_fit",
+          "mu_kpc_inverse": 99999.9999999998,
+          "at_upper_bound": true
+        }
+      ],
+      "selected_kernel_fit_sets_at_mu_upper_bound": 108,
+      "max_selected_alpha_relative_difference_from_analytic_infinite_mu_limit": 7.287799852484511e-08,
+      "limits": [
+        "General 1+2alpha bound is necessary only for isolated spherical finite nonnegative baryon source at its baryon half-mass radius.",
+        "Sharper 1+alpha bound needs a radially nonincreasing source density such as Plummer.",
+        "Dwarf accelerations use a half-light estimator and assumed stellar mass-to-light ratios; binaries, anisotropy, tides and host field are not modeled.",
+        "Finite satellite host density and external-field contributions are absent: this does not exclude every formulation of NLG or MOG.",
+        "Stationary kernels provide no fitted time history or evidence for discrete spacetime.",
+        "mu saturates the fitted bound and the short-range limit is effectively a common multiplicative mass enhancement, not a resolved finite length measurement."
+      ],
+      "result_sha256": "1f91f2ba5b2ddabb4f915549055744660374c781bb61ff59ed33b139baecc917",
+      "audit_script_sha256": "77ea232022ebb0033d7cea8f6c969b552aa0c61e9c2002f9d9c1b129d2650c06"
+    }
+  },
+  "aggregate": {
+    "prediction_tables": 284,
+    "prediction_rows": 158920,
+    "fit_sets": 426,
+    "optimizer_attempts": 1362,
+    "descriptive_bootstrap_comparisons": 94,
+    "full_disk_diagnostic_rows_separate": 32400,
+    "copied_comparator_tables_separate": 49,
+    "independent_cluster_density_integrals": 516,
+    "independent_kernel_basis_and_midpoint_integrals": 1602,
+    "max_recomputed_prediction_discrepancy_dex": 4.523464935957122e-14
+  },
+  "entrypoint_sha256": "0c109536ec1d33266603ff74d8298fc97371d540a398ce28c0104d80974f7e97"
+}

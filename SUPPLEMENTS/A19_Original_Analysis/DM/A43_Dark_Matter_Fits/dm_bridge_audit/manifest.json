@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "files": {
+    "ANALYTIC_PROOFS.txt": "c3b40f43b486105ab473a1cdc8eb754401f4cab4720cc4f0f10165e76b1291dc",
+    "README.txt": "75715fb5ac83bd644905774ec2297f054f42052b3df1befca19ebbe448112b8e",
+    "cosmological_halo_audit.log": "63b4817fc6d1591cbc2b5aef84a2a1f7dd7381397f239afe707882c2c43f6d4f",
+    "cosmological_halo_verification.json": "4322b8489d232b3bcb98be54a60026c16e18162d5c179d329aa0157ada4f50e3",
+    "field_bridge_audit.log": "aa36652da6b5d19f883b53c285746e06a92762a3a4750098f9ea70e6152c4586",
+    "field_bridge_verification.json": "4ef5caed70346f0a86da2a2023888ee1233579dfdaee0414c72b755c50625e4f",
+    "gas_bridge_audit.log": "6d377855e843e450ee06f45c14d4f74f1409fba3c46befdf836b2a5a4555d883",
+    "gas_bridge_verification.json": "b7f5303fd4ea8cb499ef976adddef1339ae926cf209d68ea0f51476e7a4df227",
+    "shared_halo_audit.log": "b3c2d957f38d03265145357c219cc2a0b73cfd3427133316fa274525e3f49d4d",
+    "shared_halo_verification.json": "0d60043f2215ff9e748929cf7c39b0b9dd5b866f7097a163e856d6c8ba4aa5cb",
+    "verification.json": "510ef37dfad2d9ca2587a216b780d1b4323c7f5b52e52c2ac4b8971b0426bea0",
+    "verify.py": "0c109536ec1d33266603ff74d8298fc97371d540a398ce28c0104d80974f7e97",
+    "verify_cosmological_halo.py": "dc619ce51975a3ffce7e1357e9e5be202f9f7ec75157c267fc78152ce29976cf",
+    "verify_field_bridge.py": "77ea232022ebb0033d7cea8f6c969b552aa0c61e9c2002f9d9c1b129d2650c06",
+    "verify_gas_bridge.py": "8c43f13101f29f973e686faae4b0e7b7ed899c545e0aa19cb039103b2ccdafd9",
+    "verify_shared_halo.py": "e47429c02a2e171d2e359a11b2228fc8058085edce40d91c818b9585348bcb61"
+  }
+}
