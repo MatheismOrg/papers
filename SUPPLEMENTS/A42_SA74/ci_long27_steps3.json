@@ -1,0 +1,209 @@
+[
+ {
+  "rule": "{{x,y},{x,z}}->{{x,w},{y,z},{z,w}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 25,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{x,z}}->{{y,w},{z,w},{w,x}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 25,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{x,z}}->{{y,x},{z,w},{w,y}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 25,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{x,z}}->{{y,y},{y,w},{z,y}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 26,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{x,z}}->{{y,y},{z,w},{w,y}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 26,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{x,y},{x,w},{w,z}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 54,
+  "pairs": 62,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{x,y},{y,w},{z,y}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 47,
+  "pairs": 62,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{x,z},{x,w},{w,z}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 21,
+  "pairs": 62,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{y,x},{y,w},{z,x}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 31,
+  "pairs": 62,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{y,x},{y,w},{z,y}}",
+  "steps": 3,
+  "pass": true,
+  "resolved": 62,
+  "pairs": 62,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{y,x},{y,z},{w,y}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 47,
+  "pairs": 62,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{y,x},{z,y},{w,y}}",
+  "steps": 3,
+  "pass": true,
+  "resolved": 62,
+  "pairs": 62,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{z,x},{z,w},{w,x}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 35,
+  "pairs": 62,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{z,y}}->{{x,w},{y,x},{w,z}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 25,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{z,y}}->{{x,x},{x,w},{w,z}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 26,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{z,y}}->{{y,w},{w,x},{w,z}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 25,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{z,y}}->{{x,z},{x,w},{y,x},{w,y}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 34,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{x,z}}->{{x,y},{z,y},{z,w},{w,z}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 44,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{x,y},{y,x},{z,y},{w,y}}",
+  "steps": 2,
+  "pass": true
+ },
+ {
+  "rule": "{{x,y},{z,y}}->{{x,y},{y,w},{u,x},{u,z}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 32,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{y,z}}->{{x,y},{y,w},{z,y},{w,y}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 47,
+  "pairs": 62,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{z,y}}->{{x,z},{x,w},{w,y},{u,z}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 20,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{x,z}}->{{x,y},{y,w},{z,u},{u,y}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 32,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{x,z}}->{{y,x},{y,w},{z,x}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 52,
+  "pairs": 65,
+  "capped": 0
+ },
+ {
+  "rule": "{{x,y},{x,z}}->{{x,y},{x,w},{z,x}}",
+  "steps": 2,
+  "pass": true
+ },
+ {
+  "rule": "{{x,y},{z,y}}->{{x,y},{y,z},{w,y}}",
+  "steps": 2,
+  "pass": true
+ },
+ {
+  "rule": "{{x,y},{z,y}}->{{y,x},{y,z},{w,x}}",
+  "steps": 3,
+  "pass": false,
+  "resolved": 52,
+  "pairs": 65,
+  "capped": 0
+ }
+]

@@ -1,0 +1,97 @@
+{
+  "scope": "Two counterpropagating classical transverse plane Maxwell waves on supplied 3+1 static metric with one-dimensional dependence. No quantized-photon or general 3D Maxwell claim.",
+  "metric": "ds\u00b2=-N(x)\u00b2dt\u00b2+dx\u00b2+dy\u00b2+dz\u00b2; N=1+.25cosx",
+  "eulerian_field_equations": "partial_t E_y=-partial_x(N B_z); partial_t B_z=-partial_x(N E_y)",
+  "same_operator_mapping": "chi_plus/minus=sqrt(N)(E_y +/- B_z), partial_t chi_plus/minus=minus/plus[N partial_x+Nprime/2]chi_plus/minus",
+  "energy": "Killing energy per unit transverse area = integral N(E_y\u00b2+B_z\u00b2)/2 dx = integral(|chi_plus|\u00b2+|chi_minus|\u00b2)/4 dx",
+  "energy_flux": "N\u00b2 E_y B_z",
+  "gauss_constraints": "div E=div B=0 identically for E=(0,E_y(t,x),0), B=(0,0,B_z(t,x))",
+  "rows": [
+    {
+      "sites": 64,
+      "steps": 12,
+      "dt": 0.08333333333333333,
+      "dt_over_dx": 0.8488263631567751,
+      "norm_error": 0.0,
+      "inverse_error": null,
+      "characteristic_state_error": 0.07291889953219459,
+      "relative_maxwell_field_error": 0.07481469642100377,
+      "killing_energy": 0.25000000000000006,
+      "killing_energy_drift": 5.551115123125783e-17,
+      "max_imaginary_field": 0.0
+    },
+    {
+      "sites": 128,
+      "steps": 22,
+      "dt": 0.045454545454545456,
+      "dt_over_dx": 0.9259923961710275,
+      "norm_error": 6.661338147750939e-16,
+      "inverse_error": null,
+      "characteristic_state_error": 0.017935609957918146,
+      "relative_maxwell_field_error": 0.01839246200968619,
+      "killing_energy": 0.2499999999999997,
+      "killing_energy_drift": 3.0531133177191805e-16,
+      "max_imaginary_field": 0.0
+    },
+    {
+      "sites": 256,
+      "steps": 42,
+      "dt": 0.023809523809523808,
+      "dt_over_dx": 0.9700872721791716,
+      "norm_error": 4.440892098500626e-16,
+      "inverse_error": null,
+      "characteristic_state_error": 0.00443866334885888,
+      "relative_maxwell_field_error": 0.0045502111055659555,
+      "killing_energy": 0.24999999999999997,
+      "killing_energy_drift": 2.7755575615628914e-17,
+      "max_imaginary_field": 0.0
+    },
+    {
+      "sites": 512,
+      "steps": 82,
+      "dt": 0.012195121951219513,
+      "dt_over_dx": 0.9937479373542734,
+      "norm_error": 4.440892098500626e-16,
+      "inverse_error": null,
+      "characteristic_state_error": 0.0011037437157584886,
+      "relative_maxwell_field_error": 0.001131271063287825,
+      "killing_energy": 0.25000000000000033,
+      "killing_energy_drift": 3.3306690738754696e-16,
+      "max_imaginary_field": 0.0
+    },
+    {
+      "sites": 1024,
+      "steps": 164,
+      "dt": 0.006097560975609756,
+      "dt_over_dx": 0.9937479373542734,
+      "norm_error": 6.661338147750939e-16,
+      "inverse_error": null,
+      "characteristic_state_error": 0.00027593493022034273,
+      "relative_maxwell_field_error": 0.0002828136607193903,
+      "killing_energy": 0.2500000000000001,
+      "killing_energy_drift": 1.1102230246251565e-16,
+      "max_imaginary_field": 0.0
+    },
+    {
+      "sites": 2048,
+      "steps": 326,
+      "dt": 0.003067484662576687,
+      "dt_over_dx": 0.9998445504668763,
+      "norm_error": 4.440892098500626e-16,
+      "inverse_error": null,
+      "characteristic_state_error": 6.889023402250205e-05,
+      "relative_maxwell_field_error": 7.060433090306092e-05,
+      "killing_energy": 0.25000000000000033,
+      "killing_energy_drift": 3.3306690738754696e-16,
+      "max_imaginary_field": 0.0
+    }
+  ],
+  "field_error_ratios": [
+    4.067682531115379,
+    4.042111801623441,
+    4.022211168684567,
+    4.000058060880871,
+    4.005613495688966
+  ],
+  "all_assertions_passed": true
+}

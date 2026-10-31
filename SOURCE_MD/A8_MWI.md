@@ -1,4 +1,4 @@
-# Quantum Mechanics Without Collapse: The Simplicity Argument
+# Many-Worlds Is the Simplest Interpretation: Quantum Mechanics Without Collapse
 
 ## Abstract
 
@@ -12,7 +12,19 @@ Keywords: Many-Worlds Interpretation, Simplicity Dominance Principle, Kolmogorov
 
 This paper argues that a measurement needs no law of its own. One rule, unitary evolution (the deterministic, reversible change of a quantum state over time), already applies to the measured system, the apparatus and the observer. A collapse theory, in which the quantum state abruptly reduces to one outcome, changes that evolution partway through. A Bohmian theory keeps it and adds a selected configuration of particles with a rule guiding it. Each complete account then has to show what it explains for the information it requires.
 
-A shorter complete description receives greater prior weight (its weight before any evidence is considered), because each of its bits is a 50/50 choice that no rule makes. Its posterior weight, the weight after evidence is considered, also depends on its observational likelihood, the probability it gives to what is observed. Using the same weight as a measure of what exists follows from the rule-random dichotomy (*Why These Simple Laws?*, Section 3.3).
+A shorter complete description receives greater prior weight (its weight before any evidence is considered), because each of its bits is a 50/50 choice that no rule makes. Its posterior weight, the weight after evidence is considered, also depends on its observational likelihood, the probability it gives to what is observed. Using the same weight as a measure of what exists follows from the larger chain the paper rests on.
+
+The chain, in short:
+
+1. Everything that exists is ruled or random, and both are mathematical, so physics is mathematics, and anything outside mathematics would be outside logic. That is an a priori proof.
+2. Every consistent structure exists as mathematics, and what exists physically is what logical steps in mathematics produce. Mathematics cannot fail to exist, so there is something rather than nothing.
+3. Each bit of a description that no rule decides is a 50/50, so each added bit halves the description's weight. Short laws dominate, and a universe like ours starts simple, in its laws and its state, as observation also shows: the known laws fit on a page, and the early universe was nearly smooth.
+4. Observers like us are complex, so a simple start has to grow complexity, as simple rules do.
+5. A cause produces its effect as the next state, and a continuum has no next state, so the growth comes in discrete causal steps. That is an a priori proof in the logician's sense.
+6. Time is those steps, and space is how far they spread, at a base rate, the speed of light. An endless chain of steps has no last step to run back from, so time runs forward. That too is a priori. A history run backwards would also have to state the step where it turns back, and each bit of that timestamp halves its weight.
+7. Observers arise in forward time, where complexity grows, and their minds run forward with it: a mind models its world from records of steps already taken, and each thought is produced from the one before, so no one remembers backwards from the end.
+
+Each link stands on its fact, so a reason can fail without taking the chain with it: if the weight on short descriptions were not why our laws are simple, they would still be simple.
 
 ## 2. Reality as mathematical structure
 

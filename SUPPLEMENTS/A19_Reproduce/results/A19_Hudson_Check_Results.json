@@ -1,0 +1,56 @@
+[
+ {
+  "z": 0.27,
+  "logMs": 10.241,
+  "Mh_hudson": 710000000000.0,
+  "Mh_err": 110000000000.00002,
+  "rule_dark_plus_baryons": 733200000000.0,
+  "dex_rule_minus_hudson": 0.014,
+  "err_dex": 0.067
+ },
+ {
+  "z": 0.28,
+  "logMs": 10.62,
+  "Mh_hudson": 1600000000000.0,
+  "Mh_err": 409999999999.99994,
+  "rule_dark_plus_baryons": 1366000000000.0,
+  "dex_rule_minus_hudson": -0.069,
+  "err_dex": 0.111
+ },
+ {
+  "z": 0.48,
+  "logMs": 10.22,
+  "Mh_hudson": 570000000000.0,
+  "Mh_err": 100000000000.0,
+  "rule_dark_plus_baryons": 709300000000.0,
+  "dex_rule_minus_hudson": 0.095,
+  "err_dex": 0.076
+ },
+ {
+  "z": 0.48,
+  "logMs": 10.62,
+  "Mh_hudson": 1420000000000.0,
+  "Mh_err": 280000000000.0,
+  "rule_dark_plus_baryons": 1366000000000.0,
+  "dex_rule_minus_hudson": -0.017,
+  "err_dex": 0.086
+ },
+ {
+  "z": 0.7,
+  "logMs": 10.23,
+  "Mh_hudson": 450000000000.0,
+  "Mh_err": 120000000000.0,
+  "rule_dark_plus_baryons": 721300000000.0,
+  "dex_rule_minus_hudson": 0.205,
+  "err_dex": 0.116
+ },
+ {
+  "z": 0.68,
+  "logMs": 10.66,
+  "Mh_hudson": 1280000000000.0,
+  "Mh_err": 300000000000.0,
+  "rule_dark_plus_baryons": 1460000000000.0,
+  "dex_rule_minus_hudson": 0.057,
+  "err_dex": 0.102
+ }
+]

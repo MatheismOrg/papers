@@ -1,4 +1,4 @@
-# Which Mathematical Structure Does a Physical Theory Describe?
+# Every Mathematical Structure in a Physical Theory Is Real, the Notation Included
 
 ## Abstract
 

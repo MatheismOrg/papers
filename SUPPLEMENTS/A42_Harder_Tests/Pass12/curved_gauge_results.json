@@ -1,0 +1,503 @@
+{
+  "scope": "Pass 12: supplied conformal geometry and interacting staggered U(1).\n\nKnown-model benchmark, not a quantum-gravity model or continuum extrapolation.\nds^2 = Omega(eta,x)^2 (-deta^2 + dx^2).\nH_eta = K + m sum((-1)^i Omega_i n_i) + J sum(Omega_link^2 E_i^2).\nFor homogeneous expansion dt=Omega deta, H_t=K/Omega+M+Omega V.\nSee Budd et al., arXiv:2601.02331v2, Eqs. (80), (89), (98).\nThe real hopping convention is related to imaginary staggered hopping by a\nsite phase rotation. Metric at link midpoints defines our finite regulator.\nAll reference calculations concern this SAME finite spatial lattice.\n",
+  "parameters": {
+    "sites": 6,
+    "w": 1.0,
+    "m": 0.4,
+    "J": 0.72,
+    "lattice_spacing": 0.5,
+    "physical_gauge_coupling": 1.697056274847714,
+    "boundary_field": 1,
+    "cutoff": 3,
+    "initial_state": "interacting ground state for expansion, bare state for static-curved transport"
+  },
+  "expansion_summaries": [
+    {
+      "tau": 0.15,
+      "reference_eta": {
+        "work": 7.601788884476374,
+        "energy_change": 7.601788884475986,
+        "work_balance_error": 3.8813396940895473e-13,
+        "norm_error": 1.4432899320127035e-13,
+        "final_eta_error": 0.0,
+        "evaluations": 2210
+      },
+      "reference_t": {
+        "work": 8.193128937470982,
+        "energy_change": 8.193128937470352,
+        "work_balance_error": 6.306066779870889e-13,
+        "norm_error": 7.127631818093505e-14,
+        "final_eta_error": 3.9968028886505635e-15,
+        "evaluations": 2270
+      },
+      "reference_clock_error": 2.0321906239311193e-13,
+      "initial_bare_occupation": 0.8761669498866783,
+      "final": {
+        "ground_state_survival": 0.10782210630410632,
+        "excess_energy": 3.0110772061583675,
+        "bare_even_site_occupation": 1.3305635341472748,
+        "mean_electric_field": [
+          1.0501692075062838,
+          0.2390286156097208,
+          0.7082823503540048,
+          0.23902861560972105,
+          1.0501692075062838
+        ]
+      }
+    },
+    {
+      "tau": 0.6,
+      "reference_eta": {
+        "work": 6.298399943667713,
+        "energy_change": 6.298399943669605,
+        "work_balance_error": 1.892708212380967e-12,
+        "norm_error": 1.0783596238184145e-12,
+        "final_eta_error": 0.0,
+        "evaluations": 6446
+      },
+      "reference_t": {
+        "work": 7.324202975736625,
+        "energy_change": 7.324202975739483,
+        "work_balance_error": 2.857269976175303e-12,
+        "norm_error": 5.500044863993026e-13,
+        "final_eta_error": 8.881784197001252e-16,
+        "evaluations": 6422
+      },
+      "reference_clock_error": 4.833592642965632e-13,
+      "initial_bare_occupation": 0.8761669498866783,
+      "final": {
+        "ground_state_survival": 0.1815365120112787,
+        "excess_energy": 1.7076882653519871,
+        "bare_even_site_occupation": 0.8829053774751574,
+        "mean_electric_field": [
+          1.0328656023611376,
+          0.4023892952185786,
+          0.6219527631889616,
+          0.4023892952185789,
+          1.0328656023611373
+        ]
+      }
+    }
+  ],
+  "rows": [
+    {
+      "tau": 0.15,
+      "clock": "eta",
+      "steps": 128,
+      "state_error": 0.0004032192581604798,
+      "norm_error": 2.6423307986078726e-14,
+      "gauss_squared": 0.0,
+      "work": 7.601297542023745,
+      "energy_change": 7.600299840075921,
+      "work_balance_error": 0.0009977019478233373
+    },
+    {
+      "tau": 0.15,
+      "clock": "t",
+      "steps": 128,
+      "state_error": 0.0004777847521478391,
+      "norm_error": 0.0,
+      "gauss_squared": 0.0,
+      "work": 8.192755279505748,
+      "energy_change": 8.19215315048909,
+      "work_balance_error": 0.000602129016657571,
+      "circuit_clock_error": 0.0005372822357634472
+    },
+    {
+      "tau": 0.15,
+      "clock": "eta",
+      "steps": 256,
+      "state_error": 0.0001008024876972526,
+      "norm_error": 7.16093850883226e-14,
+      "gauss_squared": 0.0,
+      "work": 7.601664592190107,
+      "energy_change": 7.601416420398946,
+      "work_balance_error": 0.0002481717911608783
+    },
+    {
+      "tau": 0.15,
+      "clock": "t",
+      "steps": 256,
+      "state_error": 0.00011943092234912523,
+      "norm_error": 1.9984014443252818e-15,
+      "gauss_squared": 0.0,
+      "work": 8.193035701861662,
+      "energy_change": 8.19288480336807,
+      "work_balance_error": 0.00015089849359206653,
+      "circuit_clock_error": 0.00013430263344447107
+    },
+    {
+      "tau": 0.15,
+      "clock": "eta",
+      "steps": 512,
+      "state_error": 2.5200476803563746e-05,
+      "norm_error": 8.759659664292485e-14,
+      "gauss_squared": 0.0,
+      "work": 7.601757620060354,
+      "energy_change": 7.601695755775028,
+      "work_balance_error": 6.186428532650723e-05
+    },
+    {
+      "tau": 0.15,
+      "clock": "t",
+      "steps": 512,
+      "state_error": 2.9856776403669044e-05,
+      "norm_error": 2.220446049250313e-15,
+      "gauss_squared": 0.0,
+      "work": 8.193105634938492,
+      "energy_change": 8.193067892239512,
+      "work_balance_error": 3.774269898038085e-05,
+      "circuit_clock_error": 3.357453812188146e-05
+    },
+    {
+      "tau": 0.15,
+      "clock": "eta",
+      "steps": 1024,
+      "state_error": 6.300110078193681e-06,
+      "norm_error": 1.3322676295501878e-15,
+      "gauss_squared": 0.0,
+      "work": 7.601781043874907,
+      "energy_change": 7.601765601509687,
+      "work_balance_error": 1.54423652203306e-05
+    },
+    {
+      "tau": 0.15,
+      "clock": "t",
+      "steps": 1024,
+      "state_error": 7.464134719661702e-06,
+      "norm_error": 7.549516567451064e-15,
+      "gauss_squared": 0.0,
+      "work": 8.193123111646145,
+      "energy_change": 8.193113675431597,
+      "work_balance_error": 9.436214547520194e-06,
+      "circuit_clock_error": 8.393564516970308e-06
+    },
+    {
+      "tau": 0.15,
+      "clock": "eta",
+      "steps": 2048,
+      "state_error": 1.5750268929668753e-06,
+      "norm_error": 2.4424906541753444e-15,
+      "gauss_squared": 0.0,
+      "work": 7.601786921228427,
+      "energy_change": 7.601783063686284,
+      "work_balance_error": 3.857542142604586e-06
+    },
+    {
+      "tau": 0.15,
+      "clock": "t",
+      "steps": 2048,
+      "state_error": 1.8660302318910995e-06,
+      "norm_error": 3.352873534367973e-14,
+      "gauss_squared": 0.0,
+      "work": 8.193127480929473,
+      "energy_change": 8.19312512191551,
+      "work_balance_error": 2.3590139619500405e-06,
+      "circuit_clock_error": 2.098386754941861e-06
+    },
+    {
+      "tau": 0.15,
+      "clock": "eta",
+      "steps": 4096,
+      "state_error": 3.9375662043562197e-07,
+      "norm_error": 8.850697952311748e-13,
+      "gauss_squared": 0.0,
+      "work": 7.601788393280078,
+      "energy_change": 7.601787429282027,
+      "work_balance_error": 9.63998051162207e-07
+    },
+    {
+      "tau": 0.15,
+      "clock": "t",
+      "steps": 4096,
+      "state_error": 4.665076001376431e-07,
+      "norm_error": 1.6653345369377348e-14,
+      "gauss_squared": 0.0,
+      "work": 8.19312857332116,
+      "energy_change": 8.193127983579162,
+      "work_balance_error": 5.897419974587592e-07,
+      "circuit_clock_error": 5.245964213299625e-07
+    },
+    {
+      "tau": 0.6,
+      "clock": "eta",
+      "steps": 128,
+      "state_error": 0.005759217342257201,
+      "norm_error": 6.217248937900877e-15,
+      "gauss_squared": 0.0,
+      "work": 6.299778011305113,
+      "energy_change": 6.303403741273835,
+      "work_balance_error": 0.0036257299687214584
+    },
+    {
+      "tau": 0.6,
+      "clock": "t",
+      "steps": 128,
+      "state_error": 0.005165475672661043,
+      "norm_error": 0.0,
+      "gauss_squared": 0.0,
+      "work": 7.330197173806828,
+      "energy_change": 7.326149278455272,
+      "work_balance_error": 0.004047895351555475,
+      "circuit_clock_error": 0.007634528170310021
+    },
+    {
+      "tau": 0.6,
+      "clock": "eta",
+      "steps": 256,
+      "state_error": 0.0014415429832205838,
+      "norm_error": 7.061018436615996e-14,
+      "gauss_squared": 0.0,
+      "work": 6.298727501274322,
+      "energy_change": 6.299633673092622,
+      "work_balance_error": 0.0009061718182996614
+    },
+    {
+      "tau": 0.6,
+      "clock": "t",
+      "steps": 256,
+      "state_error": 0.0012828314044934157,
+      "norm_error": 2.6645352591003757e-15,
+      "gauss_squared": 0.0,
+      "work": 7.325741621461601,
+      "energy_change": 7.3246483324163325,
+      "work_balance_error": 0.0010932890452686195,
+      "circuit_clock_error": 0.0019094191572592788
+    },
+    {
+      "tau": 0.6,
+      "clock": "eta",
+      "steps": 512,
+      "state_error": 0.00036049657599993175,
+      "norm_error": 9.414691248821327e-14,
+      "gauss_squared": 0.0,
+      "work": 6.2984790531455435,
+      "energy_change": 6.298707309709956,
+      "work_balance_error": 0.00022825656441227693
+    },
+    {
+      "tau": 0.6,
+      "clock": "t",
+      "steps": 512,
+      "state_error": 0.00032017666526005747,
+      "norm_error": 4.6629367034256575e-15,
+      "gauss_squared": 0.0,
+      "work": 7.324589887881291,
+      "energy_change": 7.324311757963162,
+      "work_balance_error": 0.000278129918128478,
+      "circuit_clock_error": 0.00047739606410264745
+    },
+    {
+      "tau": 0.6,
+      "clock": "eta",
+      "steps": 1024,
+      "state_error": 9.0131104253225e-05,
+      "norm_error": 2.753353101070388e-13,
+      "gauss_squared": 0.0,
+      "work": 6.298419333336249,
+      "energy_change": 6.298476718692268,
+      "work_balance_error": 5.738535601906847e-05
+    },
+    {
+      "tau": 0.6,
+      "clock": "t",
+      "steps": 1024,
+      "state_error": 8.001100660000876e-05,
+      "norm_error": 3.6637359812630166e-15,
+      "gauss_squared": 0.0,
+      "work": 7.324299811896905,
+      "energy_change": 7.324230011788709,
+      "work_balance_error": 6.980010819646054e-05,
+      "circuit_clock_error": 0.00011935147151215802
+    },
+    {
+      "tau": 0.6,
+      "clock": "eta",
+      "steps": 2048,
+      "state_error": 2.2533211830035432e-05,
+      "norm_error": 3.346212196220222e-13,
+      "gauss_squared": 0.0,
+      "work": 6.298404740146883,
+      "energy_change": 6.298419133274616,
+      "work_balance_error": 1.4393127733214328e-05
+    },
+    {
+      "tau": 0.6,
+      "clock": "t",
+      "steps": 2048,
+      "state_error": 2.0000681340767322e-05,
+      "norm_error": 6.439293542825908e-15,
+      "gauss_squared": 0.0,
+      "work": 7.324227187470358,
+      "energy_change": 7.324209724788642,
+      "work_balance_error": 1.746268171576304e-05,
+      "circuit_clock_error": 2.9838019393461884e-05
+    },
+    {
+      "tau": 0.6,
+      "clock": "eta",
+      "steps": 4096,
+      "state_error": 5.63333044109346e-06,
+      "norm_error": 2.1094237467877974e-14,
+      "gauss_squared": 0.0,
+      "work": 6.298401136271259,
+      "energy_change": 6.298404740815338,
+      "work_balance_error": 3.604544078328331e-06
+    },
+    {
+      "tau": 0.6,
+      "clock": "t",
+      "steps": 4096,
+      "state_error": 5.000042535863662e-06,
+      "norm_error": 1.765254609153999e-14,
+      "gauss_squared": 0.0,
+      "work": 7.324209028333531,
+      "energy_change": 7.324204662380382,
+      "work_balance_error": 4.365953149232382e-06,
+      "circuit_clock_error": 7.459514294432421e-06
+    }
+  ],
+  "wrong_electric_exponents": [
+    {
+      "electric_exponent": 0,
+      "state_error_vs_correct": 1.1035850251565567,
+      "own_clock_agreement": 6.868849929476361e-13,
+      "reference": {
+        "work": -0.45018717309467493,
+        "energy_change": -0.45018717309488954,
+        "work_balance_error": 2.1460611066004276e-13,
+        "norm_error": 2.375877272697835e-14,
+        "final_eta_error": 0.0,
+        "evaluations": 5450
+      },
+      "final": {
+        "ground_state_survival": 0.48322569604261606,
+        "excess_energy": 1.504036773626718,
+        "bare_even_site_occupation": 1.2552887440865228,
+        "mean_electric_field": [
+          1.0265536057984899,
+          0.33167871009771344,
+          0.8655389526849457,
+          0.3316787100977134,
+          1.02655360579849
+        ]
+      }
+    },
+    {
+      "electric_exponent": 1,
+      "state_error_vs_correct": 0.7630720243402525,
+      "own_clock_agreement": 7.868406771722505e-13,
+      "reference": {
+        "work": 2.9612841478839704,
+        "energy_change": 2.9612841478836742,
+        "work_balance_error": 2.9620750296999176e-13,
+        "norm_error": 3.885780586188048e-14,
+        "final_eta_error": 0.0,
+        "evaluations": 4622
+      },
+      "final": {
+        "ground_state_survival": 0.39202373455640005,
+        "excess_energy": 1.5491024186261515,
+        "bare_even_site_occupation": 0.9236646654985008,
+        "mean_electric_field": [
+          1.0374905401996615,
+          0.44900268638173435,
+          0.746688957862607,
+          0.44900268638173396,
+          1.0374905401996615
+        ]
+      }
+    },
+    {
+      "electric_exponent": 2,
+      "state_error_vs_correct": 0.0,
+      "own_clock_agreement": 4.833592642965632e-13,
+      "reference": {
+        "work": 6.298399943667713,
+        "energy_change": 6.298399943669605,
+        "work_balance_error": 1.892708212380967e-12,
+        "norm_error": 1.0783596238184145e-12,
+        "final_eta_error": 0.0,
+        "evaluations": 6446
+      },
+      "final": {
+        "ground_state_survival": 0.1815365120112787,
+        "excess_energy": 1.7076882653519871,
+        "bare_even_site_occupation": 0.8829053774751574,
+        "mean_electric_field": [
+          1.0328656023611376,
+          0.4023892952185786,
+          0.6219527631889616,
+          0.4023892952185789,
+          1.0328656023611373
+        ]
+      }
+    }
+  ],
+  "static_curved": {
+    "omega_sites": [
+      0.7834936490538903,
+      1.0,
+      1.2165063509461096,
+      1.2165063509461096,
+      1.0,
+      0.7834936490538903
+    ],
+    "omega_links": [
+      0.875,
+      1.125,
+      1.25,
+      1.125,
+      0.875
+    ],
+    "rows": [
+      {
+        "steps": 128,
+        "state_error": 6.152814238116296e-05,
+        "energy_error": 0.0001966206425181305
+      },
+      {
+        "steps": 256,
+        "state_error": 1.5381792436893784e-05,
+        "energy_error": 4.9153448185457194e-05
+      },
+      {
+        "steps": 512,
+        "state_error": 3.845432905648347e-06,
+        "energy_error": 1.2288255034409445e-05
+      },
+      {
+        "steps": 1024,
+        "state_error": 9.613572796733674e-07,
+        "energy_error": 3.0720568284792193e-06
+      },
+      {
+        "steps": 2048,
+        "state_error": 2.4033923070738115e-07,
+        "energy_error": 7.680155857947568e-07
+      }
+    ]
+  },
+  "audit": {
+    "full_dimension": 15552,
+    "complete_physical_dimension": 20,
+    "full_reduced_agreement": 0.0,
+    "full_gauss_squared": 0.0,
+    "all_local_gate_gauss_change": 0.0,
+    "constant_scale_clock_error": 6.047620890579837e-16,
+    "static_vacuum": {
+      "ground_state_survival": 0.9999999999999989,
+      "excess_energy": 2.42861286636753e-15,
+      "bare_even_site_occupation": 1.0342924614706344,
+      "mean_electric_field": [
+        1.0227454242117866,
+        0.41765866937630214,
+        0.8241189517996645,
+        0.417658669376302,
+        1.0227454242117866
+      ]
+    },
+    "max_electric_field_complete_sector": 3
+  },
+  "all_assertions_passed": true
+}

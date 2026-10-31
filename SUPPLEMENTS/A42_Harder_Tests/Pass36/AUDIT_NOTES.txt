@@ -1,0 +1,46 @@
+Choices and limitations
+
+The main quantum closure and five lambda choices were written down in
+PROTOCOL.txt before the numerical scan. The same-dust comparison,
+finite-difference Ward check, covariant-tensor check and Casimir check
+were added after the initial run, as explicit verification and scope
+checks. They are not represented as blinded empirical evidence.
+
+The zero total Box R coefficient was chosen to make a minimal closed
+background evolution system. It is a physical parameter choice once
+gravity is dynamical. Its stability under restoring a nonzero R^2
+coupling has NOT been tested. The conformal-vacuum state is fixed in
+that same renormalization prescription; positive radiation integration
+constants are reported separately.
+
+The free SM-count calculation is a benchmark, not an interacting SM
+implementation. It assumes conformal scalar curvature coupling and
+neglects masses, beta-function terms, scattering and symmetry breaking.
+The area parameter alpha is not derived. Near-Planck-curvature examples
+are formal semiclassical solutions, not evidence of approximation
+control over quantum-gravity corrections.
+
+Implementation correction: the first bracketing call used the exact
+classical turning-threshold root as an endpoint; floating-point rounding
+made its sign unreliable at lambda=0. Moving the bracket to y=0.5
+fixed the endpoint issue. No physical equation or test parameter was
+changed. Final run logs contain all successful results and the retained
+physical failure control.
+
+The free conformal source has vacuum polarization/anomaly stress. It
+does not create conformal particles in the conformal vacuum. No claim
+of particle-production dynamics should be inferred from the bounce.
+
+The time integrator is standard implicit midpoint. Its convergence and
+small constraint drift characterize the implementation; they are not
+ToE evidence or a derivation of fundamental discrete space or time.
+
+The response bound is an exact homogeneous algebraic condition, not a
+full PDE hyperbolicity theorem. The scalar curvature combination Phi
+being bounded alone does not bound all curvature: the D-dependent
+curvature and the excessive-coupling failure are explicitly checked.
+
+Main improvement worth retaining: a conserved four-dimensional quantum
+source and a self-consistent nonsingular cosmological sector with a
+conditional analytic curvature bound. Main unresolved issue: robustness
+to the independent curvature coupling and to spatial inhomogeneity.

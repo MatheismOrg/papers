@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A42 Supplement: Known Laws as Local Steps</title>
+<style>
+body { font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.7; max-width: 800px; margin: 0 auto; padding: 20px; }
+h1 { font-size: 20px; text-align: center; }
+h2 { font-size: 16px; margin-top: 24px; }
+h3 { font-size: 15px; margin-top: 18px; }
+h4 { font-size: 15px; font-style: italic; margin-top: 12px; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+th { background: #f5f5f5; font-weight: bold; }
+.math { font-family: 'Courier New', monospace; text-align: center; margin: 12px 0; }
+.keywords { font-style: italic; font-size: 14px; }
+hr { border: none; border-top: 1px solid #ccc; margin: 16px 0; }
+</style>
+</head>
+<body>
+<h1>A42 Supplement: Known Laws as Local Steps</h1><p>These scripts back Section 8 of "Searching for a Short Discrete Theory of Everything: Rewriting Rules and Supplied-Lattice Tests". Each test supplies a geometry, fields and a starting state, runs one family of local unitary steps, and compares the result with an independent continuum calculation. Every script writes its results as JSON beside itself and checks its own assertions.</p><h2>Requirements</h2><p>Python 3 with NumPy and SciPy; matplotlib only for the one plot. Each script runs in a few seconds. Run each from its own folder, for example <code>cd A42_Supplied_Physics/horizon && python3 horizon_test.py</code>.</p><h2>The tests</h2><ul><li><code>massive/massive_curved.py</code>: the massive Dirac field on the static metric $ds^2 = -N(x)^2dt^2 + dx^2$ with $N = 1 + 0.25\cos x$, against an independent Fourier reference. For mass 2 and packet center 0.9 the state error is $9.1\times10^{-4}$ at 1,024 sites, about four times smaller per halving of the spacing. A flat-space case is included.</li><li><code>geodesic/circuit_geodesic.py</code> and <code>geodesic/geodesic_packet.py</code>: a falling packet against its quantum reference and the classical geodesic. At mass 64 and 8,192 sites the circuit center is 1.690468, the quantum reference 1.690566 and the geodesic 1.692566.</li><li><code>gauge/gauge_ring.py</code>: prescribed electromagnetic phases on a ring; gauge covariance to about $10^{-15}$ and two-arm interference probability 0.206222 against 0.206107.</li><li><code>qft/fock_mass_quench.py</code>: a free-fermion mass quench from 0.4 to 3 with eight modes and a full Fock space of 256 states; many-fermion state error $3.4\times10^{-5}$ at 2,048 sites and mean pair count 0.646932 against the analytic 0.646951.</li><li><code>maxwell/maxwell_gravity.py</code>: transverse Maxwell plane waves on a curved plane-symmetric metric; relative field error about $7\times10^{-5}$ at 2,048 sites, conserved energy to about $3\times10^{-16}$.</li><li><code>horizon/horizon_test.py</code>: radial massless transport across a Schwarzschild horizon in Painlevé-Gullstrand coordinates, $r_s = 2$, three packets at six resolutions from 256 to 8,192 sites; errors fall 3.8 to 4.0 times on the last halving, and the norm holds to $10^{-11}$. It also computes the curvature at the first site of a grid that stops short of the center, which grows 64-fold per halving.</li><li><code>audit/</code>: independent checks of the mass coupling, the geodesic comparison and the quench overlaps, including the wrong rules that fail: replacing the mass term $mN$ by $m$, dropping the gauge links, and evolving with the old mass after the quench.</li></ul><h2>Scope</h2><p>The tests supply the metric, the field content and the quantum state space. They test whether local steps reproduce known equations at identifiable scales; they do not grow the geometry, and they include no interacting fields or matter acting back on the geometry. Earlier work on the same kind of agreement: D'Ariano and Perinotti (2014) for the Dirac equation, Di Molfetta, Brachet and Debbasch (2013) for quantum walks at a horizon, and Eon, Di Molfetta, Magnifico and Arrighi (2023) for quantum electrodynamics.</p>
+</body>
+</html>

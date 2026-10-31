@@ -1,0 +1,102 @@
+Independent convention and spectral audit, 2026-10-28
+
+Conventions checked
+-------------------
+Let psi'_j=G_j psi_j, G_j=exp(i q chi_j), and let the forward link from j
+to j+1 be u_j=exp(i q integral_j^(j+1) A dx). Then
+
+  u'_j = G_(j+1) u_j G_j^*,
+
+and the gate on the ordered pair (j,j+1),
+
+  R_j(theta,u) = [[cos theta, -sin theta u_j^*],
+                  [sin theta u_j, cos theta]],
+
+satisfies exactly R_j(theta,u')=G_pair R_j(theta,u) G_pair^dagger.
+It is unitary for real theta and |u_j|=1. Consequently any composition of
+such layers, including the pass7 symmetric or alternating-parity circuits,
+is exactly covariant under time-independent site gauge changes.
+
+The continuum convention is D_x=partial_x-iqA and, for the right mover,
+H=-iD_x=-i partial_x-qA. Thus A'=A+partial_x chi. This confirms the sign of
+the energy shift below; reversing the link definition without reversing
+the gate conjugation would give the wrong sign.
+
+Uniform flux and exact single-parity circuit spectrum
+----------------------------------------------------
+Take M sites, physical circumference L, a=L/M, constant link
+u=exp(i eta), eta=phi/M, where phi=q integral_ring A dx is the dimensionless
+holonomy angle. Use cell Bloch phase qcell=2ak, and write c=cos theta,
+s=sin theta. The full even gate is
+
+  E_full = [[c, -s exp(-i eta)], [s exp(i eta), c]],
+
+and the odd gate in a two-site cell is
+
+  O(qcell) = [[c, s exp(i eta-i qcell)],
+              [-s exp(i qcell-i eta), c]].
+
+For U=E_half O E_half, cyclicity of the trace gives
+
+  tr U = tr(O E_full) = 2[c^2+s^2 cos(qcell-2eta)],
+
+with determinant one. Hence
+
+  cos(omega dt)=1-2 sin^2(theta) sin^2[(k-phi/L)a],
+  omega dt=+/-2 asin[sin(theta) sin((k-phi/L)a)]
+
+on branches continuous near zero quasienergy. For theta=asin(nu/2) and
+dt=nu a, the continuum limit is omega=+/-(k-phi/L). With periodic scalar
+boundary conditions k=2pi n/L; at L=2pi the right-moving energies are
+
+  E_n=n-phi/(2pi).
+
+This is the chosen 1+1 periodic model. It does not include a geometrically
+induced antiperiodic spinor boundary condition from a separate embedded-ring
+model. The exact formula above applies to one symmetric orientation; an
+alternating two-step macro-update needs its own matrix/product formula.
+
+Gauge and holonomy checks
+-------------------------
+The gauge-invariant ring quantity is product_j u_j=exp(i phi). A periodic
+site gauge transformation can concentrate a uniform link phase on one seam
+without changing the spectrum or gauge-compared state output. It cannot
+remove nontrivial holonomy. Increasing phi by 2pi preserves the spectrum as
+a set while relabeling modes; a fixed n branch need not be periodic.
+
+A constant A only changes the global phase of an isolated ideal right-moving
+packet relative to its zero-A evolution. Its position probability density
+alone therefore cannot show the flux. Use spectral shifts, a gauge-compared
+complex output, or an explicit coherent reference/path before calling the
+result interference. Comparing spectra is the cleanest bounded test here.
+
+Time-dependent gauge extension
+------------------------------
+Let U_n use spatial links at time t_n, and V_n be a site-local temporal
+phase. With W_n=V_n U_n, impose
+
+  U'_n=G_n U_n G_n^dagger,
+  V'_n=G_(n+1) V_n G_n^dagger.
+
+Then W'_n=G_(n+1) W_n G_n^dagger exactly. For zero original scalar
+potential V_n=I, this reduces to the proposed temporal phase
+T_n=G_(n+1)G_n^dagger after the spatial update. In continuum language
+phi_electric'=phi_electric-partial_t chi. This temporal factor is required;
+transforming spatial links alone will fail for a time-dependent gauge.
+
+If the spatial links are instead evaluated at t_(n+1/2), use temporal
+transport to and from that midpoint. Do not mix midpoint spatial gauge
+transformations with endpoint factors derived for t_n.
+
+Useful negative controls
+------------------------
+1. Transform the state but keep the spatial links unchanged: the
+   gauge-compared output generally disagrees by an order-one amount.
+2. Drop all link phases in a nontrivial-flux run: the spectral shift vanishes.
+3. For time-dependent chi, omit the temporal factor: exact covariance fails.
+4. A claim of covariance alone is insufficient evidence for electromagnetic
+   dynamics. The gauge field and scalar temporal factors remain prescribed.
+
+No independent claims about emergent gauge fields, Maxwell dynamics,
+interacting many-body QED, or removal of unwanted lattice species follow
+from these checks.

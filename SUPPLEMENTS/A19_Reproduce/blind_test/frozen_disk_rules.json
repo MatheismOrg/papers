@@ -1,0 +1,52 @@
+{
+ "selection": "Q<3, Inc>=30, R>0, Vobs>0, errV/Vobs<=0.1, gbar>0; Ups_disk 0.5, Ups_bulge 0.7",
+ "galaxies": 149,
+ "points": 2700,
+ "frozen_on_all_disks": {
+  "stellar_ABC": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "baryonic_ABC": [
+   11.4673,
+   0.9937,
+   -0.6355
+  ],
+  "rar_a0": 1.0368e-10
+ },
+ "heldout_rmse_dex": {
+  "rar": 0.15309,
+  "baryon": 0.15323,
+  "moster": 0.17111,
+  "star": 0.15329
+ },
+ "heldout_runs": {
+  "rar": [
+   0.1529,
+   0.15337,
+   0.15301
+  ],
+  "baryon": [
+   0.15236,
+   0.15456,
+   0.15279
+  ],
+  "moster": [
+   0.17111,
+   0.17111,
+   0.17111
+  ],
+  "star": [
+   0.15214,
+   0.1552,
+   0.15254
+  ]
+ },
+ "median_speed_error_percent": {
+  "rar": 8.93,
+  "baryon": 9.3,
+  "moster": 10.04,
+  "star": 9.09
+ }
+}

@@ -1,0 +1,8 @@
+pace2022_table3_pericenters.csv: pericenters of 46 Milky Way dwarf galaxies from Table 3 of Pace, A. B., Erkal, D.,
+& Li, T. S. (2022), Proper motions, orbits, and tidal influences of Milky Way dwarf spheroidal galaxies, ApJ 940, 136,
+doi:10.3847/1538-4357/ac997b, arXiv:2205.05699. Columns: pericenter with the LMC included in the potential (median
+and 68 percent errors, kpc), the same without the LMC (the table's "nL" columns), and the p_LMC column as printed.
+The paper defines the pericenter as the first local minimum of Galactocentric distance in the backward
+integration. Transcribed 31 October 2026 (SA73, turn 8) from the arXiv PDF; two separate extractions agree on
+every LMC-included pericenter. The LVDB key column maps each name to the Local Volume Database (Pace 2025); "Pis II"
+is Pisces II. Not used by any protocol; used by A19_Pericenter_Check.py (descriptive).

@@ -1,0 +1,90 @@
+{
+ "original_44": {
+  "n": 44,
+  "rmse_dex": {
+   "stellar_rule": 0.4791,
+   "stellar_rule_subhalo_factor": 0.4567,
+   "stellar_rule_moline_c": 0.4617,
+   "moster": 0.5559,
+   "moster_subhalo_factor": 0.572,
+   "mond_isolated_a0_1.2": 0.6508,
+   "mond_isolated_disk_a0": 0.6694,
+   "mond_efe_a0_1.2": 1.3378,
+   "mond_efe_disk_a0": 1.3775
+  },
+  "median_x_sub": 0.498,
+  "median_gext_over_a0": 0.112,
+  "measurement_error_rms_dex": 0.3,
+  "error_budget": {
+   "stellar_rule": {
+    "bias_dex": -0.011,
+    "intrinsic_scatter_dex": 0.323
+   },
+   "stellar_rule_subhalo_factor": {
+    "bias_dex": -0.091,
+    "intrinsic_scatter_dex": 0.296
+   },
+   "moster": {
+    "bias_dex": -0.213,
+    "intrinsic_scatter_dex": 0.398
+   },
+   "mond_efe_a0_1.2": {
+    "bias_dex": 1.09,
+    "intrinsic_scatter_dex": 0.662
+   }
+  },
+  "efe_V_MW_sensitivity": {
+   "V_MW_175": 1.2862,
+   "V_MW_220": 1.3741
+  },
+  "residual_vs_log_host_distance_corr": {
+   "stellar_rule": -0.341,
+   "moster": -0.294,
+   "mond_efe_a0_1.2": -0.629
+  }
+ },
+ "out_of_sample_25": {
+  "n": 25,
+  "rmse_dex": {
+   "stellar_rule": 0.4409,
+   "stellar_rule_subhalo_factor": 0.3829,
+   "stellar_rule_moline_c": 0.3893,
+   "moster": 0.4032,
+   "moster_subhalo_factor": 0.3919,
+   "mond_isolated_a0_1.2": 0.782,
+   "mond_isolated_disk_a0": 0.8081,
+   "mond_efe_a0_1.2": 1.6345,
+   "mond_efe_disk_a0": 1.6787
+  },
+  "median_x_sub": 0.517,
+  "median_gext_over_a0": 0.114,
+  "measurement_error_rms_dex": 0.338,
+  "error_budget": {
+   "stellar_rule": {
+    "bias_dex": 0.188,
+    "intrinsic_scatter_dex": 0.332
+   },
+   "stellar_rule_subhalo_factor": {
+    "bias_dex": 0.105,
+    "intrinsic_scatter_dex": 0.299
+   },
+   "moster": {
+    "bias_dex": -0.025,
+    "intrinsic_scatter_dex": 0.318
+   },
+   "mond_efe_a0_1.2": {
+    "bias_dex": 1.476,
+    "intrinsic_scatter_dex": 0.682
+   }
+  },
+  "efe_V_MW_sensitivity": {
+   "V_MW_175": 1.5751,
+   "V_MW_220": 1.676
+  },
+  "residual_vs_log_host_distance_corr": {
+   "stellar_rule": -0.472,
+   "moster": -0.404,
+   "mond_efe_a0_1.2": -0.787
+  }
+ }
+}

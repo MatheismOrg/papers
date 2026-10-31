@@ -1,0 +1,42 @@
+{
+ "MaNGA_BCG": {
+  "n": 50,
+  "min": 0.219,
+  "median": 0.228,
+  "max": 0.275,
+  "r_kpc": [
+   3.9,
+   24.8
+  ]
+ },
+ "CLASH_centre": {
+  "n": 20,
+  "min": 0.233,
+  "median": 0.243,
+  "max": 0.261,
+  "r_kpc": [
+   14.3,
+   30.3
+  ]
+ },
+ "CLASH_outer": {
+  "n": 64,
+  "min": 0.257,
+  "median": 0.372,
+  "max": 0.681,
+  "r_kpc": [
+   100.0,
+   600.0
+  ]
+ },
+ "CLASH_at_lensing_mass": {
+  "n": 84,
+  "min": 0.232,
+  "median": 0.364,
+  "max": 0.598
+ },
+ "all_points": {
+  "min": 0.219,
+  "max": 0.681
+ }
+}

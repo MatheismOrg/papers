@@ -1,0 +1,14 @@
+{
+ "massive_n128_a0.25_m2.0": 6.064652055614597e-16,
+ "massive_n256_a0.25_m0.5": 1.1311075614617963e-15,
+ "massive_n128_a0.0_m2.0": 0.0,
+ "horizon_n256_s-1": 1.2802971426247126e-15,
+ "horizon_n512_s1": 3.66961833194994e-16,
+ "gauge_links_n128": 9.222516195087969e-16,
+ "rule_source_bytes": 451,
+ "rule_source_bits": 3608,
+ "rule_raw_lzma2_bytes": 311,
+ "rule_raw_lzma2_bits": 2488,
+ "zlib9_bits": 2296,
+ "bz2_bits": 2704
+}

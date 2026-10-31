@@ -1,0 +1,39 @@
+{
+ "n": 44,
+ "section3_rmse_dex": {
+  "stellar_rule": 0.47913,
+  "baryonic_rule": 0.66749,
+  "rar_disk_a0": 0.66938,
+  "moster": 0.55591
+ },
+ "classical": {
+  "stellar_rule": 0.3949,
+  "baryonic_rule": 0.3476,
+  "rar_disk_a0": 0.324,
+  "moster": 0.595
+ },
+ "ultrafaint": {
+  "stellar_rule": 0.5714,
+  "baryonic_rule": 0.9342,
+  "rar_disk_a0": 0.9484,
+  "moster": 0.4999
+ },
+ "section4_ceiling_counts": {
+  "ML_2": {
+   "exceed_NLG": 31,
+   "exceed_MOG": 33
+  },
+  "ML_3": {
+   "exceed_NLG": 29,
+   "exceed_MOG": 29
+  }
+ },
+ "section4_plummer_ML2": {
+  "rar_published_a0": 0.6478,
+  "NLG_published": 1.8523,
+  "MOG_published": 1.8956,
+  "rar_refit_heldout": 0.5401,
+  "NLG_refit_heldout": 0.7191,
+  "MOG_refit_heldout": 0.7191
+ }
+}

@@ -1,6 +1,6 @@
 # A42 supplement: the rule search
 
-These files reproduce the search in "Searching the Shortest Rewriting Rules for Four-Dimensional Spacetime: A First Pass and an Obstacle". Python 3.10 or later, standard library only.
+These files reproduce the search in "Searching for a Short Discrete Theory of Everything: Rewriting Rules and Supplied-Lattice Tests". Python 3.10 or later, standard library only.
 
 ## Files
 

@@ -1,0 +1,11 @@
+A19 PROTOCOL VERSION 9: CLARIFICATION RECORDED BEFORE ANY DATA VALUE WAS READ
+Written 31 October 2026, US Pacific, session SA73, turn 9, after PROTOCOL_v9.txt was hashed (09:42:21 PDT) and
+before any profile or covariance value of the KiDS release was read. Clock time and SHA-256 in
+PROTOCOL_v9_NOTE.sha256.
+
+Step (3) of the protocol calls M_ref "M_200c" and step (4) adds an NFW term to the baryons' point mass. In the
+paper's rule (Section 3.1), M_ref sets r_200 and the concentration, but the halo's dark mass is (1 - f_b) M_ref,
+and its pull adds to the baryons' own. Read with the rule as frozen, the NFW term of step (4) is that dark halo:
+mass (1 - f_b) M_ref inside r_200 of M_ref, concentration from M_ref, untruncated as step (3) states; the
+baryons enter as the point mass M_p. This is the primary model. The other reading, an NFW of mass M_ref, is
+reported as a sensitivity case, as is a halo truncated at r_200 like the rotation-curve fits. Nothing else changes.

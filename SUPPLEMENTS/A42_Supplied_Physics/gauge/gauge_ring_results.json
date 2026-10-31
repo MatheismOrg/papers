@@ -1,0 +1,318 @@
+{
+  "scope": "Supplied classical U(1) link field; one-particle local unitary circuit. No dynamical Maxwell field, many-body QED, charge derivation, or gravity derivation.",
+  "conventions": "hbar=c=q=1, ring length 2pi, periodic scalar spatial boundary; psi_prime=exp(i chi) psi, forward u_j=exp(i integral A dx), H=-i(partial_x-i A) on smooth right-moving branch.",
+  "covariance": {
+    "static": {
+      "sites": 128,
+      "steps": 80,
+      "max_step_state_covariance_error": 1.663845252962298e-15,
+      "final_density_l1_difference": 1.8270297384367917e-15,
+      "wilson_loop_difference": 1.355199909595506e-15,
+      "wrong_untransformed_links_state_error": 0.7375308041485019,
+      "norm_error": 2.220446049250313e-16
+    },
+    "time_dependent": {
+      "sites": 128,
+      "steps": 80,
+      "dt": 0.039269908169872414,
+      "max_step_state_covariance_error": 1.6986360648851867e-15,
+      "max_spacetime_plaquette_difference_from_static_base": 6.686695354821437e-16,
+      "final_density_l1_difference": 1.8452985450431725e-15,
+      "wrong_omitted_temporal_link_state_error": 0.8343344881283108,
+      "wrong_omitted_temporal_link_density_l1_difference": 0.5390822869059253,
+      "norm_error": 4.440892098500626e-16
+    }
+  },
+  "spectrum": {
+    "refinement": [
+      {
+        "sites": 32,
+        "flux_phase": 2.199114857512855,
+        "mode": 3,
+        "frequency": 2.5588615837983464,
+        "continuum_frequency": 2.65,
+        "finite_step_exact_frequency": 2.558861583798346,
+        "continuum_error": 0.09113841620165353,
+        "finite_step_formula_error": 4.440892098500626e-16,
+        "bloch_subspace_leakage": 4.702288114197306e-16
+      },
+      {
+        "sites": 64,
+        "flux_phase": 2.199114857512855,
+        "mode": 3,
+        "frequency": 2.62748546679482,
+        "continuum_frequency": 2.65,
+        "finite_step_exact_frequency": 2.6274854667948206,
+        "continuum_error": 0.02251453320517971,
+        "finite_step_formula_error": 4.440892098500626e-16,
+        "bloch_subspace_leakage": 7.079732785261359e-16
+      },
+      {
+        "sites": 128,
+        "flux_phase": 2.199114857512855,
+        "mode": 3,
+        "frequency": 2.644388933897509,
+        "continuum_frequency": 2.65,
+        "finite_step_exact_frequency": 2.644388933897509,
+        "continuum_error": 0.005611066102491069,
+        "finite_step_formula_error": 0.0,
+        "bloch_subspace_leakage": 6.927022261163252e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 2.199114857512855,
+        "mode": 3,
+        "frequency": 2.648598341607505,
+        "continuum_frequency": 2.65,
+        "finite_step_exact_frequency": 2.648598341607507,
+        "continuum_error": 0.0014016583924947312,
+        "finite_step_formula_error": 1.7763568394002505e-15,
+        "bloch_subspace_leakage": 6.534576460860751e-16
+      },
+      {
+        "sites": 512,
+        "flux_phase": 2.199114857512855,
+        "mode": 3,
+        "frequency": 2.6496496548170705,
+        "continuum_frequency": 2.65,
+        "finite_step_exact_frequency": 2.649649654817066,
+        "continuum_error": 0.0003503451829294235,
+        "finite_step_formula_error": 4.440892098500626e-15,
+        "bloch_subspace_leakage": 6.620690516735644e-16
+      },
+      {
+        "sites": 1024,
+        "flux_phase": 2.199114857512855,
+        "mode": 3,
+        "frequency": 2.649912418045164,
+        "continuum_frequency": 2.65,
+        "finite_step_exact_frequency": 2.6499124180451576,
+        "continuum_error": 8.75819548360468e-05,
+        "finite_step_formula_error": 6.217248937900877e-15,
+        "bloch_subspace_leakage": 5.06241220011596e-16
+      }
+    ],
+    "flux_and_mode_scan": [
+      {
+        "sites": 256,
+        "flux_phase": 0.0,
+        "mode": -2,
+        "frequency": -1.9993975164649522,
+        "continuum_frequency": -2.0,
+        "finite_step_exact_frequency": -1.9993975164649522,
+        "continuum_error": 0.0006024835350477709,
+        "finite_step_formula_error": 0.0,
+        "bloch_subspace_leakage": 4.700557317201884e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 0.0,
+        "mode": 0,
+        "frequency": -0.0,
+        "continuum_frequency": 0.0,
+        "finite_step_exact_frequency": 0.0,
+        "continuum_error": 0.0,
+        "finite_step_formula_error": 0.0,
+        "bloch_subspace_leakage": 2.220446049250313e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 0.0,
+        "mode": 1,
+        "frequency": 0.999924698059421,
+        "continuum_frequency": 1.0,
+        "finite_step_exact_frequency": 0.999924698059421,
+        "continuum_error": 7.530194057903117e-05,
+        "finite_step_formula_error": 0.0,
+        "bloch_subspace_leakage": 5.750950297167842e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 0.0,
+        "mode": 3,
+        "frequency": 2.9979662357723904,
+        "continuum_frequency": 3.0,
+        "finite_step_exact_frequency": 2.99796623577239,
+        "continuum_error": 0.0020337642276095913,
+        "finite_step_formula_error": 4.440892098500626e-16,
+        "bloch_subspace_leakage": 7.491458123835928e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 2.199114857512855,
+        "mode": -2,
+        "frequency": -2.3490225745288433,
+        "continuum_frequency": -2.35,
+        "finite_step_exact_frequency": -2.349022574528839,
+        "continuum_error": 0.0009774254711567565,
+        "finite_step_formula_error": 4.440892098500626e-15,
+        "bloch_subspace_leakage": 5.456389931428491e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 2.199114857512855,
+        "mode": 0,
+        "frequency": -0.3499967715359422,
+        "continuum_frequency": -0.35,
+        "finite_step_exact_frequency": -0.3499967715359473,
+        "continuum_error": 3.228464057758451e-06,
+        "finite_step_formula_error": 5.10702591327572e-15,
+        "bloch_subspace_leakage": 1.9984021972461874e-15
+      },
+      {
+        "sites": 256,
+        "flux_phase": 2.199114857512855,
+        "mode": 1,
+        "frequency": 0.6499793206541301,
+        "continuum_frequency": 0.65,
+        "finite_step_exact_frequency": 0.6499793206541298,
+        "continuum_error": 2.0679345869911714e-05,
+        "finite_step_formula_error": 3.3306690738754696e-16,
+        "bloch_subspace_leakage": 5.737272976849395e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 2.199114857512855,
+        "mode": 3,
+        "frequency": 2.648598341607505,
+        "continuum_frequency": 2.65,
+        "finite_step_exact_frequency": 2.648598341607507,
+        "continuum_error": 0.0014016583924947312,
+        "finite_step_formula_error": 1.7763568394002505e-15,
+        "bloch_subspace_leakage": 6.534576460860751e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 4.084070449666731,
+        "mode": -2,
+        "frequency": -2.648598341607507,
+        "continuum_frequency": -2.65,
+        "finite_step_exact_frequency": -2.648598341607507,
+        "continuum_error": 0.0014016583924929549,
+        "finite_step_formula_error": 0.0,
+        "bloch_subspace_leakage": 4.182071625303078e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 4.084070449666731,
+        "mode": 0,
+        "frequency": -0.6499793206541306,
+        "continuum_frequency": -0.65,
+        "finite_step_exact_frequency": -0.6499793206541298,
+        "continuum_error": 2.0679345869467625e-05,
+        "finite_step_formula_error": 7.771561172376096e-16,
+        "bloch_subspace_leakage": 8.882868333265827e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 4.084070449666731,
+        "mode": 1,
+        "frequency": 0.3499967715359416,
+        "continuum_frequency": 0.35,
+        "finite_step_exact_frequency": 0.3499967715359473,
+        "continuum_error": 3.228464058369074e-06,
+        "finite_step_formula_error": 5.717648576819556e-15,
+        "bloch_subspace_leakage": 5.583035880255786e-16
+      },
+      {
+        "sites": 256,
+        "flux_phase": 4.084070449666731,
+        "mode": 3,
+        "frequency": 2.349022574528842,
+        "continuum_frequency": 2.35,
+        "finite_step_exact_frequency": 2.349022574528839,
+        "continuum_error": 0.0009774254711580888,
+        "finite_step_formula_error": 3.1086244689504383e-15,
+        "bloch_subspace_leakage": 6.912437125028135e-16
+      }
+    ],
+    "whole_spectrum_2pi_flux_periodicity_error": 1.5543122344752192e-15,
+    "max_finite_step_formula_error": 6.217248937900877e-15,
+    "dropped_links_frequency_at_1024_sites": 2.9998729300679914,
+    "dropped_links_error_against_flux_reference": 0.34987293006799147,
+    "dropped_links_limiting_error": 0.35
+  },
+  "one_loop_interference": [
+    {
+      "sites": 64,
+      "flux_phase": 2.199114857512855,
+      "time": 6.283185307179586,
+      "dt_over_dx": 1.0,
+      "measured_plus_probability": 0.2362565530821491,
+      "exact_plus_probability": 0.2061073738537635,
+      "probability_error": 0.030149179228385614,
+      "relative_arm_state_error": 0.0806318442253566,
+      "threaded_raw_continuum_state_error": 0.22706766580556803,
+      "arm_overlap_real": -0.5274868938357018,
+      "arm_overlap_imag": 0.8488081717056762,
+      "max_norm_error": 1.5543122344752192e-15,
+      "dropped_links_plus_probability": 1.0,
+      "dropped_links_probability_error": 0.7938926261462365
+    },
+    {
+      "sites": 128,
+      "flux_phase": 2.199114857512855,
+      "time": 6.283185307179586,
+      "dt_over_dx": 1.0,
+      "measured_plus_probability": 0.21347862616933516,
+      "exact_plus_probability": 0.2061073738537635,
+      "probability_error": 0.007371252315571675,
+      "relative_arm_state_error": 0.02015377741447107,
+      "threaded_raw_continuum_state_error": 0.05719624391983777,
+      "arm_overlap_real": -0.5730427476613297,
+      "arm_overlap_imag": 0.8194770211615858,
+      "max_norm_error": 3.1086244689504383e-15,
+      "dropped_links_plus_probability": 1.0,
+      "dropped_links_probability_error": 0.7938926261462365
+    },
+    {
+      "sites": 256,
+      "flux_phase": 2.199114857512855,
+      "time": 6.283185307179586,
+      "dt_over_dx": 1.0,
+      "measured_plus_probability": 0.20793930111101555,
+      "exact_plus_probability": 0.2061073738537635,
+      "probability_error": 0.001831927257252064,
+      "relative_arm_state_error": 0.005037764957597668,
+      "threaded_raw_continuum_state_error": 0.014306290526873903,
+      "arm_overlap_real": -0.5841213977779689,
+      "arm_overlap_imag": 0.8116632553647486,
+      "max_norm_error": 7.771561172376096e-15,
+      "dropped_links_plus_probability": 1.0,
+      "dropped_links_probability_error": 0.7938926261462365
+    },
+    {
+      "sites": 512,
+      "flux_phase": 2.199114857512855,
+      "time": 6.283185307179586,
+      "dt_over_dx": 1.0,
+      "measured_plus_probability": 0.20656466743954333,
+      "exact_plus_probability": 0.2061073738537635,
+      "probability_error": 0.0004572935857798388,
+      "relative_arm_state_error": 0.0012593947741999518,
+      "threaded_raw_continuum_state_error": 0.003576714003844016,
+      "arm_overlap_real": -0.5868706651209133,
+      "arm_overlap_imag": 0.8096805006023036,
+      "max_norm_error": 1.2656542480726785e-14,
+      "dropped_links_plus_probability": 1.0,
+      "dropped_links_probability_error": 0.7938926261462365
+    },
+    {
+      "sites": 1024,
+      "flux_phase": 2.199114857512855,
+      "time": 6.283185307179586,
+      "dt_over_dx": 1.0,
+      "measured_plus_probability": 0.20622165411335647,
+      "exact_plus_probability": 0.2061073738537635,
+      "probability_error": 0.00011428025959298038,
+      "relative_arm_state_error": 0.000314845736443041,
+      "threaded_raw_continuum_state_error": 0.000894182479790102,
+      "arm_overlap_real": -0.5875566917732871,
+      "arm_overlap_imag": 0.8091829920480613,
+      "max_norm_error": 3.7969627442180354e-14,
+      "dropped_links_plus_probability": 1.0,
+      "dropped_links_probability_error": 0.7938926261462365
+    }
+  ],
+  "all_assertions_passed": true
+}

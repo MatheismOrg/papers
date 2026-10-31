@@ -1,4 +1,4 @@
-# Complex Numbers, Gravity, and the Proposed Hidden Sector
+# Quantum Theory Needs Its Complex Numbers: Gravity and the Proposed Hidden Sector
 
 ## Abstract
 

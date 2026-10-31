@@ -1,0 +1,83 @@
+A19 TEST ON DWARFS NO RULE HAS SCORED, AND FORECASTS FOR DWARFS NOT YET MEASURED
+PROTOCOL VERSION 3
+Written 31 October 2026, 00:18 US Pacific, by Claude (Opus 5.5), session SA73, for Gary Abraham Bernstein.
+
+PURPOSE
+Protocols 1 and 2 tested the frozen rules on dwarf spheroidals of the Milky Way and Andromeda systems with
+measured dispersions. Two kinds of data in the same database were never scored: dwarfs outside those
+systems, and dwarfs whose dispersion is only an upper limit. Leaving out upper limits drops the dwarfs that
+move slowest, which favors rules that predict fast motion, so they are scored here. The protocol also fixes
+forecasts for dwarfs whose dispersion has not been measured, to be checked when it is.
+
+WHAT WAS ALREADY SEEN
+The frozen rules had been scored on: the original 44 (original44_keys.txt); the 42 of the Local Volume
+Database check (the 44 keys in A19_Dwarfs_LVDB.py less Segue 2 and Andromeda XII, which that check dropped
+for upper-limit dispersions); the 27 of protocol 1; and the 25 of protocol 2. Before this file was written,
+the database was checked to be at its latest commit (c9fb49c is the head of main on 31 October 2026), and
+the names, hosts, distances and published upper-limit values of the candidate dwarfs were listed. No
+prediction of any rule has been computed for any dwarf in the sets below.
+
+DATA
+Local Volume Database (Pace 2025), commit c9fb49c620adab3df32c7d206e8599f4bb624a3a, data/dwarf_all.csv,
+sha256 c5c029dce9970e7b70fc329cc46dbf2ed02b308901579a3f2aa756887d542b26. In the database's convention an
+upper limit is at 95 percent confidence (some sources give 90 or 84 percent).
+
+FROZEN RULES (no refitting of any kind)
+As protocols 1 and 2: frozen_disk_rules.json (stellar rule, baryonic rule, radial acceleration relation with
+the disk a0); the published a0 = 1.20e-10 m/s^2; the published Moster, Naab and White (2013) relation.
+Two environment variants, published constants only, as in A19_Environment_Tests.py:
+(E1) Stellar rule with the subhalo concentration factor 1 - 0.54 log10(D/R_200,host) (Moline et al. 2017),
+     host M_200 = 1.0e12 suns for the Milky Way (satellites of the LMC and SMC use their Galactocentric
+     distance) and 1.5e12 for M31; factor 1 for a dwarf with no host, in another group, or beyond the
+     host's R_200.
+(E2) MOND with the external field as McGaugh and Milgrom (2013): sigma = min(sigma_iso, sigma_efe),
+     sigma_iso = (4/81 G M a0)^(1/4), sigma_efe = [G M a0 / (3 r g_ext)]^(1/2), a0 = 1.21e-10 m/s^2,
+     M = 2 L_V, r = (4/3) R_e, g_ext = V^2/D with V = 200 km/s for the Milky Way (LMC and SMC satellites
+     at their Galactocentric distance) and 230 km/s for M31; for a dwarf with no host, the larger of the two
+     giants' fields; not computed for dwarfs in other groups.
+
+SELECTION (common steps, in this order; every exclusion is listed with its reason)
+1. Not scored before: not in any of the four lists above.
+2. confirmed_real = 1 and confirmed_galaxy = 1.
+3. M_V present and fainter than -14.
+4. rhalf_physical and rhalf_sph_physical present.
+5. Measured HI below a tenth of the stellar mass (2 L_V); an HI upper limit passes.
+6. Not a named tidally disrupting system or compact non-dwarf: Sagittarius I, Tucana III, Bootes III
+   (as protocols 1 and 2) and SUCD1 (an ultracompact dwarf of the Sombrero galaxy).
+Then, by the dispersion:
+Set M (measured): vlos_sigma present and vlos_sigma_ul empty. Any host: satellites of the Milky Way, LMC,
+      SMC or M31; dwarfs with no host; dwarfs in other groups.
+Set U (upper limits): vlos_sigma_ul present. Any host.
+Set F (forecasts): neither present. Any host.
+
+METHOD (as A19 Section 2.1)
+One point per dwarf at r = (4/3) R_e, R_e the circularized half-light radius (rhalf_sph_physical);
+g_obs = 3 sigma^2 / r; stellar mass 2 L_V, L_V from M_V with solar M_V = 4.83; g_bar = G (M_star/2) / r^2;
+halo predictions as A19 Section 3.1 with M_p = M_star. A model's predicted dispersion is
+sigma_pred = (g_pred r / 3)^(1/2).
+
+OUTCOMES
+Set M, primary: root-mean-square error in log10 g (dex) of the stellar rule against the radial acceleration
+relation with the disk a0. Success: stellar RMSE lower, and the 95 percent paired bootstrap interval of the
+RMSE difference (20,000 resamples of whole dwarfs, seed 20261031) below zero.
+Set M, secondary: the same comparison against the baryonic rule, Moster, the published a0, (E1) and (E2)
+where computed; counts of dwarfs closer under the stellar rule; every dwarf's residual listed.
+Set U, primary: for each model, the number of upper limits its central predicted dispersion exceeds.
+Success for the stellar rule: no more exceedances than the radial acceleration relation with the disk a0.
+Set U, secondary: the number exceeded by more than a factor of 1.46 in dispersion (the stellar rule's
+intrinsic scatter of 0.33 dex in acceleration on the 25 dwarfs of protocol 2, halved for dispersion), with
+the same tolerance for every model; the median of log10(sigma_pred / sigma_ul) for each model; the (E1) lead
+passes if it exceeds no more upper limits than the stellar rule without it.
+Set F: for every dwarf, sigma_pred for the stellar rule, (E1), Moster, the relation with the disk and the
+published a0, and (E2) where computed; and the ratio of the stellar rule's forecast to (E2)'s, or to the
+published-a0 relation's where (E2) is not computed. A forecast counts as decisive where the two differ by
+more than a factor of 2. The forecasts are written to A19_Forecasts_v3.csv, whose SHA-256 is recorded
+before release. The paper's table shows the satellites of the Milky Way, LMC, SMC and M31 and the dwarfs
+with no host within 1.5 Mpc of the Milky Way; the file holds all.
+
+SENSITIVITIES (reported, not used for the verdict)
+Major-axis radii; mass-to-light ratios 1 and 3; Milky Way speeds of 175 and 220 km/s for (E2).
+
+REPORTING
+All outcomes are reported whatever they show, in the paper and the supplement. No rule, coefficient,
+selection step or metric changes after this file's SHA-256 is recorded.

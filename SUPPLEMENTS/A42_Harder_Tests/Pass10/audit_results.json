@@ -1,0 +1,14 @@
+{
+  "full_chain_vs_Bloch": [
+    {
+      "clock": "eta",
+      "state_error": 2.2120662098898174e-15
+    },
+    {
+      "clock": "t",
+      "state_error": 2.179400501350889e-15
+    }
+  ],
+  "all_assertions_passed": true,
+  "scope": "Numerical implementation consistency, not new physics or proof of a ToE."
+}

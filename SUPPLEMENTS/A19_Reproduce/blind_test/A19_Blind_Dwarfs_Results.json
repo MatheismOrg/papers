@@ -1,0 +1,228 @@
+{
+ "protocol_sha256": "4465bfcafcd396acaab00f74e1e0063b307ec812f3cbb1824aecaa3f1ce7916d",
+ "n": 27,
+ "selected": [
+  "Aquarius II",
+  "Bootes II",
+  "Carina II",
+  "Carina III",
+  "Centaurus I",
+  "Columba I",
+  "Eridanus IV",
+  "Grus I",
+  "Leo VI",
+  "Pegasus III",
+  "Pegasus IV",
+  "Pictor II",
+  "Pisces II",
+  "Tucana II",
+  "Tucana IV",
+  "Tucana V",
+  "Andromeda XVII",
+  "Andromeda XIX",
+  "Andromeda XX",
+  "Andromeda XXVI",
+  "Andromeda XXVII",
+  "Andromeda XXVIII",
+  "Andromeda XXIX",
+  "Cassiopeia II",
+  "Cassiopeia III",
+  "Lacerta I",
+  "Perseus I"
+ ],
+ "excluded": [
+  [
+   "aquarius_3",
+   "Aquarius III",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "bootes_3",
+   "Bootes III",
+   "named tidally disrupting system"
+  ],
+  [
+   "carina_4",
+   "Carina IV",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "draco_2",
+   "Draco II",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "grus_2",
+   "Grus II",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "hydra_2",
+   "Hydra II",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "lmc",
+   "LMC",
+   "M_V brighter than -14"
+  ],
+  [
+   "phoenix_2",
+   "Phoenix II",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "reticulum_3",
+   "Reticulum III",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "sagittarius_1",
+   "Sagittarius",
+   "named tidally disrupting system"
+  ],
+  [
+   "smc",
+   "SMC",
+   "M_V brighter than -14"
+  ],
+  [
+   "triangulum_2",
+   "Triangulum II",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "andromeda_24",
+   "Andromeda XXIV",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "andromeda_35",
+   "Andromeda XXXV",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "andromeda_36",
+   "Andromeda XXXVI",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "ic_0010",
+   "IC 10",
+   "M_V brighter than -14"
+  ],
+  [
+   "lgs_3",
+   "LGS 3",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "m_032",
+   "M 32",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0147",
+   "NGC 147",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0185",
+   "NGC 185",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0205",
+   "NGC 205",
+   "M_V brighter than -14"
+  ],
+  [
+   "pegasus_5",
+   "Pegasus V",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "pegasus_7",
+   "Pegasus VII",
+   "no measured dispersion (absent or upper limit)"
+  ]
+ ],
+ "rmse_dex": {
+  "stellar_rule": 0.4315,
+  "baryonic_rule": 0.7776,
+  "rar_disk_a0": 0.7784,
+  "rar_published_a0": 0.753,
+  "moster": 0.4353
+ },
+ "bootstrap_rmse_difference": {
+  "stellar_minus_rar_disk": [
+   -0.3468,
+   -0.4378,
+   -0.2435
+  ],
+  "stellar_minus_baryonic": [
+   -0.3461,
+   -0.4356,
+   -0.2447
+  ],
+  "stellar_minus_moster": [
+   -0.0038,
+   -0.0915,
+   0.0764
+  ],
+  "stellar_minus_rar_published": [
+   -0.3215,
+   -0.4098,
+   -0.2214
+  ]
+ },
+ "closer_under_stellar": {
+  "baryonic_rule": 23,
+  "rar_disk_a0": 23,
+  "rar_published_a0": 23,
+  "moster": 14
+ },
+ "primary_success": true,
+ "secondary_baryonic_success": true,
+ "sensitivity": {
+  "major_axis_radii": {
+   "stellar_rule": 0.4144,
+   "baryonic_rule": 0.7929,
+   "rar_disk_a0": 0.7794,
+   "rar_published_a0": 0.754,
+   "moster": 0.4578
+  },
+  "ML_1": {
+   "stellar_rule": 0.4594,
+   "baryonic_rule": 0.9105,
+   "rar_disk_a0": 0.9069,
+   "rar_published_a0": 0.8798,
+   "moster": 0.4255
+  },
+  "ML_3": {
+   "stellar_rule": 0.4226,
+   "baryonic_rule": 0.7088,
+   "rar_disk_a0": 0.7074,
+   "rar_published_a0": 0.6836,
+   "moster": 0.4421
+  }
+ },
+ "subsets": {
+  "LV_ge_1e5": {
+   "n": 9,
+   "stellar_rule": 0.4545,
+   "baryonic_rule": 0.5785,
+   "rar_disk_a0": 0.5552,
+   "rar_published_a0": 0.54,
+   "moster": 0.5479
+  },
+  "LV_lt_1e5": {
+   "n": 18,
+   "stellar_rule": 0.4195,
+   "baryonic_rule": 0.86,
+   "rar_disk_a0": 0.8687,
+   "rar_published_a0": 0.8395,
+   "moster": 0.3662
+  }
+ }
+}

@@ -1,0 +1,50 @@
+GRAVITY ON A CLASSICAL ELECTROMAGNETIC WAVE
+
+This is an additional field-type consistency test using exactly the massive
+circuit implementation with m=0, no gauge phase and no retuned coefficients.
+It is a 3+1 metric with a one-dimensional transverse-wave reduction:
+    ds^2=-N(x)^2 dt^2+dx^2+dy^2+dz^2, N=1+.25cos(x).
+The Eulerian fields are E=(0,E_y(t,x),0), B=(0,0,B_z(t,x)).
+
+Derivation directly from the supplied covariant Maxwell equations:
+sqrt(-g)=N, E_y=F_y0/N and F_xy=B_z. The y component of
+partial_mu[sqrt(-g) F^(mu nu)]=0 gives
+    partial_t E_y = -partial_x(N B_z).
+The (0,x,y) Bianchi identity gives
+    partial_t B_z = -partial_x(N E_y).
+The spatial divergence constraints vanish identically in this ansatz.
+
+Set chi_plus/minus=sqrt(N)(E_y +/- B_z). Then
+    partial_t chi_plus = -(N partial_x+N'/2)chi_plus,
+    partial_t chi_minus = +(N partial_x+N'/2)chi_minus.
+These are exactly the two massless chiral transport operators already tested.
+This mapping is special to the stated static plane geometry and transverse
+sector. It is not an identification of general spin-1 and spin-1/2 theories.
+
+The conserved Killing energy per unit transverse area is
+    K=integral N(E_y^2+B_z^2)/2 dx
+     =integral(chi_plus^2+chi_minus^2)/4 dx.
+Its coordinate energy flux is N^2 E_y B_z. The local field energy E^2+B^2
+is not itself the conserved coordinate-time Hamiltonian density when N varies.
+
+The benchmark evolves two counterpropagating real finite-Fourier packets in
+the optical coordinate y=integral dx/N, reconstructs E_y,B_z and compares
+with the exact continuum solution. Both pulses are present simultaneously;
+no final projection or coefficient fit is applied. Normalization fixes K=.25.
+At 1024 sites relative field error is .000282813661; at 2048 it is
+.0000706043309. Field errors decrease approximately fourfold per doubling.
+Killing-energy drift stays below1e-15 and imaginary field parts are zero.
+
+Conclusion: the same local transport rule passes this GR electromagnetic-wave
+sector as well as the previous massless quantum propagation sector. The tests
+do not yet cover general 3D Maxwell data, sources, polarization transport in
+arbitrary curvature, quantized photons, or source backreaction.
+
+Primary context: S. S. Komissarov, Electrodynamics of black hole
+magnetospheres, MNRAS350(2004)427:
+https://academic.oup.com/mnras/article/350/2/427/1113688
+and 3+1 magnetodynamics, MNRAS418(2011)L94:
+https://academic.oup.com/mnrasl/article/418/1/L94/1023153
+The elementary specialization above is derived explicitly to fix conventions.
+
+Run python3 maxwell_gravity.py (imports ../massive/massive_curved.py).

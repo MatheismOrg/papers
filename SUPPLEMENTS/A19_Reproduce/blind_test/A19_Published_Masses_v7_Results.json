@@ -1,0 +1,114 @@
+{
+ "protocol_sha256": "b09448f5f163215a0ad0ddb195ed4d10491b59ae5c8f55359f8667a92faba68d",
+ "as_published": {
+  "mean": {
+   "all": {
+    "n": 20,
+    "median": 0.215,
+    "sd": 0.726,
+    "rms_expected": 0.13,
+    "n_within_2s": 5
+   },
+   "X-ray": {
+    "n": 16,
+    "median": 0.476,
+    "sd": 0.64,
+    "rms_expected": 0.135,
+    "n_within_2s": 4
+   },
+   "high-magnification": {
+    "n": 4,
+    "median": -0.171,
+    "sd": 0.928,
+    "rms_expected": 0.106,
+    "n_within_2s": 1
+   },
+   "consistent": false
+  },
+  "probabilistic": {
+   "all": {
+    "n": 20,
+    "median": -0.977,
+    "sd": 0.453,
+    "rms_expected": 0.13,
+    "n_within_2s": 0
+   },
+   "X-ray": {
+    "n": 16,
+    "median": -0.892,
+    "sd": 0.375,
+    "rms_expected": 0.135,
+    "n_within_2s": 0
+   },
+   "high-magnification": {
+    "n": 4,
+    "median": -1.43,
+    "sd": 0.576,
+    "rms_expected": 0.106,
+    "n_within_2s": 0
+   },
+   "consistent": false
+  },
+  "check_D_vs_published": {
+   "median": -0.016,
+   "max_abs": 0.047,
+   "faithful": true
+  }
+ },
+ "h_0671": {
+  "mean": {
+   "all": {
+    "n": 20,
+    "median": 0.196,
+    "sd": 0.726,
+    "rms_expected": 0.13,
+    "n_within_2s": 4
+   },
+   "X-ray": {
+    "n": 16,
+    "median": 0.457,
+    "sd": 0.64,
+    "rms_expected": 0.135,
+    "n_within_2s": 3
+   },
+   "high-magnification": {
+    "n": 4,
+    "median": -0.19,
+    "sd": 0.928,
+    "rms_expected": 0.106,
+    "n_within_2s": 1
+   },
+   "consistent": false
+  },
+  "probabilistic": {
+   "all": {
+    "n": 20,
+    "median": -0.995,
+    "sd": 0.453,
+    "rms_expected": 0.13,
+    "n_within_2s": 0
+   },
+   "X-ray": {
+    "n": 16,
+    "median": -0.91,
+    "sd": 0.375,
+    "rms_expected": 0.135,
+    "n_within_2s": 0
+   },
+   "high-magnification": {
+    "n": 4,
+    "median": -1.448,
+    "sd": 0.576,
+    "rms_expected": 0.106,
+    "n_within_2s": 0
+   },
+   "consistent": false
+  },
+  "check_D_vs_published": {
+   "median": -0.034,
+   "max_abs": 0.065,
+   "faithful": true
+  }
+ },
+ "consistent_with_published": false
+}

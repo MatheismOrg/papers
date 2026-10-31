@@ -1,0 +1,7 @@
+Hudson, M. J., et al. (2015), CFHTLenS: co-evolution of galaxies and their dark matter haloes, MNRAS 447, 298-314,
+doi:10.1093/mnras/stu2367. Table 2 ("Halo model fits for blue galaxies"), transcribed 31 October 2026 from the ar5iv
+HTML of arXiv:1310.6784: mean lens redshift, mean stellar mass (10^10 suns), halo mass M_h (10^11 suns) with its
+error, fitted satellite fraction, number of lenses. M_h is the sum of the baryons and the NFW M_200 (200 times the
+critical density), with concentration fixed by mass and redshift; satellites are kept and modeled with stripped
+halos; blue means rest-frame u* - r' below 1.6. The rows used in the paper (stellar mass near 1.7 and 4.2 to
+4.6 x 10^10) were also given, with the same values, by an independent Perplexity session (turn 10).

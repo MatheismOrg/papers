@@ -1,0 +1,55 @@
+A19 HALO RULES AGAINST GALAXY-GALAXY LENSING OF SDSS CENTRAL GALAXIES
+PROTOCOL VERSION 8
+Written 31 October 2026, 08:51 US Pacific, by Claude (Opus 5.5), session SA73, turn 7, for Gary Abraham Bernstein.
+
+PURPOSE
+The stellar rule was calibrated on rotation curves, which reach a few tens of kpc; galaxy-galaxy lensing weighs
+the whole halo. Mandelbaum et al. (2016) measured the mean halo masses of red and blue central galaxies in bins of
+stellar mass. This protocol (1) scores the stellar rule, frozen on the disks, against the blue (star-forming)
+centrals, the kind of galaxy it was calibrated on; (2) tests the prediction recorded in turn 6 for the exploratory
+rule that applies Moster's bend to early-type centrals, namely that an early type sits in a halo b(M*) times
+heavier than a disk of the same stellar mass and size, with b about 6 to 16 near 10^11 suns; (3) reports the
+stellar rule and the Moster relation against the red centrals as diagnostics.
+
+WHAT WAS ALREADY SEEN
+The lensing table (data/Lensing/mandelbaum2016_central_halos.csv, transcribed today). Before writing this
+protocol a rough hand estimate suggested that the stellar rule lies within about 0.2 dex of the blue masses near
+10^10.85 and 10^11.29 suns and below the red masses above 10^11.2, and that b exceeds the measured red-to-blue
+ratios above 10^10.8. The turn 6 prediction for b was stated in that turn's reply and handoff before the lensing
+numbers were read. No lensing value entered any rule.
+
+DATA
+data/Lensing/mandelbaum2016_central_halos.csv; the 149 SPARC disks (data/SPARC) for the size and HI scalings;
+blind_test/frozen_disk_rules.json for A, B and C.
+
+METHOD
+(1) A typical disk at a given stellar mass: least-squares fits over the 149 disks, each weighted equally, of
+    log R_e = p0 + p1 log M* and log M_HI = q0 + q1 log M*, with M* = 0.5 L_3.6 (the paper's convention).
+(2) The stellar rule for blue centrals at each bin's effective VAGC stellar mass: M_ref = M_p/f_b +
+    10^A (M*/10^10)^B (R_e/3 kpc)^C, with R_e and M_HI from (1) and M_p = M* + 1.33 M_HI. M_ref is M_200c in
+    suns for h = 0.671 with the rule's concentration c = 10^0.905 (M_ref h / 10^12)^-0.101; it is converted to
+    M_200m at the bin's effective redshift for an NFW halo of that concentration (colossus, cosmology H0 = 67.1,
+    Omega_m = 0.3175), and to h^-1 suns with h = 0.673, the lensing paper's units.
+(3) The stellar rule for red centrals, as a diagnostic: no gas (M_p = M*) and two sizes that bracket early types,
+    the disk size of (1) and half of it.
+(4) The Moster relation (with its redshift terms, as in protocol 5: M_200c in suns, Dutton and Maccio
+    concentration at the bin's effective redshift), converted the same way, for both colors.
+(5) The turn 6 prediction: log b(M*, z) at the red bin's effective stellar mass and redshift, where b is the
+    Moster relation divided by its own low-mass power law, against the measured log ratio of the red to the blue
+    mean halo mass in the same bin, with error sigma = (sigma_red^2 + sigma_blue^2)^(1/2), each sigma the mean of
+    its upper and lower errors.
+Sensitivity: the MPA/JHU stellar masses in place of the VAGC ones; no gas term for blue centrals; disk sizes
+0.15 dex larger and smaller.
+The lensing masses are means over each bin; the rule predicts a typical galaxy. Scatter at fixed stellar mass
+raises a mean above the typical value by roughly 0.05 to 0.1 dex. This is reported and not corrected.
+
+OUTCOMES
+(A) The stellar rule is called consistent with the lensing masses of star-forming centrals if, in each of the
+    five blue bins with effective stellar mass below 10^11.4 suns, its prediction lies within 0.2 dex of the
+    measured mean, or within twice the measured error where that is larger.
+(B) The turn 6 type-bend rule is called refuted at galaxy scale if log b exceeds the measured log ratio by more
+    than three sigma in either bin with effective stellar mass between 10^10.7 and 10^11.2 suns.
+(C) and (D), the red-central diagnostics and the Moster relation, are reported without a criterion.
+
+REPORTING
+All outcomes are reported whatever they show. Nothing changes after this file's SHA-256 is recorded.

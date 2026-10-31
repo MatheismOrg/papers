@@ -1,0 +1,44 @@
+A19 CLUSTER HALO MASSES AGAINST PUBLISHED LENSING MASSES
+PROTOCOL VERSION 7
+Written 31 October 2026, 02:10 US Pacific, by Claude (Opus 5.5), session SA73, turn 5, for Gary Abraham Bernstein.
+
+PURPOSE
+Protocol 6, check D, compared the Moster halo masses with NFW masses that this work fitted to the CLASH
+accelerations of Tian et al. (2020). An outside review (Perplexity, 31 October) noted that this is an internal
+consistency check, not a comparison with published lensing masses. Tian et al. computed those accelerations from
+the spherical NFW fits of Umetsu et al. (2016), whose Table 2 gives M_200c and c_200c for all 20 clusters. This
+protocol compares the halo masses of protocols 5 and 6 with those published masses, by selection route, and is
+fixed before any of the comparisons is computed.
+
+WHAT WAS ALREADY SEEN
+All results of protocols 5 and 6, including check D's fitted masses (A19_Cluster_Audit_v6_Hosts.csv).
+Umetsu et al. (2016), Table 2, read on 31 October 2026 and transcribed to data/Clusters/umetsu2016_table2.csv
+(two separate extractions of the arXiv text agree on every row). By eye its masses lie within about 0.05 dex of
+check D's fitted masses, so the outcome below is largely foreseen. Umetsu et al. adopt h = 0.7 and
+Omega_m = 0.27 and give M_200c in 10^14 M_sun h70^-1; they group the 20 clusters as 16 chosen by X-ray criteria
+(temperature above 5 keV, smooth X-ray morphology) and 4 chosen for high lensing magnification. Tian et al.
+(2020) computed the CLASH accelerations from Umetsu et al.'s NFW posteriors under that cosmology, and take the
+BCG stellar masses of Cooke et al. (2016) as total masses.
+
+DATA
+data/Clusters/umetsu2016_table2.csv, and blind_test/A19_Cluster_Audit_v6_Hosts.csv for protocol 5's halo masses
+(log_Mh_deterministic), protocol 6's posterior medians (log_Mh_posterior_median) and check D's fitted masses
+(log_M200_lensing).
+
+METHOD
+(1) Published masses as given (physical suns for h = 0.7), the convention in which this work uses Tian et al.'s
+    accelerations; as a check, scaled by 0.7/0.671 for h = 0.671, since lensing masses scale as 1/h.
+(2) For each cluster, r = log10(M_Moster / M_Umetsu) for the mean inversion and for the posterior median, and
+    the scatter expected from the published error alone, s = e_M / (M ln 10).
+(3) Reported for all 20 clusters and for each route (16 X-ray, 4 high magnification): the median and standard
+    deviation of r, the root mean square of s, and the number of clusters with |r| at most 2 s.
+(4) Check D against the published masses: median and largest |log10(M_checkD / M_Umetsu)|.
+
+OUTCOMES
+The halo masses are called consistent with the published lensing masses only if, for the mean inversion or for
+the probabilistic one, the median r lies within 0.2 dex of zero and the standard deviation of r is at most twice
+the root mean square of s. Check D is called a faithful stand-in for the published masses if its largest
+difference is below 0.1 dex.
+
+REPORTING
+All outcomes are reported whatever they show. Nothing changes after this file's SHA-256 is recorded.

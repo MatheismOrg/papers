@@ -1,0 +1,864 @@
+{
+  "description": "Pass18: RST endpoint candidates with explicitly paired asymptotic charges.\n\nThis is an analytical reduced-model screening program, not a new BH solver or\nSM/quantum-gravity simulator. Units choose A=kappa*lambda/4=1 and lambda=1.\nThe dimensionless incoming mass is mu=M/A (NOT the mu of arXiv2510.18298).\nU=log q is shifted affine retarded time, r=q/(1+q)=expit(U).\nTraditional: B/A=mu-log(1+q)-r, F/(A lambda)=r(2-r).\nQuantum-corrected: B/A=mu-log(1+q)+r, F/(A lambda)=r^2.\nEach charge has its OWN flux. Their difference is a boundary/quantum term;\nnegative traditional charge is not treated as a physical instability theorem.\n",
+  "rows": [
+    {
+      "mu": 1.0,
+      "coordinate_step": 1.0,
+      "definition": "traditional",
+      "steps": 25,
+      "endpoint_charge": -0.6321205588285577,
+      "emitted": 1.6321205588285574,
+      "max_abs_budget_residual": 2.220446049250313e-16,
+      "endpoint_relative_budget_residual": -2.220446049250313e-16
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 1.0,
+      "definition": "corrected",
+      "steps": 25,
+      "endpoint_charge": 0.6321205588285577,
+      "emitted": 0.36787944117144233,
+      "max_abs_budget_residual": 1.1102230246251565e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 1.0,
+      "definition": "mixed",
+      "steps": 25,
+      "endpoint_charge": 0.6321205588285577,
+      "emitted": 1.6321205588285574,
+      "max_abs_budget_residual": 1.2642411176571153,
+      "endpoint_relative_budget_residual": 1.2642411176571153
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 0.5,
+      "definition": "traditional",
+      "steps": 50,
+      "endpoint_charge": -0.6321205588285577,
+      "emitted": 1.6321205588285579,
+      "max_abs_budget_residual": 2.220446049250313e-16,
+      "endpoint_relative_budget_residual": 2.220446049250313e-16
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 0.5,
+      "definition": "corrected",
+      "steps": 50,
+      "endpoint_charge": 0.6321205588285577,
+      "emitted": 0.3678794411714423,
+      "max_abs_budget_residual": 1.1102230246251565e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 0.5,
+      "definition": "mixed",
+      "steps": 50,
+      "endpoint_charge": 0.6321205588285577,
+      "emitted": 1.6321205588285579,
+      "max_abs_budget_residual": 1.2642411176571153,
+      "endpoint_relative_budget_residual": 1.2642411176571153
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 0.25,
+      "definition": "traditional",
+      "steps": 99,
+      "endpoint_charge": -0.6321205588285577,
+      "emitted": 1.6321205588285579,
+      "max_abs_budget_residual": 2.220446049250313e-16,
+      "endpoint_relative_budget_residual": 2.220446049250313e-16
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 0.25,
+      "definition": "corrected",
+      "steps": 99,
+      "endpoint_charge": 0.6321205588285577,
+      "emitted": 0.3678794411714422,
+      "max_abs_budget_residual": 1.1102230246251565e-16,
+      "endpoint_relative_budget_residual": -1.1102230246251565e-16
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 0.25,
+      "definition": "mixed",
+      "steps": 99,
+      "endpoint_charge": 0.6321205588285577,
+      "emitted": 1.6321205588285579,
+      "max_abs_budget_residual": 1.2642411176571153,
+      "endpoint_relative_budget_residual": 1.2642411176571153
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 0.125,
+      "definition": "traditional",
+      "steps": 197,
+      "endpoint_charge": -0.6321205588285577,
+      "emitted": 1.6321205588285574,
+      "max_abs_budget_residual": 4.440892098500626e-16,
+      "endpoint_relative_budget_residual": -2.220446049250313e-16
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 0.125,
+      "definition": "corrected",
+      "steps": 197,
+      "endpoint_charge": 0.6321205588285577,
+      "emitted": 0.3678794411714423,
+      "max_abs_budget_residual": 1.1102230246251565e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 1.0,
+      "coordinate_step": 0.125,
+      "definition": "mixed",
+      "steps": 197,
+      "endpoint_charge": 0.6321205588285577,
+      "emitted": 1.6321205588285574,
+      "max_abs_budget_residual": 1.2642411176571153,
+      "endpoint_relative_budget_residual": 1.2642411176571153
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 1.0,
+      "definition": "traditional",
+      "steps": 26,
+      "endpoint_charge": -0.8646647167633873,
+      "emitted": 2.8646647167633867,
+      "max_abs_budget_residual": 4.440892098500626e-16,
+      "endpoint_relative_budget_residual": -2.220446049250313e-16
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 1.0,
+      "definition": "corrected",
+      "steps": 26,
+      "endpoint_charge": 0.8646647167633873,
+      "emitted": 1.1353352832366128,
+      "max_abs_budget_residual": 2.220446049250313e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 1.0,
+      "definition": "mixed",
+      "steps": 26,
+      "endpoint_charge": 0.8646647167633873,
+      "emitted": 2.8646647167633867,
+      "max_abs_budget_residual": 1.729329433526774,
+      "endpoint_relative_budget_residual": 0.864664716763387
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 0.5,
+      "definition": "traditional",
+      "steps": 52,
+      "endpoint_charge": -0.8646647167633873,
+      "emitted": 2.864664716763387,
+      "max_abs_budget_residual": 2.220446049250313e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 0.5,
+      "definition": "corrected",
+      "steps": 52,
+      "endpoint_charge": 0.8646647167633873,
+      "emitted": 1.1353352832366128,
+      "max_abs_budget_residual": 2.220446049250313e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 0.5,
+      "definition": "mixed",
+      "steps": 52,
+      "endpoint_charge": 0.8646647167633873,
+      "emitted": 2.864664716763387,
+      "max_abs_budget_residual": 1.7293294335267744,
+      "endpoint_relative_budget_residual": 0.8646647167633872
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 0.25,
+      "definition": "traditional",
+      "steps": 104,
+      "endpoint_charge": -0.8646647167633873,
+      "emitted": 2.8646647167633876,
+      "max_abs_budget_residual": 4.440892098500626e-16,
+      "endpoint_relative_budget_residual": 2.220446049250313e-16
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 0.25,
+      "definition": "corrected",
+      "steps": 104,
+      "endpoint_charge": 0.8646647167633873,
+      "emitted": 1.1353352832366126,
+      "max_abs_budget_residual": 4.440892098500626e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 0.25,
+      "definition": "mixed",
+      "steps": 104,
+      "endpoint_charge": 0.8646647167633873,
+      "emitted": 2.8646647167633876,
+      "max_abs_budget_residual": 1.7293294335267748,
+      "endpoint_relative_budget_residual": 0.8646647167633874
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 0.125,
+      "definition": "traditional",
+      "steps": 207,
+      "endpoint_charge": -0.8646647167633873,
+      "emitted": 2.864664716763387,
+      "max_abs_budget_residual": 4.440892098500626e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 0.125,
+      "definition": "corrected",
+      "steps": 207,
+      "endpoint_charge": 0.8646647167633873,
+      "emitted": 1.1353352832366128,
+      "max_abs_budget_residual": 2.220446049250313e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 2.0,
+      "coordinate_step": 0.125,
+      "definition": "mixed",
+      "steps": 207,
+      "endpoint_charge": 0.8646647167633873,
+      "emitted": 2.864664716763387,
+      "max_abs_budget_residual": 1.7293294335267744,
+      "endpoint_relative_budget_residual": 0.8646647167633872
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 1.0,
+      "definition": "traditional",
+      "steps": 28,
+      "endpoint_charge": -0.9816843611112658,
+      "emitted": 4.981684361111264,
+      "max_abs_budget_residual": 1.7763568394002505e-15,
+      "endpoint_relative_budget_residual": -4.440892098500626e-16
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 1.0,
+      "definition": "corrected",
+      "steps": 28,
+      "endpoint_charge": 0.9816843611112658,
+      "emitted": 3.018315638888734,
+      "max_abs_budget_residual": 4.440892098500626e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 1.0,
+      "definition": "mixed",
+      "steps": 28,
+      "endpoint_charge": 0.9816843611112658,
+      "emitted": 4.981684361111264,
+      "max_abs_budget_residual": 1.9633687222225298,
+      "endpoint_relative_budget_residual": 0.49084218055563245
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 0.5,
+      "definition": "traditional",
+      "steps": 56,
+      "endpoint_charge": -0.9816843611112658,
+      "emitted": 4.981684361111265,
+      "max_abs_budget_residual": 8.881784197001252e-16,
+      "endpoint_relative_budget_residual": -2.220446049250313e-16
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 0.5,
+      "definition": "corrected",
+      "steps": 56,
+      "endpoint_charge": 0.9816843611112658,
+      "emitted": 3.0183156388887338,
+      "max_abs_budget_residual": 4.440892098500626e-16,
+      "endpoint_relative_budget_residual": -1.1102230246251565e-16
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 0.5,
+      "definition": "mixed",
+      "steps": 56,
+      "endpoint_charge": 0.9816843611112658,
+      "emitted": 4.981684361111265,
+      "max_abs_budget_residual": 1.9633687222225307,
+      "endpoint_relative_budget_residual": 0.49084218055563267
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 0.25,
+      "definition": "traditional",
+      "steps": 112,
+      "endpoint_charge": -0.9816843611112658,
+      "emitted": 4.981684361111265,
+      "max_abs_budget_residual": 8.881784197001252e-16,
+      "endpoint_relative_budget_residual": -2.220446049250313e-16
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 0.25,
+      "definition": "corrected",
+      "steps": 112,
+      "endpoint_charge": 0.9816843611112658,
+      "emitted": 3.0183156388887333,
+      "max_abs_budget_residual": 8.881784197001252e-16,
+      "endpoint_relative_budget_residual": -2.220446049250313e-16
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 0.25,
+      "definition": "mixed",
+      "steps": 112,
+      "endpoint_charge": 0.9816843611112658,
+      "emitted": 4.981684361111265,
+      "max_abs_budget_residual": 1.9633687222225307,
+      "endpoint_relative_budget_residual": 0.49084218055563267
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 0.125,
+      "definition": "traditional",
+      "steps": 224,
+      "endpoint_charge": -0.9816843611112658,
+      "emitted": 4.981684361111266,
+      "max_abs_budget_residual": 8.881784197001252e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 0.125,
+      "definition": "corrected",
+      "steps": 224,
+      "endpoint_charge": 0.9816843611112658,
+      "emitted": 3.0183156388887338,
+      "max_abs_budget_residual": 8.881784197001252e-16,
+      "endpoint_relative_budget_residual": -1.1102230246251565e-16
+    },
+    {
+      "mu": 4.0,
+      "coordinate_step": 0.125,
+      "definition": "mixed",
+      "steps": 224,
+      "endpoint_charge": 0.9816843611112658,
+      "emitted": 4.981684361111266,
+      "max_abs_budget_residual": 1.9633687222225316,
+      "endpoint_relative_budget_residual": 0.4908421805556329
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 1.0,
+      "definition": "traditional",
+      "steps": 32,
+      "endpoint_charge": -0.9996645373720976,
+      "emitted": 8.999664537372094,
+      "max_abs_budget_residual": 3.552713678800501e-15,
+      "endpoint_relative_budget_residual": -4.440892098500626e-16
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 1.0,
+      "definition": "corrected",
+      "steps": 32,
+      "endpoint_charge": 0.9996645373720976,
+      "emitted": 7.000335462627903,
+      "max_abs_budget_residual": 8.881784197001252e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 1.0,
+      "definition": "mixed",
+      "steps": 32,
+      "endpoint_charge": 0.9996645373720976,
+      "emitted": 8.999664537372094,
+      "max_abs_budget_residual": 1.9993290747441925,
+      "endpoint_relative_budget_residual": 0.24991613434302407
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 0.5,
+      "definition": "traditional",
+      "steps": 64,
+      "endpoint_charge": -0.9996645373720976,
+      "emitted": 8.999664537372096,
+      "max_abs_budget_residual": 1.7763568394002505e-15,
+      "endpoint_relative_budget_residual": -2.220446049250313e-16
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 0.5,
+      "definition": "corrected",
+      "steps": 64,
+      "endpoint_charge": 0.9996645373720976,
+      "emitted": 7.000335462627903,
+      "max_abs_budget_residual": 8.881784197001252e-16,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 0.5,
+      "definition": "mixed",
+      "steps": 64,
+      "endpoint_charge": 0.9996645373720976,
+      "emitted": 8.999664537372096,
+      "max_abs_budget_residual": 1.9993290747441943,
+      "endpoint_relative_budget_residual": 0.2499161343430243
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 0.25,
+      "definition": "traditional",
+      "steps": 128,
+      "endpoint_charge": -0.9996645373720976,
+      "emitted": 8.999664537372098,
+      "max_abs_budget_residual": 1.7763568394002505e-15,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 0.25,
+      "definition": "corrected",
+      "steps": 128,
+      "endpoint_charge": 0.9996645373720976,
+      "emitted": 7.000335462627899,
+      "max_abs_budget_residual": 3.552713678800501e-15,
+      "endpoint_relative_budget_residual": -4.440892098500626e-16
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 0.25,
+      "definition": "mixed",
+      "steps": 128,
+      "endpoint_charge": 0.9996645373720976,
+      "emitted": 8.999664537372098,
+      "max_abs_budget_residual": 1.999329074744196,
+      "endpoint_relative_budget_residual": 0.2499161343430245
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 0.125,
+      "definition": "traditional",
+      "steps": 256,
+      "endpoint_charge": -0.9996645373720976,
+      "emitted": 8.999664537372098,
+      "max_abs_budget_residual": 1.7763568394002505e-15,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 0.125,
+      "definition": "corrected",
+      "steps": 256,
+      "endpoint_charge": 0.9996645373720976,
+      "emitted": 7.000335462627904,
+      "max_abs_budget_residual": 1.7763568394002505e-15,
+      "endpoint_relative_budget_residual": 2.220446049250313e-16
+    },
+    {
+      "mu": 8.0,
+      "coordinate_step": 0.125,
+      "definition": "mixed",
+      "steps": 256,
+      "endpoint_charge": 0.9996645373720976,
+      "emitted": 8.999664537372098,
+      "max_abs_budget_residual": 1.999329074744196,
+      "endpoint_relative_budget_residual": 0.2499161343430245
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 1.0,
+      "definition": "traditional",
+      "steps": 44,
+      "endpoint_charge": -0.9999999979388463,
+      "emitted": 20.999999997938847,
+      "max_abs_budget_residual": 3.552713678800501e-15,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 1.0,
+      "definition": "corrected",
+      "steps": 44,
+      "endpoint_charge": 0.9999999979388463,
+      "emitted": 19.000000002061153,
+      "max_abs_budget_residual": 3.552713678800501e-15,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 1.0,
+      "definition": "mixed",
+      "steps": 44,
+      "endpoint_charge": 0.9999999979388463,
+      "emitted": 20.999999997938847,
+      "max_abs_budget_residual": 1.999999995877694,
+      "endpoint_relative_budget_residual": 0.0999999997938847
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 0.5,
+      "definition": "traditional",
+      "steps": 88,
+      "endpoint_charge": -0.9999999979388463,
+      "emitted": 20.99999999793885,
+      "max_abs_budget_residual": 3.552713678800501e-15,
+      "endpoint_relative_budget_residual": 1.7763568394002506e-16
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 0.5,
+      "definition": "corrected",
+      "steps": 88,
+      "endpoint_charge": 0.9999999979388463,
+      "emitted": 19.00000000206116,
+      "max_abs_budget_residual": 7.105427357601002e-15,
+      "endpoint_relative_budget_residual": 3.552713678800501e-16
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 0.5,
+      "definition": "mixed",
+      "steps": 88,
+      "endpoint_charge": 0.9999999979388463,
+      "emitted": 20.99999999793885,
+      "max_abs_budget_residual": 1.9999999958776975,
+      "endpoint_relative_budget_residual": 0.09999999979388488
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 0.25,
+      "definition": "traditional",
+      "steps": 176,
+      "endpoint_charge": -0.9999999979388463,
+      "emitted": 20.99999999793885,
+      "max_abs_budget_residual": 3.552713678800501e-15,
+      "endpoint_relative_budget_residual": 1.7763568394002506e-16
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 0.25,
+      "definition": "corrected",
+      "steps": 176,
+      "endpoint_charge": 0.9999999979388463,
+      "emitted": 19.000000002061153,
+      "max_abs_budget_residual": 7.105427357601002e-15,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 0.25,
+      "definition": "mixed",
+      "steps": 176,
+      "endpoint_charge": 0.9999999979388463,
+      "emitted": 20.99999999793885,
+      "max_abs_budget_residual": 1.9999999958776975,
+      "endpoint_relative_budget_residual": 0.09999999979388488
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 0.125,
+      "definition": "traditional",
+      "steps": 352,
+      "endpoint_charge": -0.9999999979388463,
+      "emitted": 20.999999997938854,
+      "max_abs_budget_residual": 7.105427357601002e-15,
+      "endpoint_relative_budget_residual": 3.552713678800501e-16
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 0.125,
+      "definition": "corrected",
+      "steps": 352,
+      "endpoint_charge": 0.9999999979388463,
+      "emitted": 19.000000002061153,
+      "max_abs_budget_residual": 7.105427357601002e-15,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 20.0,
+      "coordinate_step": 0.125,
+      "definition": "mixed",
+      "steps": 352,
+      "endpoint_charge": 0.9999999979388463,
+      "emitted": 20.999999997938854,
+      "max_abs_budget_residual": 1.999999995877701,
+      "endpoint_relative_budget_residual": 0.09999999979388505
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 1.0,
+      "definition": "traditional",
+      "steps": 64,
+      "endpoint_charge": -1.0,
+      "emitted": 41.0,
+      "max_abs_budget_residual": 7.105427357601002e-15,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 1.0,
+      "definition": "corrected",
+      "steps": 64,
+      "endpoint_charge": 1.0,
+      "emitted": 39.0,
+      "max_abs_budget_residual": 7.105427357601002e-15,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 1.0,
+      "definition": "mixed",
+      "steps": 64,
+      "endpoint_charge": 1.0,
+      "emitted": 41.0,
+      "max_abs_budget_residual": 2.0,
+      "endpoint_relative_budget_residual": 0.05
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 0.5,
+      "definition": "traditional",
+      "steps": 128,
+      "endpoint_charge": -1.0,
+      "emitted": 41.0,
+      "max_abs_budget_residual": 7.105427357601002e-15,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 0.5,
+      "definition": "corrected",
+      "steps": 128,
+      "endpoint_charge": 1.0,
+      "emitted": 39.00000000000001,
+      "max_abs_budget_residual": 1.4210854715202004e-14,
+      "endpoint_relative_budget_residual": 1.7763568394002506e-16
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 0.5,
+      "definition": "mixed",
+      "steps": 128,
+      "endpoint_charge": 1.0,
+      "emitted": 41.0,
+      "max_abs_budget_residual": 2.0,
+      "endpoint_relative_budget_residual": 0.05
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 0.25,
+      "definition": "traditional",
+      "steps": 256,
+      "endpoint_charge": -1.0,
+      "emitted": 41.0,
+      "max_abs_budget_residual": 7.105427357601002e-15,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 0.25,
+      "definition": "corrected",
+      "steps": 256,
+      "endpoint_charge": 1.0,
+      "emitted": 39.00000000000001,
+      "max_abs_budget_residual": 7.105427357601002e-15,
+      "endpoint_relative_budget_residual": 1.7763568394002506e-16
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 0.25,
+      "definition": "mixed",
+      "steps": 256,
+      "endpoint_charge": 1.0,
+      "emitted": 41.0,
+      "max_abs_budget_residual": 2.0,
+      "endpoint_relative_budget_residual": 0.05
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 0.125,
+      "definition": "traditional",
+      "steps": 512,
+      "endpoint_charge": -1.0,
+      "emitted": 41.00000000000001,
+      "max_abs_budget_residual": 1.4210854715202004e-14,
+      "endpoint_relative_budget_residual": 1.7763568394002506e-16
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 0.125,
+      "definition": "corrected",
+      "steps": 512,
+      "endpoint_charge": 1.0,
+      "emitted": 39.0,
+      "max_abs_budget_residual": 1.4210854715202004e-14,
+      "endpoint_relative_budget_residual": 0.0
+    },
+    {
+      "mu": 40.0,
+      "coordinate_step": 0.125,
+      "definition": "mixed",
+      "steps": 512,
+      "endpoint_charge": 1.0,
+      "emitted": 41.00000000000001,
+      "max_abs_budget_residual": 2.000000000000007,
+      "endpoint_relative_budget_residual": 0.050000000000000176
+    }
+  ],
+  "endpoints": [
+    {
+      "mu": 1.0,
+      "traditional_endpoint": -0.6321205588285577,
+      "corrected_endpoint": 0.6321205588285577,
+      "traditional_radiation": 1.6321205588285577,
+      "corrected_radiation": 0.36787944117144233,
+      "mixing_budget_error": 1.2642411176571153,
+      "mixing_relative_error": 1.2642411176571153
+    },
+    {
+      "mu": 2.0,
+      "traditional_endpoint": -0.8646647167633873,
+      "corrected_endpoint": 0.8646647167633873,
+      "traditional_radiation": 2.864664716763387,
+      "corrected_radiation": 1.1353352832366128,
+      "mixing_budget_error": 1.7293294335267746,
+      "mixing_relative_error": 0.8646647167633873
+    },
+    {
+      "mu": 4.0,
+      "traditional_endpoint": -0.9816843611112658,
+      "corrected_endpoint": 0.9816843611112658,
+      "traditional_radiation": 4.981684361111266,
+      "corrected_radiation": 3.018315638888734,
+      "mixing_budget_error": 1.9633687222225316,
+      "mixing_relative_error": 0.4908421805556329
+    },
+    {
+      "mu": 8.0,
+      "traditional_endpoint": -0.9996645373720975,
+      "corrected_endpoint": 0.9996645373720975,
+      "traditional_radiation": 8.999664537372098,
+      "corrected_radiation": 7.000335462627903,
+      "mixing_budget_error": 1.999329074744195,
+      "mixing_relative_error": 0.24991613434302437
+    },
+    {
+      "mu": 20.0,
+      "traditional_endpoint": -0.9999999979388464,
+      "corrected_endpoint": 0.9999999979388464,
+      "traditional_radiation": 20.999999997938847,
+      "corrected_radiation": 19.000000002061153,
+      "mixing_budget_error": 1.9999999958776928,
+      "mixing_relative_error": 0.09999999979388464
+    },
+    {
+      "mu": 40.0,
+      "traditional_endpoint": -1.0,
+      "corrected_endpoint": 1.0,
+      "traditional_radiation": 41.0,
+      "corrected_radiation": 39.0,
+      "mixing_budget_error": 2.0,
+      "mixing_relative_error": 0.05
+    }
+  ],
+  "naive_clips": [
+    {
+      "mu": 1.0,
+      "y_clip": 0.5671432904097837,
+      "q_clip": 0.7632228343518964,
+      "U_clip": -0.2702052400714484,
+      "U_endpoint": 0.5413248546129181,
+      "horizon_W_gap": 0.43285670959021605,
+      "horizon_z": 2.238794067978387,
+      "X_horizon": 0.7632228343518964,
+      "postshock_horizon": false,
+      "corrected_charge_at_old_zero": 0.8657134191804321,
+      "interpretation": "Only the traditional-charge clipping rule. The formal horizon value is physical only if postshock_horizon=true; then apparent horizon is above critical z=1 and clipping cannot declare complete evaporation. No claim all Bondi definitions vanish here."
+    },
+    {
+      "mu": 2.0,
+      "y_clip": 1.2784645427610737,
+      "q_clip": 2.5911214766686217,
+      "U_clip": 0.9520907845676415,
+      "U_endpoint": 1.854586542131141,
+      "horizon_W_gap": 0.7215354572389262,
+      "horizon_z": 2.723426164015608,
+      "X_horizon": 1.2955607383343108,
+      "postshock_horizon": true,
+      "corrected_charge_at_old_zero": 1.4430709144778524,
+      "interpretation": "Only the traditional-charge clipping rule. The formal horizon value is physical only if postshock_horizon=true; then apparent horizon is above critical z=1 and clipping cannot declare complete evaporation. No claim all Bondi definitions vanish here."
+    },
+    {
+      "mu": 4.0,
+      "y_clip": 3.047478491024867,
+      "q_clip": 20.06216896144152,
+      "U_clip": 2.9988359003898166,
+      "U_endpoint": 3.9815145531741134,
+      "horizon_W_gap": 0.9525215089751345,
+      "horizon_z": 3.0762245627485187,
+      "X_horizon": 5.01554224036038,
+      "postshock_horizon": true,
+      "corrected_charge_at_old_zero": 1.905043017950269,
+      "interpretation": "Only the traditional-charge clipping rule. The formal horizon value is physical only if postshock_horizon=true; then apparent horizon is above critical z=1 and clipping cannot declare complete evaporation. No claim all Bondi definitions vanish here."
+    },
+    {
+      "mu": 8.0,
+      "y_clip": 7.00091105157238,
+      "q_clip": 1096.6327030409775,
+      "U_clip": 6.999999584740283,
+      "U_endpoint": 7.999664481091923,
+      "horizon_W_gap": 0.9990889484276211,
+      "horizon_z": 3.1448575403764902,
+      "X_horizon": 137.0790878801222,
+      "postshock_horizon": true,
+      "corrected_charge_at_old_zero": 1.9981778968552422,
+      "interpretation": "Only the traditional-charge clipping rule. The formal horizon value is physical only if postshock_horizon=true; then apparent horizon is above critical z=1 and clipping cannot declare complete evaporation. No claim all Bondi definitions vanish here."
+    },
+    {
+      "mu": 20.0,
+      "y_clip": 19.0000000056028,
+      "q_clip": 178482300.9631879,
+      "U_clip": 19.000000000000004,
+      "U_endpoint": 19.999999997938847,
+      "horizon_W_gap": 0.9999999943972036,
+      "horizon_z": 3.146193212407212,
+      "X_horizon": 8924115.048159394,
+      "postshock_horizon": true,
+      "corrected_charge_at_old_zero": 1.999999988794407,
+      "interpretation": "Only the traditional-charge clipping rule. The formal horizon value is physical only if postshock_horizon=true; then apparent horizon is above critical z=1 and clipping cannot declare complete evaporation. No claim all Bondi definitions vanish here."
+    },
+    {
+      "mu": 40.0,
+      "y_clip": 39.0,
+      "q_clip": 8.659340042399374e+16,
+      "U_clip": 39.0,
+      "U_endpoint": 40.0,
+      "horizon_W_gap": 1.0,
+      "horizon_z": 3.1461932206205825,
+      "X_horizon": 2164835010599843.5,
+      "postshock_horizon": true,
+      "corrected_charge_at_old_zero": 2.0,
+      "interpretation": "Only the traditional-charge clipping rule. The formal horizon value is physical only if postshock_horizon=true; then apparent horizon is above critical z=1 and clipping cannot declare complete evaporation. No claim all Bondi definitions vanish here."
+    }
+  ],
+  "matched_max_budget_error": 1.4210854715202004e-14,
+  "mixed_prediction_max_error": 4.440892098500626e-16,
+  "all_checks_passed": true
+}

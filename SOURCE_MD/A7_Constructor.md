@@ -1,4 +1,4 @@
-# Reversible Physics, Incomplete Records: Why an Answer Can Hide Its Inputs
+# Constructor Theory and Mathematical Reality: Why an Answer Can Hide Its Inputs
 
 ## Abstract
 

@@ -1,0 +1,16 @@
+set,lvdb_key,name,host,L_V,R_e_circ_pc,sigma_or_upper_limit_kms,sigma_pred_stellar_rule,sigma_pred_baryonic_rule,sigma_pred_moster,sigma_pred_rar_disk_a0,sigma_pred_rar_published_a0,sigma_pred_stellar_subhalo_E1,sigma_pred_mond_efe_E2,ref_structure,ref_vlos,ref_m_v
+M,cetus_1,Cetus,none,2.559e+06,574.5,8.3,11.52,7.91,13.45,8.06,8.35,11.52,7.98,McConnachie2012AJ....144....4M,Kirby2014MNRAS.439.1015K,McConnachie2012AJ....144....4M
+M,phoenix_1,Phoenix,none,7.586e+05,242.0,9.3,8.00,5.71,8.92,5.98,6.19,8.00,5.89,Battaglia2012MNRAS.424.1113B,Kacharov2017MNRAS.466.2006K,vandeRydt1991AJ....102..130V
+M,tucana_1,Tucana,none,5.598e+05,203.6,6.2,7.34,5.25,8.16,5.55,5.74,7.34,5.46,McConnachie2012AJ....144....4M,Taibi2020A&A...635A.152T,McConnachie2012AJ....144....4M
+M,ugc_04879,UGC 4879,none,6.668e+06,301.5,9.6,11.54,9.46,11.77,10.65,11.00,11.54,10.14,Higgs2021MNRAS.503..176H,Kirby2014MNRAS.439.1015K,McConnachie2012AJ....144....4M
+M,kdg_064,KDG 64,m_081,1.854e+07,975.6,16.8,17.16,12.98,18.81,13.37,13.84,17.16,,Okamoto2019ApJ...884..128O,Afanasiev2023MNRAS.520.6312A,Okamoto2019ApJ...884..128O
+U,aquarius_3,Aquarius III,mw,855.1,36.3,3.5,2.10,1.14,2.72,1.08,1.11,2.40,0.64,Cerny2025ApJ...979..164C,Cerny2025ApJ...979..164C,Cerny2025ApJ...979..164C
+U,draco_2,Draco II,mw,178.6,16.1,2.6,1.37,0.77,1.73,0.73,0.75,1.86,0.23,Longeard2018MNRAS.480.2609L,Cerny2026arXiv260217652C,Longeard2018MNRAS.480.2609L
+U,grus_2,Grus II,mw,4055,94.2,2.0,3.27,1.64,4.47,1.59,1.64,3.90,0.66,Prabhu2026arXiv260625058P,Simon2020ApJ...892..137S,Simon2020ApJ...892..137S
+U,hydra_2,Hydra II,mw,9376,56.7,4.11,3.12,1.96,3.73,1.97,2.04,3.30,1.96,Munoz2018ApJ...860...66M,Geha2026ApJ...999..140G,Richstein2024ApJ...967...72R
+U,phoenix_2,Phoenix II,lmc,937.6,26.9,21.2,1.92,1.13,2.37,1.10,1.14,2.23,0.75,Richstein2024ApJ...967...72R,Fritz2019A&A...623A.129F,Richstein2024ApJ...967...72R
+U,reticulum_3,Reticulum III,mw,1786,62.2,8.3,2.67,1.36,3.58,1.29,1.34,3.00,0.73,DrlicaWagner2015ApJ...813..109D,Fritz2019A&A...623A.129F,DrlicaWagner2015ApJ...813..109D
+U,segue_2,Segue 2,mw,515.2,35.0,2.06,1.97,1.02,2.61,0.95,0.98,2.45,0.35,Munoz2018ApJ...860...66M,Geha2026ApJ...999..140G,Munoz2018ApJ...860...66M
+U,triangulum_2,Triangulum II,mw,283.1,17.2,3.5,1.46,0.85,1.82,0.82,0.85,1.90,0.34,Carlin2017AJ....154..267C,Buttry2022MNRAS.514.1706B,Richstein2024ApJ...967...72R
+U,andromeda_12,Andromeda XII,m_031,3.664e+04,223.5,4.0,5.23,2.74,7.19,2.75,2.85,5.76,1.64,Martin2016ApJ...833..167M,Collins2013ApJ...768..172C,Martin2016ApJ...833..167M
+U,andromeda_24,Andromeda XXIV,m_031,9.55e+04,402.8,7.3,6.51,3.31,9.50,3.49,3.62,6.68,2.65,Martin2016ApJ...833..167M,Collins2013ApJ...768..172C,Martin2016ApJ...833..167M

@@ -1,0 +1,3 @@
+n=  256 steps=   42 numpy local   0.012s  pure-python rule    0.04s  spectral reference   0.054s  site-updates/s (numpy) 916,982
+n= 1024 steps=  164 numpy local   0.118s  pure-python rule    0.95s  spectral reference   0.150s  site-updates/s (numpy) 1,423,779
+n= 4096 steps=  652 numpy local   0.688s  pure-python rule   12.57s  spectral reference     nans  site-updates/s (numpy) 3,884,018

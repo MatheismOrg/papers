@@ -1,0 +1,66 @@
+MASSIVE QUANTUM PACKETS AND TIMELIKE GR RAYS
+
+The supplied static metric is ds^2=-N(x)^2 dt^2+dx^2 with
+N=1+0.25 cos(x). The Dirac Hamiltonian is
+H=-i sigma_z[N partial_x+N'/2]+mN sigma_x.
+
+The positive-band classical Hamiltonian is E=N sqrt(p^2+m^2).
+Writing eta=asinh(p/m) gives
+    dx/dt=N tanh(eta),  deta/dt=-N',  E/m=N cosh(eta).
+The mass cancels for matched initial local velocity. At rest, xddot=-NN'.
+Our ray starts at x=pi/2 with eta=0. At t=1 its coordinate is
+1.6925655602163747; E/m is conserved to approximately 5.4e-14.
+
+A finite-width quantum packet is not a point trajectory. We therefore use
+a controlled narrowing family with masses 8,16,32,64 and initial Gaussian
+density width parameter 0.8/sqrt(m), centered at pi/2, zero mean momentum.
+The initial spinor is projected onto the local constant-coefficient positive
+Dirac band. No output or trajectory is fitted. Both decreasing relative
+momentum spread and decreasing spatial width matter in this limit; changing
+the mass alone for arbitrary fixed states need not give identical centers.
+
+Independent reference evolution uses the Hermitian Fourier pseudospectral
+operator (NP+PN)sigma_z/2 +mN sigma_x, evaluated with expm_multiply.
+For m=64, 512 versus 2048 spectral sites agree to 4.86e-15 in full state norm.
+This verifies discretization consistency, not a formal uniform continuum
+error bound. The packet probability near the periodic seam is negligible.
+
+Quantum reference centers at t=1:
+    m=8    1.6779862370    error from point ray 0.0145793232
+    m=16   1.6848950782    error from point ray 0.0076704820
+    m=32   1.6886231987    error from point ray 0.0039423616
+    m=64   1.6905657019    error from point ray 0.0019998583
+This is the expected approach to the point-particle GR path as the quantum
+family becomes localized and semiclassical, not exact trajectory equality.
+
+The actual local discrete circuit is the SAME implementation used in the
+massive packet benchmark, with only its initial state supplied. Every
+microstep has calibrated bond gates sandwiched between half mass coins;
+even-first and odd-first steps alternate. There is no projection during
+the evolution. Full-state errors against the spectral reference fall
+approximately fourfold per grid doubling for every tested mass.
+
+At 8192 sites the actual circuit centers are:
+    m=8    1.6779847789
+    m=16   1.6848889779
+    m=32   1.6885987960
+    m=64   1.6904678447
+For m=64, numerical center error relative to the quantum reference is
+9.79e-5, distinct from the physical finite-width difference of about 0.0020
+between that quantum reference and the point ray. The corresponding full
+state norm error is 0.000848279. Fourier resampling of the independently
+converged 2048-site reference supplies the finer comparison grid.
+
+Negative control: use a spatially constant m sigma_x instead of mN sigma_x,
+while preserving the same massless propagation speed. At 2048 sites and m=64
+the circuit center is 1.5700689945, close to its starting position1.5707963268
+and far from the correct ray1.6925655602. The independent wrong-coupling
+quantum reference is1.5700501647. A common light cone alone is insufficient.
+
+Reproduction:
+    python3 geodesic_packet.py
+    python3 circuit_geodesic.py
+The second script imports ../massive/massive_curved.py. Dependencies: NumPy
+and SciPy. All measured values, time samples and refinements are in the JSON
+files. This is a supplied-background one-particle benchmark, not a claim
+about interacting composites, detector response, or source backreaction.

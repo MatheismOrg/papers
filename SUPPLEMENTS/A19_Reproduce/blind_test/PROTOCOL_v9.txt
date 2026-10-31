@@ -1,0 +1,90 @@
+A19 HALO RULE AGAINST THE KiDS-1000 LENSING RADIAL ACCELERATION RELATION OF ISOLATED GALAXIES
+PROTOCOL VERSION 9
+Written 31 October 2026, US Pacific, by Claude (Opus 5.5), session SA73, turn 9, for Gary Abraham Bernstein.
+The clock time is recorded with the SHA-256 in PROTOCOL_v9.sha256.
+
+PURPOSE
+Brouwer et al. (2021, A&A 650, A113; B21) measured the lensing radial acceleration relation (the excess surface
+density, ESD, stacked in 15 bins of baryonic acceleration g_bar) of 259,383 isolated KiDS-bright galaxies at
+0.1 < z < 0.5. They split the lenses into four stellar-mass bins, and into early and late types at matched stellar
+mass, finding early types 0.17 dex (split by Sersic index) to 0.27 dex (split by u-r colour) above late types.
+The stellar rule, frozen on rotation curves, gives a smaller galaxy of the same stellar mass a heavier halo. Early
+types are smaller than disks of the same mass, so the rule predicts part of the split with no new parameter. This
+protocol forward-models the frozen rule into the same stacked profiles and asks (A) how much of each split the
+rule's size term accounts for, and (B) whether the rule matches the absolute lensing profiles inside 0.3 Mpc,
+above all for late-type galaxies, the kind it was calibrated on.
+
+WHAT WAS ALREADY SEEN
+The release's file listing and README; B21 Sections 2.2, 3.3 and 5.4 to 5.6 and its Figure 7 (stellar-mass
+histograms of isolated red and blue galaxies), which was digitized before this protocol into
+data/Lensing/KiDS/brouwer2021_fig7_digitized.json (code/A19_Digitize_Fig7.py, from the screenshot stored beside it).
+B21's published summary numbers: mean early/late ratios 0.17 and 0.27 dex, chi2 67.8/15 and 134.2/15, 5.7 sigma for
+the Sersic split, and mean galaxy masses log<M_gal> = 10.14, 10.57, 10.78, 10.96 for the four mass bins. Turn 7
+found, with Mandelbaum et al. (2016), that the rule with early types at half the disk size gives about half of the
+measured red-blue halo-mass split. A hand estimate made while writing this protocol, with the sizes below,
+suggested a predicted split of roughly 0.06 to 0.10 dex. No profile or covariance value of the release has been
+read: those files are opened only after this file's SHA-256 is recorded, and after the model predictions of
+step (6) are saved with their own SHA-256.
+
+DATA
+brouwer2021_rar.tar, 2,430,464 bytes, SHA-256 73adc2d4e848fa0a6a43187f7b5447e749b92eaec4a795b9902b0beaf8a78733,
+fetched 31 October 2026 from kids.strw.leidenuniv.nl/sci_data/ by the built-in browser on Gary's Mac (the session's
+own network is refused by that site). Members used: Fig-8_RAR-KiDS-isolated_Colorbin_1 and _2 with
+_Colorbins_covmatrix; Fig-8_RAR-KiDS-isolated_Sersicbin_1 and _2 with _Sersicbins_covmatrix;
+Fig-9_RAR-KiDS-isolated_Massbin-1 to -4 with _Massbins_covmatrix; Fig-4-5-C1_RAR-KiDS-isolated_Nobins with
+_covmatrix. By the README, bins run from low to high observable, so Colorbin_1 is blue (late), Colorbin_2 red
+(early), Sersicbin_1 n < 2 (late), Sersicbin_2 n > 2 (early). ESD_t and its error are divided by the bias column;
+each covariance element by its own bias column. Each member's SHA-256 is computed in the browser. A covariance file
+too large to pass through the browser whole is moved as its covariance and bias columns for the blocks used, and
+that subset's own SHA-256, computed in the browser, is checked in the session.
+
+METHOD
+(1) Lenses. Stellar masses (h70^-2 suns, Chabrier, as published) from the digitized Figure 7, in 0.05 dex steps:
+    the matched distribution min(red, blue) for both Figure 8 splits (B21 show it for the colour split only); the
+    red and blue counts from 8.5 to 11.0 for the four mass bins and the full isolated sample, which also set the
+    type mix at each mass (by colour). All lenses at z = 0.25, B21's mean.
+(2) Binning, as B21: galaxy mass M_gal = M*(1 + f_cold), log f_cold = -0.69 log M* + 6.63 (Boselli et al. 2014),
+    for every lens of either type. The g_bar bins are 15 logarithmic bins between 1e-15 and 5e-12 m s^-2; a lens
+    contributes to bin [g1, g2] the annulus sqrt(G M_gal/g2) < R < sqrt(G M_gal/g1). Physical units with h = 0.7.
+(3) The frozen stellar rule, A, B and C from blind_test/frozen_disk_rules.json, M* taken as published.
+    Late types (blue, or n < 2): R_e and M_HI from the fits to the 149 SPARC disks used in protocol 8,
+    log R_e = -1.6721 + 0.2245 log M* and log M_HI = 4.1156 + 0.5396 log M*, with M_p = M* + 1.33 M_HI.
+    Early types (red, or n > 2): M_p = M*, and R_e = (disk R_e) x 10^D(M*), where D is the difference between the
+    median log sizes of early- and late-type galaxies at z = 0.25 in van der Wel et al. (2014, Table 2):
+    -0.22, -0.33, -0.28 and -0.16 dex at log M* = 9.25, 9.75, 10.25 and 10.75, interpolated linearly in log M*
+    and held constant beyond the ends.
+    M_ref = M_p/f_b + 10^A (M*/10^10)^B (R_e/3 kpc)^C is M_200c in suns relative to the critical density at
+    z = 0.25 in the rule's cosmology (H0 = 67.1, Omega_m = 0.3175), with c = 10^0.905 (M_ref h/10^12)^-0.101,
+    h = 0.671; an untruncated NFW profile.
+(4) One lens's model ESD: Delta Sigma(R) = Delta Sigma_NFW(R) (Wright and Brainerd 2000) + M_p/(pi R^2), averaged
+    over each bin's annulus with weight proportional to area. A sample's stacked model: the mean over its lenses
+    weighted by count times M_gal (at fixed redshift the number of lens-source pairs in a bin's annulus is
+    proportional to M_gal).
+(5) Inner bins: a bin is inner when its whole annulus lies inside R = 0.3 Mpc (B21's limit, beyond which false
+    isolated lenses may add signal) for a lens of the sample's mean galaxy mass, that is g1 >= G <M_gal>/(0.3 Mpc)^2,
+    with <M_gal> the count-weighted mean from step (1) for the Figure 8 samples and the full sample, and B21's
+    stated means for the four mass bins.
+(6) The model profiles of every sample, and of every sensitivity case, are computed and saved, with their
+    SHA-256 and clock time, before any profile or covariance value is read.
+
+OUTCOMES
+(A) The split. S = log10 of the mean over bins of ESD_early/ESD_late, for the data and for the model; over the inner
+    bins (primary) and over all 15 bins (B21's definition). sigma_S from 20,000 draws of both profiles from the
+    released covariance. With T = max(2 sigma_S, 0.25 S_data), for each split separately: the rule ACCOUNTS FOR
+    the split if |S_model - S_data| <= T; OVERPREDICTS it if S_model > S_data + T; ACCOUNTS FOR PART if
+    0.25 S_data <= S_model < S_data - T; DOES NOT if S_model < 0.25 S_data.
+(B) Amplitudes. For each sample (blue, red, n < 2, n > 2, the four mass bins, the full isolated sample), the
+    generalized least-squares amplitude a that best scales the model to the data over the inner bins with the
+    released covariance, with its error. The rule is CONSISTENT with a sample if |log10 a| <= 0.1 dex, or within
+    twice its error where that exceeds 0.05 dex. Judged for the late types (blue and n < 2), the rule's home
+    ground; reported for every sample with the same test. The chi2 of the unscaled model, inner and all bins, is
+    reported.
+SENSITIVITY (reported, not judged): early types at half the disk size (protocol 8's bracket) and at the disk
+size; van der Wel's medians as the sizes of both types; SPARC gas for early types; z = 0.15 and 0.35; the rule's
+M* shifted by +0.1 and -0.1 dex; Dutton and Maccio concentrations at z = 0.25; 0.15 dex lognormal halo scatter at
+fixed stellar mass (mean ESD over the scatter); the stellar-mass distributions shifted by +0.1 and -0.1 dex.
+Known limits, stated now: one redshift for all lenses; no two-halo term; no satellites or miscentring; stellar-
+mass errors and Eddington bias ignored; the matched distribution of the colour split used for the Sersic split.
+
+REPORTING
+All outcomes are reported whatever they show. Nothing changes after this file's SHA-256 is recorded.

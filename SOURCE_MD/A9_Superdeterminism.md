@@ -1,4 +1,4 @@
-# Superdeterminism in a Block Universe: The Case for a Common Generator
+# Einstein's Missed Connection: Bell's Theorem and Superdeterminism in a Block Universe
 
 ## Abstract
 

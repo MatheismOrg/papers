@@ -1,8 +1,8 @@
-# When Simpler Explanations Help Minds Learn and Survive
+# Simplicity Preference Is Adaptive: Why Simpler Explanations Help Minds Learn and Survive
 
 ## Abstract
 
-Minds prefer simple explanations because the world is grown from simple laws. A world built in causal steps from a short rule is compressible, so a learner that bets on the shortest rule consistent with what it has seen predicts new cases better on average, learns from less evidence and reuses what it learns. Selection rewards that bet wherever its savings in learning and action exceed its costs. Simplicity has one limit: compression must keep every distinction that action needs, since two situations that look identical but demand incompatible responses defeat any strategy that cannot tell them apart. The account explains why a taste for elegance is adaptive and why elegance can still mislead, and it states the comparisons in real learners that would test it.
+Minds prefer simple explanations because the world is grown from simple laws. A world built in discrete causal steps from a short rule is compressible, so a learner that bets on the shortest rule consistent with what it has seen predicts new cases better on average, learns from less evidence and reuses what it learns. Selection rewards that bet wherever its savings in learning and action exceed its costs. Simplicity has one limit: compression must keep every distinction that action needs, since two situations that look identical but demand incompatible responses defeat any strategy that cannot tell them apart. The account explains why a taste for elegance is adaptive and why elegance can still mislead, and it states the comparisons in real learners that would test it.
 
 Keywords: simplicity preference, learning, algorithmic probability, evolutionary epistemology, explanation
 
@@ -14,7 +14,7 @@ Nick Chater and Paul Vitanyi (2003) develop simplicity as a principle in cogniti
 
 ## 2. What a shorter description buys
 
-A shorter description starts with more weight, before any evidence is brought in, because each of its bits is a 50/50 choice that no rule makes: each bit saved doubles the starting weight. Stated precisely, fix a language for describing candidate explanations and suppose each complete description of length L receives initial weight proportional to 2^(-L). In a prefix-free language, no complete description begins with another, so programs can be distinguished without an extra end marker. Five fewer bits give an individual description 32 times the initial weight. The weighting follows from treating each unruled bit as 50/50 (*Why These Simple Laws?*, Section 3.3).
+A shorter description starts with more weight, before any evidence is brought in, because each of its bits is a 50/50 choice that no rule makes: each bit saved doubles the starting weight. Stated precisely, fix a language for describing candidate explanations and suppose each complete description of length L receives initial weight proportional to 2^(-L). In a prefix-free language, no complete description begins with another, so programs can be distinguished without an extra end marker. Five fewer bits give an individual description 32 times the initial weight. The weighting follows from treating each unruled bit as 50/50.
 
 An explanation's initial weight is not its probability after evidence. A shorter explanation that predicts the observations badly can lose to a longer one that predicts them well. Nor does a ratio between individual descriptions equal a ratio between entire classes of explanations. Several programs can describe the same output, and their weights must be combined under a mixture account.
 

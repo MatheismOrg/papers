@@ -1,0 +1,263 @@
+{
+ "protocol_sha256": "6b1cdb61aeb588b524902e14094d02c2fa3e06633a1ed87a0fa8b912b5e08528",
+ "n": 25,
+ "selected": [
+  "Centaurus I",
+  "Columba I",
+  "Eridanus II",
+  "Eridanus IV",
+  "Grus I",
+  "Horologium I",
+  "Leo VI",
+  "Pegasus III",
+  "Pegasus IV",
+  "Pictor II",
+  "Reticulum II",
+  "Tucana II",
+  "Tucana IV",
+  "Tucana V",
+  "Willman 1",
+  "Andromeda II",
+  "Andromeda IX",
+  "Andromeda XI",
+  "Andromeda XIII",
+  "Andromeda XXVII",
+  "Andromeda XXVIII",
+  "Cassiopeia II",
+  "Cassiopeia III",
+  "Lacerta I",
+  "Perseus I"
+ ],
+ "excluded": [
+  [
+   "aquarius_3",
+   "Aquarius III",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "bootes_3",
+   "Bootes III",
+   "named tidally disrupting system"
+  ],
+  [
+   "carina_4",
+   "Carina IV",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "draco_2",
+   "Draco II",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "grus_2",
+   "Grus II",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "hydra_2",
+   "Hydra II",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "lmc",
+   "LMC",
+   "M_V brighter than -14"
+  ],
+  [
+   "phoenix_2",
+   "Phoenix II",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "reticulum_3",
+   "Reticulum III",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "sagittarius_1",
+   "Sagittarius",
+   "named tidally disrupting system"
+  ],
+  [
+   "segue_2",
+   "Segue 2",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "smc",
+   "SMC",
+   "M_V brighter than -14"
+  ],
+  [
+   "triangulum_2",
+   "Triangulum II",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "andromeda_12",
+   "Andromeda XII",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "andromeda_24",
+   "Andromeda XXIV",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "andromeda_35",
+   "Andromeda XXXV",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "andromeda_36",
+   "Andromeda XXXVI",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "ic_0010",
+   "IC 10",
+   "M_V brighter than -14"
+  ],
+  [
+   "lgs_3",
+   "LGS 3",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "m_032",
+   "M 32",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0147",
+   "NGC 147",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0185",
+   "NGC 185",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0205",
+   "NGC 205",
+   "M_V brighter than -14"
+  ],
+  [
+   "pegasus_5",
+   "Pegasus V",
+   "no measured dispersion (absent or upper limit)"
+  ],
+  [
+   "pegasus_7",
+   "Pegasus VII",
+   "no measured dispersion (absent or upper limit)"
+  ]
+ ],
+ "rmse_dex": {
+  "stellar_rule": 0.4409,
+  "baryonic_rule": 0.8018,
+  "rar_disk_a0": 0.8081,
+  "rar_published_a0": 0.782,
+  "moster": 0.4032
+ },
+ "bootstrap_rmse_difference": {
+  "stellar_minus_rar_disk": [
+   -0.3672,
+   -0.4486,
+   -0.272
+  ],
+  "stellar_minus_baryonic": [
+   -0.3609,
+   -0.4442,
+   -0.2647
+  ],
+  "stellar_minus_moster": [
+   0.0377,
+   -0.0388,
+   0.1079
+  ],
+  "stellar_minus_rar_published": [
+   -0.3411,
+   -0.4203,
+   -0.2491
+  ]
+ },
+ "closer_under_stellar": {
+  "baryonic_rule": 21,
+  "rar_disk_a0": 21,
+  "rar_published_a0": 21,
+  "moster": 10
+ },
+ "primary_success": true,
+ "secondary_baryonic_success": true,
+ "sensitivity": {
+  "major_axis_radii": {
+   "stellar_rule": 0.4184,
+   "baryonic_rule": 0.8103,
+   "rar_disk_a0": 0.8092,
+   "rar_published_a0": 0.783,
+   "moster": 0.4158
+  },
+  "ML_1": {
+   "stellar_rule": 0.4751,
+   "baryonic_rule": 0.9326,
+   "rar_disk_a0": 0.9398,
+   "rar_published_a0": 0.9121,
+   "moster": 0.3993
+  },
+  "ML_3": {
+   "stellar_rule": 0.4273,
+   "baryonic_rule": 0.7337,
+   "rar_disk_a0": 0.7345,
+   "rar_published_a0": 0.7097,
+   "moster": 0.4067
+  }
+ },
+ "blind_v1_subset": {
+  "n": 17,
+  "keys": [
+   "centaurus_1",
+   "columba_1",
+   "eridanus_4",
+   "grus_1",
+   "leo_6",
+   "pegasus_3",
+   "pegasus_4",
+   "pictor_2",
+   "tucana_2",
+   "tucana_4",
+   "tucana_5",
+   "andromeda_27",
+   "andromeda_28",
+   "cassiopeia_2",
+   "cassiopeia_3",
+   "lacerta_1",
+   "perseus_1"
+  ],
+  "stellar_rule": 0.4047,
+  "baryonic_rule": 0.7687,
+  "rar_disk_a0": 0.7762,
+  "rar_published_a0": 0.7508,
+  "moster": 0.3974
+ },
+ "subsets": {
+  "LV_ge_1e5": {
+   "n": 8,
+   "stellar_rule": 0.4658,
+   "baryonic_rule": 0.6387,
+   "rar_disk_a0": 0.6347,
+   "rar_published_a0": 0.6175,
+   "moster": 0.4803
+  },
+  "LV_lt_1e5": {
+   "n": 17,
+   "stellar_rule": 0.4287,
+   "baryonic_rule": 0.8681,
+   "rar_disk_a0": 0.8779,
+   "rar_published_a0": 0.8484,
+   "moster": 0.3612
+  }
+ }
+}

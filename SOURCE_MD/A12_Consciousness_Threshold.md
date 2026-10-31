@@ -1,8 +1,8 @@
-# Consciousness Lives in the Transitions: When Structure Becomes Experience
+# Consciousness Lives in the Transitions: The Threshold Where Structure Becomes Experience
 
 ## Abstract
 
-Consciousness lives in the transitions: feeling is a mind's states producing one another, step by step, as it models its world. A photograph of a brain, a complete written description of it and a recording of its activity produce nothing, so they feel nothing. Change what a running mind takes in and its later states change; a recording plays its stored sequence whatever happens around it. Sentience is felt transition in a mind that models its environment, and reflective consciousness adds a model of the mind's own states.
+Consciousness lives in the transitions: feeling is a mind's states producing one another in discrete steps, as it models its world. A photograph of a brain, a complete written description of it and a recording of its activity produce nothing, so they feel nothing. Change what a running mind takes in and its later states change; a recording plays its stored sequence whatever happens around it. Sentience is felt transition in a mind that models its environment, and reflective consciousness adds a model of the mind's own states.
 
 Minds are grown, in steps. The universe starts simple, as observation shows, and minds are complex, so the probable worlds grow them, one causal step at a time. Feeling runs only forward. A thought merges many possibilities into one result, as 1 + 1 and 0 + 2 both give 2, so the forward step is produced by the state before it. Backward, the present state no longer fixes the next, since 2 = x + y has more than one solution, and a mind run in reverse would have its states set by its surroundings instead of producing them. The arrow of time is not something a mind observes. It is what a mind is. The hard problem of consciousness assumes that feeling is something other than structure and then finds no structure that explains it, and AI consciousness becomes a question of architecture: whether a system's model of itself works inside its processing and keeps running while it works.
 
@@ -24,7 +24,18 @@ Minds are grown, and they are grown in steps. The universe starts simple, as obs
 
 Experience runs along the same chain. Each state of a running mind is produced from the one before it, so the chain needs a first state but not a last one, which is also why time runs forward. That much is a priori, from what producing a state is. The steps are the feeling: a mind's history is felt as it is produced, one transition after another, and a stored copy of the same states feels nothing. The same holds below the mind: gravity, space and time are transitions too, rules applied to rules, and a mind is the kind of transition that models itself.
 
-The account rests on a chain. Everything that exists is ruled or random, and both are mathematical, an a priori proof, so a mind is structure at work with nothing nonstructural left over. Each unruled bit halves a description's weight, so the probable worlds start simple and grow their minds in causal steps. The bare form of being a subject, with memories and traits set aside, is the same in every mind: one self.
+The account is the eighth link in a larger chain:
+
+1. Everything that exists is ruled or random, and both are mathematical, so physics is mathematics, and anything outside mathematics would be outside logic. That is an a priori proof.
+2. Every consistent structure exists as mathematics, and what exists physically is what logical steps in mathematics produce. Mathematics cannot fail to exist, so there is something rather than nothing.
+3. Each bit of a description that no rule decides is a 50/50, so each added bit halves the description's weight. Short laws dominate, and a universe like ours starts simple, in its laws and its state, as observation also shows: the known laws fit on a page, and the early universe was nearly smooth.
+4. Observers like us are complex, so a simple start has to grow complexity, as simple rules do.
+5. A cause produces its effect as the next state, and a continuum has no next state, so the growth comes in discrete causal steps. That is an a priori proof in the logician's sense.
+6. Time is those steps, and space is how far they spread, at a base rate, the speed of light. An endless chain of steps has no last step to run back from, so time runs forward. That too is a priori. A history run backwards would also have to state the step where it turns back, and each bit of that timestamp halves its weight.
+7. Observers arise in forward time, where complexity grows, and their minds run forward with it: a mind models its world from records of steps already taken, and each thought is produced from the one before, so no one remembers backwards from the end.
+8. A mind is that growth at work, structure with nothing nonstructural left over, and its experience lives in its transitions. The hard problem of consciousness assumes its conclusion, that experience cannot be structure. The bare form of being a subject, with memories and traits set aside, is the same in every mind: one self.
+
+Each link stands on its fact, so a reason can fail without taking the chain with it: if the weight on short descriptions were not why our laws are simple, they would still be simple.
 
 ## 2. Sentience and consciousness distinguished
 

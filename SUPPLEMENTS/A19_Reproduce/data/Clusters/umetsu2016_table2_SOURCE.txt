@@ -1,0 +1,10 @@
+umetsu2016_table2.csv: Table 2, "NFW halo parameters for individual CLASH clusters", of
+Umetsu, K., Zitrin, A., Gruen, D., Merten, J., Donahue, M., & Postman, M. (2016), CLASH: Joint analysis of
+strong-lensing, weak-lensing shear, and magnification data for 20 galaxy clusters, ApJ 821, 116,
+doi:10.3847/0004-637X/821/2/116; arXiv:1507.04385. Transcribed 31 October 2026 (session SA73, turn 5) from the
+arXiv PDF; two separate extractions agreed on every row. Table notes: "Cluster parameters derived from single
+spherical NFW fits to individual surface mass density profiles ... reconstructed from combined strong-lensing,
+weak-lensing shear and magnification measurements"; "We adopt a concordance cosmology of h=0.7, Omega_m=0.27,
+and Omega_Lambda=0.73"; fitting range R <= 2 Mpc h^-1 (about 2.9 Mpc h70^-1). Units: M200c in 10^14 M_sun h70^-1
+(physical suns for h = 0.7). Route: the table's grouping into 16 X-ray-selected and 4 high-magnification clusters.
+Host names follow Tian et al. (2020) as in clash_table1_idia.tsv.

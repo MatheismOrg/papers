@@ -1,0 +1,52 @@
+{
+ "original_44_V_MW_175": {
+  "rmse_dex": 0.9079,
+  "mean_residual_dex": 0.634,
+  "bright_rmse": 0.381,
+  "faint_rmse": 1.31,
+  "n_bright": 25
+ },
+ "original_44_V_MW_200": {
+  "rmse_dex": 0.9623,
+  "mean_residual_dex": 0.675,
+  "bright_rmse": 0.406,
+  "faint_rmse": 1.388,
+  "n_bright": 25
+ },
+ "original_44_V_MW_220": {
+  "rmse_dex": 1.0035,
+  "mean_residual_dex": 0.707,
+  "bright_rmse": 0.43,
+  "faint_rmse": 1.445,
+  "n_bright": 25
+ },
+ "original_44_stellar_rule_bright_faint": [
+  0.395,
+  0.571
+ ],
+ "out_of_sample_25_V_MW_175": {
+  "rmse_dex": 1.1348,
+  "mean_residual_dex": 0.944,
+  "bright_rmse": 0.824,
+  "faint_rmse": 1.255,
+  "n_bright": 8
+ },
+ "out_of_sample_25_V_MW_200": {
+  "rmse_dex": 1.2047,
+  "mean_residual_dex": 1.006,
+  "bright_rmse": 0.824,
+  "faint_rmse": 1.347,
+  "n_bright": 8
+ },
+ "out_of_sample_25_V_MW_220": {
+  "rmse_dex": 1.257,
+  "mean_residual_dex": 1.052,
+  "bright_rmse": 0.824,
+  "faint_rmse": 1.416,
+  "n_bright": 8
+ },
+ "out_of_sample_25_stellar_rule_bright_faint": [
+  0.466,
+  0.429
+ ]
+}

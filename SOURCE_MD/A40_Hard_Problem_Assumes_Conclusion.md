@@ -16,7 +16,18 @@ This paper argues that the hard problem of consciousness, why physical processin
 
 The argument has three parts. First, the circularity: defining experience as nonstructural disqualifies every structural answer before the investigation starts. Second, the interaction constraint: whatever consciousness is, it must interact with physical structure to cause reports, guide behavior and respond to stimuli, and interaction requires shared structure. Third, the recursive application, repeated at every level, of the rule-random dichotomy: any proposed nonstructural nature, when examined, turns out to be either ruled or random, and both are mathematical. At no stage does a nonstructural remainder appear.
 
-The same premises reach further. Every consistent structure exists, since anything that let one exist and not another would be structure too. Each unruled bit halves a description's weight, so simple laws dominate, and minds grow from a simple start in causal steps, so time runs forward. The bare subject, with memories and traits set aside, is the same in every mind: one self. The first and the last of these follow a priori; the weighting is an argument with premises of its own.
+The paper's argument is the eighth link in a larger chain:
+
+1. Everything that exists is ruled or random, and both are mathematical, so physics is mathematics, and anything outside mathematics would be outside logic. That is an a priori proof.
+2. Every consistent structure exists as mathematics, since anything that let one exist and not another would be structure too, and what exists physically is what logical steps in mathematics produce. Mathematics cannot fail to exist, so there is something rather than nothing.
+3. Each bit of a description that no rule decides is a 50/50, so each added bit halves the description's weight. Short laws dominate, and a universe like ours starts simple, in its laws and its state, as observation also shows: the known laws fit on a page, and the early universe was nearly smooth.
+4. Observers like us are complex, so a simple start has to grow complexity, as simple rules do.
+5. A cause produces its effect as the next state, and a continuum has no next state, so the growth comes in discrete causal steps. That is an a priori proof in the logician's sense.
+6. Time is those steps, and space is how far they spread, at a base rate, the speed of light. An endless chain of steps has no last step to run back from, so time runs forward. That too is a priori. A history run backwards would also have to state the step where it turns back, and each bit of that timestamp halves its weight.
+7. Observers arise in forward time, where complexity grows, and their minds run forward with it: a mind models its world from records of steps already taken, and each thought is produced from the one before, so no one remembers backwards from the end.
+8. A mind is that growth at work, and its experience lives in its transitions. The hard problem of consciousness assumes its conclusion, that experience cannot be structure. The bare form of being a subject, with memories and traits set aside, is the same in every mind: one self.
+
+Each link stands on its fact, so a reason can fail without taking the chain with it: if the weight on short descriptions were not why our laws are simple, they would still be simple.
 
 ## 2. The Circular Structure of the Hard Problem of Consciousness
 

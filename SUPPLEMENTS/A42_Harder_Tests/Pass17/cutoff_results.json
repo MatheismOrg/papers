@@ -1,0 +1,63 @@
+{
+  "mass": 0.4,
+  "length": 4.0,
+  "volume": 64.0,
+  "rows": [
+    {
+      "n": 4,
+      "spacing": 1.0,
+      "rho_vacuum": 1.2102462297362522,
+      "p_vacuum": 0.3911590536577374,
+      "H_initial": 0.635149911369028,
+      "w": 0.3232061741212632,
+      "scaled_rho": 1.2102462297362522,
+      "Lambda_cancel_initial_rho": -1.2102462297362522,
+      "pressure_after_constant_cancel": 1.6014052833939896
+    },
+    {
+      "n": 8,
+      "spacing": 0.5,
+      "rho_vacuum": 19.172126291838005,
+      "p_vacuum": 6.342121652814989,
+      "H_initial": 2.5279851194075493,
+      "w": 0.330799075505515,
+      "scaled_rho": 1.1982578932398753,
+      "Lambda_cancel_initial_rho": -19.172126291838005,
+      "pressure_after_constant_cancel": 25.514247944652993
+    },
+    {
+      "n": 16,
+      "spacing": 0.25,
+      "rho_vacuum": 305.9029520343046,
+      "p_vacuum": 101.77343270842128,
+      "H_initial": 10.097903281280798,
+      "w": 0.3326984327271487,
+      "scaled_rho": 1.1949334063840023,
+      "Lambda_cancel_initial_rho": -305.9029520343046,
+      "pressure_after_constant_cancel": 407.6763847427259
+    },
+    {
+      "n": 32,
+      "spacing": 0.125,
+      "rho_vacuum": 4890.973473424405,
+      "p_vacuum": 1629.5475087661737,
+      "H_initial": 40.37727691587768,
+      "w": 0.33317447285708734,
+      "scaled_rho": 1.194085320660255,
+      "Lambda_cancel_initial_rho": -4890.973473424405,
+      "pressure_after_constant_cancel": 6520.520982190578
+    },
+    {
+      "n": 64,
+      "spacing": 0.0625,
+      "rho_vacuum": 78241.6113628135,
+      "p_vacuum": 26077.428852207337,
+      "H_initial": 161.49469688177948,
+      "w": 0.3332936067904317,
+      "scaled_rho": 1.1938722436952744,
+      "Lambda_cancel_initial_rho": -78241.6113628135,
+      "pressure_after_constant_cancel": 104319.04021502084
+    }
+  ],
+  "conclusion": "Bare vacuum grows approximately epsilon^-4. A constant Lambda chosen to cancel rho at a=1 leaves p+rho, not zero pressure. No renormalized continuum claim."
+}

@@ -1,4 +1,4 @@
-# Why Reality and Consciousness Can Only Be Mathematical Structure
+# Reality and Consciousness Are Mathematical Structure
 
 ## Abstract
 

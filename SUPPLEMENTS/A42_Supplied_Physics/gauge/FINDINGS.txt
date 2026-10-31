@@ -1,0 +1,241 @@
+PASS 8: ELECTROMAGNETIC LINK AND RING-FLUX TEST
+2026-10-28
+
+Outcome
+-------
+Adding standard U(1) parallel-transport phases to the pass-7 nearest-neighbor
+bond rotations preserves exact finite-step gauge covariance and reproduces
+the supplied massless ring-flux target under refinement. We checked actual
+evolved states, the low-wave-number spectrum, and a coherent two-arm phase
+readout. The negative controls fail by amounts that do not disappear with
+spatial refinement. These are useful operational checks of the specified
+regulator, not an independent derivation of electromagnetism or a ToE.
+
+Files and reproduction
+----------------------
+  gauge_ring.py                  Python 3 + NumPy, self-contained
+  gauge_ring_results.json        Complete numerical results
+  AUDIT.txt                      Independent algebra/convention audit
+
+Run: python gauge_ring.py
+All assertions pass. Runtime was below one second on this environment.
+
+Conventions and the local rule
+-----------------------------
+Units are hbar=c=q=1 unless q is explicitly displayed. The ring has physical
+circumference L=2pi, M even sites, spacing a=L/M, and periodic scalar spatial
+boundary conditions. This tests the periodic branch of an abstract 1+1
+massless system. It does not include the geometric spin connection/Berry
+phase of a physical spinor confined to an embedded curved material ring.
+
+For charge q, use the continuum conventions
+
+  psi' = exp(i q chi) psi,
+  A' = A + partial_x chi,
+  V' = V - partial_t chi,
+  H_right = -i(partial_x - i q A) + q V.
+
+The forward spatial link from site j to j+1 is
+
+  u_j = exp[i q integral_(x_j)^(x_(j+1)) A dx],
+  u'_j = exp[i q(chi_(j+1)-chi_j)] u_j.
+
+For an ordered bond (j,j+1), replace the original real two-site rotation by
+
+  R_j(theta) = [[cos theta, -sin theta u_j*],
+                [sin theta u_j, cos theta]].
+
+Since |u_j|=1, this is exactly unitary. It also obeys
+
+  R_j[u'] = G R_j[u] G^dagger,
+
+where G is the diagonal site phase exp(i q chi). Thus any composition of
+these gates at a fixed time slice has the same exact covariance. This is
+an algebraic property at finite lattice spacing, not a continuum claim.
+
+The pass-7 construction uses theta_j=asin(nu N_mid,j/2), nu=dt/a, and a
+symmetric even/odd/even composition with half-angle outer layers. For the
+long-time packet and covariance tests, the next step reverses that parity
+orientation to odd/even/odd. The ring-spectrum test uses a single symmetric
+orientation because it has the independently derived dispersion below.
+
+Static gauge test
+-----------------
+We used M=128, 80 alternating steps, nu=0.8, a nonconstant supplied lapse
+N(x)=0.9+0.2 cos x, nonuniform link phases with total holonomy exp(i*1.1),
+and a normalized deterministic random complex initial state. The gauge
+function was chi=0.7 sin x+0.2 cos(3x). Transforming both initial state and
+links gives the same step outputs after applying G:
+
+  max over steps ||psi'_n-G psi_n||        1.66385e-15
+  final density L1 difference             1.82703e-15
+  Wilson-loop product difference         1.35520e-15
+
+Negative control: transform the initial state but leave the links unchanged.
+Its final state discrepancy is 0.7375308. Gauge covariance therefore is not
+being obtained by merely ignoring all phases in the comparison.
+
+Time-dependent gauge test
+-------------------------
+For a slice-to-slice update the correct exact statement is
+
+  U'_n = G_(n+1) U_n G_n^dagger.
+
+We construct this using the spatial links transformed with G_n, followed by
+the local temporal link
+
+  T_n = G_(n+1) G_n^dagger,
+  U'_n = T_n U[u'_n].
+
+This is the temporal-gauge version of V'=-partial_t chi: the corresponding
+temporal phase is exp[-i q integral V' dt]=exp[i q(chi_(n+1)-chi_n)].
+The gauge used was chi(x,t)=0.7 sin x cos(0.9t)+0.2 cos(2x) sin(0.6t).
+
+  max over steps ||psi'_n-G_n psi_n||      1.69864e-15
+  final density L1 difference             1.84530e-15
+
+The spacetime link-plaquette product remains that of the static base field
+to machine precision; the full value is in the JSON. Omitting T_n gives a
+state discrepancy 0.8343345 and a density L1 discrepancy 0.5390823.
+
+This is an exact covariance test under a time-dependent gauge change of a
+static field. It is not yet an accuracy test for a physically nonzero,
+time-dependent electric field. The links in this convention are sampled at
+the start of each step; a midpoint field convention needs temporal transport
+on both sides rather than blindly reusing this endpoint formula.
+
+Ring spectrum: independent analytic reference
+---------------------------------------------
+Define the dimensionless flux/holonomy phase phi=q integral_ring A dx.
+For uniform links u=exp(i phi/M), the right-moving periodic continuum modes
+are exp(i n x) with
+
+  E_n = n - phi/(2pi),       n integer.
+
+The left-moving continuum branch has the opposite sign. In the one-step
+two-site Bloch representation, direct matrix multiplication gives
+
+  cos(omega dt) = 1 - 2 sin^2 theta sin^2[(n-phi/(2pi))a],
+  omega dt = +/- 2 asin{sin theta sin[(n-phi/(2pi))a]},
+
+on branches chosen continuously near zero momentum. With theta=asin(nu/2),
+the right-moving branch approaches E_n with O(a^2) dispersion error.
+The script measures omega from eigenvalues of the actual local-step matrix
+restricted to each invariant Bloch subspace. It does not substitute the
+analytic dispersion as the measured result.
+
+At nu=1, n=3, phi=0.7pi, the continuum target is E=2.65:
+
+ sites       measured frequency       absolute continuum error
+    32         2.558861584                 9.1138416e-2
+    64         2.627485467                 2.2514533e-2
+   128         2.644388934                 5.6110661e-3
+   256         2.648598342                 1.4016584e-3
+   512         2.649649655                 3.5034518e-4
+  1024         2.649912418                 8.7581955e-5
+
+Doubling the resolution reduces the error by approximately four. Across the
+refinement and a separate flux/mode scan, agreement with the independently
+derived finite-step formula is at worst 6.22e-15. The full quasienergy
+spectrum at phi and phi+2pi agrees to 1.56e-15, confirming flux periodicity.
+This periodicity is a property of the full spectrum: increasing phi by 2pi
+relabels n, and does not keep each fixed-n energy unchanged.
+
+Dropping all links instead yields the zero-flux frequency; its discrepancy
+from the phi=0.7pi target approaches 0.35. The JSON includes the measured
+1024-site value as well as that limiting analytic negative-control error.
+
+Coherent one-loop phase-output test
+----------------------------------
+A single ideal right-moving packet on a uniformly threaded ring changes by
+a flux-dependent global phase. Its density alone cannot demonstrate the
+Aharonov-Bohm phase. We therefore specify an explicit coherent reference:
+an equal path superposition, one arm evolved by the zero-flux circuit and
+one by the threaded circuit, with the same initial spatial packet. At the
+end we recombine the path label and measure its plus output. Its probability
+is computed from the actual final states as
+
+  P_plus = [1 + Re <psi_zero(T)|psi_flux(T)>]/2.
+
+This models a controlled two-arm phase comparison, not a detailed embedded
+3D interferometer geometry. The same gauge convention is used for both arms
+and for the recombination; changing an arm's endpoint gauge independently
+also requires transforming the comparison/readout operation.
+
+For circumference L=2pi, one traversal T=L, and the continuum chiral target,
+
+  psi_flux(T) = exp(i phi) psi_zero(T),
+  P_plus_exact = (1+cos phi)/2.
+
+We used a smooth packet with modes n=1,...,5, nu=1 and exactly M alternating
+parity steps. At phi=0.7pi, P_plus_exact=0.206107373854:
+
+ sites       measured P_plus          absolute probability error
+    64         0.236256553082                3.0149179e-2
+   128         0.213478626169                7.3712523e-3
+   256         0.207939301111                1.8319273e-3
+   512         0.206564667440                4.5729359e-4
+  1024         0.206221654113                1.1428026e-4
+
+The state-level relative-arm error also reduces by four at each doubling,
+reaching 3.14846e-4 at 1024 sites. Final norm drift is below 3.8e-14 over the
+full traversal. If the link phases are dropped, both arms undergo identical
+evolution and P_plus=1, an error 0.7938926 independent of refinement.
+
+What can be added to A42
+-----------------------
+Suggested limited claim:
+
+  "The calibrated local matter circuit was extended with U(1) link phases
+  and tested on supplied electromagnetic backgrounds. Static and
+  time-dependent changes of gauge gave identical transformed step outputs
+  to roundoff when spatial and temporal links were transformed consistently.
+  On a periodic ring, flux-shifted mode frequencies and a coherent one-loop
+  phase readout converged quadratically to their analytic massless targets.
+  Omitting the required links failed the same controls. These tests establish
+  supplied-field operational agreement in this one-particle setting."
+
+This is standard gauge parallel transport applied and checked in our
+particular finite-step circuit. It supplies neither Maxwell dynamics nor
+the coupling constant, quantized charges, interacting QED, quantum gauge
+fields, the Born rule, or dynamical geometry. It also does not remove the
+additional staggered sector identified in pass 7. The two-arm measurement
+uses standard quantum probability rules already supplied to the model.
+
+Useful next bounded test
+-----------------------
+Combine these links with the separately tested massive matter update and a
+nonzero supplied electric pulse. Compare the outgoing momentum/phase with
+an independently converged continuum Dirac calculation, and repeat after
+a gauge transformation. That would test physical electric-force accuracy
+in addition to the exact redundancy checks and magnetic holonomy here.
+
+Primary literature verification
+-------------------------------
+These papers establish relevant prior gauge-walk frameworks; they are not
+evidence that our distinct bond implementation passes, which is established
+by the explicit algebra and calculations above:
+
+  C. Cedzich, T. Geib, A. H. Werner, R. F. Werner,
+  Quantum walks in external gauge fields,
+  Journal of Mathematical Physics 60, 012107 (2019).
+  https://arxiv.org/abs/1808.10850
+  https://doi.org/10.1063/1.5054894
+  The primary abstract explicitly treats unitary minimal coupling and gauge
+  covariance for finite-neighborhood discrete-time walks.
+
+  P. Arnault and F. Debbasch, Quantum walks and discrete gauge theories,
+  Physical Review A 93, 052301 (2016).
+  https://arxiv.org/abs/1508.00038
+  https://doi.org/10.1103/PhysRevA.93.052301
+  Their different 2D construction includes exact discrete local U(1)
+  invariance and a Dirac continuum limit.
+
+  I. Marquez-Martin, P. Arnault, G. Di Molfetta, A. Perez,
+  Electromagnetic lattice gauge invariance in two-dimensional discrete-time
+  quantum walks, Physical Review A 98, 032333 (2018).
+  https://arxiv.org/abs/1808.04488
+  https://doi.org/10.1103/PhysRevA.98.032333
+  Their primary abstract discusses treating temporal and spatial gauge
+  derivatives consistently. Our endpoint temporal-link formula is derived
+  directly above rather than asserted identical to their particular walk.

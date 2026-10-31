@@ -1,0 +1,113 @@
+{
+  "dense_diagonalization": [
+    {
+      "N": 6,
+      "improved": false,
+      "max_eigenvalue_error": 1.1102230246251565e-15
+    },
+    {
+      "N": 6,
+      "improved": true,
+      "max_eigenvalue_error": 1.7763568394002505e-15
+    },
+    {
+      "N": 8,
+      "improved": false,
+      "max_eigenvalue_error": 2.6645352591003757e-15
+    },
+    {
+      "N": 8,
+      "improved": true,
+      "max_eigenvalue_error": 7.993605777301127e-15
+    },
+    {
+      "N": 10,
+      "improved": false,
+      "max_eigenvalue_error": 1.4210854715202004e-14
+    },
+    {
+      "N": 10,
+      "improved": true,
+      "max_eigenvalue_error": 9.769962616701378e-15
+    }
+  ],
+  "free_chain": [
+    {
+      "N": 6,
+      "calculated_gap": 0.7788232688471006,
+      "analytic_gap": 0.7788232688471004,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "N": 8,
+      "calculated_gap": 0.7814167995011916,
+      "analytic_gap": 0.7814167995011865,
+      "error": 5.10702591327572e-15
+    },
+    {
+      "N": 10,
+      "calculated_gap": 0.7827316105030784,
+      "analytic_gap": 0.7827316105030683,
+      "error": 1.0103029524088925e-14
+    }
+  ],
+  "pass12_generator_errors": [
+    8.881784197001252e-16,
+    3.552713678800501e-15,
+    7.105427357601002e-15
+  ],
+  "pass12_reference_state_error": 1.201256006997094e-09,
+  "local_gate_checks": [
+    {
+      "N": 10,
+      "improved": false,
+      "rows": [
+        {
+          "steps": 1024,
+          "state_error": 0.0002616842767842972,
+          "norm_error": 9.552358903874847e-13
+        },
+        {
+          "steps": 2048,
+          "state_error": 6.542021451125657e-05,
+          "norm_error": 2.353672812205332e-14
+        },
+        {
+          "steps": 4096,
+          "state_error": 1.6354998892551766e-05,
+          "norm_error": 1.588507103633674e-12
+        }
+      ],
+      "ratios": [
+        4.000052258148287,
+        4.000013386796963
+      ]
+    },
+    {
+      "N": 10,
+      "improved": true,
+      "rows": [
+        {
+          "steps": 1024,
+          "state_error": 0.0002560430714312737,
+          "norm_error": 9.396927680427325e-13
+        },
+        {
+          "steps": 2048,
+          "state_error": 6.40088283850216e-05,
+          "norm_error": 4.04121180963557e-14
+        },
+        {
+          "steps": 4096,
+          "state_error": 1.6002084717944943e-05,
+          "norm_error": 1.5647483309066956e-12
+        }
+      ],
+      "ratios": [
+        4.000121200331002,
+        4.000030590591817
+      ]
+    }
+  ],
+  "all_assertions_passed": true
+}

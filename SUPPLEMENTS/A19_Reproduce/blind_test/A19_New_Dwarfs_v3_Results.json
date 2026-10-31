@@ -1,0 +1,2939 @@
+{
+ "protocol_sha256": "eafbb03637d00f707096cfd33317e12be36803c24e6c66ace664cebe6da7e843",
+ "data_sha256": "c5c029dce9970e7b70fc329cc46dbf2ed02b308901579a3f2aa756887d542b26",
+ "scored_before": {
+  "original_44": 44,
+  "protocol_2_25": 25,
+  "lvdb_check_42": 42,
+  "protocol_1_27": 27
+ },
+ "rows_scored_before_skipped": 70,
+ "rows_not_confirmed_galaxies": 198,
+ "n": {
+  "M": 5,
+  "U": 10,
+  "F": 264
+ },
+ "excluded": [
+  [
+   "bootes_3",
+   "Bootes III",
+   "mw",
+   "named: Bootes III (tidally disrupting)"
+  ],
+  [
+   "lmc",
+   "LMC",
+   "mw",
+   "M_V brighter than -14"
+  ],
+  [
+   "sagittarius_1",
+   "Sagittarius",
+   "mw",
+   "named: Sagittarius I (tidally disrupting)"
+  ],
+  [
+   "smc",
+   "SMC",
+   "lmc",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_0010",
+   "IC 10",
+   "m_031",
+   "M_V brighter than -14"
+  ],
+  [
+   "lgs_3",
+   "LGS 3",
+   "m_031",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "m_032",
+   "M 32",
+   "m_031",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0147",
+   "NGC 147",
+   "m_031",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0185",
+   "NGC 185",
+   "m_031",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0205",
+   "NGC 205",
+   "m_031",
+   "M_V brighter than -14"
+  ],
+  [
+   "agc_749235",
+   "AGC749235",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "antlia_1",
+   "Antlia",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "antlia_b",
+   "Antlia B",
+   "ngc_3109",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "aquarius_1",
+   "Aquarius",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ddo_099",
+   "DDO 99",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_125",
+   "DDO 125",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_147",
+   "DDO 147",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ddo_190",
+   "DDO 190",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_274-001",
+   "ESO 274-001",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "gr_8",
+   "GR 8",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ic_1613",
+   "IC 1613",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_3104",
+   "IC 3104",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_4662",
+   "IC 4662",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_5152",
+   "IC 5152",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "kk_153",
+   "KK 153",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "leo_a",
+   "Leo A",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "leo_p",
+   "Leo P",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "leo_t",
+   "Leo T",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_0055",
+   "NGC 55",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0300",
+   "NGC 300",
+   "ngc_0055",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3109",
+   "NGC 3109",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4163",
+   "NGC 4163",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4190",
+   "NGC 4190",
+   "ngc_4214",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4214",
+   "NGC 4214",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_6822",
+   "NGC 6822",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "pavo_1",
+   "Pavo",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "pegasus_dirr",
+   "Pegasus dIrr",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "sagittarius_dirr",
+   "Sagittarius dIrr",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "sextans_a",
+   "Sextans A",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "sextans_b",
+   "Sextans B",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "wlm",
+   "WLM",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "a0952p69",
+   "A0952+69",
+   "m_081",
+   "no half-light radius"
+  ],
+  [
+   "agc_112521",
+   "AGC 112521",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "agc_239141",
+   "AGC 239141",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "agc_749241",
+   "AGC 749241",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "andromeda_04",
+   "Andromeda IV",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "bk3n",
+   "BK3N",
+   "m_081",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "bts_116",
+   "BTS 116",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "camelopardalis_a",
+   "Camelopardalis A",
+   "ic_0342",
+   "M_V brighter than -14"
+  ],
+  [
+   "camelopardalis_b",
+   "Camelopardalis B",
+   "ic_0342",
+   "no half-light radius"
+  ],
+  [
+   "cassiopea_dirr_1",
+   "Cassiopea dIrr 1",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "cena_dw1341-29",
+   "dw1341-29",
+   "ngc_5264",
+   "no half-light radius"
+  ],
+  [
+   "centaurus_n",
+   "Centaurus N",
+   "ngc_5128",
+   "no half-light radius"
+  ],
+  [
+   "cepheus_1",
+   "Cepheus1",
+   "ngc_6946",
+   "M_V brighter than -14"
+  ],
+  [
+   "cgcg_189m050",
+   "CGCG 189-050",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "cgcg_217m018",
+   "CGCG 217-018",
+   "ngc_5055",
+   "M_V brighter than -14"
+  ],
+  [
+   "corvus_a",
+   "Corvus A",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ddo_006",
+   "DDO 6",
+   "ngc_0253",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ddo_046",
+   "DDO 46",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_053",
+   "DDO 53",
+   "m_081",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ddo_082",
+   "DDO 82",
+   "m_081",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_126",
+   "DDO 126",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_127",
+   "DDO 127",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "ddo_133",
+   "DDO 133",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_153",
+   "DDO 153",
+   "ngc_4594",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_154",
+   "DDO 154",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_161",
+   "DDO 161",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_165",
+   "DDO 165",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_167",
+   "DDO 167",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ddo_168",
+   "DDO 168",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_169",
+   "DDO 169",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ddo_169_nw",
+   "DDO 169NW",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "ddo_181",
+   "DDO 181",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ddo_183",
+   "DDO 183",
+   "m_094",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ddo_226",
+   "DDO 226",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "dw1343+58",
+   "dw1343+58",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "eso_059-001",
+   "ESO 059-001",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_104-044",
+   "ESO104-044",
+   "ngc_6744",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_115-021",
+   "ESO 115-021",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_121-020",
+   "ESO 121-020",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "eso_137-018",
+   "ESO 137-018",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_154-023",
+   "ESO 154-023",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_199-007",
+   "ESO 199-007",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "eso_215-009",
+   "ESO 215-009",
+   "ngc_5128",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "eso_219-010",
+   "ESO219-010",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_222-010",
+   "ESO 222-010",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "eso_245-005",
+   "ESO 245-005",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_269-037",
+   "ESO 269-037",
+   "ngc_5128",
+   "no half-light radius"
+  ],
+  [
+   "eso_269-058",
+   "ESO 269-058",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_272-025",
+   "ESO 272-025",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_273-014",
+   "ESO 273-014",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_290-028",
+   "ESO 290-028",
+   "ngc_7424",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_300-016",
+   "ESO 300-016",
+   "ngc_1291",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_301-010",
+   "ESO 301-010",
+   "ngc_1291",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_320-014",
+   "ESO 320-014",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "eso_321-014",
+   "ESO 321-014",
+   "ngc_5128",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "eso_324-024",
+   "ESO 324-024",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_325-011",
+   "ESO 325-011",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_346-007",
+   "ESO 346-007",
+   "ngc_7424",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_349-031",
+   "ESO 349-031",
+   "ngc_7793",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "eso_379-007",
+   "ESO 379-007",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "eso_379-024",
+   "ESO 379-024",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "eso_381-018",
+   "ESO 381-018",
+   "ngc_5128",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "eso_381-020",
+   "ESO 381-020",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_383-087",
+   "ESO 383-087",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_384-016",
+   "ESO 384-016",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_443-009",
+   "ESO 443-009",
+   "ngc_5128",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "eso_444-084",
+   "ESO 444-084",
+   "m_083",
+   "M_V brighter than -14"
+  ],
+  [
+   "eso_540-032",
+   "ESO 540-032",
+   "ngc_0253",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "galfa_dw3",
+   "GALFA Dw3",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "galfa_dw4",
+   "GALFA Dw4",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "grapes",
+   "Grapes",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "hideep_j1337-3320",
+   "HIDEEP J1337-3320",
+   "m_083",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "hipass_j1131-31",
+   "HIPASS J1131-31",
+   "ngc_3621",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "hipass_j1133-32",
+   "HIPASS J1133-32",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "hipass_j1247-77",
+   "HIPASS J1247-77",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "hipass_j1337-39",
+   "HIPASS J1337-39",
+   "ngc_5128",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "hipass_j1348-37",
+   "HIPASS J1348-37",
+   "ngc_5128",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "hipass_j1351-47",
+   "HIPASS J1351-47",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "hizss-021",
+   "HIZSS-021",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "holmberg_1",
+   "Holmberg I",
+   "m_081",
+   "M_V brighter than -14"
+  ],
+  [
+   "holmberg_2",
+   "Holmberg II",
+   "m_081",
+   "M_V brighter than -14"
+  ],
+  [
+   "holmberg_4",
+   "Holm IV",
+   "m_101",
+   "M_V brighter than -14"
+  ],
+  [
+   "holmberg_9",
+   "Holmberg IX",
+   "m_081",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_0239",
+   "IC239",
+   "ngc_1023",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_1959",
+   "IC1959",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_2574",
+   "IC 2574",
+   "m_081",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_2684",
+   "IC 2684",
+   "ngc_3627",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_2782",
+   "IC 2782",
+   "ngc_3627",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_2787",
+   "IC 2787",
+   "ngc_3627",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_2791",
+   "IC 2791",
+   "ngc_3627",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ic_3571",
+   "IC3571",
+   "ngc_4565",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ic_3687",
+   "IC 3687",
+   "m_094",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_3840",
+   "IC 3840",
+   "ngc_4826",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ic_4182",
+   "IC 4182",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_4247",
+   "IC 4247",
+   "m_083",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_4316",
+   "IC 4316",
+   "m_083",
+   "M_V brighter than -14"
+  ],
+  [
+   "ic_5052",
+   "IC 5052",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ikn",
+   "IKN",
+   "m_081",
+   "M_V brighter than -14"
+  ],
+  [
+   "jkb_083",
+   "JKB83",
+   "m_081",
+   "no half-light radius"
+  ],
+  [
+   "jkb_129",
+   "JKB129",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "jkb_142",
+   "JKB142",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "kdg_002",
+   "KDG 2",
+   "ngc_0253",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kdg_052",
+   "KDG 52",
+   "m_081",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kdg_056",
+   "KDG 56",
+   "ngc_2903",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kdg_073",
+   "KDG 73",
+   "m_081",
+   "no half-light radius"
+  ],
+  [
+   "kdg_074",
+   "KDG 74",
+   "m_081",
+   "no half-light radius"
+  ],
+  [
+   "kdg_215",
+   "KDG 215",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_016",
+   "KK 16",
+   "ngc_0784",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_017",
+   "KK 17",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_027",
+   "KK 27",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "kk_035",
+   "KK 35",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "kk_069",
+   "KK 69",
+   "ngc_2683",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_109",
+   "KK 109",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_135",
+   "KK 135",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "kk_144",
+   "KK 144",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_160",
+   "KK 160",
+   "m_094",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_176",
+   "KK 176",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_180",
+   "KK 180",
+   "ngc_4826",
+   "no half-light radius"
+  ],
+  [
+   "kk_182",
+   "KK 182",
+   "ngc_5128",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_195",
+   "KK 195",
+   "m_083",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_200",
+   "KK 200",
+   "m_083",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kk_208",
+   "KK 208",
+   "m_083",
+   "no half-light radius"
+  ],
+  [
+   "kkh_05",
+   "KKH 5",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "kkh_06",
+   "KKH 6",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "kkh_11",
+   "KKH 11",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "kkh_12",
+   "KKH 12",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "kkh_18",
+   "KKH 18",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "kkh_22",
+   "KKH 22",
+   "ic_0342",
+   "no half-light radius"
+  ],
+  [
+   "kkh_30",
+   "KKH 30",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "kkh_34",
+   "KKH 34",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "kkh_37",
+   "KKH 37",
+   "m_081",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "kkh_57",
+   "KKH 57",
+   "m_081",
+   "no half-light radius"
+  ],
+  [
+   "kks_59",
+   "KKs 59",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "lv_j0055-2310",
+   "LV J0055-2310",
+   "ngc_0253",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "lv_j0616-5745",
+   "LV J0616-5745",
+   "eso_121-020",
+   "no half-light radius"
+  ],
+  [
+   "lv_j1149+1715",
+   "LV J1149+1715",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "lv_j1158+1535",
+   "LV J1158+1535",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "lv_j1243p4127",
+   "LV J1243+4127",
+   "m_094",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "lv_j1313p1003",
+   "LV J1313+1003",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "m_094-dw1311p4051",
+   "dw1311p4051",
+   "ngc_5055",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "maps_1231p42",
+   "MAPS 1231+42",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "maps_1249p44",
+   "MAPS 1249+44",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "mcg+06-27-017",
+   "MCG+06-27-017",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "mcg+09-20-131",
+   "MCG+09-20-131",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "mcg-04-31-038",
+   "MCG-04-31-038",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0024",
+   "NGC 24",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0045",
+   "NGC 45",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0059",
+   "NGC 59",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0247",
+   "NGC 247",
+   "ngc_0253",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0404",
+   "NGC 404",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0625",
+   "NGC 625",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0628-dw0132p1422",
+   "dw0132+1422",
+   "ngc_0628",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0628-dw0134p1438",
+   "dw0134+1438",
+   "ngc_0628",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_0628-dw0138p1458",
+   "dw0138+1458",
+   "ngc_0628",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_0628-kdg_010",
+   "KDG010",
+   "ngc_0628",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0784",
+   "NGC 784",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_0891",
+   "NGC 891",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1023-dw0237p3855",
+   "dw0237p3855",
+   "ngc_1023",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1023-dw0241p3904",
+   "dw0241p3904",
+   "ngc_1023",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1042",
+   "NGC 1042",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1311",
+   "NGC1311",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1313",
+   "NGC 1313",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1560",
+   "NGC 1560",
+   "ic_0342",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1569",
+   "NGC 1569",
+   "ic_0342",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1592",
+   "NGC 1592",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1705",
+   "NGC 1705",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1792",
+   "NGC 1792",
+   "ngc_1808",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1800",
+   "NGC 1800",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_1827",
+   "NGC 1827",
+   "ngc_1808",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_2188",
+   "NGC 2188",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_2366",
+   "NGC 2366",
+   "m_081",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_2683",
+   "NGC 2683",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_2903-hi-1",
+   "NGC 2903-HI-1",
+   "ngc_2903",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_2915",
+   "NGC 2915",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_2976",
+   "NGC2976",
+   "m_081",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3077",
+   "NGC 3077",
+   "m_081",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3115-dw1000m0821",
+   "dw1000m0821",
+   "ngc_3115",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3115-kksg_17",
+   "KKSG 17",
+   "ngc_3115",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3115-kksg_18",
+   "KKSG 18",
+   "ngc_3115",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3115-mcg-01-26-009",
+   "MCG -01-26-009",
+   "ngc_3115",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3351",
+   "NGC 3351",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3377",
+   "NGC 3377",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3379-dw1044p1356",
+   "dw1044p1356",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3379-dw1048p1407",
+   "dw1048p1407",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3379-dw1052p1102",
+   "dw1052p1102",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3379-fs_04",
+   "FS04",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3379-kk_094",
+   "KK94",
+   "ngc_3379",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_3379-leg_05",
+   "LeG05",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3379-leg_13",
+   "LeG13",
+   "ngc_3379",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_3379-leg_17",
+   "LeG17",
+   "ngc_3379",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_3379-leg_21",
+   "LeG21",
+   "ngc_3379",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_3379-leg_26",
+   "LeG26",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3379-lsbc_d640-11",
+   "LSBC D640-11",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3384",
+   "NGC 3384",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3412",
+   "NGC 3412",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3521-sat",
+   "NGC 3521-sat",
+   "ngc_3521",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3593",
+   "NGC 3593",
+   "ngc_3627",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3623",
+   "NGC 3623",
+   "ngc_3627",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3627-dw1114p1238",
+   "dw1114p1238",
+   "ngc_3627",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_3627-dw1119p1157",
+   "dw1119p1157",
+   "ngc_3627",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3627-dw1119p1419",
+   "dw1119p1419",
+   "ngc_3627",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3627-dw1120p1337",
+   "dw1120p1337",
+   "ngc_3627",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3627-dw1123p1342",
+   "dw1123p1342",
+   "ngc_3627",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_3627-dw1124p1240",
+   "dw1124p1240",
+   "ngc_3627",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_3628",
+   "NGC 3628",
+   "ngc_3627",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3738",
+   "NGC 3738",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_3741",
+   "NGC 3741",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_4068",
+   "NGC 4068",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4151",
+   "NGC 4151",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4236",
+   "NGC 4236",
+   "m_081",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4242",
+   "NGC 4242",
+   "ngc_4258",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4244",
+   "NGC 4244",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4248",
+   "NGC 4248",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4248-lv_j1218+4655",
+   "LV J1218+4655",
+   "ngc_4248",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_4395",
+   "NGC 4395",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4424",
+   "NGC 4424",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4449",
+   "NGC 4449",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4517",
+   "NGC 4517",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4517-dw1231p0140",
+   "dw1231p0140",
+   "ngc_4517",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4562",
+   "NGC 4562",
+   "ngc_4565",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4592",
+   "NGC 4592",
+   "ngc_4517",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4594-dw1240m1118",
+   "dw1240-1118",
+   "ngc_4594",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4594-kksg_29",
+   "KKSG 29",
+   "ngc_4594",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4594-lv_j1235-1104",
+   "LV J1235-1104",
+   "ngc_4594",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4594-sucd1",
+   "SUCD1",
+   "ngc_4594",
+   "named: SUCD1 (ultracompact dwarf)"
+  ],
+  [
+   "ngc_4605-dw1245+6158",
+   "Dw1245+6158",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "ngc_4618",
+   "NGC 4618",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4627",
+   "NGC 4627",
+   "ngc_4631",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4631-dw1236p3336",
+   "dw1236+3336",
+   "ngc_4631",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_4631-lv_j1241+3251",
+   "LV J1241+3251",
+   "ngc_4631",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ngc_4707",
+   "NGC4707",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_4765",
+   "NGC4765",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5011_c",
+   "NGC 5011C",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5023",
+   "NGC 5023",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5068",
+   "NGC 5068",
+   "m_083",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5102",
+   "NGC 5102",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5194",
+   "NGC 5194",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5195",
+   "NGC 5195",
+   "ngc_5194",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5204",
+   "NGC 5204",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5206",
+   "NGC 5206",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5237",
+   "NGC 5237",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5238",
+   "NGC 5238",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5253",
+   "NGC 5253",
+   "ngc_5128",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5264",
+   "NGC 5264",
+   "m_083",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5408",
+   "NGC 5408",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5474",
+   "NGC 5474",
+   "m_101",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5477",
+   "NGC 5477",
+   "m_101",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_5585",
+   "NGC 5585",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_6503",
+   "NGC 6503",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_6789",
+   "NGC 6789",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ngc_7793",
+   "NGC 7793",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "pgc_0001242",
+   "PGC1242",
+   "ngc_0045",
+   "M_V brighter than -14"
+  ],
+  [
+   "pgc_0020125",
+   "PGC 20125",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "pgc_0034671",
+   "PGC 34671",
+   "ngc_3556",
+   "M_V brighter than -14"
+  ],
+  [
+   "pgc_0042730",
+   "PGC 42730",
+   "ngc_4594",
+   "M_V brighter than -14"
+  ],
+  [
+   "pgc_0051659",
+   "PGC 51659",
+   "ngc_5128",
+   "no half-light radius"
+  ],
+  [
+   "pgc_0100170",
+   "PGC 100170",
+   "",
+   "no M_V"
+  ],
+  [
+   "pgc_0138836",
+   "PGC 138836",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "pgc_0166192",
+   "PGC 166192",
+   "ngc_6946",
+   "M_V brighter than -14"
+  ],
+  [
+   "pgc_0166193",
+   "PGC 166193",
+   "ngc_6946",
+   "M_V brighter than -14"
+  ],
+  [
+   "pgc_0170257",
+   "PGC 170257",
+   "m_083",
+   "no half-light radius"
+  ],
+  [
+   "pgc_039646",
+   "PGC 39646",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "pgc_0704814",
+   "PGC 704814",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "pgc_0725719",
+   "PGC 725719",
+   "m_083",
+   "no half-light radius"
+  ],
+  [
+   "pgc_1059300",
+   "PGC 1059300",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "pgc_2601822",
+   "PGC 2601822",
+   "ngc_6946",
+   "M_V brighter than -14"
+  ],
+  [
+   "pgc_3272767",
+   "PGC 3272767",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "pgc_4560429",
+   "PGC 4560429",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "pgc_4561602",
+   "PGC 4561602",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "pisces_a",
+   "Pisces A",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "pisces_b",
+   "Pisces B",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "sbs_1224+533",
+   "SBS 1224+533",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "ugc_00064",
+   "UGC 64",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_00288",
+   "UGC 288",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_00685",
+   "UGC 685",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_01104",
+   "UGC 1104",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_01171",
+   "UGC 1171",
+   "ngc_0628",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_01176",
+   "UGC 1176",
+   "ngc_0628",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_01281",
+   "UGC 1281",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_01703",
+   "UGC 1703",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "ugc_01807",
+   "UGC 1807",
+   "ngc_0891",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_02157",
+   "UGC 2157",
+   "ngc_1023",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_02165",
+   "UGC 2165",
+   "ngc_1023",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_02684",
+   "UGC 2684",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "ugc_02716",
+   "UGC 2716",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_02773",
+   "UGC 2773",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_02905",
+   "UGC 2905",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_03600",
+   "UGC 3600",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_03698",
+   "UGC 3698",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_04483",
+   "UGC 4483",
+   "m_081",
+   "no half-light radius"
+  ],
+  [
+   "ugc_05086",
+   "UGC 5086",
+   "ngc_2903",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_05423",
+   "UGC 5423",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_05812",
+   "UGC 5812",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_05944",
+   "UGC 5944",
+   "ngc_3379",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_06451",
+   "UGC 6451",
+   "m_081",
+   "no half-light radius"
+  ],
+  [
+   "ugc_06456",
+   "UGC 6456",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ugc_06541",
+   "UGC 6541",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ugc_07242",
+   "UGC 7242",
+   "ngc_4605",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_07298",
+   "UGC 7298",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ugc_07356",
+   "UGC 7356",
+   "ngc_4248",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_07490",
+   "UGC 7490",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_07596",
+   "UGC 7596",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "ugc_07605",
+   "UGC 7605",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ugc_07636",
+   "UGC 7636",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_07950",
+   "UGC 7950",
+   "ngc_4707",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_08215",
+   "UGC 8215",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "ugc_08245",
+   "UGC 8245",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_08313",
+   "UGC 8313",
+   "ngc_5055",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_08638",
+   "UGC 8638",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_08833",
+   "UGC 8833",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ugc_08882",
+   "UGC 8882",
+   "m_101",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_09405",
+   "UGC 9405",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_11411",
+   "UGC 11411",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugc_12894",
+   "UGC 12894",
+   "",
+   "no half-light radius"
+  ],
+  [
+   "ugca_092",
+   "UGCA 92",
+   "ic_0342",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugca_105",
+   "UGCA 105",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugca_281",
+   "UGCA 281",
+   "",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugca_287",
+   "UGCA 287",
+   "ngc_4594",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugca_292",
+   "UGCA 292",
+   "",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ugca_319",
+   "UGCA 319",
+   "ddo_161",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugca_337",
+   "UGCA 337",
+   "ngc_5055",
+   "M_V brighter than -14"
+  ],
+  [
+   "ugca_365",
+   "UGCA 365",
+   "m_083",
+   "HI above a tenth of the stellar mass"
+  ],
+  [
+   "ugca_442",
+   "UGCA 442",
+   "ngc_7793",
+   "M_V brighter than -14"
+  ]
+ ],
+ "set_M": {
+  "dwarfs": [
+   [
+    "cetus_1",
+    "Cetus",
+    "none",
+    "Kirby2014MNRAS.439.1015K"
+   ],
+   [
+    "phoenix_1",
+    "Phoenix",
+    "none",
+    "Kacharov2017MNRAS.466.2006K"
+   ],
+   [
+    "tucana_1",
+    "Tucana",
+    "none",
+    "Taibi2020A&A...635A.152T"
+   ],
+   [
+    "ugc_04879",
+    "UGC 4879",
+    "none",
+    "Kirby2014MNRAS.439.1015K"
+   ],
+   [
+    "kdg_064",
+    "KDG 64",
+    "m_081",
+    "Afanasiev2023MNRAS.520.6312A"
+   ]
+  ],
+  "rmse": {
+   "stellar_rule": {
+    "n": 5,
+    "rmse_dex": 0.1709
+   },
+   "baryonic_rule": {
+    "n": 5,
+    "rmse_dex": 0.2247
+   },
+   "moster": {
+    "n": 5,
+    "rmse_dex": 0.2346
+   },
+   "rar_disk_a0": {
+    "n": 5,
+    "rmse_dex": 0.2022
+   },
+   "rar_published_a0": {
+    "n": 5,
+    "rmse_dex": 0.1852
+   },
+   "stellar_subhalo_E1": {
+    "n": 5,
+    "rmse_dex": 0.1709
+   },
+   "mond_efe_E2": {
+    "n": 4,
+    "rmse_dex": 0.208
+   }
+  },
+  "bootstrap_rmse_difference": {
+   "stellar_minus_baryonic_rule": [
+    -0.0539,
+    -0.2066,
+    0.1471
+   ],
+   "stellar_minus_moster": [
+    -0.0637,
+    -0.1098,
+    0.0086
+   ],
+   "stellar_minus_rar_disk_a0": [
+    -0.0314,
+    -0.1702,
+    0.1438
+   ],
+   "stellar_minus_rar_published_a0": [
+    -0.0144,
+    -0.143,
+    0.1494
+   ],
+   "stellar_minus_stellar_subhalo_E1": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "stellar_minus_mond_efe_E2": [
+    -0.0172,
+    -0.2057,
+    0.1948
+   ]
+  },
+  "closer_under_stellar": {
+   "baryonic_rule": 2,
+   "moster": 4,
+   "rar_disk_a0": 2,
+   "rar_published_a0": 2,
+   "stellar_subhalo_E1": 0,
+   "mond_efe_E2": 1
+  },
+  "residuals_dex": {
+   "Cetus": {
+    "stellar_rule": -0.285,
+    "baryonic_rule": 0.042,
+    "moster": -0.419,
+    "rar_disk_a0": 0.025,
+    "rar_published_a0": -0.005,
+    "stellar_subhalo_E1": -0.285,
+    "mond_efe_E2": 0.034
+   },
+   "Phoenix": {
+    "stellar_rule": 0.131,
+    "baryonic_rule": 0.424,
+    "moster": 0.036,
+    "rar_disk_a0": 0.383,
+    "rar_published_a0": 0.353,
+    "stellar_subhalo_E1": 0.131,
+    "mond_efe_E2": 0.397
+   },
+   "Tucana": {
+    "stellar_rule": -0.147,
+    "baryonic_rule": 0.144,
+    "moster": -0.239,
+    "rar_disk_a0": 0.097,
+    "rar_published_a0": 0.067,
+    "stellar_subhalo_E1": -0.147,
+    "mond_efe_E2": 0.111
+   },
+   "UGC 4879": {
+    "stellar_rule": -0.16,
+    "baryonic_rule": 0.013,
+    "moster": -0.177,
+    "rar_disk_a0": -0.09,
+    "rar_published_a0": -0.118,
+    "stellar_subhalo_E1": -0.16,
+    "mond_efe_E2": -0.048
+   },
+   "KDG 64": {
+    "stellar_rule": -0.018,
+    "baryonic_rule": 0.224,
+    "moster": -0.098,
+    "rar_disk_a0": 0.198,
+    "rar_published_a0": 0.168,
+    "stellar_subhalo_E1": -0.018,
+    "mond_efe_E2": null
+   }
+  },
+  "sigma_obs_kms": {
+   "Cetus": 8.3,
+   "Phoenix": 9.3,
+   "Tucana": 6.2,
+   "UGC 4879": 9.6,
+   "KDG 64": 16.8
+  },
+  "sigma_pred_kms": {
+   "Cetus": {
+    "stellar_rule": 11.52,
+    "baryonic_rule": 7.91,
+    "moster": 13.45,
+    "rar_disk_a0": 8.06,
+    "rar_published_a0": 8.35,
+    "stellar_subhalo_E1": 11.52,
+    "mond_efe_E2": 7.98
+   },
+   "Phoenix": {
+    "stellar_rule": 8.0,
+    "baryonic_rule": 5.71,
+    "moster": 8.92,
+    "rar_disk_a0": 5.98,
+    "rar_published_a0": 6.19,
+    "stellar_subhalo_E1": 8.0,
+    "mond_efe_E2": 5.89
+   },
+   "Tucana": {
+    "stellar_rule": 7.34,
+    "baryonic_rule": 5.25,
+    "moster": 8.16,
+    "rar_disk_a0": 5.55,
+    "rar_published_a0": 5.74,
+    "stellar_subhalo_E1": 7.34,
+    "mond_efe_E2": 5.46
+   },
+   "UGC 4879": {
+    "stellar_rule": 11.54,
+    "baryonic_rule": 9.46,
+    "moster": 11.77,
+    "rar_disk_a0": 10.65,
+    "rar_published_a0": 11.0,
+    "stellar_subhalo_E1": 11.54,
+    "mond_efe_E2": 10.14
+   },
+   "KDG 64": {
+    "stellar_rule": 17.16,
+    "baryonic_rule": 12.98,
+    "moster": 18.81,
+    "rar_disk_a0": 13.37,
+    "rar_published_a0": 13.84,
+    "stellar_subhalo_E1": 17.16,
+    "mond_efe_E2": null
+   }
+  },
+  "primary_success": false,
+  "sensitivity": {
+   "major_axis_radii": {
+    "stellar_rule": 0.2015,
+    "baryonic_rule": 0.2169,
+    "moster": 0.2975,
+    "rar_disk_a0": 0.2042,
+    "rar_published_a0": 0.1863,
+    "stellar_subhalo_E1": 0.2015,
+    "mond_efe_E2": 0.208
+   },
+   "ML_1": {
+    "stellar_rule": 0.1389,
+    "baryonic_rule": 0.3422,
+    "moster": 0.2011,
+    "rar_disk_a0": 0.323,
+    "rar_published_a0": 0.2967,
+    "stellar_subhalo_E1": 0.1389,
+    "mond_efe_E2": 0.3211
+   },
+   "ML_3": {
+    "stellar_rule": 0.2065,
+    "baryonic_rule": 0.1747,
+    "moster": 0.2595,
+    "rar_disk_a0": 0.1646,
+    "rar_published_a0": 0.1615,
+    "stellar_subhalo_E1": 0.2065,
+    "mond_efe_E2": 0.1712
+   },
+   "V_MW_175": {
+    "stellar_rule": 0.1709,
+    "baryonic_rule": 0.2247,
+    "moster": 0.2346,
+    "rar_disk_a0": 0.2022,
+    "rar_published_a0": 0.1852,
+    "stellar_subhalo_E1": 0.1709,
+    "mond_efe_E2": 0.208
+   },
+   "V_MW_220": {
+    "stellar_rule": 0.1709,
+    "baryonic_rule": 0.2247,
+    "moster": 0.2346,
+    "rar_disk_a0": 0.2022,
+    "rar_published_a0": 0.1852,
+    "stellar_subhalo_E1": 0.1709,
+    "mond_efe_E2": 0.208
+   }
+  }
+ },
+ "set_U": {
+  "dwarfs": [
+   [
+    "aquarius_3",
+    "Aquarius III",
+    "mw",
+    3.5,
+    "Cerny2025ApJ...979..164C"
+   ],
+   [
+    "draco_2",
+    "Draco II",
+    "mw",
+    2.6,
+    "Cerny2026arXiv260217652C"
+   ],
+   [
+    "grus_2",
+    "Grus II",
+    "mw",
+    2.0,
+    "Simon2020ApJ...892..137S"
+   ],
+   [
+    "hydra_2",
+    "Hydra II",
+    "mw",
+    4.11,
+    "Geha2026ApJ...999..140G"
+   ],
+   [
+    "phoenix_2",
+    "Phoenix II",
+    "lmc",
+    21.2,
+    "Fritz2019A&A...623A.129F"
+   ],
+   [
+    "reticulum_3",
+    "Reticulum III",
+    "mw",
+    8.3,
+    "Fritz2019A&A...623A.129F"
+   ],
+   [
+    "segue_2",
+    "Segue 2",
+    "mw",
+    2.06,
+    "Geha2026ApJ...999..140G"
+   ],
+   [
+    "triangulum_2",
+    "Triangulum II",
+    "mw",
+    3.5,
+    "Buttry2022MNRAS.514.1706B"
+   ],
+   [
+    "andromeda_12",
+    "Andromeda XII",
+    "m_031",
+    4.0,
+    "Collins2013ApJ...768..172C"
+   ],
+   [
+    "andromeda_24",
+    "Andromeda XXIV",
+    "m_031",
+    7.3,
+    "Collins2013ApJ...768..172C"
+   ]
+  ],
+  "tolerance_factor": 1.462,
+  "by_model": {
+   "stellar_rule": {
+    "n": 10,
+    "exceed": 2,
+    "exceed_by_factor_1_46": 1,
+    "median_log10_pred_over_ul": -0.17
+   },
+   "baryonic_rule": {
+    "n": 10,
+    "exceed": 0,
+    "exceed_by_factor_1_46": 0,
+    "median_log10_pred_over_ul": -0.415
+   },
+   "moster": {
+    "n": 10,
+    "exceed": 4,
+    "exceed_by_factor_1_46": 2,
+    "median_log10_pred_over_ul": -0.076
+   },
+   "rar_disk_a0": {
+    "n": 10,
+    "exceed": 0,
+    "exceed_by_factor_1_46": 0,
+    "median_log10_pred_over_ul": -0.425
+   },
+   "rar_published_a0": {
+    "n": 10,
+    "exceed": 0,
+    "exceed_by_factor_1_46": 0,
+    "median_log10_pred_over_ul": -0.409
+   },
+   "stellar_subhalo_E1": {
+    "n": 10,
+    "exceed": 3,
+    "exceed_by_factor_1_46": 1,
+    "median_log10_pred_over_ul": -0.121
+   },
+   "mond_efe_E2": {
+    "n": 10,
+    "exceed": 0,
+    "exceed_by_factor_1_46": 0,
+    "median_log10_pred_over_ul": -0.753
+   }
+  },
+  "sigma_pred_over_ul": {
+   "Aquarius III": {
+    "stellar_rule": 0.6,
+    "baryonic_rule": 0.33,
+    "moster": 0.78,
+    "rar_disk_a0": 0.31,
+    "rar_published_a0": 0.32,
+    "stellar_subhalo_E1": 0.69,
+    "mond_efe_E2": 0.18
+   },
+   "Draco II": {
+    "stellar_rule": 0.53,
+    "baryonic_rule": 0.3,
+    "moster": 0.67,
+    "rar_disk_a0": 0.28,
+    "rar_published_a0": 0.29,
+    "stellar_subhalo_E1": 0.71,
+    "mond_efe_E2": 0.09
+   },
+   "Grus II": {
+    "stellar_rule": 1.63,
+    "baryonic_rule": 0.82,
+    "moster": 2.24,
+    "rar_disk_a0": 0.79,
+    "rar_published_a0": 0.82,
+    "stellar_subhalo_E1": 1.95,
+    "mond_efe_E2": 0.33
+   },
+   "Hydra II": {
+    "stellar_rule": 0.76,
+    "baryonic_rule": 0.48,
+    "moster": 0.91,
+    "rar_disk_a0": 0.48,
+    "rar_published_a0": 0.5,
+    "stellar_subhalo_E1": 0.8,
+    "mond_efe_E2": 0.48
+   },
+   "Phoenix II": {
+    "stellar_rule": 0.09,
+    "baryonic_rule": 0.05,
+    "moster": 0.11,
+    "rar_disk_a0": 0.05,
+    "rar_published_a0": 0.05,
+    "stellar_subhalo_E1": 0.11,
+    "mond_efe_E2": 0.04
+   },
+   "Reticulum III": {
+    "stellar_rule": 0.32,
+    "baryonic_rule": 0.16,
+    "moster": 0.43,
+    "rar_disk_a0": 0.16,
+    "rar_published_a0": 0.16,
+    "stellar_subhalo_E1": 0.36,
+    "mond_efe_E2": 0.09
+   },
+   "Segue 2": {
+    "stellar_rule": 0.96,
+    "baryonic_rule": 0.49,
+    "moster": 1.27,
+    "rar_disk_a0": 0.46,
+    "rar_published_a0": 0.48,
+    "stellar_subhalo_E1": 1.19,
+    "mond_efe_E2": 0.17
+   },
+   "Triangulum II": {
+    "stellar_rule": 0.42,
+    "baryonic_rule": 0.24,
+    "moster": 0.52,
+    "rar_disk_a0": 0.23,
+    "rar_published_a0": 0.24,
+    "stellar_subhalo_E1": 0.54,
+    "mond_efe_E2": 0.1
+   },
+   "Andromeda XII": {
+    "stellar_rule": 1.31,
+    "baryonic_rule": 0.68,
+    "moster": 1.8,
+    "rar_disk_a0": 0.69,
+    "rar_published_a0": 0.71,
+    "stellar_subhalo_E1": 1.44,
+    "mond_efe_E2": 0.41
+   },
+   "Andromeda XXIV": {
+    "stellar_rule": 0.89,
+    "baryonic_rule": 0.45,
+    "moster": 1.3,
+    "rar_disk_a0": 0.48,
+    "rar_published_a0": 0.5,
+    "stellar_subhalo_E1": 0.91,
+    "mond_efe_E2": 0.36
+   }
+  },
+  "sigma_pred_kms": {
+   "Aquarius III": {
+    "stellar_rule": 2.1,
+    "baryonic_rule": 1.14,
+    "moster": 2.72,
+    "rar_disk_a0": 1.08,
+    "rar_published_a0": 1.11,
+    "stellar_subhalo_E1": 2.4,
+    "mond_efe_E2": 0.64
+   },
+   "Draco II": {
+    "stellar_rule": 1.37,
+    "baryonic_rule": 0.77,
+    "moster": 1.73,
+    "rar_disk_a0": 0.73,
+    "rar_published_a0": 0.75,
+    "stellar_subhalo_E1": 1.86,
+    "mond_efe_E2": 0.23
+   },
+   "Grus II": {
+    "stellar_rule": 3.27,
+    "baryonic_rule": 1.64,
+    "moster": 4.47,
+    "rar_disk_a0": 1.59,
+    "rar_published_a0": 1.64,
+    "stellar_subhalo_E1": 3.9,
+    "mond_efe_E2": 0.66
+   },
+   "Hydra II": {
+    "stellar_rule": 3.12,
+    "baryonic_rule": 1.96,
+    "moster": 3.73,
+    "rar_disk_a0": 1.97,
+    "rar_published_a0": 2.04,
+    "stellar_subhalo_E1": 3.3,
+    "mond_efe_E2": 1.96
+   },
+   "Phoenix II": {
+    "stellar_rule": 1.92,
+    "baryonic_rule": 1.13,
+    "moster": 2.37,
+    "rar_disk_a0": 1.1,
+    "rar_published_a0": 1.14,
+    "stellar_subhalo_E1": 2.23,
+    "mond_efe_E2": 0.75
+   },
+   "Reticulum III": {
+    "stellar_rule": 2.67,
+    "baryonic_rule": 1.36,
+    "moster": 3.58,
+    "rar_disk_a0": 1.29,
+    "rar_published_a0": 1.34,
+    "stellar_subhalo_E1": 3.0,
+    "mond_efe_E2": 0.73
+   },
+   "Segue 2": {
+    "stellar_rule": 1.97,
+    "baryonic_rule": 1.02,
+    "moster": 2.61,
+    "rar_disk_a0": 0.95,
+    "rar_published_a0": 0.98,
+    "stellar_subhalo_E1": 2.45,
+    "mond_efe_E2": 0.35
+   },
+   "Triangulum II": {
+    "stellar_rule": 1.46,
+    "baryonic_rule": 0.85,
+    "moster": 1.82,
+    "rar_disk_a0": 0.82,
+    "rar_published_a0": 0.85,
+    "stellar_subhalo_E1": 1.9,
+    "mond_efe_E2": 0.34
+   },
+   "Andromeda XII": {
+    "stellar_rule": 5.23,
+    "baryonic_rule": 2.74,
+    "moster": 7.19,
+    "rar_disk_a0": 2.75,
+    "rar_published_a0": 2.85,
+    "stellar_subhalo_E1": 5.76,
+    "mond_efe_E2": 1.64
+   },
+   "Andromeda XXIV": {
+    "stellar_rule": 6.51,
+    "baryonic_rule": 3.31,
+    "moster": 9.5,
+    "rar_disk_a0": 3.49,
+    "rar_published_a0": 3.62,
+    "stellar_subhalo_E1": 6.68,
+    "mond_efe_E2": 2.65
+   }
+  },
+  "subhalo_factor": {
+   "Aquarius III": 1.212,
+   "Draco II": 1.513,
+   "Grus II": 1.336,
+   "Hydra II": 1.084,
+   "Phoenix II": 1.228,
+   "Reticulum III": 1.197,
+   "Segue 2": 1.378,
+   "Triangulum II": 1.425,
+   "Andromeda XII": 1.191,
+   "Andromeda XXIV": 1.052
+  },
+  "primary_success": false,
+  "E1_lead_passes": false,
+  "sensitivity": {
+   "major_axis_radii": {
+    "stellar_rule": [
+     2,
+     1
+    ],
+    "baryonic_rule": [
+     0,
+     0
+    ],
+    "moster": [
+     4,
+     2
+    ],
+    "rar_disk_a0": [
+     0,
+     0
+    ],
+    "rar_published_a0": [
+     0,
+     0
+    ],
+    "stellar_subhalo_E1": [
+     3,
+     2
+    ],
+    "mond_efe_E2": [
+     0,
+     0
+    ]
+   },
+   "ML_1": {
+    "stellar_rule": [
+     2,
+     1
+    ],
+    "baryonic_rule": [
+     0,
+     0
+    ],
+    "moster": [
+     4,
+     2
+    ],
+    "rar_disk_a0": [
+     0,
+     0
+    ],
+    "rar_published_a0": [
+     0,
+     0
+    ],
+    "stellar_subhalo_E1": [
+     3,
+     1
+    ],
+    "mond_efe_E2": [
+     0,
+     0
+    ]
+   },
+   "ML_3": {
+    "stellar_rule": [
+     2,
+     1
+    ],
+    "baryonic_rule": [
+     0,
+     0
+    ],
+    "moster": [
+     4,
+     2
+    ],
+    "rar_disk_a0": [
+     0,
+     0
+    ],
+    "rar_published_a0": [
+     0,
+     0
+    ],
+    "stellar_subhalo_E1": [
+     3,
+     2
+    ],
+    "mond_efe_E2": [
+     0,
+     0
+    ]
+   },
+   "V_MW_175": {
+    "stellar_rule": [
+     2,
+     1
+    ],
+    "baryonic_rule": [
+     0,
+     0
+    ],
+    "moster": [
+     4,
+     2
+    ],
+    "rar_disk_a0": [
+     0,
+     0
+    ],
+    "rar_published_a0": [
+     0,
+     0
+    ],
+    "stellar_subhalo_E1": [
+     3,
+     1
+    ],
+    "mond_efe_E2": [
+     0,
+     0
+    ]
+   },
+   "V_MW_220": {
+    "stellar_rule": [
+     2,
+     1
+    ],
+    "baryonic_rule": [
+     0,
+     0
+    ],
+    "moster": [
+     4,
+     2
+    ],
+    "rar_disk_a0": [
+     0,
+     0
+    ],
+    "rar_published_a0": [
+     0,
+     0
+    ],
+    "stellar_subhalo_E1": [
+     3,
+     1
+    ],
+    "mond_efe_E2": [
+     0,
+     0
+    ]
+   }
+  }
+ },
+ "set_F": {
+  "n": 264,
+  "n_in_paper_table": 9,
+  "n_decisive": 4,
+  "n_decisive_in_paper_table": 1,
+  "by_kind": {
+   "satellite": 5,
+   "no host": 22,
+   "other group": 237
+  },
+  "median_ratio_stellar_over_mond": 1.28,
+  "median_ratio_in_paper_table": 1.53,
+  "forecast_file_sha256": "bbafc29918f89053d44eede57cfa80321d527705eade4688ffd3a82b959098d6"
+ }
+}

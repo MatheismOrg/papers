@@ -1,0 +1,195 @@
+{
+  "status": "External population transfer of frozen galaxy RAR; no dwarf fitting.",
+  "catalog": "McConnachie2012 author maintained January2021 FITS update,144catalog rows.",
+  "catalog_url": "https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/files/vault/PANDAS/NearbyGals/NearbyGalaxies_Jan2021_PUBLIC.fits",
+  "catalog_page": "https://www.cadc-ccda.hia.nrc-cnrc.gc.ca/en/community/nearby/",
+  "morphology_url": "https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/files/vault/PANDAS/NearbyGals/table1_OCT2019.pdf",
+  "catalog_reference": "McConnachie2012 AJ144,4; DOI10.1088/0004-6256/144/1/4; arXiv1204.1562",
+  "estimator_reference": "Wolf etal2010 MNRAS406,1220; DOI10.1111/j.1365-2966.2010.16753.x; arXiv0908.2995",
+  "selection": "Pure dSph morphology, unstarred catalog name; measured positive radius/sigma/ellipticity, positive finite sigma errors and positive lower1sigma endpoint; excludes reported rotation>0.5sigma, explicit Sagittarius/AndXXVII tidal disruption, ambiguousWillman1, upperlimitSegue2; catalog HI/nominalMstar<=0.1 when available. Missing HI permitted for dSph morphology.",
+  "formula": "Re=D*rh_arcmin*pi/(180*60)*sqrt(1-ellipticity); rhalf=4Re/3; L_V=10^((4.83-(Vmag-dmod))/2.5); Mstar=2L_V; gbar=G*Mstar/(2*rhalf^2); gobs=3*sigma_los^2/rhalf.",
+  "photometry": "Vmag foreground extinction corrected per McConnachie2012 section4; no additional reddening correction.",
+  "population_definition": "ultrafaint_dSph iff L_V<100000Lsun; otherwise classical_dSph, an operational luminosity split independent of residuals.",
+  "higher_precision_selection": "max(quoted sigma plus/minus error)/sigma <=0.25 and no possible tidal/classification caution flag.",
+  "assumptions": "Spherical approximately equilibrium dispersion-supported tracer; circularized half-light radius; 4/3deprojection; approximately flat luminosity-weighted dispersion nearhalf-light; constantstellarM/L; gas ignored; missingrotationnotproofofzero. Catalogcompiledheterogeneousobservationsnotuniformreanalysis.",
+  "uncertainty": "Input asymmetricerrors retained. Derived dexerrors arefirstorder propagation withmean+/\u2212errors, independenceassumed; covarianceandWolfmodelerrornotincluded. Distancecancelsfromgbar. ML1and3sensitivitynotconfidencebounds. Binarycontamination,tides,equilibrium,externalfields,contaminants remainunmodeled.",
+  "RAR_a0_from_SPARC_m_s2": 1.1603274962269242e-10,
+  "summary": {
+    "all": {
+      "radius_range_kpc": [
+        0.02712078371961181,
+        3.067720090050447
+      ],
+      "gbar_range_m_s2": [
+        5.182977903010524e-15,
+        8.332110629861343e-12
+      ],
+      "gobs_range_m_s2": [
+        5.11466173008184e-13,
+        2.493318430329259e-10
+      ],
+      "RAR_frozen_SPARC": {
+        "n": 44,
+        "rmse_log10_acceleration_dex": 0.6550295700736337,
+        "median_abs_acceleration_fraction": 0.7075607028152513,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.3867069226791051,
+        "median_observed_over_predicted": 2.0653814411188782
+      },
+      "RAR_literature_a0_1p2e_10": {
+        "n": 44,
+        "rmse_log10_acceleration_dex": 0.650849106628114,
+        "median_abs_acceleration_fraction": 0.7027259189454603,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.3897663163194369,
+        "median_observed_over_predicted": 2.0319344699406363
+      },
+      "ML1_RAR_frozen": {
+        "n": 44,
+        "rmse_log10_acceleration_dex": 0.7548974657806415,
+        "median_abs_acceleration_fraction": 0.6776620925628223,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.43231136635041945,
+        "median_observed_over_predicted": 2.9458326937125827
+      },
+      "ML3_RAR_frozen": {
+        "n": 44,
+        "rmse_log10_acceleration_dex": 0.6070887810786115,
+        "median_abs_acceleration_fraction": 0.6642988056066375,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.40001207060927935,
+        "median_observed_over_predicted": 1.6754493711866907
+      }
+    },
+    "classical_dSph": {
+      "radius_range_kpc": [
+        0.1644578966127966,
+        3.067720090050447
+      ],
+      "gbar_range_m_s2": [
+        5.182977903010524e-15,
+        8.332110629861343e-12
+      ],
+      "gobs_range_m_s2": [
+        5.11466173008184e-13,
+        3.384281477364582e-11
+      ],
+      "RAR_frozen_SPARC": {
+        "n": 25,
+        "rmse_log10_acceleration_dex": 0.31793160889129995,
+        "median_abs_acceleration_fraction": 0.5000131495426337,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.27968578087763685,
+        "median_observed_over_predicted": 1.2029600169327594
+      },
+      "RAR_literature_a0_1p2e_10": {
+        "n": 25,
+        "rmse_log10_acceleration_dex": 0.31642839071709544,
+        "median_abs_acceleration_fraction": 0.494658998597705,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.2739548193839141,
+        "median_observed_over_predicted": 1.1841753412850038
+      },
+      "ML1_RAR_frozen": {
+        "n": 25,
+        "rmse_log10_acceleration_dex": 0.38350131881851235,
+        "median_abs_acceleration_fraction": 0.509809331227072,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.2842844209371712,
+        "median_observed_over_predicted": 1.7336627028591993
+      },
+      "ML3_RAR_frozen": {
+        "n": 25,
+        "rmse_log10_acceleration_dex": 0.31086160556872083,
+        "median_abs_acceleration_fraction": 0.4535551693556621,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.21622885137375092,
+        "median_observed_over_predicted": 0.9681685978950098
+      }
+    },
+    "ultrafaint_dSph": {
+      "radius_range_kpc": [
+        0.02712078371961181,
+        0.25597376421295887
+      ],
+      "gbar_range_m_s2": [
+        2.3900697678482688e-14,
+        2.9412574562295344e-13
+      ],
+      "gobs_range_m_s2": [
+        2.2307927301257995e-12,
+        2.493318430329259e-10
+      ],
+      "RAR_frozen_SPARC": {
+        "n": 19,
+        "rmse_log10_acceleration_dex": 0.9276964044912003,
+        "median_abs_acceleration_fraction": 0.8610711774202627,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.6272684309322092,
+        "median_observed_over_predicted": 7.197930432513791
+      },
+      "RAR_literature_a0_1p2e_10": {
+        "n": 19,
+        "rmse_log10_acceleration_dex": 0.9215384008631765,
+        "median_abs_acceleration_fraction": 0.858754835812898,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.6241740240655231,
+        "median_observed_over_predicted": 7.0798884036506795
+      },
+      "ML1_RAR_frozen": {
+        "n": 19,
+        "rmse_log10_acceleration_dex": 1.0612171897019966,
+        "median_abs_acceleration_fraction": 0.9022350733929048,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.6873261657779863,
+        "median_observed_over_predicted": 10.22861709924738
+      },
+      "ML3_RAR_frozen": {
+        "n": 19,
+        "rmse_log10_acceleration_dex": 0.8522609321059377,
+        "median_abs_acceleration_fraction": 0.8292177711970606,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.5867419343764246,
+        "median_observed_over_predicted": 5.855410173583521
+      }
+    },
+    "higher_precision": {
+      "radius_range_kpc": [
+        0.028512399578596494,
+        3.067720090050447
+      ],
+      "gbar_range_m_s2": [
+        5.182977903010524e-15,
+        8.332110629861343e-12
+      ],
+      "gobs_range_m_s2": [
+        5.11466173008184e-13,
+        5.186402000358817e-11
+      ],
+      "RAR_frozen_SPARC": {
+        "n": 25,
+        "rmse_log10_acceleration_dex": 0.5533590927738543,
+        "median_abs_acceleration_fraction": 0.5027621536540545,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.2948490613025141,
+        "median_observed_over_predicted": 1.9273297456550558
+      },
+      "RAR_literature_a0_1p2e_10": {
+        "n": 25,
+        "rmse_log10_acceleration_dex": 0.548717756204509,
+        "median_abs_acceleration_fraction": 0.5203853371005966,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.2891265925621531,
+        "median_observed_over_predicted": 1.8970234787971234
+      },
+      "ML1_RAR_frozen": {
+        "n": 25,
+        "rmse_log10_acceleration_dex": 0.6635830086980086,
+        "median_abs_acceleration_fraction": 0.6392706726521066,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.399392534721809,
+        "median_observed_over_predicted": 2.772161629751781
+      },
+      "ML3_RAR_frozen": {
+        "n": 25,
+        "rmse_log10_acceleration_dex": 0.49984851796284335,
+        "median_abs_acceleration_fraction": 0.4535551693556621,
+        "median_abs_dispersion_fraction_under_same_estimator": 0.23817616082860082,
+        "median_observed_over_predicted": 1.5534650229648688
+      }
+    }
+  },
+  "source_sha256": {
+    "References.dat": "218acb7e3dd83444064d0647fd9f3e709bea7ad509dc7e8d7ffe5334772f6643",
+    "Comments.dat": "9ef5f29d1df68ebf40742cb971e91897060694902748d8942b2d4a88faebc723",
+    "Update.log": "3f2abcdfb192076bf44281f3163169320e345c05684310a12df11beaf7ec1b57",
+    "NearbyGalaxies_Jan2021_PUBLIC.fits": "879c15cb0aee9357287fd32268276eff5b36501a11d0b434a5d58c461240502d"
+  },
+  "excluded_count": 59,
+  "selected_count": 44
+}

@@ -1,0 +1,132 @@
+{
+ "n": 42,
+ "dropped_upper_limit_dispersion": [
+  "segue_2",
+  "andromeda_12"
+ ],
+ "frozen_from_disks": {
+  "stellar_ABC": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "baryonic_ABC": [
+   11.4673,
+   0.9937,
+   -0.6355
+  ],
+  "rar_a0": 1.0368e-10
+ },
+ "rmse_dex": {
+  "stellar_rule": 0.367,
+  "baryonic_rule": 0.6164,
+  "rar_disk_a0": 0.6125,
+  "rar_published_a0": 0.5903,
+  "moster": 0.4758,
+  "rar_refit_on_dwarfs_heldout": 0.43
+ },
+ "paired_bootstrap": {
+  "stellar_minus_baryonic": [
+   -0.2493,
+   -0.349,
+   -0.1364
+  ],
+  "stellar_minus_rar_disk": [
+   -0.2455,
+   -0.3436,
+   -0.1347
+  ]
+ },
+ "closer_under_stellar": {
+  "vs_baryonic": 32,
+  "vs_rar_disk": 28
+ },
+ "subsets": {
+  "LV_ge_1e5": {
+   "n": 24,
+   "stellar_rule": 0.3254,
+   "baryonic_rule": 0.4076,
+   "rar_disk_a0": 0.3781,
+   "rar_published_a0": 0.3604,
+   "moster": 0.5377
+  },
+  "LV_lt_1e5": {
+   "n": 18,
+   "stellar_rule": 0.4161,
+   "baryonic_rule": 0.8154,
+   "rar_disk_a0": 0.8276,
+   "rar_published_a0": 0.7999,
+   "moster": 0.3779
+  },
+  "host_milky_way_incl_lmc": {
+   "n": 25,
+   "stellar_rule": 0.3948,
+   "baryonic_rule": 0.7016,
+   "rar_disk_a0": 0.7002,
+   "rar_published_a0": 0.6769,
+   "moster": 0.4842
+  },
+  "host_andromeda": {
+   "n": 16,
+   "stellar_rule": 0.3278,
+   "baryonic_rule": 0.4538,
+   "rar_disk_a0": 0.444,
+   "rar_published_a0": 0.4233,
+   "moster": 0.4774
+  }
+ },
+ "sensitivity": {
+  "ML_1": {
+   "stellar_rule": 0.3701,
+   "baryonic_rule": 0.748,
+   "rar_disk_a0": 0.7312,
+   "rar_published_a0": 0.7058,
+   "moster": 0.4536
+  },
+  "ML_3": {
+   "stellar_rule": 0.3763,
+   "baryonic_rule": 0.5516,
+   "rar_disk_a0": 0.551,
+   "rar_published_a0": 0.5315,
+   "moster": 0.4899
+  },
+  "circularized_Re": {
+   "stellar_rule": 0.3885,
+   "baryonic_rule": 0.6122,
+   "rar_disk_a0": 0.611,
+   "rar_published_a0": 0.5889,
+   "moster": 0.4628
+  }
+ },
+ "leave_one_out_ratio_stellar_over_rar": [
+  0.556,
+  0.613
+ ],
+ "ceilings": {
+  "ML_2": {
+   "plummer_fraction_at_4/3Re": 0.512,
+   "exceed_NLG_1+alpha/f": 34,
+   "exceed_MOG_1+alpha/f": 36
+  },
+  "ML_3": {
+   "plummer_fraction_at_4/3Re": 0.512,
+   "exceed_NLG_1+alpha/f": 29,
+   "exceed_MOG_1+alpha/f": 32
+  }
+ },
+ "section4_plummer_ML2": {
+  "rar_published_a0": 0.5866,
+  "NLG_published": 1.9118,
+  "MOG_published": 1.9662,
+  "rar_refit_heldout": 0.43,
+  "NLG_refit_heldout": 0.5892,
+  "MOG_refit_heldout": 0.5893,
+  "kernel_refits": 30,
+  "refits_with_mu_at_upper_bound_1000_per_kpc": 30,
+  "refit_multiplier_median": 77.6,
+  "published_kernel_median_miss_factor": {
+   "NLG": 68.7,
+   "MOG": 82.7
+  }
+ }
+}

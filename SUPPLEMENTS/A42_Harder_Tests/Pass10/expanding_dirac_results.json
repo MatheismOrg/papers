@@ -1,0 +1,1083 @@
+{
+  "scope": "Free Dirac modes in a supplied expanding 1+1 FLRW geometry. Two selected momenta and both parity branches. Quantum/Fock structure imposed; no interactions, backreaction, full vacuum sum or quantum gravity.",
+  "scale_initial": 0.5,
+  "scale_final": 3.0,
+  "mass": 0.7,
+  "momenta": [
+    1.0,
+    2.0
+  ],
+  "scale": "A(eta)=(Ai+Af)/2+(Af-Ai)/2*tanh(eta/tau); eta endpoints +/-10 tau",
+  "reference_audits": [
+    {
+      "tau": 0.15,
+      "k": 1.0,
+      "two_clock_reference_error": 1.379491110551438e-12,
+      "tight_tolerance_error": 9.660931244595608e-13,
+      "pair_mean_two_branches": 0.2549760927813369,
+      "pair_probability_per_branch": [
+        0.1274880463906683,
+        0.12748804639066866
+      ],
+      "unitarity_error": 1.4834804096408984e-12
+    },
+    {
+      "tau": 0.15,
+      "k": 2.0,
+      "two_clock_reference_error": 2.2921719446321336e-12,
+      "tight_tolerance_error": 1.128381290512238e-12,
+      "pair_mean_two_branches": 0.13497593723097367,
+      "pair_probability_per_branch": [
+        0.06748796861548685,
+        0.06748796861548684
+      ],
+      "unitarity_error": 1.7864609724132067e-12
+    },
+    {
+      "tau": 0.6,
+      "k": 1.0,
+      "two_clock_reference_error": 5.337598667591811e-13,
+      "tight_tolerance_error": 4.402791112852393e-12,
+      "pair_mean_two_branches": 0.05567281486787294,
+      "pair_probability_per_branch": [
+        0.027836407433936623,
+        0.027836407433936318
+      ],
+      "unitarity_error": 8.21900666367575e-13
+    },
+    {
+      "tau": 0.6,
+      "k": 2.0,
+      "two_clock_reference_error": 2.593502063814151e-12,
+      "tight_tolerance_error": 6.368562176209187e-12,
+      "pair_mean_two_branches": 0.004007981456151283,
+      "pair_probability_per_branch": [
+        0.002003990728075627,
+        0.0020039907280756564
+      ],
+      "unitarity_error": 9.36252867427452e-13
+    }
+  ],
+  "rows": [
+    {
+      "sites": 64,
+      "steps": 62,
+      "time_coordinate": "eta",
+      "spacing": 0.09817477042468103,
+      "tau": 0.15,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.2543562444544935,
+      "pair_probability_per_branch": [
+        0.12717812222724675,
+        0.12717812222724675
+      ],
+      "unitarity_error": 6.6537813340045265e-15,
+      "propagator_error": 0.008198312876636958,
+      "reference_pair_mean_two_branches": 0.2549760927813369
+    },
+    {
+      "sites": 64,
+      "steps": 62,
+      "time_coordinate": "eta",
+      "spacing": 0.09817477042468103,
+      "tau": 0.15,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.13546314146873234,
+      "pair_probability_per_branch": [
+        0.06773157073436618,
+        0.06773157073436614
+      ],
+      "unitarity_error": 8.644501624714995e-15,
+      "propagator_error": 0.06622473936099475,
+      "reference_pair_mean_two_branches": 0.13497593723097367
+    },
+    {
+      "sites": 64,
+      "steps": 108,
+      "time_coordinate": "t",
+      "spacing": 0.09817477042468103,
+      "tau": 0.15,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.25563311299743857,
+      "pair_probability_per_branch": [
+        0.1278165564987193,
+        0.12781655649871926
+      ],
+      "unitarity_error": 9.241210330447027e-15,
+      "propagator_error": 0.006491003294081323,
+      "reference_pair_mean_two_branches": 0.2549760927813369
+    },
+    {
+      "sites": 64,
+      "steps": 108,
+      "time_coordinate": "t",
+      "spacing": 0.09817477042468103,
+      "tau": 0.15,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.13724189903835057,
+      "pair_probability_per_branch": [
+        0.06862094951917527,
+        0.0686209495191753
+      ],
+      "unitarity_error": 1.1905368912698443e-14,
+      "propagator_error": 0.058264270372441876,
+      "reference_pair_mean_two_branches": 0.13497593723097367
+    },
+    {
+      "sites": 128,
+      "steps": 124,
+      "time_coordinate": "eta",
+      "spacing": 0.04908738521234052,
+      "tau": 0.15,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.2548209112859079,
+      "pair_probability_per_branch": [
+        0.12741045564295395,
+        0.12741045564295395
+      ],
+      "unitarity_error": 1.7312556600910303e-14,
+      "propagator_error": 0.002050710188820596,
+      "reference_pair_mean_two_branches": 0.2549760927813369
+    },
+    {
+      "sites": 128,
+      "steps": 124,
+      "time_coordinate": "eta",
+      "spacing": 0.04908738521234052,
+      "tau": 0.15,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.13509537310226472,
+      "pair_probability_per_branch": [
+        0.06754768655113237,
+        0.06754768655113234
+      ],
+      "unitarity_error": 2.5167173410520274e-14,
+      "propagator_error": 0.016584829277822153,
+      "reference_pair_mean_two_branches": 0.13497593723097367
+    },
+    {
+      "sites": 128,
+      "steps": 214,
+      "time_coordinate": "t",
+      "spacing": 0.04908738521234052,
+      "tau": 0.15,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.2551457553067484,
+      "pair_probability_per_branch": [
+        0.1275728776533742,
+        0.1275728776533742
+      ],
+      "unitarity_error": 9.665521555134207e-14,
+      "propagator_error": 0.0016273229453924068,
+      "reference_pair_mean_two_branches": 0.2549760927813369
+    },
+    {
+      "sites": 128,
+      "steps": 214,
+      "time_coordinate": "t",
+      "spacing": 0.04908738521234052,
+      "tau": 0.15,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.13553707507217197,
+      "pair_probability_per_branch": [
+        0.06776853753608598,
+        0.06776853753608598
+      ],
+      "unitarity_error": 9.274644224005622e-14,
+      "propagator_error": 0.0145756629638595,
+      "reference_pair_mean_two_branches": 0.13497593723097367
+    },
+    {
+      "sites": 256,
+      "steps": 246,
+      "time_coordinate": "eta",
+      "spacing": 0.02454369260617026,
+      "tau": 0.15,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.2549371686303717,
+      "pair_probability_per_branch": [
+        0.12746858431518582,
+        0.12746858431518587
+      ],
+      "unitarity_error": 6.866872756157197e-14,
+      "propagator_error": 0.0005146504932132047,
+      "reference_pair_mean_two_branches": 0.2549760927813369
+    },
+    {
+      "sites": 256,
+      "steps": 246,
+      "time_coordinate": "eta",
+      "spacing": 0.02454369260617026,
+      "tau": 0.15,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.13500297224064048,
+      "pair_probability_per_branch": [
+        0.06750148612032024,
+        0.06750148612032024
+      ],
+      "unitarity_error": 4.161816350863101e-14,
+      "propagator_error": 0.00415158750554395,
+      "reference_pair_mean_two_branches": 0.13497593723097367
+    },
+    {
+      "sites": 256,
+      "steps": 428,
+      "time_coordinate": "t",
+      "spacing": 0.02454369260617026,
+      "tau": 0.15,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.25501851296603956,
+      "pair_probability_per_branch": [
+        0.12750925648301978,
+        0.12750925648301978
+      ],
+      "unitarity_error": 3.632808523509706e-15,
+      "propagator_error": 0.00040687715922233187,
+      "reference_pair_mean_two_branches": 0.2549760927813369
+    },
+    {
+      "sites": 256,
+      "steps": 428,
+      "time_coordinate": "t",
+      "spacing": 0.02454369260617026,
+      "tau": 0.15,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.13511611588986971,
+      "pair_probability_per_branch": [
+        0.06755805794493489,
+        0.06755805794493484
+      ],
+      "unitarity_error": 6.832837048830394e-15,
+      "propagator_error": 0.003645258445064243,
+      "reference_pair_mean_two_branches": 0.13497593723097367
+    },
+    {
+      "sites": 512,
+      "steps": 490,
+      "time_coordinate": "eta",
+      "spacing": 0.01227184630308513,
+      "tau": 0.15,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.25496634616457875,
+      "pair_probability_per_branch": [
+        0.12748317308228937,
+        0.12748317308228937
+      ],
+      "unitarity_error": 1.0796520774787326e-13,
+      "propagator_error": 0.00012890955995643443,
+      "reference_pair_mean_two_branches": 0.2549760927813369
+    },
+    {
+      "sites": 512,
+      "steps": 490,
+      "time_coordinate": "eta",
+      "spacing": 0.01227184630308513,
+      "tau": 0.15,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.13498234565271244,
+      "pair_probability_per_branch": [
+        0.06749117282635624,
+        0.06749117282635621
+      ],
+      "unitarity_error": 5.0713405192879166e-14,
+      "propagator_error": 0.0010384690960102843,
+      "reference_pair_mean_two_branches": 0.13497593723097367
+    },
+    {
+      "sites": 512,
+      "steps": 856,
+      "time_coordinate": "t",
+      "spacing": 0.01227184630308513,
+      "tau": 0.15,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.25498669811007524,
+      "pair_probability_per_branch": [
+        0.12749334905503762,
+        0.1274933490550376
+      ],
+      "unitarity_error": 1.0490364294844258e-13,
+      "propagator_error": 0.00010172219840771724,
+      "reference_pair_mean_two_branches": 0.2549760927813369
+    },
+    {
+      "sites": 512,
+      "steps": 856,
+      "time_coordinate": "t",
+      "spacing": 0.01227184630308513,
+      "tau": 0.15,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.13501097524690225,
+      "pair_probability_per_branch": [
+        0.06750548762345111,
+        0.06750548762345114
+      ],
+      "unitarity_error": 2.269613214787669e-14,
+      "propagator_error": 0.0009113981706342153,
+      "reference_pair_mean_two_branches": 0.13497593723097367
+    },
+    {
+      "sites": 1024,
+      "steps": 978,
+      "time_coordinate": "eta",
+      "spacing": 0.006135923151542565,
+      "tau": 0.15,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.2549736542176038,
+      "pair_probability_per_branch": [
+        0.12748682710880194,
+        0.12748682710880188
+      ],
+      "unitarity_error": 3.001742282003814e-13,
+      "propagator_error": 3.225828454126948e-05,
+      "reference_pair_mean_two_branches": 0.2549760927813369
+    },
+    {
+      "sites": 1024,
+      "steps": 978,
+      "time_coordinate": "eta",
+      "spacing": 0.006135923151542565,
+      "tau": 0.15,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.13497749576710022,
+      "pair_probability_per_branch": [
+        0.06748874788355011,
+        0.06748874788355011
+      ],
+      "unitarity_error": 1.4285631056035858e-13,
+      "propagator_error": 0.00025968262648307826,
+      "reference_pair_mean_two_branches": 0.13497593723097367
+    },
+    {
+      "sites": 1024,
+      "steps": 1712,
+      "time_coordinate": "t",
+      "spacing": 0.006135923151542565,
+      "tau": 0.15,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.2549787441316714,
+      "pair_probability_per_branch": [
+        0.1274893720658357,
+        0.1274893720658357
+      ],
+      "unitarity_error": 5.964687144888666e-13,
+      "propagator_error": 2.543073126681687e-05,
+      "reference_pair_mean_two_branches": 0.2549760927813369
+    },
+    {
+      "sites": 1024,
+      "steps": 1712,
+      "time_coordinate": "t",
+      "spacing": 0.006135923151542565,
+      "tau": 0.15,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.13498469631880994,
+      "pair_probability_per_branch": [
+        0.067492348159405,
+        0.06749234815940494
+      ],
+      "unitarity_error": 5.088985409208674e-13,
+      "propagator_error": 0.00022785475882784249,
+      "reference_pair_mean_two_branches": 0.13497593723097367
+    },
+    {
+      "sites": 64,
+      "steps": 246,
+      "time_coordinate": "eta",
+      "spacing": 0.09817477042468103,
+      "tau": 0.6,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.05567474087959827,
+      "pair_probability_per_branch": [
+        0.027837370439799135,
+        0.027837370439799138
+      ],
+      "unitarity_error": 3.4579446533078766e-14,
+      "propagator_error": 0.03392199953600616,
+      "reference_pair_mean_two_branches": 0.05567281486787294
+    },
+    {
+      "sites": 64,
+      "steps": 246,
+      "time_coordinate": "eta",
+      "spacing": 0.09817477042468103,
+      "tau": 0.6,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.0041858213243955045,
+      "pair_probability_per_branch": [
+        0.0020929106621977445,
+        0.0020929106621977605
+      ],
+      "unitarity_error": 2.3836249672302657e-14,
+      "propagator_error": 0.27188745573045453,
+      "reference_pair_mean_two_branches": 0.004007981456151283
+    },
+    {
+      "sites": 64,
+      "steps": 428,
+      "time_coordinate": "t",
+      "spacing": 0.09817477042468103,
+      "tau": 0.6,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.055888840600268004,
+      "pair_probability_per_branch": [
+        0.027944420300134012,
+        0.02794442030013399
+      ],
+      "unitarity_error": 4.92298301046776e-14,
+      "propagator_error": 0.025826796782961108,
+      "reference_pair_mean_two_branches": 0.05567281486787294
+    },
+    {
+      "sites": 64,
+      "steps": 428,
+      "time_coordinate": "t",
+      "spacing": 0.09817477042468103,
+      "tau": 0.6,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.0044102120036963,
+      "pair_probability_per_branch": [
+        0.002205106001848147,
+        0.002205106001848153
+      ],
+      "unitarity_error": 4.8376700823078074e-14,
+      "propagator_error": 0.23813936346243111,
+      "reference_pair_mean_two_branches": 0.004007981456151283
+    },
+    {
+      "sites": 128,
+      "steps": 490,
+      "time_coordinate": "eta",
+      "spacing": 0.04908738521234052,
+      "tau": 0.6,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.055672067093392355,
+      "pair_probability_per_branch": [
+        0.02783603354669618,
+        0.027836033546696174
+      ],
+      "unitarity_error": 1.5755133527326476e-13,
+      "propagator_error": 0.008502722847089519,
+      "reference_pair_mean_two_branches": 0.05567281486787294
+    },
+    {
+      "sites": 128,
+      "steps": 490,
+      "time_coordinate": "eta",
+      "spacing": 0.04908738521234052,
+      "tau": 0.6,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.004051537782658066,
+      "pair_probability_per_branch": [
+        0.0020257688913290334,
+        0.002025768891329033
+      ],
+      "unitarity_error": 5.206707912494207e-14,
+      "propagator_error": 0.06817285432834935,
+      "reference_pair_mean_two_branches": 0.004007981456151283
+    },
+    {
+      "sites": 128,
+      "steps": 856,
+      "time_coordinate": "t",
+      "spacing": 0.04908738521234052,
+      "tau": 0.6,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.05572642636242239,
+      "pair_probability_per_branch": [
+        0.02786321318121119,
+        0.027863213181211207
+      ],
+      "unitarity_error": 3.678277952286908e-13,
+      "propagator_error": 0.00645959680913476,
+      "reference_pair_mean_two_branches": 0.05567281486787294
+    },
+    {
+      "sites": 128,
+      "steps": 856,
+      "time_coordinate": "t",
+      "spacing": 0.04908738521234052,
+      "tau": 0.6,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.004098998121279536,
+      "pair_probability_per_branch": [
+        0.0020494990606397677,
+        0.0020494990606397686
+      ],
+      "unitarity_error": 3.7014279975431375e-13,
+      "propagator_error": 0.05965035670737066,
+      "reference_pair_mean_two_branches": 0.004007981456151283
+    },
+    {
+      "sites": 256,
+      "steps": 978,
+      "time_coordinate": "eta",
+      "spacing": 0.02454369260617026,
+      "tau": 0.6,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.055672480845527915,
+      "pair_probability_per_branch": [
+        0.027836240422763964,
+        0.02783624042276395
+      ],
+      "unitarity_error": 4.617510922830415e-13,
+      "propagator_error": 0.002128123198055972,
+      "reference_pair_mean_two_branches": 0.05567281486787294
+    },
+    {
+      "sites": 256,
+      "steps": 978,
+      "time_coordinate": "eta",
+      "spacing": 0.02454369260617026,
+      "tau": 0.6,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.004018774452420673,
+      "pair_probability_per_branch": [
+        0.0020093872262103366,
+        0.0020093872262103366
+      ],
+      "unitarity_error": 5.185683971198772e-13,
+      "propagator_error": 0.01705545603310765,
+      "reference_pair_mean_two_branches": 0.004007981456151283
+    },
+    {
+      "sites": 256,
+      "steps": 1712,
+      "time_coordinate": "t",
+      "spacing": 0.02454369260617026,
+      "tau": 0.6,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.0556861933497902,
+      "pair_probability_per_branch": [
+        0.0278430966748951,
+        0.0278430966748951
+      ],
+      "unitarity_error": 1.0792111684335361e-14,
+      "propagator_error": 0.00161507821516735,
+      "reference_pair_mean_two_branches": 0.05567281486787294
+    },
+    {
+      "sites": 256,
+      "steps": 1712,
+      "time_coordinate": "t",
+      "spacing": 0.02454369260617026,
+      "tau": 0.6,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.0040301367766648645,
+      "pair_probability_per_branch": [
+        0.0020150683883324323,
+        0.0020150683883324327
+      ],
+      "unitarity_error": 3.5958409012187745e-14,
+      "propagator_error": 0.014918254286007957,
+      "reference_pair_mean_two_branches": 0.004007981456151283
+    },
+    {
+      "sites": 512,
+      "steps": 1956,
+      "time_coordinate": "eta",
+      "spacing": 0.01227184630308513,
+      "tau": 0.6,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.05567273084801799,
+      "pair_probability_per_branch": [
+        0.027836365424009007,
+        0.02783636542400899
+      ],
+      "unitarity_error": 4.137876027754455e-13,
+      "propagator_error": 0.0005320523462027187,
+      "reference_pair_mean_two_branches": 0.05567281486787294
+    },
+    {
+      "sites": 512,
+      "steps": 1956,
+      "time_coordinate": "eta",
+      "spacing": 0.01227184630308513,
+      "tau": 0.6,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.004010677828975857,
+      "pair_probability_per_branch": [
+        0.0020053389144879287,
+        0.0020053389144879287
+      ],
+      "unitarity_error": 9.463607723725445e-13,
+      "propagator_error": 0.004264343831327698,
+      "reference_pair_mean_two_branches": 0.004007981456151283
+    },
+    {
+      "sites": 512,
+      "steps": 3424,
+      "time_coordinate": "t",
+      "spacing": 0.01227184630308513,
+      "tau": 0.6,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.055676157968424206,
+      "pair_probability_per_branch": [
+        0.02783807898421212,
+        0.027838078984212082
+      ],
+      "unitarity_error": 3.947975915049745e-13,
+      "propagator_error": 0.00040378070591332753,
+      "reference_pair_mean_two_branches": 0.05567281486787294
+    },
+    {
+      "sites": 512,
+      "steps": 3424,
+      "time_coordinate": "t",
+      "spacing": 0.01227184630308513,
+      "tau": 0.6,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.004013482822525394,
+      "pair_probability_per_branch": [
+        0.002006741411262697,
+        0.0020067414112626965
+      ],
+      "unitarity_error": 9.382023208739561e-14,
+      "propagator_error": 0.0037298932033749026,
+      "reference_pair_mean_two_branches": 0.004007981456151283
+    },
+    {
+      "sites": 1024,
+      "steps": 3912,
+      "time_coordinate": "eta",
+      "spacing": 0.006135923151542565,
+      "tau": 0.6,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.055672793830771755,
+      "pair_probability_per_branch": [
+        0.02783639691538588,
+        0.027836396915385878
+      ],
+      "unitarity_error": 1.115557319205188e-12,
+      "propagator_error": 0.00013301442844976044,
+      "reference_pair_mean_two_branches": 0.05567281486787294
+    },
+    {
+      "sites": 1024,
+      "steps": 3912,
+      "time_coordinate": "eta",
+      "spacing": 0.006135923151542565,
+      "tau": 0.6,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.004008655430536365,
+      "pair_probability_per_branch": [
+        0.002004327715268181,
+        0.0020043277152681843
+      ],
+      "unitarity_error": 5.668259847508449e-13,
+      "propagator_error": 0.001066115368638118,
+      "reference_pair_mean_two_branches": 0.004007981456151283
+    },
+    {
+      "sites": 1024,
+      "steps": 6846,
+      "time_coordinate": "t",
+      "spacing": 0.006135923151542565,
+      "tau": 0.6,
+      "k": 1.0,
+      "pair_mean_two_branches": 0.05567364982534638,
+      "pair_probability_per_branch": [
+        0.02783682491267319,
+        0.02783682491267319
+      ],
+      "unitarity_error": 1.50103197774311e-12,
+      "propagator_error": 0.00010094782771370641,
+      "reference_pair_mean_two_branches": 0.05567281486787294
+    },
+    {
+      "sites": 1024,
+      "steps": 6846,
+      "time_coordinate": "t",
+      "spacing": 0.006135923151542565,
+      "tau": 0.6,
+      "k": 2.0,
+      "pair_mean_two_branches": 0.004009354267831522,
+      "pair_probability_per_branch": [
+        0.002004677133915762,
+        0.0020046771339157607
+      ],
+      "unitarity_error": 2.0438998316677976e-12,
+      "propagator_error": 0.0009324671934692599,
+      "reference_pair_mean_two_branches": 0.004007981456151283
+    }
+  ],
+  "fock_results": [
+    {
+      "tau": 0.15,
+      "sites": 64,
+      "coordinate": "eta",
+      "phase_aligned_state_error": 0.01137144703893086,
+      "norm_error": 1.1102230246251565e-15
+    },
+    {
+      "tau": 0.15,
+      "sites": 64,
+      "coordinate": "t",
+      "phase_aligned_state_error": 0.00930861324516675,
+      "norm_error": 1.9095836023552692e-14
+    },
+    {
+      "tau": 0.15,
+      "sites": 64,
+      "coordinate": "comparison",
+      "two_clock_state_difference": 0.005376704334511375
+    },
+    {
+      "tau": 0.15,
+      "sites": 128,
+      "coordinate": "eta",
+      "phase_aligned_state_error": 0.0028500804339518827,
+      "norm_error": 1.1546319456101628e-14
+    },
+    {
+      "tau": 0.15,
+      "sites": 128,
+      "coordinate": "t",
+      "phase_aligned_state_error": 0.0023479824872239975,
+      "norm_error": 1.8762769116165146e-13
+    },
+    {
+      "tau": 0.15,
+      "sites": 128,
+      "coordinate": "comparison",
+      "two_clock_state_difference": 0.0013578176442008917
+    },
+    {
+      "tau": 0.15,
+      "sites": 256,
+      "coordinate": "eta",
+      "phase_aligned_state_error": 0.0007159324219825335,
+      "norm_error": 1.0391687510491465e-13
+    },
+    {
+      "tau": 0.15,
+      "sites": 256,
+      "coordinate": "t",
+      "phase_aligned_state_error": 0.0005878202489844096,
+      "norm_error": 8.43769498715119e-15
+    },
+    {
+      "tau": 0.15,
+      "sites": 256,
+      "coordinate": "comparison",
+      "two_clock_state_difference": 0.00034255278615640786
+    },
+    {
+      "tau": 0.15,
+      "sites": 512,
+      "coordinate": "eta",
+      "phase_aligned_state_error": 0.0001793917356296633,
+      "norm_error": 1.5365486660812167e-13
+    },
+    {
+      "tau": 0.15,
+      "sites": 512,
+      "coordinate": "t",
+      "phase_aligned_state_error": 0.00014700666340244567,
+      "norm_error": 1.2678746941219288e-13
+    },
+    {
+      "tau": 0.15,
+      "sites": 512,
+      "coordinate": "comparison",
+      "two_clock_state_difference": 8.604415323849965e-05
+    },
+    {
+      "tau": 0.15,
+      "sites": 1024,
+      "coordinate": "eta",
+      "phase_aligned_state_error": 4.489785071014773e-05,
+      "norm_error": 3.516076318987871e-13
+    },
+    {
+      "tau": 0.15,
+      "sites": 1024,
+      "coordinate": "t",
+      "phase_aligned_state_error": 3.675489176207422e-05,
+      "norm_error": 1.1044498648971057e-12
+    },
+    {
+      "tau": 0.15,
+      "sites": 1024,
+      "coordinate": "comparison",
+      "two_clock_state_difference": 2.156297374504661e-05
+    },
+    {
+      "tau": 0.6,
+      "sites": 64,
+      "coordinate": "eta",
+      "phase_aligned_state_error": 0.009656246240765286,
+      "norm_error": 4.263256414560601e-14
+    },
+    {
+      "tau": 0.6,
+      "sites": 64,
+      "coordinate": "t",
+      "phase_aligned_state_error": 0.008524649099578521,
+      "norm_error": 9.880984919163893e-14
+    },
+    {
+      "tau": 0.6,
+      "sites": 64,
+      "coordinate": "comparison",
+      "two_clock_state_difference": 0.0045487685403375056
+    },
+    {
+      "tau": 0.6,
+      "sites": 128,
+      "coordinate": "eta",
+      "phase_aligned_state_error": 0.002413496804571561,
+      "norm_error": 1.34781075189494e-13
+    },
+    {
+      "tau": 0.6,
+      "sites": 128,
+      "coordinate": "t",
+      "phase_aligned_state_error": 0.0021331626492474016,
+      "norm_error": 7.362999099314038e-13
+    },
+    {
+      "tau": 0.6,
+      "sites": 128,
+      "coordinate": "comparison",
+      "two_clock_state_difference": 0.001097256603698646
+    },
+    {
+      "tau": 0.6,
+      "sites": 256,
+      "coordinate": "eta",
+      "phase_aligned_state_error": 0.0006032829132530629,
+      "norm_error": 9.231504449758177e-13
+    },
+    {
+      "tau": 0.6,
+      "sites": 256,
+      "coordinate": "t",
+      "phase_aligned_state_error": 0.000533549545461922,
+      "norm_error": 4.729550084903167e-14
+    },
+    {
+      "tau": 0.6,
+      "sites": 256,
+      "coordinate": "comparison",
+      "two_clock_state_difference": 0.00027196502375383445
+    },
+    {
+      "tau": 0.6,
+      "sites": 512,
+      "coordinate": "eta",
+      "phase_aligned_state_error": 0.00015080100220454695,
+      "norm_error": 1.3046230762370215e-12
+    },
+    {
+      "tau": 0.6,
+      "sites": 512,
+      "coordinate": "t",
+      "phase_aligned_state_error": 0.00013340571844094423,
+      "norm_error": 4.882760862301438e-13
+    },
+    {
+      "tau": 0.6,
+      "sites": 512,
+      "coordinate": "comparison",
+      "two_clock_state_difference": 6.7828230849615e-05
+    },
+    {
+      "tau": 0.6,
+      "sites": 1024,
+      "coordinate": "eta",
+      "phase_aligned_state_error": 3.76989825410579e-05,
+      "norm_error": 1.3307133173157126e-12
+    },
+    {
+      "tau": 0.6,
+      "sites": 1024,
+      "coordinate": "t",
+      "phase_aligned_state_error": 3.335496349919019e-05,
+      "norm_error": 3.5399461140173116e-12
+    },
+    {
+      "tau": 0.6,
+      "sites": 1024,
+      "coordinate": "comparison",
+      "two_clock_state_difference": 1.6957287183645317e-05
+    }
+  ],
+  "controls": {
+    "massless": {
+      "pair_mean_two_branches": 1.4221433515087882e-14,
+      "pair_probability_per_branch": [
+        7.110716757543941e-15,
+        7.110716757543941e-15
+      ],
+      "unitarity_error": 2.35299894902302e-13
+    },
+    "static": {
+      "pair_mean_two_branches": 2.7141575302553325e-15,
+      "pair_probability_per_branch": [
+        1.3570787650957624e-15,
+        1.3570787651595704e-15
+      ],
+      "unitarity_error": 1.9253657982174017e-13
+    },
+    "sudden_reference_probability": 0.14797162080029896,
+    "sudden_approach": [
+      {
+        "tau": 0.15,
+        "pair_probability": 0.1274880463906683
+      },
+      {
+        "tau": 0.03,
+        "pair_probability": 0.14705619222264743
+      },
+      {
+        "tau": 0.006,
+        "pair_probability": 0.1479348302510566
+      },
+      {
+        "tau": 0.0012,
+        "pair_probability": 0.14797014757907015
+      }
+    ],
+    "adiabatic_approach": [
+      {
+        "tau": 1.0,
+        "pair_probability": 0.004590868553834565
+      },
+      {
+        "tau": 2.0,
+        "pair_probability": 3.281042511711419e-05
+      },
+      {
+        "tau": 4.0,
+        "pair_probability": 1.1848678440760207e-09
+      }
+    ],
+    "spin_connection": {
+      "rescaled_state_error": 5.44754855897223e-13,
+      "physical_norm": 0.999999999998637,
+      "physical_norm_if_connection_omitted": 5.999999927859623
+    },
+    "wrong_mass": [
+      {
+        "sites": 128,
+        "propagator_error": 2.4889562167835413,
+        "pair_mean_two_branches": 0.23019579701900533,
+        "pair_probability_per_branch": [
+          0.11509789850950268,
+          0.11509789850950267
+        ],
+        "unitarity_error": 2.315627436932321e-14
+      },
+      {
+        "sites": 512,
+        "propagator_error": 2.4874985590458025,
+        "pair_mean_two_branches": 0.22997695632162546,
+        "pair_probability_per_branch": [
+          0.11498847816081273,
+          0.11498847816081272
+        ],
+        "unitarity_error": 8.98624305175098e-14
+      },
+      {
+        "sites": 1024,
+        "propagator_error": 2.4874255690295746,
+        "pair_mean_two_branches": 0.22996597244684636,
+        "pair_probability_per_branch": [
+          0.11498298622342318,
+          0.11498298622342319
+        ],
+        "unitarity_error": 1.027704849039579e-12
+      }
+    ]
+  },
+  "error_ratios": [
+    {
+      "tau": 0.15,
+      "k": 1.0,
+      "clock": "eta",
+      "ratios": [
+        3.9977920436197616,
+        3.984665740854632,
+        3.9923376775712613,
+        3.996169101661764
+      ]
+    },
+    {
+      "tau": 0.15,
+      "k": 1.0,
+      "clock": "t",
+      "ratios": [
+        3.988761611491999,
+        3.9995436177905006,
+        3.9998856256675612,
+        3.9999714259278423
+      ]
+    },
+    {
+      "tau": 0.15,
+      "k": 2.0,
+      "clock": "eta",
+      "ratios": [
+        3.9930914121348793,
+        3.9948162614120726,
+        3.9977959108210523,
+        3.998993348436247
+      ]
+    },
+    {
+      "tau": 0.15,
+      "k": 2.0,
+      "clock": "t",
+      "ratios": [
+        3.9973667418702465,
+        3.9985266294616935,
+        3.999633269537522,
+        3.9999084299258794
+      ]
+    },
+    {
+      "tau": 0.6,
+      "k": 1.0,
+      "clock": "eta",
+      "ratios": [
+        3.9895454839643105,
+        3.995409126152427,
+        3.9998380107605613,
+        3.999959646510641
+      ]
+    },
+    {
+      "tau": 0.6,
+      "k": 1.0,
+      "clock": "t",
+      "ratios": [
+        3.9982057001512015,
+        3.999556645908591,
+        3.999889522987832,
+        3.999894946312979
+      ]
+    },
+    {
+      "tau": 0.6,
+      "k": 2.0,
+      "clock": "eta",
+      "ratios": [
+        3.9882070130279326,
+        3.9971287895213012,
+        3.999549920860264,
+        3.999889652444534
+      ]
+    },
+    {
+      "tau": 0.6,
+      "k": 2.0,
+      "clock": "t",
+      "ratios": [
+        3.9922538037900046,
+        3.9984810262496713,
+        3.999646497253471,
+        4.000026198774642
+      ]
+    }
+  ]
+}

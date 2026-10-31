@@ -1,0 +1,1467 @@
+{
+ "protocol_sha256": "6e7b4d876510cd337e1ec347e3f8645434b3ffed3ef1df7f1f91047bca0e5b30",
+ "data_sha256": "c5c029dce9970e7b70fc329cc46dbf2ed02b308901579a3f2aa756887d542b26",
+ "n": 85,
+ "n_measured": 75,
+ "n_limits": 10,
+ "n_measured_bright": 38,
+ "n_E2_isolated_estimate": 2,
+ "models": {
+  "stellar_rule": {
+   "s_dex": 0.3024,
+   "lnL": -39.28,
+   "n": 85,
+   "split": {
+    "measured_bright": -11.56,
+    "measured_faint": -22.26,
+    "limits": -5.46
+   }
+  },
+  "stellar_subhalo_E1": {
+   "s_dex": 0.2912,
+   "lnL": -36.92,
+   "n": 85,
+   "split": {
+    "measured_bright": -12.76,
+    "measured_faint": -16.07,
+    "limits": -8.1
+   }
+  },
+  "baryonic_rule": {
+   "s_dex": 0.5824,
+   "lnL": -75.67,
+   "n": 85,
+   "split": {
+    "measured_bright": -25.71,
+    "measured_faint": -48.61,
+    "limits": -1.35
+   }
+  },
+  "moster": {
+   "s_dex": 0.4007,
+   "lnL": -54.37,
+   "n": 85,
+   "split": {
+    "measured_bright": -26.61,
+    "measured_faint": -18.61,
+    "limits": -9.15
+   }
+  },
+  "rar_disk_a0": {
+   "s_dex": 0.5801,
+   "lnL": -75.44,
+   "n": 85,
+   "split": {
+    "measured_bright": -24.75,
+    "measured_faint": -49.4,
+    "limits": -1.3
+   }
+  },
+  "rar_published_a0": {
+   "s_dex": 0.5551,
+   "lnL": -72.75,
+   "n": 85,
+   "split": {
+    "measured_bright": -23.18,
+    "measured_faint": -48.24,
+    "limits": -1.34
+   }
+  },
+  "mond_efe_E2": {
+   "s_dex": 0.9271,
+   "lnL": -105.98,
+   "n": 85,
+   "split": {
+    "measured_bright": -39.4,
+    "measured_faint": -65.58,
+    "limits": -1.0
+   }
+  }
+ },
+ "delta_lnL_stellar_minus": {
+  "stellar_subhalo_E1": -2.36,
+  "baryonic_rule": 36.39,
+  "moster": 15.09,
+  "rar_disk_a0": 36.16,
+  "rar_published_a0": 33.47,
+  "mond_efe_E2": 66.7
+ },
+ "bootstrap_95": {
+  "stellar_subhalo_E1": [
+   -8.63,
+   3.34
+  ],
+  "baryonic_rule": [
+   23.78,
+   48.77
+  ],
+  "moster": [
+   3.34,
+   25.29
+  ],
+  "rar_disk_a0": [
+   23.63,
+   48.33
+  ],
+  "rar_published_a0": [
+   21.08,
+   45.42
+  ],
+  "mond_efe_E2": [
+   51.02,
+   81.36
+  ]
+ },
+ "primary": {
+  "delta_lnL": 36.16,
+  "interval_95": [
+   23.63,
+   48.33
+  ],
+  "success": true
+ },
+ "sensitivity": {
+  "fitted_offset": {
+   "stellar_rule": {
+    "offset_dex": 0.019,
+    "s_dex": 0.302,
+    "lnL": -39.18
+   },
+   "stellar_subhalo_E1": {
+    "offset_dex": -0.059,
+    "s_dex": 0.284,
+    "lnL": -35.81
+   },
+   "baryonic_rule": {
+    "offset_dex": 0.457,
+    "s_dex": 0.336,
+    "lnL": -43.84
+   },
+   "moster": {
+    "offset_dex": -0.183,
+    "s_dex": 0.357,
+    "lnL": -47.41
+   },
+   "rar_disk_a0": {
+    "offset_dex": 0.433,
+    "s_dex": 0.369,
+    "lnL": -48.44
+   },
+   "rar_published_a0": {
+    "offset_dex": 0.402,
+    "s_dex": 0.369,
+    "lnL": -48.39
+   },
+   "mond_efe_E2": {
+    "offset_dex": 0.718,
+    "s_dex": 0.565,
+    "lnL": -73.39
+   }
+  },
+  "ML_1": {
+   "stellar_rule": {
+    "lnL": -40.32,
+    "s_dex": 0.3069
+   },
+   "stellar_subhalo_E1": {
+    "lnL": -34.02,
+    "s_dex": 0.2726
+   },
+   "baryonic_rule": {
+    "lnL": -88.7,
+    "s_dex": 0.7156
+   },
+   "moster": {
+    "lnL": -51.27,
+    "s_dex": 0.3802
+   },
+   "rar_disk_a0": {
+    "lnL": -88.28,
+    "s_dex": 0.7103
+   },
+   "rar_published_a0": {
+    "lnL": -85.73,
+    "s_dex": 0.683
+   },
+   "mond_efe_E2": {
+    "lnL": -121.59,
+    "s_dex": 1.1591
+   },
+   "delta_lnL_stellar_minus": {
+    "stellar_subhalo_E1": -6.3,
+    "baryonic_rule": 48.38,
+    "moster": 10.95,
+    "rar_disk_a0": 47.96,
+    "rar_published_a0": 45.41,
+    "mond_efe_E2": 81.27
+   }
+  },
+  "ML_3": {
+   "stellar_rule": {
+    "lnL": -40.74,
+    "s_dex": 0.3131
+   },
+   "stellar_subhalo_E1": {
+    "lnL": -40.63,
+    "s_dex": 0.3137
+   },
+   "baryonic_rule": {
+    "lnL": -68.18,
+    "s_dex": 0.5137
+   },
+   "moster": {
+    "lnL": -56.36,
+    "s_dex": 0.4142
+   },
+   "rar_disk_a0": {
+    "lnL": -67.69,
+    "s_dex": 0.5101
+   },
+   "rar_published_a0": {
+    "lnL": -65.05,
+    "s_dex": 0.4877
+   },
+   "mond_efe_E2": {
+    "lnL": -96.08,
+    "s_dex": 0.8011
+   },
+   "delta_lnL_stellar_minus": {
+    "stellar_subhalo_E1": -0.11,
+    "baryonic_rule": 27.44,
+    "moster": 15.62,
+    "rar_disk_a0": 26.95,
+    "rar_published_a0": 24.31,
+    "mond_efe_E2": 55.34
+   }
+  },
+  "major_axis_radii": {
+   "stellar_rule": {
+    "lnL": -36.59,
+    "s_dex": 0.2883
+   },
+   "stellar_subhalo_E1": {
+    "lnL": -36.02,
+    "s_dex": 0.2869
+   },
+   "baryonic_rule": {
+    "lnL": -76.83,
+    "s_dex": 0.596
+   },
+   "moster": {
+    "lnL": -58.83,
+    "s_dex": 0.4288
+   },
+   "rar_disk_a0": {
+    "lnL": -75.67,
+    "s_dex": 0.5839
+   },
+   "rar_published_a0": {
+    "lnL": -72.97,
+    "s_dex": 0.5588
+   },
+   "mond_efe_E2": {
+    "lnL": -111.75,
+    "s_dex": 1.0078
+   },
+   "delta_lnL_stellar_minus": {
+    "stellar_subhalo_E1": -0.57,
+    "baryonic_rule": 40.24,
+    "moster": 22.24,
+    "rar_disk_a0": 39.08,
+    "rar_published_a0": 36.38,
+    "mond_efe_E2": 75.16
+   }
+  },
+  "measured_under_3kms_dropped": {
+   "n": 75,
+   "stellar_rule": {
+    "lnL": -31.58,
+    "s_dex": 0.2853
+   },
+   "stellar_subhalo_E1": {
+    "lnL": -27.22,
+    "s_dex": 0.2658
+   },
+   "baryonic_rule": {
+    "lnL": -68.67,
+    "s_dex": 0.6136
+   },
+   "moster": {
+    "lnL": -40.58,
+    "s_dex": 0.3555
+   },
+   "rar_disk_a0": {
+    "lnL": -68.12,
+    "s_dex": 0.6078
+   },
+   "rar_published_a0": {
+    "lnL": -65.75,
+    "s_dex": 0.5815
+   },
+   "mond_efe_E2": {
+    "lnL": -93.65,
+    "s_dex": 0.9536
+   },
+   "delta_lnL_stellar_minus": {
+    "stellar_subhalo_E1": -4.36,
+    "baryonic_rule": 37.09,
+    "moster": 9.0,
+    "rar_disk_a0": 36.54,
+    "rar_published_a0": 34.17,
+    "mond_efe_E2": 62.07
+   }
+  },
+  "no_measurement_errors": {
+   "stellar_rule": {
+    "lnL": -41.62,
+    "s_dex": 0.3978
+   },
+   "stellar_subhalo_E1": {
+    "lnL": -38.43,
+    "s_dex": 0.3767
+   },
+   "baryonic_rule": {
+    "lnL": -76.41,
+    "s_dex": 0.6485
+   },
+   "moster": {
+    "lnL": -53.9,
+    "s_dex": 0.4579
+   },
+   "rar_disk_a0": {
+    "lnL": -76.27,
+    "s_dex": 0.6478
+   },
+   "rar_published_a0": {
+    "lnL": -73.67,
+    "s_dex": 0.6255
+   },
+   "mond_efe_E2": {
+    "lnL": -106.22,
+    "s_dex": 0.9711
+   },
+   "delta_lnL_stellar_minus": {
+    "stellar_subhalo_E1": -3.19,
+    "baryonic_rule": 34.79,
+    "moster": 12.28,
+    "rar_disk_a0": 34.65,
+    "rar_published_a0": 32.05,
+    "mond_efe_E2": 64.6
+   }
+  }
+ },
+ "forecast_ranges": {
+  "stellar_factor_68": 1.416,
+  "mond_E2_factor_68": 2.908,
+  "median_z_paper_table": 0.38,
+  "combined_z_paper_table": 1.41,
+  "file_sha256": "17186d131f670a87fc78c2bb75809438ab364fcbf9d4d9186e69c7495d314172"
+ },
+ "per_dwarf": {
+  "Andromeda I": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.993,
+   "err_dex": 0.163,
+   "stellar_rule": -0.162,
+   "stellar_subhalo_E1": -0.313,
+   "baryonic_rule": 0.192,
+   "moster": -0.328,
+   "rar_disk_a0": 0.175,
+   "rar_published_a0": 0.145,
+   "mond_efe_E2": 0.59
+  },
+  "Andromeda III": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.628,
+   "err_dex": 0.14,
+   "stellar_rule": 0.147,
+   "stellar_subhalo_E1": 0.029,
+   "baryonic_rule": 0.483,
+   "moster": 0.022,
+   "rar_disk_a0": 0.465,
+   "rar_published_a0": 0.434,
+   "mond_efe_E2": 0.525
+  },
+  "Andromeda V": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.576,
+   "err_dex": 0.103,
+   "stellar_rule": 0.248,
+   "stellar_subhalo_E1": 0.157,
+   "baryonic_rule": 0.619,
+   "moster": 0.095,
+   "rar_disk_a0": 0.611,
+   "rar_published_a0": 0.58,
+   "mond_efe_E2": 0.653
+  },
+  "Andromeda VI": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.497,
+   "err_dex": 0.092,
+   "stellar_rule": 0.173,
+   "stellar_subhalo_E1": 0.173,
+   "baryonic_rule": 0.438,
+   "moster": 0.091,
+   "rar_disk_a0": 0.398,
+   "rar_published_a0": 0.368,
+   "mond_efe_E2": 0.415
+  },
+  "Andromeda VII": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.799,
+   "err_dex": 0.069,
+   "stellar_rule": -0.136,
+   "stellar_subhalo_E1": -0.142,
+   "baryonic_rule": 0.116,
+   "moster": -0.218,
+   "rar_disk_a0": 0.088,
+   "rar_published_a0": 0.058,
+   "mond_efe_E2": 0.106
+  },
+  "Andromeda X": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.769,
+   "err_dex": 0.23,
+   "stellar_rule": 0.138,
+   "stellar_subhalo_E1": 0.088,
+   "baryonic_rule": 0.577,
+   "moster": -0.049,
+   "rar_disk_a0": 0.585,
+   "rar_published_a0": 0.554,
+   "mond_efe_E2": 0.617
+  },
+  "Andromeda XIV": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.16,
+   "err_dex": 0.178,
+   "stellar_rule": -0.27,
+   "stellar_subhalo_E1": -0.319,
+   "baryonic_rule": 0.154,
+   "moster": -0.459,
+   "rar_disk_a0": 0.152,
+   "rar_published_a0": 0.121,
+   "mond_efe_E2": 0.154
+  },
+  "Andromeda XV": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.323,
+   "err_dex": 0.307,
+   "stellar_rule": -0.45,
+   "stellar_subhalo_E1": -0.555,
+   "baryonic_rule": -0.039,
+   "moster": -0.626,
+   "rar_disk_a0": -0.039,
+   "rar_published_a0": -0.07,
+   "mond_efe_E2": 0.155
+  },
+  "Andromeda XVI": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.079,
+   "err_dex": 0.665,
+   "stellar_rule": -0.254,
+   "stellar_subhalo_E1": -0.254,
+   "baryonic_rule": 0.11,
+   "moster": -0.389,
+   "rar_disk_a0": 0.094,
+   "rar_published_a0": 0.063,
+   "mond_efe_E2": 0.099
+  },
+  "Andromeda XVII": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.546,
+   "err_dex": 0.623,
+   "stellar_rule": -0.643,
+   "stellar_subhalo_E1": -0.815,
+   "baryonic_rule": -0.207,
+   "moster": -0.833,
+   "rar_disk_a0": -0.203,
+   "rar_published_a0": -0.234,
+   "mond_efe_E2": 0.356
+  },
+  "Andromeda XIX": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.685,
+   "err_dex": 0.2,
+   "stellar_rule": -0.118,
+   "stellar_subhalo_E1": -0.15,
+   "baryonic_rule": 0.507,
+   "moster": -0.706,
+   "rar_disk_a0": 0.213,
+   "rar_published_a0": 0.182,
+   "mond_efe_E2": 0.931
+  },
+  "Andromeda XX": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.295,
+   "err_dex": 0.429,
+   "stellar_rule": 0.539,
+   "stellar_subhalo_E1": 0.454,
+   "baryonic_rule": 0.893,
+   "moster": 0.412,
+   "rar_disk_a0": 0.86,
+   "rar_published_a0": 0.829,
+   "mond_efe_E2": 0.866
+  },
+  "Andromeda XXI": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.43,
+   "err_dex": 0.155,
+   "stellar_rule": -0.265,
+   "stellar_subhalo_E1": -0.319,
+   "baryonic_rule": 0.309,
+   "moster": -0.627,
+   "rar_disk_a0": 0.22,
+   "rar_published_a0": 0.188,
+   "mond_efe_E2": 0.66
+  },
+  "Andromeda XXII": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.321,
+   "err_dex": 0.531,
+   "stellar_rule": -0.404,
+   "stellar_subhalo_E1": -0.404,
+   "baryonic_rule": 0.037,
+   "moster": -0.587,
+   "rar_disk_a0": 0.049,
+   "rar_published_a0": 0.018,
+   "mond_efe_E2": 0.05
+  },
+  "Andromeda XXIII": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.424,
+   "err_dex": 0.183,
+   "stellar_rule": -0.297,
+   "stellar_subhalo_E1": -0.348,
+   "baryonic_rule": 0.232,
+   "moster": -0.636,
+   "rar_disk_a0": 0.149,
+   "rar_published_a0": 0.118,
+   "mond_efe_E2": 0.496
+  },
+  "Andromeda XXV": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.75,
+   "err_dex": 0.275,
+   "stellar_rule": -0.714,
+   "stellar_subhalo_E1": -0.807,
+   "baryonic_rule": -0.205,
+   "moster": -0.997,
+   "rar_disk_a0": -0.244,
+   "rar_published_a0": -0.275,
+   "mond_efe_E2": 0.216
+  },
+  "Andromeda XXVI": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.485,
+   "err_dex": 0.363,
+   "stellar_rule": 0.547,
+   "stellar_subhalo_E1": 0.453,
+   "baryonic_rule": 1.099,
+   "moster": 0.289,
+   "rar_disk_a0": 1.11,
+   "rar_published_a0": 1.078,
+   "mond_efe_E2": 1.571
+  },
+  "Andromeda XXIX": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.009,
+   "err_dex": 0.185,
+   "stellar_rule": -0.118,
+   "stellar_subhalo_E1": -0.148,
+   "baryonic_rule": 0.308,
+   "moster": -0.304,
+   "rar_disk_a0": 0.31,
+   "rar_published_a0": 0.279,
+   "mond_efe_E2": 0.312
+  },
+  "Antlia II": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.96,
+   "err_dex": 0.07,
+   "stellar_rule": -0.252,
+   "stellar_subhalo_E1": -0.271,
+   "baryonic_rule": 0.411,
+   "moster": -0.921,
+   "rar_disk_a0": 0.047,
+   "rar_published_a0": 0.016,
+   "mond_efe_E2": 0.706
+  },
+  "Aquarius II": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.885,
+   "err_dex": 0.288,
+   "stellar_rule": 0.252,
+   "stellar_subhalo_E1": 0.175,
+   "baryonic_rule": 0.906,
+   "moster": -0.064,
+   "rar_disk_a0": 0.911,
+   "rar_published_a0": 0.879,
+   "mond_efe_E2": 1.436
+  },
+  "Bootes I": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.139,
+   "err_dex": 0.079,
+   "stellar_rule": -0.118,
+   "stellar_subhalo_E1": -0.245,
+   "baryonic_rule": 0.424,
+   "moster": -0.37,
+   "rar_disk_a0": 0.436,
+   "rar_published_a0": 0.405,
+   "mond_efe_E2": 0.962
+  },
+  "Bootes II": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.089,
+   "err_dex": 0.317,
+   "stellar_rule": -0.089,
+   "stellar_subhalo_E1": -0.294,
+   "baryonic_rule": 0.382,
+   "moster": -0.279,
+   "rar_disk_a0": 0.414,
+   "rar_published_a0": 0.383,
+   "mond_efe_E2": 1.078
+  },
+  "Canes Venatici I": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.883,
+   "err_dex": 0.053,
+   "stellar_rule": 0.023,
+   "stellar_subhalo_E1": 0.022,
+   "baryonic_rule": 0.458,
+   "moster": -0.176,
+   "rar_disk_a0": 0.455,
+   "rar_published_a0": 0.424,
+   "mond_efe_E2": 0.456
+  },
+  "Canes Venatici II": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.425,
+   "err_dex": 0.2,
+   "stellar_rule": 0.465,
+   "stellar_subhalo_E1": 0.427,
+   "baryonic_rule": 0.855,
+   "moster": 0.318,
+   "rar_disk_a0": 0.842,
+   "rar_published_a0": 0.811,
+   "mond_efe_E2": 0.845
+  },
+  "Carina": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.893,
+   "err_dex": 0.16,
+   "stellar_rule": -0.128,
+   "stellar_subhalo_E1": -0.208,
+   "baryonic_rule": 0.201,
+   "moster": -0.247,
+   "rar_disk_a0": 0.178,
+   "rar_published_a0": 0.147,
+   "mond_efe_E2": 0.187
+  },
+  "Carina II": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.958,
+   "err_dex": 0.259,
+   "stellar_rule": 0.042,
+   "stellar_subhalo_E1": -0.15,
+   "baryonic_rule": 0.552,
+   "moster": -0.175,
+   "rar_disk_a0": 0.585,
+   "rar_published_a0": 0.554,
+   "mond_efe_E2": 1.301
+  },
+  "Carina III": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -9.931,
+   "err_dex": 0.519,
+   "stellar_rule": 1.044,
+   "stellar_subhalo_E1": 0.797,
+   "baryonic_rule": 1.46,
+   "moster": 0.883,
+   "rar_disk_a0": 1.45,
+   "rar_published_a0": 1.419,
+   "mond_efe_E2": 2.13
+  },
+  "Coma Berenices": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.832,
+   "err_dex": 0.14,
+   "stellar_rule": 0.134,
+   "stellar_subhalo_E1": -0.055,
+   "baryonic_rule": 0.596,
+   "moster": -0.054,
+   "rar_disk_a0": 0.621,
+   "rar_published_a0": 0.59,
+   "mond_efe_E2": 1.196
+  },
+  "Crater II": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -12.422,
+   "err_dex": 0.139,
+   "stellar_rule": -0.926,
+   "stellar_subhalo_E1": -0.959,
+   "baryonic_rule": -0.211,
+   "moster": -1.493,
+   "rar_disk_a0": -0.458,
+   "rar_published_a0": -0.49,
+   "mond_efe_E2": 0.192
+  },
+  "Draco": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.463,
+   "err_dex": 0.025,
+   "stellar_rule": 0.308,
+   "stellar_subhalo_E1": 0.195,
+   "baryonic_rule": 0.638,
+   "moster": 0.19,
+   "rar_disk_a0": 0.611,
+   "rar_published_a0": 0.58,
+   "mond_efe_E2": 0.62
+  },
+  "Fornax": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.814,
+   "err_dex": 0.017,
+   "stellar_rule": -0.257,
+   "stellar_subhalo_E1": -0.299,
+   "baryonic_rule": -0.057,
+   "moster": -0.296,
+   "rar_disk_a0": -0.108,
+   "rar_published_a0": -0.137,
+   "mond_efe_E2": -0.079
+  },
+  "Hercules": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.507,
+   "err_dex": 0.251,
+   "stellar_rule": -0.536,
+   "stellar_subhalo_E1": -0.601,
+   "baryonic_rule": -0.044,
+   "moster": -0.749,
+   "rar_disk_a0": -0.023,
+   "rar_published_a0": -0.054,
+   "mond_efe_E2": 0.123
+  },
+  "Hydrus I": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.994,
+   "err_dex": 0.158,
+   "stellar_rule": -0.07,
+   "stellar_subhalo_E1": -0.315,
+   "baryonic_rule": 0.349,
+   "moster": -0.234,
+   "rar_disk_a0": 0.353,
+   "rar_published_a0": 0.322,
+   "mond_efe_E2": 1.054
+  },
+  "Leo I": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.561,
+   "err_dex": 0.043,
+   "stellar_rule": -0.085,
+   "stellar_subhalo_E1": -0.085,
+   "baryonic_rule": 0.08,
+   "moster": -0.098,
+   "rar_disk_a0": -0.041,
+   "rar_published_a0": -0.069,
+   "mond_efe_E2": 0.006
+  },
+  "Leo II": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.553,
+   "err_dex": 0.045,
+   "stellar_rule": 0.106,
+   "stellar_subhalo_E1": 0.106,
+   "baryonic_rule": 0.357,
+   "moster": 0.043,
+   "rar_disk_a0": 0.27,
+   "rar_published_a0": 0.241,
+   "mond_efe_E2": 0.291
+  },
+  "Leo IV": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.108,
+   "err_dex": 0.211,
+   "stellar_rule": -0.086,
+   "stellar_subhalo_E1": -0.127,
+   "baryonic_rule": 0.452,
+   "moster": -0.324,
+   "rar_disk_a0": 0.481,
+   "rar_published_a0": 0.45,
+   "mond_efe_E2": 0.643
+  },
+  "Leo V": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.629,
+   "err_dex": 0.394,
+   "stellar_rule": 0.265,
+   "stellar_subhalo_E1": 0.233,
+   "baryonic_rule": 0.639,
+   "moster": 0.128,
+   "rar_disk_a0": 0.605,
+   "rar_published_a0": 0.574,
+   "mond_efe_E2": 0.609
+  },
+  "Pisces II": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.747,
+   "err_dex": 0.389,
+   "stellar_rule": 0.225,
+   "stellar_subhalo_E1": 0.203,
+   "baryonic_rule": 0.693,
+   "moster": 0.033,
+   "rar_disk_a0": 0.72,
+   "rar_published_a0": 0.689,
+   "mond_efe_E2": 0.719
+  },
+  "Sculptor": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.558,
+   "err_dex": 0.104,
+   "stellar_rule": 0.043,
+   "stellar_subhalo_E1": -0.063,
+   "baryonic_rule": 0.267,
+   "moster": -0.004,
+   "rar_disk_a0": 0.181,
+   "rar_published_a0": 0.151,
+   "mond_efe_E2": 0.207
+  },
+  "Segue 1": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.23,
+   "err_dex": 0.213,
+   "stellar_rule": 0.827,
+   "stellar_subhalo_E1": 0.58,
+   "baryonic_rule": 1.326,
+   "moster": 0.623,
+   "rar_disk_a0": 1.374,
+   "rar_published_a0": 1.343,
+   "mond_efe_E2": 2.29
+  },
+  "Sextans": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -11.028,
+   "err_dex": 0.145,
+   "stellar_rule": 0.004,
+   "stellar_subhalo_E1": -0.076,
+   "baryonic_rule": 0.519,
+   "moster": -0.276,
+   "rar_disk_a0": 0.487,
+   "rar_published_a0": 0.455,
+   "mond_efe_E2": 0.81
+  },
+  "Ursa Major I": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.604,
+   "err_dex": 0.141,
+   "stellar_rule": 0.498,
+   "stellar_subhalo_E1": 0.42,
+   "baryonic_rule": 1.116,
+   "moster": 0.199,
+   "rar_disk_a0": 1.12,
+   "rar_published_a0": 1.088,
+   "mond_efe_E2": 1.587
+  },
+  "Ursa Major II": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.503,
+   "err_dex": 0.143,
+   "stellar_rule": 0.551,
+   "stellar_subhalo_E1": 0.374,
+   "baryonic_rule": 1.121,
+   "moster": 0.297,
+   "rar_disk_a0": 1.152,
+   "rar_published_a0": 1.12,
+   "mond_efe_E2": 1.949
+  },
+  "Ursa Minor": {
+   "source": "original_44",
+   "limit": false,
+   "log_g": -10.641,
+   "err_dex": 0.034,
+   "stellar_rule": 0.185,
+   "stellar_subhalo_E1": 0.064,
+   "baryonic_rule": 0.559,
+   "moster": 0.034,
+   "rar_disk_a0": 0.552,
+   "rar_published_a0": 0.521,
+   "mond_efe_E2": 0.657
+  },
+  "Centaurus I": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.742,
+   "err_dex": 0.126,
+   "stellar_rule": 0.175,
+   "stellar_subhalo_E1": 0.094,
+   "baryonic_rule": 0.6,
+   "moster": 0.006,
+   "rar_disk_a0": 0.609,
+   "rar_published_a0": 0.578,
+   "mond_efe_E2": 0.666
+  },
+  "Columba I": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.575,
+   "err_dex": 0.339,
+   "stellar_rule": 0.515,
+   "stellar_subhalo_E1": 0.5,
+   "baryonic_rule": 1.122,
+   "moster": 0.237,
+   "rar_disk_a0": 1.148,
+   "rar_published_a0": 1.117,
+   "mond_efe_E2": 1.352
+  },
+  "Eridanus II": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.712,
+   "err_dex": 0.135,
+   "stellar_rule": 0.218,
+   "stellar_subhalo_E1": 0.218,
+   "baryonic_rule": 0.677,
+   "moster": 0.017,
+   "rar_disk_a0": 0.687,
+   "rar_published_a0": 0.656,
+   "mond_efe_E2": 0.688
+  },
+  "Eridanus IV": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.316,
+   "err_dex": 0.166,
+   "stellar_rule": 0.719,
+   "stellar_subhalo_E1": 0.594,
+   "baryonic_rule": 1.254,
+   "moster": 0.491,
+   "rar_disk_a0": 1.297,
+   "rar_published_a0": 1.266,
+   "mond_efe_E2": 1.783
+  },
+  "Grus I": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -11.396,
+   "err_dex": 0.373,
+   "stellar_rule": -0.257,
+   "stellar_subhalo_E1": -0.319,
+   "baryonic_rule": 0.399,
+   "moster": -0.571,
+   "rar_disk_a0": 0.408,
+   "rar_published_a0": 0.377,
+   "mond_efe_E2": 0.875
+  },
+  "Horologium I": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.257,
+   "err_dex": 0.331,
+   "stellar_rule": 0.702,
+   "stellar_subhalo_E1": 0.573,
+   "baryonic_rule": 1.131,
+   "moster": 0.535,
+   "rar_disk_a0": 1.138,
+   "rar_published_a0": 1.107,
+   "mond_efe_E2": 1.393
+  },
+  "Leo VI": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -11.166,
+   "err_dex": 0.474,
+   "stellar_rule": -0.036,
+   "stellar_subhalo_E1": -0.109,
+   "baryonic_rule": 0.611,
+   "moster": -0.336,
+   "rar_disk_a0": 0.636,
+   "rar_published_a0": 0.605,
+   "mond_efe_E2": 1.134
+  },
+  "Pegasus III": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -11.17,
+   "err_dex": 0.346,
+   "stellar_rule": -0.116,
+   "stellar_subhalo_E1": -0.116,
+   "baryonic_rule": 0.45,
+   "moster": -0.367,
+   "rar_disk_a0": 0.485,
+   "rar_published_a0": 0.454,
+   "mond_efe_E2": 0.566
+  },
+  "Pegasus IV": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.712,
+   "err_dex": 0.277,
+   "stellar_rule": 0.216,
+   "stellar_subhalo_E1": 0.102,
+   "baryonic_rule": 0.629,
+   "moster": 0.057,
+   "rar_disk_a0": 0.627,
+   "rar_published_a0": 0.596,
+   "mond_efe_E2": 0.78
+  },
+  "Pictor II": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.552,
+   "err_dex": 0.257,
+   "stellar_rule": 0.467,
+   "stellar_subhalo_E1": 0.277,
+   "baryonic_rule": 0.955,
+   "moster": 0.267,
+   "rar_disk_a0": 0.994,
+   "rar_published_a0": 0.963,
+   "mond_efe_E2": 1.637
+  },
+  "Reticulum II": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.586,
+   "err_dex": 0.215,
+   "stellar_rule": 0.416,
+   "stellar_subhalo_E1": 0.194,
+   "baryonic_rule": 0.894,
+   "moster": 0.221,
+   "rar_disk_a0": 0.928,
+   "rar_published_a0": 0.897,
+   "mond_efe_E2": 1.682
+  },
+  "Tucana II": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -11.186,
+   "err_dex": 0.226,
+   "stellar_rule": 0.12,
+   "stellar_subhalo_E1": 0.002,
+   "baryonic_rule": 0.923,
+   "moster": -0.313,
+   "rar_disk_a0": 0.849,
+   "rar_published_a0": 0.818,
+   "mond_efe_E2": 1.914
+  },
+  "Tucana IV": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.862,
+   "err_dex": 0.282,
+   "stellar_rule": 0.367,
+   "stellar_subhalo_E1": 0.217,
+   "baryonic_rule": 1.117,
+   "moster": 0.0,
+   "rar_disk_a0": 1.107,
+   "rar_published_a0": 1.075,
+   "mond_efe_E2": 2.176
+  },
+  "Tucana V": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -11.337,
+   "err_dex": 0.558,
+   "stellar_rule": -0.242,
+   "stellar_subhalo_E1": -0.419,
+   "baryonic_rule": 0.309,
+   "moster": -0.473,
+   "rar_disk_a0": 0.376,
+   "rar_published_a0": 0.345,
+   "mond_efe_E2": 1.127
+  },
+  "Willman 1": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.094,
+   "err_dex": 0.275,
+   "stellar_rule": 0.874,
+   "stellar_subhalo_E1": 0.669,
+   "baryonic_rule": 1.285,
+   "moster": 0.716,
+   "rar_disk_a0": 1.271,
+   "rar_published_a0": 1.24,
+   "mond_efe_E2": 1.767
+  },
+  "Andromeda II": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -11.327,
+   "err_dex": 0.123,
+   "stellar_rule": -0.468,
+   "stellar_subhalo_E1": -0.503,
+   "baryonic_rule": -0.108,
+   "moster": -0.65,
+   "rar_disk_a0": -0.131,
+   "rar_published_a0": -0.162,
+   "mond_efe_E2": -0.126
+  },
+  "Andromeda IX": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.657,
+   "err_dex": 0.169,
+   "stellar_rule": 0.315,
+   "stellar_subhalo_E1": 0.211,
+   "baryonic_rule": 0.797,
+   "moster": 0.074,
+   "rar_disk_a0": 0.783,
+   "rar_published_a0": 0.752,
+   "mond_efe_E2": 1.188
+  },
+  "Andromeda XI": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.412,
+   "err_dex": 0.42,
+   "stellar_rule": 0.487,
+   "stellar_subhalo_E1": 0.381,
+   "baryonic_rule": 0.91,
+   "moster": 0.316,
+   "rar_disk_a0": 0.918,
+   "rar_published_a0": 0.887,
+   "mond_efe_E2": 1.121
+  },
+  "Andromeda XIII": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.664,
+   "err_dex": 0.372,
+   "stellar_rule": 0.206,
+   "stellar_subhalo_E1": 0.123,
+   "baryonic_rule": 0.605,
+   "moster": 0.049,
+   "rar_disk_a0": 0.604,
+   "rar_published_a0": 0.573,
+   "mond_efe_E2": 0.66
+  },
+  "Andromeda XXVII": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.309,
+   "err_dex": 0.242,
+   "stellar_rule": 0.695,
+   "stellar_subhalo_E1": 0.585,
+   "baryonic_rule": 1.207,
+   "moster": 0.438,
+   "rar_disk_a0": 1.196,
+   "rar_published_a0": 1.165,
+   "mond_efe_E2": 1.685
+  },
+  "Andromeda XXVIII": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -11.113,
+   "err_dex": 0.285,
+   "stellar_rule": -0.273,
+   "stellar_subhalo_E1": -0.273,
+   "baryonic_rule": 0.113,
+   "moster": -0.429,
+   "rar_disk_a0": 0.108,
+   "rar_published_a0": 0.077,
+   "mond_efe_E2": 0.112
+  },
+  "Cassiopeia II": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.254,
+   "err_dex": 0.462,
+   "stellar_rule": 0.617,
+   "stellar_subhalo_E1": 0.614,
+   "baryonic_rule": 1.025,
+   "moster": 0.448,
+   "rar_disk_a0": 1.027,
+   "rar_published_a0": 0.996,
+   "mond_efe_E2": 1.03
+  },
+  "Cassiopeia III": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -11.254,
+   "err_dex": 0.064,
+   "stellar_rule": -0.492,
+   "stellar_subhalo_E1": -0.544,
+   "baryonic_rule": -0.189,
+   "moster": -0.622,
+   "rar_disk_a0": -0.208,
+   "rar_published_a0": -0.238,
+   "mond_efe_E2": -0.198
+  },
+  "Lacerta I": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -10.828,
+   "err_dex": 0.077,
+   "stellar_rule": -0.083,
+   "stellar_subhalo_E1": -0.083,
+   "baryonic_rule": 0.227,
+   "moster": -0.202,
+   "rar_disk_a0": 0.207,
+   "rar_published_a0": 0.177,
+   "mond_efe_E2": 0.218
+  },
+  "Perseus I": {
+   "source": "protocol_2",
+   "limit": false,
+   "log_g": -11.326,
+   "err_dex": 0.807,
+   "stellar_rule": -0.481,
+   "stellar_subhalo_E1": -0.481,
+   "baryonic_rule": -0.093,
+   "moster": -0.643,
+   "rar_disk_a0": -0.098,
+   "rar_published_a0": -0.129,
+   "mond_efe_E2": -0.094
+  },
+  "Cetus": {
+   "source": "protocol_3",
+   "limit": false,
+   "log_g": -11.058,
+   "err_dex": 0.107,
+   "stellar_rule": -0.285,
+   "stellar_subhalo_E1": -0.285,
+   "baryonic_rule": 0.042,
+   "moster": -0.419,
+   "rar_disk_a0": 0.025,
+   "rar_published_a0": -0.005,
+   "mond_efe_E2": 0.034
+  },
+  "Phoenix": {
+   "source": "protocol_3",
+   "limit": false,
+   "log_g": -10.584,
+   "err_dex": 0.066,
+   "stellar_rule": 0.131,
+   "stellar_subhalo_E1": 0.131,
+   "baryonic_rule": 0.424,
+   "moster": 0.036,
+   "rar_disk_a0": 0.383,
+   "rar_published_a0": 0.353,
+   "mond_efe_E2": 0.397
+  },
+  "Tucana": {
+   "source": "protocol_3",
+   "limit": false,
+   "log_g": -10.861,
+   "err_dex": 0.218,
+   "stellar_rule": -0.147,
+   "stellar_subhalo_E1": -0.147,
+   "baryonic_rule": 0.144,
+   "moster": -0.239,
+   "rar_disk_a0": 0.097,
+   "rar_published_a0": 0.067,
+   "mond_efe_E2": 0.111
+  },
+  "UGC 4879": {
+   "source": "protocol_3",
+   "limit": false,
+   "log_g": -10.652,
+   "err_dex": 0.122,
+   "stellar_rule": -0.16,
+   "stellar_subhalo_E1": -0.16,
+   "baryonic_rule": 0.013,
+   "moster": -0.177,
+   "rar_disk_a0": -0.09,
+   "rar_published_a0": -0.118,
+   "mond_efe_E2": -0.048
+  },
+  "KDG 64": {
+   "source": "protocol_3",
+   "limit": false,
+   "log_g": -10.676,
+   "err_dex": 0.013,
+   "stellar_rule": -0.018,
+   "stellar_subhalo_E1": -0.018,
+   "baryonic_rule": 0.224,
+   "moster": -0.098,
+   "rar_disk_a0": 0.198,
+   "rar_published_a0": 0.168,
+   "mond_efe_E2": 0.216
+  },
+  "Andromeda XVIII": {
+   "source": "lvdb_check",
+   "limit": false,
+   "log_g": -10.518,
+   "err_dex": 0.107,
+   "stellar_rule": 0.264,
+   "stellar_subhalo_E1": 0.264,
+   "baryonic_rule": 0.604,
+   "moster": 0.137,
+   "rar_disk_a0": 0.585,
+   "rar_published_a0": 0.555,
+   "mond_efe_E2": 0.593
+  },
+  "Aquarius III": {
+   "source": "protocol_3",
+   "limit": true,
+   "log_g": -10.609,
+   "err_dex": 0.0,
+   "stellar_rule": 0.443,
+   "stellar_subhalo_E1": 0.326,
+   "baryonic_rule": 0.973,
+   "moster": 0.22,
+   "rar_disk_a0": 1.025,
+   "rar_published_a0": 0.994,
+   "mond_efe_E2": 1.48
+  },
+  "Draco II": {
+   "source": "protocol_3",
+   "limit": true,
+   "log_g": -10.514,
+   "err_dex": 0.0,
+   "stellar_rule": 0.557,
+   "stellar_subhalo_E1": 0.292,
+   "baryonic_rule": 1.057,
+   "moster": 0.352,
+   "rar_disk_a0": 1.107,
+   "rar_published_a0": 1.075,
+   "mond_efe_E2": 2.105
+  },
+  "Grus II": {
+   "source": "protocol_3",
+   "limit": true,
+   "log_g": -11.509,
+   "err_dex": 0.0,
+   "stellar_rule": -0.426,
+   "stellar_subhalo_E1": -0.58,
+   "baryonic_rule": 0.174,
+   "moster": -0.699,
+   "rar_disk_a0": 0.202,
+   "rar_published_a0": 0.17,
+   "mond_efe_E2": 0.961
+  },
+  "Hydra II": {
+   "source": "protocol_3",
+   "limit": true,
+   "log_g": -10.663,
+   "err_dex": 0.0,
+   "stellar_rule": 0.239,
+   "stellar_subhalo_E1": 0.191,
+   "baryonic_rule": 0.643,
+   "moster": 0.085,
+   "rar_disk_a0": 0.639,
+   "rar_published_a0": 0.608,
+   "mond_efe_E2": 0.642
+  },
+  "Phoenix II": {
+   "source": "protocol_3",
+   "limit": true,
+   "log_g": -8.914,
+   "err_dex": 0.0,
+   "stellar_rule": 2.085,
+   "stellar_subhalo_E1": 1.956,
+   "baryonic_rule": 2.543,
+   "moster": 1.902,
+   "rar_disk_a0": 2.568,
+   "rar_published_a0": 2.536,
+   "mond_efe_E2": 2.903
+  },
+  "Reticulum III": {
+   "source": "protocol_3",
+   "limit": true,
+   "log_g": -10.093,
+   "err_dex": 0.0,
+   "stellar_rule": 0.986,
+   "stellar_subhalo_E1": 0.884,
+   "baryonic_rule": 1.571,
+   "moster": 0.729,
+   "rar_disk_a0": 1.616,
+   "rar_published_a0": 1.584,
+   "mond_efe_E2": 2.115
+  },
+  "Segue 2": {
+   "source": "protocol_3",
+   "limit": true,
+   "log_g": -11.054,
+   "err_dex": 0.0,
+   "stellar_rule": 0.039,
+   "stellar_subhalo_E1": -0.152,
+   "baryonic_rule": 0.614,
+   "moster": -0.206,
+   "rar_disk_a0": 0.676,
+   "rar_published_a0": 0.644,
+   "mond_efe_E2": 1.53
+  },
+  "Triangulum II": {
+   "source": "protocol_3",
+   "limit": true,
+   "log_g": -10.284,
+   "err_dex": 0.0,
+   "stellar_rule": 0.757,
+   "stellar_subhalo_E1": 0.53,
+   "baryonic_rule": 1.231,
+   "moster": 0.566,
+   "rar_disk_a0": 1.264,
+   "rar_published_a0": 1.233,
+   "mond_efe_E2": 2.028
+  },
+  "Andromeda XII": {
+   "source": "protocol_3",
+   "limit": true,
+   "log_g": -11.282,
+   "err_dex": 0.0,
+   "stellar_rule": -0.233,
+   "stellar_subhalo_E1": -0.317,
+   "baryonic_rule": 0.329,
+   "moster": -0.51,
+   "rar_disk_a0": 0.325,
+   "rar_published_a0": 0.293,
+   "mond_efe_E2": 0.776
+  },
+  "Andromeda XXIV": {
+   "source": "protocol_3",
+   "limit": true,
+   "log_g": -11.016,
+   "err_dex": 0.0,
+   "stellar_rule": 0.099,
+   "stellar_subhalo_E1": 0.078,
+   "baryonic_rule": 0.687,
+   "moster": -0.229,
+   "rar_disk_a0": 0.64,
+   "rar_published_a0": 0.608,
+   "mond_efe_E2": 0.881
+  }
+ }
+}

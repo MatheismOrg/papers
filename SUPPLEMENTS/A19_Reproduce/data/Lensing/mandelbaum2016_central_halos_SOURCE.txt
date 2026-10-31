@@ -1,0 +1,9 @@
+mandelbaum2016_central_halos.csv: Mandelbaum, R., Wang, W., Zu, Y., White, M., Henriques, B., & More, S. (2016),
+Strong bimodality in the host halo mass of central galaxies from galaxy-galaxy lensing, MNRAS 457, 3200,
+doi:10.1093/mnras/stw188, arXiv:1509.06762. Halo masses: Appendix B table of best-fitting mean halo masses,
+log10(<M200m>/h^-1 M_sun), 200 times the mean matter density, 16th and 84th percentile errors; red and blue split
+at rest-frame g-r = 0.8 (K-corrected to z = 0.1). N_gal, effective (lensing-weighted) stellar masses from the VAGC
+(the paper's canonical masses) and from MPA/JHU, and effective lens redshifts: Table 1. Stellar masses in M_sun
+with h = 0.673 and a Chabrier IMF; halo masses with Planck 2014 cosmology (Omega_m = 0.315). Transcribed
+31 October 2026 (SA73, turn 7); halo masses agree between an extraction of the arXiv PDF and of the ar5iv HTML,
+which also supplied the errors the PDF extraction could not read (red 10.4-10.7; blue above 11.4).

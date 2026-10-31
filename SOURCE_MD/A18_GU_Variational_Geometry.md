@@ -1,4 +1,4 @@
-# 14 to Infinite Dimensions from a 4D Metric: Can Geometric Harmonics Explain Particles?
+# Beyond Geometric Unity: Infinite Dimensions from One 4D Metric as a Home for Particles
 
 ## Abstract
 

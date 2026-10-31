@@ -1,0 +1,72 @@
+{
+ "n": 31,
+ "by_set": {
+  "original_44": 25,
+  "out_of_sample_25": 6
+ },
+ "residual_vs_logL": [
+  -0.421,
+  0.018
+ ],
+ "residual_vs_log_rperi": [
+  -0.1,
+  0.593
+ ],
+ "log_rperi_vs_logL": [
+  0.337,
+  0.063
+ ],
+ "partial_residual_rperi_given_L": [
+  0.05,
+  0.791
+ ],
+ "partial_residual_L_given_rperi": [
+  -0.414,
+  0.021
+ ],
+ "residual_vs_log_dgc": [
+  -0.296,
+  0.105
+ ],
+ "log_dgc_vs_logL": [
+  0.502,
+  0.004
+ ],
+ "partial_residual_dgc_given_L": [
+  -0.108,
+  0.562
+ ],
+ "dwarfs": [
+  "antlia_2",
+  "bootes_1",
+  "canes_venatici_1",
+  "canes_venatici_2",
+  "carina_1",
+  "columba_1",
+  "coma_berenices_1",
+  "crater_2",
+  "draco_1",
+  "eridanus_2",
+  "fornax_1",
+  "grus_1",
+  "hercules_1",
+  "horologium_1",
+  "hydrus_1",
+  "leo_1",
+  "leo_2",
+  "leo_4",
+  "leo_5",
+  "pegasus_3",
+  "reticulum_2",
+  "sculptor_1",
+  "segue_1",
+  "sextans_1",
+  "tucana_2",
+  "tucana_4",
+  "tucana_5",
+  "ursa_major_1",
+  "ursa_major_2",
+  "ursa_minor_1",
+  "willman_1"
+ ]
+}

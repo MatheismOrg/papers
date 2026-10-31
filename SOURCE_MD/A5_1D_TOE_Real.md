@@ -1,4 +1,4 @@
-# Quantum Gravity in Fewer Effective Dimensions: What the Reductions Explain
+# Why Spacetime Looks Two-Dimensional at the Smallest Scales: Dimensional Reduction in Quantum Gravity
 
 ## Abstract
 

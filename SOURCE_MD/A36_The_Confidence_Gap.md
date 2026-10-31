@@ -1,4 +1,4 @@
-# The Climate Confidence Gap: A Claim-Source Audit Method
+# The Climate Confidence Gap: Public Claims That Drop the IPCC's Confidence Misreport the Science
 
 ## Abstract
 

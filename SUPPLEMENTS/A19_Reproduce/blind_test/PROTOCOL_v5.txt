@@ -1,0 +1,58 @@
+A19 CLUSTER-SCALE TEST: ONE PUBLISHED HALO RELATION FROM DWARFS TO CLUSTERS
+PROTOCOL VERSION 5
+Written 31 October 2026, 01:10 US Pacific, by Claude (Opus 5.5), session SA73, turn 3, for Gary Abraham Bernstein.
+
+PURPOSE
+Section 5 of A19 shows that MOND's acceleration scale must grow about six times from disks to clusters.
+The paper has not shown whether a halo set by starlight carries to cluster scales. The published Moster,
+Naab and White (2013) relation, used unchanged for disks and dwarfs in Sections 3.2 to 3.5, maps a central
+galaxy's stellar mass to its host halo's mass from about 10^10 to 10^15 suns. This test applies it, with
+nothing fitted, to brightest cluster galaxies (BCGs) and their clusters.
+
+WHAT WAS ALREADY SEEN
+The cluster accelerations were scored in Section 5 against MOND's relation and freer formulas. Before this
+file was written, the input tables were opened to check coverage (50 MaNGA BCGs with stellar mass, size,
+redshift and one acceleration each; 20 CLASH clusters with BCG stellar mass, size, redshift and 84
+accelerations), and Astra's archive was searched by name: it holds no prediction of these data from the
+Moster relation or any halo model. No such prediction has been computed in this project.
+
+DATA (copied to data/Clusters/, SHA-256 recorded in the results)
+- MaNGA BCGs (Tian et al. 2024, A&A 684, A180, Table 1): manga_bcg_table1_extracted.txt for redshift,
+  effective radius R_e, r_last/R_e and log10 stellar mass; manga_bcg_standardized.csv for the point at
+  r = R_e (r_last/R_e) with g_bar, g_obs and their errors.
+- CLASH (Tian et al. 2020, ApJ 896, 70; VizieR J/ApJ/896/70): clash_table1_idia.tsv for each BCG's
+  redshift, R_e and stellar mass M* inside the BCG radius Rad (14.3 to 30.3 kpc); clash_standardized.csv for
+  20 BCG-centred points and 64 points at 100, 200, 400 and 600 kpc.
+
+MODELS (no fitting of any kind)
+(H) Moster relation: M*(M_h, z) = 2 N M_h / [(M_h/M1)^(-beta) + (M_h/M1)^gamma], each parameter
+    X(z) = X10 + X11 z/(1+z): log10 M1 = 11.590 + 1.195 z/(1+z), N = 0.0351 - 0.0247 z/(1+z),
+    beta = 1.376 - 0.826 z/(1+z), gamma = 0.608 + 0.329 z/(1+z). Inverted for M_h at the BCG's stellar
+    mass and redshift (search from 10^9 to 10^16.5 suns) and taken as M_200c, the larger of it and M*/f_b
+    as A19 does. Halo: NFW truncated at r_200c(z); concentration of Dutton and Maccio (2014), NFW, Planck:
+    log10 c = a + b log10(M_h h / 10^12), a = 0.520 + 0.385 exp(-0.617 z^1.21), b = -0.101 + 0.026 z;
+    rho_crit(z) = 3 H(z)^2 / (8 pi G), H0 = 67.1 km/s/Mpc, Omega_m = 0.3175, Omega_Lambda = 0.6825.
+    Dark mass (1 - f_b) M_h, f_b = 0.0490/0.3175. Prediction g = g_bar + g_NFW at each point's radius.
+(R1) Radial acceleration relation with the disk a0 (1.0368e-10 m/s^2, frozen_disk_rules.json).
+(R2) The same with the published a0 = 1.20e-10 m/s^2.
+(S)  The stellar rule frozen on the disks (A, B, C), M_p = M*, R_e from the tables, with A19's z = 0 halo:
+     a control that A19 Section 3.7 does not expect to carry above the Milky Way's mass.
+
+SCORES
+Residual = log10 g_obs - log10 g_pred. Each host weighs equally: a CLASH cluster's points share one
+weight, and each MaNGA BCG has one. Score = root-mean-square residual over the 70 hosts, the square root of
+the mean over hosts of each host's mean squared residual.
+Primary: the score of (H) against (R1). Success: (H) lower, with the 95 percent interval of the score
+difference from 5,000 resamples of hosts (seed 20261031) below zero.
+Secondary: the same against (R2) and (S); the score, mean residual and median absolute fractional
+acceleration error of every model in three groups (MaNGA BCGs; CLASH centres; CLASH at 100 to 600 kpc);
+each CLASH cluster's residuals; each host's halo mass and concentration under (H).
+
+SENSITIVITIES (reported, not used for the verdict)
+CLASH BCG stellar masses doubled (the published values lie inside 14 to 30 kpc and miss outer light);
+MaNGA BCG stellar masses lowered by 0.3 dex (a smaller aperture); redshift evolution switched off (z = 0
+parameters and rho_crit, as A19 uses for dwarfs).
+
+REPORTING
+All outcomes are reported whatever they show, in the paper and the supplement. No model, constant, data
+selection or score changes after this file's SHA-256 is recorded.

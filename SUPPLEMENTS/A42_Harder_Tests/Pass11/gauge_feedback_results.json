@@ -1,0 +1,827 @@
+{
+  "scope": "Established finite 1+1 staggered U(1) lattice model with dynamical links. New benchmark branch, not derived from the prior free Dirac circuit. No continuum, curved-spacetime, full-QED or quantum-gravity claim.",
+  "parameters": {
+    "sites": 6,
+    "hopping": 1.0,
+    "mass": 0.4,
+    "coupling": 1.2,
+    "time": 1.5,
+    "boundary_field": 1
+  },
+  "full_hilbert_dimension": 15552,
+  "physical_dimension_at_cutoff1": 5,
+  "rows": [
+    {
+      "steps": 8,
+      "state_error": 0.0042048902615342675,
+      "norm_error": 2.886579864025407e-15,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0000000000000029,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.6293209618412006,
+      "mean_electric_field": [
+        1.0000000000000029,
+        0.024136638110262322,
+        0.6775942380617223,
+        0.024136638110262273,
+        1.0000000000000029
+      ],
+      "electric_energy": 1.9626246102832219,
+      "matter_mass_energy": 0.10345676947295701,
+      "vacuum_survival": 0.001455990552168842
+    },
+    {
+      "steps": 16,
+      "state_error": 0.0010496146416866475,
+      "norm_error": 2.9976021664879227e-15,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.999999999999997,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.6286369741397104,
+      "mean_electric_field": [
+        0.999999999999997,
+        0.024446277791733067,
+        0.6775295297231794,
+        0.024446277791733067,
+        0.999999999999997
+      ],
+      "electric_energy": 1.9630239014207804,
+      "matter_mass_energy": 0.1029095793117718,
+      "vacuum_survival": 0.0014215722737631646
+    },
+    {
+      "steps": 32,
+      "state_error": 0.0002623041264761675,
+      "norm_error": 2.220446049250313e-15,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0000000000000022,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.6284600173169694,
+      "mean_electric_field": [
+        1.0000000000000022,
+        0.024524248326799482,
+        0.6775085139705663,
+        0.02452424832679939,
+        1.0000000000000022
+      ],
+      "electric_energy": 1.9631210476494019,
+      "matter_mass_energy": 0.10276801385357302,
+      "vacuum_survival": 0.001412869610360327
+    },
+    {
+      "steps": 64,
+      "state_error": 6.556982615659906e-05,
+      "norm_error": 8.881784197001252e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999991,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.6284154081982316,
+      "mean_electric_field": [
+        0.9999999999999991,
+        0.02454377699813721,
+        0.6775029621945069,
+        0.024543776998137035,
+        0.9999999999999991
+      ],
+      "electric_energy": 1.9631451716573611,
+      "matter_mass_energy": 0.10273232655858647,
+      "vacuum_survival": 0.0014106884213057366
+    },
+    {
+      "steps": 128,
+      "state_error": 1.639206893930162e-05,
+      "norm_error": 8.43769498715119e-15,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0000000000000084,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.6284042328394717,
+      "mean_electric_field": [
+        1.0000000000000084,
+        0.024548661434171906,
+        0.6775015557078071,
+        0.02454866143417192,
+        1.0000000000000084
+      ],
+      "electric_energy": 1.9631511925748408,
+      "matter_mass_energy": 0.1027233862715673,
+      "vacuum_survival": 0.001410142788512271
+    },
+    {
+      "steps": 256,
+      "state_error": 4.097993017807094e-06,
+      "norm_error": 4.8183679268731794e-14,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999517,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.6284014375578733,
+      "mean_electric_field": [
+        0.9999999999999517,
+        0.024549882685188845,
+        0.677501202928299,
+        0.024549882685188783,
+        0.9999999999999517
+      ],
+      "electric_energy": 1.9631526971749778,
+      "matter_mass_energy": 0.10272115004635643,
+      "vacuum_survival": 0.001410006359494993
+    },
+    {
+      "steps": 512,
+      "state_error": 1.0244967362057302e-06,
+      "norm_error": 3.552713678800501e-14,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0000000000000353,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.628400738647532,
+      "mean_electric_field": [
+        1.0000000000000353,
+        0.024550188006828025,
+        0.6775011146611528,
+        0.024550188006828084,
+        1.0000000000000353
+      ],
+      "electric_energy": 1.9631530732859135,
+      "matter_mass_energy": 0.10272059091798313,
+      "vacuum_survival": 0.001409972250941924
+    },
+    {
+      "steps": 1024,
+      "state_error": 2.561240994173087e-07,
+      "norm_error": 5.773159728050814e-15,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.999999999999994,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.6284005639142378,
+      "mean_electric_field": [
+        0.999999999999994,
+        0.024550264337781354,
+        0.6775010925898066,
+        0.02455026433778166,
+        0.999999999999994
+      ],
+      "electric_energy": 1.9631531673110576,
+      "matter_mass_energy": 0.10272045113139727,
+      "vacuum_survival": 0.0014099637237211839
+    }
+  ],
+  "resolved_cutoff3_rows": [
+    {
+      "steps": 16,
+      "state_error": 0.00375008907005515,
+      "norm_error": 6.661338147750939e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0000000000000007,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.257028626885085,
+      "mean_electric_field": [
+        1.0873931677280522,
+        0.4105066075451428,
+        0.9032555065192668,
+        0.41050660754514273,
+        1.087393167728052
+      ],
+      "electric_energy": 3.2356510025551986,
+      "matter_mass_energy": -0.19437709849193274,
+      "vacuum_survival": 0.09801457440780961
+    },
+    {
+      "steps": 32,
+      "state_error": 0.0009367830108057815,
+      "norm_error": 1.0547118733938987e-14,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999895,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.2550176702685802,
+      "mean_electric_field": [
+        1.086702612832926,
+        0.4104512460051367,
+        0.9025149366129905,
+        0.4104512460051367,
+        1.0867026128329258
+      ],
+      "electric_energy": 3.230923100155017,
+      "matter_mass_energy": -0.19598586378512328,
+      "vacuum_survival": 0.09854458721671991
+    },
+    {
+      "steps": 64,
+      "state_error": 0.0002341494971663333,
+      "norm_error": 1.865174681370263e-14,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0000000000000187,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.254515211000795,
+      "mean_electric_field": [
+        1.0865306180616445,
+        0.41043801513043493,
+        0.9023300051383938,
+        0.4104380151304348,
+        1.0865306180616447
+      ],
+      "electric_energy": 3.2297457969095356,
+      "matter_mass_energy": -0.19638783119938633,
+      "vacuum_survival": 0.09867734543811858
+    },
+    {
+      "steps": 128,
+      "state_error": 5.8534482506929043e-05,
+      "norm_error": 4.3298697960381105e-14,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999567,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.254389613764204,
+      "mean_electric_field": [
+        1.0864876595722393,
+        0.41043474539738295,
+        0.9022837854144489,
+        0.41043474539738306,
+        1.0864876595722388
+      ],
+      "electric_energy": 3.229451762609388,
+      "matter_mass_energy": -0.1964883089885846,
+      "vacuum_survival": 0.09871055094564089
+    },
+    {
+      "steps": 256,
+      "state_error": 1.4633439875944268e-05,
+      "norm_error": 5.10702591327572e-14,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999489,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.2543582155551787,
+      "mean_electric_field": [
+        1.086476922461933,
+        0.41043393033655196,
+        0.9022722313043656,
+        0.4104339303365517,
+        1.0864769224619328
+      ],
+      "electric_energy": 3.2293782722459503,
+      "matter_mass_energy": -0.19651342755579562,
+      "vacuum_survival": 0.09871885331974718
+    },
+    {
+      "steps": 512,
+      "state_error": 3.6583486677795297e-06,
+      "norm_error": 3.774758283725532e-14,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0000000000000377,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.254350366071809,
+      "mean_electric_field": [
+        1.086474238341446,
+        0.41043372671963607,
+        0.9022693428282267,
+        0.4104337267196359,
+        1.0864742383414459
+      ],
+      "electric_energy": 3.229359900793488,
+      "matter_mass_energy": -0.1965197071425985,
+      "vacuum_survival": 0.09872092897561664
+    },
+    {
+      "steps": 1024,
+      "state_error": 9.145864612061455e-07,
+      "norm_error": 1.176836406102666e-14,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0000000000000118,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.2543484037052255,
+      "mean_electric_field": [
+        1.0864735673210897,
+        0.4104336758246556,
+        0.902268620712369,
+        0.41043367582465495,
+        1.0864735673210888
+      ],
+      "electric_energy": 3.2293553080014004,
+      "matter_mass_energy": -0.19652127703583375,
+      "vacuum_survival": 0.09872144789346773
+    },
+    {
+      "steps": 2048,
+      "state_error": 2.2864653490613946e-07,
+      "norm_error": 3.810285420513537e-13,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.000000000000381,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.2543479131142612,
+      "mean_electric_field": [
+        1.0864733995670126,
+        0.4104336631016752,
+        0.9022684401839677,
+        0.41043366310167606,
+        1.0864733995670133
+      ],
+      "electric_energy": 3.2293541598090765,
+      "matter_mass_energy": -0.1965216695090484,
+      "vacuum_survival": 0.0987215776232316
+    },
+    {
+      "steps": 4096,
+      "state_error": 5.7161712215272504e-08,
+      "norm_error": 1.134869975771835e-12,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999988651,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.2543477904646931,
+      "mean_electric_field": [
+        1.0864733576267853,
+        0.4104336599201284,
+        0.902268395050245,
+        0.4104336599201273,
+        1.0864733576267838
+      ],
+      "electric_energy": 3.2293538727555275,
+      "matter_mass_energy": -0.19652176762688386,
+      "vacuum_survival": 0.09872161005547171
+    }
+  ],
+  "error_ratios": [
+    4.0061276725116395,
+    4.0015178403303295,
+    4.000378555979575,
+    4.000094582288442,
+    4.000023637930281,
+    4.0000059277730795,
+    4.00000132176744
+  ],
+  "reference_cutoff1": {
+    "norm_error": 0.0,
+    "gauss_squared": 0.0,
+    "physical_sector_probability": 1.0,
+    "net_charge_squared": 0.0,
+    "pair_mean": 1.6284005056693056,
+    "mean_electric_field": [
+      1.0,
+      0.02455028978149308,
+      0.6775010852322918,
+      0.024550289781493304,
+      1.0
+    ],
+    "electric_energy": 1.9631531986526,
+    "matter_mass_energy": 0.10272040453544429,
+    "vacuum_survival": 0.001409960881308727
+  },
+  "negative_controls": [
+    {
+      "mode": "frozen",
+      "norm_error": 3.352873534367973e-14,
+      "gauss_squared": 2.475953455327973,
+      "physical_sector_probability": 0.1310252641154939,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.2379767276639866,
+      "mean_electric_field": [
+        0.9999999999999666,
+        0.9999999999999666,
+        0.9999999999999666,
+        0.9999999999999666,
+        0.9999999999999666
+      ],
+      "electric_energy": 3.5999999999998797,
+      "matter_mass_energy": -0.2096186178687705,
+      "vacuum_survival": 0.1310252641154939
+    },
+    {
+      "mode": "wrap",
+      "norm_error": 3.2529534621517087e-14,
+      "gauss_squared": 16.139593563167743,
+      "physical_sector_probability": 0.3653129818344047,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.3401204928762178,
+      "mean_electric_field": [
+        0.06769743923207143,
+        0.3548835143573345,
+        0.2245603825987556,
+        0.35488351435733484,
+        0.0676974392320706
+      ],
+      "electric_energy": 3.1187372901413895,
+      "matter_mass_energy": -0.12790360569898648,
+      "vacuum_survival": 0.07754607610688019
+    }
+  ],
+  "cutoff_study": [
+    {
+      "cutoff": 1,
+      "physical_dimension": 5,
+      "state_error_vs_cutoff4": 0.7578218449173916,
+      "norm_error": 0.0,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.6284005056693056,
+      "mean_electric_field": [
+        1.0,
+        0.02455028978149308,
+        0.6775010852322918,
+        0.024550289781493304,
+        1.0
+      ],
+      "electric_energy": 1.9631531986526003,
+      "matter_mass_energy": 0.10272040453544427,
+      "vacuum_survival": 0.001409960881308727
+    },
+    {
+      "cutoff": 2,
+      "physical_dimension": 19,
+      "state_error_vs_cutoff4": 0.00471280317264155,
+      "norm_error": 1.1102230246251565e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999999,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.2544442535819413,
+      "mean_electric_field": [
+        1.0864484753623536,
+        0.41035644171793645,
+        0.9022601862931072,
+        0.4103564417179362,
+        1.0864484753623533
+      ],
+      "electric_energy": 3.22886670198667,
+      "matter_mass_energy": -0.19644459713444706,
+      "vacuum_survival": 0.09872009845268406
+    },
+    {
+      "cutoff": 3,
+      "physical_dimension": 20,
+      "state_error_vs_cutoff4": 0.0,
+      "norm_error": 0.0,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.254347749583389,
+      "mean_electric_field": [
+        1.0864733436485008,
+        0.41043365886047695,
+        0.9022683800073417,
+        0.41043365886047656,
+        1.0864733436485008
+      ],
+      "electric_energy": 3.2293537770769483,
+      "matter_mass_energy": -0.19652180033328873,
+      "vacuum_survival": 0.09872162086643627
+    },
+    {
+      "cutoff": 4,
+      "physical_dimension": 20,
+      "state_error_vs_cutoff4": 0.0,
+      "norm_error": 0.0,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.254347749583389,
+      "mean_electric_field": [
+        1.0864733436485008,
+        0.41043365886047695,
+        0.9022683800073417,
+        0.41043365886047656,
+        1.0864733436485008
+      ],
+      "electric_energy": 3.2293537770769483,
+      "matter_mass_energy": -0.19652180033328873,
+      "vacuum_survival": 0.09872162086643627
+    }
+  ],
+  "coupling_study": [
+    {
+      "coupling": 0.0,
+      "pair_mean": 1.2379689797740137,
+      "mean_electric_field": [
+        1.467377025364198,
+        0.9667783950729569,
+        1.2367717191915333,
+        0.9667783950729572,
+        1.4673770253641982
+      ]
+    },
+    {
+      "coupling": 0.6,
+      "pair_mean": 1.0626624563832243,
+      "mean_electric_field": [
+        1.3479196694288285,
+        0.8892218258473238,
+        1.1452667692202159,
+        0.889221825847324,
+        1.3479196694288285
+      ]
+    },
+    {
+      "coupling": 1.2,
+      "pair_mean": 1.254347749583389,
+      "mean_electric_field": [
+        1.0864733436485008,
+        0.41043365886047695,
+        0.9022683800073417,
+        0.41043365886047656,
+        1.0864733436485008
+      ]
+    },
+    {
+      "coupling": 2.0,
+      "pair_mean": 1.6453232071503658,
+      "mean_electric_field": [
+        1.0469576581860034,
+        0.2060072253741959,
+        0.9634223415267503,
+        0.20600722537419608,
+        1.0469576581860036
+      ]
+    }
+  ],
+  "timeline_cutoff4": [
+    {
+      "time": 0.0,
+      "norm_error": 4.440892098500626e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999996,
+      "net_charge_squared": 0.0,
+      "pair_mean": 2.8013639797308773e-31,
+      "mean_electric_field": [
+        0.9999999999999996,
+        0.9999999999999996,
+        0.9999999999999996,
+        0.9999999999999996,
+        0.9999999999999996
+      ],
+      "electric_energy": 3.5999999999999988,
+      "matter_mass_energy": -1.1999999999999995,
+      "vacuum_survival": 0.9999999999999996
+    },
+    {
+      "time": 0.1,
+      "norm_error": 7.771561172376096e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999992,
+      "net_charge_squared": 0.0,
+      "pair_mean": 0.049352022264033055,
+      "mean_electric_field": [
+        1.0098612086637868,
+        0.9900993754898103,
+        1.0098283559160797,
+        0.9900993754898103,
+        1.0098612086637866
+      ],
+      "electric_energy": 3.6495732416843563,
+      "matter_mass_energy": -1.1605183821887728,
+      "vacuum_survival": 0.9512323585566715
+    },
+    {
+      "time": 0.2,
+      "norm_error": 4.440892098500626e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999996,
+      "net_charge_squared": 0.0,
+      "pair_mean": 0.1898447467361024,
+      "mean_electric_field": [
+        1.0378213472597053,
+        0.9615580252958151,
+        1.0373181028083218,
+        0.9615580252958151,
+        1.0378213472597053
+      ],
+      "electric_energy": 3.7886673120463534,
+      "matter_mass_energy": -1.0481242026111175,
+      "vacuum_survival": 0.8187969302972368
+    },
+    {
+      "time": 0.30000000000000004,
+      "norm_error": 5.551115123125783e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999994,
+      "net_charge_squared": 0.0,
+      "pair_mean": 0.40031967987355166,
+      "mean_electric_field": [
+        1.0793143153935993,
+        0.917626855830276,
+        1.0769447607469045,
+        0.9176268558302759,
+        1.0793143153935993
+      ],
+      "electric_energy": 3.9905155570897013,
+      "matter_mass_energy": -0.8797442561011585,
+      "vacuum_survival": 0.6380882570651357
+    },
+    {
+      "time": 0.4,
+      "norm_error": 3.3306690738754696e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999997,
+      "net_charge_squared": 0.0,
+      "pair_mean": 0.6502509670825058,
+      "mean_electric_field": [
+        1.1276803287883361,
+        0.8630106977872656,
+        1.120911705080364,
+        0.8630106977872656,
+        1.1276803287883364
+      ],
+      "electric_energy": 4.216933756083441,
+      "matter_mass_energy": -0.6797992263339949,
+      "vacuum_survival": 0.45114546333014877
+    },
+    {
+      "time": 0.5,
+      "norm_error": 2.220446049250313e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999998,
+      "net_charge_squared": 0.0,
+      "pair_mean": 0.9056557056998781,
+      "mean_electric_field": [
+        1.1753806857465594,
+        0.802981712612183,
+        1.1608577594311251,
+        0.802981712612183,
+        1.175380685746559
+      ],
+      "electric_energy": 4.426080966876684,
+      "matter_mass_energy": -0.4754754354400974,
+      "vacuum_survival": 0.291524421929012
+    },
+    {
+      "time": 0.6000000000000001,
+      "norm_error": 1.1102230246251565e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999999,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.1352840547841354,
+      "mean_electric_field": [
+        1.2153254210399875,
+        0.7424622066140578,
+        1.189557625932276,
+        0.7424622066140576,
+        1.2153254210399873
+      ],
+      "electric_energy": 4.580319153310293,
+      "matter_mass_energy": -0.29177275617269155,
+      "vacuum_survival": 0.17613046602810653
+    },
+    {
+      "time": 0.7000000000000001,
+      "norm_error": 0.0,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.3156901619393138,
+      "mean_electric_field": [
+        1.2420477173876647,
+        0.6852975545108164,
+        1.2021898361856171,
+        0.6852975545108165,
+        1.2420477173876643
+      ],
+      "electric_energy": 4.652518082941019,
+      "matter_mass_energy": -0.14744787044854904,
+      "vacuum_survival": 0.10586734544667852
+    },
+    {
+      "time": 0.8,
+      "norm_error": 0.0,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.4342003828625889,
+      "mean_electric_field": [
+        1.2525115429121847,
+        0.633868631971076,
+        1.1969145609803709,
+        0.6338686319710758,
+        1.2525115429121847
+      ],
+      "electric_energy": 4.62983372307874,
+      "matter_mass_energy": -0.05263969370992926,
+      "vacuum_survival": 0.07191413726682577
+    },
+    {
+      "time": 0.9,
+      "norm_error": 4.440892098500626e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0000000000000004,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.4894677046540488,
+      "mean_electric_field": [
+        1.2464388592711317,
+        0.5890740813062512,
+        1.1747381487242885,
+        0.589074081306251,
+        1.2464388592711313
+      ],
+      "electric_energy": 4.514710939541798,
+      "matter_mass_energy": -0.008425836276761347,
+      "vacuum_survival": 0.06273691035349678
+    },
+    {
+      "time": 1.0,
+      "norm_error": 0.0,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.4899501463490235,
+      "mean_electric_field": [
+        1.2261534041237907,
+        0.5505998022285985,
+        1.1388429425586393,
+        0.5505998022285982,
+        1.2261534041237905
+      ],
+      "electric_energy": 4.323376058909813,
+      "matter_mass_energy": -0.008039882920781206,
+      "vacuum_survival": 0.06843391397700335
+    },
+    {
+      "time": 1.1,
+      "norm_error": 0.0,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.4510234609405332,
+      "mean_electric_field": [
+        1.196023260903801,
+        0.5173378319859805,
+        1.0936526031048923,
+        0.5173378319859803,
+        1.1960232609038008
+      ],
+      "electric_energy": 4.08234501404197,
+      "matter_mass_energy": -0.0391812312475735,
+      "vacuum_survival": 0.08168583517032796
+    },
+    {
+      "time": 1.2000000000000002,
+      "norm_error": 2.220446049250313e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999998,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.3914620220168215,
+      "mean_electric_field": [
+        1.1616276214576045,
+        0.4878337936039865,
+        1.0438743663095853,
+        0.48783379360398627,
+        1.161627621457604
+      ],
+      "electric_energy": 3.8235807008717937,
+      "matter_mass_energy": -0.08683038238654277,
+      "vacuum_survival": 0.09662668763027565
+    },
+    {
+      "time": 1.3,
+      "norm_error": 1.1102230246251565e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999999,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.3298330284267912,
+      "mean_electric_field": [
+        1.1287833709127735,
+        0.4607000915658964,
+        0.9936664697330369,
+        0.4607000915658961,
+        1.1287833709127737
+      ],
+      "electric_energy": 3.579014555009042,
+      "matter_mass_energy": -0.13613357725856676,
+      "vacuum_survival": 0.10763202100874564
+    },
+    {
+      "time": 1.4000000000000001,
+      "norm_error": 2.220446049250313e-16,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 0.9999999999999998,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.2811776077590125,
+      "mean_electric_field": [
+        1.1025670796863165,
+        0.4349783576405035,
+        0.9460001636673863,
+        0.4349783576405033,
+        1.1025670796863163
+      ],
+      "electric_energy": 3.3752515015382136,
+      "matter_mass_energy": -0.1750579137927898,
+      "vacuum_survival": 0.10943900456283484
+    },
+    {
+      "time": 1.5,
+      "norm_error": 0.0,
+      "gauss_squared": 0.0,
+      "physical_sector_probability": 1.0,
+      "net_charge_squared": 0.0,
+      "pair_mean": 1.254347749583389,
+      "mean_electric_field": [
+        1.0864733436485008,
+        0.41043365886047695,
+        0.9022683800073417,
+        0.41043365886047656,
+        1.0864733436485008
+      ],
+      "electric_energy": 3.2293537770769483,
+      "matter_mass_energy": -0.19652180033328873,
+      "vacuum_survival": 0.09872162086643627
+    }
+  ],
+  "audit": {
+    "local_gate_max_gauss_change": 0.0,
+    "full_vs_reduced_error": 0.0
+  },
+  "all_assertions_passed": true
+}

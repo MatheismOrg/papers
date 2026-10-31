@@ -1,0 +1,32 @@
+A42 Pass36 -- 31 October 2026 UTC
+Constructive follow-up to Pass35. Test a four-dimensional, homogeneous
+and isotropic quantum source, including angular stresses, instead of
+extending the deficient radial Polyakov source to a center.
+
+Published gravity: square-root NPQT h(Phi)=Phi/sqrt(1-alpha^2 Phi^2).
+Matter: noninteracting massless conformal fields in FLRW. Specify the
+total renormalized Box R coefficient as zero and retain the independent
+traceless radiation/state constant. This is a substantive assumption,
+not a free universal renormalization trick. Main examples set that
+constant to zero; state sensitivity will be checked separately.
+
+Derive rho_q and p_q from the four-dimensional anomaly and conservation.
+Check the Minkowski and de Sitter limits, finite angular/central stress,
+and low-curvature GR limit. Derive the algebraic response condition and
+locate any loss of invertibility before evolving through a bounce.
+
+Use dimensionless lambda=eta/alpha, eta=N_eff hbar G/(360pi),
+N_eff=N_scalar+(11/2)N_Weyl+62 N_vector.
+Include the free conformal SM field-count proxy (4,45,12), with
+alpha=hbar G for that one illustrative normalization. This is not an
+interacting SM simulation or a determination of the physical alpha.
+
+Cosmology scan: lambda=0,0.5,SM-proxy,1.25,1.5; dust constants at
+1.1,2,10 times each case's computed turning-point threshold.
+Probe lambda=1.6 as a deliberate failure control. Compute all observables
+from the saved scripts; retain failures and report choices after results.
+
+A homogeneous time-step rule may demonstrate numerical implementation;
+it must not be called a fundamental discrete-spacetime ToE. Do not claim
+the cosmology tests solve inhomogeneous black-hole evaporation or the
+Pass35 characteristic obstruction. No main manuscript overwrite.

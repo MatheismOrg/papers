@@ -1,0 +1,265 @@
+lvdb_key,name,host,kind,sigma_stellar_rule,stellar_lo68,stellar_hi68,mond_reference,sigma_mond,mond_lo68,mond_hi68,separation_z,in_paper_table
+carina_4,Carina IV,mw,satellite,2.11,1.49,2.99,E2,0.84,0.29,2.44,0.82,1
+andromeda_35,Andromeda XXXV,m_031,satellite,3.07,2.17,4.35,E2,2.01,0.69,5.84,0.38,1
+andromeda_36,Andromeda XXXVI,m_031,satellite,3.49,2.46,4.94,E2,2.37,0.82,6.89,0.34,1
+pegasus_5,Pegasus V,m_031,satellite,3.91,2.76,5.54,E2,2.59,0.89,7.53,0.37,1
+pegasus_7,Pegasus VII,m_031,satellite,4.13,2.92,5.85,E2,2.25,0.77,6.54,0.54,1
+pisces_7,Pisces VII,m_033,other group,4.64,3.28,6.57,rar_published_a0,2.50,1.32,4.74,0.85,0
+ddo_044,DDO 44,ngc_2403,other group,13.58,9.59,19.24,rar_published_a0,12.84,6.78,24.33,0.08,0
+ddo_113,DDO 113,ngc_4214,other group,12.80,9.04,18.13,rar_published_a0,10.69,5.64,20.25,0.25,0
+eso_006-001,ESO 006-001,none,no host,11.26,7.95,15.95,E2,10.57,3.64,30.73,0.06,0
+eso_294-g010,ESO 294-G010,ngc_0055,other group,10.18,7.19,14.42,rar_published_a0,10.41,5.49,19.72,0.03,0
+eso_410-g005,ESO 410-G005,ngc_0055,other group,10.78,7.61,15.27,rar_published_a0,10.94,5.77,20.73,0.02,0
+kk_258,KK 258,none,no host,11.02,7.78,15.61,E2,6.98,2.40,20.30,0.41,0
+kkh_86,KKH 86,none,no host,7.89,5.57,11.18,E2,7.05,2.42,20.50,0.10,0
+kkh_98,KKH 98,none,no host,11.30,7.98,16.01,E2,9.21,3.17,26.78,0.18,0
+kkr_03,KKR 3,none,no host,7.49,5.29,10.61,E2,5.41,1.86,15.73,0.29,0
+kkr_25,KKR 25,none,no host,7.92,5.59,11.22,E2,6.84,2.35,19.89,0.13,0
+kks_03,KKs 3,none,no host,12.52,8.84,17.73,E2,8.19,2.82,23.81,0.38,0
+kks_53,KKs 53,ngc_5128,other group,10.84,7.65,15.35,rar_published_a0,7.39,3.90,14.00,0.53,0
+leo_k,Leo K,none,no host,3.09,2.18,4.38,E2,1.80,0.62,5.23,0.48,1
+leo_m,Leo M,none,no host,3.76,2.65,5.33,E2,2.29,0.79,6.66,0.44,1
+pegasus_w,Pegasus W,none,no host,4.50,3.18,6.37,E2,3.18,1.09,9.25,0.31,1
+tucana_b,Tucana B,none,no host,4.20,2.97,5.95,E2,2.97,1.02,8.64,0.31,1
+ugc_08508,UGC 8508,none,no host,14.02,9.90,19.86,E2,13.12,4.51,38.15,0.06,0
+ugc_09128,UGC 9128,none,no host,11.65,8.22,16.50,E2,10.69,3.68,31.08,0.08,0
+ugca_086,UGCA 86,ic_0342,other group,15.60,11.01,22.10,rar_published_a0,13.40,7.07,25.39,0.21,0
+uks_2323_326,UKS 2323-326,ngc_0055,other group,15.13,10.68,21.43,rar_published_a0,13.72,7.24,26.00,0.13,0
+agc_238890,AGC 238890,none,no host,16.56,11.69,23.46,E2,12.02,4.13,34.95,0.29,0
+am_1320-230,AM 1320-230,ngc_5128,other group,11.22,7.92,15.89,rar_published_a0,10.45,5.52,19.80,0.10,0
+bedin_1,Bedin 1,none,no host,9.30,6.57,13.17,E2,5.74,1.97,16.69,0.43,0
+bk5n,BK5N,m_081,other group,10.34,7.30,14.65,rar_published_a0,8.42,4.44,15.95,0.28,0
+bk6n,BK6N,m_081,other group,9.50,6.71,13.46,rar_published_a0,8.25,4.35,15.63,0.19,0
+cena-mm-dw01,CenA-MM-Dw1,ngc_5128,other group,19.64,13.87,27.82,rar_published_a0,15.28,8.06,28.95,0.34,0
+cena-mm-dw02,CenA-MM-Dw2,ngc_5128,other group,8.85,6.25,12.54,rar_published_a0,5.89,3.11,11.16,0.56,0
+cena-mm-dw03,CenA-MM-Dw3,ngc_5128,other group,17.50,12.35,24.79,rar_published_a0,12.89,6.80,24.42,0.42,0
+cena-mm-dw04,CenA-MM-Dw4,ngc_5128,other group,8.64,6.10,12.24,rar_published_a0,6.20,3.27,11.75,0.46,0
+cena-mm-dw05,CenA-MM-Dw5,ngc_5128,other group,6.17,4.36,8.74,rar_published_a0,4.18,2.21,7.92,0.54,0
+cena-mm-dw06,CenA-MM-Dw6,ngc_5128,other group,7.46,5.27,10.57,rar_published_a0,5.14,2.71,9.74,0.51,0
+cena-mm-dw07,CenA-MM-Dw7,ngc_5128,other group,9.27,6.54,13.13,rar_published_a0,6.17,3.26,11.69,0.56,0
+cena_dw1322-39,dw1322-39,ngc_5128,other group,7.84,5.53,11.10,rar_published_a0,6.46,3.41,12.24,0.27,0
+cena_dw1323-40a,dw1323-40a,ngc_5128,other group,8.66,6.11,12.27,rar_published_a0,6.96,3.67,13.19,0.30,0
+cena_dw1323-40b,dw1323-40b,ngc_5128,other group,7.65,5.40,10.84,rar_published_a0,6.41,3.38,12.15,0.24,0
+cena_dw1329-45,dw1329-45,ngc_5128,other group,6.17,4.36,8.74,rar_published_a0,5.05,2.67,9.57,0.28,0
+cena_dw1335-29,dw1335-29,m_083,other group,9.52,6.72,13.48,rar_published_a0,6.31,3.33,11.96,0.57,0
+cena_dw1336-44,dw1336-44,ngc_5128,other group,6.04,4.26,8.56,rar_published_a0,5.51,2.91,10.44,0.13,0
+cena_dw1340-30,dw1340-30,m_083,other group,10.22,7.22,14.48,rar_published_a0,7.64,4.03,14.48,0.40,0
+cena_dw1341-43,dw1341-43,ngc_5128,other group,8.88,6.27,12.58,rar_published_a0,6.47,3.41,12.26,0.44,0
+cena_dw1342-43,dw1342-43,ngc_5128,other group,7.35,5.19,10.41,rar_published_a0,6.09,3.21,11.54,0.26,0
+ddo_078,DDO 78,m_081,other group,15.95,11.26,22.59,rar_published_a0,11.49,6.06,21.77,0.45,0
+donatiello_3,Donatiello III,ngc_0253,other group,6.03,4.26,8.54,rar_published_a0,4.98,2.63,9.44,0.26,0
+donatiello_4,Donatiello IV,ngc_0253,other group,6.87,4.85,9.73,rar_published_a0,4.59,2.42,8.70,0.55,0
+donatiello_8,Donatiello VIII,ngc_0253,other group,5.37,3.79,7.61,rar_published_a0,4.28,2.26,8.11,0.31,0
+dw0741p4005,dw0741p4005,ddo_046,other group,10.53,7.43,14.92,rar_published_a0,9.70,5.12,18.38,0.11,0
+dw1008p7038b,dw1008p7038b,ugc_05423,other group,4.33,3.06,6.13,rar_published_a0,11.02,5.82,20.88,1.28,0
+dw1009p7032,dw1009p7032,ugc_05423,other group,3.52,2.49,4.99,rar_published_a0,9.91,5.23,18.78,1.42,0
+dw1242p4115,dw1242p4115,ngc_4618,other group,3.28,2.32,4.65,rar_published_a0,8.96,4.73,16.98,1.38,0
+dw1250p5056,dw1250p5056,ngc_4707,other group,5.75,4.06,8.14,rar_published_a0,7.32,3.86,13.87,0.33,0
+dw1259m1735,dw1259m1735,ddo_161,other group,11.54,8.15,16.35,rar_published_a0,9.27,4.89,17.56,0.30,0
+dw1301m1627,dw1301m1627,ddo_161,other group,11.58,8.18,16.40,rar_published_a0,8.71,4.60,16.50,0.39,0
+dw1305m1715,dw1305m1715,ddo_161,other group,11.39,8.04,16.13,rar_published_a0,11.51,6.07,21.81,0.01,0
+eso_269-066,ESO 269-066,ngc_5128,other group,17.80,12.57,25.21,rar_published_a0,16.00,8.44,30.32,0.15,0
+eso_301-007,ESO 301-007,ngc_1291,other group,17.60,12.43,24.93,rar_published_a0,15.50,8.18,29.37,0.17,0
+eso_472-015,ESO 472-015,ngc_0024,other group,18.46,13.03,26.15,rar_published_a0,13.79,7.28,26.13,0.40,0
+f8d1,F8D1,m_081,other group,20.57,14.52,29.14,rar_published_a0,15.92,8.40,30.16,0.35,0
+fm_1,FM1,m_081,other group,13.68,9.66,19.38,rar_published_a0,11.11,5.86,21.05,0.29,0
+ghosts_1,GHOSTS I,none,no host,7.14,5.04,10.11,E2,5.80,1.99,16.86,0.19,0
+hydrus_a,Hydrus A,none,no host,6.91,4.88,9.79,E2,5.27,1.81,15.32,0.24,0
+kamino_1,Kamino,none,no host,11.78,8.32,16.69,E2,9.66,3.32,28.09,0.18,0
+kdg_061,KDG 61,m_081,other group,17.96,12.68,25.44,rar_published_a0,14.03,7.40,26.58,0.34,0
+kdg_063,KDG 63,m_081,other group,15.38,10.86,21.78,rar_published_a0,13.55,7.15,25.67,0.17,0
+kk_070,KK 70,ngc_2683,other group,17.59,12.42,24.92,rar_published_a0,14.35,7.57,27.19,0.28,0
+kk_077,KK 77,m_081,other group,16.18,11.42,22.92,rar_published_a0,13.35,7.05,25.29,0.26,0
+kk_132,KK 132,ngc_4248,other group,11.38,8.03,16.12,rar_published_a0,8.70,4.59,16.48,0.37,0
+kk_165,KK 165,ngc_4631,other group,13.70,9.67,19.41,rar_published_a0,11.37,6.00,21.54,0.26,0
+kk_166,KK 166,none,no host,9.13,6.45,12.93,E2,7.57,2.60,22.01,0.17,0
+kk_177,KK 177,ngc_4826,other group,13.42,9.47,19.01,rar_published_a0,12.02,6.34,22.77,0.15,0
+kk_189,KK 189,ngc_5128,other group,10.71,7.56,15.17,rar_published_a0,9.78,5.16,18.53,0.12,0
+kk_191,KK 191,ngc_5055,other group,13.18,9.30,18.67,rar_published_a0,10.27,5.42,19.46,0.34,0
+kk_193,KK 193,ngc_5055,other group,14.56,10.28,20.62,rar_published_a0,10.96,5.78,20.77,0.39,0
+kk_196,KK 196,ngc_5128,other group,12.76,9.01,18.07,rar_published_a0,12.76,6.73,24.18,0.00,0
+kk_197,KK 197,ngc_5128,other group,15.78,11.14,22.35,rar_published_a0,12.68,6.69,24.03,0.30,0
+kk_203,KK 203,ngc_5128,other group,11.14,7.86,15.78,rar_published_a0,9.56,5.05,18.11,0.21,0
+kk_211,KK 211,ngc_5128,other group,12.31,8.69,17.44,rar_published_a0,11.06,5.84,20.96,0.15,0
+kk_213,KK 213,ngc_5128,other group,11.20,7.91,15.86,rar_published_a0,9.50,5.01,18.00,0.23,0
+kk_217,KK 217,ngc_5128,other group,9.09,6.42,12.88,rar_published_a0,8.13,4.29,15.40,0.15,0
+kk_218,KK 218,m_083,other group,11.41,8.06,16.16,rar_published_a0,9.45,4.99,17.91,0.26,0
+kk_221,KK 221,ngc_5128,other group,11.39,8.04,16.13,rar_published_a0,9.09,4.80,17.22,0.31,0
+kk_242,KK 242,ngc_6503,other group,10.22,7.22,14.48,rar_published_a0,7.93,4.19,15.03,0.35,0
+kkh_78,KKH 78,none,no host,12.34,8.71,17.48,E2,8.00,2.75,23.26,0.39,0
+kks_51,KKs 51,ngc_5128,other group,9.20,6.50,13.03,rar_published_a0,8.50,4.49,16.11,0.11,0
+kks_54,KKs 54,ngc_5128,other group,10.20,7.20,14.45,rar_published_a0,6.95,3.67,13.17,0.53,0
+kks_55,KKs 55,ngc_5128,other group,14.06,9.93,19.92,rar_published_a0,11.12,5.87,21.07,0.32,0
+kks_57,KKs 57,ngc_5128,other group,8.56,6.04,12.12,rar_published_a0,7.41,3.91,14.04,0.20,0
+kks_58,KKs 58,ngc_5128,other group,11.75,8.30,16.64,rar_published_a0,10.08,5.32,19.10,0.21,0
+leda_486718,LEDA 486718,ngc_0253,other group,10.14,7.16,14.36,rar_published_a0,9.51,5.02,18.02,0.09,0
+lv_j1157+5638,LV J1157+5638,none,no host,13.68,9.66,19.38,E2,12.86,4.42,37.39,0.06,0
+lv_j1157+5638-sat,LV J1157+5638 sat,lv_j1157+5638,other group,5.94,4.19,8.41,rar_published_a0,5.65,2.98,10.71,0.07,0
+lv_j1228+4358,LV J1228+4358,ngc_4449,other group,15.41,10.88,21.83,rar_published_a0,12.97,6.85,24.57,0.24,0
+m_081-d0926+70,d0926+70,m_081,other group,8.25,5.82,11.69,rar_published_a0,7.07,3.73,13.40,0.21,0
+m_081-d0934+70,d0934+70,m_081,other group,7.43,5.25,10.52,rar_published_a0,5.68,3.00,10.76,0.37,0
+m_081-d0939+71,d0939+71,m_081,other group,7.06,4.98,10.00,rar_published_a0,4.57,2.41,8.66,0.60,0
+m_081-d0944+69,d0944+69,m_081,other group,4.84,3.42,6.86,rar_published_a0,4.14,2.18,7.84,0.21,0
+m_081-d0944+71,d0944+71,m_081,other group,11.70,8.26,16.57,rar_published_a0,10.87,5.74,20.60,0.10,0
+m_081-d0955+70,d0955+70,m_081,other group,9.73,6.87,13.78,rar_published_a0,6.89,3.64,13.05,0.47,0
+m_081-d0958+66,d0958+66,m_081,other group,11.90,8.40,16.86,rar_published_a0,13.02,6.87,24.67,0.12,0
+m_081-d0959+68,d0959+68,m_081,other group,10.69,7.55,15.14,rar_published_a0,7.62,4.02,14.44,0.47,0
+m_081-d1005+68,d1005+68,m_081,other group,6.77,4.78,9.59,rar_published_a0,4.10,2.16,7.77,0.69,0
+m_081-d1006+67,d1006+67,m_081,other group,7.94,5.61,11.25,rar_published_a0,5.38,2.84,10.19,0.53,0
+m_081-d1006+69,d1006+69,m_081,other group,7.18,5.07,10.17,rar_published_a0,4.92,2.60,9.32,0.52,0
+m_081-d1009+68,d1009+68,m_081,other group,7.31,5.16,10.35,rar_published_a0,4.71,2.49,8.92,0.60,0
+m_081-d1014+68,d1014+68,m_081,other group,12.15,8.58,17.21,rar_published_a0,8.50,4.49,16.11,0.49,0
+m_081-d1015+69,d1015+69,m_081,other group,7.17,5.06,10.16,rar_published_a0,5.29,2.79,10.02,0.42,0
+m_081-d1028+70,d1028+70,m_081,other group,10.70,7.55,15.16,rar_published_a0,10.83,5.72,20.52,0.02,0
+m_081-d1041+70,d1041+70,m_081,other group,7.19,5.08,10.18,rar_published_a0,5.98,3.16,11.33,0.25,0
+m_081-dw_j0954+6821,M81-dw J0954+6821,m_081,other group,3.86,2.73,5.47,rar_published_a0,3.42,1.80,6.48,0.17,0
+m_081-hs_117,HS 117,m_081,other group,11.86,8.37,16.80,rar_published_a0,9.91,5.23,18.78,0.25,0
+m_081-ugc_05497,UGC 5497,m_081,other group,12.57,8.87,17.80,rar_published_a0,13.37,7.06,25.33,0.08,0
+m_096-df1,M96-DF1,m_096,other group,11.14,7.86,15.78,rar_published_a0,8.27,4.36,15.67,0.41,0
+m_096-df_6,Leo I 09,m_096,other group,18.55,13.10,26.28,rar_published_a0,14.01,7.39,26.55,0.39,0
+m_096-df_6-dw_1046+1244,dw1046+1244,m_096-df_6,other group,6.24,4.41,8.84,rar_published_a0,4.07,2.15,7.71,0.59,0
+m_101-df1,M101-DF1,m_101,other group,9.23,6.52,13.07,rar_published_a0,6.30,3.32,11.94,0.52,0
+m_101-df2,M101-DF2,m_101,other group,8.60,6.07,12.18,rar_published_a0,5.98,3.16,11.33,0.50,0
+m_101-df3,M101-DF3,m_101,other group,7.96,5.62,11.27,rar_published_a0,4.67,2.46,8.85,0.73,0
+m_101-dw_9,M101 Dw9,m_101,other group,7.23,5.10,10.24,rar_published_a0,4.28,2.26,8.11,0.72,0
+m_101-dw_a,M101 DwA,m_101,other group,8.38,5.92,11.87,rar_published_a0,5.73,3.02,10.86,0.52,0
+madcash-1,MADCASH-1,ngc_2403,other group,5.58,3.94,7.90,rar_published_a0,3.82,2.02,7.24,0.52,0
+madcash-2,MADCASH-2,ngc_4214,other group,6.01,4.24,8.51,rar_published_a0,5.30,2.80,10.04,0.17,0
+ngc_0253-sculptor_26,Sculptor 26,ngc_0253,other group,9.42,6.65,13.34,rar_published_a0,8.70,4.59,16.48,0.11,0
+ngc_0253_dw0036m2828,dw0036m2828,ngc_0253,other group,6.94,4.90,9.83,rar_published_a0,4.74,2.50,8.98,0.52,0
+ngc_0628-dw0133p1543,dw0133p1543,ngc_0628,other group,8.18,5.78,11.59,rar_published_a0,6.97,3.68,13.21,0.22,0
+ngc_0628-dw0134p1544,dw0134p1544,ngc_0628,other group,15.76,11.13,22.32,rar_published_a0,11.78,6.22,22.32,0.40,0
+ngc_0628-dw0136p1628,dw0136p1628,ngc_0628,other group,12.33,8.70,17.46,rar_published_a0,11.78,6.22,22.32,0.06,0
+ngc_0628-dw0137p1607,dw0137p1607,ngc_0628,other group,9.65,6.81,13.67,rar_published_a0,6.49,3.43,12.30,0.55,0
+ngc_0628-dw0139p1433,dw0139p1433,ngc_0628,other group,11.22,7.92,15.89,rar_published_a0,11.13,5.87,21.09,0.01,0
+ngc_0628-dw0140p1556,dw0140p1556,ngc_0628,other group,11.29,7.97,15.99,rar_published_a0,8.85,4.67,16.77,0.33,0
+ngc_0628-dwa,NGC 628-dwA,ngc_0628,other group,12.51,8.83,17.72,rar_published_a0,11.50,6.07,21.79,0.12,0
+ngc_0628-dwb,NGC 628-dwB,ngc_0628,other group,5.65,3.99,8.00,rar_published_a0,3.74,1.97,7.09,0.57,0
+ngc_0891-tt2009_25,[TT2009] 25,ngc_0891,other group,14.03,9.91,19.87,rar_published_a0,12.38,6.53,23.46,0.17,0
+ngc_0891-tt2009_30,[TT2009] 30,ngc_0891,other group,16.38,11.56,23.20,rar_published_a0,12.37,6.53,23.44,0.39,0
+ngc_1023-dw0235p3850,dw0235p3850,ngc_1023,other group,15.75,11.12,22.31,rar_published_a0,14.79,7.81,28.02,0.09,0
+ngc_1023-dw0237p3836,dw0237p3836,ngc_1023,other group,12.96,9.15,18.36,rar_published_a0,10.48,5.53,19.86,0.29,0
+ngc_1023-dw0239p3902,dw0239p3902,ngc_1023,other group,8.29,5.85,11.74,rar_published_a0,6.10,3.22,11.56,0.42,0
+ngc_1023-dw0239p3903,dw0239p3903,ngc_1023,other group,8.47,5.98,12.00,rar_published_a0,5.90,3.11,11.18,0.50,0
+ngc_1023-dw0239p3926,dw0239p3926,ngc_1023,other group,14.46,10.21,20.48,rar_published_a0,10.28,5.43,19.48,0.47,0
+ngc_1023-dw0240p3854,dw0240p3854,ngc_1023,other group,14.57,10.29,20.64,rar_published_a0,15.15,8.00,28.71,0.05,0
+ngc_1023-dw0240p3922,dw0240p3922,ngc_1023,other group,16.32,11.52,23.12,rar_published_a0,14.69,7.75,27.83,0.14,0
+ngc_1023-dw0242p3838,dw0242p3838,ngc_1023,other group,7.77,5.49,11.01,rar_published_a0,5.63,2.97,10.67,0.44,0
+ngc_1291-dw02,N1291-DW2,ngc_1291,other group,13.56,9.57,19.21,rar_published_a0,10.08,5.32,19.10,0.41,0
+ngc_1291-dw03,N1291-DW3,ngc_1291,other group,16.59,11.71,23.50,rar_published_a0,13.12,6.92,24.86,0.32,0
+ngc_1291-dw04,N1291-DW4,ngc_1291,other group,15.14,10.69,21.44,rar_published_a0,11.82,6.24,22.40,0.34,0
+ngc_1291-dw05,N1291-DW5,ngc_1291,other group,16.38,11.56,23.20,rar_published_a0,12.47,6.58,23.63,0.37,0
+ngc_1291-dw06,N1291-DW6,ngc_1291,other group,10.73,7.58,15.20,rar_published_a0,9.11,4.81,17.26,0.22,0
+ngc_1291-dw08,N1291-DW8,ngc_1291,other group,15.84,11.18,22.44,rar_published_a0,13.55,7.15,25.67,0.21,0
+ngc_1291-dw09,N1291-DW9,ngc_1291,other group,10.09,7.12,14.29,rar_published_a0,7.90,4.17,14.97,0.34,0
+ngc_1291-dw10,N1291-DW10,ngc_1291,other group,14.45,10.20,20.47,rar_published_a0,10.44,5.51,19.78,0.45,0
+ngc_1291-dw12,N1291-DW12,ngc_1291,other group,8.53,6.02,12.08,rar_published_a0,5.98,3.16,11.33,0.49,0
+ngc_1291-dw13,N1291-DW13,ngc_1291,other group,11.58,8.18,16.40,rar_published_a0,7.64,4.03,14.48,0.57,0
+ngc_1808-dw0506m3739,dw0506m3739,ngc_1808,other group,9.36,6.61,13.26,rar_published_a0,6.86,3.62,13.00,0.43,0
+ngc_1808-dw0507m3629,dw0507m3629,ngc_1808,other group,11.37,8.03,16.10,rar_published_a0,8.84,4.67,16.75,0.35,0
+ngc_1808-dw0507m3739,dw0507m3739,ngc_1808,other group,14.06,9.93,19.92,rar_published_a0,10.89,5.75,20.63,0.35,0
+ngc_1808-dw0507m3744,dw0507m3744,ngc_1808,other group,13.66,9.64,19.35,rar_published_a0,14.50,7.65,27.47,0.08,0
+ngc_1808-dw0507m3800,dw0507m3800,ngc_1808,other group,11.97,8.45,16.95,rar_published_a0,10.78,5.69,20.43,0.14,0
+ngc_1808-dw0508m3617,dw0508m3617,ngc_1808,other group,9.90,6.99,14.02,rar_published_a0,7.45,3.93,14.12,0.39,0
+ngc_1808-dw0508m3808,dw0508m3808,ngc_1808,other group,14.69,10.37,20.81,rar_published_a0,14.40,7.60,27.28,0.03,0
+ngc_2683-dw1,NGC 2683-dw1,ngc_2683,other group,11.99,8.46,16.98,rar_published_a0,9.44,4.98,17.89,0.33,0
+ngc_2903-dw0929p2213,dw0929+2213,ngc_2903,other group,8.54,6.03,12.10,rar_published_a0,5.52,2.91,10.46,0.60,0
+ngc_2903-dw0932p1952,dw0932+1952,ngc_2903,other group,11.78,8.32,16.69,rar_published_a0,10.82,5.71,20.50,0.12,0
+ngc_2903-dw0936p2135,dw0936+2135,ngc_2903,other group,11.78,8.32,16.69,rar_published_a0,10.82,5.71,20.50,0.12,0
+ngc_2903-lsbc_d565-09,LSBC D565-09,ngc_2903,other group,13.32,9.40,18.87,rar_published_a0,12.00,6.33,22.74,0.14,0
+ngc_3115-dw1000m0741,dw1000-0741,ngc_3115,other group,14.81,10.46,20.98,rar_published_a0,12.71,6.71,24.08,0.21,0
+ngc_3115-dw1000m0831,dw1000m0831,ngc_3115,other group,9.30,6.57,13.17,rar_published_a0,6.40,3.38,12.13,0.51,0
+ngc_3115-dw1002m0642,dw1002m0642,ngc_3115,other group,8.01,5.65,11.35,rar_published_a0,5.39,2.84,10.21,0.54,0
+ngc_3115-dw1002m0818,dw1002m0818,ngc_3115,other group,8.66,6.11,12.27,rar_published_a0,6.85,3.62,12.98,0.32,0
+ngc_3115-dw1004m0657,dw1004m0657,ngc_3115,other group,12.09,8.54,17.12,rar_published_a0,8.50,4.49,16.11,0.48,0
+ngc_3115-dw1004m0737,dw1004m0737,ngc_3115,other group,12.79,9.03,18.12,rar_published_a0,8.75,4.62,16.58,0.52,0
+ngc_3115-dw1006m0730,dw1006m0730,ngc_3115,other group,11.79,8.32,16.70,rar_published_a0,10.18,5.37,19.29,0.20,0
+ngc_3115-dw1006m0730-n2,dw1006m0730-n2,ngc_3115,other group,10.92,7.71,15.47,rar_published_a0,7.74,4.08,14.67,0.47,0
+ngc_3115-dw1006m0732,dw1006m0732,ngc_3115,other group,10.90,7.70,15.44,rar_published_a0,8.40,4.43,15.92,0.36,0
+ngc_3115-dw1007m0715,dw1007m0715,ngc_3115,other group,15.47,10.92,21.91,rar_published_a0,12.85,6.78,24.35,0.25,0
+ngc_3115-dw1007m0830,dw1007m0830,ngc_3115,other group,9.64,6.81,13.65,rar_published_a0,7.01,3.70,13.28,0.44,0
+ngc_3115-dw1007m0835,dw1007m0835,ngc_3115,other group,7.53,5.32,10.67,rar_published_a0,5.41,2.86,10.25,0.45,0
+ngc_3379-dw1042p1359,dw1042p1359,ngc_3379,other group,8.05,5.68,11.40,rar_published_a0,5.86,3.09,11.10,0.44,0
+ngc_3379-dw1043p1410,dw1043p1410,ngc_3379,other group,9.35,6.60,13.24,rar_published_a0,7.25,3.83,13.74,0.35,0
+ngc_3379-dw1043p1415,dw1043p1415,ngc_3379,other group,10.08,7.12,14.28,rar_published_a0,7.53,3.97,14.27,0.40,0
+ngc_3379-dw1044p1351,dw1044p1351,ngc_3379,other group,10.05,7.10,14.24,rar_published_a0,8.00,4.22,15.16,0.31,0
+ngc_3379-dw1044p1351b,dw1044p1351b,ngc_3379,other group,9.87,6.97,13.98,rar_published_a0,7.41,3.91,14.04,0.39,0
+ngc_3379-dw1044p1359,dw1044p1359,ngc_3379,other group,8.70,6.14,12.32,rar_published_a0,6.24,3.29,11.82,0.46,0
+ngc_3379-dw1047p1153,dw1047p1153,ngc_3379,other group,8.52,6.02,12.07,rar_published_a0,5.60,2.96,10.61,0.58,0
+ngc_3379-dw1047p1258,dw1047p1258,ngc_3379,other group,10.56,7.46,14.96,rar_published_a0,7.92,4.18,15.01,0.40,0
+ngc_3379-dw1048p1154,dw1048p1154,ngc_3379,other group,12.16,8.58,17.22,rar_published_a0,8.10,4.27,15.35,0.56,0
+ngc_3379-dw1048p1259,dw1048p1259,ngc_3379,other group,10.95,7.73,15.51,rar_published_a0,7.31,3.86,13.85,0.56,0
+ngc_3379-dw1048p1303,dw1048p1303,ngc_3379,other group,11.15,7.87,15.79,rar_published_a0,7.87,4.15,14.91,0.48,0
+ngc_3379-dw1049p1233,dw1049p1233,ngc_3379,other group,11.94,8.43,16.91,rar_published_a0,8.82,4.65,16.71,0.42,0
+ngc_3379-dw1049p1247,dw1049p1247,ngc_3379,other group,10.46,7.38,14.82,rar_published_a0,7.77,4.10,14.72,0.41,0
+ngc_3379-dw1050p1213,dw1050p1213,ngc_3379,other group,7.82,5.52,11.08,rar_published_a0,5.70,3.01,10.80,0.43,0
+ngc_3379-dw1050p1236,dw1050p1236,ngc_3379,other group,9.98,7.05,14.14,rar_published_a0,6.62,3.49,12.54,0.56,0
+ngc_3379-dw1051p1406,dw1051p1406,ngc_3379,other group,13.32,9.40,18.87,rar_published_a0,12.88,6.80,24.40,0.05,0
+ngc_3379-kk_093,KK 93,ngc_3379,other group,16.95,11.97,24.01,rar_published_a0,14.25,7.52,27.00,0.24,0
+ngc_3379-kk_096,KK96,ngc_3379,other group,19.02,13.43,26.94,rar_published_a0,14.72,7.77,27.89,0.35,0
+ngc_3379-leg_09,LeG09,ngc_3379,other group,18.24,12.88,25.84,rar_published_a0,14.33,7.56,27.15,0.33,0
+ngc_3379-leg_14,LeG14,ngc_3379,other group,12.27,8.66,17.38,rar_published_a0,10.04,5.30,19.02,0.28,0
+ngc_3379-leg_16,LeG16,ngc_3379,other group,14.38,10.15,20.37,rar_published_a0,11.59,6.12,21.96,0.30,0
+ngc_3379-leg_19,LeG19,ngc_3379,other group,12.71,8.97,18.00,rar_published_a0,10.48,5.53,19.86,0.27,0
+ngc_3379-m96-df2,M96-DF2,ngc_3379,other group,11.11,7.84,15.74,rar_published_a0,7.81,4.12,14.80,0.48,0
+ngc_3379-m96-df7,M96-DF7,ngc_3379,other group,13.14,9.28,18.61,rar_published_a0,9.39,4.96,17.79,0.46,0
+ngc_3521-dw1104p0004,dw1104+0004,ngc_3521,other group,8.79,6.21,12.45,rar_published_a0,6.89,3.64,13.05,0.33,0
+ngc_3521-dw1104p0005,dw1104+0005,ngc_3521,other group,9.60,6.78,13.60,rar_published_a0,6.06,3.20,11.48,0.63,0
+ngc_3521-dw1106m0052,dw1106-0052,ngc_3521,other group,12.24,8.64,17.34,rar_published_a0,8.97,4.73,17.00,0.43,0
+ngc_3521-dw1109m0016,dw1109-0016,ngc_3521,other group,13.39,9.45,18.97,rar_published_a0,9.49,5.01,17.98,0.47,0
+ngc_3521-dw1110p0037,dw1110+0037,ngc_3521,other group,17.49,12.35,24.77,rar_published_a0,15.26,8.05,28.91,0.19,0
+ngc_3521-dw1111p0049,dw1111+0049,ngc_3521,other group,13.18,9.30,18.67,rar_published_a0,9.39,4.96,17.79,0.47,0
+ngc_3521-dwtbg,NGC 3521-dwTBG,ngc_3521,other group,16.33,11.53,23.13,rar_published_a0,12.48,6.59,23.65,0.37,0
+ngc_3521-kksg_20,KKSG 20,ngc_3521,other group,18.49,13.05,26.19,rar_published_a0,16.32,8.61,30.92,0.17,0
+ngc_3521-kksg_22,KKSG 22,ngc_3521,other group,15.93,11.25,22.56,rar_published_a0,13.17,6.95,24.95,0.26,0
+ngc_3627-dw1118p1233,dw1118p1233,ngc_3627,other group,15.36,10.84,21.76,rar_published_a0,14.32,7.56,27.13,0.10,0
+ngc_3627-dw1118p1348,dw1118p1348,ngc_3627,other group,12.34,8.71,17.48,rar_published_a0,9.01,4.76,17.07,0.43,0
+ngc_3627-dw1119p1404,dw1119p1404,ngc_3627,other group,18.72,13.22,26.52,rar_published_a0,16.09,8.49,30.49,0.21,0
+ngc_3627-dw1119p1417,dw1119p1417,ngc_3627,other group,14.63,10.33,20.72,rar_published_a0,14.57,7.69,27.61,0.01,0
+ngc_3627-dw1120p1332,dw1120p1332,ngc_3627,other group,14.17,10.00,20.07,rar_published_a0,11.38,6.01,21.56,0.30,0
+ngc_3627-dw1121p1326,dw1121p1326,ngc_3627,other group,11.01,7.77,15.60,rar_published_a0,8.09,4.27,15.33,0.42,0
+ngc_3627-dw1122p1258,dw1122p1258,ngc_3627,other group,16.20,11.44,22.95,rar_published_a0,16.50,8.71,31.26,0.03,0
+ngc_4248-dw1220+4649,dw1220+4649,ngc_4248,other group,10.09,7.12,14.29,rar_published_a0,7.40,3.91,14.02,0.43,0
+ngc_4248-kkh_2011_s11,[KKH2011]S11,ngc_4248,other group,8.12,5.73,11.50,rar_published_a0,5.03,2.65,9.53,0.66,0
+ngc_4517-dw1227p0136,dw1227p0136,ngc_4517,other group,20.07,14.17,28.43,rar_published_a0,15.81,8.34,29.96,0.33,0
+ngc_4517-dw1232p0015,dw1232p0015,ngc_4517,other group,11.74,8.29,16.63,rar_published_a0,11.63,6.14,22.04,0.01,0
+ngc_4517-dw1236m0025,dw1236m0025,ngc_4517,other group,10.49,7.41,14.86,rar_published_a0,8.15,4.30,15.44,0.35,0
+ngc_4517-dw1238m0035,dw1238m0035,ngc_4517,other group,8.85,6.25,12.54,rar_published_a0,7.52,3.97,14.25,0.22,0
+ngc_4517-dw1238m0105,dw1238m0105,ngc_4517,other group,7.26,5.13,10.28,rar_published_a0,5.61,2.96,10.63,0.35,0
+ngc_4517-dw1238p0028,dw1238p0028,ngc_4517,other group,9.68,6.83,13.71,rar_published_a0,6.64,3.50,12.58,0.52,0
+ngc_4517-kdg_171,KDG 171,ngc_4517,other group,15.69,11.08,22.22,rar_published_a0,12.52,6.61,23.72,0.31,0
+ngc_4565-dw1234p2531,dw1234p2531,ngc_4565,other group,19.12,13.50,27.08,rar_published_a0,16.06,8.48,30.43,0.24,0
+ngc_4565-dw1237p2602,dw1237p2602,ngc_4565,other group,12.66,8.94,17.93,rar_published_a0,11.25,5.94,21.32,0.16,0
+ngc_4594-dgsat_2,NGC 4594-DGSAT-2,ngc_4594,other group,9.40,6.64,13.31,rar_published_a0,7.43,3.92,14.08,0.32,0
+ngc_4594-dgsat_3,NGC 4594-DGSAT-3,ngc_4594,other group,13.45,9.50,19.05,rar_published_a0,10.14,5.35,19.21,0.39,0
+ngc_4594-dw1,NGC 4594-DW1,ngc_4594,other group,16.72,11.80,23.68,rar_published_a0,15.57,8.22,29.50,0.10,0
+ngc_4594-dw1239m1159,dw1239-1159,ngc_4594,other group,11.08,7.82,15.69,rar_published_a0,7.87,4.15,14.91,0.47,0
+ngc_4594-kksg_31,KKSG 31,ngc_4594,other group,18.94,13.37,26.83,rar_published_a0,15.82,8.35,29.97,0.25,0
+ngc_4594-kksg_32,KKSG 32,ngc_4594,other group,16.09,11.36,22.79,rar_published_a0,12.28,6.48,23.27,0.37,0
+ngc_4594-kksg_33,KKSG 33,ngc_4594,other group,14.26,10.07,20.20,rar_published_a0,11.73,6.19,22.23,0.27,0
+ngc_4594-kksg_37,KKSG 37,ngc_4594,other group,17.73,12.52,25.11,rar_published_a0,14.44,7.62,27.36,0.28,0
+ngc_4631-bts_151,BTS151,ngc_4631,other group,14.38,10.15,20.37,rar_published_a0,12.43,6.56,23.55,0.20,0
+ngc_4631-dw1,NGC 4631-dw1,ngc_4631,other group,9.51,6.71,13.47,rar_published_a0,6.78,3.58,12.85,0.46,0
+ngc_4631-dw1239p3230,dw1239+3230,ngc_4631,other group,12.24,8.64,17.34,rar_published_a0,8.45,4.46,16.01,0.51,0
+ngc_4631-dw1239p3251,dw1239+3251,ngc_4631,other group,8.62,6.09,12.21,rar_published_a0,5.47,2.89,10.36,0.62,0
+ngc_4631-dw2,NGC 4631-dw2,ngc_4631,other group,10.38,7.33,14.70,rar_published_a0,6.87,3.63,13.02,0.57,0
+ngc_4631-dw3,NGC 4631-dw3,ngc_4631,other group,10.01,7.07,14.18,rar_published_a0,6.94,3.66,13.15,0.50,0
+ngc_4631-hsc-10,HSC-10,ngc_4631,other group,8.64,6.10,12.24,rar_published_a0,7.09,3.74,13.43,0.27,0
+ngc_4631-hsc-9,HSC-9,ngc_4631,other group,9.39,6.63,13.30,rar_published_a0,7.43,3.92,14.08,0.32,0
+ngc_4826-dw1252p2215,dw1252+2215,ngc_4826,other group,7.14,5.04,10.11,rar_published_a0,5.07,2.68,9.61,0.47,0
+ngc_4826-dw1300p1843,dw1300+1843,ngc_4826,other group,11.75,8.30,16.64,rar_published_a0,8.15,4.30,15.44,0.50,0
+ngc_5055-dw1310p4153,dw1310+4153,ngc_5055,other group,11.21,7.91,15.88,rar_published_a0,7.88,4.16,14.93,0.48,0
+ngc_5055-dw1315p4123,dw1315+4123,ngc_5055,other group,8.11,5.73,11.49,rar_published_a0,5.40,2.85,10.23,0.56,0
+ngc_5055-dw1321p4226,dw1321+4226,ngc_5055,other group,7.69,5.43,10.89,rar_published_a0,6.34,3.35,12.01,0.27,0
+ngc_5055-dwtbg1,NGC 5055-dwTBG1,ngc_5055,other group,10.27,7.25,14.55,rar_published_a0,6.98,3.68,13.23,0.53,0
+ngc_5194_dw1328p4703,dw1328+4703,ngc_5194,other group,8.16,5.76,11.56,rar_published_a0,5.80,3.06,10.99,0.47,0
+ngc_5194_dw1330p4731,dw1330+4731,ngc_5194,other group,8.64,6.10,12.24,rar_published_a0,5.41,2.86,10.25,0.64,0
+ngc_6744-dwtbg_a,NGC 6744 dwTBGa,ngc_6744,other group,11.52,8.13,16.32,rar_published_a0,9.56,5.05,18.11,0.26,0
+scl-mm-dw1,Scl-MM-Dw1,ngc_0253,other group,7.28,5.14,10.31,rar_published_a0,4.73,2.50,8.96,0.59,0
+scl-mm-dw2,Scl-MM-Dw2,ngc_0253,other group,15.24,10.76,21.59,rar_published_a0,10.86,5.73,20.58,0.47,0
+scl-mm-dw3,Scl-MM-Dw3,ngc_0253,other group,4.15,2.93,5.88,rar_published_a0,3.38,1.78,6.40,0.28,0
+scl-mm-dw4,Scl-MM-Dw4,ngc_0253,other group,5.10,3.60,7.22,rar_published_a0,3.36,1.77,6.37,0.57,0
+scl-mm-dw5,Scl-MM-Dw5,ngc_0253,other group,5.78,4.08,8.19,rar_published_a0,3.54,1.87,6.71,0.67,0
+sculptor-de1,Sculptor-dE1,ngc_0253,other group,11.28,7.96,15.98,rar_published_a0,9.05,4.78,17.15,0.30,0
+ugc_06757,UGC 6757,none,no host,12.31,8.69,17.44,E2,11.35,3.90,33.00,0.07,0
+ugc_07929,UGC 7929,ngc_4826,other group,13.89,9.81,19.67,rar_published_a0,11.59,6.12,21.96,0.25,0

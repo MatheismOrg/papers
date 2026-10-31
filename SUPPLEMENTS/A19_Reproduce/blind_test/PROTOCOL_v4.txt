@@ -1,0 +1,60 @@
+A19 COMBINED SCORE OVER EVERY SCORED DWARF, UPPER LIMITS INCLUDED, AND FORECAST RANGES
+PROTOCOL VERSION 4
+Written 31 October 2026, 00:46 US Pacific, by Claude (Opus 5.5), session SA73, turn 2, for Gary Abraham Bernstein.
+
+PURPOSE
+Protocol 3 scored measured dispersions by root-mean-square error and upper limits by counts. The two
+cannot be added, and a count of limits rewards any rule that predicts slow motion. This protocol puts every
+dwarf scored so far into one likelihood: a measured dispersion counts as a value with its error, an upper
+limit as a ceiling. It also turns each model's scatter into a 68 percent range for the forecasts of
+protocol 3, whose central values stay as hashed.
+
+WHAT WAS ALREADY SEEN
+Every dwarf here has been scored before by root-mean-square error or by limit counts (protocols 1 to 3 and
+the Local Volume Database check). No likelihood of the kind below has been computed for any model. Before
+this file was written, only the coverage of the database was checked: all 85 dwarfs have a circularized
+radius, 75 have a measured dispersion with errors and 10 have an upper limit.
+
+DATA
+Local Volume Database (Pace 2025), commit c9fb49c620adab3df32c7d206e8599f4bb624a3a, data/dwarf_all.csv,
+sha256 c5c029dce9970e7b70fc329cc46dbf2ed02b308901579a3f2aa756887d542b26. The 85 dwarfs: the original 44
+(original44_keys.txt), the 25 of protocol 2 (A19_OutOfSample_v2.csv), the 5 measured and 10 limits of
+protocol 3, and Andromeda XVIII (scored only in the Local Volume Database check). Every value comes from
+the database, including for the original 44, so all dwarfs share one source and the circularized radius.
+
+METHOD
+As protocol 3: r = (4/3) R_e, g_obs = 3 sigma^2 / r, stellar mass 2 L_V, g_bar = G (M_star/2) / r^2.
+Measurement error of log10 g_obs: e = [(2 d_sigma / sigma)^2 + (d_R / R)^2]^(1/2) / ln 10, with d_sigma
+and d_R the means of the database's minus and plus errors. An upper limit gives g_ul = 3 sigma_ul^2 / r.
+
+MODELS (all frozen, no refitting): stellar rule; stellar rule with the subhalo factor (E1); baryonic rule;
+Moster relation; radial acceleration relation with the disk a0 and with the published a0; MOND with the
+external field as McGaugh and Milgrom (2013) (E2), using the isolated estimate for dwarfs in other groups.
+Host masses, speeds and constants as protocol 3.
+
+LIKELIHOOD
+For a model m with prediction g_m and scatter s in dex:
+  measured dwarf: log N(log10 g_obs - log10 g_m; 0, s^2 + e^2)
+  upper limit:    log Phi((log10 g_ul - log10 g_m) / s)
+The prediction is the center; no offset is fitted. Each model's s maximizes its own total log-likelihood,
+bounded between 0.01 and 3.0 dex, and is its only free number.
+
+OUTCOMES
+Primary: Delta lnL = lnL(stellar rule) - lnL(relation, disk a0), each at its best s, with a 95 percent
+interval from 5,000 resamples of whole dwarfs (seed 20261031), s refitted for both models in each.
+Success: Delta lnL above zero with the interval above zero.
+Secondary: Delta lnL of the stellar rule against every other model, with the same bootstrap; each model's
+s; each model's log-likelihood split into measured dwarfs with L_V of at least 1e5, measured dwarfs below
+1e5, and upper limits.
+Forecast ranges: for each forecast of protocol 3, the stellar rule's 68 percent range is
+sigma_pred x 10^(+/- s/2) with its fitted s, and the same for E2 (or the published-a0 relation where E2
+was not computed). For each, the separation z = |log10 sigma_rule - log10 sigma_MOND| / [(s_rule/2)^2 +
+(s_MOND/2)^2]^(1/2). Written to A19_Forecast_Ranges_v4.csv; protocol 3's central forecasts are unchanged.
+
+SENSITIVITIES (reported, not used for the verdict)
+A fitted offset per model; mass-to-light ratios 1 and 3; major-axis radii; measured dispersions under
+3 km/s dropped (binary stars inflate them; limits kept); measurement errors set to zero.
+
+REPORTING
+All outcomes are reported whatever they show, in the paper and the supplement. No model, constant,
+likelihood term or data selection changes after this file's SHA-256 is recorded.

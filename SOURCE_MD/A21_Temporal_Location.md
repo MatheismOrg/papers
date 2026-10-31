@@ -1,10 +1,10 @@
-# The Doomsday Argument's Hidden Counting Rule: Why Future Minds Cannot Date Us
+# Do Golems Count? The Doomsday Argument, AI and Why Being Early Suggests Fewer Feeling Minds Ahead
 
 ## Abstract
 
-If long-lived technological civilizations hold far more conscious experience than their early biological phases, why do we find ourselves early? Call this the early-observer puzzle. The number of minds still to come cannot settle it, because the answer depends on a counting rule the doomsday argument leaves unstated: which observers get counted and how much weight each carries. In a worked example, two histories of equal prior weight differ only in their late observers, ten in one and a thousand in the other. Pick a history first and then an observer, and finding ourselves early drops the large history to about 2 percent. Count every observer in both histories as one draw, and it stays at one half. Same histories, same observers, two answers. If most future computing does not feel, the count returns to people and the puzzle turns mild: at ten billion people with 80-year lives, each further millennium adds about as many births as all of history so far, so an early birth rank stays likely unless such a population lasts many thousands of years. A later simulation could also hold minds with memories of an earlier age, so our apparent date and the date of the machinery running us are separate questions. Either way the simulation and its programmer are mathematical structure, with no reality outside it.
+Under the counting rule the doomsday argument uses, our early place in history suggests fewer feeling minds ahead, and fewer feeling minds need not mean fewer machines: a system that does not feel can do the same work more cheaply, so a civilization can run most of its computing on golems, made things that act without experience. The suggestion depends on that rule, which the doomsday argument leaves unstated: which observers get counted and how much weight each carries. In a worked example, two histories of equal prior weight differ only in their late observers, ten in one and a thousand in the other. Pick a history first and then an observer, and finding ourselves early drops the large history to about 2 percent. Count every observer in both histories as one draw, and it stays at one half. Same histories, same observers, two answers. A later simulation could also hold minds with memories of an earlier age, so our apparent date and the date of the machinery running us are separate questions. Either way the simulation and its programmer are mathematical structure, with no reality outside it.
 
-Keywords: early-observer puzzle, algorithmic probability, temporal location, observer-moment, doomsday argument, reference class, consciousness, artificial intelligence, Kolmogorov complexity
+Keywords: algorithmic probability, temporal location, observer-moment, doomsday argument, golems, sentience, consciousness, artificial intelligence, Kolmogorov complexity
 
 ---
 
@@ -12,17 +12,13 @@ Keywords: early-observer puzzle, algorithmic probability, temporal location, obs
 
 Picture two histories, equally likely before you look. In one, ten observers live early and ten live late. In the other, the same ten live early and a thousand live late. You find yourself early. Which history are you in? It depends on how you were drawn. Pick a history first and then an observer inside it, and being early points strongly to the small history: in the large one only one observer in 101 is early, so the large history falls to about 2 percent. Count every observer in both histories as one equally likely draw, and being early tells you nothing, since both histories hold the same ten early observers, so the large history stays at one half. Same histories, same observers, two answers. A head count of future minds cannot place us in history: it says how many observers a future holds, and the odds also need a rule for which ones count and how much each weighs. The worked comparison below sets out the arithmetic.
 
-If you could be born at any point in the history of sentience, when would you expect to find yourself? Suppose the future contains many more minds than the present. Call the question the early-observer puzzle: the physicist Enrico Fermi asked where everybody is; this asks why we are here early, instead of among the many who come later. A larger future alone does not make our apparently early position unlikely. The doomsday argument of the astrophysicist Brandon Carter and the philosopher John Leslie (Carter, 1983; Leslie, 1996) treats each of us as a random draw from everyone who will ever live, so an early place counts as evidence that few will follow. That inference holds under one counting rule and fails under another, as the worked comparison shows. A simulated mind could also remember an earlier era, so our apparent date and the date of the machinery supporting us are different questions.
+If you could be born at any point in the history of sentience, when would you expect to find yourself? Suppose the future contains many more minds than the present. That alone does not make our apparently early position unlikely. The doomsday argument of the astrophysicist Brandon Carter and the philosopher John Leslie (Carter, 1983; Leslie, 1996) treats each of us as a random draw from everyone who will ever live, so an early place counts as evidence that few will follow. That inference holds under one counting rule and fails under another, as the worked comparison shows. A simulated mind could also remember an earlier era, so our apparent date and the date of the machinery supporting us are different questions.
 
 The starting points are that doomsday argument, the philosopher Nick Bostrom's observer sampling assumptions (Bostrom, 2002) and Gabriel Leuenberger's use of algorithmic probability, a weighting that favors shorter descriptions, to locate observers (2014, revised 2017). This paper's contribution is the smallest case that separates the two inputs every such argument needs, a history's weight and an observer's location within it: the same two histories give 2 percent under one counting rule and one half under the other. Its decisive premise is that the location rule is a separate choice the history weight does not fix. It rules out reading our rank in history, or our odds of being simulated, off a head count of future minds.
 
 ### 1.1 Development does not determine our temporal rank
 
 A history that has to start somewhere does not thereby fix how many observers come after us. Even a short joint description of the laws and the starting conditions leaves the observer counts and their weights still to be worked out. If the starting state lacks the organization observers require and a later state contains observers, the history must develop that organization. This paper assumes the generated-history picture behind that point: production one event at a time needs a first event, though no last one. Counting possible future observers settles no temporal rank on its own.
-
-### 1.2 The reference class: minds that can ask
-
-Which observers enter the count is the reference-class problem, and the early-observer puzzle suggests its own class: the minds that can pose it. Being conscious, reflecting on one's own consciousness and asking the probability of being conscious at this date are three different capacities. A bat plausibly has the first (Nagel, 1974), and humans have had the second for millennia; the third took estimates of everyone who has lived and the mathematics of probability, and Carter (1983) first set it out. Taking the askers as the class is defensible, though no argument forces it, and it cuts in a definite direction: among all minds that will ever pose the question, we are among the first, so the restriction sharpens the puzzle unless askers stay few. Cultural prerequisites explain why nobody asked earlier; they do not explain why most askers are not later. Narrowing the class further, to minds that share our exact ignorance of the future, would fix our date by construction and so explain nothing.
 
 ## 2. Three Readings
 
@@ -36,25 +32,13 @@ If our world is simulated, a programmer could be a creator within a larger reali
 
 ### 2.2 Sentience Near Its Typical Peak
 
-One candidate is that technological expansion is uncommon or limited. Whether that bears on our location depends on how often such histories occur, how long they last and how their observers are weighted. Sohrab Rahvar and Shahin Rouhani (2026) derive a lifespan bound of roughly 5,000 years in their most optimistic scenario. They explicitly describe it as a conditional upper bound, not a prediction of actual lifespans. A motive could limit expansion too: a superintelligence that has learned and experienced what it can may get bored and shut down. That too is a conditional scenario. Nondetection and apparent temporal rank are different evidence; combining them requires a joint likelihood (the probability of both kinds of evidence together) including detectability and observer selection.
+One candidate is that technological expansion is uncommon or limited. Whether that bears on our location depends on how often such histories occur, how long they last and how their observers are weighted. Sohrab Rahvar and Shahin Rouhani (2026) derive a lifespan bound of roughly 5,000 years in their most optimistic scenario. They explicitly describe it as a conditional upper bound, not a prediction of actual lifespans. Nondetection and apparent temporal rank are different evidence; combining them requires a joint likelihood (the probability of both kinds of evidence together) including detectability and observer selection.
 
 ### 2.3 The Transition
 
-Another candidate is a change in the forms or prevalence of experience. Future computation might support many minds, few minds or none. A later civilization might also choose which of its systems feel. A system that does not feel may do the same work more cheaply, so even a civilization indifferent to the wrong of using feeling minds as tools could run most of its computing without minds. Shutting systems down or integrating them could alter the number of subjects, and counting systems is not yet counting observer moments, single moments of an observer's experience. Those scenarios require criteria for sentience, subject identity and duration.
+Another candidate is a change in the forms or prevalence of experience. Future computation might support many minds, few minds or none. A later civilization might also choose which of its systems feel. A system that does not feel may do the same work more cheaply, so even a civilization indifferent to the wrong of using feeling minds as tools could run most of its computing on golems, made things that act without experience. Shutting systems down or integrating them could alter the number of subjects, and counting systems is not yet counting observer moments, single moments of an observer's experience. Those scenarios require criteria for sentience, subject identity and duration.
 
 One integrated subject could contain an enormous organization and undergo many distinguishable experiences. The word one therefore implies neither negligible Kolmogorov complexity (the length of a thing's shortest complete description) nor one observer moment. A useful population model specifies available energy, computation, duration and a consciousness criterion before drawing a temporal ranking.
-
-If few future systems feel, the early-observer puzzle turns on people, and the numbers turn modest. About 117 billion humans have been born (Kaneda and Haub, 2022). A world held at ten billion people with 80-year lives has about 125 million births a year, so each further thousand years adds roughly one such count. Under the rule that samples an observer within the actual history, the chance of a birth rank this early then falls as the table below shows; under the rule that weights histories by their observers, it stays unremarkable. Civilizations that seldom keep ten billion people much past a thousand years would make our rank ordinary under both. A setback followed by recovery is not such a limit: it postpones the later observers without removing them.
-
-| Further years at ten billion | Births added | Chance of a birth rank this early |
-|---|---|---|
-| 1,000 | 125 billion | about 1/2 |
-| 2,000 | 250 billion | about 1/3 |
-| 3,000 | 375 billion | about 1/4 |
-| 10,000 | 1.25 trillion | about 1/12 |
-| 100,000 | 12.5 trillion | about 1/100 |
-
-Longer lives pull the two counts apart. Five to ten billion people living two to ten times as long need only about 6 to 60 million births a year, at most about half the historical count per millennium, while their observer moments still accumulate at five to ten billion life-years a year. With births held steady instead, longer lives raise the population by the same factor and leave the births per millennium unchanged, unless a longer fertile window adds births. At the limit, the same ten billion living on for a hundred thousand years add at most ten billion births, against ten trillion with century-long lives, while both futures hold the same quadrillion life-years: longevity can explain an early birth rank and leaves an early observer moment unexplained.
 
 ## 3. Why There Is No Unmatrix
 
@@ -74,7 +58,7 @@ These scenarios do not jointly predict that a transition is imminent. A timing p
 
 ## 5. Relation to Existing Work
 
-This paper separates three things that an observer argument has to keep apart: the weight of a history, the location of an observer within it and the apparent date. The finite comparison below illustrates that separation. The philosopher Nick Bostrom (2002) distinguishes observer sampling assumptions that can produce different conclusions. Gabriel Leuenberger (2014, revised 2017) combines algorithmic probability with observer localization. David Chalmers (2022) addresses the reality of simulated worlds, a question distinct from their probability. Daniel Kolak's and Arnold Zuboff's shared-identity proposals (Kolak, 2004; Zuboff, 2023), which hold that all conscious beings are one and the same subject, can motivate alternative subject criteria; they do not supply numerical observer weights simply by identifying one subject. Fin Moorhouse (2024) asks whether doomsday-style reasoning gives grounds to doubt that digital minds will vastly outnumber humans, and finds it indecisive; the early-observer puzzle asks the same question about our date, and the counting rule shows why a head count alone cannot answer it.
+This paper separates three things that an observer argument has to keep apart: the weight of a history, the location of an observer within it and the apparent date. The finite comparison below illustrates that separation. The philosopher Nick Bostrom (2002) distinguishes observer sampling assumptions that can produce different conclusions. Gabriel Leuenberger (2014, revised 2017) combines algorithmic probability with observer localization. David Chalmers (2022) addresses the reality of simulated worlds, a question distinct from their probability. Daniel Kolak's and Arnold Zuboff's shared-identity proposals (Kolak, 2004; Zuboff, 2023), which hold that all conscious beings are one and the same subject, can motivate alternative subject criteria; they do not supply numerical observer weights simply by identifying one subject.
 
 ## Worked comparison: the sampling rule changes the answer
 
@@ -99,7 +83,7 @@ Once the counting rule is fixed and the moments are weighted alike, the chance o
 
 Our place in history cannot be read off a head count of future minds, because the odds turn on which observers count and how much each one weighs; the worked example moves the large-future history from about 2 percent to 1/2 by changing that rule alone. A simulated experience is real even when its represented surroundings are fictional, because a mind is its complete structure, whatever runs it, and a programmer running the simulation would be structure too: another matrix, no unmatrix.
 
-Estimating whether we are simulated takes an explicit counting rule and a comparison with the records we actually have. For the early-observer puzzle, our date alone cannot rule out a crowded future, and if few machines feel, a human future of a few thousand years at today's size leaves our place unremarkable even under the counting rule that makes it hardest.
+Estimating whether we are simulated takes an explicit counting rule and a comparison with the records we actually have.
 
 ## References
 
@@ -109,17 +93,11 @@ Carter, B. (1983). The anthropic principle and its implications for biological e
 
 Chalmers, D. J. (2022). *Reality+: Virtual Worlds and the Problems of Philosophy*. W. W. Norton.
 
-Kaneda, T., and Haub, C. (2022). How Many People Have Ever Lived on Earth? Population Reference Bureau. https://www.prb.org/news/how-many-people-have-ever-lived-on-earth/
-
 Kolak, D. (2004). *I Am You: The Metaphysical Foundations for Global Ethics*. Springer.
 
 Leslie, J. (1996). *The End of the World: The Science and Ethics of Human Extinction*. Routledge.
 
 Leuenberger, G. (2014, revised 2017). Applications of Algorithmic Probability to the Philosophy of Mind. arXiv:1404.1718. https://arxiv.org/abs/1404.1718
-
-Moorhouse, F. (2024). Anthropic reasons for digital mind scepticism? https://finmoorhouse.com/writing/sims/
-
-Nagel, T. (1974). What is it like to be a bat? *The Philosophical Review*, 83(4), 435-450.
 
 Rahvar, S., and Rouhani, S. (2026). Constraining the Lifespan of Intelligent Technological Civilization in the Galaxy. arXiv:2602.22252. https://arxiv.org/abs/2602.22252
 

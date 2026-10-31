@@ -1,0 +1,60 @@
+LEAN DISTRIBUTION NOTE: recorded raw histories and recovery artifacts referenced below are in the full T19 archive; regenerate them using the included code.
+
+A42 T19 REPRODUCIBILITY AUDIT — 31 October 2026, Los Angeles
+
+24 main chains; 360,000 main sweeps, including 288,000 measurement sweeps. Six preparation chains add 18,000 sweeps. Timing pilot adds 200, excluded from inference.
+R-hat failures: 4/4 groups.
+Recomputed specification compression: 16272 bits. This is not a complete executable ToE.
+
+### 8.9 Independent execution and equilibration audit
+
+A new audit reran the supplied Regge C engine without changing its action, measure or update rules. The protocol was fixed before the main runs. At each of L = 3 and 4 and k = 0.05 and 0.065, three seeded chains began flat and three began from independently prepared rough configurations. Every rough preparation used the same prescribed 3,000-sweep evolution at k = 0.1; no configuration was selected for its observed outcome. Each of the 24 main chains used 3,000 equilibration sweeps followed by 12,000 measurement sweeps. All per-sweep data, starting preparations and ending configurations are retained. These are new executions and independently written diagnostics, not a second implementation of the gravitational dynamics.
+
+The geometry self-tests reproduced, including the flat-start deficit angles and incremental/full recomputation check. The statistical audit used ordinary split R-hat across all six chains at each parameter pair, with a prespecified screening threshold of 1.05, and batch-mean, drift and start-dependence diagnostics. Passing this screen would not prove equilibrium; failing it prevents treating the pooled chains as a settled ensemble. Curvature means below are averages over each start class and are descriptive when the chains have not mixed.
+
+| L | k | Flat-start mean R | Rough-start mean R | Split R-hat | Screen |
+|---|---|---|---|---|---|
+| 3 | 0.05 | -1.0470 | -0.6731 | 1.573 | fails |
+| 3 | 0.065 | -0.6022 | 44.1443 | 13.032 | fails |
+| 4 | 0.05 | -1.0655 | 31.2166 | 5.498 | fails |
+| 4 | 0.065 | -0.6793 | 45.4855 | 17.716 | fails |
+
+All four parameter groups fail the prespecified R-hat screen. The table and trajectories distinguish initial-state dependence from an established equilibrium phase. Negative mean curvature after a flat start is insufficient to demonstrate that the ensemble has equilibrated. These finite-run tests neither locate a critical point nor establish the nonexistence of an equilibrium limit; they restrict what can be claimed from the sampled histories.
+
+All 24 chains satisfy the scaling identity in their measurement averages to within 0.09 percent, despite the failed mixing screen. This separates a successful overall-scale consistency check from equilibration of the geometry. It provides a concrete example of an implementation check that cannot establish the sampled phase.
+
+![Regge audit trajectories. Each curve averages 100 sweeps for display; all diagnostics use the unaveraged measurement histories. Gray shading marks equilibration sweeps.](regge_audit.png)
+
+The next tests are normalizability of the specified ensemble and convergence from both start classes at longer durations, followed by finite-size scaling and curvature correlations only where convergence is supported. A Newtonian potential and a Lorentzian matter-coupled theory require separate tests. The original histories remain unavailable; this audit supplies its own complete histories rather than claiming to reconstruct them.
+
+PER-CHAIN DIAGNOSTICS (SE is maximum over the retained batch sizes; no calibrated significance claim):
+L3_k0.05_flat_s0: R=-0.94417841, batch-SE=0.041974, ESS=18.2, half-drift z=4.465, scale-identity ratio=0.9993165, mean deficit spread=1.732
+L3_k0.05_rough_s0: R=-0.99816284, batch-SE=0.040731, ESS=22, half-drift z=-0.3005, scale-identity ratio=1.00024, mean deficit spread=1.7354
+L3_k0.065_flat_s0: R=-0.57828787, batch-SE=0.074623, ESS=10.7, half-drift z=2.712, scale-identity ratio=1.00053, mean deficit spread=1.7277
+L3_k0.065_rough_s0: R=42.98045, batch-SE=0.78614, ESS=4.04, half-drift z=5.736, scale-identity ratio=1.000044, mean deficit spread=2.9265
+L3_k0.05_flat_s1: R=-1.1030516, batch-SE=0.036482, ESS=17.4, half-drift z=-0.03663, scale-identity ratio=1.000355, mean deficit spread=1.7346
+L3_k0.05_rough_s1: R=-0.14532434, batch-SE=0.25647, ESS=3.01, half-drift z=-7.888, scale-identity ratio=1.000116, mean deficit spread=1.7717
+L3_k0.065_flat_s1: R=-0.76788765, batch-SE=0.054405, ESS=8.9, half-drift z=0.7387, scale-identity ratio=1.000378, mean deficit spread=1.722
+L3_k0.065_rough_s1: R=43.407162, batch-SE=0.82769, ESS=3.53, half-drift z=6.679, scale-identity ratio=1.000884, mean deficit spread=2.776
+L3_k0.05_flat_s2: R=-1.093733, batch-SE=0.04111, ESS=21.1, half-drift z=1.379, scale-identity ratio=0.9998019, mean deficit spread=1.7346
+L3_k0.05_rough_s2: R=-0.87592246, batch-SE=0.11491, ESS=4.22, half-drift z=-4.211, scale-identity ratio=0.9992716, mean deficit spread=1.745
+L3_k0.065_flat_s2: R=-0.46031586, batch-SE=0.065926, ESS=11.3, half-drift z=-3.171, scale-identity ratio=0.9993679, mean deficit spread=1.7393
+L3_k0.065_rough_s2: R=46.045216, batch-SE=0.48466, ESS=3.49, half-drift z=7.125, scale-identity ratio=1.000526, mean deficit spread=3.1865
+L4_k0.05_flat_s0: R=-1.1359352, batch-SE=0.028423, ESS=18.8, half-drift z=3.69, scale-identity ratio=1.00016, mean deficit spread=1.7314
+L4_k0.05_rough_s0: R=38.244782, batch-SE=4.1898, ESS=2.58, half-drift z=10.37, scale-identity ratio=0.9998434, mean deficit spread=2.4714
+L4_k0.065_flat_s0: R=-0.727646, batch-SE=0.041797, ESS=7.64, half-drift z=5.151, scale-identity ratio=1.000011, mean deficit spread=1.7227
+L4_k0.065_rough_s0: R=45.701682, batch-SE=0.6234, ESS=3.35, half-drift z=6.983, scale-identity ratio=0.9999667, mean deficit spread=2.9295
+L4_k0.05_flat_s1: R=-1.102972, batch-SE=0.0219, ESS=19.4, half-drift z=0.9887, scale-identity ratio=0.9999509, mean deficit spread=1.7302
+L4_k0.05_rough_s1: R=-1.009069, batch-SE=0.03434, ESS=19.5, half-drift z=-0.02111, scale-identity ratio=0.9998164, mean deficit spread=1.7353
+L4_k0.065_flat_s1: R=-0.67784508, batch-SE=0.038423, ESS=8.15, half-drift z=-2.554, scale-identity ratio=0.9999159, mean deficit spread=1.7258
+L4_k0.065_rough_s1: R=45.152207, batch-SE=0.65018, ESS=3.22, half-drift z=7.398, scale-identity ratio=1.000524, mean deficit spread=2.9972
+L4_k0.05_flat_s2: R=-0.95772545, batch-SE=0.023196, ESS=29, half-drift z=-0.1257, scale-identity ratio=0.9999743, mean deficit spread=1.7367
+L4_k0.05_rough_s2: R=56.414187, batch-SE=1.1663, ESS=3.74, half-drift z=5.935, scale-identity ratio=0.9998836, mean deficit spread=2.9827
+L4_k0.065_flat_s2: R=-0.63228606, batch-SE=0.062153, ESS=5.88, half-drift z=3.785, scale-identity ratio=0.9999127, mean deficit spread=1.7279
+L4_k0.065_rough_s2: R=45.602551, batch-SE=0.50882, ESS=3.06, half-drift z=7.962, scale-identity ratio=0.9997715, mean deficit spread=2.9915
+
+Interpretation: the scale identity is a useful implementation diagnostic, but satisfying it does not imply mixing of geometrical shapes. A global scaling move can equilibrate an overall size while shape variables remain trapped. This is a possible explanation to test, not a claim of a new physical law.
+The earlier papers and transcripts are preserved verbatim under T18_ORIGINAL for provenance. Statements in those historical files are not all endorsed by the revised paper. The T19 paper supersedes the T18 paper for this package.
+The title and specific overclaims were revised; exact old/new replacements are in PAPER/CHANGES.json and PAPER/CHANGES.md. No fundamental physical update law was changed by this audit.
+
+Data recovery: one output artifact was truncated despite a successful process return. The exact seeded job was replayed; all 3,440,640 bytes of the partial history matched the replay prefix. The complete 15,000-sweep replay replaces only that artifact and is not an independent chain. The partial output, replay and recovery record are retained.

@@ -1,0 +1,50 @@
+EXPLICIT FREE MANY-FERMION MASS-QUENCH CONTROL
+
+The same uniform-background calibrated alternating local circuit is used,
+with its supplied mass coin changed from mi=.4 to mf=3 at t=0. The evolution
+is compared at t=1.3 with the exact free continuum Dirac unitary.
+
+The test retains momenta p=1,2 and BOTH parity branches of the two-sublattice
+regulator. This means eight fermionic modes and four occupied initial
+negative-energy orbitals. The full CAR Fock space has dimension256; its fixed
+four-particle sector has dimension70. Explicit bit-basis annihilation matrices
+satisfy the canonical anticommutation relations exactly. Wedge determinants
+give the full fermionic state; an explicit70x70 lifted unitary supplies an
+additional check. There is no projection or orbital renormalization during
+evolution. This is a selected-mode free-field test, not an interacting QFT.
+
+For one branch and momentum, the final positive-band occupation after the
+supplied sudden quench is the overlap of the old negative-energy and new
+positive-energy spinors:
+    b_p=.5[1-(p^2+mi mf)/(sqrt(p^2+mi^2)*sqrt(p^2+mf^2))].
+With the other branch retained each p contributes twice. Mean pair count is
+sum b_p; vacuum persistence is product(1-b_p); the full count distribution
+is the product of the four Bernoulli generating polynomials. Particle and
+hole counts are equal in the fixed-number sector relative to the final
+negative-band vacuum. This does not mean underlying fermion number changes.
+
+Observed phase-aligned MANY-FERMION state errors:
+    sites512    .000537128
+    sites1024   .000134275
+    sites2048   .0000335684
+The ratios approach4. The analytic mean pair count is .646950977; at2048
+the measured value is .646931921. Analytic vacuum persistence is .493435708;
+its measured error is about1.11e-5. The covariance/coherence matrix also
+converges; occupancies alone are not the acceptance criterion.
+
+Negative controls:
+* Uncalibrated fixed-ratio gates leave a full-state error near .0662.
+* Keeping the pre-quench dynamics gives almost the expected pair count when
+  expressed in the chosen final band basis, but full-state error is1.18144.
+  The instantaneous basis-overlap occupation is constant under both relevant
+  phase evolutions, while the coherent state differs. A count-only test can
+  therefore false-pass. The code explicitly compares coherence and full state.
+
+The initial vacuum, CAR algebra, free quadratic dynamics and external mass
+quench are supplied. The finite selected momentum set does not define a full
+ultraviolet continuum vacuum. Both regulator branches remain present, so
+this is not a demonstration of one isolated physical fermion species.
+No scattering interaction, electromagnetic Schwinger production, renormalized
+interacting QFT, or source-backreacting gravity is claimed.
+
+Run python3 fock_mass_quench.py. Dependencies: NumPy and SciPy.

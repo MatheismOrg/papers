@@ -1,10 +1,10 @@
-# Why Gravity, Space and Time Can Only Be Discrete Causal Transitions
+# The Theory of Everything Must Be Discrete: Gravity, Space and Forward Time as Causal Steps
 
 ## Abstract
 
 Everything that happens must be discrete, in any universe, because a cause produces its effect as the next state, and a continuum has no next state for a cause to produce: like Zeno's runner, who must reach every halfway mark first, a continuum has no first step to take. The argument is an a priori proof in the logician's sense. Our physics agrees. Gravity and quantum theory together let a region of finite size hold only finitely many distinguishable states: the covariant entropy bound caps a region's entropy by the area of its boundary. A finite description singles out only countably many states, and continuous amplitudes, like every continuum, are analysis, a description of many steps at once. Gravity, space and time are then causal transitions. The relations they change exist as mathematics, with zero-width points for nodes, so discreteness gives nothing a size; what it supplies is a next step. Each transition is a rule applied to rules, and nothing outside the mathematics applies it: time is that application, and space is how far it spreads at the base rate, the speed of light. General relativity's smooth spacetime is their large-scale behavior. The result cuts off the infinities of continuum quantum gravity at their source, makes black-hole entropy a count of states, and sets aside a continuum base and, with observed Lorentz symmetry, a regular lattice. That leaves discreteness without a grid, as in causal sets, whose random count estimated the cosmological constant before it was measured. A theory of everything is a rule for transitions, a rewriting system.
 
-Keywords: quantum gravity; discreteness; causal transitions; rewriting systems; holographic principle; entropy bounds; causal sets; theory of everything; algorithmic probability
+Keywords: quantum gravity; discrete gravity; discreteness; forward time; arrow of time; causal transitions; rewriting systems; holographic principle; entropy bounds; causal sets; theory of everything; algorithmic probability
 
 ## 1. Introduction
 
@@ -30,7 +30,18 @@ The Game of Life (a grid of cells that live or die by simple rules) has the same
 
 The starting points are Jacob Bekenstein's black-hole entropy, which measures how many internal states a black hole has (Bekenstein, 1973), the entropy bounds that followed ('t Hooft, 1993; Susskind, 1995; Bousso, 2002), the argument that the Hilbert space of quantum gravity, the space of its possible quantum states, is locally finite-dimensional, allowing only finitely many distinguishable states in any finite region (Bao, Carroll and Singh, 2017), and the discrete programs of causal sets and loop quantum gravity (Bombelli, Lee, Meyer and Sorkin, 1987; Rovelli and Smolin, 1995). This paper's contribution is to join the physical, generative and descriptive routes into one selection principle for the search, and to show what the principle buys: finite sums where continuum calculations diverge (run off to infinity), black-hole entropy as a count, a narrowing of the candidates to discrete order without a grid, and a list of targets any candidate must meet. Its decisive premises are that a cause produces its effect as the next state, and that the entropy bounds hold in the fundamental theory, region by region. It rules out a fundamental continuum of physical values, amplitudes included, and a regular spacetime lattice, as the base of physics.
 
-The argument is one link in a larger chain. Everything that exists is ruled or random, and both are mathematical, so anything outside mathematics would be outside logic. Each unruled bit halves a description's weight, so short laws dominate, and short laws grow complex observers in causal steps from a simple start. An endless chain of steps has no last step to run back from, so time runs forward. This too is a priori.
+The argument is the fifth link in a larger chain:
+
+1. Everything that exists is ruled or random, and both are mathematical, so physics is mathematics, and anything outside mathematics would be outside logic. That is an a priori proof.
+2. Every consistent structure exists as mathematics, and what exists physically is what logical steps in mathematics produce. Mathematics cannot fail to exist, so there is something rather than nothing.
+3. Each bit of a description that no rule decides is a 50/50, so each added bit halves the description's weight. Short laws dominate, and a universe like ours starts simple, in its laws and its state, as observation also shows: the known laws fit on a page, and the early universe was nearly smooth.
+4. Observers like us are complex, so a simple start has to grow complexity, as simple rules do.
+5. A cause produces its effect as the next state, and a continuum has no next state, so the growth comes in discrete causal steps. That is an a priori proof in the logician's sense.
+6. Time is those steps, and space is how far they spread, at a base rate, the speed of light. An endless chain of steps has no last step to run back from, so time runs forward. That too is a priori. A history run backwards would also have to state the step where it turns back, and each bit of that timestamp halves its weight.
+7. Observers arise in forward time, where complexity grows, and their minds run forward with it: a mind models its world from records of steps already taken, and each thought is produced from the one before, so no one remembers backwards from the end.
+8. With no distance shorter than a step, the infinities a smooth spacetime puts into quantum gravity never arise, so string theory, built to tame them, is not needed, and smooth general relativity is the large-scale behavior of the steps. A theory of everything is a short rule for transitions.
+
+Each link stands on its fact, so a reason can fail without taking the chain with it: if the weight on short descriptions were not why our laws are simple, they would still be simple.
 
 ## 2. Gravity and quantum theory cap the information in a region
 

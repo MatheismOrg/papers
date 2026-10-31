@@ -1,0 +1,23 @@
+A19 OUT-OF-SAMPLE DWARF TEST, PROTOCOL VERSION 2 (CORRECTION OF VERSION 1)
+Written 30 October 2026, 23:46 US Pacific, by Claude (Opus 5.5) for Gary Abraham Bernstein.
+
+WHY A SECOND VERSION
+Version 1 (PROTOCOL.txt, SHA-256 4465bfca...) excluded "the original 44" using the list of 44 dwarfs in a
+table supplied by another AI (Argon), which differs from the 44 dwarfs actually used in the original A19
+analysis (Astra's dm_broad_dwarfs/results/dwarfs_benchmark.csv, built from McConnachie's January 2021
+catalog). Ten of version 1's 27 dwarfs were in fact among the original 44. Version 2 corrects the
+exclusion list and changes nothing else.
+
+WHAT WAS ALREADY SEEN
+Before this file was written, the frozen rules had been scored on version 1's 27 dwarfs (17 of which are
+outside the true original 44) and, in an earlier Local Volume Database rerun, on the dwarfs of Argon's list
+that are outside the true original 44. The rules, coefficients, method and metric are unchanged from
+version 1; only the exclusion list is corrected. This is therefore an out-of-sample test, and strictly
+blind only for the 17 dwarfs scored under version 1.
+
+CHANGE
+Selection step 1 now reads: not one of the 44 dwarfs of the original analysis, listed by LVDB key in
+original44_keys.txt (mapped from the system names in dwarfs_benchmark.csv). Steps 2-8, the frozen inputs,
+the method, the primary and secondary outcomes, the bootstrap (20,000 resamples, seed 20261030) and the
+sensitivities are exactly as in version 1. The 17-dwarf subset scored blind under version 1 is reported
+separately.

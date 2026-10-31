@@ -1,4 +1,4 @@
-# Why Everything Exists as Math, with Simple Laws and Forward Discrete Time
+# Why Everything Exists as Math: Simple Laws, Forward Discrete Time, Many-Worlds and Superdeterminism
 
 ## Abstract
 
@@ -156,7 +156,7 @@ Length and likelihood fold into one cost, so a sweeping dismissal has a price in
 
 ### 4.5.1 Parameters as addresses
 
-A generator can turn separately specified parameters into consequences, and then the parameters cost only an address. Stated precisely, if a shared decoding rule distinguishes M candidate regions, a fixed-width selector needs at most ceil(log_2 M) bits; the complete account must also specify the generator, the candidate family, the precision and any remaining data. *How Many Bits Is Physics?* develops the detailed coding benchmark.
+A generator can turn separately specified parameters into consequences, and then the parameters cost only an address. Stated precisely, if a shared decoding rule distinguishes M candidate regions, a fixed-width selector needs at most ceil(log_2 M) bits; the complete account must also specify the generator, the candidate family, the precision and any remaining data.
 
 ### 4.6 Emergent Geometry
 

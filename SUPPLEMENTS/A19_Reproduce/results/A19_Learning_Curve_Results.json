@@ -1,0 +1,696 @@
+{
+ "galaxies": 149,
+ "draws_per_fraction": 50,
+ "fractions": {
+  "0.10": {
+   "training_galaxies": 15,
+   "heldout_galaxies": 134,
+   "disk_heldout": {
+    "stellar": [
+     0.1559,
+     0.1704,
+     0.1868
+    ],
+    "baryonic": [
+     0.156,
+     0.1677,
+     0.1873
+    ],
+    "rar": [
+     0.1517,
+     0.1558,
+     0.1669
+    ]
+   },
+   "original_44": {
+    "stellar": [
+     0.4934,
+     0.5481,
+     0.7417
+    ],
+    "baryonic": [
+     0.4987,
+     0.7004,
+     1.0541
+    ],
+    "rar": [
+     0.6459,
+     0.6782,
+     0.7011
+    ],
+    "draws_stellar_beats_rar": 39,
+    "draws_stellar_beats_baryonic": 36
+   },
+   "blind_27": {
+    "stellar": [
+     0.4227,
+     0.4738,
+     0.8022
+    ],
+    "baryonic": [
+     0.4292,
+     0.8046,
+     1.2465
+    ],
+    "rar": [
+     0.7461,
+     0.7902,
+     0.8201
+    ],
+    "draws_stellar_beats_rar": 39,
+    "draws_stellar_beats_baryonic": 43
+   },
+   "coef_star_median": [
+    11.686,
+    0.781,
+    -0.579
+   ],
+   "coef_star_spread_16_84": [
+    0.359,
+    0.598,
+    1.517
+   ]
+  },
+  "0.20": {
+   "training_galaxies": 30,
+   "heldout_galaxies": 119,
+   "disk_heldout": {
+    "stellar": [
+     0.1531,
+     0.1579,
+     0.165
+    ],
+    "baryonic": [
+     0.1534,
+     0.1581,
+     0.166
+    ],
+    "rar": [
+     0.1527,
+     0.156,
+     0.1592
+    ]
+   },
+   "original_44": {
+    "stellar": [
+     0.4724,
+     0.5002,
+     0.5312
+    ],
+    "baryonic": [
+     0.5302,
+     0.679,
+     0.8025
+    ],
+    "rar": [
+     0.6552,
+     0.6731,
+     0.6872
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 43
+   },
+   "blind_27": {
+    "stellar": [
+     0.4153,
+     0.4308,
+     0.5137
+    ],
+    "baryonic": [
+     0.5548,
+     0.7957,
+     0.9691
+    ],
+    "rar": [
+     0.7591,
+     0.7834,
+     0.802
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 45
+   },
+   "coef_star_median": [
+    11.708,
+    0.787,
+    -0.649
+   ],
+   "coef_star_spread_16_84": [
+    0.154,
+    0.274,
+    0.835
+   ]
+  },
+  "0.30": {
+   "training_galaxies": 45,
+   "heldout_galaxies": 104,
+   "disk_heldout": {
+    "stellar": [
+     0.1499,
+     0.1569,
+     0.1618
+    ],
+    "baryonic": [
+     0.1509,
+     0.1577,
+     0.1621
+    ],
+    "rar": [
+     0.1492,
+     0.1556,
+     0.1608
+    ]
+   },
+   "original_44": {
+    "stellar": [
+     0.4748,
+     0.4912,
+     0.5184
+    ],
+    "baryonic": [
+     0.4924,
+     0.651,
+     0.7419
+    ],
+    "rar": [
+     0.6538,
+     0.666,
+     0.6816
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 41
+   },
+   "blind_27": {
+    "stellar": [
+     0.4062,
+     0.4287,
+     0.4746
+    ],
+    "baryonic": [
+     0.5008,
+     0.7399,
+     0.8857
+    ],
+    "rar": [
+     0.7571,
+     0.7738,
+     0.7946
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 46
+   },
+   "coef_star_median": [
+    11.74,
+    0.777,
+    -0.733
+   ],
+   "coef_star_spread_16_84": [
+    0.126,
+    0.17,
+    0.589
+   ]
+  },
+  "0.40": {
+   "training_galaxies": 60,
+   "heldout_galaxies": 89,
+   "disk_heldout": {
+    "stellar": [
+     0.1495,
+     0.1571,
+     0.1669
+    ],
+    "baryonic": [
+     0.1492,
+     0.1586,
+     0.1651
+    ],
+    "rar": [
+     0.1496,
+     0.158,
+     0.1619
+    ]
+   },
+   "original_44": {
+    "stellar": [
+     0.468,
+     0.4845,
+     0.496
+    ],
+    "baryonic": [
+     0.5609,
+     0.6798,
+     0.7993
+    ],
+    "rar": [
+     0.6567,
+     0.6715,
+     0.6842
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 47
+   },
+   "blind_27": {
+    "stellar": [
+     0.4083,
+     0.4359,
+     0.4722
+    ],
+    "baryonic": [
+     0.6157,
+     0.8001,
+     0.9587
+    ],
+    "rar": [
+     0.7612,
+     0.7813,
+     0.7981
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 48
+   },
+   "coef_star_median": [
+    11.746,
+    0.826,
+    -0.844
+   ],
+   "coef_star_spread_16_84": [
+    0.137,
+    0.192,
+    0.545
+   ]
+  },
+  "0.50": {
+   "training_galaxies": 74,
+   "heldout_galaxies": 75,
+   "disk_heldout": {
+    "stellar": [
+     0.144,
+     0.1523,
+     0.1634
+    ],
+    "baryonic": [
+     0.1437,
+     0.1535,
+     0.1611
+    ],
+    "rar": [
+     0.1454,
+     0.1534,
+     0.1631
+    ]
+   },
+   "original_44": {
+    "stellar": [
+     0.4718,
+     0.4837,
+     0.5054
+    ],
+    "baryonic": [
+     0.5838,
+     0.6571,
+     0.761
+    ],
+    "rar": [
+     0.6623,
+     0.6687,
+     0.6804
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 49
+   },
+   "blind_27": {
+    "stellar": [
+     0.4128,
+     0.4253,
+     0.4865
+    ],
+    "baryonic": [
+     0.6619,
+     0.7655,
+     0.9094
+    ],
+    "rar": [
+     0.7688,
+     0.7774,
+     0.7931
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 49
+   },
+   "coef_star_median": [
+    11.74,
+    0.821,
+    -0.75
+   ],
+   "coef_star_spread_16_84": [
+    0.09,
+    0.124,
+    0.455
+   ]
+  },
+  "0.60": {
+   "training_galaxies": 89,
+   "heldout_galaxies": 60,
+   "disk_heldout": {
+    "stellar": [
+     0.1364,
+     0.1539,
+     0.1643
+    ],
+    "baryonic": [
+     0.1396,
+     0.1525,
+     0.1649
+    ],
+    "rar": [
+     0.1403,
+     0.1546,
+     0.1647
+    ]
+   },
+   "original_44": {
+    "stellar": [
+     0.4713,
+     0.4832,
+     0.5009
+    ],
+    "baryonic": [
+     0.592,
+     0.671,
+     0.7378
+    ],
+    "rar": [
+     0.6626,
+     0.6707,
+     0.681
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 49
+   },
+   "blind_27": {
+    "stellar": [
+     0.4135,
+     0.4379,
+     0.4636
+    ],
+    "baryonic": [
+     0.6663,
+     0.7805,
+     0.8821
+    ],
+    "rar": [
+     0.7692,
+     0.7801,
+     0.7939
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 50
+   },
+   "coef_star_median": [
+    11.738,
+    0.816,
+    -0.687
+   ],
+   "coef_star_spread_16_84": [
+    0.059,
+    0.131,
+    0.4
+   ]
+  },
+  "0.70": {
+   "training_galaxies": 104,
+   "heldout_galaxies": 45,
+   "disk_heldout": {
+    "stellar": [
+     0.1356,
+     0.1479,
+     0.1631
+    ],
+    "baryonic": [
+     0.1367,
+     0.1476,
+     0.1625
+    ],
+    "rar": [
+     0.1355,
+     0.1497,
+     0.1652
+    ]
+   },
+   "original_44": {
+    "stellar": [
+     0.4716,
+     0.4803,
+     0.4862
+    ],
+    "baryonic": [
+     0.5963,
+     0.6527,
+     0.7164
+    ],
+    "rar": [
+     0.6634,
+     0.669,
+     0.6756
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 50
+   },
+   "blind_27": {
+    "stellar": [
+     0.4132,
+     0.4294,
+     0.4451
+    ],
+    "baryonic": [
+     0.6696,
+     0.7587,
+     0.8453
+    ],
+    "rar": [
+     0.7702,
+     0.7778,
+     0.7867
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 50
+   },
+   "coef_star_median": [
+    11.75,
+    0.824,
+    -0.725
+   ],
+   "coef_star_spread_16_84": [
+    0.059,
+    0.089,
+    0.254
+   ]
+  },
+  "0.80": {
+   "training_galaxies": 119,
+   "heldout_galaxies": 30,
+   "disk_heldout": {
+    "stellar": [
+     0.1328,
+     0.1575,
+     0.179
+    ],
+    "baryonic": [
+     0.1402,
+     0.1563,
+     0.1783
+    ],
+    "rar": [
+     0.1416,
+     0.1594,
+     0.1768
+    ]
+   },
+   "original_44": {
+    "stellar": [
+     0.4767,
+     0.4824,
+     0.4929
+    ],
+    "baryonic": [
+     0.6168,
+     0.6771,
+     0.7123
+    ],
+    "rar": [
+     0.6655,
+     0.6687,
+     0.6736
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 50
+   },
+   "blind_27": {
+    "stellar": [
+     0.4197,
+     0.4383,
+     0.4477
+    ],
+    "baryonic": [
+     0.7062,
+     0.7914,
+     0.8387
+    ],
+    "rar": [
+     0.7732,
+     0.7775,
+     0.784
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 50
+   },
+   "coef_star_median": [
+    11.745,
+    0.814,
+    -0.699
+   ],
+   "coef_star_spread_16_84": [
+    0.053,
+    0.076,
+    0.261
+   ]
+  },
+  "0.90": {
+   "training_galaxies": 134,
+   "heldout_galaxies": 15,
+   "disk_heldout": {
+    "stellar": [
+     0.1157,
+     0.1413,
+     0.1679
+    ],
+    "baryonic": [
+     0.1146,
+     0.1464,
+     0.177
+    ],
+    "rar": [
+     0.1195,
+     0.1435,
+     0.1686
+    ]
+   },
+   "original_44": {
+    "stellar": [
+     0.4752,
+     0.4784,
+     0.4832
+    ],
+    "baryonic": [
+     0.6435,
+     0.6715,
+     0.7083
+    ],
+    "rar": [
+     0.6661,
+     0.669,
+     0.6729
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 50
+   },
+   "blind_27": {
+    "stellar": [
+     0.4251,
+     0.433,
+     0.444
+    ],
+    "baryonic": [
+     0.7434,
+     0.7842,
+     0.8366
+    ],
+    "rar": [
+     0.774,
+     0.7779,
+     0.7831
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 50
+   },
+   "coef_star_median": [
+    11.752,
+    0.827,
+    -0.74
+   ],
+   "coef_star_spread_16_84": [
+    0.036,
+    0.041,
+    0.135
+   ]
+  },
+  "0.95": {
+   "training_galaxies": 142,
+   "heldout_galaxies": 7,
+   "disk_heldout": {
+    "stellar": [
+     0.1218,
+     0.154,
+     0.2042
+    ],
+    "baryonic": [
+     0.1266,
+     0.1537,
+     0.194
+    ],
+    "rar": [
+     0.125,
+     0.1457,
+     0.1997
+    ]
+   },
+   "original_44": {
+    "stellar": [
+     0.4768,
+     0.4789,
+     0.4827
+    ],
+    "baryonic": [
+     0.6455,
+     0.6704,
+     0.6904
+    ],
+    "rar": [
+     0.6677,
+     0.6693,
+     0.6712
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 50
+   },
+   "blind_27": {
+    "stellar": [
+     0.427,
+     0.433,
+     0.4387
+    ],
+    "baryonic": [
+     0.7468,
+     0.7813,
+     0.8114
+    ],
+    "rar": [
+     0.7761,
+     0.7782,
+     0.7808
+    ],
+    "draws_stellar_beats_rar": 50,
+    "draws_stellar_beats_baryonic": 50
+   },
+   "coef_star_median": [
+    11.749,
+    0.818,
+    -0.72
+   ],
+   "coef_star_spread_16_84": [
+    0.02,
+    0.038,
+    0.099
+   ]
+  }
+ }
+}

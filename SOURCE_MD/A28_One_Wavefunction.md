@@ -1,4 +1,4 @@
-# Can One Quantum Universe Run Every Computable Mind?
+# One Quantum Universe Can Run Every Computable Mind
 
 ## Abstract
 

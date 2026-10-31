@@ -1,0 +1,219 @@
+{
+ "protocol_sha256": "11292fdd7142de74de61ab449bc6a225b1abc25da49b7b03eaa229c59a550304",
+ "input_sha256": {
+  "clash_standardized.csv": "1e942515e946ccfd05f38f9923d5bfc163a78d301a30e20bd14bdc7c00399432",
+  "clash_table1_idia.tsv": "915f9404e7a91f2668c8cc458e995139e750499c5ee2423540506a3573fa7f67",
+  "manga_bcg_standardized.csv": "150c1ac171112a1a2e08d67bddaa4b9c462f50207010a51a6783adf2bb1c9b72",
+  "manga_bcg_table1_extracted.txt": "b9e642fa3f3bb80ccb8700dee4f1a3691151f5429bacccb8913c5c53bc0c7731"
+ },
+ "A_root_status": {
+  "n_clipped": 2,
+  "clipped": [
+   "MACS J0429.6-0253",
+   "MACS J0647.7+7015"
+  ]
+ },
+ "B_supported_range": {
+  "n_hosts": 50,
+  "n_points": 81,
+  "n_hosts_MaNGA": 40,
+  "n_hosts_CLASH": 10,
+  "H": 0.1871,
+  "R1": 0.3767,
+  "bootstrap_H_minus_R1": [
+   -0.1897,
+   -0.2223,
+   -0.1583
+  ]
+ },
+ "C_probabilistic": {
+  "score": 0.2875,
+  "R1": 0.4033,
+  "deterministic": 0.1851,
+  "groups": {
+   "MaNGA_BCG": 0.2399,
+   "CLASH_centre": 0.2138,
+   "CLASH_outer": 0.4218
+  },
+  "mean_residual": {
+   "MaNGA_BCG": 0.2091,
+   "CLASH_centre": 0.1818,
+   "CLASH_outer": 0.4034
+  },
+  "bootstrap_C_minus_R1": [
+   -0.1158,
+   -0.1365,
+   -0.0947
+  ],
+  "posterior_median_log_Mh": {
+   "CLASH_range": [
+    13.26,
+    14.73
+   ],
+   "MaNGA_range": [
+    13.03,
+    14.78
+   ],
+   "n_above_16": 0
+  },
+  "robust_to_scatter": true
+ },
+ "D_independent_masses": {
+  "n": 20,
+  "median_log_ratio_deterministic": 0.228,
+  "scatter_deterministic": 0.728,
+  "median_log_ratio_probabilistic": -0.949,
+  "scatter_probabilistic": 0.455,
+  "lensing_log_M200_range": [
+   14.74,
+   15.52
+  ],
+  "consistent": false,
+  "per_cluster": {
+   "A209": {
+    "log_M200_lensing": 15.186,
+    "c_lensing": 2.81,
+    "fit_rms_dex": 0.0008,
+    "log_ratio_deterministic": -0.113,
+    "log_ratio_probabilistic": -1.081
+   },
+   "A383": {
+    "log_M200_lensing": 14.89,
+    "c_lensing": 6.05,
+    "fit_rms_dex": 0.0001,
+    "log_ratio_deterministic": 0.047,
+    "log_ratio_probabilistic": -0.85
+   },
+   "A611": {
+    "log_M200_lensing": 15.181,
+    "c_lensing": 4.08,
+    "fit_rms_dex": 0.0007,
+    "log_ratio_deterministic": 0.41,
+    "log_ratio_probabilistic": -0.871
+   },
+   "A2261": {
+    "log_M200_lensing": 15.357,
+    "c_lensing": 3.88,
+    "fit_rms_dex": 0.0012,
+    "log_ratio_deterministic": 0.956,
+    "log_ratio_probabilistic": -0.632
+   },
+   "MACS J0329.7-0211": {
+    "log_M200_lensing": 14.938,
+    "c_lensing": 6.7,
+    "fit_rms_dex": 0.0,
+    "log_ratio_deterministic": 1.258,
+    "log_ratio_probabilistic": -0.543
+   },
+   "MACS J0416.1-2403": {
+    "log_M200_lensing": 15.014,
+    "c_lensing": 3.04,
+    "fit_rms_dex": 0.0,
+    "log_ratio_deterministic": -0.345,
+    "log_ratio_probabilistic": -1.369
+   },
+   "MACS J0429.6-0253": {
+    "log_M200_lensing": 14.974,
+    "c_lensing": 4.69,
+    "fit_rms_dex": 0.0,
+    "log_ratio_deterministic": 1.526,
+    "log_ratio_probabilistic": -0.354
+   },
+   "MACS J0647.7+7015": {
+    "log_M200_lensing": 15.13,
+    "c_lensing": 4.12,
+    "fit_rms_dex": 0.0,
+    "log_ratio_deterministic": 1.37,
+    "log_ratio_probabilistic": -0.53
+   },
+   "MACS J0717.5+3745": {
+    "log_M200_lensing": 15.417,
+    "c_lensing": 1.9,
+    "fit_rms_dex": 0.001,
+    "log_ratio_deterministic": -1.207,
+    "log_ratio_probabilistic": -2.157
+   },
+   "MACS J0744.9+3927": {
+    "log_M200_lensing": 15.232,
+    "c_lensing": 3.6,
+    "fit_rms_dex": 0.0017,
+    "log_ratio_deterministic": 1.155,
+    "log_ratio_probabilistic": -1.047
+   },
+   "MACS J1115.9+0129": {
+    "log_M200_lensing": 15.244,
+    "c_lensing": 2.98,
+    "fit_rms_dex": 0.0,
+    "log_ratio_deterministic": -0.672,
+    "log_ratio_probabilistic": -1.624
+   },
+   "MACS J1149.5+2223": {
+    "log_M200_lensing": 15.379,
+    "c_lensing": 2.21,
+    "fit_rms_dex": 0.0,
+    "log_ratio_deterministic": 0.038,
+    "log_ratio_probabilistic": -1.454
+   },
+   "MACS J1206.2-0847": {
+    "log_M200_lensing": 15.244,
+    "c_lensing": 3.86,
+    "fit_rms_dex": 0.0012,
+    "log_ratio_deterministic": -0.548,
+    "log_ratio_probabilistic": -1.619
+   },
+   "MACS J1720.3+3536": {
+    "log_M200_lensing": 15.145,
+    "c_lensing": 4.23,
+    "fit_rms_dex": 0.0005,
+    "log_ratio_deterministic": 0.59,
+    "log_ratio_probabilistic": -0.88
+   },
+   "MACS J1931.8-2635": {
+    "log_M200_lensing": 15.137,
+    "c_lensing": 4.5,
+    "fit_rms_dex": 0.0012,
+    "log_ratio_deterministic": 0.617,
+    "log_ratio_probabilistic": -0.817
+   },
+   "MS2137-2353": {
+    "log_M200_lensing": 15.114,
+    "c_lensing": 2.84,
+    "fit_rms_dex": 0.0,
+    "log_ratio_deterministic": -0.303,
+    "log_ratio_probabilistic": -1.294
+   },
+   "RX J1347.5-1145": {
+    "log_M200_lensing": 15.519,
+    "c_lensing": 3.31,
+    "fit_rms_dex": 0.0014,
+    "log_ratio_deterministic": -0.263,
+    "log_ratio_probabilistic": -1.579
+   },
+   "RX J1532.9+3021": {
+    "log_M200_lensing": 14.738,
+    "c_lensing": 5.41,
+    "fit_rms_dex": 0.0021,
+    "log_ratio_deterministic": -0.007,
+    "log_ratio_probabilistic": -1.018
+   },
+   "RX J2129.7+0005": {
+    "log_M200_lensing": 14.779,
+    "c_lensing": 5.74,
+    "fit_rms_dex": 0.0005,
+    "log_ratio_deterministic": 0.567,
+    "log_ratio_probabilistic": -0.539
+   },
+   "RX J2248.7-4431": {
+    "log_M200_lensing": 15.237,
+    "c_lensing": 3.76,
+    "fit_rms_dex": 0.0008,
+    "log_ratio_deterministic": 0.732,
+    "log_ratio_probabilistic": -0.812
+   }
+  }
+ },
+ "E_h_0704": {
+  "score": 0.1819,
+  "R1": 0.4033
+ }
+}

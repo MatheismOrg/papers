@@ -1,0 +1,53 @@
+A19 AUDIT OF THE CLUSTER-SCALE TEST (PROTOCOL 5)
+PROTOCOL VERSION 6
+Written 31 October 2026, 01:23 US Pacific, by Claude (Opus 5.5), session SA73, turn 4, for Gary Abraham Bernstein.
+
+PURPOSE
+An outside review (Perplexity, 31 October) accepted protocol 5's acceleration scores but asked whether they
+survive four checks: a deterministic inversion of the mean Moster relation ignores its published scatter;
+five CLASH halos came out above 10^16 suns, two at the search bound; the halo masses were never compared
+with independent cluster masses; and stellar masses beyond the range the relation was fitted on were used.
+This protocol fixes those checks before any of them is computed.
+
+WHAT WAS ALREADY SEEN
+All of protocol 5's results (A19_Clusters_v5_Results.json and _Points.csv). Moster et al. (2013) define
+halo mass at 200 times the critical density ("All virial masses are computed with respect to 200 times the
+critical density"), so the M_200c concentration of Dutton and Maccio (2014) used in protocol 5 matches it;
+they adopt 0.15 dex lognormal scatter in stellar mass at fixed halo mass; their local stellar mass function
+reaches about 10^11.7 suns; their parameters assume h = 0.704 with masses in suns.
+
+DATA AND MODELS
+As protocol 5 (data/Clusters/, frozen_disk_rules.json, the radial acceleration relation with the disk a0
+as the comparison), with these checks:
+
+(A) Root status. For each host, whether the bounded search found a root (|log M*_model - log M*_obs| below
+    0.001 dex) or stopped at the bound 10^16.5.
+(B) Supported range. Protocol 5's deterministic prediction scored only on hosts whose BCG stellar mass is
+    at most 10^11.7 suns, beside the full sample.
+(C) Probabilistic inversion. For each host, the posterior over log M_h from 9 to 16.5 (step 0.005) is
+    p(log M_h | M*_obs, z) proportional to N(log M*_obs; log M*_Moster(M_h, z), s) x dn/dln M_h (z),
+    with s = (0.15^2 + e^2)^(1/2), e the published log M* error (MaNGA) or 0.10 dex (CLASH, none published),
+    and dn/dln M_h the Tinker et al. (2008) mass function for M_200c at the host's redshift (colossus,
+    cosmology H0 = 67.1, Omega_m = 0.3175, Omega_b = 0.049, sigma_8 = 0.8344, n_s = 0.9624). The predicted
+    log g at each point is the posterior mean of log10[g_bar + g_NFW(r; M_h, z)], with protocol 5's halo.
+    Selection is not modeled: CLASH was chosen among the most massive clusters, so this prior pulls their
+    halo masses low, while the deterministic inversion runs high; the two bracket the effect of scatter.
+    Scored as protocol 5 (hosts weighted equally, 5,000 resamples of hosts, seed 20261031) against the
+    relation with the disk a0.
+(D) Independent masses. For each CLASH cluster, an NFW M_200c and concentration fitted to its published
+    accelerations at 100 to 600 kpc (total mass, g = G M(<r) / r^2, least squares in log g, c bounded 1 to
+    20, at the cluster's redshift), compared with the deterministic and the probabilistic Moster halo
+    masses: median and scatter of log10(M_Moster / M_lensing). No independent masses exist here for the
+    MaNGA galaxies.
+(E) Cosmology. Protocol 5's deterministic prediction rerun with h = 0.704 in rho_crit and the
+    concentration's mass pivot, as Moster's parameters assume.
+
+OUTCOMES
+All checks are reported. The acceleration result of protocol 5 is called robust to scatter only if the
+probabilistic inversion (C) also has a lower score than the relation with the disk a0, with the 95 percent
+bootstrap interval of the difference below zero. The halo masses are called consistent with lensing only
+if the median log ratio in (D) lies within 0.2 dex of zero for the deterministic or the probabilistic
+masses.
+
+REPORTING
+All outcomes are reported whatever they show. Nothing changes after this file's SHA-256 is recorded.

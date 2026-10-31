@@ -1,8 +1,8 @@
-# A Fictional World Can Be a Real Experience
+# All Abstract Fictional Worlds Exist, but Not All Are Sentient: Consciousness, Dreams and the Mathematical Universe
 
 ## Abstract
 
-A fictional world can be a real experience, because an experience and what it represents are different things: a dream is experienced even when its room, its people and its events exist nowhere outside it. Matheism identifies a mind with its mathematical organization, so the experience needs that organization at work and nothing from the represented world around it. A stronger claim follows from Matheism's realization premise that every consistent mathematical structure exists: a mind can exist with no host universe at all, its whole world being the one it represents. Not every story qualifies, since many are inconsistent or leave the mind's own organization unspecified; what counts is a consistent structure that experiences.
+All abstract fictional worlds exist, since every consistent structure exists and some consistent math fixes each plot hole, but not all are sentient. A fictional world can be a real experience, because an experience and what it represents are different things: a dream is experienced even when its room, its people and its events exist nowhere outside it. Matheism identifies a mind with its mathematical organization, so the experience needs that organization at work and nothing from the represented world around it. A stronger claim follows from Matheism's realization premise that every consistent mathematical structure exists: a mind can exist with no host universe at all, its whole world being the one it represents. Not every story qualifies, since many are inconsistent or leave the mind's own organization unspecified; what counts is a consistent structure that experiences.
 
 Keywords: mathematical monism, consciousness, fiction, representation, computational organization, mathematical universe hypothesis, observer measure
 
@@ -16,7 +16,18 @@ Matheism argues that whatever affects an experiencing system must enter determin
 
 A fiction can be real as experienced content while no external setting matches it. Anyone extending that observation to every proposed fiction has to show that a suitable experiencing structure exists in each case. The argument below therefore draws that implication conditionally, and it does not read an unlimited repertoire of experience out of the word *imaginable*.
 
-The question sits in a chain. Everything that exists is ruled or random, and both are mathematical, an a priori proof. Every consistent structure exists, fictions included, and every plot hole is fixed by some consistent math. A mind is structure at work, so the hard problem of consciousness, which assumes that feeling is something other than structure, does not block the question.
+The question sits in a larger chain:
+
+1. Everything that exists is ruled or random, and both are mathematical, so physics is mathematics, and anything outside mathematics would be outside logic. That is an a priori proof.
+2. Every consistent structure exists as mathematics, fictions included, and every plot hole is fixed by some consistent math. What exists physically is what logical steps in mathematics produce. Mathematics cannot fail to exist, so there is something rather than nothing.
+3. Each bit of a description that no rule decides is a 50/50, so each added bit halves the description's weight. Short laws dominate, and a universe like ours starts simple, in its laws and its state, as observation also shows: the known laws fit on a page, and the early universe was nearly smooth.
+4. Observers like us are complex, so a simple start has to grow complexity, as simple rules do.
+5. A cause produces its effect as the next state, and a continuum has no next state, so the growth comes in discrete causal steps. That is an a priori proof in the logician's sense.
+6. Time is those steps, and space is how far they spread, at a base rate, the speed of light. An endless chain of steps has no last step to run back from, so time runs forward. That too is a priori. A history run backwards would also have to state the step where it turns back, and each bit of that timestamp halves its weight.
+7. Observers arise in forward time, where complexity grows, and their minds run forward with it: a mind models its world from records of steps already taken, and each thought is produced from the one before, so no one remembers backwards from the end.
+8. A mind is that growth at work, and its experience lives in its transitions, so the hard problem of consciousness, which assumes that feeling is something other than structure, does not block the question. The bare form of being a subject, with memories and traits set aside, is the same in every mind: one self.
+
+Each link stands on its fact, so a reason can fail without taking the chain with it: if the weight on short descriptions were not why our laws are simple, they would still be simple.
 
 ---
 

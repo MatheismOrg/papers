@@ -1,4 +1,4 @@
-# The Emperor's New Points: Continua Are Analysis, Not Physics
+# The Emperor's New Points: Zeno's Paradoxes Show Continua Are Analysis, Not Physics
 
 ## Abstract
 
@@ -30,7 +30,18 @@ The same holds for space itself, on either view of what space is. If space is a 
 
 Two observations carry the case: a continuum has no next point, and adding its singleton widths does not yield its length. Both are consistent with continuum mathematics as a tool. Causality turns the first into a physical conclusion, since what has no next state cannot produce one. The bearer discussion below takes up the second, the requirement that distance have a physical account.
 
-The view behind the paper is mathematical monism: everything that exists is ruled or random, and both are mathematical, an a priori proof. Continua and discrete structures alike exist as mathematics, and the physical question is which of them happen. Short laws grow minds in such steps from a simple start, since each unruled bit halves a description's weight, and an endless chain of steps has no last step to run back from, so time runs forward.
+The paper's argument is the fifth link in a larger chain, mathematical monism:
+
+1. Everything that exists is ruled or random, and both are mathematical, so physics is mathematics, and anything outside mathematics would be outside logic. That is an a priori proof.
+2. Every consistent structure exists as mathematics, continua and discrete structures alike, and what exists physically is what logical steps in mathematics produce: the physical question is which of them happen. Mathematics cannot fail to exist, so there is something rather than nothing.
+3. Each bit of a description that no rule decides is a 50/50, so each added bit halves the description's weight. Short laws dominate, and a universe like ours starts simple, in its laws and its state, as observation also shows: the known laws fit on a page, and the early universe was nearly smooth.
+4. Observers like us are complex, so a simple start has to grow complexity, as simple rules do.
+5. A cause produces its effect as the next state, and a continuum has no next state, so the growth comes in discrete causal steps. That is an a priori proof in the logician's sense.
+6. Time is those steps, and space is how far they spread, at a base rate, the speed of light. An endless chain of steps has no last step to run back from, so time runs forward. That too is a priori. A history run backwards would also have to state the step where it turns back, and each bit of that timestamp halves its weight.
+7. Observers arise in forward time, where complexity grows, and their minds run forward with it: a mind models its world from records of steps already taken, and each thought is produced from the one before, so no one remembers backwards from the end.
+8. With no distance shorter than a step, the infinities a smooth spacetime puts into quantum gravity never arise, so string theory, built to tame them, is not needed, and smooth general relativity is the large-scale behavior of the steps. A theory of everything is a short rule for transitions.
+
+Each link stands on its fact, so a reason can fail without taking the chain with it: if the weight on short descriptions were not why our laws are simple, they would still be simple.
 
 ### 1.2 The bearer proposal
 

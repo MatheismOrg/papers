@@ -1,0 +1,19 @@
+{
+  "eigen_vs_matrix_exponential_error": 4.307606308296751e-15,
+  "initial_total_energy": 2.3999999999999995,
+  "circuit_total_energy": 2.4000001551614556,
+  "energy_absolute_error": 1.5516145612792798e-07,
+  "resolved_state_error": 5.7161712215272504e-08,
+  "pair_mean_relative_cutoff1_error": 0.29820498837754683,
+  "resolved_refinement_ratios": [
+    4.003156576067152,
+    4.000790188075086,
+    4.0001976123837055,
+    4.000049407600543,
+    4.000012356620501,
+    4.000003086591665,
+    4.000001406457298,
+    3.999994507600658
+  ],
+  "all_assertions_passed": true
+}

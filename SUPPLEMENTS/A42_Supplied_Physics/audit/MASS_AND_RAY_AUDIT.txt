@@ -1,0 +1,82 @@
+MASS COIN AND GEODESIC CONTROL: INITIAL AUDIT
+
+Leading massive continuum limit
+-------------------------------
+The exterior half-coin placement is correct. Let Ukin(a) be one complete
+calibrated kinetic palindrome and dt=nu*a. In the smooth cell description,
+Ukin=I-i dt Hkin+O(a^2). With Mhalf=exp[-i dt m N sigma_x/2],
+    Mhalf Ukin Mhalf = I-i dt(Hkin+mN sigma_x)+O(a^2).
+There is no leading mass conjugation by a finite substep rotation because the
+complete zero-cell-momentum kinetic block is the identity. Placing coins inside
+its individual even/odd substeps would require a different derivation.
+
+In a two-site cell with two internal spin components,
+    alpha=sigma_x(sublattice) tensor sigma_z(spin),
+    beta=I(sublattice) tensor sigma_x(spin).
+These matrices anticommute. The smooth positive-sublattice branch gives the
+intended two-spinor Dirac Hamiltonian. The other parity branch remains in the
+regulator spectrum. Exterior coins do not solve species doubling.
+
+At constant lapse and exactly zero momentum, the entire kinetic block cancels
+and the step is exactly exp(-i mN dt sigma_x). Thus its rest-mass coupling has
+no sine factor analogous to the uncalibrated velocity defect. At finite
+momentum, finite dt and finite m, regulator errors remain; the assertion is
+about the controlled continuum limit, not an exact all-momentum Dirac law.
+
+For varying N, neighboring site mass coefficients differ by O(a), and each mass
+coin differs from the identity by O(dt). Their cell-position correction is
+therefore O(a^2) per step. It does not change the leading lapse-scaled mass,
+although convergence order must still be measured for the full massive rule.
+
+Classical geodesic reference
+---------------------------
+The positive principal-symbol energy is H_ray=N(x)*sqrt(p^2+m^2). Its Hamilton
+equations in coordinate time are
+    xdot=N p/sqrt(p^2+m^2),
+    pdot=-N' sqrt(p^2+m^2).
+The Killing energy N sqrt(p^2+m^2) is conserved. Define eta=asinh(p/m). Then
+    xdot=N tanh(eta),
+    etadot=-N',
+    E/m=N cosh(eta)=constant.
+This representation makes mass independence explicit for identical initial
+position and local velocity tanh(eta). Equivalently,
+    xddot=2(N'/N) xdot^2-N N'.
+At rest, xddot=-N N'. This is the timelike geodesic equation for the supplied
+static metric in coordinate time, not a separate Newtonian assumption.
+
+Recommended genuine packet-versus-ray test
+-----------------------------------------
+Use an evolved positive-energy massive packet localized well inside a periodic
+coordinate chart, and compare its density centroid with an independently
+integrated ray. Prepare different masses with the same initial rapidity,
+p0=m*sinh(eta0), rather than the same momentum. Keep the packet narrower than
+the lapse variation scale and broader than its Compton scale, m*sigma_x>>1.
+
+A Fourier envelope times the positive-energy spinor of p*sigma_z+m*sigma_x
+suppresses unwanted flat-background negative-band contamination. In varying N
+it remains an approximate band preparation; its status should be declared.
+Using only the central-momentum spinor is also controlled when delta_p/m is
+small, but has larger negative-band contamination and possible zitterbewegung.
+
+Compare position density/centroid and width at several times. Avoid interpreting
+the lattice-generator current as the exact split-circuit integrated flux. On a
+ring, use an unwrapped local chart or circular position statistics so a packet
+crossing the coordinate cut does not acquire an artificial centroid jump.
+
+Identical finite-width quantum packets at different masses need not have
+identical centroids or widths: diffraction, momentum uncertainty, negative-band
+contamination and averaging of a spatially varying force are mass-dependent.
+Agreement with one point geodesic should be claimed only in a controlled WKB
+regime. At fixed width, increasing m alone can leave a finite-width averaging
+floor. A joint narrow-packet/classical limit, for example sigma_x proportional
+to m^(-1/4), makes sigma_x->0 while m*sigma_x^2 grows, reducing both spatial
+averaging and dispersion. Grid/time refinement must independently control the
+rapid carrier and mass phases.
+
+An alternative rigorous comparison is a classical phase-space ensemble matched
+to the packet, alongside the central ray. This separates ordinary finite-width
+averaging from numerical error or a failure of the candidate metric coupling.
+
+Current status: the leading mass-coin argument and ray equations are audited.
+Production massive simulation and gauge-coupling files will require inspection
+when available; this note does not claim those runs have been validated yet.

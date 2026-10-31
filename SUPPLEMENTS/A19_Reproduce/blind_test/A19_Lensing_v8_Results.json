@@ -1,0 +1,392 @@
+{
+ "protocol_sha256": "3747621a20233cc276724ed5a26dbcab401e6003b1e4bc0fb7709544ebbc38db",
+ "disk_scalings": {
+  "n_disks": 149,
+  "logRe": [
+   -1.6721,
+   0.2245
+  ],
+  "n_HI": 149,
+  "logMHI": [
+   4.1156,
+   0.5396
+  ]
+ },
+ "A_blue_VAGC": {
+  "bins": [
+   {
+    "logMs": 10.24,
+    "dev": 0.048,
+    "tol": 0.32,
+    "ok": true
+   },
+   {
+    "logMs": 10.56,
+    "dev": 0.343,
+    "tol": 0.26,
+    "ok": false
+   },
+   {
+    "logMs": 10.85,
+    "dev": 0.129,
+    "tol": 0.2,
+    "ok": true
+   },
+   {
+    "logMs": 11.1,
+    "dev": -0.152,
+    "tol": 0.22,
+    "ok": true
+   },
+   {
+    "logMs": 11.28,
+    "dev": -0.101,
+    "tol": 0.5,
+    "ok": true
+   }
+  ],
+  "consistent": false,
+  "median_dev": 0.048
+ },
+ "A_blue_MPA": {
+  "bins": [
+   {
+    "logMs": 10.29,
+    "dev": 0.084,
+    "tol": 0.32,
+    "ok": true
+   },
+   {
+    "logMs": 10.63,
+    "dev": 0.393,
+    "tol": 0.26,
+    "ok": false
+   },
+   {
+    "logMs": 10.94,
+    "dev": 0.195,
+    "tol": 0.2,
+    "ok": true
+   },
+   {
+    "logMs": 11.18,
+    "dev": -0.092,
+    "tol": 0.22,
+    "ok": true
+   },
+   {
+    "logMs": 11.35,
+    "dev": -0.049,
+    "tol": 0.5,
+    "ok": true
+   }
+  ],
+  "consistent": false,
+  "median_dev": 0.084
+ },
+ "A_sensitivity_VAGC": {
+  "rule_nogas": {
+   "bins": [
+    {
+     "logMs": 10.24,
+     "dev": 0.028,
+     "tol": 0.32,
+     "ok": true
+    },
+    {
+     "logMs": 10.56,
+     "dev": 0.325,
+     "tol": 0.26,
+     "ok": false
+    },
+    {
+     "logMs": 10.85,
+     "dev": 0.113,
+     "tol": 0.2,
+     "ok": true
+    },
+    {
+     "logMs": 11.1,
+     "dev": -0.166,
+     "tol": 0.22,
+     "ok": true
+    },
+    {
+     "logMs": 11.28,
+     "dev": -0.114,
+     "tol": 0.5,
+     "ok": true
+    }
+   ],
+   "consistent": false,
+   "median_dev": 0.028
+  },
+  "rule_size_plus": {
+   "bins": [
+    {
+     "logMs": 10.24,
+     "dev": -0.038,
+     "tol": 0.4,
+     "ok": true
+    },
+    {
+     "logMs": 10.56,
+     "dev": 0.259,
+     "tol": 0.26,
+     "ok": true
+    },
+    {
+     "logMs": 10.85,
+     "dev": 0.049,
+     "tol": 0.2,
+     "ok": true
+    },
+    {
+     "logMs": 11.1,
+     "dev": -0.228,
+     "tol": 0.22,
+     "ok": false
+    },
+    {
+     "logMs": 11.28,
+     "dev": -0.175,
+     "tol": 0.5,
+     "ok": true
+    }
+   ],
+   "consistent": false,
+   "median_dev": -0.038
+  },
+  "rule_size_minus": {
+   "bins": [
+    {
+     "logMs": 10.24,
+     "dev": 0.139,
+     "tol": 0.32,
+     "ok": true
+    },
+    {
+     "logMs": 10.56,
+     "dev": 0.43,
+     "tol": 0.26,
+     "ok": false
+    },
+    {
+     "logMs": 10.85,
+     "dev": 0.213,
+     "tol": 0.2,
+     "ok": false
+    },
+    {
+     "logMs": 11.1,
+     "dev": -0.07,
+     "tol": 0.22,
+     "ok": true
+    },
+    {
+     "logMs": 11.28,
+     "dev": -0.022,
+     "tol": 0.5,
+     "ok": true
+    }
+   ],
+   "consistent": false,
+   "median_dev": 0.139
+  }
+ },
+ "B_type_bend": {
+  "bins": [
+   {
+    "bin": "10.0-10.4",
+    "logMs": 10.28,
+    "measured_log_ratio": 0.37,
+    "sigma": 0.28,
+    "log_b": 0.162,
+    "excess_sigma": -0.74
+   },
+   {
+    "bin": "10.4-10.7",
+    "logMs": 10.58,
+    "measured_log_ratio": 0.41,
+    "sigma": 0.198,
+    "log_b": 0.363,
+    "excess_sigma": -0.24
+   },
+   {
+    "bin": "10.7-11.0",
+    "logMs": 10.86,
+    "measured_log_ratio": 0.35,
+    "sigma": 0.101,
+    "log_b": 0.811,
+    "excess_sigma": 4.59
+   },
+   {
+    "bin": "11.0-11.2",
+    "logMs": 11.1,
+    "measured_log_ratio": 0.28,
+    "sigma": 0.112,
+    "log_b": 1.343,
+    "excess_sigma": 9.46
+   },
+   {
+    "bin": "11.2-11.4",
+    "logMs": 11.29,
+    "measured_log_ratio": 0.56,
+    "sigma": 0.222,
+    "log_b": 1.791,
+    "excess_sigma": 5.55
+   },
+   {
+    "bin": "11.4-11.6",
+    "logMs": 11.48,
+    "measured_log_ratio": 0.84,
+    "sigma": 0.721,
+    "log_b": 2.262,
+    "excess_sigma": 1.97
+   },
+   {
+    "bin": "11.6-15.0",
+    "logMs": 11.68,
+    "measured_log_ratio": 1.26,
+    "sigma": 1.406,
+    "log_b": 2.786,
+    "excess_sigma": 1.09
+   }
+  ],
+  "refuted": true,
+  "tested_bins": [
+   "10.7-11.0",
+   "11.0-11.2"
+  ]
+ },
+ "C_red_diagnostic": [
+  {
+   "logMs": 10.28,
+   "obs": 12.17,
+   "rule_disk_size": 11.859,
+   "rule_half_size": 12.05
+  },
+  {
+   "logMs": 10.58,
+   "obs": 12.14,
+   "rule_disk_size": 12.072,
+   "rule_half_size": 12.258
+  },
+  {
+   "logMs": 10.86,
+   "obs": 12.5,
+   "rule_disk_size": 12.273,
+   "rule_half_size": 12.452
+  },
+  {
+   "logMs": 11.1,
+   "obs": 12.89,
+   "rule_disk_size": 12.448,
+   "rule_half_size": 12.62
+  },
+  {
+   "logMs": 11.29,
+   "obs": 13.25,
+   "rule_disk_size": 12.587,
+   "rule_half_size": 12.754
+  },
+  {
+   "logMs": 11.48,
+   "obs": 13.63,
+   "rule_disk_size": 12.727,
+   "rule_half_size": 12.889
+  },
+  {
+   "logMs": 11.68,
+   "obs": 14.05,
+   "rule_disk_size": 12.877,
+   "rule_half_size": 13.031
+  }
+ ],
+ "D_moster": [
+  {
+   "color": "red",
+   "logMs": 10.28,
+   "obs": 12.17,
+   "moster": 11.66
+  },
+  {
+   "color": "red",
+   "logMs": 10.58,
+   "obs": 12.14,
+   "moster": 12.003
+  },
+  {
+   "color": "red",
+   "logMs": 10.86,
+   "obs": 12.5,
+   "moster": 12.593
+  },
+  {
+   "color": "red",
+   "logMs": 11.1,
+   "obs": 12.89,
+   "moster": 13.251
+  },
+  {
+   "color": "red",
+   "logMs": 11.29,
+   "obs": 13.25,
+   "moster": 13.805
+  },
+  {
+   "color": "red",
+   "logMs": 11.48,
+   "obs": 13.63,
+   "moster": 14.384
+  },
+  {
+   "color": "red",
+   "logMs": 11.68,
+   "obs": 14.05,
+   "moster": 15.025
+  },
+  {
+   "color": "blue",
+   "logMs": 10.24,
+   "obs": 11.8,
+   "moster": 11.632
+  },
+  {
+   "color": "blue",
+   "logMs": 10.56,
+   "obs": 11.73,
+   "moster": 11.972
+  },
+  {
+   "color": "blue",
+   "logMs": 10.85,
+   "obs": 12.15,
+   "moster": 12.561
+  },
+  {
+   "color": "blue",
+   "logMs": 11.1,
+   "obs": 12.61,
+   "moster": 13.252
+  },
+  {
+   "color": "blue",
+   "logMs": 11.28,
+   "obs": 12.69,
+   "moster": 13.785
+  },
+  {
+   "color": "blue",
+   "logMs": 11.47,
+   "obs": 12.79,
+   "moster": 14.375
+  },
+  {
+   "color": "blue",
+   "logMs": 11.68,
+   "obs": 12.79,
+   "moster": 15.042
+  }
+ ]
+}

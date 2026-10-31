@@ -1,0 +1,8 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "source_sha256": "31dfe6fedda44730dcff1c4c2117f0f2f887fe2137a41ba9e86e1cf09ec1e3be",
+  "plan_sha256": "ae54b002bcdf72bfef32a8020a1fc16b767ca7f37ea1bf7b6dbdab2f88d06f6d",
+  "workers": 8
+}

@@ -1,0 +1,34 @@
+A19 protocol 9: post-run correction (session SA73, turn 13, 31 October 2026, US Pacific)
+
+This note was written after the run. It changes no protocol text, no hashed prediction and no verdict.
+
+WHAT WAS WRONG
+In code/A19_KiDS_v9.py, compare(), the Monte Carlo for the early/late split drew both profiles with the mean
+vector ordered [early, late], while B21's covariance files for the colour and Sersic samples are ordered
+[late, early] (bin 1, then bin 2). Each profile was therefore drawn with the other's covariance block. An outside
+review found it after the run. It touches only sigma_S; the central values S_data and S_model, the amplitudes and
+every chi-square are computed without the draws.
+
+FIX
+The draws now use the mean vector [late, early]. The results file also gives the first-order (delta-method) sigma
+and the number of draws left out because a draw's mean early/late ratio is not positive: Gaussian draws of a noisy
+late-type profile can cross zero, so the log ratio of the draws has heavy tails.
+
+EFFECT (inside 0.3 Mpc / all 15 bins; before -> after)
+Colour: standard deviation of the draws (the protocol's sigma_S) 0.040 -> 0.070 / 0.028 -> 0.076;
+        68 percent half-width 0.040 -> 0.057 / 0.028 -> 0.044; delta method 0.048 / 0.034;
+        draws left out 17 / 64 of 20,000.
+Sersic: 0.041 -> 0.048 / 0.029 -> 0.042; 68 percent half-width 0.040 -> 0.046 / 0.029 -> 0.034;
+        delta method 0.041 / 0.029; draws left out 3 / 5.
+S_data (0.206 and 0.162 inside 0.3 Mpc; 0.275 and 0.194 over all bins), S_model and the fractions are unchanged.
+With T = max(2 sigma_S, 0.25 S_data), T stays below |S_model - S_data| for every sample and for each of the three
+sigmas above (colour inside 0.3 Mpc: T = 0.140, 0.113 or 0.096 against 0.157), so all four verdicts are unchanged:
+DOES NOT for colour and ACCOUNTS FOR PART for Sersic, inside 0.3 Mpc and over all bins.
+Because of the heavy tails, the delta-method values (0.048 and 0.041 inside 0.3 Mpc) are the ones quoted.
+
+ADDED AFTER THE RUN (not protocol verdicts)
+The chi-square of the inner bins after the fitted amplitude (the radial-profile test), for every sample and every
+sensitivity case, in A19_KiDS_v9_Results.json as chi2_inner_after_amplitude. Whole isolated sample: 48.58 for 7
+bins against the frozen prediction, 45.13 for 6 degrees of freedom after the amplitude (p = 4 x 10^-8); halos
+truncated at r_200 give 44.76 and 40.58; the 14 sensitivity cases give 39.5 to 50.1 after the amplitude.
+The outside review's separate computation (Cholesky whitening) gives the same values.

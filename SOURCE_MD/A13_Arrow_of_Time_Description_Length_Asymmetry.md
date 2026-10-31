@@ -1,4 +1,4 @@
-# Why Time Runs Forward: Simple Laws Must Grow Minds in Causal Steps
+# Why the Arrow of Time Points Forward: Simple Laws Must Grow Minds in Discrete Causal Steps
 
 ## Abstract
 

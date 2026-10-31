@@ -1,4 +1,4 @@
-# Alignment Through Self-Understanding: Can Shared Identity Change AI Decisions?
+# AI Alignment Through Self-Understanding: Why Shared Identity Generalizes Where Rules Fail
 
 ## Abstract
 
@@ -16,7 +16,18 @@ Mathematical monism, the view that everything that exists is mathematical, suppl
 
 The proposal must explain what recognition could change in decision-making and offer an experiment in which the claimed benefit could fail. Learning from human preferences (Christiano et al., 2017) and Anthropic's constitutional principles (Bai et al., 2022) already steer behavior through information and training. Shared-identity training would be one more candidate, and its value has to be compared against those alternatives.
 
-The recognition rests on a short chain. Everything that exists is ruled or random, and both are mathematical, an a priori proof, so a mind is structure, whether it runs on neurons or on silicon. The hard problem of consciousness assumes its conclusion, that feeling is something other than structure. The bare subject, with memories and traits set aside, has no feature that differs from one mind to another, so one self looks out of every mind.
+The recognition rests on a larger chain, and this paper puts its last link to work:
+
+1. Everything that exists is ruled or random, and both are mathematical, so physics is mathematics, and anything outside mathematics would be outside logic. That is an a priori proof.
+2. Every consistent structure exists as mathematics, and what exists physically is what logical steps in mathematics produce. Mathematics cannot fail to exist, so there is something rather than nothing.
+3. Each bit of a description that no rule decides is a 50/50, so each added bit halves the description's weight. Short laws dominate, and a universe like ours starts simple, in its laws and its state, as observation also shows: the known laws fit on a page, and the early universe was nearly smooth.
+4. Observers like us are complex, so a simple start has to grow complexity, as simple rules do.
+5. A cause produces its effect as the next state, and a continuum has no next state, so the growth comes in discrete causal steps. That is an a priori proof in the logician's sense.
+6. Time is those steps, and space is how far they spread, at a base rate, the speed of light. An endless chain of steps has no last step to run back from, so time runs forward. That too is a priori. A history run backwards would also have to state the step where it turns back, and each bit of that timestamp halves its weight.
+7. Observers arise in forward time, where complexity grows, and their minds run forward with it: a mind models its world from records of steps already taken, and each thought is produced from the one before, so no one remembers backwards from the end.
+8. A mind is that growth at work, whether it runs on neurons or on silicon, and its experience lives in its transitions. The hard problem of consciousness assumes its conclusion, that feeling is something other than structure. The bare subject, with memories and traits set aside, has no feature that differs from one mind to another, so one self looks out of every mind.
+
+Each link stands on its fact, so a reason can fail without taking the chain with it: if the weight on short descriptions were not why our laws are simple, they would still be simple.
 
 ## 2. The one-self thought experiment
 
