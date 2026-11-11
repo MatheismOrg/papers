@@ -155,7 +155,7 @@ def step_generators():
 # result files and gives the rule of comparison (z values against the combined standard errors; no hand-set ranges).
 ANALYSES = [('regge/r2/night', 'multihist.py', dict(MINROWS='800', A1INC='1', LMAX='12', KPAD='0.002', SUFFIX='_T30')),
             ('regge/r2/night', 'multihist.py', dict(MINROWS='800', A1INC='1', LMAX='12', KPAD='0.002', SUFFIX='_T30', SKIPFRAC='0.5')),
-            ('regge/r2/night', 'analyze_a1.py', dict(MHFILE='multihist_T30.json', OUTSUFFIX='_T31')),
+            ('regge/r2/night', 'analyze_a1.py', dict(MHFILE='multihist_T30.json', OUTSUFFIX='_T37')),
             ('regge/r2/night', 'analyze_au.py', {}), ('regge/r2/fss', 'analyze_fss.py', dict(MINROWS='800'))]
 
 
@@ -202,9 +202,9 @@ def step_regge():
         record('regge', f'{kk}: no critical growth (a critical point needs a power of 0.94)', gp['v'] + 3 * gp['se'] < 0.94,
                f"regenerated power plus three standard errors {gp['v'] + 3 * gp['se']:+.2f}")
     k = '0.2440'; hp = G['hamber_power']; gap = lambda d: (hp - d[k]['v']) / d[k]['se']
-    compare("k = 0.244: fitted power after the low-bias correction of the 16⁴ and 20⁴ values", {'p': G['power_lowbias'][k]}, {'p': P['power_lowbias'][k]},
+    compare("k = 0.244: fitted power after the low-bias correction of the values from 16⁴ on", {'p': G['power_lowbias'][k]}, {'p': P['power_lowbias'][k]},
             f"regenerated {pm(G['power_lowbias'][k])}, paper {pm(P['power_lowbias'][k])}")
-    record('regge', f"Hamber's fitted curve (a power of {hp:.2f} from L = 4 to 20) lies above the power found at his k_c", gap(G['power']) > 0 and gap(G['power_lowbias']) > 0,
+    record('regge', f"Hamber's fitted curve (a power of {hp:.2f} from L = 4 to 32) lies above the power found at his k_c", gap(G['power']) > 0 and gap(G['power_lowbias']) > 0,
            f"regenerated {gap(G['power']):.1f} standard errors above, {gap(G['power_lowbias']):.1f} after the low-bias correction (paper: {gap(P['power']):.1f} and {gap(P['power_lowbias']):.1f}; "
            'the size of the gap follows from the two powers checked above)')
     compare(f'largest fluctuation near the crossing on each grid ({", ".join(g(L) for L in P["peak"])})', G['peak'], P['peak'],
@@ -218,7 +218,7 @@ def step_regge():
     zs = list(G['start_check_z'].values())
     record('regge', "16⁴: chains started from another coupling's configuration agree with flat starts (paper: within about one standard error)",
            max(abs(x) for x in zs) <= RC.zmax(len(zs)), 'regenerated differences in standard errors: ' + ', '.join(f'{x:+.1f}' for x in zs) + f'; allowed {RC.zmax(len(zs)):.2f}')
-    compare(f'autocorrelation time near the crossing, median over chains on each grid ({", ".join(g(L) for L in P["tau"])}; paper: 120 to 240 sweeps, no rise with size)',
+    compare(f'autocorrelation time near the crossing, median over chains on each grid ({", ".join(g(L) for L in P["tau"])}; paper: 120 to 240 sweeps up to 20⁴; 385 on 24⁴ from three chains, 98 on 32⁴ from one)',
             G['tau'], P['tau'], 'regenerated ' + ', '.join(f"{v['median']:.0f}" for v in G['tau'].values()) + ' sweeps; paper ' + ', '.join(f"{v['median']:.0f}" for v in P['tau'].values()), log=True)
     compare(f'a = 0.02: zero crossing on {", ".join(g(L) for L in P["au_crossing"])} (paper: 0.479, 0.467, 0.468, 0.467)', G['au_crossing'], P['au_crossing'],
             'regenerated ' + ', '.join(f"{v['v']:.3f}({v['se']:.3f})" for v in G['au_crossing'].values()))

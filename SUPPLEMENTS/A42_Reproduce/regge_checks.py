@@ -1,5 +1,5 @@
 """The numbers Section 8.10 of A42 quotes for its larger grids, each with its standard error, computed from the result files the analysis
-scripts write (a1_results_T31.json, multihist_T30.json, multihist_skip50_T30.json, au_results.json, fss_results.json).
+scripts write (a1_results_T37.json, multihist_T30.json, multihist_skip50_T30.json, au_results.json, fss_results.json).
 
 The same function is run twice. make_paper_numbers.py ran it on the result files of the original chains and wrote PAPER_NUMBERS.json;
 verify.py --regge runs it on the result files of the regenerated chains and compares the two, number by number.
@@ -10,7 +10,7 @@ Every comparison is therefore a z value, z = (regenerated - paper) / sqrt(se_reg
 with the same chance of a false alarm (0.27%) for the whole check. No check uses a hand-set range.
 
 Where the errors come from:
-  fluctuation at a fixed coupling   4^4 to 12^4: bootstrap of the reweighted curve (multihist.py); 16^4, 20^4: analyze_a1.py (lineages)
+  fluctuation at a fixed coupling   4^4 to 12^4: bootstrap of the reweighted curve (multihist.py); 16^4 to 32^4: analyze_a1.py (lineages)
   fitted powers                     weighted least squares in log L, the error scaled by sqrt(chi2/dof) when that exceeds 1
   zero crossing of the curvature    4^4 to 12^4: bootstrap of the reweighted curve; 16^4, 20^4 and a = 0.02: the batch-means errors of the
                                     two bracketing curvatures carried through the linear interpolation
@@ -63,7 +63,7 @@ def med_ln(v):
 
 def numbers(night, fss):
     night, fss = Path(night), Path(fss)
-    A = json.load(open(night / 'a1_results_T31.json')); M = json.load(open(night / 'multihist_T30.json'))
+    A = json.load(open(night / 'a1_results_T37.json')); M = json.load(open(night / 'multihist_T30.json'))
     Mb = json.load(open(night / 'multihist_skip50_T30.json')); U = json.load(open(night / 'au_results.json')); F = json.load(open(fss / 'fss_results.json'))
     out = {}
     # the fluctuation at three fixed couplings on every grid, and its fitted power in L (with and without the low-bias correction)
@@ -71,7 +71,7 @@ def numbers(night, fss):
     out['power'] = {k: dict(v=A['fixed_k_power'][k]['power'], se=A['fixed_k_power'][k]['se'], L=A['fixed_k_power'][k]['L']) for k in KS}
     out['power_lowbias'] = {k: dict(v=A['fixed_k_power_lowbias'][k]['power'], se=A['fixed_k_power_lowbias'][k]['se']) for k in KS}
     h = lambda L: (0.16 + 1.11 / L) * L ** 0.64   # Hamber's (1993) fitted curve at k = 0.244
-    out['hamber_power'] = math.log(h(20) / h(4)) / math.log(5)
+    out['hamber_power'] = math.log(h(32) / h(4)) / math.log(8)   # T37: over the range now covered, 4^4 to 32^4
     # the largest fluctuation near the crossing on 4^4 to 12^4, and its power (all sweeps; second halves)
     out['peak'] = {L: dict(v=v['peak_chi'], se=v['peak_chi_boot_sd']) for L, v in M['per_L'].items()}
     out['peak_power'] = dict(v=M['peak_power']['power'], se=M['peak_power']['se'])
@@ -79,7 +79,7 @@ def numbers(night, fss):
     # zero crossing of the average curvature on every grid
     cr = {L: dict(v=v['crossing'], se=v.get('crossing_boot_sd')) for L, v in M['per_L'].items()}
     fin = [r for r in A['chains'] if r['finished'] and r.get('R') is not None]
-    for L in (16, 20):
+    for L in (16, 20, 24):
         c = cross_from_chains([r for r in fin if r['L'] == L])
         if c: cr[str(L)] = dict(v=c[0], se=c[1])
     out['crossing'] = cr
@@ -93,8 +93,13 @@ def numbers(night, fss):
             tau.setdefault(int(L), []).extend(r['n'] / max(r['ess'], 1e-9) for r in rows if r['n'] >= 800)
     near = [r for r in A['chains'] if r['finished'] and r.get('tau') and 0.2425 <= r['k'] <= 0.2575]
     tau[12] = [r['tau'] for r in near if r['L'] == 12 and r['chain'].startswith('A1_')]
-    for L in (16, 20): tau[L] = [r['tau'] for r in near if r['L'] == L]
+    for L in (16, 20, 24, 32): tau[L] = [r['tau'] for r in near if r['L'] == L]
     out['tau'] = {str(L): med_ln(v) for L, v in sorted(tau.items()) if v}
+    # T37: a grid with one chain (32^4) has no scatter of its own; it takes the scatter between chains pooled over the grids with three or more
+    lv = [[math.log(x) for x in v] for v in tau.values() if len(v) >= 3]
+    pooled = math.sqrt(sum(sum((x - sum(l) / len(l)) ** 2 for x in l) for l in lv) / sum(len(l) - 1 for l in lv))
+    for d in out['tau'].values():
+        if d['n'] == 1: d['se_ln'] = 1.2533 * pooled
     # a = 0.02: zero crossings and the fluctuation at k = 0.46
     au = {}
     for r in U['chains']: au.setdefault(r['L'], []).append(r)

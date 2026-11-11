@@ -1,5 +1,5 @@
 {
- "description": "Writes PAPER_NUMBERS.json: the numbers Section 8.10 of A42 quotes for its larger grids, with their standard errors, from the result\nfiles of the ORIGINAL chains (regge_checks.numbers). It was run once, in the tree the paper was built in (SA74 T32, November 10, 2026);\nthe zip holds its output, not those result files, which regenerate. The bootstrap error of the zero crossing (multihist.py, T32) comes\nfrom a rerun of multihist.py on the original chains whose other numbers equal the paper's file exactly (checked here).",
+ "description": "Writes PAPER_NUMBERS.json: the numbers Section 8.10 of A42 quotes for its larger grids, with their standard errors, from the result\nfiles of the ORIGINAL chains (regge_checks.numbers). It was run once, in the tree the paper was built in (SA74 T37, November 11, 2026);\nthe zip holds its output, not those result files, which regenerate. The bootstrap error of the zero crossing (multihist.py, T32) comes\nfrom a rerun of multihist.py on the original chains whose other numbers equal the paper's file exactly (checked here).",
  "fixed_k": {
   "0.2440": {
    "4": {
@@ -31,8 +31,16 @@
     "se": 0.6205414589891526
    },
    "20": {
-    "v": 5.147228618247455,
-    "se": 0.8696985165126423
+    "v": 5.073378269107135,
+    "se": 0.6518234416565857
+   },
+   "24": {
+    "v": 5.111989064674636,
+    "se": 1.3936618207945721
+   },
+   "32": {
+    "v": 4.747712832853118,
+    "se": 1.0037329459048727
    }
   },
   "0.2480": {
@@ -67,6 +75,10 @@
    "20": {
     "v": 3.3937596683819544,
     "se": 0.41487146706317424
+   },
+   "24": {
+    "v": 6.117927842379361,
+    "se": 1.5165197807196946
    }
   },
   "0.2520": {
@@ -101,13 +113,17 @@
    "20": {
     "v": 5.186314760368617,
     "se": 1.0767598045591473
+   },
+   "24": {
+    "v": 8.268469956825072,
+    "se": 2.721354303297866
    }
   }
  },
  "power": {
   "0.2440": {
-   "v": -0.07729894795338543,
-   "se": 0.09921401157084668,
+   "v": -0.037758125094018546,
+   "se": 0.07256668477880567,
    "L": [
     4,
     5,
@@ -116,12 +132,14 @@
     10,
     12,
     16,
-    20
+    20,
+    24,
+    32
    ]
   },
   "0.2480": {
-   "v": -0.10666368888773903,
-   "se": 0.06794436749989914,
+   "v": -0.08376941018531489,
+   "se": 0.06711053610201634,
    "L": [
     4,
     5,
@@ -130,12 +148,13 @@
     10,
     12,
     16,
-    20
+    20,
+    24
    ]
   },
   "0.2520": {
-   "v": -0.04763695102994958,
-   "se": 0.0700671128624038,
+   "v": -0.0218515204654305,
+   "se": 0.06803061271262492,
    "L": [
     4,
     5,
@@ -144,25 +163,26 @@
     10,
     12,
     16,
-    20
+    20,
+    24
    ]
   }
  },
  "power_lowbias": {
   "0.2440": {
-   "v": -0.03934929405250087,
-   "se": 0.10323670263188231
+   "v": 0.002775142274740572,
+   "se": 0.07521238879143316
   },
   "0.2480": {
-   "v": -0.08929500675732893,
-   "se": 0.061730159213432396
+   "v": -0.022170139625997367,
+   "se": 0.0848890367248543
   },
   "0.2520": {
-   "v": -0.0169311178966407,
-   "se": 0.06824387232847033
+   "v": 0.058508233465721,
+   "se": 0.0967260553936764
   }
  },
- "hamber_power": 0.20002291807397637,
+ "hamber_power": 0.25062574706389107,
  "peak": {
   "4": {
    "v": 5.706709329015425,
@@ -229,6 +249,10 @@
   "20": {
    "v": 0.2522206647382649,
    "se": 0.00015396946157005662
+  },
+  "24": {
+   "v": 0.2520245773170765,
+   "se": 0.0001320207809683647
   }
  },
  "start_check_z": {
@@ -272,9 +296,19 @@
    "se_ln": 0.10394157345307599
   },
   "20": {
-   "median": 131.82152454480925,
+   "median": 121.68547766343292,
+   "n": 4,
+   "se_ln": 0.23917152088511143
+  },
+  "24": {
+   "median": 385.11127267716773,
    "n": 3,
-   "se_ln": 0.3306313912409945
+   "se_ln": 0.24372192169153967
+  },
+  "32": {
+   "median": 97.62729325570969,
+   "n": 1,
+   "se_ln": 0.6073778294467806
   }
  },
  "au_crossing": {

@@ -1,10 +1,10 @@
-# A42 verification package: inputs, code and paper (SA74 T32, November 10, 2026)
+# A42 verification package: inputs, code and paper (SA74 T37, November 11, 2026)
 
 This zip holds the paper "Searching for a Short Discrete Theory of Everything: Rewriting Rules and Supplied-Lattice Tests" (A42), the code behind its claims, and the input data that code needs: run plans with their seeds and couplings, the specification texts, parameter files and rule lists. It holds no outputs. Every output (Markov-chain histories, result files, bit counts) is regenerated from the code and the inputs, and `verify.py` compares the regenerated numbers with the numbers the paper states.
 
 ## Quick start
 
-    unzip SA74_T32_A42_VERIFY_*.zip && cd A42_VERIFY
+    unzip SA74_T37_A42_VERIFY_*.zip && cd A42_VERIFY
     python3 verify.py                     # about 15 minutes
 
 Requirements: Python 3.9 or later with NumPy and SciPy (SymPy and matplotlib for a few scripts), and a C compiler (cc, gcc or clang). The report goes to `VERIFY_REPORT.txt`. The checks work in `_work/`, a copy in which the absolute paths the scripts ran with (`/home/claude/sa74`, `/mnt/user-data/outputs/night`) are replaced by this folder's path.
@@ -67,8 +67,18 @@ Eight Mac chains stopped before their planned length in the original night and F
 - Step 3 adjusts two published scripts' runs (see `GENERATOR_JOBS.json`): `Pass13/audit_scaling.py` imports `curved_gauge_pass12.py`, a copy of `Pass12/curved_gauge.py` that the Pass13 folder lacks, so the working copy gets one; `Pass36_R2/r2_bounce.py` runs with the 14 values of b behind the paper's scan (its default list has 11). `A42_SA74_Numbers.py` is left out of step 3: it reads the rule-search runs, which take hours to regenerate.
 - Some scripts name the folders they ran in (`/home/claude/sa74/...`); to run one by hand, replace that prefix with the path of this folder's `sa74/` (and `/mnt/user-data/outputs/night` with `ext/night/`).
 - A single chain's variance runs low by about 2/ESS; the paper quotes the fitted power with and without that correction.
-- The supplement Section 8.10 cites, A42_Regge_R2_Night_T31, is `supplements/A42_Regge_R2_Night_T31/`: a guide to where its plans, engines and analysis code sit in this package, and its own README.
+- The supplement Section 8.10 cites, A42_Regge_R2_Night_T37, is `supplements/A42_Regge_R2_Night_T37/`: a guide to where its plans, engines and analysis code sit in this package, and its own README.
 - `sa74/NIGHT/mac_pull/queue3.txt` and the run log are as they stood on November 9 (T31), the state the paper's results rest on; later lines plan runs the paper does not use.
 - Replaced before zipping: the address of the author's server, the name of its key file and the name of an unrelated project, in the run log and in the scripts that launched runs on that server. Those launch scripts therefore no longer match the hashes the log quotes for them; no plan of a chain the paper uses is affected, and neither script nor server is needed here.
 - `sa74/regge/r2/night/multihist.py` has one addition since T31, the bootstrap spread of the zero crossing; a rerun on the original chains reproduced every other number exactly. `multihist_T31.py` is the earlier file.
 - The bootstrap in `multihist.py` draws chains in the order they are read, so its errors, and the powers fitted with them, depend on that order (with 40 bootstrap samples, by a few hundredths in the powers). T31's `reweight.py` read the cloud chains in the file system's order (`reweight_T31.py`); `sa74/regge/r2/audit_a005/chain_order_T30.txt` now records the order of the paper's run and `reweight.py` follows it, so the same chains give the same numbers on any machine.
+
+
+## What changed for paper version T37 (November 11, 2026)
+
+- **The paper** is T37: Section 8.10 adds the chains on 24⁴ (k = 0.244, 0.248, 0.252) and 32⁴ (k = 0.244); no earlier number changes except the 20⁴ value at k = 0.244, which now pools two chains.
+- **`sa74/NIGHT/mac_pull/queue3.txt`** is the plan as it stands, with plan A6 (the new chains), where the T32 package held its November 9 state.
+- **`PAPER_NUMBERS.json`** holds the T37 numbers: the fluctuation at the three fixed couplings on every grid up to 32⁴, the fitted powers, the zero crossing on 24⁴, and the autocorrelation medians with 24⁴ and 32⁴.
+- **`regge_checks.py`** reads `a1_results_T37.json`, takes Hamber's fitted curve over 4⁴ to 32⁴, includes 24⁴ in the crossings and 24⁴ and 32⁴ in the autocorrelation times; a grid with a single chain takes the scatter between chains pooled over the grids with three or more.
+- **`verify.py --regge`** runs `analyze_a1.py` with `MHFILE=multihist_T30.json OUTSUFFIX=_T37`. The setting matters: without `MHFILE` the script falls back to an older reweighting file and the 8⁴ and 12⁴ values change.
+- **Regenerating the new chains** takes about a day and a half on eight cores (32⁴ about 12 hours, each 24⁴ chain about 4 to 5 hours).

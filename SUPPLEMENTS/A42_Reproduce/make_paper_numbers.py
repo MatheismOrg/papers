@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Writes PAPER_NUMBERS.json: the numbers Section 8.10 of A42 quotes for its larger grids, with their standard errors, from the result
-files of the ORIGINAL chains (regge_checks.numbers). It was run once, in the tree the paper was built in (SA74 T32, November 10, 2026);
+files of the ORIGINAL chains (regge_checks.numbers). It was run once, in the tree the paper was built in (SA74 T37, November 11, 2026);
 the zip holds its output, not those result files, which regenerate. The bootstrap error of the zero crossing (multihist.py, T32) comes
 from a rerun of multihist.py on the original chains whose other numbers equal the paper's file exactly (checked here)."""
 import json, shutil, sys, tempfile
@@ -12,7 +12,7 @@ strip = lambda d: {k: ({L: {a: b for a, b in v.items() if a != 'crossing_boot_sd
 assert strip(old) == strip(new), 'the rerun with the crossing error must reproduce multihist_T30.json'
 with tempfile.TemporaryDirectory() as t:
     t = Path(t); (t / 'n').mkdir(); (t / 'f').mkdir()
-    for f in ('a1_results_T31.json', 'multihist_skip50_T30.json', 'au_results.json'): shutil.copy(N / f, t / 'n' / f)
+    for f in ('a1_results_T37.json', 'multihist_skip50_T30.json', 'au_results.json'): shutil.copy(N / f, t / 'n' / f)
     json.dump(new, open(t / 'n' / 'multihist_T30.json', 'w')); shutil.copy(FS / 'fss_results.json', t / 'f' / 'fss_results.json')
     P = RC.numbers(t / 'n', t / 'f')
 for L, v in P['au_crossing'].items(): assert abs(v['v'] - v['v_check']) < 1e-9, (L, v)
