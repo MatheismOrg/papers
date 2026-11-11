@@ -1,0 +1,24 @@
+A19 protocol T48 (session SA73, round 26, written and hashed 2026-11-09 20:33 PST, US Pacific). Hashed before any held-out run of this
+model. Gary's request (9 Nov, 20:31): "see how u might solve dm fit better across scales. if u can, do it."
+
+WHY: the formula's first term, M_p/f_b, gives every halo at least the cosmic share for the baryons seen. For disks M_p is
+stars plus cold gas. For the CLASH clusters M_p has been the brightest galaxy's stars alone, although the same data give
+the clusters' hot gas, most of their baryons. T45 leaves the clusters at 100 to 600 kpc 0.11 dex low on average.
+
+ALL-DATA LOOK BEFORE THIS PROTOCOL (explore47_gas.py; not a test): with M_p = all baryons inside each cluster's outermost
+measured radius, CLASH 100 to 600 kpc 0.1323 -> 0.1002 dex (mean offset +0.114 -> +0.068), centers 0.1055 -> 0.1020.
+A constant ratio g_obs/g_bar (no formula) has 0.11 to 0.16 dex scatter at fixed radius, so the gain is not the gas alone.
+
+MODEL MOGF0IESB (harness_T48.py): T45's MOGF0IESM in every respect, except that for each CLASH cluster
+M_p = max(M_star, g_bar r^2 / G at the cluster's outermost benchmark radius), the stars and hot gas inside that radius
+(Tian et al. 2020 g_bar). Nothing fitted; no other population changes (MaNGA centrals have no measured hot gas).
+Coefficients fitted to the benchmark: 3 (A, B, C on the training disks), as in T45.
+
+RUN: chunk_split.py, the same 60 partitions, main and stricter masks, config MOGF0IESB@0.1. Compare with T45 held out.
+
+PASS (preset): on both masks every population within its tolerance of T45 (disks 1 percent, dwarfs 2, early types, MaNGA,
+CLASH centers 5, lensing 5), and CLASH 100 to 600 kpc lower than T45 with a host-bootstrap 95 percent interval of the
+difference below zero. If it passes, T48 replaces T45 as the final formula; otherwise T45 stays and T48 is reported as tried.
+
+CAVEATS FIXED IN ADVANCE: retrospective (found on these data); M_p depends on the aperture of the data (400 to 600 kpc);
+the HeCS blind test cannot test it (no gas); the sum M_p/f_b + M_E is the formula's own form, not a derivation.

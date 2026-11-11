@@ -1,0 +1,16 @@
+A19 protocol T34 (session SA73, overnight round 14, 7 November 2026, US Pacific). Hashed before any run.
+Sensitivity of T32 and T33 (scatter-aware Moster relation plus each sample's selection) to the choices made there.
+
+WHY: T32 used CLASH's published selection (5 x 10^14 suns; Postman et al. 2012 give no mass definition) and T33 the
+MaNGA program's stated aim (10^14 suns), both with sigma = 0.18 dex. A result that held only at those values would be
+tuned.
+
+RUNS (diag_selection_sensitivity.py; T32's method and frozen formula, all data, nothing fitted)
+CLASH: threshold M200c > 3, 4, 5 and 7 x 10^14 suns, each with sigma = 0.15, 0.18 and 0.20 dex (12 runs); at the
+default (5 x 10^14, 0.18), the 16 X-ray selected and the 4 high-magnification clusters scored separately.
+MaNGA: threshold 10^13.8, 10^14.0 and 10^14.2 suns, each with sigma = 0.15, 0.18 and 0.20 dex (9 runs).
+
+TEST
+Robust if every CLASH run scores below the frozen formula (centers 0.1545, outer 0.2073 dex, all data) at both the
+centers and 100 to 600 kpc, and every MaNGA run is within the 5 percent tolerance of the frozen formula (0.1141).
+All runs reported.

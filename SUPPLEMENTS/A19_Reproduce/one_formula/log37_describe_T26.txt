@@ -1,0 +1,1 @@
+{"module": "harness_T26", "model": "MOGF0IE", "th": [11.1868], "bound_hits": [], "disk": 0.1498, "dwarfs": 0.3639, "ETG": 0.1854, "MaNGA": 0.1141, "CLASH": 0.1962, "MaNGA_mean": 0.0199, "lens": 67.68}

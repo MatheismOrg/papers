@@ -1,0 +1,9 @@
+strict MOGFK@0.1 fold_48105 1 156.4
+strict MOGFK@0.1 fold_48105 2 331.7
+strict MOGFK@0.1 fold_48105 3 410.4
+strict MOGFK@0.1 fold_48105 4 510.7
+strict MOGFK@0.1 fold_7331 0 624.0
+strict MOGFK@0.1 fold_7331 1 742.9
+strict MOGFK@0.1 fold_7331 2 824.5
+strict MOGFK@0.1 fold_7331 3 1004.1
+strict MOGFK@0.1 fold_7331 4 1181.7

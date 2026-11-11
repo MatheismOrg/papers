@@ -1,0 +1,138 @@
+{
+ "add": {
+  "Mt_mandelbaum": 11.339,
+  "chi2_red": 61.15,
+  "Mt_1sigma": [
+   11.32,
+   11.35
+  ],
+  "red_dev_at_cal": [
+   -0.119,
+   0.119,
+   -0.04,
+   -0.172,
+   -0.038,
+   0.161,
+   0.162
+  ],
+  "blue_dev": [
+   0.049,
+   0.344,
+   0.131,
+   -0.149,
+   -0.093,
+   -0.012,
+   0.293
+  ],
+  "chi2_red_at_benchmark_Mt": 126.3,
+  "red_dev_at_11p118": [
+   -0.119,
+   0.121,
+   -0.003,
+   0.063,
+   0.203,
+   0.241,
+   0.178
+  ],
+  "Mt_benchmark_fit": 11.1182,
+  "bound_hits": [],
+  "red_dev_at_benchmark_fit": [
+   -0.119,
+   0.121,
+   -0.003,
+   0.063,
+   0.203,
+   0.241,
+   0.178
+  ],
+  "scores_cal": {
+   "disk": 0.1498,
+   "dwarfs": 0.3639,
+   "ETG": 0.1851,
+   "MaNGA": 0.116,
+   "CLASH_centre": 0.1055,
+   "CLASH_outer": 0.1323,
+   "lens": 63.19,
+   "lens_strict": 38.14
+  },
+  "scores_benchmark_fit": {
+   "disk": 0.1498,
+   "dwarfs": 0.3639,
+   "ETG": 0.1855,
+   "MaNGA": 0.116,
+   "CLASH_centre": 0.1055,
+   "CLASH_outer": 0.1323,
+   "lens": 61.83,
+   "lens_strict": 39.69
+  },
+  "sec": 6
+ },
+ "mix": {
+  "Mt_mandelbaum": 11.267,
+  "chi2_red": 54.3,
+  "Mt_1sigma": [
+   11.24,
+   11.29
+  ],
+  "red_dev_at_cal": [
+   -0.119,
+   0.119,
+   -0.044,
+   -0.167,
+   -0.006,
+   0.155,
+   0.141
+  ],
+  "blue_dev": [
+   0.049,
+   0.344,
+   0.131,
+   -0.149,
+   -0.092,
+   -0.011,
+   0.288
+  ],
+  "chi2_red_at_benchmark_Mt": 69.13,
+  "red_dev_at_11p118": [
+   -0.119,
+   0.118,
+   -0.039,
+   -0.043,
+   0.121,
+   0.193,
+   0.148
+  ],
+  "Mt_benchmark_fit": 10.996,
+  "bound_hits": [],
+  "red_dev_at_benchmark_fit": [
+   -0.119,
+   0.116,
+   -0.027,
+   0.048,
+   0.162,
+   0.202,
+   0.149
+  ],
+  "scores_cal": {
+   "disk": 0.1498,
+   "dwarfs": 0.3639,
+   "ETG": 0.185,
+   "MaNGA": 0.1163,
+   "CLASH_centre": 0.1058,
+   "CLASH_outer": 0.1337,
+   "lens": 63.27,
+   "lens_strict": 38.1
+  },
+  "scores_benchmark_fit": {
+   "disk": 0.1498,
+   "dwarfs": 0.3639,
+   "ETG": 0.1851,
+   "MaNGA": 0.1163,
+   "CLASH_centre": 0.1058,
+   "CLASH_outer": 0.1337,
+   "lens": 61.82,
+   "lens_strict": 39.51
+  },
+  "sec": 5
+ }
+}

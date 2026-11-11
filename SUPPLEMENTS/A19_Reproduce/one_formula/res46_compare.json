@@ -1,0 +1,114 @@
+{
+ "MOND_RAR_stdIMF": {
+  "disk": 0.1546,
+  "disk_mean": -0.0245,
+  "dwarfs": 0.633,
+  "dwarfs_mean": 0.4541,
+  "ETG": 0.2074,
+  "ETG_mean": 0.0869,
+  "MaNGA": 0.3266,
+  "MaNGA_mean": 0.2928,
+  "CLASH_centre": 0.4603,
+  "CLASH_centre_mean": 0.4341,
+  "CLASH_outer": 0.5258,
+  "CLASH_outer_mean": 0.5159,
+  "lens": 88.99,
+  "lens_by_stack": [
+   29.41,
+   18.82,
+   12.88,
+   27.88
+  ],
+  "lens_strict": 51.32,
+  "lens_strict_by_stack": [
+   28.85,
+   2.82,
+   5.97,
+   13.68
+  ]
+ },
+ "MOND_RAR_spheroidIMF": {
+  "disk": 0.1546,
+  "disk_mean": -0.0245,
+  "dwarfs": 0.633,
+  "dwarfs_mean": 0.4541,
+  "ETG": 0.1823,
+  "ETG_mean": 0.0053,
+  "MaNGA": 0.1859,
+  "MaNGA_mean": 0.123,
+  "CLASH_centre": 0.4603,
+  "CLASH_centre_mean": 0.4341,
+  "CLASH_outer": 0.5258,
+  "CLASH_outer_mean": 0.5159,
+  "lens": 88.99,
+  "lens_by_stack": [
+   29.41,
+   18.82,
+   12.88,
+   27.88
+  ],
+  "lens_strict": 51.32,
+  "lens_strict_by_stack": [
+   28.85,
+   2.82,
+   5.97,
+   13.68
+  ]
+ },
+ "LCDM_Moster_ME_stdIMF": {
+  "disk": 0.1655,
+  "disk_mean": -0.0098,
+  "dwarfs": 0.4399,
+  "dwarfs_mean": -0.1555,
+  "ETG": 0.2047,
+  "ETG_mean": 0.087,
+  "MaNGA": 0.2011,
+  "MaNGA_mean": 0.1687,
+  "CLASH_centre": 0.1058,
+  "CLASH_centre_mean": 0.031,
+  "CLASH_outer": 0.1337,
+  "CLASH_outer_mean": 0.111,
+  "lens": 103.55,
+  "lens_by_stack": [
+   34.29,
+   18.63,
+   9.75,
+   40.88
+  ],
+  "lens_strict": 82.06,
+  "lens_strict_by_stack": [
+   31.7,
+   2.19,
+   7.54,
+   40.63
+  ]
+ },
+ "LCDM_Moster_ME_spheroidIMF": {
+  "disk": 0.1655,
+  "disk_mean": -0.0098,
+  "dwarfs": 0.4675,
+  "dwarfs_mean": -0.2431,
+  "ETG": 0.1818,
+  "ETG_mean": 0.0144,
+  "MaNGA": 0.1163,
+  "MaNGA_mean": 0.0331,
+  "CLASH_centre": 0.1058,
+  "CLASH_centre_mean": 0.031,
+  "CLASH_outer": 0.1337,
+  "CLASH_outer_mean": 0.111,
+  "lens": 103.55,
+  "lens_by_stack": [
+   34.29,
+   18.63,
+   9.75,
+   40.88
+  ],
+  "lens_strict": 82.06,
+  "lens_strict_by_stack": [
+   31.7,
+   2.19,
+   7.54,
+   40.63
+  ]
+ }
+}

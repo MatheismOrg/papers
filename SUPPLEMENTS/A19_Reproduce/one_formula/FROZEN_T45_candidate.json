@@ -1,0 +1,130 @@
+{
+ "name": "A19 one-formula candidate T45 (MOGF0IESM): T44 with the gate threshold M_t set outside the benchmark, on the seven red-central bins of Mandelbaum et al. (2016), so that only the disk rule's A, B, C are fitted to the benchmark",
+ "frozen_at": "2026-11-07 10:42 PST, session SA73, after T45 (held out, PROTOCOL_T45 sha256 193809a2...); T44 (e4daaf28...), T43 and T37 stay frozen",
+ "halo_formula": "M_ref = Mp/fb + 10^A (M*/1e10 Msun)^B (Re/3 kpc)^C + q M_E(M*, z | S), q = 1 for samples selected by their halos (S not 1), else q = (M*/Mp)^50 / (1 + (M_t/M*)^4) with log10 M_t minimizing chi2 against the seven red-central halo masses of Mandelbaum et al. 2016 (M_p = M*, R_e = 0.5 x the SPARC size relation, z_eff, no selection, M200c -> M200m h^-1 with the Dutton and Maccio concentration); M_halo = (M_ref^8 + (1e8 Msun)^8)^(1/8); M_E = posterior mean of M200c on a grid in log10 M200c from 9.0 to 16.5 (step 0.005) with weight dn/dlnM (Tinker et al. 2008, colossus, H0 67.1, Om 0.3175, Ob 0.049, sigma8 0.8344, ns 0.9624) x exp(-0.5 [(log10 M* - log10 M*_Moster(M200c, z))/0.180]^2) x S(M200c) (Moster, Naab and White 2013 with redshift evolution; 0.180 = sqrt(0.15^2 + 0.10^2) dex); below M* = 10^9.5 Msun M_E is the mean inversion; NFW with dark mass (1-fb) M_halo inside r200 at the halo redshift, Dutton and Maccio (2014) concentration, satellites x (1 - 0.54 log10(D/r200,host)) (Moline et al. 2017); no contraction; fb = 0.049/0.3175, h = 0.671; lensing M_p as a point mass; KiDS lens stacks only: c x (4.67/5.26) (M200 h / 1e14 Msun)^(-0.01) (Neto et al. 2007, Millennium: median c of all haloes over relaxed haloes; about 0.93 at 1e12 Msun)",
+ "selection_S": {
+  "CLASH clusters": "M200c > 5e14 Msun (Postman et al. 2012: X-ray selected, kT > 5 keV)",
+  "MaNGA BCGs": "M200c > 1e14 Msun (the MaNGA BCG program's aim)",
+  "every other sample (disks, dwarfs, early types, KiDS and SDSS lenses)": "none (chosen by their light, not their halos)"
+ },
+ "baryons": "as T26: stellar g_bar of spheroids with a measured velocity dispersion x alpha_IMF = 10^(0.38 log10(sigma_e/200 km/s) - 0.06 + 0.215) (Posacki et al. 2015; Chabrier scale via Madau and Dickinson 2014), for the 50 MaNGA BCGs and the 16 SPARC early types",
+ "coefficients_all_disks": {
+  "A": 11.7481,
+  "B": 0.8178,
+  "C": -0.7119,
+  "log10_Mt_from_Mandelbaum2016_red": 11.339,
+  "log10_Mt_delta_chi2_1_range": [
+   11.32,
+   11.35
+  ]
+ },
+ "fixed": {
+  "M_min_Msun": 100000000.0,
+  "gas_exponent": 50,
+  "gate_steepness": 4,
+  "sigma_logMstar_dex": 0.1803
+ },
+ "coefficient_count": "3 fitted to the benchmark (A, B, C on disks alone); M_t set on external lensing data (SDSS red centrals); the selection thresholds are the surveys' own",
+ "mandelbaum_red_calibration": {
+  "chi2_7_bins": 61.15,
+  "rms_dex": 0.127,
+  "deviations_dex": [
+   -0.119,
+   0.119,
+   -0.04,
+   -0.172,
+   -0.038,
+   0.161,
+   0.162
+  ],
+  "note": "a calibration now, not a check; the formula does not follow the red-central relation closely"
+ },
+ "all_data_scores": {
+  "disk": 0.1498,
+  "dwarfs": 0.3639,
+  "ETG": 0.1851,
+  "MaNGA": 0.116,
+  "CLASH_centre": 0.1055,
+  "CLASH_outer": 0.1323,
+  "lensing_chi2_primary": 63.19,
+  "lensing_chi2_strict": 38.14
+ },
+ "held_out_primary": {
+  "disk": 0.1533,
+  "dwarfs": 0.3702,
+  "ETG": 0.1852,
+  "MaNGA": 0.116,
+  "CLASH_outer": 0.1323,
+  "CLASH_centre": 0.1055,
+  "lensing_chi2": 64.67,
+  "lensing_by_group": [
+   28.846,
+   17.089,
+   7.893,
+   10.843
+  ],
+  "log10_Mt_median": 11.329,
+  "log10_Mt_range": [
+   11.305,
+   11.405
+  ],
+  "bound_hits": 0
+ },
+ "held_out_strict": {
+  "lensing_chi2": 39.43,
+  "lensing_by_group": [
+   27.835,
+   4.944,
+   3.291,
+   3.359
+  ],
+  "other_scores": "identical to the main mask (nothing else depends on the mask now)",
+  "bound_hits": 0
+ },
+ "change_vs_T44_held_out": {
+  "lensing_primary": [
+   64.46,
+   64.67
+  ],
+  "lensing_strict": [
+   39.42,
+   39.43
+  ],
+  "ETG": [
+   0.1855,
+   0.1852
+  ],
+  "other_populations": "unchanged within 0.1 percent",
+  "verdict": "passes PROTOCOL_T45 on both masks; replaces T44"
+ },
+ "secondary_checks": {
+  "kids_split_S_model": {
+   "T44": 0.071,
+   "T45": 0.0509,
+   "data_colour": 0.2062,
+   "data_sersic": 0.1616
+  },
+  "kids_split_chi2_late_early_difference": {
+   "T45_colour": [
+    30.95,
+    5.89,
+    16.81
+   ],
+   "T45_sersic": [
+    16.7,
+    11.56,
+    10.93
+   ]
+  },
+  "milky_way": {
+   "q": 1.9332227580485897e-07,
+   "M_halo": 1834439222605.0825
+  }
+ },
+ "caveats": [
+  "the KiDS early/late split falls from 0.071 to 0.051 dex (data 0.16 to 0.21): the external threshold is higher than the one the benchmark preferred",
+  "Mandelbaum et al. (2016) is no longer an unfitted check",
+  "the formula over-predicts the halos of blue SDSS centrals at 10^10.56 and 10^10.85 suns by 0.34 and 0.13 dex (unaffected by M_t), the same direction as the Milky Way"
+ ],
+ "status": "retrospective; frozen here for any later blind test"
+}

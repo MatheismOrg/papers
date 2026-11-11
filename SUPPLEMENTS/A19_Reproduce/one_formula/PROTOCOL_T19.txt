@@ -1,0 +1,32 @@
+A19 cross-scale protocol T19 (session SA73, turn 19, 6 November 2026, US Pacific). Hashed before running.
+Same data, partitions, objective, scores and tolerances as T15 to T18. Adaptive (eighth round on seen data); not blind.
+
+GOAL: a better and more united formula. Both T17b's size switch and every alternative tested so far either fit the
+massive galaxies or the massive disks, not both, unless they can tell disks from spheroids. Lensing measured that
+difference: at fixed stellar mass, passive central galaxies have halos at least twice as massive as star-forming ones
+(Mandelbaum et al. 2016, MNRAS, doi 10.1093/mnras/stw188, log M* 10.3 to 11.6). The cold-gas fraction is this data's
+measure of that: disks have 1.6 to 90 percent gas; dwarfs, early types, MaNGA and CLASH central galaxies and early-type
+lenses are gas-poor (M_p = M*). In the existing data this is close to a population label for the switch; it is a
+physical quantity that new data can measure.
+
+All-data checks behind this protocol (reported, not held out): the gas-and-mass switch gave MaNGA 0.184 (size switch
+0.213), clusters 0.196 (0.199), lensing 67.7 (68.4), disks 0.1498 (0.1495). Adding contraction where baryons dominate
+(Cautun et al. 2020, contraction branch only) with the paper's rule kept as fitted on disks gave MaNGA 0.173 at s = 0.17.
+The feedback-cored profile of Di Cintio et al. (2014) failed badly (disks 0.18, dwarfs 0.81 or worse), so it is not run.
+
+FORMULA (harness_T19.py)
+M_ref = Mp/fb + 10^A (M*/1e10)^B (Re/3 kpc)^C + S x M_Moster(M*, z)
+A, B, C frozen on each fold's training disks (NFW, no contraction, no switch), as T17b.
+MOG:  S = (M*/Mp)^50 / (1 + (M_t/M*)^4); one coefficient log10 M_t in [10, 12.5].
+MOGC: MOG + contraction: M_DM(<r) = (1 - fb) M_NFW(<r) max(F(eta), 1)^s, F = 0.45 + 0.38 (eta + 1.16)^0.53,
+      eta = M_bar(<r)/(fb M_NFW(<r)); s in [0, 1.5]; dynamics M_bar from g_bar, lensing M_p as a point mass.
+MOSC: T17b's size switch (R_t) + the same contraction.
+Concentration Dutton and Maccio (2014) at each redshift; Moline factor for satellites; M_Moster as T17b.
+
+CONFIGURATIONS
+MOG@0.1 (4 coefficients)   MOGC@0.1 (5)   MOSC@0.1 (5)   MOGC@1 (5)
+Both masks. All reported.
+
+PASS MARKS
+Against the paper's rule as before; progress over MOSS@0.1 (T17b): better on at least 2 of the 6 scores and worse
+beyond tolerance on none. Paired host bootstraps against MOSS@0.1 for the primary mask.

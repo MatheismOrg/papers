@@ -1,0 +1,1 @@
+{"module": "harness_T43", "model": "MOGF0IESG", "th": [11.1907], "bound_hits": [], "disk": 0.1498, "dwarfs": 0.3639, "ETG": 0.1853, "MaNGA": 0.116, "CLASH": 0.1272, "MaNGA_mean": 0.0324, "lens": 67.68}

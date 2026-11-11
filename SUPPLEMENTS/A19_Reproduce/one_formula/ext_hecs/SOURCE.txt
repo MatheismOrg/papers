@@ -1,0 +1,4 @@
+Sohn et al. 2020, ApJ 891, 129, Tables 2 and 3, machine-readable files from content.cld.iop.org (revision1), read 7 Nov 2026 in the browser pane and reduced in the page by the published byte ranges.
+apjab6e6at2_mrt.txt sha256 a93b4d58985e759851f23ed0b1ad5a5efcd123b20a297ad40b3fc13dca3b3e21 (24542 chars) -> hecs_t2.csv sha256 60e4e714e95dda24a67ff7afeddc0685ee03bc797e8b8c489fb2b814f4ac8465
+apjab6e6at3_mrt.txt sha256 bd022430296f46206f404a00f90baa4d704ebab0cd9ffd405dfb3a3e5a700b7e (26923 chars) -> hecs_t3.csv sha256 465cb56aaede36665d4c5bed914081d15354d589e21f5d07a56474c267d4bba6
+Both CSVs matched the in-page SHA-256 after transfer.

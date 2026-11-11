@@ -1,0 +1,2 @@
+first version crashed before any prediction (colossus cosmology not set); fixed by setting the paper's A19planck cosmology
+ee2a673f746a7dc5f6f494e066bbe202fb10a094adb2d880036ef06a988fc04f  diag_clash_selection.py

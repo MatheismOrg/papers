@@ -1,0 +1,23 @@
+A19 cross-scale protocol T22 (session SA73, overnight round 3, 6 November 2026, US Pacific). Hashed before running.
+Same data, partitions, objective, scores and tolerances as T15 to T21. Adaptive (eleventh round on seen data); not blind.
+
+WHY: every halo should hold its cosmic share of baryons. The galaxy's stars and cold gas (Mp) fall short of fb M_ref;
+the rest is ejected or sits in a hot halo. The Milky Way's hot halo has density ~ r^-1.5 (beta = 0.50 +/- 0.03) and holds
+at most about half of its missing baryons within 250 kpc (Miller and Bregman 2015, ApJ 800, 14). For central galaxies of
+groups (MaNGA), the group's hot gas is missing from their g_bar too; for CLASH, g_bar already includes the intracluster gas.
+All-data check, reported, not held out: half the missing baryons in an r^-1.5 hot halo (CLASH excluded) improves MaNGA
+0.173 to 0.160 and lensing 67.9 to 66.8, disks 0.1496 to 0.1499, dwarfs 0.3681 to 0.3686; all of them: MaNGA 0.149,
+lensing 68.0, disks 0.1505. Projection checked against brute force to 1e-14.
+
+FORMULA (harness_T22.py): T19's MOGC plus g_hot = G M_hot(<r)/r^2, M_hot(<r) = f (fb M_ref - Mp) min(r/r200, 1)^1.5,
+no hot term at CLASH points; lensing ESD of the same truncated r^-1.5 sphere added to the dark matter.
+CONFIGURATIONS
+MOGH5@0.1   f = 0.5, Miller and Bregman's bound            (5 coefficients)
+MOGHf@0.1   f fitted in [0, 1]                              (6)
+MOGFH5@0.1  f = 0.5 plus T21's floor M_min = 1e8 Msun        (5)
+Both masks. All reported. Runs on Gary's server or in the cloud; the code and data are byte-identical (tarball hash
+recorded with the results).
+
+PASS MARKS
+Progress over MOGC@0.1 (T19): better on at least 2 of the 6 scores and worse beyond tolerance on none. Paired host
+bootstraps for the primary mask.

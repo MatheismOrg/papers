@@ -1,0 +1,40 @@
+{
+ "a0_range": [
+  9.596410120329933e-11,
+  1.0332740783311296e-10
+ ],
+ "a0_median": 9.86538105611008e-11,
+ "kept": {
+  "galaxies": 149,
+  "T61": 0.1531,
+  "MOND": 0.1546,
+  "MOND_refit": 0.1532,
+  "T61_minus_MOND_refit_boot95": [
+   -0.0084,
+   0.0085
+  ],
+  "p_not_lower": 0.4701
+ },
+ "dropped": {
+  "galaxies": 114,
+  "T61": 0.3439,
+  "MOND": 0.3639,
+  "MOND_refit": 0.3522,
+  "T61_minus_MOND_refit_boot95": [
+   -0.0183,
+   0.0008
+  ],
+  "p_not_lower": 0.037
+ },
+ "all": {
+  "galaxies": 149,
+  "T61": 0.1926,
+  "MOND": 0.1996,
+  "MOND_refit": 0.1954,
+  "T61_minus_MOND_refit_boot95": [
+   -0.0094,
+   0.0046
+  ],
+  "p_not_lower": 0.2179
+ }
+}

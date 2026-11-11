@@ -1,0 +1,45 @@
+{
+ "name": "A19 one-formula candidate T48 (MOGF0IESB): T45 with, for CLASH clusters, M_p = all baryons (stars + hot gas) inside the outermost benchmark radius",
+ "frozen_at": "2026-11-09 20:35 PST, session SA73, after T48 held out (PROTOCOL_T48 sha256 2d32effa...); T45 (38726873...) stays frozen",
+ "held_out_both_masks": {
+  "disk": 0.1533,
+  "dwarfs": 0.3702,
+  "ETG": 0.1852,
+  "MaNGA": 0.116,
+  "CLASH_centre": 0.102,
+  "CLASH_outer": 0.1002,
+  "lensing_primary": 64.67,
+  "lensing_strict": 39.43
+ },
+ "change_vs_T45": {
+  "CLASH_outer": [
+   0.1323,
+   0.1002
+  ],
+  "bootstrap95": [
+   -0.0449,
+   -0.0197
+  ],
+  "CLASH_centre": [
+   0.1055,
+   0.102
+  ],
+  "centre_bootstrap95": [
+   -0.0148,
+   0.0077
+  ],
+  "others": "identical"
+ },
+ "all_data_mean_offset_CLASH_outer": [
+  0.114,
+  0.068
+ ],
+ "caveats": [
+  "retrospective",
+  "M_p depends on the data aperture (400 to 600 kpc)",
+  "HeCS blind test cannot test it (no gas)",
+  "sum M_p/f_b + M_E is the formula's form, not a derivation",
+  "MaNGA centrals have no measured hot gas"
+ ],
+ "verdict": "passes PROTOCOL_T48; paper not yet updated"
+}

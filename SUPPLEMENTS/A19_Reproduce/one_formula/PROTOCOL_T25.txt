@@ -1,0 +1,22 @@
+A19 cross-scale protocol T25 (session SA73, overnight round 5, 7 November 2026, US Pacific). Hashed before running.
+Same data, partitions, objective, scores and tolerances as T24 (MaNGA g_bar with the Chabrier IMF factor of T24).
+Adaptive (thirteenth round on seen data); not blind.
+
+WHY: T24 passed on the primary mask (held out: MaNGA 0.1726 to 0.1113 with the Chabrier factor, nothing worse beyond
+tolerance). Once the MaNGA baryons carry the IMF factor, the contraction term of T19 buys almost nothing. All-data checks,
+reported, not held out (primary mask, refitted): MOGF + IMF (5 coefficients): disks 0.1496, dwarfs 0.3639, ETG 0.2016,
+MaNGA 0.1122, CLASH 0.1956, lensing 67.83; MOGF0 + IMF (no contraction, 4 coefficients): 0.1498, 0.3639, 0.2026,
+0.1141, 0.1961, 67.69. Without the IMF factor, dropping contraction costs MaNGA 0.173 to 0.184. So T19's contraction
+mostly absorbed the MaNGA IMF offset. A formula with one coefficient fewer that matches is preferred.
+
+FORMULA (harness_T25.py): T21's MOGF0: M_ref = Mp/fb + 10^A (M*/1e10)^B (Re/3)^C + q M_Moster(M*, z),
+q = (M*/Mp)^50 / (1 + (M_t/M*)^4), floor (M_ref^8 + (1e8)^8)^(1/8), NFW with Dutton and Maccio (2014) c(M, z), Moline
+satellite factor, no contraction. MaNGA g_bar x alpha_IMF as T24 (Chabrier, delta = 0.215).
+CONFIGURATION
+MOGF0I@0.1  (4 coefficients: A, B, C frozen on each fold's training disks, log10 M_t fitted)
+Both masks. Run on Gary's Mac (4-core Linux workspace) with chunk_run.py, or in the cloud with the same files.
+
+PASS MARKS
+The simplification holds if no score is worse than MOGFI@0.1 (T24, 5 coefficients) beyond tolerance on either mask.
+It is progress over MOGF@0.1 (T21) if, in addition, held-out MaNGA is better by more than the 5 percent tolerance and
+no other score is worse beyond tolerance. Paired host bootstraps for the primary mask.

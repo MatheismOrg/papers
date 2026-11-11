@@ -1,0 +1,39 @@
+A19 protocol T45 (session SA73, round 25, written and hashed 2026-11-07 10:39 PST, US Pacific). Hashed before any held-out run of
+this model. Gary's request: keep improving the one formula ("continue", 10:15 PST).
+
+WHY: since T43, samples chosen by their halos (CLASH, MaNGA BCGs) take the expected halo whatever M_t, so the gate
+threshold M_t, the one coefficient beyond the disk rule, is set only by the 16 early types and the KiDS stacks, and
+weakly (T44 held out: log10 M_t from 10.89 to the 12.5 bound, 1 and 10 bound hits on the two masks). The gate stands
+for the measured halo excess of passive central galaxies (Mandelbaum et al. 2016). Setting M_t on those published
+central halo masses instead of the benchmark makes every benchmark population other than the disks a prediction with
+nothing fitted to it.
+
+ALL-DATA LOOK BEFORE THIS PROTOCOL (explore45.py, res45_explore.json; not a test): calibrated on the seven red bins
+with the all-disk A, B, C, log10 M_t = 11.339 (Delta chi2 = 1 range 11.32 to 11.35; chi2 61.2 for 7 bins, so the formula
+does not follow the red-central relation closely). At that M_t the all-data scores equal T44's within 0.1 percent except
+lensing (63.19 against 61.83 on the main mask, 38.14 against 39.69 on the stricter mask). A mixture form of the halo,
+q M_E + (1 - q)(M_p/f_b + rule), was looked at too (M_t 11.267 from Mandelbaum; CLASH outer 0.1337 against 0.1323,
+nothing better), so it is not taken forward.
+
+MODEL MOGF0IESM (harness_T45.py): T44's MOGF0IESR in every respect (halo formula, M_E with each sample's selection,
+q = 1 for halo-selected samples, IMF factor, floor, Moline factor, KiDS all-halo ratio), except that log10 M_t is not
+fitted to the benchmark. In each partition, after A, B, C are fitted on the training disks (as in every round),
+log10 M_t is the value minimizing chi2 = sum over the seven red-central bins of Mandelbaum et al. (2016, MNRAS 457,
+3200; package file data/Lensing/mandelbaum2016_central_halos.csv) of ((pred - obs)/err)^2, err = err_plus if
+pred > obs else err_minus, where pred = log10 M200m [h^-1 M_sun] of the formula's halo for a red central (M_p = M*,
+R_e = 0.5 x the SPARC size relation, z = z_eff, no selection), converted from M200c with the Dutton and Maccio
+concentration by A19_Lensing_v8.to_m200m, exactly as in the T38 check; grid 10.0 to 12.5 in steps of 0.01, refined
+to 0.001 about the minimum. A minimum on a grid edge counts as a bound hit. No benchmark system enters M_t.
+Coefficients: 3 fitted to the benchmark (A, B, C on the training disks); M_t set on external lensing data.
+
+RUN: chunk_split.py, the same 60 partitions, main and stricter masks, config MOGF0IESM@0.1 (the weight is unused).
+Compare with T44 held out (res44_MOGF0IESR_primary.json, res44_MOGF0IESR_strict.json).
+
+PASS (preset): on both masks, every population's held-out score within its tolerance of T44 (disks 1 percent,
+dwarfs 2, early types, MaNGA, CLASH centers and CLASH 100 to 600 kpc 5, lensing chi2 5). If it passes, T45 replaces
+T44 as the final formula and Section 5.4's first limit is rewritten; if any population fails, T44 stays and T45 is
+reported as tried.
+
+REPORT: every score on both masks; log10 M_t median and range over partitions; bound hits; host bootstrap of the
+T45 - T44 differences; the red-central chi2 and rms at the all-disk M_t. Secondary, not pass criteria: the KiDS
+early/late split (S_model) and the Milky Way's switch q.

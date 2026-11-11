@@ -1,0 +1,22 @@
+{
+ "name": "A19 one-formula candidate T17b (MOSS, w = 0.1): paper rule + published Moster halo mass for galaxies larger than R_t + published concentrations",
+ "frozen_at": "2026-11-06 US Pacific, session SA73 turn 17, after the T17b cross-validation",
+ "formula": "M_ref = Mp/fb + 10^A (M*/1e10 Msun)^B (Re/3 kpc)^C + M_Moster(M*, z) / (1 + (R_t/Re)^8); M_Moster: the halo mass in [1e9, 10^16.5] Msun that gives M* from Moster, Naab and White (2013) with redshift evolution (M1 = 10^(11.590 + 1.195 a'), N = 0.0351 - 0.0247 a', beta = 1.376 - 0.826 a', gamma = 0.608 + 0.329 a', a' = z/(1+z)); NFW, dark mass (1-fb) M_ref inside r200 at the halo redshift; log10 c = 0.520 + 0.385 exp(-0.617 z^1.21) + (-0.101 + 0.026 z) log10(M_ref h/1e12 Msun) (Dutton and Maccio 2014); a satellite inside its host r200 has c multiplied by 1 - 0.54 log10(D/r200,host) (Moline et al. 2017; host M200 1.0e12 for the Milky Way, 1.5e12 for M31); fb = 0.049/0.3175, h = 0.671",
+ "coefficients": {
+  "A": 11.7481,
+  "B": 0.8178,
+  "C": -0.7119,
+  "log10_Rt_kpc": 1.1455
+ },
+ "R_t_kpc": 13.98,
+ "dwarf_upper_limits_exceeded": 3,
+ "switch_on_share_of_points": {
+  "disk": 0.0,
+  "dwarfs": 0.0,
+  "ETG": 0.0,
+  "MaNGA": 0.34,
+  "CLASH": 0.94
+ },
+ "note": "In these data no disk, dwarf or early-type galaxy has Re above 12.4 kpc, so the switch acts close to a population switch for brightest cluster galaxies.",
+ "status": "retrospective and adaptive (sixth round on seen data); frozen here for a blind test on new systems"
+}

@@ -1,0 +1,52 @@
+{
+ "V5_corr_vs": {
+  "sersic": 0.522,
+  "tian": 0.458,
+  "elpetro": 0.459,
+  "boot95_sersic": [
+   0.232,
+   0.524,
+   0.735
+  ],
+  "frac_boot_above_045": 0.718,
+  "frac_boot_below_030": 0.058
+ },
+ "V0_boot95_tian": [
+  0.324,
+  0.552,
+  0.71
+ ],
+ "Tian_M_over_elpetro_sd": 0.0804,
+ "corr_logMS_MT_vs_logReT": 0.428,
+ "corr_logMS_MP_vs_e0": 0.174,
+ "partial_e0_logReT_given_logMS_MT": 0.418,
+ "partial_e0_logMS_MT_given_logReT": 0.416,
+ "V9 g_bar kept, halo from Sersic M* (Tian R_e)": {
+  "rms": 0.1104,
+  "mean": 0.028,
+  "corr_logRe": 0.527,
+  "corr_logReS": 0.41,
+  "slope": 0.358
+ },
+ "V10 g_bar kept, halo from Sersic M* and Sersic R_e": {
+  "rms": 0.1105,
+  "mean": 0.028,
+  "corr_logRe": 0.411,
+  "corr_logReS": 0.411,
+  "slope": 0.179
+ },
+ "V11 g_bar kept, halo from elpetro M* (Tian R_e)": {
+  "rms": 0.1155,
+  "mean": 0.035,
+  "corr_logRe": 0.56,
+  "corr_logReS": 0.449,
+  "slope": 0.39
+ },
+ "V12 g_bar kept, halo from Tian M* x 10^0.1 (Tian R_e)": {
+  "rms": 0.114,
+  "mean": 0.029,
+  "corr_logRe": 0.536,
+  "corr_logReS": 0.429,
+  "slope": 0.375
+ }
+}

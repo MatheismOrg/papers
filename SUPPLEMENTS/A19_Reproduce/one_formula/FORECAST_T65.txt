@@ -1,0 +1,18 @@
+FORECAST_T65 (SA73 T65), the tenth forecast of Section 5.8. Written 23:26 PST, 10 Nov 2026, after PROTOCOL_T65's runs, for data not in
+hand. What the runs gave: among disks the amount of gas does not matter (the gate "any cold gas" does as well as the gas
+fraction: held-out all points 0.189 against 0.193 dex, range -0.009 to +0.001); for the eight dwarf spheroidals with a
+dark-matter density at 150 pc from Read, Walker and Steger (2019), the formula's cusps give 0.21 dex, the published
+history recipe of Read, Agertz and Collins (2016) 0.13 and self-interaction at 1 cm^2/g 0.25, the paired range of
+history minus formula including zero (-0.23 to +0.06); on the benchmark's points of 20 dwarf spheroidals with quenching
+times, history and cusps are level and self-interaction is 25 percent worse. Verdict under the protocol: not decided.
+
+This is the forecast the formula is most likely to fail. The final formula gives a gas-free dwarf a cusp whatever its
+history: every coefficient frozen (A, B, C = 11.7481, 0.8178, -0.7119; log M_t = 11.339; the core zero without gas), its
+dark-matter density at radius r is the NFW density of its halo (t65/lib65.py, reading G). On gas-free dwarf galaxies that
+are not among Read et al.'s eight, whose stars formed over at least 9 Gyr (star formation ended less than 4.8 Gyr ago),
+each with a stellar mass, a half-light radius and a dark-matter density measured inside 0.3 half-light radii: the mean of
+log10(measured / formula) over at least four such galaxies lies above -0.20.
+If it lies at or below -0.20, as Fornax does (-0.51), the core follows the history of star formation: the gate must be
+rebuilt on history, and the published recipe (reading H1, n = tanh(0.04 t_SF / t_dyn), r_c = 1.75 R_1/2) is the first
+candidate. If it lies above -0.20 while the same dwarfs' densities lie above those of self-interaction at 1 cm^2/g,
+gas-free dwarfs keep their cusps and the gas gate stands.

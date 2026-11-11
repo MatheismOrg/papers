@@ -1,0 +1,19 @@
+{
+ "name": "A19 one-formula candidate T19 (MOGC, w = 0.1): paper rule + published Moster halo mass for gas-poor galaxies above M_t + contraction where baryons dominate",
+ "frozen_at": "2026-11-06 US Pacific, session SA73 turn 19, after the T19 cross-validation",
+ "formula": "M_ref = Mp/fb + 10^A (M*/1e10 Msun)^B (Re/3 kpc)^C + q M_Moster(M*, z), q = (M*/Mp)^50 / (1 + (M_t/M*)^4); M_Moster: Moster, Naab and White (2013) with redshift evolution, inverted in [1e9, 10^16.5] Msun; NFW with dark mass (1-fb) M_ref inside r200 at the halo redshift, log10 c = 0.520 + 0.385 exp(-0.617 z^1.21) + (-0.101 + 0.026 z) log10(M_ref h/1e12 Msun) (Dutton and Maccio 2014), satellites x (1 - 0.54 log10(D/r200,host)) (Moline et al. 2017); contraction M_DM(<r) = (1-fb) M_NFW(<r) max(F, 1)^s, F = 0.45 + 0.38 (eta + 1.16)^0.53, eta = M_bar(<r)/(fb M_NFW(<r)) (Cautun et al. 2020 eq. 11, contraction branch); dynamics M_bar(<r) = g_bar r^2/G, lensing M_p as a point mass; fb = 0.049/0.3175, h = 0.671",
+ "coefficients": {
+  "A": 11.7481,
+  "B": 0.8178,
+  "C": -0.7119,
+  "log10_Mt": 11.1822,
+  "s": 0.1735
+ },
+ "four_coefficient_version_MOG": {
+  "log10_Mt": 11.1793,
+  "s": 0
+ },
+ "dwarf_upper_limits_exceeded": 3,
+ "note": "In these data the cold-gas factor is close to a population label (dwarfs, early types, MaNGA and CLASH central galaxies and early-type lenses have Mp = M* by convention); the mass factor keeps it to massive systems. Passive central galaxies have halos at least twice as massive as star-forming ones of the same stellar mass (Mandelbaum et al. 2016).",
+ "status": "retrospective and adaptive (eighth round on seen data); frozen here for a blind test on new systems"
+}

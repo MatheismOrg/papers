@@ -1,0 +1,66 @@
+{
+ "std|0.0": {
+  "disk": 0.1655,
+  "dwarfs": 0.4399,
+  "ETG": 0.1818,
+  "MaNGA": 0.1163,
+  "CLASH_centre": 0.1058,
+  "CLASH_outer": 0.1337
+ },
+ "std|0.25": {
+  "disk": 0.1653,
+  "dwarfs": 0.435,
+  "ETG": 0.1816,
+  "MaNGA": 0.1106,
+  "CLASH_centre": 0.1042,
+  "CLASH_outer": 0.1314
+ },
+ "std|0.5": {
+  "disk": 0.1666,
+  "dwarfs": 0.4306,
+  "ETG": 0.1825,
+  "MaNGA": 0.1101,
+  "CLASH_centre": 0.1036,
+  "CLASH_outer": 0.1292
+ },
+ "std|1.0": {
+  "disk": 0.1752,
+  "dwarfs": 0.4231,
+  "ETG": 0.19,
+  "MaNGA": 0.1329,
+  "CLASH_centre": 0.1063,
+  "CLASH_outer": 0.1253
+ },
+ "formula|0.0": {
+  "disk": 0.1498,
+  "dwarfs": 0.3639,
+  "ETG": 0.1851,
+  "MaNGA": 0.116,
+  "CLASH_centre": 0.1055,
+  "CLASH_outer": 0.1323
+ },
+ "formula|0.25": {
+  "disk": 0.1497,
+  "dwarfs": 0.3631,
+  "ETG": 0.187,
+  "MaNGA": 0.1104,
+  "CLASH_centre": 0.104,
+  "CLASH_outer": 0.1301
+ },
+ "formula|0.5": {
+  "disk": 0.1512,
+  "dwarfs": 0.3629,
+  "ETG": 0.1898,
+  "MaNGA": 0.1101,
+  "CLASH_centre": 0.1035,
+  "CLASH_outer": 0.128
+ },
+ "formula|1.0": {
+  "disk": 0.161,
+  "dwarfs": 0.3639,
+  "ETG": 0.2004,
+  "MaNGA": 0.1332,
+  "CLASH_centre": 0.1063,
+  "CLASH_outer": 0.1241
+ }
+}

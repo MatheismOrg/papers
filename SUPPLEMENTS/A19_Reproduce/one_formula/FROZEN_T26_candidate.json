@@ -1,0 +1,59 @@
+{
+ "name": "A19 one-formula candidate T26 (MOGF0IE, w = 0.1): paper rule + published Moster halo mass for gas-poor galaxies above M_t + halo floor; no contraction; baryons of spheroids with a measured dispersion carry the observed IMF trend",
+ "frozen_at": "2026-11-07 01:20 PST, session SA73 overnight, after the T24 to T26 cross-validations",
+ "halo_formula": "M_ref = Mp/fb + 10^A (M*/1e10 Msun)^B (Re/3 kpc)^C + q M_Moster(M*, z), q = (M*/Mp)^50 / (1 + (M_t/M*)^4); M_halo = (M_ref^8 + (1e8 Msun)^8)^(1/8); M_Moster: Moster, Naab and White (2013) with redshift evolution, inverted in [1e9, 10^16.5] Msun; NFW with dark mass (1-fb) M_halo inside r200 at the halo redshift, log10 c = 0.520 + 0.385 exp(-0.617 z^1.21) + (-0.101 + 0.026 z) log10(M_halo h/1e12 Msun) (Dutton and Maccio 2014), satellites x (1 - 0.54 log10(D/r200,host)) (Moline et al. 2017); no contraction; fb = 0.049/0.3175, h = 0.671; lensing M_p as a point mass",
+ "baryons": "stellar g_bar of spheroids with a measured velocity dispersion x alpha_IMF = 10^(0.38 log10(sigma_e/200 km/s) - 0.06 + 0.215) (Posacki et al. 2015 trend relative to Salpeter; Chabrier scale via Madau and Dickinson 2014); used for the 50 MaNGA BCGs (<sigma_los>, Tian et al. 2024) and the 16 SPARC early types (sigma_e, Cappellari et al. 2013a); stellar masses in the halo formula stay on the published Chabrier-like scale",
+ "coefficients_all_data_primary": {
+  "A": 11.7481,
+  "B": 0.8178,
+  "C": -0.7119,
+  "log10_Mt": 11.1868
+ },
+ "fixed": {
+  "M_min_Msun": 100000000.0,
+  "gas_exponent": 50,
+  "gate_steepness": 4
+ },
+ "coefficient_count": "4 (A, B, C set on disks alone; log10 M_t from the joint fit)",
+ "all_data_scores_primary": {
+  "disk": 0.1498,
+  "dwarfs": 0.3639,
+  "ETG": 0.1854,
+  "MaNGA": 0.1141,
+  "CLASH": 0.1962,
+  "lensing_chi2": 67.68
+ },
+ "held_out_primary": {
+  "disk": 0.1532,
+  "dwarfs": 0.3702,
+  "ETG": 0.1855,
+  "MaNGA": 0.1141,
+  "CLASH_outer": 0.2087,
+  "CLASH_centre": 0.1548,
+  "lensing_chi2": 71.04
+ },
+ "held_out_strict": {
+  "disk": 0.1532,
+  "dwarfs": 0.3702,
+  "ETG": 0.1853,
+  "MaNGA": 0.1165,
+  "CLASH_outer": 0.2148,
+  "CLASH_centre": 0.1557,
+  "lensing_chi2": 46.21
+ },
+ "dwarf_upper_limits_exceeded": "3 of 10",
+ "kids_early_late_split_unfitted": {
+  "S_model_dex": 0.065,
+  "S_data_colour_dex": 0.2062,
+  "S_data_sersic_dex": 0.1616,
+  "chi2_difference_colour": 13.78,
+  "chi2_difference_null_colour": 28.08,
+  "n_inner_bins": 7
+ },
+ "caveats": [
+  "adaptive: fourteenth round on seen data, not blind",
+  "the early types' inner points are ATLAS3D JAM values, which Posacki et al. used, so they do not test the IMF trend independently; their outer HI points get 1.6 percent worse",
+  "systems without a measured dispersion (CLASH BCGs, KiDS lenses) keep the published baryons"
+ ],
+ "status": "retrospective and adaptive; frozen here for a blind test on new systems"
+}

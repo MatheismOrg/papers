@@ -1,0 +1,2 @@
+PROTOCOL_T38.txt sha256 78bc8ad6b40987f6ad97691c9069e347252a36781b765e75962ab9214bce9a0b hashed 2026-11-07 03:51:03 PST (before the run); check38_frozen_T37.py sha256 7dedc0afbaa917d6dab6a872dd36b6837105935143e825fae50e31cabf782031
+check38_frozen_T37.py corrected before its first run at 2026-11-07 03:51:18 PST (pass flag: operator precedence; a dead line removed); new sha256 75cf529d690f0bba70efdad3a155f6aa09efeadd42de52a06610779229bb77cd

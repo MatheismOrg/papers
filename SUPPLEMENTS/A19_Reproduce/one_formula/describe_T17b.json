@@ -1,0 +1,114 @@
+{
+ "MOSS@0.1|primary": {
+  "frozen_abc": [
+   11.748054,
+   0.817829,
+   -0.711865
+  ],
+  "coefficients": {
+   "logRt": 1.14548
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "limits_exceeded_without_subhalo": 2,
+  "all_data_scores": {
+   "disk": 0.1495,
+   "dwarfs": 0.3681,
+   "ETG": 0.2029,
+   "MaNGA": 0.2129,
+   "CLASH": 0.199
+  },
+  "lensing_chi2_all": 68.36,
+  "switch_on_share": {
+   "disk": 0.0,
+   "dwarfs": 0.0,
+   "ETG": 0.0,
+   "MaNGA": 0.34,
+   "CLASH": 0.94
+  }
+ },
+ "MOSS@1|primary": {
+  "frozen_abc": [
+   11.748054,
+   0.817829,
+   -0.711865
+  ],
+  "coefficients": {
+   "logRt": 1.060065
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "limits_exceeded_without_subhalo": 2,
+  "all_data_scores": {
+   "disk": 0.1511,
+   "dwarfs": 0.3681,
+   "ETG": 0.2029,
+   "MaNGA": 0.1972,
+   "CLASH": 0.1943
+  },
+  "lensing_chi2_all": 68.301,
+  "switch_on_share": {
+   "disk": 0.017,
+   "dwarfs": 0.0,
+   "ETG": 0.0,
+   "MaNGA": 0.64,
+   "CLASH": 1.0
+  }
+ },
+ "MOSS@0.1|strict": {
+  "frozen_abc": [
+   11.748054,
+   0.817829,
+   -0.711865
+  ],
+  "coefficients": {
+   "logRt": 1.146135
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "limits_exceeded_without_subhalo": 2,
+  "all_data_scores": {
+   "disk": 0.1495,
+   "dwarfs": 0.3681,
+   "ETG": 0.2029,
+   "MaNGA": 0.213,
+   "CLASH": 0.199
+  },
+  "lensing_chi2_all": 43.218,
+  "switch_on_share": {
+   "disk": 0.0,
+   "dwarfs": 0.0,
+   "ETG": 0.0,
+   "MaNGA": 0.34,
+   "CLASH": 0.94
+  }
+ },
+ "MOSS@1|strict": {
+  "frozen_abc": [
+   11.748054,
+   0.817829,
+   -0.711865
+  ],
+  "coefficients": {
+   "logRt": 1.061449
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "limits_exceeded_without_subhalo": 2,
+  "all_data_scores": {
+   "disk": 0.151,
+   "dwarfs": 0.3681,
+   "ETG": 0.2029,
+   "MaNGA": 0.1974,
+   "CLASH": 0.1944
+  },
+  "lensing_chi2_all": 43.284,
+  "switch_on_share": {
+   "disk": 0.017,
+   "dwarfs": 0.0,
+   "ETG": 0.0,
+   "MaNGA": 0.58,
+   "CLASH": 1.0
+  }
+ }
+}

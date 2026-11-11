@@ -1,0 +1,8 @@
+strict MOGF0IESR@0.1 fold_20261027 0 16.7
+strict MOGF0IESR@0.1 fold_20261027 2 27.2
+strict MOGF0IESR@0.1 fold_20261027 4 43.0
+strict MOGF0IESR@0.1 fold_48105 1 62.0
+strict MOGF0IESR@0.1 fold_48105 3 82.4
+strict MOGF0IESR@0.1 fold_7331 0 95.5
+strict MOGF0IESR@0.1 fold_7331 2 108.7
+strict MOGF0IESR@0.1 fold_7331 4 127.5

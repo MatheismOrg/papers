@@ -1,0 +1,18 @@
+A19 cross-scale protocol T28 (session SA73, overnight round 8, 7 November 2026, US Pacific). Hashed before running.
+Same as T27, except that only CLASH is left out of every training set; MaNGA stays in training.
+
+WHY: T27 failed: without MaNGA and CLASH, the switch threshold M_t ran to its upper bound in 4 of 60 fits (19 of 60 on
+the stricter mask), and the clusters were then missed. MaNGA central galaxies are galaxy-scale kinematic data (Jeans
+accelerations inside 25 kpc). A narrower question: can galaxy-scale data alone, MaNGA included, set the threshold well
+enough to predict the 20 CLASH clusters at 14 to 600 kpc? All-data check, reported, not held out (primary mask):
+without CLASH, log10 M_t = 11.203 (11.187 with it); CLASH 0.1967 (0.1962 when trained on), MaNGA 0.1144, early types
+0.1853, lensing 67.66, disks 0.1498, dwarfs 0.3639.
+
+RUNNER (chunk_run_loco.py): chunk_run.py with CLASH deleted from each training set; alias MOGF0IEY.
+CONFIGURATION
+MOGF0IEY@0.1  through harness_T26.py (T26's formula and baryons; 4 coefficients)
+Both masks. Run on Gary's Mac, or in the cloud with the same files.
+
+PASS MARKS
+Clusters count as predicted from galaxy data if the out-of-population CLASH outer and center errors are within the
+5 percent tolerance of MOGF0IE@0.1 (T26, trained on them) on both masks, and M_t hits its bound in no fit.

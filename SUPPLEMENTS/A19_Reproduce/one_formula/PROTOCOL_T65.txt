@@ -1,0 +1,63 @@
+A19 protocol T65 (session SA73, round 31, the twenty-first protocol; written and hashed 2026-11-10 23:22 PST, US Pacific). Hashed before
+any score of these readings was computed. Gary (10 Nov, 23:06), "go", to the offer of 23:05: test whether the core follows
+star-formation history better than gas.
+
+QUESTION. The final formula's core is gated by how much cold gas a galaxy holds, times its diffuseness. T64 left one
+finding against a literal gate: the eight dwarf spheroidals in the largest halos lean toward a core (the formula predicts
+too much by 0.14 +- 0.07 dex), though they hold no gas. If gas today stands in for a history of star formation, a history
+gate would differ from the gas gate in two places: in gas-free dwarfs, by how long each formed stars; and among disks,
+which all still form stars, in whether the amount of gas matters or only its presence.
+
+SEEN BEFORE THIS FILE. Inputs only: Table 1 of Read, Walker and Steger (2019), densities included, and Table 1 of Weisz et
+al. (2015), read from their arXiv sources (t65/parse65.py; no prediction of the formula for these galaxies was computed);
+T64's mass-binned residuals quoted above; unit checks and a smoke test that compare nothing with any measurement
+(t65/unit65.py, smoke65.py). No residual was set against any history, and the gate of Test 3 was not fitted.
+
+READINGS (t65/lib65.py), the formula's halos, every coefficient frozen at its all-data value:
+ N   no core (T48).
+ G   the final formula: core gated by gas fraction times diffuseness (t = 0.1501, kappa = 0.6229). None without gas.
+ H1  the published history recipe, coreNFW of Read, Agertz and Collins (2016) exactly: n = tanh(0.04 t_SF / t_dyn),
+     r_c = 1.75 R_1/2, t_dyn the orbit time at the halo's scale radius, no mass term. t_SF = 13.8 Gyr minus the lookback
+     time at which star formation ended (Test 1: t_trunc of Read et al. 2019; Test 2: 10^tau_90 of Weisz et al. 2015).
+ H2  the formula's own core with a history gate, w = s L, s = t_SF / 13.8 Gyr (s = 1 while stars still form), with t and
+     kappa fitted on all points of the 149 benchmark disks under the gate of Test 3 (t65/alldata65.py, run after this
+     file; no dwarf spheroidal enters that fit).
+ P   self-interaction at T64's 1 cm^2/g (sidm46.py, 10 Gyr, baryons as in t64/sidm64.py).
+
+TEST 1, inner densities (t65/dens65.py). The dark-matter density at 150 pc measured by Read et al. (2019) for 8 dwarf
+spheroidals and 8 dwarf irregulars, against each reading's prediction from A19's own inputs. Error = rms over galaxies of
+log10(measured / predicted); paired bootstrap over galaxies, 10,000 draws. The 8 dwarf spheroidals are the test; the 8
+dwarf irregulars are reported but are not independent (their rotation curves are A19 data and helped set the core).
+TEST 2, the benchmark's dwarf points (t65/points65.py). The 20 benchmark dwarf spheroidals with tau_90 in Weisz et al.
+(2015), one acceleration each at 4/3 of the half-light radius; the same error and bootstrap; the amplitude A of each
+history reading's predicted shift in the formula's residuals (0 if gas-free dwarfs keep their cusps, 1 if the reading is
+right), with its bootstrap interval; the rank correlation of the formula's residual with t_SF (permutation test).
+TEST 3, disks (harness_T65.py, MOGF0IESBH; chunk_split.py, 60 partitions, both masks; t65/heldout65.py, outside65.py). The
+core with its gate changed from "how much cold gas" (w = g L) to "any cold gas" (w = L for a system with gas, 0 without),
+t and kappa refitted on all points of the training disks exactly as T61. Marks (a), (b), (c) of PROTOCOL_T61 against T48,
+and head to head against the gas gate (T61, each partition's own t and kappa) on the held-out disks' benchmark points,
+dropped points and all points; outside checks (d) and (e) with all-data values.
+
+VERDICTS (preset). In Tests 1 and 2, for X in (H1, H2) against G on the dwarf spheroidals: "history" if the 95 percent
+paired interval of rms_X - rms_G lies below zero; "cusps kept" if it lies above zero; otherwise "not decided". The same
+rule for P against G: "self-interaction fails again" if the interval of rms_P - rms_G lies above zero. In Test 3: "the
+amount of gas matters" if the gas gate's held-out error over all points is below the "any gas" gate's with the paired
+interval excluding zero; "its presence is enough" if the "any gas" gate meets (a), (b), (c) and its error over all points
+is not above the gas gate's by an interval excluding zero.
+READING (preset). The core follows history better than gas only if a history reading wins Test 1 or Test 2 on the dwarf
+spheroidals and presence is enough in Test 3; a history gate is then a candidate to replace the gas gate, for Gary to
+decide. It follows the gas if the amount of gas matters in Test 3 and no history reading wins Test 1 or 2. Anything else
+is "not decided by these data", and the report names the data that would decide.
+
+EXPECTATION, stated in advance. Test 1: P fails (its densities too low in most dwarf spheroidals); H1 against G not
+decided, Fornax (low density, long history) for history, Leo I and Carina (high density, long history) against. Test 2:
+not decided; the history readings shift these points by under 0.15 dex against a scatter near 0.37. Test 3: the "any gas"
+gate meets (b) and (c) and is slightly worse than the gas gate over all points, by under 3 percent, interval including
+zero.
+
+CAVEATS FIXED IN ADVANCE: retrospective (round 31). The densities are Read et al.'s own measurements, from Jeans models
+with their priors, and the sample is 8; their halo masses and half-light radii differ from A19's, and A19's are used.
+t_trunc and tau_90 are different summaries of a history. Satellites lose mass to tides, which the formula's halos carry
+only through the subhalo concentration factor. H2's mass term raises a diffuse dwarf's halo with no evidence of its own.
+The disks have no measured histories, so Test 3 can tell "how much gas" from "any gas" and nothing finer. The gas gate is
+the incumbent.

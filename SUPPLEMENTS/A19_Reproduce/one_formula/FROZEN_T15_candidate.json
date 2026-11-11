@@ -1,0 +1,24 @@
+{
+ "name": "A19 one-formula candidate T15 (KNEESFZ, w = 0.1)",
+ "frozen_at": "2026-11-06 US Pacific, session SA73 turn 15, after the T15c cross-validation",
+ "formula": "M_ref = Mp/fb + 10^A (M*/1e10 Msun)^B (Re/3 kpc)^C + 10^A2 (M*/1e11 Msun)^B2 (Re/10 kpc)^C2; NFW halo with dark mass (1-fb) M_ref inside r200 (r200 at the halo redshift, 200 times critical density), untruncated; log10 c = 0.520 + 0.385 exp(-0.617 z^1.21) + (-0.101 + 0.026 z) log10(M_ref h/1e12 Msun) (Dutton and Maccio 2014); g = g_bar + G (1-fb) M_ref f(r c/r200)/f(c) / r^2, f(t) = ln(1+t) - t/(1+t); fb = 0.049/0.3175, h = 0.671; Mp = stellar + 1.33 HI mass for disks, stellar mass for gas-poor systems",
+ "coefficients_primary": {
+  "A": 11.7481,
+  "B": 0.8178,
+  "C": -0.7119,
+  "A2": 12.0629,
+  "B2": 2.6301,
+  "C2": 2.5097
+ },
+ "coefficients_strict_mask_fit": {
+  "A": 11.7481,
+  "B": 0.8178,
+  "C": -0.7119,
+  "A2": 11.9033,
+  "B2": 2.8629,
+  "C2": 2.5471
+ },
+ "how_fitted": "A, B, C: the paper rule fitted on the 149 SPARC disks only; A2, B2, C2: all six populations with the SO73 objective at external weight 0.1 (protocols T15, T15b, T15c)",
+ "dwarf_upper_limits_exceeded": 2,
+ "status": "retrospective, adaptive (third round on seen data); frozen here so that new systems can test it blind"
+}

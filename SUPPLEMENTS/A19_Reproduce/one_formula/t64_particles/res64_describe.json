@@ -1,0 +1,145 @@
+{
+ "fuzzy_join_radius": {
+  "2.0": {
+   "best_lm22": 6.0,
+   "loss": 0.030569533245382502,
+   "loss_cold": 0.030569533245382502,
+   "loss_at_0": 0.042568783577029395,
+   "loss_at_1": 0.03608440094126678,
+   "loss_at_2": 0.03113143057876134
+  },
+  "3.0": {
+   "best_lm22": 6.0,
+   "loss": 0.03056954529387496,
+   "loss_cold": 0.03056954529387496,
+   "loss_at_0": 0.04273305248922203,
+   "loss_at_1": 0.036844087777865596,
+   "loss_at_2": 0.03128545715121402
+  },
+  "4.0": {
+   "best_lm22": 6.0,
+   "loss": 0.030569547600966755,
+   "loss_cold": 0.030569547600966755,
+   "loss_at_0": 0.04282239280264258,
+   "loss_at_1": 0.03630731016463044,
+   "loss_at_2": 0.031303645331937184
+  }
+ },
+ "each_population_alone": {
+  "MOGF0IESBF disks_weighted": {
+   "best": 6.0,
+   "err": 0.1748,
+   "err_cold": 0.1748
+  },
+  "MOGF0IESBF dwarfs": {
+   "best": 2.5,
+   "err": 0.3508,
+   "err_cold": 0.3639
+  },
+  "MOGF0IESBF ETG": {
+   "best": 0.375,
+   "err": 0.1643,
+   "err_cold": 0.1851
+  },
+  "MOGF0IESBF MaNGA": {
+   "best": -0.375,
+   "err": 0.1145,
+   "err_cold": 0.116
+  },
+  "MOGF0IESBF CLASH": {
+   "best": 6.0,
+   "err": 0.101,
+   "err_cold": 0.101
+  },
+  "MOGF0IESBW disks_weighted": {
+   "best": 9.125,
+   "err": 0.17,
+   "err_cold": 0.1748
+  },
+  "MOGF0IESBW dwarfs": {
+   "best": 3.0,
+   "err": 0.3639,
+   "err_cold": 0.3639
+  },
+  "MOGF0IESBW ETG": {
+   "best": 11.25,
+   "err": 0.1801,
+   "err_cold": 0.1851
+  },
+  "MOGF0IESBW MaNGA": {
+   "best": 3.0,
+   "err": 0.116,
+   "err_cold": 0.116
+  },
+  "MOGF0IESBW CLASH": {
+   "best": 3.0,
+   "err": 0.101,
+   "err_cold": 0.101
+  }
+ },
+ "warm_relic": {
+  "h": 0.671,
+  "lhm_all_data": 9.163520521910417,
+  "keV_all_data": 2.1749413021808293,
+  "lhm_partitions": [
+   9.0369,
+   9.2934
+  ],
+  "keV_partitions": [
+   1.9881296139250766,
+   2.3739508403416614
+  ]
+ },
+ "inner_residuals_T48": {
+  "halo 10^9.7 to 10^10.3": {
+   "gas-rich diffuse disks, r below 1.75 R_e": {
+    "points": 59,
+    "galaxies": 11,
+    "mean": -0.257,
+    "sem": 0.098
+   },
+   "gas-rich diffuse disks, r above 1.75 R_e": {
+    "points": 81,
+    "galaxies": 9,
+    "mean": 0.013,
+    "sem": 0.063
+   },
+   "dwarf spheroidals (one point each, near the half-light radius)": {
+    "points": 8,
+    "galaxies": 8,
+    "mean": -0.142,
+    "sem": 0.074,
+    "median_r_over_re": 1.33
+   }
+  },
+  "halo 10^10.3 to 10^11": {
+   "gas-rich diffuse disks, r below 1.75 R_e": {
+    "points": 241,
+    "galaxies": 34,
+    "mean": -0.136,
+    "sem": 0.034
+   },
+   "other disks, r below 1.75 R_e": {
+    "points": 10,
+    "galaxies": 2,
+    "mean": 0.261,
+    "sem": 0.083
+   },
+   "gas-rich diffuse disks, r above 1.75 R_e": {
+    "points": 199,
+    "galaxies": 33,
+    "mean": 0.044,
+    "sem": 0.017
+   }
+  },
+  "halo below 10^9.7": {
+   "dwarf spheroidals (one point each, near the half-light radius)": {
+    "points": 67,
+    "galaxies": 67,
+    "mean": -0.022,
+    "sem": 0.046,
+    "median_r_over_re": 1.33
+   }
+  }
+ }
+}

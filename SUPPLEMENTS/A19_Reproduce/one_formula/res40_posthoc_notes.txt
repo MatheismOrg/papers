@@ -1,0 +1,10 @@
+T40 post-hoc diagnostics (7 Nov 2026 ~04:20 PST; NOT part of the hashed test; computed after the verdict)
+- Lowest BCG stellar masses: Zw8193 9.34, IC1365 9.87, A1902 10.03 (implausible for BCGs; SDSS photometry), then RMJ0835p2046 10.81, NGC6107 10.89.
+- Without the three below 10^10.5: N 213, mean d -0.106, rms 0.467, std 0.454, robust (1.4826 MAD) 0.381; a constant at the median observed mass: rms 0.411.
+- All 216: robust scatter 0.383, std 0.559.
+- Observed OLS slope of log M200 on log M*_BCG (M* >= 10^10.5): 0.46 (correlation 0.335); the T37 prediction's slope: 1.16.
+- log M200 on log sigma_BCG: slope 1.58, correlation 0.327 (N 177).
+- Likelihood width sigma 0.25 / 0.30 / 0.40 dex instead of 0.18: rms (M* >= 10^10.5) 0.463 / 0.467 / 0.472, mean -0.167 / -0.187 / -0.204; residual correlation with log M* 0.27 / 0.20 / 0.12.
+Reading: the BCG's stellar mass carries little information about its cluster's caustic mass in HeCS (correlation 0.34); at the high-mass end
+the stellar-to-halo relation is flat (M* about as halo mass to the 0.35 to 0.4 power in Moster's relation), so 0.15 to 0.18 dex of scatter in M* at fixed halo mass is 0.4 to 0.5 dex in halo mass at fixed M*,
+and no predictor from the BCG's stellar mass alone can reach 0.3 dex rms. The formula's typical cluster mass is close (median -0.11 dex).

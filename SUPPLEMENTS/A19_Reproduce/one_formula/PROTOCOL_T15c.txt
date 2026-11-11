@@ -1,0 +1,13 @@
+A19 cross-scale protocol T15c: second and last adaptive follow-up (session SA73, turn 15, 6 November 2026).
+Written after T15 and T15b and hashed before running. Same data, partitions, objective, scores and pass marks.
+
+WHY
+All T15 and T15b formulas take the halo concentration from the z = 0 relation of Dutton and Maccio (2014),
+c = 10^0.905 (M h/1e12)^-0.101, even for the KiDS lenses (z = 0.25) and the CLASH clusters (z = 0.19 to 0.89).
+The published relation lowers concentration with redshift. Here every halo uses it at its own redshift:
+log10 c = 0.520 + 0.385 exp(-0.617 z^1.21) + (-0.101 + 0.026 z) log10(M h/1e12). It is identical at z = 0, so
+disks, dwarfs and early types are unchanged at fixed coefficients, and it adds no coefficient.
+
+CONFIGURATIONS (suffix Z = redshift-dependent concentration)
+ORIGZ@disk; KNEESFZ@0.1 and @1 (paper's rule frozen on training disks + high-mass branch); KNEESZ@0.1;
+KNEESEZ@0.1. Both masks. Everything reported. Adaptive choices on reused data; this is the last round this turn.

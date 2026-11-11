@@ -1,0 +1,16 @@
+strict MOGHf@0.1 fold_20261027 0 195.8
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-claude/0a1f618d-0405-5db3-a0ab-84f1f9545369/scratchpad/dmfit/chunk_split.py", line 61, in <module>
+    else: main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], float(sys.argv[5]), int(sys.argv[6]), int(sys.argv[7]))
+          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/-home-claude/0a1f618d-0405-5db3-a0ab-84f1f9545369/scratchpad/dmfit/chunk_split.py", line 27, in main
+    if i % n != k: continue
+       ^^^^^^^^^^
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+strict MOGHf@0.1 fold_20261027 2 178.5
+strict MOGHf@0.1 fold_20261027 4 420.2
+strict MOGHf@0.1 fold_48105 1 770.0
+strict MOGHf@0.1 fold_48105 3 989.4
+strict MOGHf@0.1 fold_7331 0 1237.7
+strict MOGHf@0.1 fold_7331 2 1378.8
+strict MOGHf@0.1 fold_7331 4 1666.2

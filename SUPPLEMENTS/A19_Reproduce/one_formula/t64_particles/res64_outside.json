@@ -1,0 +1,134 @@
+{
+ "frozen": {
+  "lm22": 6.0,
+  "lhm": 9.163520521910417
+ },
+ "d_iorio_outside_all_points": {
+  "galaxies": 8,
+  "points": 86,
+  "F": 0.4108,
+  "W": 0.3232,
+  "T61": 0.3079,
+  "T48": 0.4108,
+  "MOND": 0.414,
+  "STD": 0.4588,
+  "F_minus_T48": {
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "n_lower": 1,
+   "n_higher": 7
+  },
+  "F_minus_MOND": {
+   "pct": -0.78,
+   "boot95": [
+    -0.0464,
+    0.024
+   ],
+   "n_lower": 2,
+   "n_higher": 6
+  },
+  "F_minus_T61": {
+   "pct": 33.4,
+   "boot95": [
+    0.0364,
+    0.1813
+   ],
+   "n_lower": 1,
+   "n_higher": 7
+  },
+  "W_minus_T48": {
+   "pct": -21.33,
+   "boot95": [
+    -0.133,
+    -0.0255
+   ],
+   "n_lower": 6,
+   "n_higher": 2
+  },
+  "W_minus_MOND": {
+   "pct": -21.94,
+   "boot95": [
+    -0.1564,
+    -0.0215
+   ],
+   "n_lower": 6,
+   "n_higher": 2
+  },
+  "W_minus_T61": {
+   "pct": 4.95,
+   "boot95": [
+    -0.042,
+    0.0716
+   ],
+   "n_lower": 2,
+   "n_higher": 6
+  }
+ },
+ "e_sparc_outside_benchmark_all_points": {
+  "galaxies": 26,
+  "points": 251,
+  "F": 0.4351,
+  "W": 0.4067,
+  "T61": 0.392,
+  "T48": 0.4351,
+  "MOND": 0.4146,
+  "STD": 0.4531,
+  "F_minus_T48": {
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "n_lower": 3,
+   "n_higher": 23
+  },
+  "F_minus_MOND": {
+   "pct": 4.95,
+   "boot95": [
+    -0.0017,
+    0.0434
+   ],
+   "n_lower": 11,
+   "n_higher": 15
+  },
+  "F_minus_T61": {
+   "pct": 11.01,
+   "boot95": [
+    0.0182,
+    0.0666
+   ],
+   "n_lower": 7,
+   "n_higher": 19
+  },
+  "W_minus_T48": {
+   "pct": -6.52,
+   "boot95": [
+    -0.0482,
+    -0.0126
+   ],
+   "n_lower": 19,
+   "n_higher": 7
+  },
+  "W_minus_MOND": {
+   "pct": -1.89,
+   "boot95": [
+    -0.0263,
+    0.0096
+   ],
+   "n_lower": 17,
+   "n_higher": 9
+  },
+  "W_minus_T61": {
+   "pct": 3.77,
+   "boot95": [
+    -0.0058,
+    0.0359
+   ],
+   "n_lower": 12,
+   "n_higher": 14
+  }
+ }
+}

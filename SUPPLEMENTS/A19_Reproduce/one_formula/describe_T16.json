@@ -1,0 +1,32 @@
+{
+ "SUBH@0.1|primary": {
+  "frozen_abc": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "coefficients": {
+   "A2": 12.0629,
+   "B2": 2.63,
+   "C2": 2.5098
+  },
+  "limits_exceeded": 3,
+  "limits_exceeded_without_subhalo": 2,
+  "bound_hits": []
+ },
+ "SUBH@0.1|strict": {
+  "frozen_abc": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "coefficients": {
+   "A2": 11.9033,
+   "B2": 2.8628,
+   "C2": 2.5471
+  },
+  "limits_exceeded": 3,
+  "limits_exceeded_without_subhalo": 2,
+  "bound_hits": []
+ }
+}

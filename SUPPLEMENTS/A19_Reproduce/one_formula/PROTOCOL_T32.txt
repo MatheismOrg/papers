@@ -1,0 +1,21 @@
+A19 protocol T32 (session SA73, overnight round 12, 7 November 2026, US Pacific). Hashed before any prediction.
+Does one scatter-aware relation plus each sample's published selection explain the clusters too?
+
+WHY: T31 found that the Moster relation inverted with its scatter and the halo mass function (the expected halo of a
+galaxy chosen by stellar mass) fits SDSS red centrals far better than the mean inversion. The paper's sixth protocol
+found the same scatter-aware inversion worsens CLASH (0.42 against 0.20 dex at 100 to 600 kpc), because CLASH was not
+chosen by stellar mass: its X-ray selected clusters are massive, kT > 5 keV and 5 to 30 x 10^14 suns (Postman et al.
+2012, abstract; mass definition not stated there).
+
+PREDICTION (diag_clash_selection.py): for each of the 20 CLASH clusters, the posterior over halo mass M200c with prior =
+Tinker et al. (2008) dn/dlnM at the cluster's redshift (colossus), times the selection M200c > 5 x 10^14 suns, and
+likelihood = Gaussian in log M* (BCG) about the Moster relation, sigma = sqrt(0.15^2 + 0.10^2) dex, as T31 and the
+paper's sixth protocol. Each point's prediction is the posterior mean of log10(g_bar + g_DM), with g_DM from the frozen
+T26 formula's halo (rule terms + switch x M_h; NFW, Dutton and Maccio concentration, dark mass (1 - f_b) M_halo, no
+contraction). Also reported: the same without the selection (full prior), and the frozen formula (mean inversion).
+All data, nothing fitted (the formula's coefficients are frozen; the threshold is the published one).
+
+TEST
+The selection reading holds for CLASH if the selection-aware errors at the centers and at 100 to 600 kpc are each within
+the 5 percent tolerance of the frozen formula's. MaNGA is not tested: its selection threshold is not published in a
+form usable here.

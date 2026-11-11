@@ -1,0 +1,28 @@
+A19 protocol T40 (session SA73, overnight round 20, 7 November 2026, US Pacific). Hashed before any HeCS value is read
+(only the two table headers, column formats and labels, and the paper's text have been seen).
+Blind test of the frozen T37 formula (FROZEN_T37_candidate.json, 9d0bc8d4...) on the HeCS-omnibus clusters.
+
+DATA: Sohn, Geller, Diaferio and Rines (2020, ApJ 891, 129), machine-readable Tables 2 (clusters: zspec, M200, e_M200, R200,
+Lx, Mx) and 3 (BCGs: Mass, e_Mass, VDISP), from content.cld.iop.org (apjab6e6at2_mrt.txt, apjab6e6at3_mrt.txt), read in
+the browser pane, reduced in the page to two CSV files by the published byte ranges, with the SHA-256 of each full table
+and each CSV recorded, and checked byte for byte after transfer. M200 and R200 are caustic values within 200 times the
+critical density at the cluster's redshift (Section 3.2); BCG stellar masses are Le Phare fits to SDSS cModel photometry
+with a Chabrier IMF (Section 2.2). None of these clusters' masses entered any A19 fit.
+SAMPLE: every cluster with a BCG stellar mass (Mass not -99) and M200 > 0, joined on ID.
+
+PREDICTION (blind_hecs_T40.py; nothing fitted): M_halo of the frozen T37 formula (A, B, C = 11.7481, 0.8178, -0.7119,
+log10 M_t = 11.1768) for the BCG: M* = 10^Mass, M_p = M* (gas-poor), z = the cluster's zspec, R_e from a least-squares
+line of log R_e on log M* over the 50 A19 MaNGA BCGs (the rule term is a few percent of M_halo for BCGs), selection
+S = [M200c > 1e14 suns]: "most HeCS-omnibus clusters have ... dynamical masses >~ 10^14 M_sun" (Sohn et al. 2020, Sec. 3.2).
+Published values as given (no conversion of h). Compared with log10 M200 (caustic).
+Also scored, for reference: the same formula without selection (S = 1); the frozen T26 formula (Moster relation inverted
+at its mean); the paper's rule alone; and a constant at the sample's median observed log M200 (not a prediction).
+Reported: N, mean, median and rms of d = log10(M_pred/M200), its correlation with log M*, the same in acceleration at
+R200 (log10 of the predicted NFW mass inside the measured R200 over M200, Dutton and Maccio concentration), the rms
+against the MCXC X-ray masses where given (predicted M500c against Mx), and all of it without the clusters that are
+also in A19's CLASH sample (name match).
+
+TEST: the frozen T37 formula passes the blind test if (a) |mean d| <= 0.10 dex, (b) rms d <= 0.30 dex, and (c) its rms
+is lower than both the formula without selection and the frozen T26 formula. All numbers reported whatever the outcome.
+Sensitivity (reported, not part of the test): the threshold at 10^13.8 and 10^14.2 suns, and h = 0.70 to 0.671 conversions
+of M* (x 1.088) and M200 (x 1.043).

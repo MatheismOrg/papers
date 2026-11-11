@@ -1,0 +1,3 @@
+harness_T37.py sha256 3f7af126600aa8b3241f427382f84c9c43f7129dbf5f51c9cbee46398f0dd91d hashed 2026-11-07 03:41:22 PST, after unit checks only (zero-scatter equivalence with MOGF0IE: max 0.004 dex; posterior means at five stellar masses) and before any scoring
+describe24.py sha256 2c8b58e4cd2f5b8a6ae513c6924963750cef5831e5e38b43cc50e9543cce250f
+chunk_split.py sha256 b6005e9e1f90ca65b3915e8972abe7b5a9f1243a14e7d8dcbff16a137ad53fb1

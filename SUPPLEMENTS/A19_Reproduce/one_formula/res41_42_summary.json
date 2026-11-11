@@ -1,0 +1,11 @@
+{"T41_hmf_all_data_primary": {
+  "tinker08":  {"logMt": 11.1768, "disk": 0.1498, "dwarfs": 0.3639, "ETG": 0.1853, "MaNGA": 0.1173, "CLASH": 0.1293, "lens": 67.69, "mandelbaum_red_rms": 0.141, "hecs_mean": -0.145, "hecs_rms": 0.578},
+  "despali16": {"logMt": 11.1761, "disk": 0.1498, "dwarfs": 0.3639, "ETG": 0.1853, "MaNGA": 0.1170, "CLASH": 0.1264, "lens": 67.69, "mandelbaum_red_rms": 0.143, "hecs_mean": -0.133, "hecs_rms": 0.578},
+  "watson13":  {"logMt": 11.1853, "disk": 0.1498, "dwarfs": 0.3639, "ETG": 0.1853, "MaNGA": 0.1165, "CLASH": 0.1284, "lens": 67.68, "mandelbaum_red_rms": 0.173, "hecs_mean": -0.123, "hecs_rms": 0.579},
+  "bocquet16": {"logMt": 11.1788, "disk": 0.1498, "dwarfs": 0.3639, "ETG": 0.1853, "MaNGA": 0.1172, "CLASH": 0.1307, "lens": 67.68, "mandelbaum_red_rms": 0.152, "hecs_mean": -0.142, "hecs_rms": 0.577}},
+ "T41_verdict": "robust: every population within tolerance of Tinker 2008 for all three alternatives (bocquet16 run on Gary's Mac, the rest in the cloud)",
+ "T42_cm_all_data_primary": {
+  "dm14":     {"abc": [11.7481, 0.8178, -0.7119], "logMt": 11.1768, "disk": 0.1498, "dwarfs": 0.3639, "ETG": 0.1853, "MaNGA": 0.1173, "CLASH": 0.1293, "lens": 67.69, "MW_halo": 1.83e12, "MW_c": 7.87},
+  "diemer19": {"abc": [11.7093, 0.8326, -0.741], "logMt": 11.103, "disk": 0.1496, "dwarfs": 0.3656, "ETG": 0.1857, "MaNGA": 0.1263, "CLASH": 0.1319, "lens": 68.08, "MW_halo": 1.72e12, "MW_c": 8.16},
+  "ludlow16": {"abc": [11.6944, 0.793, -0.7275], "logMt": 11.0936, "disk": 0.1491, "dwarfs": 0.3829, "ETG": 0.1865, "MaNGA": 0.1165, "CLASH": 0.1302, "lens": 74.82, "MW_halo": 1.61e12, "MW_c": 8.52}},
+ "T42_verdict": "not robust by the preset marks: Diemer and Joyce 2019 worsens MaNGA by 7.7 percent; Ludlow et al. 2016 worsens dwarfs by 5.2 percent and lensing by 10.5 percent; Dutton and Maccio 2014 (A19's choice from the start) is the best of the three (ludlow16 run on Gary's Mac)"}

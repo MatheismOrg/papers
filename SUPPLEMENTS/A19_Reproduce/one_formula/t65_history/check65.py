@@ -1,0 +1,27 @@
+"""T65: every number quoted in the paper's new paragraph and in the round-3 report, read back from the results files.
+Usage: python3 check65.py <dmfit folder> <paper .src> <report .src>"""
+import sys, json, os
+D, PAPER, REPORT = sys.argv[1], open(sys.argv[2]).read(), open(sys.argv[3]).read()
+def J(p): return json.load(open(p))
+d = J('res65_density.json'); p = J('res65_points.json'); h = J('res65_heldout.json'); o = J('res65_outside.json'); f = J('res65_alldata_fit.json'); lk = J('res65_look.json')
+S = {k: list(J(os.path.join(D, fn))['summary'].values())[0] for k, fn in dict(Hp='res65_MOGF0IESBH_primary.json', Hs='res65_MOGF0IESBH_strict.json', Gp='res61_MOGF0IESBC_primary.json', Gs='res61_MOGF0IESBC_strict.json').items()}
+g = d['galaxies']; r3 = lambda x: '%.3f' % x; r2 = lambda x: '%.2f' % x
+facts = [('benchmark points held out: gas gate, any gas', [h['kept']['T61'], h['kept']['H'], S['Gp']['scores']['disk'], S['Hp']['scores']['disk']], '0.1531 0.1530'), ('kept range', h['kept']['H_minus_T61']['boot95'], '-0.0015 to +0.0014'),
+         ('dropped', [h['dropped']['T61'], h['dropped']['H'], h['dropped']['H_minus_T61']['boot95']], '0.344 0.340 -0.010 to +0.001'), ('all', [h['all']['T61'], h['all']['H'], h['all']['H_minus_T61']['boot95'], h['all']['H_minus_T61']['pct']], '0.193 0.189 -0.009 to +0.001, 2 percent'),
+         ('marks b, c vs T48 and MOND', [h['dropped']['H_minus_T48']['boot95'], h['dropped']['MOND'], h['all']['H_minus_T48']['boot95'], h['all']['MOND']], 'below zero; H below MOND'),
+         ('lensing gas gate; any gas', [S['Gp']['lensing_chi2'], S['Gs']['lensing_chi2'], S['Hp']['lensing_chi2'], S['Hs']['lensing_chi2']], '64.5; 39.4 | 64.4; 39.3'),
+         ('other benchmark scores any gas', {k: S['Hp']['scores'][k] for k in ('dwarfs', 'ETG', 'MaNGA', 'CLASH_centre', 'CLASH_outer')}, 'unchanged'),
+         ('outside', [o['d_iorio_outside_all_points']['T61'], o['d_iorio_outside_all_points']['H'], o['d_iorio_outside_all_points']['H_minus_T61']['boot95'], o['e_sparc_outside_benchmark_all_points']['T61'], o['e_sparc_outside_benchmark_all_points']['H'], o['e_sparc_outside_benchmark_all_points']['H_minus_T61']['boot95']], '0.308 0.307 -0.022..+0.020 | 0.392 0.392 -0.004..+0.005'),
+         ('dSph density rms G, H1, H2, P', [d['dSph']['rms'][k] for k in ('G', 'H1', 'H2', 'P')], '0.212 0.133 0.138 0.246'), ('H1-G, H2-G, P-G, P-H1 ranges', [d['dSph'][k]['boot95'] for k in ('H1_minus_G', 'H2_minus_G', 'P_minus_G', 'P_minus_H1')], '-0.23..+0.06; -0.15..+0.01; includes 0; +0.02..+0.19'),
+         ('H1-G diff', d['dSph']['H1_minus_G']['diff'], '-0.08'), ('Fornax obs / cusp, t_SF, H1', [round(g['Fornax']['obs'] / g['Fornax']['pred']['G'], 3), g['Fornax']['t_SF'], round(g['Fornax']['pred']['H1'] / 1e8, 2)], 'a third; 12 Gyr; 0.79'),
+         ('dIrr mean G, N; rms G, H1, P', [d['dIrr']['mean']['G'], d['dIrr']['mean']['N'], d['dIrr']['rms']['G'], d['dIrr']['rms']['H1'], d['dIrr']['rms']['P'], round(10 ** -d['dIrr']['mean']['G'], 2), round(10 ** -d['dIrr']['mean']['N'], 2)], '0.32, 0.78; 0.38 0.26 0.25; twice; six times'),
+         ('points rms G, H1, H2, P', [p['rms'][k] for k in ('G', 'H1', 'H2', 'P')], '0.261 0.268 0.260'), ('P-G points', [p['P_minus_G']['pct'], p['P_minus_G']['boot95']], '25 percent (+0.012 to +0.121)'), ('largest shift', p['amplitude_H1']['largest_shift'], '0.15'),
+         ('long vs short history residual', p['mean_residual_G'], '-0.09+-0.08 (9); +0.02+-0.09 (11)'), ('look: recipe in every disk dropped, kept; formula', [lk['(a) published recipe in every disk']['dropped'], lk['(a) published recipe in every disk']['kept'], lk['formula, gas gate (T61)']['dropped'], lk['formula, gas gate (T61)']['kept']], '0.323 0.164; 0.342 0.150'),
+         ('core cuts density by (N / H1), dwarf irregulars', sorted(round(v['pred']['N'] / v['pred']['H1'], 1) for v in g.values() if v['type'] == 'dIrr'), 'two to eight')]
+for name, val, quoted in facts: print('%-46s %s   | quoted: %s' % (name, json.dumps(val), quoted))
+tab = ['%s | %.1f | %.2f | %.2f | %.2f | %.2f' % (dict(UMi='Ursa Minor').get(k, k), v['t_SF'], v['obs'] / 1e8, v['pred']['G'] / 1e8, v['pred']['H1'] / 1e8, v['pred']['P'] / 1e8) for k, v in g.items() if v['type'] == 'dSph']
+need = {'paper': ['0.1530 against 0.1531', '0.340 against 0.344', '0.189 against 0.193 over all points (-0.009 to +0.001)', '64.4 against 64.5', '0.21 dex', '0.13, and self-interaction at 1 cm^2/g 0.25', '(-0.23 to +0.06)', '0.268 against 0.261', '25 percent (+0.012 to +0.121)', '0.32 dex too high on average against 0.78', '20 of the 75'],
+        'report': tab + ['0.1531 | 0.1530 | -0.0015 to +0.0014', '0.344 | 0.340 | -0.010 to +0.001', '0.193 | 0.189 | -0.009 to +0.001', '64.5; 39.4 | 64.4; 39.3', '0.308 | 0.307 | -0.022 to +0.020', '0.392 | 0.392 | -0.004 to +0.005', '0.212 | 0.133 | 0.246', 'range -0.23 to +0.06', '(0.138, range -0.15 to +0.01)', '(range +0.02 to +0.19)', '0.261 dex for the formula, 0.268 for the history recipe and 0.260', '(+0.012 to +0.121)', '0.09 ± 0.08', '0.02 ± 0.09', '(0.26 and 0.25 dex against 0.38)', '(0.323 against 0.342 dex)', '(0.164 against 0.150)',
+                         '0123d59c405bd1747a2b88264e3e534669a2d3013bf2daa48b371b8da7f461a2', 'c9c75c0358db7d6deff72bdd3e79a06901e78fc9a192f5cef449f5b08c6eaf1d']}
+for lab, txt in (('paper', PAPER), ('report', REPORT)): print(lab, 'strings missing:', [x for x in need[lab] if x not in txt])
+print('hash files:', open(os.path.join(D, 'PROTOCOL_T65.sha256')).read().split()[0][:16], open(os.path.join(D, 'FORECAST_T65.sha256')).read().split()[0][:16])

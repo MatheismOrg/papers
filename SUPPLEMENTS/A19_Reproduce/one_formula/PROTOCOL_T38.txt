@@ -1,0 +1,15 @@
+A19 protocol T38 (session SA73, overnight round 18, 7 November 2026, US Pacific). Hashed before the run.
+The frozen T37 formula (MOGF0IES, all-data primary coefficients A, B, C = 11.7481, 0.8178, -0.7119, log10 M_t = 11.1768)
+against the checks that no fit used, as T30, T31 and the KiDS split did for T26. Nothing fitted.
+
+CHECKS (check38_frozen_T37.py)
+1. Mandelbaum et al. (2016) mean lensing halo masses of SDSS red and blue centrals (A19 package table), predicted with
+   the formula's own halo (selection S = 1: these galaxies were chosen by their light), converted to M200m as T30.
+   A bin passes if |prediction - measurement| <= max(0.2 dex, twice the measurement error on that side) (as T30, T31).
+   Reported: every bin, the red rms over the seven red bins and the blue rms over the blue bins below 10^11.4 suns, against
+   T30 (frozen T26: red rms 0.50) and T31 (the same relation at T26's threshold: 0.14).
+2. The unfitted KiDS early/late split (kids_split.py, Brouwer et al. 2021 Fig. 8): S_model against T26's 0.065 and the
+   data's 0.206 (colour) and 0.162 (Sersic), with the chi-squares.
+3. The Milky Way (McMillan 2017 baryons as diag_milkyway.py): the switch value and the halo mass, against T26's 1.83e12.
+The T37 formula passes T38 if no check is worse than for T26 beyond 0.02 dex (Mandelbaum rms) or 0.01 dex (KiDS S_model)
+and the Milky Way halo is unchanged within 1 percent.

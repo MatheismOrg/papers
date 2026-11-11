@@ -1,0 +1,4 @@
+{"hmf": "tinker08", "logMt": 11.1768, "mandelbaum_red_rms": 0.141, "mandelbaum_red_dev": [-0.12, 0.12, -0.02, -0.01, 0.16, 0.23, 0.18], "hecs_N": 216, "hecs_mean": -0.145, "hecs_median": -0.112, "hecs_rms": 0.578}
+{"hmf": "despali16", "logMt": 11.1761, "mandelbaum_red_rms": 0.143, "mandelbaum_red_dev": [-0.12, 0.12, -0.02, -0.01, 0.16, 0.23, 0.19], "hecs_N": 216, "hecs_mean": -0.133, "hecs_median": -0.107, "hecs_rms": 0.578}
+{"hmf": "watson13", "logMt": 11.1853, "mandelbaum_red_rms": 0.173, "mandelbaum_red_dev": [-0.12, 0.12, -0.02, 0.0, 0.21, 0.29, 0.23], "hecs_N": 216, "hecs_mean": -0.123, "hecs_median": -0.098, "hecs_rms": 0.579}
+{"hmf": "bocquet16", "logMt": 11.1788, "mandelbaum_red_rms": 0.152, "mandelbaum_red_dev": [-0.12, 0.12, -0.02, -0.0, 0.18, 0.25, 0.19], "hecs_N": 216, "hecs_mean": -0.142, "hecs_median": -0.107, "hecs_rms": 0.577}

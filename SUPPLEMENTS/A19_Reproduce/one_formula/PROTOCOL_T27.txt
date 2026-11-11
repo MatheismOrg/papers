@@ -1,0 +1,21 @@
+A19 cross-scale protocol T27 (session SA73, overnight round 7, 7 November 2026, US Pacific). Hashed before running.
+Same data, partitions, objective, scores and tolerances as T26, except that MaNGA and CLASH are left out of every
+training set. Adaptive (fifteenth round on seen data); not blind across rounds, but out-of-population within the round.
+
+WHY: in T19 to T26 the switch threshold M_t was fitted with MaNGA and CLASH in the training sets (held-out hosts only
+were scored). A stronger test: set M_t without any brightest cluster galaxy or cluster, from disks, dwarfs, the 16
+early types and the KiDS lenses alone, then predict every MaNGA and CLASH system. All-data check, reported, not held
+out (primary mask): without MaNGA and CLASH, log10 M_t = 11.211 (11.187 with them); MaNGA 0.1146 (0.1141 when trained
+on), CLASH 0.1970 (0.1962), early types 0.1853, lensing 67.66, disks 0.1498, dwarfs 0.3639.
+
+RUNNER (chunk_run_lopo.py): chunk_run.py with one change, MaNGA and CLASH deleted from each training set; the model is
+registered under the alias MOGF0IEX so results do not mix with trained runs. The disk rule A, B, C is fitted on each
+fold's training disks as before. Scores for MaNGA and CLASH use the same 60 partitions and host pooling as T26, so every
+MaNGA and CLASH score is an out-of-population prediction.
+CONFIGURATION
+MOGF0IEX@0.1  through harness_T26.py (T26's formula and baryons; 4 coefficients, M_t fitted without MaNGA and CLASH)
+Both masks. Run on Gary's Mac with chunk_run_lopo.py, or in the cloud with the same files.
+
+PASS MARKS
+The big-galaxy branch counts as predicted if the out-of-population MaNGA, CLASH outer and CLASH center errors are each
+within the 5 percent tolerance of MOGF0IE@0.1 (T26, trained on them), on both masks. Other scores are reported.

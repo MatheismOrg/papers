@@ -1,0 +1,14 @@
+A19 protocol T43 (session SA73, overnight round 23, 7 November 2026, US Pacific). Hashed before the run.
+The gate only for galaxies chosen by their light (motivated by the HeCS blind test, T40; so HeCS can no longer test it).
+
+WHY: in T40, after the verdict, the 22 HeCS BCGs below 10^11.2 suns had their switch mostly off (median q 0.24) and were
+underpredicted by 1.0 dex on average, while the 163 above 10^11.4 (q about 1) were unbiased (-0.03 dex). The gate on
+stellar mass and gas separates galaxies chosen by their light; a galaxy chosen as the central of a halo-selected sample
+sits in such a halo by construction, whatever its stellar mass.
+MODEL MOGF0IESG (harness_T43.py): T37's MOGF0IES with q = 1 for every system in a sample selected by its halo (S not 1:
+the CLASH clusters and the MaNGA BCGs here); q unchanged for every sample chosen by its light. 4 coefficients as T37
+(A, B, C on the training disks; log10 M_t jointly at weight 0.1, now set only by the light-selected samples).
+RUN: held out, 60 partitions, primary and stricter masks (chunk_split.py, as T37).
+TEST: passes if, on both masks, every population is within its tolerance of T37's held-out score (disks 1 percent, dwarfs 2,
+others 5, lensing 5). Bound hits of M_t reported (they no longer affect CLASH or MaNGA). Reported but not a test (post hoc):
+the HeCS numbers with q = 1, since HeCS motivated the change.

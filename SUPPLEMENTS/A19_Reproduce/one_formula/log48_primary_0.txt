@@ -1,0 +1,15 @@
+primary MOGF0IESB@0.1 fold_20261027 0 1.2
+primary MOGF0IESB@0.1 fold_20261027 1 1.5
+primary MOGF0IESB@0.1 fold_20261027 2 1.8
+primary MOGF0IESB@0.1 fold_20261027 3 2.1
+primary MOGF0IESB@0.1 fold_20261027 4 2.4
+primary MOGF0IESB@0.1 fold_48105 0 2.7
+primary MOGF0IESB@0.1 fold_48105 1 2.9
+primary MOGF0IESB@0.1 fold_48105 2 3.2
+primary MOGF0IESB@0.1 fold_48105 3 3.5
+primary MOGF0IESB@0.1 fold_48105 4 3.8
+primary MOGF0IESB@0.1 fold_7331 0 4.1
+primary MOGF0IESB@0.1 fold_7331 1 4.4
+primary MOGF0IESB@0.1 fold_7331 2 4.6
+primary MOGF0IESB@0.1 fold_7331 3 4.9
+primary MOGF0IESB@0.1 fold_7331 4 5.1

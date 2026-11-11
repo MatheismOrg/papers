@@ -1,0 +1,9 @@
+A19 forecast T52 (session SA73, written and hashed 2026-11-09 22:29 PST), added to FORECASTS_T51.txt (2a535d05...). Untested: the
+independent sizes could not be reached from this session (SDSS SkyServer refused).
+
+F5 CLUSTER GALAXIES. The MaNGA brightest cluster galaxies' residuals rise with half-light radius (correlation +0.55, slope
++0.39 dex per dex) and fall with baryonic acceleration (-0.59). Size errors alone give such a trend only if they are about
+0.08 dex and the kinematic errors are far below those quoted (noise52_manga_size.py). Forecast: with independent, deeper
+half-light radii and stellar masses for the same 50 galaxies (for example the NASA-Sloan Atlas or deeper imaging), and the
+stellar accelerations rebuilt from them, the correlation of the residuals with radius falls below 0.3. AGAINST: it stays
+above 0.45, in which case the formula gives the stars too much weight in dense central galaxies.

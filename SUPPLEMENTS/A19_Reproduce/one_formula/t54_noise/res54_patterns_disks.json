@@ -1,0 +1,146 @@
+{
+ "host-balanced rms": {
+  "observed": 0.1498,
+  "noise_median": 0.1431,
+  "noise95": [
+   0.1214,
+   0.1724
+  ],
+  "p": 0.62
+ },
+ "rms of galaxy means": {
+  "observed": 0.1307,
+  "noise_median": 0.1361,
+  "noise95": [
+   0.1127,
+   0.1665
+  ],
+  "p": 0.686
+ },
+ "within-galaxy rms": {
+  "observed": 0.0733,
+  "noise_median": 0.0445,
+  "noise95": [
+   0.0421,
+   0.0477
+  ],
+  "p": 0.0
+ },
+ "mean of galaxy means": {
+  "observed": 0.0011,
+  "noise_median": 0.0126,
+  "noise95": [
+   -0.0066,
+   0.0353
+  ],
+  "p": 0.246
+ },
+ "galaxy mean vs log M*": {
+  "observed": -0.0114,
+  "noise_median": -0.0251,
+  "noise95": [
+   -0.1586,
+   0.1222
+  ],
+  "p": 0.814
+ },
+ "galaxy mean vs log R_e": {
+  "observed": -0.0183,
+  "noise_median": -0.0049,
+  "noise95": [
+   -0.1324,
+   0.1322
+  ],
+  "p": 0.824
+ },
+ "galaxy mean vs log gas/stars": {
+  "observed": 0.0345,
+  "noise_median": 0.0394,
+  "noise95": [
+   -0.1311,
+   0.1777
+  ],
+  "p": 0.938
+ },
+ "galaxy mean vs log surface brightness": {
+  "observed": -0.0011,
+  "noise_median": -0.039,
+  "noise95": [
+   -0.1888,
+   0.1384
+  ],
+  "p": 0.668
+ },
+ "galaxy mean vs log baryons": {
+  "observed": -0.0021,
+  "noise_median": -0.0212,
+  "noise95": [
+   -0.167,
+   0.1226
+  ],
+  "p": 0.762
+ },
+ "galaxy mean vs inclination": {
+  "observed": -0.1198,
+  "noise_median": -0.0608,
+  "noise95": [
+   -0.2347,
+   0.1412
+  ],
+  "p": 0.56
+ },
+ "galaxy mean vs log distance": {
+  "observed": 0.052,
+  "noise_median": 0.0097,
+  "noise95": [
+   -0.1315,
+   0.1567
+  ],
+  "p": 0.62
+ },
+ "galaxy mean vs frac distance error": {
+  "observed": 0.0833,
+  "noise_median": 0.0702,
+  "noise95": [
+   -0.092,
+   0.2169
+  ],
+  "p": 0.858
+ },
+ "galaxy mean vs Hubble-flow distance": {
+  "observed": 0.12,
+  "noise_median": 0.0696,
+  "noise95": [
+   -0.0824,
+   0.2097
+  ],
+  "p": 0.482
+ },
+ "within-galaxy slope vs log r": {
+  "observed": 0.0461,
+  "noise_median": 0.0001,
+  "noise95": [
+   -0.0119,
+   0.0116
+  ],
+  "p": 0.0
+ },
+ "point residual vs log g_bar": {
+  "observed": 0.0343,
+  "noise_median": -0.0618,
+  "noise95": [
+   -0.2498,
+   0.1664
+  ],
+  "p": 0.402
+ },
+ "mean residual inside R_e": {
+  "observed": -0.0168,
+  "noise_median": 0.0092,
+  "noise95": [
+   -0.0106,
+   0.031
+  ],
+  "p": 0.01
+ }
+}

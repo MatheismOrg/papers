@@ -1,0 +1,170 @@
+{
+ "r_star_over_benchmark_r": [
+  0.567,
+  0.794,
+  0.933
+ ],
+ "log_gbar_ratio": {
+  "median": -0.05,
+  "sd": 0.094
+ },
+ "log_gobs_ratio": {
+  "median": -0.027,
+  "sd": 0.037
+ },
+ "B0 benchmark (Tian values, benchmark radius)": {
+  "rms": 0.1165,
+  "mean": 0.033,
+  "corr_logRe_sersic": 0.441,
+  "corr_logRe_tian": 0.551,
+  "boot95_sersic": [
+   0.1858,
+   0.6318
+  ],
+  "p_above_045": 0.464,
+  "p_below_030": 0.124,
+  "slope_sersic": 0.201
+ },
+ "B1 benchmark values, halo at r*": {
+  "rms": 0.1158,
+  "mean": 0.032,
+  "corr_logRe_sersic": 0.437,
+  "corr_logRe_tian": 0.546,
+  "boot95_sersic": [
+   0.1818,
+   0.6291
+  ],
+  "p_above_045": 0.451,
+  "p_below_030": 0.132,
+  "slope_sersic": 0.198
+ },
+ "F5 as written: NSA Sersic n, R_e, M* for g_bar and halo (g_obs as published)": {
+  "rms": 0.1159,
+  "mean": 0.073,
+  "corr_logRe_sersic": 0.509,
+  "corr_logRe_tian": 0.457,
+  "boot95_sersic": [
+   0.2146,
+   0.7247
+  ],
+  "p_above_045": 0.676,
+  "p_below_030": 0.076,
+  "slope_sersic": 0.187
+ },
+ "F5 as written, halo at r*": {
+  "rms": 0.115,
+  "mean": 0.072,
+  "corr_logRe_sersic": 0.504,
+  "corr_logRe_tian": 0.451,
+  "boot95_sersic": [
+   0.2062,
+   0.7225
+  ],
+  "p_above_045": 0.661,
+  "p_below_030": 0.082,
+  "slope_sersic": 0.185
+ },
+ "F5 full: g_obs also rebuilt with the NSA Sersic light profile": {
+  "rms": 0.0872,
+  "mean": 0.039,
+  "corr_logRe_sersic": 0.284,
+  "corr_logRe_tian": 0.33,
+  "boot95_sersic": [
+   -0.0421,
+   0.549
+  ],
+  "p_above_045": 0.122,
+  "p_below_030": 0.545,
+  "slope_sersic": 0.09
+ },
+ "F5 full, sizes and index only (Tian M*)": {
+  "rms": 0.143,
+  "mean": 0.096,
+  "corr_logRe_sersic": 0.584,
+  "corr_logRe_tian": 0.447,
+  "boot95_sersic": [
+   0.2933,
+   0.7666
+  ],
+  "p_above_045": 0.833,
+  "p_below_030": 0.027,
+  "slope_sersic": 0.251
+ },
+ "F5 full, dispersion flat beyond 1.0 R_e": {
+  "rms": 0.0936,
+  "mean": 0.044,
+  "corr_logRe_sersic": 0.367,
+  "corr_logRe_tian": 0.398,
+  "boot95_sersic": [
+   0.0505,
+   0.62
+  ],
+  "p_above_045": 0.279,
+  "p_below_030": 0.325,
+  "slope_sersic": 0.124
+ },
+ "F5 full, dispersion flat beyond 1.5 R_e": {
+  "rms": 0.0921,
+  "mean": 0.043,
+  "corr_logRe_sersic": 0.356,
+  "corr_logRe_tian": 0.387,
+  "boot95_sersic": [
+   0.0386,
+   0.6113
+  ],
+  "p_above_045": 0.255,
+  "p_below_030": 0.351,
+  "slope_sersic": 0.118
+ },
+ "F5 full, dispersion flat beyond 2.0 R_e": {
+  "rms": 0.091,
+  "mean": 0.043,
+  "corr_logRe_sersic": 0.348,
+  "corr_logRe_tian": 0.38,
+  "boot95_sersic": [
+   0.0295,
+   0.604
+  ],
+  "p_above_045": 0.236,
+  "p_below_030": 0.373,
+  "slope_sersic": 0.114
+ },
+ "paired_boot_rms_change": {
+  "median": -0.0283,
+  "ci95": [
+   -0.0529,
+   -0.0084
+  ],
+  "p_not_better": 0.0016
+ },
+ "compare|benchmark|MOND": {
+  "rms": 0.1859,
+  "mean": 0.123,
+  "corr_logRe": 0.698
+ },
+ "compare|benchmark|standard halos": {
+  "rms": 0.1169,
+  "mean": 0.034,
+  "corr_logRe": 0.552
+ },
+ "compare|benchmark|formula": {
+  "rms": 0.1165,
+  "mean": 0.033,
+  "corr_logRe": 0.551
+ },
+ "compare|full rebuild|MOND": {
+  "rms": 0.1734,
+  "mean": 0.142,
+  "corr_logRe": 0.607
+ },
+ "compare|full rebuild|standard halos": {
+  "rms": 0.0875,
+  "mean": 0.039,
+  "corr_logRe": 0.286
+ },
+ "compare|full rebuild|formula": {
+  "rms": 0.0872,
+  "mean": 0.039,
+  "corr_logRe": 0.284
+ }
+}

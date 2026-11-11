@@ -1,0 +1,134 @@
+{
+ "DDO 126": {
+  "dropped": {
+   "n": 6,
+   "sparc_over_vc": 0.996,
+   "vr_over_vc": 0.928,
+   "sparc_over_vr": 1.073
+  }
+ },
+ "DDO 154": {
+  "dropped": {
+   "n": 1,
+   "sparc_over_vc": 1.02,
+   "vr_over_vc": 0.966,
+   "sparc_over_vr": 1.056
+  },
+  "kept": {
+   "n": 11,
+   "sparc_over_vc": 0.974,
+   "vr_over_vc": 0.973,
+   "sparc_over_vr": 1.005
+  }
+ },
+ "DDO 168": {
+  "dropped": {
+   "n": 1,
+   "sparc_over_vc": 1.111,
+   "vr_over_vc": 0.814,
+   "sparc_over_vr": 1.365
+  },
+  "kept": {
+   "n": 9,
+   "sparc_over_vc": 1.004,
+   "vr_over_vc": 0.956,
+   "sparc_over_vr": 1.06
+  }
+ },
+ "DDO 50": {
+  "dropped": {
+   "n": 9,
+   "sparc_over_vc": 0.932,
+   "vr_over_vc": 0.995,
+   "sparc_over_vr": 0.951
+  },
+  "kept": {
+   "n": 12,
+   "sparc_over_vc": 0.937,
+   "vr_over_vc": 0.968,
+   "sparc_over_vr": 0.97
+  }
+ },
+ "DDO 87": {
+  "dropped": {
+   "n": 4,
+   "sparc_over_vc": 1.139,
+   "vr_over_vc": 0.996,
+   "sparc_over_vr": 1.144
+  },
+  "kept": {
+   "n": 4,
+   "sparc_over_vc": 1.02,
+   "vr_over_vc": 0.994,
+   "sparc_over_vr": 1.026
+  }
+ },
+ "NGC 2366": {
+  "dropped": {
+   "n": 3,
+   "sparc_over_vc": 0.873,
+   "vr_over_vc": 0.93,
+   "sparc_over_vr": 0.939
+  },
+  "kept": {
+   "n": 21,
+   "sparc_over_vc": 0.995,
+   "vr_over_vc": 0.943,
+   "sparc_over_vr": 1.065
+  }
+ },
+ "WLM": {
+  "dropped": {
+   "n": 35,
+   "sparc_over_vc": 1.011,
+   "vr_over_vc": 0.96,
+   "sparc_over_vr": 1.073
+  },
+  "kept": {
+   "n": 1,
+   "sparc_over_vc": 0.976,
+   "vr_over_vc": 0.972,
+   "sparc_over_vr": 1.004
+  }
+ },
+ "pooled dropped": {
+  "n": 59,
+  "sparc_over_vc": 1.003,
+  "vr_over_vc": 0.966,
+  "sparc_over_vr": 1.041,
+  "dex_in_g_sparc_vs_vc": 0.0,
+  "dex_in_g_drift": -0.041
+ },
+ "pooled kept": {
+  "n": 58,
+  "sparc_over_vc": 0.987,
+  "vr_over_vc": 0.959,
+  "sparc_over_vr": 1.033,
+  "dex_in_g_sparc_vs_vc": 0.016,
+  "dex_in_g_drift": -0.044
+ },
+ "pooled dropped, V_sparc < 30": {
+  "n": 30,
+  "sparc_over_vc": 1.05,
+  "vr_over_vc": 0.989,
+  "sparc_over_vr": 1.082,
+  "dex_in_g_sparc_vs_vc": 0.034,
+  "dex_in_g_drift": -0.028
+ },
+ "pooled all inside R_e": {
+  "n": 20,
+  "sparc_over_vc": 1.102,
+  "vr_over_vc": 0.995,
+  "sparc_over_vr": 1.123,
+  "dex_in_g_sparc_vs_vc": 0.099,
+  "dex_in_g_drift": -0.05
+ },
+ "pooled all V_sparc < 30": {
+  "n": 39,
+  "sparc_over_vc": 1.07,
+  "vr_over_vc": 0.979,
+  "sparc_over_vr": 1.098,
+  "dex_in_g_sparc_vs_vc": 0.069,
+  "dex_in_g_drift": -0.04
+ }
+}

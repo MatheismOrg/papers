@@ -1,0 +1,60 @@
+{
+ "KNEESE@0.1|primary": {
+  "coefficients": {
+   "A": 11.5687,
+   "B": 0.7226,
+   "C": -0.7271,
+   "A2": 12.2118,
+   "B2": 2.2279,
+   "C2": 2.531,
+   "eta": 3.1879,
+   "logq": 0.0384
+  },
+  "frozen_abc": null,
+  "bound_hits": [],
+  "limits_exceeded": 4
+ },
+ "KNEESF@0.1|primary": {
+  "coefficients": {
+   "A2": 11.9749,
+   "B2": 2.7261,
+   "C2": 2.4539
+  },
+  "frozen_abc": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "bound_hits": [],
+  "limits_exceeded": 2
+ },
+ "KNEESE@0.1|strict": {
+  "coefficients": {
+   "A": 11.5557,
+   "B": 0.7097,
+   "C": -0.7093,
+   "A2": 12.1979,
+   "B2": 2.2551,
+   "C2": 2.5368,
+   "eta": 1.3449,
+   "logq": -0.1012
+  },
+  "frozen_abc": null,
+  "bound_hits": [],
+  "limits_exceeded": 4
+ },
+ "KNEESF@0.1|strict": {
+  "coefficients": {
+   "A2": 11.829,
+   "B2": 2.939,
+   "C2": 2.4796
+  },
+  "frozen_abc": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "bound_hits": [],
+  "limits_exceeded": 2
+ }
+}

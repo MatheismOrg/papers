@@ -1,0 +1,17 @@
+FORECAST_T64 (SA73 T64), the ninth forecast of Section 5.8. Written 22:57 PST, 10 Nov 2026, after PROTOCOL_T64's run (fuzzy dark
+matter not chosen by the training disks in 60 of 60 partitions; warm dark matter chosen near 2 keV, more than doubling the
+dwarf error; self-interaction chosen at 1 cm^2/g in 13 of 15 disk partitions, meeting the marks on the disks' dropped
+points and all points and failing on the benchmark's points, the dwarf spheroidals and the cluster centers), for data not
+in hand.
+
+Two readings of the core survive on gas-rich disks: a core made by the baryons (the formula's, set by gas fraction and
+diffuseness, absent where there is no gas) and a core made by self-interaction (present in every halo). They differ where
+there is no gas. On at least ten gas-poor dwarf galaxies (cold gas under 10 percent of the baryons, stellar mass below
+10^9.5 suns) that are in none of this paper's samples, each with a stellar mass, a half-light radius and a dynamical mass
+or velocity dispersion measured at or inside the half-light radius: the final formula, every coefficient frozen (A, B, C =
+11.7481, 0.8178, -0.7119; t = 0.1501, kappa = 0.6229; log M_t = 11.339; for these systems its core is zero), has a lower
+host-balanced error than the same halos with self-interaction of s0 = 1 cm^2/g (t64/sidm64.py: sigma/m = s0 / (1 + (v/344
+km/s)^2), 10 Gyr, baryons as a Plummer sphere through the measured point), with the 95 percent range of the paired
+bootstrap difference over galaxies excluding zero. If instead the self-interacting halos have the lower error with a range
+excluding zero, the cores do not follow the gas and the reading of Section 5.7 is wrong. If neither range excludes zero,
+the sample does not decide.

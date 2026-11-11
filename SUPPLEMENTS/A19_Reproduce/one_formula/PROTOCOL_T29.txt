@@ -1,0 +1,15 @@
+A19 cross-scale protocol T29 (session SA73, overnight round 9, 7 November 2026, US Pacific). Hashed before running.
+Robustness of the frozen T26 formula to the one analysis choice that weights populations. Same data, partitions,
+scores and tolerances as T26.
+
+WHY: every fit since T15 weights the non-disk populations at 0.1 against the disks (lensing at 0.1 over its included
+bins). With the disk rule set on disks alone, the weight now only affects the threshold M_t. If the held-out scores
+barely move at weight 1, the result does not hinge on that choice. No all-data check was run before hashing.
+
+CONFIGURATION
+MOGF0IE@1  through harness_T26.py with chunk_run.py (T26's formula and baryons; 4 coefficients)
+Both masks. Run on Gary's Mac, or in the cloud with the same files.
+
+PASS MARKS
+Robust if no held-out score at weight 1 differs from MOGF0IE@0.1 (T26) by more than its tolerance, on either mask,
+and M_t hits its bound in no fit.

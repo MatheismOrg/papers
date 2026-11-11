@@ -1,0 +1,26 @@
+A19 cross-scale protocol T26 (session SA73, overnight round 6, 7 November 2026, US Pacific). Hashed before running.
+Same data, partitions, objective, scores and tolerances as T25, plus the one change below. Adaptive (fourteenth round
+on seen data); not blind.
+
+WHY: T24 and T25 applied the IMF trend of massive early types only to MaNGA. A united treatment applies it to every
+spheroid sample with a measured dispersion. The 16 SPARC early types have sigma_e in ATLAS3D (Cappellari et al. 2013a,
+Table 1, read 7 Nov 2026 00:33 PST through the browser on Gary's Mac; page-text SHA-256 ba338a92...; 16 rows saved as
+ext/atlas3d/Cappellari2013a_Table1_16ETG_rows.txt, SHA-256 7791e842...). Their mass models (Lelli et al. 2017) use a
+Chabrier-based M/L of 0.8 at 3.6 micron and have no gas term, so g_bar scales by alpha at both radii.
+Caveat stated before running: the inner early-type points are ATLAS3D JAM circular velocities, and Posacki et al. (2015)
+built their trend partly from ATLAS3D JAM models, so the inner points are not an independent test; the outer (HI)
+points are.
+All-data checks, reported, not held out (primary mask, MOGF0 refitted): early types 0.2026 to 0.1854 (inner 0.250 to
+0.221, mean +0.131 to +0.033; outer 0.140 to 0.142, mean -0.025 to -0.068); MaNGA 0.1141, CLASH 0.1962, lensing 67.68,
+disks 0.1498, dwarfs 0.3639.
+
+CHANGE (harness_T26.py): T25 (MOGF0 with the MaNGA IMF factor) plus the early types' g_bar x alpha_IMF(sigma_e),
+alpha_IMF = 10^(0.38 log10(sigma/200 km/s) - 0.06 + 0.215).
+CONFIGURATION
+MOGF0IE@0.1  (4 coefficients, as T25)
+Both masks. Run on Gary's Mac with chunk_run.py, or in the cloud with the same files.
+
+PASS MARKS
+Against MOGF0I@0.1 (T25): the united IMF treatment passes if the held-out early-type error falls by more than the 5
+percent tolerance and nothing is worse beyond tolerance. The outer early-type points are reported separately; if
+they worsen by more than 5 percent, the independent part of the check fails even when the total improves.

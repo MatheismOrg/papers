@@ -1,0 +1,7 @@
+primary MOGF0IESM@0.1 fold_20261027 1 1.4
+primary MOGF0IESM@0.1 fold_20261027 3 2.0
+primary MOGF0IESM@0.1 fold_48105 0 2.7
+primary MOGF0IESM@0.1 fold_48105 2 3.3
+primary MOGF0IESM@0.1 fold_48105 4 3.9
+primary MOGF0IESM@0.1 fold_7331 1 4.5
+primary MOGF0IESM@0.1 fold_7331 3 5.3

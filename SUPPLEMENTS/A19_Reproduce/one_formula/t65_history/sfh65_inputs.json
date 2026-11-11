@@ -1,0 +1,454 @@
+{
+ "read2019": {
+  "UMi": {
+   "type": "dSph",
+   "t_trunc": 12.4,
+   "rho150": 1.53,
+   "lo": 0.32,
+   "hi": 0.35,
+   "Mstar_1e6": 0.29,
+   "M200_1e9": 2.8
+  },
+  "Draco": {
+   "type": "dSph",
+   "t_trunc": 11.7,
+   "rho150": 2.36,
+   "lo": 0.29,
+   "hi": 0.29,
+   "Mstar_1e6": 0.29,
+   "M200_1e9": 1.8
+  },
+  "Sculptor": {
+   "type": "dSph",
+   "t_trunc": 11.8,
+   "rho150": 1.49,
+   "lo": 0.23,
+   "hi": 0.28,
+   "Mstar_1e6": 2.3,
+   "M200_1e9": 5.7
+  },
+  "Sextans": {
+   "type": "dSph",
+   "t_trunc": 10.6,
+   "rho150": 1.28,
+   "lo": 0.29,
+   "hi": 0.34,
+   "Mstar_1e6": 0.44,
+   "M200_1e9": 2.0
+  },
+  "Leo I": {
+   "type": "dSph",
+   "t_trunc": 3.1,
+   "rho150": 1.77,
+   "lo": 0.34,
+   "hi": 0.33,
+   "Mstar_1e6": 5.5,
+   "M200_1e9": 5.6
+  },
+  "Leo II": {
+   "type": "dSph",
+   "t_trunc": 6.3,
+   "rho150": 1.84,
+   "lo": 0.16,
+   "hi": 0.17,
+   "Mstar_1e6": 0.74,
+   "M200_1e9": 1.6
+  },
+  "Carina": {
+   "type": "dSph",
+   "t_trunc": 2.8,
+   "rho150": 1.16,
+   "lo": 0.22,
+   "hi": 0.2,
+   "Mstar_1e6": 0.38,
+   "M200_1e9": 0.8
+  },
+  "Fornax": {
+   "type": "dSph",
+   "t_trunc": 1.75,
+   "rho150": 0.79,
+   "lo": 0.19,
+   "hi": 0.27,
+   "Mstar_1e6": 43.0,
+   "M200_1e9": 21.9
+  },
+  "WLM": {
+   "type": "dIrr",
+   "t_trunc": 0.0,
+   "rho150": 0.52,
+   "lo": 0.09,
+   "hi": 0.09,
+   "Mstar_1e6": 16.2,
+   "M200_1e9": 8.3
+  },
+  "DDO 52": {
+   "type": "dIrr",
+   "t_trunc": 0.0,
+   "rho150": 0.38,
+   "lo": 0.1,
+   "hi": 0.17,
+   "Mstar_1e6": 52.7,
+   "M200_1e9": 12.0
+  },
+  "DDO 87": {
+   "type": "dIrr",
+   "t_trunc": 0.0,
+   "rho150": 0.31,
+   "lo": 0.09,
+   "hi": 0.18,
+   "Mstar_1e6": 33.0,
+   "M200_1e9": 11.3
+  },
+  "DDO 154": {
+   "type": "dIrr",
+   "t_trunc": 0.0,
+   "rho150": 0.46,
+   "lo": 0.1,
+   "hi": 0.13,
+   "Mstar_1e6": 8.35,
+   "M200_1e9": 12.6
+  },
+  "Aquarius": {
+   "type": "dIrr",
+   "t_trunc": 0.0,
+   "rho150": 0.36,
+   "lo": 0.19,
+   "hi": 0.22,
+   "Mstar_1e6": 0.68,
+   "M200_1e9": 0.68
+  },
+  "NGC 2366": {
+   "type": "dIrr",
+   "t_trunc": 0.0,
+   "rho150": 0.18,
+   "lo": 0.03,
+   "hi": 0.05,
+   "Mstar_1e6": 69.5,
+   "M200_1e9": 24.0
+  },
+  "CVnIdwA": {
+   "type": "dIrr",
+   "t_trunc": 0.0,
+   "rho150": 0.33,
+   "lo": 0.09,
+   "hi": 0.12,
+   "Mstar_1e6": 4.1,
+   "M200_1e9": 1.7
+  },
+  "DDO 168": {
+   "type": "dIrr",
+   "t_trunc": 0.0,
+   "rho150": 0.31,
+   "lo": 0.07,
+   "hi": 0.11,
+   "Mstar_1e6": 59.0,
+   "M200_1e9": 21.0
+  }
+ },
+ "weisz2015": {
+  "Andromeda I": {
+   "type": "dSph",
+   "tau90": 9.86,
+   "err_up_total": 0.15,
+   "err_dn_total": 0.14,
+   "Mstar_1e6": 3.9,
+   "MHI_1e6": 0.0
+  },
+  "Andromeda II": {
+   "type": "dSph",
+   "tau90": 9.75,
+   "err_up_total": 0.07,
+   "err_dn_total": 0.05,
+   "Mstar_1e6": 7.6,
+   "MHI_1e6": 0.0
+  },
+  "Andromeda III": {
+   "type": "dSph",
+   "tau90": 9.72,
+   "err_up_total": 0.3,
+   "err_dn_total": 0.06,
+   "Mstar_1e6": 0.83,
+   "MHI_1e6": 0.0
+  },
+  "Andromeda V": {
+   "type": "dSph",
+   "tau90": 9.87,
+   "err_up_total": 0.23,
+   "err_dn_total": 0.31,
+   "Mstar_1e6": 0.39,
+   "MHI_1e6": 0.0
+  },
+  "Andromeda VI": {
+   "type": "dSph",
+   "tau90": 9.73,
+   "err_up_total": 0.3,
+   "err_dn_total": 0.09,
+   "Mstar_1e6": 2.8,
+   "MHI_1e6": 0.0
+  },
+  "Andromeda XI": {
+   "type": "dSph",
+   "tau90": 10.11,
+   "err_up_total": 0.0,
+   "err_dn_total": 0.2,
+   "Mstar_1e6": 0.049,
+   "MHI_1e6": 0.0
+  },
+  "Andromeda XII": {
+   "type": "dSph",
+   "tau90": 9.56,
+   "err_up_total": 0.33,
+   "err_dn_total": 0.04,
+   "Mstar_1e6": 0.031,
+   "MHI_1e6": 0.0
+  },
+  "Andromeda XIII": {
+   "type": "dSph",
+   "tau90": 10.1,
+   "err_up_total": 0.0,
+   "err_dn_total": 0.46,
+   "Mstar_1e6": 0.041,
+   "MHI_1e6": 0.0
+  },
+  "Carina": {
+   "type": "dSph",
+   "tau90": 9.46,
+   "err_up_total": 0.11,
+   "err_dn_total": 0.12,
+   "Mstar_1e6": 0.38,
+   "MHI_1e6": 0.0
+  },
+  "Canes Venatici I": {
+   "type": "dSph",
+   "tau90": 9.92,
+   "err_up_total": 0.06,
+   "err_dn_total": 0.11,
+   "Mstar_1e6": 0.23,
+   "MHI_1e6": 0.0
+  },
+  "Canes Venatici II": {
+   "type": "dSph",
+   "tau90": 9.92,
+   "err_up_total": 0.05,
+   "err_dn_total": 0.24,
+   "Mstar_1e6": 0.0079,
+   "MHI_1e6": 0.0
+  },
+  "DDO 210": {
+   "type": "dTrans",
+   "tau90": 9.58,
+   "err_up_total": 0.52,
+   "err_dn_total": 0.37,
+   "Mstar_1e6": 1.6,
+   "MHI_1e6": 4.1
+  },
+  "Draco": {
+   "type": "dSph",
+   "tau90": 10.01,
+   "err_up_total": 0.06,
+   "err_dn_total": 0.11,
+   "Mstar_1e6": 0.29,
+   "MHI_1e6": 0.0
+  },
+  "Fornax": {
+   "type": "dSph",
+   "tau90": 9.38,
+   "err_up_total": 0.14,
+   "err_dn_total": 0.06,
+   "Mstar_1e6": 20.0,
+   "MHI_1e6": 0.0
+  },
+  "Hercules": {
+   "type": "dSph",
+   "tau90": 10.1,
+   "err_up_total": 0.0,
+   "err_dn_total": 0.61,
+   "Mstar_1e6": 0.037,
+   "MHI_1e6": 0.0
+  },
+  "IC 10": {
+   "type": "dIrr",
+   "tau90": 9.21,
+   "err_up_total": 0.15,
+   "err_dn_total": 0.06,
+   "Mstar_1e6": 86.0,
+   "MHI_1e6": 50.0
+  },
+  "IC 1613": {
+   "type": "dIrr",
+   "tau90": 9.3,
+   "err_up_total": 0.08,
+   "err_dn_total": 0.12,
+   "Mstar_1e6": 100.0,
+   "MHI_1e6": 65.0
+  },
+  "Leo A": {
+   "type": "dIrr",
+   "tau90": 8.78,
+   "err_up_total": 0.22,
+   "err_dn_total": 0.08,
+   "Mstar_1e6": 6.0,
+   "MHI_1e6": 11.0
+  },
+  "Leo I": {
+   "type": "dSph",
+   "tau90": 9.23,
+   "err_up_total": 0.05,
+   "err_dn_total": 0.0,
+   "Mstar_1e6": 5.5,
+   "MHI_1e6": 0.0
+  },
+  "Leo II": {
+   "type": "dSph",
+   "tau90": 9.81,
+   "err_up_total": 0.05,
+   "err_dn_total": 0.04,
+   "Mstar_1e6": 0.74,
+   "MHI_1e6": 0.0
+  },
+  "Leo IV": {
+   "type": "dSph",
+   "tau90": 10.05,
+   "err_up_total": 0.04,
+   "err_dn_total": 0.57,
+   "Mstar_1e6": 0.019,
+   "MHI_1e6": 0.0
+  },
+  "Leo T": {
+   "type": "dTrans",
+   "tau90": 9.23,
+   "err_up_total": 0.0,
+   "err_dn_total": 0.05,
+   "Mstar_1e6": 0.14,
+   "MHI_1e6": 0.28
+  },
+  "LGS 3": {
+   "type": "dTrans",
+   "tau90": 9.58,
+   "err_up_total": 0.19,
+   "err_dn_total": 0.09,
+   "Mstar_1e6": 0.96,
+   "MHI_1e6": 0.38
+  },
+  "M32": {
+   "type": "dE",
+   "tau90": 9.23,
+   "err_up_total": 0.49,
+   "err_dn_total": 0.0,
+   "Mstar_1e6": 320.0,
+   "MHI_1e6": 0.0
+  },
+  "NGC 147": {
+   "type": "dE",
+   "tau90": 9.43,
+   "err_up_total": 0.53,
+   "err_dn_total": 0.01,
+   "Mstar_1e6": 62.0,
+   "MHI_1e6": 0.0
+  },
+  "NGC 185": {
+   "type": "dE",
+   "tau90": 9.56,
+   "err_up_total": 0.4,
+   "err_dn_total": 0.05,
+   "Mstar_1e6": 68.0,
+   "MHI_1e6": 0.11
+  },
+  "NGC 205": {
+   "type": "dE",
+   "tau90": 9.34,
+   "err_up_total": 0.47,
+   "err_dn_total": 0.04,
+   "Mstar_1e6": 330.0,
+   "MHI_1e6": 0.4
+  },
+  "NGC 6822": {
+   "type": "dIrr",
+   "tau90": 9.0,
+   "err_up_total": 0.58,
+   "err_dn_total": 0.0,
+   "Mstar_1e6": 100.0,
+   "MHI_1e6": 130.0
+  },
+  "PegDIG": {
+   "type": "dTrans",
+   "tau90": 9.23,
+   "err_up_total": 0.82,
+   "err_dn_total": 0.11,
+   "Mstar_1e6": 6.61,
+   "MHI_1e6": 5.9
+  },
+  "Phoenix": {
+   "type": "dTrans",
+   "tau90": 9.43,
+   "err_up_total": 0.08,
+   "err_dn_total": 0.01,
+   "Mstar_1e6": 0.77,
+   "MHI_1e6": 0.12
+  },
+  "SagDIG": {
+   "type": "dIrr",
+   "tau90": 8.91,
+   "err_up_total": 0.35,
+   "err_dn_total": 0.3,
+   "Mstar_1e6": 3.5,
+   "MHI_1e6": 8.8
+  },
+  "Sagittarius": {
+   "type": "dSph",
+   "tau90": 9.53,
+   "err_up_total": 0.19,
+   "err_dn_total": 0.04,
+   "Mstar_1e6": 21.0,
+   "MHI_1e6": 0.0
+  },
+  "Sculptor": {
+   "type": "dSph",
+   "tau90": 10.03,
+   "err_up_total": 0.05,
+   "err_dn_total": 0.17,
+   "Mstar_1e6": 2.3,
+   "MHI_1e6": 0.0
+  },
+  "Sex A": {
+   "type": "dIrr",
+   "tau90": 8.85,
+   "err_up_total": 0.36,
+   "err_dn_total": 0.07,
+   "Mstar_1e6": 44.0,
+   "MHI_1e6": 77.0
+  },
+  "Sex B": {
+   "type": "dIrr",
+   "tau90": 9.26,
+   "err_up_total": 0.79,
+   "err_dn_total": 0.08,
+   "Mstar_1e6": 52.0,
+   "MHI_1e6": 51.0
+  },
+  "Tucana": {
+   "type": "dSph",
+   "tau90": 9.81,
+   "err_up_total": 0.2,
+   "err_dn_total": 0.19,
+   "Mstar_1e6": 0.56,
+   "MHI_1e6": 0.0
+  },
+  "Ursa Minor": {
+   "type": "dSph",
+   "tau90": 9.96,
+   "err_up_total": 0.07,
+   "err_dn_total": 0.18,
+   "Mstar_1e6": 0.29,
+   "MHI_1e6": 0.0
+  },
+  "WLM": {
+   "type": "dIrr",
+   "tau90": 8.85,
+   "err_up_total": 0.27,
+   "err_dn_total": 0.0,
+   "Mstar_1e6": 43.0,
+   "MHI_1e6": 61.0
+  }
+ }
+}

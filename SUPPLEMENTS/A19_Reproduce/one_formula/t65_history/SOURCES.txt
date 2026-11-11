@@ -1,0 +1,16 @@
+Published tables read for T65 (10 November 2026 PST), from arXiv LaTeX sources downloaded into the cloud workspace only.
+The archives themselves are not redistributed here; parse65.py reads the two .tex files into sfh65_inputs.json.
+
+arXiv:1808.06634  Read, Walker and Steger (2019), MNRAS 484, 1401, "Dark matter heats up in dwarf galaxies"
+   https://arxiv.org/e-print/1808.06634   1,890,517 bytes
+   SHA-256 0dc8a865f0354e7f51b86e62e7ea4764d4a59d41cfccd0db7370aaf66c14b999   file used: DM_heating.tex (Table 1)
+arXiv:1503.05195  Weisz et al. (2015), ApJ 804, 136, "The Star Formation Histories of Local Group Dwarf Galaxies. III."
+   https://arxiv.org/e-print/1503.05195   1,695,015 bytes
+   SHA-256 f28ee8f106064b7167ff56ecad70635a96067756fb74d13b8aa164980e9f3bf7   file used: ms.tex (Table 1, tau_90)
+arXiv:1508.04143  Read, Agertz and Collins (2016), MNRAS 459, 2573, "Dark matter cores all the way down"
+   https://arxiv.org/e-print/1508.04143   2,016,368 bytes
+   SHA-256 5d040a29fe650597023e4e611c2b0ca75ae308ba3a297c2e9ceb8d2d809f436c   read only, to confirm kappa = 0.04, eta = 1.75
+   and t_dyn = 2 pi sqrt(r_s^3 / (G M_NFW(r_s))) (Section 3.3.3, "A convenient coreNFW fitting function")
+arXiv:1404.7144   Weisz et al. (2014), "The Star Formation Histories of Local Group Dwarf Galaxies. I."
+   https://export.arxiv.org/e-print/1404.7144   5,138,001 bytes
+   SHA-256 4137499c11ce581d42c6c6bbe8cc855b4690243d40dc3cb589376c54285dd200   downloaded, not used

@@ -1,0 +1,14 @@
+A19 protocol T35 (session SA73, overnight round 15, 7 November 2026, US Pacific). Hashed before any prediction.
+Does halo contraction fix the Milky Way's too-heavy halo? Out-of-sample check, nothing fitted.
+
+The T18 formulas refit the paper's rule on disks with Cautun et al. (2020) contraction at strength s: median coefficients
+over the 60 partitions (res18_primary.json) A, B, C = 11.6762, 0.7774, -0.6769 with s = 0.2468 fitted on disks (CAUD);
+11.6039, 0.7599, -0.6638 at s = 0.5 (CAU5); 11.4187, 0.7019, -0.6724 at s = 1 (CAU1); without contraction 11.7481,
+0.8178, -0.7119 (the frozen formula). For each, the Milky Way's halo mass from McMillan (2017) stars and gas and
+R_e = 5.75 kpc (Lian et al. 2024), and its rotation curve with the contracted halo, M_DM(<r) = (1 - f_b) M_NFW(<r)
+F(eta)^s, eta = M_bar(<r)/(f_b M_NFW(<r)), M_bar(<r) = v_bar^2 r/G (as the benchmark takes M_bar from g_bar), against
+Eilers et al. (2019) from 5 to 21 kpc (diag_milkyway_contraction.py, reusing diag_milkyway.py's baryons).
+
+REPORTED: M_halo, scale radius r200/c, mean model/observed velocity ratio and rms log ratio, for all four.
+Contraction helps the Milky Way if a contracted version brings M_halo toward the published 1.08 to 1.37 x 10^12 suns
+while keeping the rotation curve at least as close as the uncontracted formula (mean ratio 0.945, rms 0.026 dex).

@@ -1,0 +1,2 @@
+PROTOCOL_T40.txt sha256 694ab539ea8db4ed5fca71083d84e30a0dc41470032ee93fc029bd4e8fe4e465 hashed 2026-11-07 04:09:45 PST (before any HeCS value is read); blind_hecs_T40.py sha256 280f32ec84437fe43c3d7e7a18a03255f66f6114ec1ea40fc532440d7ae063fb
+blind_hecs_T40.py corrected at 2026-11-07 04:10:09 PST before any HeCS value was read (the M500 step used 200 rho_c where rho_c was meant); checked only by a dry run on three synthetic rows; new sha256 7b94ade58a65b8d97c6bc14cf5bdcae704d09adc06ab1bb4b94ee02719714c41

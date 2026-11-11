@@ -1,0 +1,16 @@
+A19 protocol T33 (session SA73, overnight round 13, 7 November 2026, US Pacific). Hashed before any prediction.
+T32 for the 50 MaNGA central galaxies. Same method, data and frozen formula (with T26's IMF factor on the MaNGA stars).
+
+SELECTION: the MaNGA brightest-cluster-galaxy program took the most luminous galaxy of groups in the Yang et al. (2007)
+catalog at 0.04 < z < 0.15, aiming at bright BCGs in halos above 10^14 suns and prioritizing the most massive halos;
+it lists no hard halo-mass cut (SDSS DR16 MaNGA ancillary-target page, read 7 Nov 2026). Tian et al. (2024) took 50 of
+them. The stated aim is used as the selection: M200c > 1e14 suns (the catalog's own mass definition differs by about
+0.1 dex; reported as a caveat).
+
+PREDICTION (diag_manga_selection.py): as T32, for the MaNGA points: the posterior mean of log10(g_bar + g_DM) with the
+Tinker et al. (2008) prior times the selection, and without the selection; against the frozen T26 formula (mean
+inversion). All data, nothing fitted.
+
+TEST
+The selection reading holds for MaNGA if the selection-aware error is within the 5 percent tolerance of the frozen
+formula's (0.1141 dex, all data).

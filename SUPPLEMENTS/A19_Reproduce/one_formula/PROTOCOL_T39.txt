@@ -1,0 +1,9 @@
+A19 protocol T39 (session SA73, overnight round 19, 7 November 2026, US Pacific). Hashed before the run.
+Does the final formula (T37, MOGF0IES) still predict CLASH when no cluster is in any training set?
+
+As T28 did for T26: chunk_run_loco.py (CLASH deleted from every training set; partitions, disk rule, fits, losses and
+records otherwise as T37), with the model registered under the alias MOGF0IESY by harness_T39.py, which routes it to
+harness_T37's MOGF0IES unchanged. Both masks, all 60 partitions.
+T39 passes if, on both masks, the never-trained CLASH errors at 100 to 600 kpc and at the centers are each within 5 percent
+of T37's trained values (0.1364 and 0.1050 primary; 0.1421 and 0.1048 stricter), and no fit hits a bound.
+All scores reported.

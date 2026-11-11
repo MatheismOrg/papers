@@ -1,0 +1,5 @@
+Pace, Erkal and Li (2022), ApJ, doi:10.3847/1538-4357/ac997b, arXiv:2205.05699, Table 3 (dSph orbital properties): pericentre and apocentre
+with the LMC's influence (r_peri, r_apo) and without it (nL), and the probability of being bound to the LMC (p_LMC).
+Central values only. Read on 6 November 2026 from ar5iv.labs.arxiv.org/html/2205.05699 in the built-in browser on
+Gary's Mac (the session's network refuses arxiv.org); SHA-256 of the data rows computed in the browser and here:
+610844633e2e6074a54821bec38dbd7ee6dda0bf82e8e4b7b5a7f18166f1a0aa. Leo V's r_apo^nL reads 0.0 in the source (kept as given).

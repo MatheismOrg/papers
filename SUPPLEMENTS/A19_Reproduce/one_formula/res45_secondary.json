@@ -1,0 +1,49 @@
+{
+ "Mt_T45": 11.339,
+ "kids_T44": {
+  "S_model": 0.071,
+  "colour": {
+   "S_data": 0.2062,
+   "chi2_late": 30.95,
+   "chi2_early": 4.18,
+   "chi2_difference": 13.15,
+   "chi2_difference_null": 28.08,
+   "n_inner": 7
+  },
+  "sersic": {
+   "S_data": 0.1616,
+   "chi2_late": 16.71,
+   "chi2_early": 10.41,
+   "chi2_difference": 7.91,
+   "chi2_difference_null": 20.94,
+   "n_inner": 7
+  }
+ },
+ "kids_T45": {
+  "S_model": 0.0509,
+  "colour": {
+   "S_data": 0.2062,
+   "chi2_late": 30.95,
+   "chi2_early": 5.89,
+   "chi2_difference": 16.81,
+   "chi2_difference_null": 28.08,
+   "n_inner": 7
+  },
+  "sersic": {
+   "S_data": 0.1616,
+   "chi2_late": 16.7,
+   "chi2_early": 11.56,
+   "chi2_difference": 10.93,
+   "chi2_difference_null": 20.94,
+   "n_inner": 7
+  }
+ },
+ "MW_T44": {
+  "q": 1.4408322566415607e-06,
+  "M_halo": 1834442157391.1763
+ },
+ "MW_T45": {
+  "q": 1.9332227580485897e-07,
+  "M_halo": 1834439222605.0825
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "name": "A19 one-formula candidate T21 (MOGF, w = 0.1): T19's MOGC plus a halo-mass floor at the atomic-cooling scale",
+ "frozen_at": "2026-11-07 00:50 US Pacific, session SA73 overnight, after the T21 to T24 cross-validations",
+ "formula": "M_ref = Mp/fb + 10^A (M*/1e10 Msun)^B (Re/3 kpc)^C + q M_Moster(M*, z), q = (M*/Mp)^50 / (1 + (M_t/M*)^4); then M_halo = (M_ref^8 + M_min^8)^(1/8), M_min = 1e8 Msun (fixed: virial temperature 1e4 K at z of 10 to 20, Johnson 2013); M_Moster: Moster, Naab and White (2013) with redshift evolution, inverted in [1e9, 10^16.5] Msun; NFW with dark mass (1-fb) M_halo inside r200 at the halo redshift, Dutton and Maccio (2014) c(M, z), satellites x (1 - 0.54 log10(D/r200,host)) (Moline et al. 2017); contraction M_DM(<r) = (1-fb) M_NFW(<r) max(F, 1)^s, F = 0.45 + 0.38 (eta + 1.16)^0.53, eta = M_bar(<r)/(fb M_NFW(<r)) (Cautun et al. 2020 eq. 11, contraction branch); dynamics M_bar(<r) = g_bar r^2/G, lensing M_p as a point mass; fb = 0.049/0.3175, h = 0.671",
+ "coefficients_all_data_primary": {
+  "A": 11.7481,
+  "B": 0.8178,
+  "C": -0.7119,
+  "log10_Mt": 11.1822,
+  "s": 0.1734
+ },
+ "fixed": {
+  "M_min_Msun": 100000000.0,
+  "gas_exponent": 50,
+  "gate_steepness": 4
+ },
+ "all_data_scores_primary": {
+  "disk": 0.1496,
+  "dwarfs": 0.3639,
+  "ETG": 0.2012,
+  "MaNGA": 0.173,
+  "CLASH": 0.1953,
+  "lensing_chi2": 67.89
+ },
+ "dwarf_upper_limits_exceeded": "3 of 10",
+ "baryon_option_T24": {
+  "what": "MaNGA BCG stellar g_bar x alpha_IMF = 10^(0.38 log10(sigma/200 km/s) - 0.06 + 0.215): Posacki et al. 2015 IMF trend (relative to Salpeter), Chabrier conversion of Madau and Dickinson 2014; sigma = <sigma_los> of Tian et al. 2024 Table 1",
+  "coefficients_all_data_primary": {
+   "log10_Mt": 11.1876,
+   "s": 0.1355
+  },
+  "all_data_scores_primary": {
+   "MaNGA": 0.1122,
+   "ETG": 0.2016,
+   "CLASH": 0.1956,
+   "lensing_chi2": 67.83
+  },
+  "note": "Changes the baryons, not the halo formula; needs a measured velocity dispersion"
+ },
+ "kids_early_late_split_unfitted": {
+  "S_model_dex": 0.0654,
+  "S_data_colour_dex": 0.2062,
+  "S_data_sersic_dex": 0.1616,
+  "chi2_difference_colour": 13.75,
+  "chi2_difference_null_colour": 28.08,
+  "n_inner_bins": 7
+ },
+ "status": "retrospective and adaptive (tenth round on seen data); frozen here for a blind test on new systems"
+}

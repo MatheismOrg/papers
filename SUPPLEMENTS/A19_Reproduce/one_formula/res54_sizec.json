@@ -1,0 +1,130 @@
+{
+ "final formula": {
+  "disk": 0.1498,
+  "dwarfs": 0.3639,
+  "ETG": 0.1851,
+  "MaNGA": 0.116,
+  "CLASH_centre": 0.102,
+  "CLASH_outer": 0.1002,
+  "dwarf_mean": -0.035,
+  "dwarf_slope_logRe": -0.496,
+  "abc": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "s": 0.0
+ },
+ "A,B,C,s on disks": {
+  "disk": 0.1458,
+  "dwarfs": 0.4741,
+  "ETG": 0.1875,
+  "MaNGA": 0.1147,
+  "CLASH_centre": 0.1373,
+  "CLASH_outer": 0.0976,
+  "dwarf_mean": 0.178,
+  "dwarf_slope_logRe": -0.709,
+  "abc": [
+   11.6461,
+   0.2587,
+   0.2598
+  ],
+  "s": 0.2023
+ },
+ "A,B,s on disks (C = 0)": {
+  "disk": 0.146,
+  "dwarfs": 0.4518,
+  "ETG": 0.1899,
+  "MaNGA": 0.1136,
+  "CLASH_centre": 0.1289,
+  "CLASH_outer": 0.0957,
+  "dwarf_mean": 0.141,
+  "dwarf_slope_logRe": -0.691,
+  "abc": [
+   11.6711,
+   0.3762,
+   0.0
+  ],
+  "s": 0.1696
+ },
+ "scan s=0.05": {
+  "disk": 0.1504,
+  "dwarfs": 0.3857,
+  "ETG": 0.1939,
+  "MaNGA": 0.1142,
+  "CLASH_centre": 0.1062,
+  "CLASH_outer": 0.0964,
+  "dwarf_mean": 0.094,
+  "dwarf_slope_logRe": -0.468,
+  "abc": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "s": 0.05
+ },
+ "scan s=0.1": {
+  "disk": 0.1554,
+  "dwarfs": 0.4488,
+  "ETG": 0.2074,
+  "MaNGA": 0.1132,
+  "CLASH_centre": 0.1139,
+  "CLASH_outer": 0.0946,
+  "dwarf_mean": 0.224,
+  "dwarf_slope_logRe": -0.427,
+  "abc": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "s": 0.1
+ },
+ "scan s=0.15": {
+  "disk": 0.1643,
+  "dwarfs": 0.5384,
+  "ETG": 0.2255,
+  "MaNGA": 0.1132,
+  "CLASH_centre": 0.1243,
+  "CLASH_outer": 0.0949,
+  "dwarf_mean": 0.353,
+  "dwarf_slope_logRe": -0.375,
+  "abc": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "s": 0.15
+ },
+ "scan s=0.2": {
+  "disk": 0.1763,
+  "dwarfs": 0.6414,
+  "ETG": 0.2474,
+  "MaNGA": 0.1146,
+  "CLASH_centre": 0.1368,
+  "CLASH_outer": 0.0973,
+  "dwarf_mean": 0.48,
+  "dwarf_slope_logRe": -0.316,
+  "abc": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "s": 0.2
+ },
+ "scan s=0.3": {
+  "disk": 0.2065,
+  "dwarfs": 0.8562,
+  "ETG": 0.2994,
+  "MaNGA": 0.1222,
+  "CLASH_centre": 0.1664,
+  "CLASH_outer": 0.1076,
+  "dwarf_mean": 0.718,
+  "dwarf_slope_logRe": -0.197,
+  "abc": [
+   11.7481,
+   0.8178,
+   -0.7119
+  ],
+  "s": 0.3
+ }
+}

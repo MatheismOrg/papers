@@ -1,0 +1,79 @@
+{
+ "Tian_Re_vs_NSA_elpetro": {
+  "median_log_ratio": -0.006,
+  "sd": 0.001
+ },
+ "Tian_n_vs_NSA_sersic_n": 0.0,
+ "NSA_sersic_over_elpetro_Re": {
+  "median_log": 0.247,
+  "sd": 0.147
+ },
+ "Tian_M_vs_NSA": {
+  "elpetro": 0.053,
+  "sersic": -0.09
+ },
+ "check_Tian_gbar_rebuilt": {
+  "median_log_ratio": 0.436,
+  "sd": 0.063
+ },
+ "V0 benchmark, vs Tian R_e": {
+  "rms": 0.1165,
+  "mean": 0.033,
+  "corr_logRe": 0.551,
+  "slope": 0.39
+ },
+ "V1 benchmark residuals, vs NSA Sersic R_e": {
+  "rms": 0.1165,
+  "mean": 0.033,
+  "corr_logRe": 0.441,
+  "slope": 0.201
+ },
+ "V1b benchmark residuals, vs NSA elpetro R_e": {
+  "rms": 0.1165,
+  "mean": 0.033,
+  "corr_logRe": 0.551,
+  "slope": 0.391
+ },
+ "V2 F5: g_bar from NSA Sersic (n, R_e, M*) x IMF, halo from NSA Sersic M*, R_e": {
+  "rms": 0.2392,
+  "mean": 0.224,
+  "corr_logRe": 0.152,
+  "slope": 0.051
+ },
+ "V3 sizes only: NSA Sersic n, R_e with Tian M*": {
+  "rms": 0.2936,
+  "mean": 0.273,
+  "corr_logRe": 0.43,
+  "slope": 0.189
+ },
+ "V4 masses only: NSA Sersic M* with Tian n, R_e": {
+  "rms": 0.1556,
+  "mean": 0.131,
+  "corr_logRe": -0.0,
+  "slope": -0.0
+ },
+ "V5 differential: Sersic size and Sersic mass": {
+  "rms": 0.1211,
+  "mean": 0.078,
+  "corr_logRe": 0.522,
+  "slope": 0.196
+ },
+ "V6 differential: Sersic size only (Tian M*)": {
+  "rms": 0.1862,
+  "mean": 0.136,
+  "corr_logRe": 0.687,
+  "slope": 0.357
+ },
+ "V7 differential: Sersic mass only (Tian R_e)": {
+  "rms": 0.1016,
+  "mean": -0.032,
+  "corr_logRe": 0.368,
+  "slope": 0.225
+ },
+ "V8 differential: elpetro mass only (Tian R_e)": {
+  "rms": 0.123,
+  "mean": 0.085,
+  "corr_logRe": 0.482,
+  "slope": 0.271
+ }
+}

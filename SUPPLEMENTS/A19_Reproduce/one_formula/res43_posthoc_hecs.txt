@@ -1,0 +1,3 @@
+POST HOC (HeCS motivated T43, so this is not a test): T43 all-data M_t 11.1907, HeCS N 216 mean -0.044 median -0.082 rms 0.447; constant 0.409
+  without the 3 BCGs below 10^10.5: mean -0.026 rms 0.391; constant 0.411; corr(d, logM*) 0.18
+  Mandelbaum red centrals (chosen by light, gate on): rms 0.139, devs [-0.12, 0.12, -0.02, -0.02, 0.15, 0.23, 0.18]

@@ -1,0 +1,30 @@
+A19 protocol T57 (session SA73, round 28, written and hashed 2026-11-10 13:14 PST, US Pacific). Hashed before any held-out run of these
+models. Gary (10 Nov, 13:10), on "small gas-rich disks want big loose halos, and dwarf spheroidals of the same size want
+small dense ones": "isn't that itself a potential parameter to add in 1 formula to fit?"
+
+WHY: within single disks the formula departs from the rotation curves by more than their errors (Table 9), most in small,
+gas-rich disks. T56 (cold gas weighted in the baryon term) failed its marks at 12:57 today. All-data looks since then
+(t56/describe57.py, diffuse57.py; not tests): gas making every halo bigger and looser changes A, B, C and costs the lensing
+(63.3 -> 79.4). A term confined to DIFFUSE, GAS-RICH galaxies leaves A, B, C and every gas-free system alone:
+with A, B, C frozen, t = 0.36, s = 0.15: disks 0.1498 -> 0.1476, scatter within disks 0.0733 -> 0.0679, correlation of the
+within-disk slope with stellar mass -0.41 -> -0.24, lensing 63.2 -> 62.4 (main mask) and 38.1 -> 37.5 (stricter), dwarfs,
+early types, MaNGA and CLASH unchanged by construction. All five fitted on disks: disks 0.1473, dwarfs 0.3639 -> 0.3597,
+early types 0.1851 -> 0.1875, lensing 64.1 and 36.2.
+
+MODELS (harness_T57d.py). For light-selected systems, with g = M_gas/M_p, L = -log10 min(Sigma*/Sigma_p, 1),
+Sigma* = M*/(2 pi R_e^2), Sigma_p = 1e10/(2 pi 9) Msun/kpc^2:  M_ref -> M_ref x 10^(t g L),  c -> c x 10^(-s g L).
+MOGF0IESBD (primary): A, B, C the paper's rule on the training disks, exactly as T48; then t and s on the same training
+disks with A, B, C fixed. 5 coefficients fitted to the benchmark (A, B, C, t, s).
+MOGF0IESBD5 (reported): A, B, C, t, s fitted together on the training disks. M_t on the red centrals as T45 in both.
+
+RUN: chunk_split.py, the same 60 partitions, main and stricter masks, configs MOGF0IESBD@0.1 and MOGF0IESBD5@0.1.
+
+PASS (preset, for MOGF0IESBD): on both masks every score within its tolerance of T48 (disks 1 percent, dwarfs 2, early
+types, MaNGA, CLASH centers and CLASH 100 to 600 kpc 5, lensing 5), and the held-out disk error lower than T48's by more
+than the 1 percent tolerance with a paired host-bootstrap 95 percent interval of the difference below zero. If it passes,
+T57 is a candidate to replace T48; if the disks improve by less, or the interval includes zero, T48 stays and T57 is
+reported as tried. EXPECTATION, stated in advance: a held-out disk gain near 1 percent, at the edge of the mark.
+
+CAVEATS FIXED IN ADVANCE: retrospective (28th round on these data; about 25 variants looked at today on all data); the
+product g L was chosen because it isolates diffuse gas-rich disks, not derived; the lensing stacks' gas and sizes come from
+the SPARC relations; two more coefficients for a gain that can only show in the disks.

@@ -1,0 +1,23 @@
+A19 forecasts T51 (session SA73, written and hashed 2026-11-09 22:03 PST). The formula is the frozen T48 candidate
+(FROZEN_T48_candidate.json). Four predictions, each with the data that would test it and the outcome that would count
+against the formula. None has been tested.
+
+F1 LENSING. For isolated lens galaxies chosen with spectroscopic redshifts (the isolation criterion of Brouwer et al. 2021,
+no neighbor above a tenth of the lens's stellar mass within 3 Mpc), stacked in the same four stellar-mass bins and scored
+inside 0.3 Mpc with the published covariance, the formula's chi-square per point is below 1.5, and the outermost bin of each
+stack no longer lies above the formula. AGAINST: chi-square per point above 2 with the excess still in the outermost bins.
+
+F2 DWARFS. For dwarf spheroidals whose velocity dispersions are measured to better than 10 percent, the trend of the
+residual with half-light radius at fixed stellar mass (now -0.5 dex per dex) is carried by tidally disturbed dwarfs: among
+dwarfs with pericenters beyond 50 kpc and no tidal features, the slope is between -0.2 and +0.2. AGAINST: a slope steeper
+than -0.3 among such undisturbed dwarfs.
+
+F3 CLUSTERS. For a cluster sample chosen by a stated threshold in mass or mass proxy, with total mass profiles, hot gas and
+the brightest galaxy's stellar mass, the formula with that threshold as its selection and all baryons inside 600 kpc as M_p
+gives accelerations at 100 to 600 kpc with a mean offset within 0.05 dex of zero and an rms error below 0.13 dex.
+AGAINST: a mean offset beyond 0.10 dex or an rms above 0.16 dex.
+
+F4 MASSIVE SPIRALS. For star-forming central galaxies with stellar masses of 3 to 10 x 10^10 suns, halo masses from lensing
+or satellite kinematics lie 0.1 to 0.3 dex BELOW the formula's (as for the Milky Way and for blue SDSS centrals in
+Mandelbaum et al. 2016). This is a predicted failure of the formula. AGAINST the prediction (for the formula): agreement
+within 0.1 dex.

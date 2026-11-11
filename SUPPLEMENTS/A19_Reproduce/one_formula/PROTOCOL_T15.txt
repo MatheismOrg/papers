@@ -1,0 +1,47 @@
+A19 cross-scale protocol T15 (session SA73, turn 15, 6 November 2026, US Pacific).
+Written and hashed before any fit below is run. Retrospective: every data set here was seen in earlier A19 and
+SO73 work, so this is not a blind test. It fixes the formulas, the fitting, the scores and the pass marks first.
+
+QUESTION
+Can one connected halo formula with few coefficients improve held-out scores across scales over the paper's
+three-coefficient rule, and how close does it come to SO73's 14- and 18-coefficient mixtures?
+
+DATA AND PARTITIONS (identical to SO73 T54-T63)
+149 SPARC disks (2,700 points), 75 measured LVDB dwarfs, 16 early types (32 points), 50 MaNGA central galaxies,
+20 CLASH clusters (centre and outer points), four KiDS Fig-9 lensing stacks inside 0.3 Mpc (29 bins; the strict mask
+drops the outermost bin of each, 25 bins). Partitions: three disk fold assignments x five folds x four held-out
+lensing groups = 60; external systems follow SO73's T56 fold maps; a whole galaxy or cluster is held out together.
+
+FORMULAS (one NFW halo per system, dark mass (1-fb)M_ref inside r200 at the system's redshift, untruncated, the
+same density for dynamics and lensing; log10 c = 0.905 - 0.101 log10(M_ref h/1e12) + dc; fb = 0.049/0.3175)
+ORIG:  M_ref = Mp/fb + 10^A (M*/1e10)^B (Re/3 kpc)^C, dc = 0.                                  3 coefficients
+KNEE:  ORIG + 10^A2 (M*/1e11)^B2. The high-mass branch of the stellar-halo relation (quenched
+       centrals: halo mass rises steeply with stellar mass), with no size term.                 5 coefficients
+KNEES: ORIG + 10^A2 (M*/1e11)^B2 (Re/10 kpc)^C2 (a size term for the high-mass branch).          6 coefficients
+KNEEC: KNEE with dc = v + s log10[M*/(2 pi Re^2) / 1e8 Msun kpc^-2] (denser stars, more
+       concentrated halo).                                                                       7 coefficients
+KNEESC: KNEES with the same dc.                                                                  8 coefficients
+KNEEE: KNEE plus SO73 T53's positive Plummer envelope, mass eta(1-fb)M_ref, scale q r200 (a
+       comparison with SO73's strongest lensing lever).                                          7 coefficients
+
+FITTING
+ORIG@disk: A, B, C fitted to training disks only (the paper's procedure); the baseline.
+Every other configuration fits all its coefficients jointly to the training disks, training lensing groups and
+training external systems with SO73's objective: disks /0.15 dex, lensing 0.1 x whitened residual / bins, external
+populations sqrt(w/4) x host-weighted log residual / (0.4 dwarfs, 0.2 others), w = 0.1 and 1. ORIG@0.1 is the
+joint-refit control. Bounds and three starts per formula are in harness.py. Every attempt, bound hit and failure is kept.
+
+SCORES (SO73's definitions)
+Host-balanced held-out RMSE of log10 acceleration for disks, dwarfs, ETG, MaNGA, CLASH outer (also CLASH centre,
+ETG inner and outer); held-out lensing chi-square summed over the four groups. Both masks are run for every
+configuration. Paired host bootstraps (10,000, conditional on the fits) for the best configuration against ORIG@disk.
+Upper limits: the ten LVDB dwarf limits exceeded by the all-data fit, reported, not fitted.
+
+PASS MARKS
+Improvement over the paper's rule: at the same mask, a configuration beats ORIG@disk on at least four of the six
+main scores (disks, dwarfs, ETG, MaNGA, CLASH outer, lensing) and worsens none by more than 1 percent (disks),
+2 percent (dwarfs) or 5 percent (the others).
+Matches SO73's mixtures: every main score within 3 percent of the better of SO73 T58 and T62 at w = 0.1 (primary:
+disk 0.151401, dwarfs 0.376910, ETG 0.198549, MaNGA 0.205270, CLASH outer 0.191533, lensing 49.091270).
+Beats them: better on at least four of the six, with at most 8 coefficients.
+These are statements about this benchmark, not about all dark matter evidence.

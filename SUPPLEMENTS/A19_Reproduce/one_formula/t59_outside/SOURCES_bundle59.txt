@@ -1,0 +1,4 @@
+iorio2017/: finalrot.zip (28,572 bytes, sha256 d4c456c65801f65742a6c5b2b377cbd7c05b30db1acca75523554d0b98ce2285) from https://www.dropbox.com/s/t4j8dacmnwgj0yb/finalrot.zip?dl=1, linked on https://www.filippofraternali.com/downloads (Iorio et al. 2017, MNRAS 466, 4159)
+dale2009/: table1.tex, table2.tex, ms.tex lines 397-440 from the arXiv source of Dale et al. 2009 (ApJ 703, 517), https://arxiv.org/e-print/0907.4722 (2,979,216 bytes, sha256 f0b7e629291e62ff2bf5cb0fe0c9a2a58e9301ce8e7451c1f81c3e8373d38b8e)
+read2017/: readetal.tex lines 225-300 (Table 2) from the arXiv source of Read et al. 2017 (MNRAS 467, 2019), https://arxiv.org/e-print/1607.03127 (2,042,016 bytes, sha256 fc65999f69710ca3e1c867f41f1367cdafdd1082ab231364b9b42d363e4ef4cf)
+Downloaded 10 Nov 2026.

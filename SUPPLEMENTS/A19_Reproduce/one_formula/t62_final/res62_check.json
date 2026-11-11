@@ -1,0 +1,96 @@
+{
+ "kids_split": {
+  "S_model": 0.0507,
+  "colour": {
+   "S_data": 0.2062,
+   "chi2_late": 30.97,
+   "chi2_early": 5.89,
+   "chi2_difference": 16.83,
+   "chi2_difference_null": 28.08,
+   "n_inner": 7
+  },
+  "sersic": {
+   "S_data": 0.1616,
+   "chi2_late": 16.72,
+   "chi2_early": 11.56,
+   "chi2_difference": 10.95,
+   "chi2_difference_null": 20.94,
+   "n_inner": 7
+  }
+ },
+ "kids_split_without_core": {
+  "S_model": 0.0509,
+  "colour": {
+   "S_data": 0.2062,
+   "chi2_late": 30.95,
+   "chi2_early": 5.89,
+   "chi2_difference": 16.81,
+   "chi2_difference_null": 28.08,
+   "n_inner": 7
+  },
+  "sersic": {
+   "S_data": 0.1616,
+   "chi2_late": 16.7,
+   "chi2_early": 11.56,
+   "chi2_difference": 10.93,
+   "chi2_difference_null": 20.94,
+   "n_inner": 7
+  }
+ },
+ "negative_point": {
+  "value": -7.149526544945246,
+  "sigma": 12.277825540379697,
+  "model": 43.23667629128772,
+  "z": -4.1038376600580655,
+  "cost": 16.824158134790714,
+  "stack_chi2": 27.697043759785874
+ },
+ "held out primary": {
+  "chi2": 64.52,
+  "n": 29,
+  "p": 0.0001638654631138982
+ },
+ "held out strict": {
+  "chi2": 39.37,
+  "n": 25,
+  "p": 0.03381192220989428
+ },
+ "blue": [
+  {
+   "logMs": 10.24,
+   "w": 0.0149,
+   "halo_mass_factor": 1.0052
+  },
+  {
+   "logMs": 10.56,
+   "w": -0.0,
+   "halo_mass_factor": 1.0
+  },
+  {
+   "logMs": 10.85,
+   "w": -0.0,
+   "halo_mass_factor": 1.0
+  },
+  {
+   "logMs": 11.1,
+   "w": -0.0,
+   "halo_mass_factor": 1.0
+  },
+  {
+   "logMs": 11.28,
+   "w": -0.0,
+   "halo_mass_factor": 1.0
+  },
+  {
+   "logMs": 11.47,
+   "w": -0.0,
+   "halo_mass_factor": 1.0
+  },
+  {
+   "logMs": 11.68,
+   "w": -0.0,
+   "halo_mass_factor": 1.0
+  }
+ ],
+ "milky_way_w": -0.0
+}

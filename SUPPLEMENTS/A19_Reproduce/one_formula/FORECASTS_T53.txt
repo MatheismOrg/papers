@@ -1,0 +1,16 @@
+A19 forecast T53 (session SA73, written and hashed 2026-11-10 00:26 PST), added to FORECASTS_T52.txt (b674324f...). Untested.
+
+F6 CLUSTER GALAXIES, BOTH ACCELERATIONS REBUILT. Forecast F5 failed as worded: with the NASA-Sloan Atlas Sersic radii,
+indices and stellar masses (MaNGA DRPall v3_1_1, sha256 9d34371c...) and only the stellar accelerations rebuilt, the
+correlation of the 50 MaNGA residuals with log half-light radius is 0.51 (t53/f5_full.py). Tian et al. (2024) derive the
+observed accelerations from the same light profile, through an isotropic Jeans equation. Rebuilt with their method, which
+reproduces their published accelerations within 0.02 dex at one radius r* (t53/jeans53.py, jeans53b.py), from one Sersic
+profile throughout, the formula's error falls from 0.116 to 0.087 dex and the correlation to 0.28 (0.35 to 0.37 with the
+dispersions held flat beyond 1 to 2 R_e instead of extrapolated). That rebuild was decided after F5 failed.
+Forecast: the same full rebuild (projected Sersic mass inside r* for g_bar with the T24 IMF factor; Tian et al.'s
+isotropic Jeans-Abel g_obs from their published dispersion fits m and b, extrapolated linearly; the profile's own total
+stellar mass and half-light radius in the halo; the T48 formula with nothing refitted), applied to single-Sersic fits of
+deeper images of the same 50 galaxies (DESI Legacy Imaging Surveys DR10, HSC-SSP, or other imaging at least one magnitude
+deeper than SDSS), gives an error below 0.10 dex and a correlation of the residuals with log R_e below 0.3.
+AGAINST: an error above 0.116 dex or a correlation above 0.45. If deeper images agree with the NASA-Sloan Atlas, the
+published accelerations, not the formula, carry the MaNGA pattern.

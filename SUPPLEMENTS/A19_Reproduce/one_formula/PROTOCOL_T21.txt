@@ -1,0 +1,23 @@
+A19 cross-scale protocol T21 (session SA73, overnight round 2, 6 November 2026, US Pacific). Hashed before running.
+Same data, partitions, objective, scores and tolerances as T15 to T20. Adaptive (tenth round on seen data); not blind.
+
+WHY: the dwarf errors are dominated by a few systems. The lightest dwarfs (rule halo masses below about 10^8.5 Msun,
+32 of 75) sit on average 0.09 dex above the model (all data), and the most underpredicted ones (Carina III, Willman 1,
+Segue 1, Eridanus IV, Horologium I) all have rule halo masses of 10^7.3 to 10^7.9 Msun, below the scale where the first
+galaxies could form: a virial temperature of 1e4 K corresponds to about 1e7 to 1e8 Msun at z of 20 to 10 (Johnson 2013,
+Formation of the first galaxies, eq. 1). All-data checks, reported, not held out: a floor on the halo mass at 1e8 Msun
+lowers the dwarf error from 0.368 to 0.364 (10^8.5: 0.364; 10^9: 0.394); nothing else changes.
+Tidal truncation at the Jacobi radius at pericentre (pericentres from Pace, Erkal and Li 2022, Table 3, read through the
+browser on Gary's Mac, SHA-256 of the rows 610844...) changes almost nothing (0.3681 to 0.3674): only Antlia II is
+truncated inside its half-light radius; Crater II's Jacobi radius equals its half-light radius. Not run as a protocol.
+
+FORMULA (harness_T21.py): M_ref -> (M_ref^8 + M_min^8)^(1/8) on top of T19's formulas.
+CONFIGURATIONS
+MOGF@0.1    MOGC + M_min = 1e8 Msun        (5 coefficients)     run on Gary's Mac (4-core Linux workspace)
+MOGF85@0.1  MOGC + M_min = 10^8.5 Msun     (5)                  run on Gary's Mac
+MOGF0@0.1   MOG + M_min = 1e8 Msun         (4)                  run in the cloud
+Both masks. All reported. The Mac reproduced the cloud's all-data MOG fit to 6 digits before this protocol.
+
+PASS MARKS
+Progress over MOGC@0.1 (T19): better on at least 2 of the 6 scores and worse beyond tolerance on none (MOGF0 against
+MOG@0.1). Paired host bootstraps for the primary mask.

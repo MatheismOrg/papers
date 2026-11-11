@@ -1,0 +1,37 @@
+A19 protocol T37 (session SA73, overnight round 17, 7 November 2026, US Pacific). Hashed before any run.
+Does the expected halo given a galaxy's starlight and its sample's selection work as the formula's high-mass branch,
+held out, with the threshold refitted?
+
+WHY: T31 to T34 (all data, frozen coefficients, nothing fitted) found that one relation, the Moster et al. (2013)
+relation inverted with its scatter and the halo mass function, restricted to each sample's published halo selection,
+fits the SDSS red centrals of Mandelbaum et al. (2016) far better than the mean inversion, fits CLASH better (0.144 and
+0.107 dex at 100 to 600 kpc and at the centers, against 0.207 and 0.155 for the frozen formula) and keeps MaNGA within
+tolerance (0.120 against 0.114). Those were diagnostics at the frozen threshold M_t, and the CLASH and MaNGA ones
+averaged the prediction over the halo posterior. T37 builds the relation into the formula as one expected halo per
+galaxy (the posterior mean mass, as T31), refits M_t, and scores it held out.
+
+MODEL MOGF0IES (harness_T37.py; 4 coefficients, as T26)
+  M_ref = M_p/f_b + 10^A (M*/1e10)^B (R_e/3 kpc)^C + q M_E(M*, z | S),   q = (M*/M_p)^50 / [1 + (M_t/M*)^4],
+  M_halo = (M_ref^8 + (1e8 suns)^8)^(1/8); NFW, Dutton and Maccio (2014) concentration, Moline subhalo factor for
+  satellite dwarfs, no contraction; the IMF factors on the baryons of the MaNGA BCGs and the 16 early types as T26.
+  M_E is the posterior mean of M200c: the sum over a grid in log10 M200c from 9.0 to 16.5 (step 0.005) of M w(M),
+  divided by the sum of w(M), with w(M) = dn/dlnM (Tinker et al. 2008, colossus, the A19 Planck cosmology as T32)
+  x exp(-0.5 [(log10 M* - log10 M*_Moster(M, z)) / sigma]^2) x S(M), sigma = sqrt(0.15^2 + 0.10^2) dex (as T31 to T34).
+  S(M) = 1 if M200c > 5e14 suns, else 0, for the 20 CLASH clusters (Postman et al. 2012, as T32); S(M) = 1 if
+  M200c > 1e14 suns, else 0, for the 50 MaNGA BCGs (the MaNGA BCG program's aim, as T33); S = 1 for every other sample
+  (disks, dwarfs, early types and KiDS lenses, chosen by their light or not by their halos).
+  Below M* = 10^9.5 suns, M_E is the mean inversion used by T26 (the switch is below 1e-6 there).
+  Unchanged from T26: A, B, C fitted on each fold's training disks without the switch; log10 M_t fitted jointly on all
+  training systems at population weight 0.1, bounds 10 to 12.5.
+
+RUNS
+1. All-data check (describe24.py, primary mask) for T26 (MOGF0IE) and T37 (MOGF0IES); both reported.
+2. Held out: 60 partitions (3 disk-fold assignments x 5 folds x 4 KiDS lensing groups) on the primary and the stricter
+   mask (chunk_split.py; same fold maps, fits and losses as T26). Run whatever step 1 shows.
+
+TEST (held out, against T26's frozen formula MOGF0IE on the same 60 partitions)
+T37 passes if, on both masks, every population's score is within its tolerance of T26's (disks 1 percent, dwarfs
+2 percent, all others 5 percent, the lensing chi-square 5 percent), and the CLASH errors at 100 to 600 kpc and at the
+centers are each lower than T26's by more than 5 percent with paired host-bootstrap 95 percent intervals of the change
+below zero. If it passes, the formula's high-mass branch becomes T37's (no coefficient added). If any population is
+worse beyond its tolerance, it fails; the scores are reported either way, with every configuration run.

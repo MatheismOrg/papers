@@ -1,0 +1,11 @@
+FORECAST_T61 (SA73 T61), the eighth forecast of Section 5.7. Written 15:51 PST, 10 Nov 2026, after PROTOCOL_T61's held-out run and its
+outside checks (all marks met), for data not in hand.
+
+On at least ten gas-rich dwarf irregular or low-surface-brightness disk galaxies that are in neither SPARC nor Iorio et
+al. (2017), with resolved HI rotation curves corrected for asymmetric drift, 3.6 micron luminosities and sizes, all points
+kept whatever their velocity error, and inputs built as in FORECAST_T59 (stellar mass 0.5 L[3.6], gas 1.33 HI, M_p their
+sum): the formula with the core of PROTOCOL_T61, every coefficient frozen (A, B, C = 11.7481, 0.8178, -0.7119;
+t = 0.1501, kappa = 0.6229; core radius 1.75 R_e), has a host-balanced error lower than the formula without the core
+(T48), with the 95 percent range of the paired bootstrap difference over galaxies excluding zero, and lower than MOND's
+relation (a0 = 1.2e-10 m/s^2). If its error is higher than T48's, the core is wrong; if it is lower than T48's but not
+than MOND's, the core helps and the claim against MOND's relation on such points fails.

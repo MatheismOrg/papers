@@ -1,0 +1,49 @@
+{
+ "no core (T48)": {
+  "loss": 0.03057,
+  "kept": 0.1498,
+  "dropped": 0.3992,
+  "all": 0.2157
+ },
+ "formula, gas gate (T61)": {
+  "loss": 0.027,
+  "kept": 0.1495,
+  "dropped": 0.3418,
+  "all": 0.1894
+ },
+ "formula, any-gas gate (T65)": {
+  "loss": 0.0266,
+  "kept": 0.1497,
+  "dropped": 0.3383,
+  "all": 0.1859
+ },
+ "MOND": {
+  "loss": 0.02956,
+  "kept": 0.1546,
+  "dropped": 0.3639,
+  "all": 0.1996
+ },
+ "(a) published recipe in every disk": {
+  "loss": 0.03029,
+  "kept": 0.1643,
+  "dropped": 0.3231,
+  "all": 0.1908
+ },
+ "(b) published recipe in diffuse disks only": {
+  "loss": 0.03027,
+  "kept": 0.164,
+  "dropped": 0.3312,
+  "all": 0.1912
+ },
+ "(c) published recipe times min(L, 1)": {
+  "loss": 0.02884,
+  "kept": 0.1594,
+  "dropped": 0.3314,
+  "all": 0.1886
+ },
+ "n_published_percentiles_5_50_95": [
+  0.44,
+  0.59,
+  0.73
+ ]
+}

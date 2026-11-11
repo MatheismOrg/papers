@@ -1,0 +1,173 @@
+{
+ "dwarfs": {
+  "noise_median": 0.3828,
+  "noise68": [
+   0.2674,
+   0.4822
+  ],
+  "noise95": [
+   0.2173,
+   0.574
+  ],
+  "formula": {
+   "error": 0.37,
+   "p_noise_at_least": 0.552
+  },
+  "MOND": {
+   "error": 0.633,
+   "p_noise_at_least": 0.004
+  },
+  "standard": {
+   "error": 0.44,
+   "p_noise_at_least": 0.2605
+  }
+ },
+ "dwarfs_slope_logRe_fixed_Ms": {
+  "observed": -0.496,
+  "noise_median": -0.012,
+  "noise95": [
+   -0.27,
+   0.278
+  ],
+  "p_two_sided": 0.0
+ },
+ "MaNGA": {
+  "noise_median": 0.112,
+  "noise68": [
+   0.0991,
+   0.1261
+  ],
+  "noise95": [
+   0.0877,
+   0.143
+  ],
+  "formula": {
+   "error": 0.116,
+   "p_noise_at_least": 0.3915
+  },
+  "MOND": {
+   "error": 0.186,
+   "p_noise_at_least": 0.0
+  },
+  "standard": {
+   "error": 0.116,
+   "p_noise_at_least": 0.3915
+  },
+  "mean_offset": {
+   "observed": 0.032,
+   "noise95": [
+    -0.032,
+    0.028
+   ],
+   "p_two_sided": 0.035
+  }
+ },
+ "CLASH_centre": {
+  "noise_median": 0.1337,
+  "noise68": [
+   0.1115,
+   0.1603
+  ],
+  "noise95": [
+   0.0927,
+   0.1929
+  ],
+  "formula": {
+   "error": 0.102,
+   "p_noise_at_least": 0.9255
+  },
+  "MOND": {
+   "error": 0.46,
+   "p_noise_at_least": 0.0
+  },
+  "standard": {
+   "error": 0.102,
+   "p_noise_at_least": 0.9255
+  },
+  "mean_offset": {
+   "observed": 0.009,
+   "noise95": [
+    -0.062,
+    0.057
+   ],
+   "p_two_sided": 0.729
+  }
+ },
+ "CLASH_outer": {
+  "noise_median": 0.088,
+  "noise68": [
+   0.0782,
+   0.0994
+  ],
+  "noise95": [
+   0.0698,
+   0.1109
+  ],
+  "formula": {
+   "error": 0.1,
+   "p_noise_at_least": 0.151
+  },
+  "MOND": {
+   "error": 0.526,
+   "p_noise_at_least": 0.0
+  },
+  "standard": {
+   "error": 0.101,
+   "p_noise_at_least": 0.1275
+  },
+  "mean_offset": {
+   "observed": 0.069,
+   "noise95": [
+    -0.023,
+    0.023
+   ],
+   "p_two_sided": 0.0
+  }
+ },
+ "ETG": {
+  "noise_median": 0.1456,
+  "noise68": [
+   0.1255,
+   0.166
+  ],
+  "noise95": [
+   0.1074,
+   0.1877
+  ],
+  "formula": {
+   "error": 0.185,
+   "p_noise_at_least": 0.035
+  },
+  "MOND": {
+   "error": 0.182,
+   "p_noise_at_least": 0.045
+  },
+  "standard": {
+   "error": 0.182,
+   "p_noise_at_least": 0.045
+  }
+ },
+ "ETG_with_distance_on_inputs": {
+  "noise_median": 0.1462,
+  "noise68": [
+   0.1259,
+   0.1674
+  ],
+  "noise95": [
+   0.1057,
+   0.1909
+  ],
+  "formula": {
+   "error": 0.185,
+   "p_noise_at_least": 0.038
+  },
+  "MOND": {
+   "error": 0.182,
+   "p_noise_at_least": 0.0495
+  },
+  "standard": {
+   "error": 0.182,
+   "p_noise_at_least": 0.0495
+  }
+ }
+}

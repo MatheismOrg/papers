@@ -1,0 +1,29 @@
+A19 cross-scale protocol T17b (session SA73, turn 17, 6 November 2026, US Pacific). Hashed before running.
+Same data, partitions, objective, scores and tolerances as T15 to T17. Adaptive (sixth round on seen data); not blind.
+
+WHY: T17 (Moster evolution of the fitted giant-galaxy branch; gas-fraction concentration) gave no clean gain.
+All-data diagnostics since then (reported, not held out): an Einasto halo hurt disks (0.150 to 0.160);
+halo-mass scatter in the lensing stacks did not help; the Moster mass switched on by stellar mass alone hurt
+massive disks; switched on by size (or mass and size) it improved MaNGA and CLASH with disks unchanged.
+Known before the run: no disk, dwarf or early-type galaxy here has Re above 12.4 kpc; the MaNGA BCG median is
+12.6 kpc and the CLASH BCG median 26 kpc. A size switch therefore acts close to a population switch for BCGs.
+
+FORMULA
+M_ref = Mp/fb + 10^A (M*/1e10)^B (Re/3 kpc)^C + S x M_Moster(M*, z)
+A, B, C: the paper's rule, frozen on each fold's training disks (as T15c to T17).
+M_Moster: the published Moster, Naab and White (2013) halo mass for the stellar mass at the system's redshift,
+  with its redshift evolution (A19_Clusters_v5.moster_halo, evolve=True; two CLASH hosts reach its upper limit).
+Concentration: Dutton and Maccio (2014) at the system's redshift; satellites x Moline factor (as SUBH).
+Switch S (replaces T16's fitted three-coefficient branch):
+  MOSS: S = 1 / (1 + (R_t/Re)^8), one coefficient log10 R_t in [0, 2.5]. Steepness 8 fixed.
+  MOSH: S = 1 / (1 + 10^(-2 (log10 M* + g log10(Re/3 kpc) - h))), two coefficients h in [9, 30], g in [-3, 12]
+        (the mass-and-size form of SO73's high gate).
+
+CONFIGURATIONS
+MOSS@0.1  (4 coefficients in all)   MOSH@0.1  (5)   MOSS@1  (4)
+Both masks. All reported.
+
+PASS MARKS
+As T16 and T17: against the paper's rule (better on at least 4 of the 6 scores and worse beyond tolerance on none),
+and progress over SUBH@0.1 (better on at least 2 of the 6 and worse beyond tolerance on none).
+Paired host bootstraps against SUBH@0.1 for the primary mask.

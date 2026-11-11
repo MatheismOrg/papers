@@ -1,0 +1,281 @@
+primary fold_20261027 0 22.9
+primary fold_20261027 1 46.8
+primary fold_20261027 2 69.9
+primary fold_20261027 3 93.3
+primary fold_20261027 4 119.2
+primary fold_48105 0 142.9
+primary fold_48105 1 166.9
+primary fold_48105 2 192.3
+primary fold_48105 3 215.8
+primary fold_48105 4 238.1
+primary fold_7331 0 261.5
+primary fold_7331 1 282.3
+primary fold_7331 2 305.4
+primary fold_7331 3 330.5
+primary fold_7331 4 356.0
+{
+ "KNEE@0.1": {
+  "scores": {
+   "disk": 0.153885,
+   "dwarfs": 0.397297,
+   "ETG": 0.202495,
+   "MaNGA": 0.217501,
+   "CLASH": 0.286471,
+   "CLASH_centre": 0.183505,
+   "CLASH_outer": 0.313191,
+   "ETG_inner": 0.250159,
+   "ETG_outer": 0.139388
+  },
+  "lensing_chi2": 76.4663,
+  "lensing_by_group": [
+   33.175,
+   19.96,
+   9.9,
+   13.432
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "KNEE@1": {
+  "scores": {
+   "disk": 0.158657,
+   "dwarfs": 0.387164,
+   "ETG": 0.202413,
+   "MaNGA": 0.190239,
+   "CLASH": 0.224294,
+   "CLASH_centre": 0.157742,
+   "CLASH_outer": 0.241845,
+   "ETG_inner": 0.250181,
+   "ETG_outer": 0.139111
+  },
+  "lensing_chi2": 100.0436,
+  "lensing_by_group": [
+   34.336,
+   20.336,
+   9.894,
+   35.478
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "KNEEC@0.1": {
+  "scores": {
+   "disk": 0.155846,
+   "dwarfs": 0.424417,
+   "ETG": 0.203557,
+   "MaNGA": 0.232602,
+   "CLASH": 0.262022,
+   "CLASH_centre": 0.184673,
+   "CLASH_outer": 0.282972,
+   "ETG_inner": 0.252157,
+   "ETG_outer": 0.13888
+  },
+  "lensing_chi2": 63.3076,
+  "lensing_by_group": [
+   27.832,
+   16.971,
+   7.324,
+   11.18
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "KNEEC@1": {
+  "scores": {
+   "disk": 0.160001,
+   "dwarfs": 0.377864,
+   "ETG": 0.205031,
+   "MaNGA": 0.205673,
+   "CLASH": 0.217375,
+   "CLASH_centre": 0.151868,
+   "CLASH_outer": 0.234416,
+   "ETG_inner": 0.252747,
+   "ETG_outer": 0.142105
+  },
+  "lensing_chi2": 94.7182,
+  "lensing_by_group": [
+   32.049,
+   17.362,
+   7.572,
+   37.735
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "KNEEE@0.1": {
+  "scores": {
+   "disk": 0.155065,
+   "dwarfs": 0.397192,
+   "ETG": 0.203278,
+   "MaNGA": 0.222378,
+   "CLASH": 0.262615,
+   "CLASH_centre": 0.178001,
+   "CLASH_outer": 0.285545,
+   "ETG_inner": 0.251129,
+   "ETG_outer": 0.139922
+  },
+  "lensing_chi2": 45.4927,
+  "lensing_by_group": [
+   29.291,
+   9.474,
+   5.263,
+   1.465
+  ],
+  "bound_hit_partitions": 15,
+  "failed_attempts": 0
+ },
+ "KNEEE@1": {
+  "scores": {
+   "disk": 0.15884,
+   "dwarfs": 0.387989,
+   "ETG": 0.202847,
+   "MaNGA": 0.196808,
+   "CLASH": 0.215022,
+   "CLASH_centre": 0.157045,
+   "CLASH_outer": 0.231082,
+   "ETG_inner": 0.250915,
+   "ETG_outer": 0.139051
+  },
+  "lensing_chi2": 61.6483,
+  "lensing_by_group": [
+   27.245,
+   8.707,
+   4.63,
+   21.066
+  ],
+  "bound_hit_partitions": 15,
+  "failed_attempts": 0
+ },
+ "KNEES@0.1": {
+  "scores": {
+   "disk": 0.153277,
+   "dwarfs": 0.395387,
+   "ETG": 0.202844,
+   "MaNGA": 0.225965,
+   "CLASH": 0.245729,
+   "CLASH_centre": 0.157119,
+   "CLASH_outer": 0.266364,
+   "ETG_inner": 0.250147,
+   "ETG_outer": 0.140419
+  },
+  "lensing_chi2": 76.8946,
+  "lensing_by_group": [
+   33.168,
+   19.996,
+   9.964,
+   13.767
+  ],
+  "bound_hit_partitions": 5,
+  "failed_attempts": 0
+ },
+ "KNEES@1": {
+  "scores": {
+   "disk": 0.156861,
+   "dwarfs": 0.386372,
+   "ETG": 0.203003,
+   "MaNGA": 0.200308,
+   "CLASH": 0.196379,
+   "CLASH_centre": 0.141555,
+   "CLASH_outer": 0.209222,
+   "ETG_inner": 0.25025,
+   "ETG_outer": 0.140695
+  },
+  "lensing_chi2": 80.6878,
+  "lensing_by_group": [
+   34.112,
+   19.925,
+   9.835,
+   16.816
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "KNEESC@0.1": {
+  "scores": {
+   "disk": 0.154602,
+   "dwarfs": 0.430262,
+   "ETG": 0.203645,
+   "MaNGA": 0.241115,
+   "CLASH": 0.221273,
+   "CLASH_centre": 0.142927,
+   "CLASH_outer": 0.240435,
+   "ETG_inner": 0.251842,
+   "ETG_outer": 0.139707
+  },
+  "lensing_chi2": 65.5489,
+  "lensing_by_group": [
+   27.8,
+   17.185,
+   7.56,
+   13.004
+  ],
+  "bound_hit_partitions": 17,
+  "failed_attempts": 0
+ },
+ "KNEESC@1": {
+  "scores": {
+   "disk": 0.15743,
+   "dwarfs": 0.399433,
+   "ETG": 0.204234,
+   "MaNGA": 0.209235,
+   "CLASH": 0.192668,
+   "CLASH_centre": 0.13641,
+   "CLASH_outer": 0.206221,
+   "ETG_inner": 0.251439,
+   "ETG_outer": 0.142132
+  },
+  "lensing_chi2": 74.9811,
+  "lensing_by_group": [
+   31.811,
+   18.337,
+   8.557,
+   16.277
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "ORIG@0.1": {
+  "scores": {
+   "disk": 0.153672,
+   "dwarfs": 0.423868,
+   "ETG": 0.202111,
+   "MaNGA": 0.31813,
+   "CLASH": 0.684896,
+   "CLASH_centre": 0.373559,
+   "CLASH_outer": 0.760587,
+   "ETG_inner": 0.250387,
+   "ETG_outer": 0.137855
+  },
+  "lensing_chi2": 77.5885,
+  "lensing_by_group": [
+   33.161,
+   20.466,
+   10.615,
+   13.346
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "ORIG@disk": {
+  "scores": {
+   "disk": 0.153298,
+   "dwarfs": 0.406391,
+   "ETG": 0.203097,
+   "MaNGA": 0.32192,
+   "CLASH": 0.697873,
+   "CLASH_centre": 0.385867,
+   "CLASH_outer": 0.774209,
+   "ETG_inner": 0.249999,
+   "ETG_outer": 0.141412
+  },
+  "lensing_chi2": 78.9677,
+  "lensing_by_group": [
+   33.21,
+   20.892,
+   11.098,
+   13.768
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ }
+}

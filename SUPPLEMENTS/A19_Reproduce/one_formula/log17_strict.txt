@@ -1,0 +1,105 @@
+strict fold_20261027 0 5.5
+strict fold_20261027 1 11.6
+strict fold_20261027 2 16.3
+strict fold_20261027 3 22.3
+strict fold_20261027 4 27.8
+strict fold_48105 0 33.1
+strict fold_48105 1 38.3
+strict fold_48105 2 43.6
+strict fold_48105 3 48.9
+strict fold_48105 4 53.7
+strict fold_7331 0 59.4
+strict fold_7331 1 63.9
+strict fold_7331 2 68.6
+strict fold_7331 3 75.8
+strict fold_7331 4 80.8
+{
+ "GASC@0.1": {
+  "scores": {
+   "disk": 0.153629,
+   "dwarfs": 0.380242,
+   "ETG": 0.203065,
+   "MaNGA": 0.229261,
+   "CLASH": 0.255239,
+   "CLASH_centre": 0.167275,
+   "CLASH_outer": 0.276431,
+   "ETG_inner": 0.249992,
+   "ETG_outer": 0.141333
+  },
+  "lensing_chi2": 45.1494,
+  "lensing_by_group": [
+   29.254,
+   6.522,
+   4.681,
+   4.693
+  ],
+  "bound_hit_partitions": 7,
+  "failed_attempts": 0
+ },
+ "MZ@0.1": {
+  "scores": {
+   "disk": 0.153075,
+   "dwarfs": 0.380242,
+   "ETG": 0.203049,
+   "MaNGA": 0.240903,
+   "CLASH": 0.238384,
+   "CLASH_centre": 0.157278,
+   "CLASH_outer": 0.258239,
+   "ETG_inner": 0.249987,
+   "ETG_outer": 0.141294
+  },
+  "lensing_chi2": 45.7207,
+  "lensing_by_group": [
+   29.349,
+   6.72,
+   4.86,
+   4.792
+  ],
+  "bound_hit_partitions": 6,
+  "failed_attempts": 0
+ },
+ "MZGASC@0.1": {
+  "scores": {
+   "disk": 0.153151,
+   "dwarfs": 0.380242,
+   "ETG": 0.203048,
+   "MaNGA": 0.240854,
+   "CLASH": 0.23845,
+   "CLASH_centre": 0.157411,
+   "CLASH_outer": 0.258318,
+   "ETG_inner": 0.249987,
+   "ETG_outer": 0.141294
+  },
+  "lensing_chi2": 45.5398,
+  "lensing_by_group": [
+   29.252,
+   6.671,
+   4.838,
+   4.778
+  ],
+  "bound_hit_partitions": 7,
+  "failed_attempts": 0
+ },
+ "MZGASC@1": {
+  "scores": {
+   "disk": 0.154876,
+   "dwarfs": 0.380242,
+   "ETG": 0.202834,
+   "MaNGA": 0.22229,
+   "CLASH": 0.203623,
+   "CLASH_centre": 0.143325,
+   "CLASH_outer": 0.218361,
+   "ETG_inner": 0.249908,
+   "ETG_outer": 0.140815
+  },
+  "lensing_chi2": 54.3404,
+  "lensing_by_group": [
+   29.176,
+   7.609,
+   6.822,
+   10.733
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ }
+}

@@ -1,0 +1,39 @@
+primary fold_20261027 0 101.6
+primary fold_20261027 1 541.9
+primary fold_20261027 2 899.3
+primary fold_20261027 3 1199.9
+primary fold_20261027 4 1483.7
+primary fold_48105 0 1783.8
+primary fold_48105 1 1923.2
+primary fold_48105 2 2890.2
+primary fold_48105 3 2989.0
+primary fold_48105 4 3089.2
+primary fold_7331 0 3375.9
+primary fold_7331 1 3487.5
+primary fold_7331 2 3637.0
+primary fold_7331 3 3965.7
+primary fold_7331 4 4193.0
+{
+ "MOGHf@0.1": {
+  "scores": {
+   "disk": 0.15374,
+   "dwarfs": 0.381264,
+   "ETG": 0.201575,
+   "MaNGA": 0.164504,
+   "CLASH": 0.198349,
+   "CLASH_centre": 0.155956,
+   "CLASH_outer": 0.209548,
+   "ETG_inner": 0.246523,
+   "ETG_outer": 0.143149
+  },
+  "lensing_chi2": 67.879,
+  "lensing_by_group": [
+   29.672,
+   17.943,
+   8.827,
+   11.436
+  ],
+  "bound_hit_partitions": 20,
+  "failed_attempts": 1
+ }
+}

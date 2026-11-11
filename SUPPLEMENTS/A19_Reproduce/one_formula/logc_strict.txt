@@ -1,0 +1,127 @@
+strict fold_20261027 0 7.3
+strict fold_20261027 1 14.3
+strict fold_20261027 2 20.6
+strict fold_20261027 3 28.8
+strict fold_20261027 4 35.7
+strict fold_48105 0 43.3
+strict fold_48105 1 50.7
+strict fold_48105 2 58.3
+strict fold_48105 3 66.8
+strict fold_48105 4 73.2
+strict fold_7331 0 80.9
+strict fold_7331 1 87.1
+strict fold_7331 2 93.5
+strict fold_7331 3 102.8
+strict fold_7331 4 110.4
+{
+ "KNEESEZ@0.1": {
+  "scores": {
+   "disk": 0.154305,
+   "dwarfs": 0.396631,
+   "ETG": 0.203407,
+   "MaNGA": 0.231779,
+   "CLASH": 0.23218,
+   "CLASH_centre": 0.15204,
+   "CLASH_outer": 0.2517,
+   "ETG_inner": 0.251071,
+   "ETG_outer": 0.140399
+  },
+  "lensing_chi2": 33.0585,
+  "lensing_by_group": [
+   24.422,
+   4.004,
+   3.469,
+   1.163
+  ],
+  "bound_hit_partitions": 9,
+  "failed_attempts": 0
+ },
+ "KNEESFZ@0.1": {
+  "scores": {
+   "disk": 0.153538,
+   "dwarfs": 0.406391,
+   "ETG": 0.203066,
+   "MaNGA": 0.229383,
+   "CLASH": 0.255607,
+   "CLASH_centre": 0.167552,
+   "CLASH_outer": 0.276823,
+   "ETG_inner": 0.249992,
+   "ETG_outer": 0.141334
+  },
+  "lensing_chi2": 45.3395,
+  "lensing_by_group": [
+   29.348,
+   6.576,
+   4.707,
+   4.708
+  ],
+  "bound_hit_partitions": 7,
+  "failed_attempts": 0
+ },
+ "KNEESFZ@1": {
+  "scores": {
+   "disk": 0.156378,
+   "dwarfs": 0.406391,
+   "ETG": 0.202854,
+   "MaNGA": 0.205166,
+   "CLASH": 0.20991,
+   "CLASH_centre": 0.146967,
+   "CLASH_outer": 0.225096,
+   "ETG_inner": 0.249925,
+   "ETG_outer": 0.140843
+  },
+  "lensing_chi2": 54.6855,
+  "lensing_by_group": [
+   29.349,
+   7.044,
+   6.243,
+   12.049
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "KNEESZ@0.1": {
+  "scores": {
+   "disk": 0.15339,
+   "dwarfs": 0.395231,
+   "ETG": 0.202615,
+   "MaNGA": 0.227598,
+   "CLASH": 0.245937,
+   "CLASH_centre": 0.15794,
+   "CLASH_outer": 0.266813,
+   "ETG_inner": 0.250372,
+   "ETG_outer": 0.139355
+  },
+  "lensing_chi2": 40.5858,
+  "lensing_by_group": [
+   29.802,
+   4.06,
+   2.441,
+   4.282
+  ],
+  "bound_hit_partitions": 6,
+  "failed_attempts": 0
+ },
+ "ORIGZ@disk": {
+  "scores": {
+   "disk": 0.153298,
+   "dwarfs": 0.406391,
+   "ETG": 0.203097,
+   "MaNGA": 0.325378,
+   "CLASH": 0.705241,
+   "CLASH_centre": 0.416638,
+   "CLASH_outer": 0.777742,
+   "ETG_inner": 0.249999,
+   "ETG_outer": 0.141412
+  },
+  "lensing_chi2": 44.7314,
+  "lensing_by_group": [
+   29.348,
+   6.502,
+   4.494,
+   4.387
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ }
+}

@@ -1,0 +1,23 @@
+A19 cross-scale protocol T16 (session SA73, turn 16, 6 November 2026, US Pacific). Hashed before running.
+Builds on T15c's best formula, KNEESFZ: the paper's rule frozen on training disks, plus the high-mass branch
+10^A2 (M*/1e11)^B2 (Re/10 kpc)^C2, with the Dutton and Maccio (2014) concentration at each halo's redshift.
+Same data, partitions, objective, scores and tolerances as T15. Adaptive (fourth round on seen data); not blind.
+
+TWO PHYSICAL ADDITIONS, EACH PUBLISHED OR STANDARD
+1. Subhalo concentration (no new coefficient): a satellite inside its host's r200 has its concentration multiplied
+   by 1 - 0.54 log10(D/r200,host) (Moline et al. 2017), exactly as in protocol 4's exploratory variant E1
+   (A19_New_Dwarfs_v3.predict: Milky Way 1.0e12, M31 1.5e12 suns). Only dwarf satellites are affected.
+2. Redshift evolution of the high-mass branch (one coefficient): the branch is multiplied by (1+z)^D2, as abundance
+   matching finds central galaxies of given stellar mass in heavier halos at higher redshift. D2 in [-3, 3].
+
+CONFIGURATIONS
+SUBH@0.1   KNEESFZ + subhalo concentration                         (3 coefficients fitted beyond the frozen rule)
+ZEVO@0.1   KNEESFZ + (1+z)^D2                                      (4)
+BEST1@0.1  KNEESFZ + subhalo + (1+z)^D2                            (4)
+BEST1@1    the same at external weight 1                           (4)
+BEST1J@0.1 BEST1 with A, B, C refitted jointly (7 coefficients in all)
+Both masks. All reported.
+
+PASS MARKS
+As T15 against the paper's rule (ORIG@disk). Progress over T15: better than KNEESFZ@0.1 on at least two of the
+six main scores and worse than it on none beyond the T15 tolerances.

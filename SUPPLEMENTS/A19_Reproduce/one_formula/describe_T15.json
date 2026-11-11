@@ -1,0 +1,126 @@
+{
+ "ORIG@disk|primary": {
+  "coefficients": {
+   "A": 11.748054,
+   "B": 0.817829,
+   "C": -0.711865
+  },
+  "bound_hits": [],
+  "limits_exceeded": 2,
+  "lensing_chi2_all": 77.008
+ },
+ "KNEE@0.1|primary": {
+  "coefficients": {
+   "A": 11.721765,
+   "B": 0.806383,
+   "C": -0.765363,
+   "A2": 11.669702,
+   "B2": 4.342115
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "lensing_chi2_all": 75.798
+ },
+ "KNEES@0.1|primary": {
+  "coefficients": {
+   "A": 11.721064,
+   "B": 0.811915,
+   "C": -0.802167,
+   "A2": 12.181101,
+   "B2": 2.40439,
+   "C2": 2.457793
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "lensing_chi2_all": 76.002
+ },
+ "KNEES@1|primary": {
+  "coefficients": {
+   "A": 11.661149,
+   "B": 0.797984,
+   "C": -0.924297,
+   "A2": 12.665795,
+   "B2": 2.473831,
+   "C2": 1.47593
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "lensing_chi2_all": 77.23
+ },
+ "KNEEE@0.1|primary": {
+  "coefficients": {
+   "A": 11.57107,
+   "B": 0.717384,
+   "C": -0.686704,
+   "A2": 11.674581,
+   "B2": 4.226173,
+   "eta": 3.2239,
+   "logq": 0.04044
+  },
+  "bound_hits": [],
+  "limits_exceeded": 4,
+  "lensing_chi2_all": 37.644
+ },
+ "ORIG@disk|strict": {
+  "coefficients": {
+   "A": 11.748054,
+   "B": 0.817829,
+   "C": -0.711865
+  },
+  "bound_hits": [],
+  "limits_exceeded": 2,
+  "lensing_chi2_all": 52.386
+ },
+ "KNEE@0.1|strict": {
+  "coefficients": {
+   "A": 11.671934,
+   "B": 0.768223,
+   "C": -0.714092,
+   "A2": 11.695919,
+   "B2": 4.304725
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "lensing_chi2_all": 43.545
+ },
+ "KNEES@0.1|strict": {
+  "coefficients": {
+   "A": 11.670846,
+   "B": 0.773881,
+   "C": -0.753028,
+   "A2": 12.211144,
+   "B2": 2.353308,
+   "C2": 2.481879
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "lensing_chi2_all": 43.743
+ },
+ "KNEES@1|strict": {
+  "coefficients": {
+   "A": 11.616263,
+   "B": 0.773054,
+   "C": -0.897729,
+   "A2": 12.633177,
+   "B2": 2.509846,
+   "C2": 1.497875
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "lensing_chi2_all": 44.468
+ },
+ "KNEEE@0.1|strict": {
+  "coefficients": {
+   "A": 11.55703,
+   "B": 0.703968,
+   "C": -0.66939,
+   "A2": 11.664717,
+   "B2": 4.252757,
+   "eta": 1.392776,
+   "logq": -0.09602
+  },
+  "bound_hits": [],
+  "limits_exceeded": 4,
+  "lensing_chi2_all": 30.322
+ }
+}

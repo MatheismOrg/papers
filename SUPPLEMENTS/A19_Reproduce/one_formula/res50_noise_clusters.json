@@ -1,0 +1,53 @@
+{
+ "MaNGA": {
+  "observed": 0.1159777638831782,
+  "noise": 0.11197329305030072,
+  "p16_84": [
+   0.099,
+   0.1262
+  ],
+  "missing_err": 0,
+  "med_err_gbar": 0.09,
+  "med_err_gobs": 0.065,
+  "corr_gbar_obs": -0.5946758162686892,
+  "corr_gbar_noise": [
+   -0.484,
+   -0.168,
+   0.165
+  ]
+ },
+ "CLASH_centre": {
+  "observed": 0.10198664009551565,
+  "noise": 0.13480419814417263,
+  "p16_84": [
+   0.1104,
+   0.1611
+  ],
+  "missing_err": 0,
+  "med_err_gbar": 0.039,
+  "med_err_gobs": 0.1265,
+  "corr_gbar_obs": -0.0046678941148012845,
+  "corr_gbar_noise": [
+   -0.421,
+   -0.02,
+   0.379
+  ]
+ },
+ "CLASH_outer": {
+  "observed": 0.10018206182384819,
+  "noise": 0.08879282052874629,
+  "p16_84": [
+   0.0789,
+   0.0996
+  ],
+  "missing_err": 0,
+  "med_err_gbar": 0.004,
+  "med_err_gobs": 0.074,
+  "corr_gbar_obs": 0.15076862481271197,
+  "corr_gbar_noise": [
+   -0.287,
+   -0.011,
+   0.274
+  ]
+ }
+}

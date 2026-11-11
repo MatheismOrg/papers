@@ -1,0 +1,49 @@
+{
+ "t": 0.15009204027123663,
+ "kappa": 0.6229102156504864,
+ "n_disks": 149,
+ "n_points": 3138,
+ "n_kept": 2700,
+ "n_dropped": 438,
+ "n_gal_dropped": 114,
+ "T48": {
+  "kept": 0.1498,
+  "dropped": 0.3992,
+  "all": 0.2157,
+  "weighted_all": 0.1748,
+  "slow_dropped": 0.5465,
+  "dwarfs": 0.3639,
+  "ETG": 0.1851,
+  "MaNGA": 0.116,
+  "CLASH": 0.101,
+  "lens_primary": 63.19,
+  "lens_strict": 38.14
+ },
+ "T61": {
+  "kept": 0.1495,
+  "dropped": 0.3418,
+  "all": 0.1894,
+  "weighted_all": 0.1643,
+  "slow_dropped": 0.414,
+  "dwarfs": 0.3639,
+  "ETG": 0.1851,
+  "MaNGA": 0.116,
+  "CLASH": 0.101,
+  "lens_primary": 63.04,
+  "lens_strict": 38.08
+ },
+ "MOND": {
+  "kept": 0.1546,
+  "dropped": 0.3639,
+  "all": 0.1996,
+  "weighted_all": 0.1719,
+  "slow_dropped": 0.4585
+ },
+ "STD": {
+  "kept": 0.1655,
+  "dropped": 0.4074,
+  "all": 0.2289,
+  "weighted_all": 0.1897,
+  "slow_dropped": 0.5589
+ }
+}

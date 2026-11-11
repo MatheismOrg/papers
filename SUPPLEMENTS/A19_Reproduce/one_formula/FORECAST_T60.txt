@@ -1,0 +1,27 @@
+FORECAST_T60 (SA73 T60). Written 15:09 PST, 10 Nov 2026, after FORECAST_T59 was run and before anything below was computed.
+
+Where things stand. FORECAST_T59 as worded failed: with the benchmark's cut on velocity errors (10 percent) only three of
+the eight outside dwarf irregulars keep any point, and on those T57's error is 3.6 percent higher than T48's (paired
+range -0.020 to +0.033, not significant). After the fact, with the cut loosened so that all eight enter (86 points), T57
+is lower in seven of eight, by 13 percent (range -0.085 to -0.021). That variant was chosen after the worded result and
+is a lead, not a test. Two tests of it follow, fixed here.
+
+Part A, run now: the SPARC points that the benchmark never scored. The benchmark keeps points with velocity error at most
+10 percent of the velocity. The points it drops (error above 10 percent, positive velocity, positive baryonic V^2), in all
+175 SPARC galaxies, were not used to fit anything, the two numbers of T57 included; but their galaxies were, so Part A is
+not an outside test, only a test on unused points. T48 and T57 frozen (A, B, C = 11.7481, 0.8178, -0.7119; t = 0.361,
+s = 0.146), SPARC's own inputs, host-balanced rms of log10(g_obs / g_pred) over the galaxies with at least one such
+point. Forecast A: T57's error is lower than T48's, and the 95 percent range of the paired bootstrap difference over
+galaxies (10,000 draws) excludes zero. A higher error counts against the term; a lower error with a range that includes
+zero leaves it open. Reported alongside, without a forecast: the same for the galaxies in the benchmark and for those
+excluded from it separately, for galaxies with g L above the median of the nonzero values, and for MOND's relation and
+standard halos.
+
+Part B, a seventh forecast for data not in hand (F7). On at least ten gas-rich dwarf irregular or low-surface-brightness
+disk galaxies that are in neither SPARC nor Iorio et al. (2017), with resolved HI rotation curves corrected for asymmetric
+drift, 3.6 micron luminosities and sizes, all points kept whatever their velocity error, and inputs built as in
+FORECAST_T59 (stellar mass 0.5 L[3.6], gas 1.33 HI, M_p their sum): T57's host-balanced error is lower than T48's and the
+95 percent range of the paired bootstrap difference over galaxies excludes zero. If T57's error is higher, the term is
+wrong; if it is lower without excluding zero, it stays open.
+
+The formula of the paper stays T48 whatever the outcome of either part.

@@ -1,0 +1,76 @@
+{
+ "frozen": {
+  "t": 0.10068630691094416,
+  "kappa": 0.4002769528744507
+ },
+ "d_iorio_outside_all_points": {
+  "galaxies": 8,
+  "points": 86,
+  "H": 0.3074,
+  "T61": 0.3079,
+  "T48": 0.4108,
+  "MOND": 0.414,
+  "H_minus_T48": {
+   "pct": -25.18,
+   "boot95": [
+    -0.1649,
+    -0.0431
+   ],
+   "n_lower": 7,
+   "n_higher": 1
+  },
+  "H_minus_MOND": {
+   "pct": -25.76,
+   "boot95": [
+    -0.1676,
+    -0.0425
+   ],
+   "n_lower": 6,
+   "n_higher": 2
+  },
+  "H_minus_T61": {
+   "pct": -0.19,
+   "boot95": [
+    -0.0225,
+    0.0196
+   ],
+   "n_lower": 3,
+   "n_higher": 5
+  }
+ },
+ "e_sparc_outside_benchmark_all_points": {
+  "galaxies": 26,
+  "points": 251,
+  "H": 0.3921,
+  "T61": 0.392,
+  "T48": 0.4351,
+  "MOND": 0.4146,
+  "H_minus_T48": {
+   "pct": -9.89,
+   "boot95": [
+    -0.0672,
+    -0.0174
+   ],
+   "n_lower": 17,
+   "n_higher": 7
+  },
+  "H_minus_MOND": {
+   "pct": -5.43,
+   "boot95": [
+    -0.0379,
+    -0.0052
+   ],
+   "n_lower": 19,
+   "n_higher": 7
+  },
+  "H_minus_T61": {
+   "pct": 0.03,
+   "boot95": [
+    -0.004,
+    0.0048
+   ],
+   "n_lower": 14,
+   "n_higher": 10
+  }
+ }
+}

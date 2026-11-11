@@ -1,0 +1,24 @@
+{
+ "MOGF0IESBW@0.1": {
+  "scores": {
+   "disk": 0.153981,
+   "dwarfs": 0.768909,
+   "ETG": 0.185039,
+   "MaNGA": 0.115984,
+   "CLASH": 0.100995,
+   "CLASH_centre": 0.10198,
+   "CLASH_outer": 0.100182,
+   "ETG_inner": 0.220395,
+   "ETG_outer": 0.141086
+  },
+  "lensing_chi2": 64.2848,
+  "lensing_by_group": [
+   28.592,
+   17.01,
+   7.855,
+   10.828
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ }
+}

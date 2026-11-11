@@ -1,0 +1,92 @@
+{
+ "disk": {
+  "formula": 0.1531,
+  "MOND": 0.1546,
+  "formula_minus_MOND": -0.0015,
+  "ci95_MOND": [
+   -0.0112,
+   0.0084
+  ],
+  "LCDM": 0.1655,
+  "formula_minus_LCDM": -0.0124,
+  "ci95_LCDM": [
+   -0.0229,
+   -0.002
+  ]
+ },
+ "dwarfs": {
+  "formula": 0.3702,
+  "MOND": 0.633,
+  "formula_minus_MOND": -0.2627,
+  "ci95_MOND": [
+   -0.3526,
+   -0.1651
+  ],
+  "LCDM": 0.4399,
+  "formula_minus_LCDM": -0.0696,
+  "ci95_LCDM": [
+   -0.1184,
+   -0.0252
+  ]
+ },
+ "ETG": {
+  "formula": 0.1852,
+  "MOND": 0.1823,
+  "formula_minus_MOND": 0.0029,
+  "ci95_MOND": [
+   -0.0046,
+   0.0104
+  ],
+  "LCDM": 0.1818,
+  "formula_minus_LCDM": 0.0034,
+  "ci95_LCDM": [
+   -0.0084,
+   0.0135
+  ]
+ },
+ "MaNGA": {
+  "formula": 0.116,
+  "MOND": 0.1859,
+  "formula_minus_MOND": -0.07,
+  "ci95_MOND": [
+   -0.0881,
+   -0.0501
+  ],
+  "LCDM": 0.1163,
+  "formula_minus_LCDM": -0.0003,
+  "ci95_LCDM": [
+   -0.0005,
+   -0.0002
+  ]
+ },
+ "CLASH_centre": {
+  "formula": 0.102,
+  "MOND": 0.4603,
+  "formula_minus_MOND": -0.3583,
+  "ci95_MOND": [
+   -0.433,
+   -0.2822
+  ],
+  "LCDM": 0.1058,
+  "formula_minus_LCDM": -0.0038,
+  "ci95_LCDM": [
+   -0.0153,
+   0.0075
+  ]
+ },
+ "CLASH_outer": {
+  "formula": 0.1002,
+  "MOND": 0.5258,
+  "formula_minus_MOND": -0.4257,
+  "ci95_MOND": [
+   -0.4498,
+   -0.3991
+  ],
+  "LCDM": 0.1337,
+  "formula_minus_LCDM": -0.0335,
+  "ci95_LCDM": [
+   -0.0463,
+   -0.0213
+  ]
+ }
+}

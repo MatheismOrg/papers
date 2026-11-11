@@ -1,0 +1,30 @@
+A19 cross-scale protocol T24 (session SA73, overnight round 4, 7 November 2026, US Pacific). Hashed before running.
+Same data, partitions, objective, scores and tolerances as T15 to T22, except the one change below. Adaptive (twelfth
+round on seen data); not blind. This round tests the baryons, not the halo formula.
+
+WHY: with T21's MOGF, the MaNGA central galaxies sit 0.135 dex above the model on average (all data); the offset is
+most of their error (rms 0.173). Massive early-type galaxies have heavier stellar mass-to-light ratios than a Chabrier
+or Kroupa IMF gives, rising with velocity dispersion: log alpha = (0.38 +/- 0.04) log10(sigma_e/200 km/s) + (-0.06 +/-
+0.01), alpha relative to Salpeter, rms 0.12 dex (Posacki et al. 2015, MNRAS 446, 493; ATLAS3D and SLACS). The MaNGA
+masses (Tian et al. 2024, constant mass-to-light, r band 3.1 on average) are taken to be on a Chabrier-like scale.
+Converting with Madau and Dickinson (2014): Chabrier masses / 0.61 and Kroupa masses / 0.66 give Salpeter masses.
+At the median dispersion (272 km/s) the factor is 1.6 (Chabrier) or 1.5 (Kroupa).
+All-data checks, reported, not held out (MOGF refitted on all data, primary mask): MaNGA 0.173 to 0.112 (mean +0.135 to
++0.009) for Chabrier, 0.114 (mean +0.032) for Kroupa; ETG 0.2012 to 0.2016, CLASH 0.1953 to 0.1956, lensing 67.89 to
+67.83, disks and dwarfs unchanged; the contraction strength s falls from 0.173 to 0.136. Not fitted: no coefficient is
+added, the IMF relation and conversions are published values.
+
+CHANGE (harness_T24.py): the 50 MaNGA points' g_bar times alpha_IMF = 10^(0.38 log10(sigma/200) - 0.06 + delta), sigma
+= each BCG's <sigma_los> (Tian et al. 2024, Table 1) for sigma_e; delta = 0.215 (Chabrier) or 0.180 (Kroupa). Stellar
+masses in the halo formula stay on the published scale (as for the disks the rule was set on). The formula is T21's
+MOGF, unchanged.
+CONFIGURATIONS
+MOGFI@0.1  through harness_T24C.py (Chabrier, delta = 0.215)   (5 coefficients, as MOGF)
+MOGFK@0.1  through harness_T24K.py (Kroupa, delta = 0.180)     (5)
+Both masks. All reported. Run on Gary's Mac (4-core Linux workspace) with chunk_run.py, as T21.
+
+PASS MARKS
+The IMF account passes if the held-out MaNGA error falls below MOGF@0.1's (T21) by more than the 5 percent tolerance
+and no other score is worse beyond tolerance. Paired host bootstrap for MaNGA on the primary mask. A pass supports the
+IMF reading of the offset; it does not change the halo formula. Caveat: the held-out MaNGA systems keep their measured
+dispersions, so this tests a published relation, not a prediction from starlight alone.

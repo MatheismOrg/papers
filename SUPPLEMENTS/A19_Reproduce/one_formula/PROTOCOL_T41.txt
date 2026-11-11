@@ -1,0 +1,11 @@
+A19 protocol T41 (session SA73, overnight round 21, 7 November 2026, US Pacific). Hashed before the run.
+Sensitivity of the T37 formula to the halo mass function in its expected-halo branch.
+
+Four halo mass functions for M200c from colossus, at the A19 Planck cosmology: Tinker et al. 2008 (T37's), Despali et al.
+2016, Watson et al. 2013 (spherical-overdensity version) and Bocquet et al. 2016 (hydrodynamic, with baryons). Everything
+else as T37 (harness_T41.py patches only the mass function in harness_T37, via the environment variable A19_HMF).
+1. All data, primary mask: M_t refitted (describe24.py), all five populations and the lensing chi-square.
+2. Unfitted checks at each all-data M_t: Mandelbaum et al. 2016 red-central rms (as T38) and the HeCS blind-test numbers
+   for the selected branch (mean, rms; as T40, same data files), the latter now a sensitivity check, not a test.
+The T37 result is robust to the mass function if every population's all-data score stays within its tolerance of the
+Tinker 2008 value (disks 1 percent, dwarfs 2, others 5, lensing 5) for all three alternatives. All numbers reported.

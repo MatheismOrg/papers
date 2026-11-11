@@ -1,0 +1,82 @@
+{
+ "all 75": {
+  "n": 75,
+  "slope": -0.496,
+  "ci95": [
+   -0.821,
+   -0.229
+  ],
+  "rms": 0.364,
+  "mean": -0.035
+ },
+ "Milky Way satellites with orbits": {
+  "n": 36,
+  "slope": -0.543,
+  "ci95": [
+   -0.938,
+   -0.168
+  ],
+  "rms": 0.362,
+  "mean": 0.002
+ },
+ "  pericenter < 50 kpc": {
+  "n": 20,
+  "slope": -0.556,
+  "ci95": [
+   -1.124,
+   -0.097
+  ],
+  "rms": 0.417,
+  "mean": -0.03
+ },
+ "  pericenter >= 50 kpc": {
+  "n": 16,
+  "slope": -0.433,
+  "ci95": [
+   -1.084,
+   0.147
+  ],
+  "rms": 0.279,
+  "mean": 0.042
+ },
+ "no orbit (M31 satellites, field, others)": {
+  "n": 39,
+  "slope": -0.408,
+  "ci95": [
+   -1.038,
+   -0.022
+  ],
+  "rms": 0.365,
+  "mean": -0.069
+ },
+ "dispersion error < 20%": {
+  "n": 35,
+  "slope": -0.488,
+  "ci95": [
+   -0.956,
+   -0.09
+  ],
+  "rms": 0.3,
+  "mean": -0.066
+ },
+ "dispersion error < 20%, not pericenter < 50": {
+  "n": 26,
+  "slope": -0.571,
+  "ci95": [
+   -0.983,
+   -0.193
+  ],
+  "rms": 0.256,
+  "mean": -0.041
+ },
+ "dispersion error < 10%": {
+  "n": 13,
+  "slope": -0.344,
+  "ci95": [
+   -1.141,
+   -0.121
+  ],
+  "rms": 0.219,
+  "mean": -0.09
+ }
+}

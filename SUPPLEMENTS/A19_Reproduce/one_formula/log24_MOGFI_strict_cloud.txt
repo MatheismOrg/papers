@@ -1,0 +1,9 @@
+strict MOGFI@0.1 fold_48105 1 128.9
+strict MOGFI@0.1 fold_48105 2 293.9
+strict MOGFI@0.1 fold_48105 3 371.2
+strict MOGFI@0.1 fold_48105 4 460.1
+strict MOGFI@0.1 fold_7331 0 566.9
+strict MOGFI@0.1 fold_7331 1 684.2
+strict MOGFI@0.1 fold_7331 2 763.6
+strict MOGFI@0.1 fold_7331 3 944.9
+strict MOGFI@0.1 fold_7331 4 1155.2

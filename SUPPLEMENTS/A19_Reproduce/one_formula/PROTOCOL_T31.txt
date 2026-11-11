@@ -1,0 +1,21 @@
+A19 protocol T31 (session SA73, overnight round 11, 7 November 2026, US Pacific). Hashed before any prediction.
+Is T30's miss a selection effect? Same data and frozen formula as T30 (FROZEN_T26_candidate.json, eaecf32e...).
+
+WHY: T30 found that the frozen formula's high-mass branch, the Moster relation inverted at its mean, overshoots the mean
+lensing halo masses of SDSS red centrals selected by stellar mass (Mandelbaum et al. 2016) by 0.46, 0.74 and 0.97 dex at
+10^11.29, 10^11.48 and 10^11.68 suns, while it fits samples selected as cluster centrals. For a galaxy chosen by its
+stellar mass, the expected halo follows from the relation's scatter and the halo mass function, as in the paper's
+sixth protocol: prior = Tinker et al. (2008) dn/dlnM (200 times critical, colossus), likelihood = Gaussian in log M*
+about the Moster relation with sigma = sqrt(0.15^2 + 0.10^2) dex (Moster's 0.15 dex scatter plus 0.10 dex for
+photometric stellar masses, the value the paper's sixth protocol uses for CLASH).
+
+PREDICTION (diag_mandelbaum_scatter.py): for each red and blue bin (VAGC masses, effective redshifts), the posterior
+mean of M200m (h^-1 suns, NFW with Dutton and Maccio concentration, converted with colossus as the paper does), and the
+frozen formula with its Moster term replaced by that posterior mean (M200c), all else as T30. Mandelbaum's values are
+lensing-weighted means, compared directly.
+
+TEST
+Selection reading supported if, for the three red bins above 10^11.2 suns, the scatter-aware formula is within 0.2 dex
+or twice the error of every measured value, where the mean inversion (T30) was not. Reported for all 14 bins. This
+changes no score of the benchmark; the paper's sixth protocol already showed the scatter-aware inversion worsens the
+cluster-selected samples (0.29 against 0.19 dex over the 70 MaNGA and CLASH systems).

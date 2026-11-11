@@ -1,0 +1,25 @@
+A19 cross-scale protocol T20 (session SA73, overnight round 1 after turn 19, 6 November 2026, US Pacific). Hashed before running.
+Same data, partitions, objective, scores and tolerances as T15 to T19. Adaptive (ninth round on seen data); not blind.
+
+WHY: T19's best formula (MOGC: paper's rule + Moster mass for gas-poor galaxies above M_t + contraction where baryons
+dominate) has two fixed choices in its switch, the gas exponent k = 50 and the mass steepness n = 4, and keeps only the
+contraction branch of Cautun et al. (2020). This round checks that the gain over T17b does not hinge on those choices.
+
+Checks since T19, all data, reported, not held out: (1) KiDS early/late lensing split (Brouwer et al. 2021 Fig. 8, never
+fitted): measured 0.206 dex (colour) and 0.162 (Sersic); predicted 0.050 (paper's rule), 0.048 (T17b), 0.065 (T19);
+chi-square of the measured difference 16.4, 17.1, 13.8 (colour). (2) A type rule from published relations only (gas-poor
+galaxies above 10^10.3 get at least twice the rule's mass, Mandelbaum et al. 2016, or Moster's mass if larger) is refuted
+by the lensing amplitude: red lenses already match the rule; at 2x, lensing 122 and the red profile chi-square 76 (5.5 for
+T19). The split comes from blue lenses lying below the rule, as protocol 9 found.
+
+CONFIGURATIONS (harness_T20.py; one fitted coefficient log10 M_t unless noted)
+MOGa@0.1  k = 20,  n = 4
+MOGb@0.1  k = 100, n = 4
+MOGd@0.1  k = 50,  n = 2
+MOGe@0.1  k = 50,  n = 8
+MOGC2@0.1 k = 50,  n = 4, two-way contraction F(eta)^s (expansion kept where eta < 1); s fitted (two coefficients)
+Both masks. All reported.
+
+PASS MARKS
+Robustness: each MOG variant within the T15 tolerances of T19's MOG@0.1 on all six scores. MOGC2: progress over MOSS@0.1
+as in T19. Paired host bootstraps against MOG@0.1 (T19) for the primary mask.

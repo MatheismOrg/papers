@@ -1,0 +1,15 @@
+A19 cross-scale protocol T15b: adaptive follow-up (session SA73, turn 15, 6 November 2026, US Pacific).
+Written after seeing the T15 results and hashed before running. Same data, partitions, objective, scores and
+pass marks as T15 (PROTOCOL_T15.txt); harness_T15_hashed.py is imported unchanged.
+
+WHY
+In T15 the high-mass branch with its own size term (KNEES, 6 coefficients) passed the improvement mark on both masks
+but left the lensing profile almost untouched, while SO73 T53's Plummer envelope (KNEEE) cut lensing chi-square
+to 45.5 at a disk cost beyond tolerance. Two follow-ups only:
+
+KNEESE:  KNEES plus the Plummer envelope (eta, log q).                                       8 coefficients
+KNEESF:  the paper's rule frozen at its training-disk fit (A, B, C from ORIG@disk in each partition), plus the
+         high-mass branch 10^A2 (M*/1e11)^B2 (Re/10 kpc)^C2 fitted with the T15 objective. 6 coefficients,
+         3 of them fitted on disks alone, exactly as in the paper.
+
+Both at w = 0.1 and 1, both masks. Everything reported. These are adaptive choices on reused data.

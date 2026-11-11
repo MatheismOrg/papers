@@ -1,0 +1,74 @@
+A19 protocol T64 (session SA73, round 30, the twentieth protocol; written and hashed 2026-11-10 22:46 PST, US Pacific). Hashed before any
+held-out run of these models. Gary (10 Nov, 22:34), "go", to the offer of 22:02: test dark-matter particle types (fuzzy,
+warm, self-interacting) in the A19 harness, as the bridge from A19 to the theory-of-everything rounds (T63).
+
+QUESTION: the final formula (T62) carries a core that is set by a galaxy's gas and diffuseness (T61) and is absent from
+gas-free systems. Three kinds of dark-matter particle also change the inside of a halo, each by a rule that depends on the
+halo and not on the gas, and each with one number that must be the same in every halo. Does any of them, with its number
+set on the training disks and carried unchanged to every population, do what the gas-gated core does?
+
+ALL-DATA LOOKS BEFORE THIS FILE (not tests; A, B, C frozen at the all-disk values; t64/unit64.py, explore64.py,
+alldata64.py): unit checks (cold limits reproduce T48; the soliton reproduces Schive et al.'s core masses). On all points
+of the 149 benchmark disks with T61's weights, the fuzzy model's loss is lowest at the cold end of its range for every
+particle mass looked at (0.0306 = T48; 0.0313 at 1e-20 eV, 0.0427 at 1e-22 eV), and the warm model's is lowest at a
+half-mode mass of 10^9.16 suns (0.0289 against 0.0306; benchmark points 0.149, dropped 0.38, all 0.207), where the dwarf
+spheroidals' all-data error rises from 0.364 to about 0.75. On all data, taken alone, the dwarf spheroidals would choose
+a fuzzy mass near 3e-20 eV (0.351 against 0.364) and the early types one near 2e-22 eV (0.165 against 0.185). The
+self-interacting model was run on 30 hosts for timing only; no score was looked at. T46 (benchmark points only): the
+training disks chose no self-interaction in all 60 partitions, and 2 cm^2/g raised the dwarf error from 0.364 to 0.518.
+
+MODELS. Base: T48 (MOGF0IESB), the formula without its core. In EVERY halo, in place of the gated core:
+ F, fuzzy (harness_T64.py, MOGF0IESBF): the soliton of Schive et al. (2014, PRL 113, 261302): density
+    1.9e7 m22^-2 (r_c/kpc)^-4 [1 + 0.091 (r/r_c)^2]^-8 Msun/kpc^3, r_c = 1.6 kpc m22^-1 a^(1/2) [zeta(z)/zeta(0)]^(-1/6)
+    (M_h/1e9 Msun)^(-1/3), M_h the formula's halo mass, inside 3 r_c; the formula's NFW halo outside, enclosed mass
+    continuous. One number: log10 m22 in [-1, 6] (m22 in 1e-22 eV; 6 is the cold end). Lensing unchanged.
+ W, warm (harness_T64.py, MOGF0IESBW): concentration times (1 + 15 M_hm/M)^(-0.3) (Schneider et al. 2012, MNRAS 424, 684),
+    galaxies and lensing alike. One number: log10 M_hm in [3, 12.5] (3 is the cold end).
+ S, self-interacting (t64/sidm64.py with dmfit/sidm46.py, unchanged from T46): isothermal Jeans cores with baryons
+    (Kaplinghat, Tulin and Yu 2016; Ren et al. 2019), sigma/m = s0 / (1 + (v/344 km/s)^2) cm^2/g, 10 Gyr (5 Gyr for
+    cluster-scale halos). One number: s0 on the grid 0, 0.03, 0.1, 0.3, 1, 2, 5, 10. Lensing unchanged.
+FIT. F and W: A, B, C on the training disks' benchmark points exactly as T48; then the particle number on ALL points of the
+same training disks with T61's weights (1 / (sigma_V^2 + 0.131^2), each galaxy's weights summing to the same); M_t as
+T45. S: the same weighted loss on the training disks chooses s0 from the grid; A, B, C at the all-disk values and
+M_t = 11.339, as in T46 (slightly optimistic on held-out disks for every s0 alike; S is compared with its own s0 = 0).
+
+RUN. F and W: chunk_split.py, the same 60 partitions, main and stricter masks, configs MOGF0IESBF@0.1 and MOGF0IESBW@0.1;
+then t64/heldout64.py (dropped points and all points of the held-out disks; paired host bootstrap, 10,000 draws, against
+T48, against the gated core T61 with that partition's t and kappa, and against MOND's relation). S: t64/sidm64.py on all
+hosts, then t64/sidm64_heldout.py (the 15 disk partitions; every population's held-out hosts at the chosen s0 and at 0).
+
+PASS (preset), for each of F, W, S, the three marks of PROTOCOL_T61, which the gated core met:
+ (a) every benchmark score within its tolerance of T48 (disks 1 percent, dwarfs 2, early types, MaNGA, CLASH centers and
+     CLASH 100 to 600 kpc 5, lensing 5), on both masks for F and W; for S against its own s0 = 0, lensing unchanged;
+ (b) held-out dropped points of the benchmark disks: lower than T48 (for S, than s0 = 0) with the paired 95 percent
+     interval below zero, and lower than MOND's relation;
+ (c) held-out, all points of the benchmark disks: the same two conditions.
+A model that meets (a), (b) and (c) does what the gated core does, and is then compared with it head to head on the
+held-out all points (paired interval). A model whose training disks choose its cold end in a majority of partitions is
+reported as "not chosen": it then equals T48 and fails (b) and (c) by construction. A model that meets (b) and (c) but
+not (a) "fits the disks and fails elsewhere", and the population that fails is named.
+READING, fixed in advance: if none of F, W, S meets the three marks, then on this benchmark the cores follow the gas and
+not the halo, and these three particle readings, in their published dark-matter-only forms, are not what makes them. That
+is evidence for a cold, collisionless particle with cores made by the baryons, not proof: see the caveats. If one meets
+them, it is a candidate reading of the core and is reported as such, for Gary to decide.
+
+EXPECTATION, stated in advance: F not chosen (cold end in most partitions). W chosen near 10^9.2 suns (about 2 keV for a
+thermal relic), with held-out disks' all points near 0.207 against 0.218 for T48 and 0.193 for the gated core, and the
+held-out dwarf error more than doubled: fails (a), and (b) against MOND's relation. S: s0 of 0 or one of the smallest
+grid values in most partitions; if a larger one is chosen, dwarfs fail (a).
+
+OUTSIDE CHECKS (t64/outside64.py; S from sidm64.py's table), every number frozen at its all-data value: (d) the eight
+dwarf irregulars of Iorio et al. (2017) outside SPARC, every point; (e) the 26 SPARC galaxies outside the benchmark, every
+point. Reported for each model against T48, the gated core and MOND's relation. No forecast beyond the expectation above.
+
+REPORTED WITHOUT MARKS (descriptive, all data; t64/describe64.py): the fuzzy model with the soliton joined at 2 and at 4
+core radii; the value each population alone would choose for each particle number; the warm number as a thermal relic
+mass (M_hm = 1.3e10/h suns at 1 keV, falling as the mass to the power -3.33); published limits on the three numbers.
+
+CAVEATS FIXED IN ADVANCE: retrospective (round 30 on these data). The gated core is the incumbent: its gate and form were
+chosen on these data in T61, and it has two fitted numbers against one for each particle model; its outside checks were
+forecast and met. The particle recipes are the published dark-matter-only ones: the fuzzy soliton relation ignores the
+baryons' pull on the soliton and tidal stripping of satellites; the warm model changes concentrations only (its own cores
+are parsecs wide); the self-interacting model has no core collapse, spherical baryons, and a fixed fall of the
+cross-section with speed. The halo masses are the formula's, fitted with no particle effect. A failure here is a failure
+of these forms on this benchmark.

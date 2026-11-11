@@ -1,0 +1,1 @@
+{"module": "harness_T41", "model": "MOGF0IES", "th": [11.1853], "bound_hits": [], "disk": 0.1498, "dwarfs": 0.3639, "ETG": 0.1853, "MaNGA": 0.1165, "CLASH": 0.1284, "MaNGA_mean": 0.0337, "lens": 67.68}

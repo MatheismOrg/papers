@@ -1,0 +1,21 @@
+A19 protocol T30 (session SA73, overnight round 10, 7 November 2026, US Pacific). Hashed before any prediction.
+Out-of-sample test of the frozen T26 formula (FROZEN_T26_candidate.json, SHA-256 eaecf32e...) against the galaxy-galaxy
+lensing halo masses of SDSS central galaxies (Mandelbaum et al. 2016, MNRAS 457, 3200; data/Lensing/
+mandelbaum2016_central_halos.csv of the A19 package, as in the paper's eighth protocol). No overnight fit used these data;
+they motivated the gas-poor switch qualitatively (passive centrals sit in heavier halos) but set no number.
+
+PREDICTIONS (diag_mandelbaum.py). For each red and blue bin: stellar mass = the VAGC effective mass (the paper's
+canonical choice), redshift = the bin's effective lens redshift. Blue (star-forming) centrals carry cold gas from the
+disks' HI-mass scaling and the disks' size scaling, as in the paper's eighth protocol. Red (passive) centrals have no
+cold gas, so the switch's gas factor is 1, and half the disks' size at the same stellar mass, as in the paper's eighth
+protocol; the disks' size is reported as a sensitivity case. Halo: the frozen formula's M_halo with A, B, C = 11.7481,
+0.8178, -0.7119 and log10 M_t = 11.1868, NFW with the Dutton and Maccio (2014) concentration at the bin's redshift,
+converted from 200 times critical to 200 times mean density in h^-1 suns (h = 0.673) with colossus, as the paper does.
+Mandelbaum's values are lensing-weighted mean halo masses, which exceed typical masses by roughly 0.05 to 0.1 dex; the
+comparison leaves this uncorrected, as the paper does.
+
+TESTS (all reported)
+R: red centrals, all seven bins (10^10.28 to 10^11.68 suns): each within 0.2 dex or twice its error.
+B: blue centrals below 10^11.4 suns (the paper's criterion A): each within 0.2 dex or twice its error.
+S: the red-to-blue halo-mass split at 10^10.7 to 10^11.2 suns, predicted against measured.
+For comparison only: the paper's rule (no switch) and the Moster relation alone, from the paper's eighth-protocol code.

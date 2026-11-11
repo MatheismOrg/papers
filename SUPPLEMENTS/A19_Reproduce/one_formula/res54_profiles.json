@@ -1,0 +1,92 @@
+{
+ "nfw": {
+  "abc": [
+   11.747,
+   0.8171,
+   -0.7123
+  ],
+  "disk": 0.1498,
+  "dwarfs": 0.364,
+  "ETG": 0.185,
+  "MaNGA": 0.116,
+  "CLASH_centre": 0.102,
+  "CLASH_outer": 0.1002,
+  "disk_galaxy_means": 0.1307,
+  "disk_within": 0.0733,
+  "disk_slope_median": 0.042,
+  "disk_slope_sd": 0.253,
+  "disk_slope_vs_logMs": -0.41,
+  "disk_stack": [
+   -0.054,
+   -0.032,
+   -0.015,
+   0.005,
+   0.013,
+   0.018,
+   0.005,
+   -0.015
+  ],
+  "dwarf_mean": -0.036,
+  "dwarf_slope_logRe_at_fixed_Ms": -0.497
+ },
+ "dc14": {
+  "abc": [
+   11.6018,
+   0.9054,
+   0.404
+  ],
+  "disk": 0.1828,
+  "dwarfs": 0.443,
+  "ETG": 0.1914,
+  "MaNGA": 0.2357,
+  "CLASH_centre": 0.4835,
+  "CLASH_outer": 0.2574,
+  "disk_galaxy_means": 0.1644,
+  "disk_within": 0.0798,
+  "disk_slope_median": -0.025,
+  "disk_slope_sd": 0.287,
+  "disk_slope_vs_logMs": -0.562,
+  "disk_stack": [
+   0.013,
+   0.022,
+   0.017,
+   0.016,
+   0.005,
+   -0.006,
+   -0.022,
+   -0.029
+  ],
+  "dwarf_mean": 0.242,
+  "dwarf_slope_logRe_at_fixed_Ms": -0.405
+ },
+ "corenfw": {
+  "abc": [
+   11.8367,
+   0.6809,
+   -0.3026
+  ],
+  "disk": 0.1577,
+  "dwarfs": 0.3998,
+  "ETG": 0.1853,
+  "MaNGA": 0.1339,
+  "CLASH_centre": 0.1623,
+  "CLASH_outer": 0.1018,
+  "disk_galaxy_means": 0.1395,
+  "disk_within": 0.0736,
+  "disk_slope_median": -0.097,
+  "disk_slope_sd": 0.232,
+  "disk_slope_vs_logMs": -0.055,
+  "disk_stack": [
+   -0.001,
+   0.03,
+   0.028,
+   0.019,
+   -0.0,
+   -0.011,
+   -0.021,
+   -0.029
+  ],
+  "dwarf_mean": 0.066,
+  "dwarf_slope_logRe_at_fixed_Ms": -0.69
+ }
+}

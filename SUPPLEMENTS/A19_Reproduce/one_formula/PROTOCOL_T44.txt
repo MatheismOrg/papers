@@ -1,0 +1,18 @@
+A19 protocol T44 (session SA73, overnight round 24, 7 November 2026, US Pacific). Hashed before any run of this model.
+Lensing stacks average over all haloes; the concentrations A19 uses are for relaxed haloes.
+
+WHY: Dutton and Maccio (2014), the concentration relation used everywhere in A19, describes relaxed haloes ("We present
+the evolution of the structure of relaxed cold dark matter haloes"; about 80 percent of their haloes qualify at z = 0).
+A stack of isolated lens galaxies averages over all haloes of a given mass, relaxed or not. Rotation-curve samples
+(SPARC disks, early types with regular HI) are chosen for regular kinematics, CLASH for relaxed X-ray morphology, and the
+dwarfs, early types and MaNGA BCGs are fitted one by one; they keep the relaxed relation. A look at all data before this
+protocol (explore_cscan.py, logx_cscan_*) found that a global concentration change helps no set of populations together
+(dwarfs, MaNGA and CLASH prefer higher concentrations, the KiDS stacks lower, the disks Dutton and Maccio's), and per-stack
+fits of the KiDS profiles prefer concentrations lower by 0.09 to 0.27 dex at fixed mass.
+MODEL MOGF0IESR (harness_T44.py): T43's MOGF0IESG with one change: for the KiDS lens stacks only, each halo's
+concentration is multiplied by the all-to-relaxed ratio of median concentrations of Neto et al. (2007, MNRAS 381, 1450,
+Millennium Simulation): c_all/c_relaxed = (4.67/5.26) (M200 h / 10^14 M_sun)^(-0.11 + 0.10), about 0.93 (-0.03 dex) at
+10^12 suns. Nothing fitted; 4 coefficients as T43.
+RUNS: all-data check (describe24.py, primary), then held out, 60 partitions, primary and stricter masks (chunk_split.py).
+TEST: T44 passes if, on both masks, every population is within its tolerance of T43's held-out score (disks 1 percent,
+dwarfs 2, others 5, lensing 5) and the lensing chi-square is lower than T43's on both masks. All numbers reported.

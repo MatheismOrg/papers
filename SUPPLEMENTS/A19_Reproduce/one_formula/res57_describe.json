@@ -1,0 +1,94 @@
+{
+ "final formula": {
+  "abc": [
+   11.747,
+   0.817,
+   -0.712
+  ],
+  "mu": 1.0,
+  "s": 0.0,
+  "disk": 0.1498,
+  "dwarfs": 0.3641,
+  "ETG": 0.185,
+  "MaNGA": 0.116,
+  "CLASH_centre": 0.102,
+  "CLASH_outer": 0.1002,
+  "lens_primary": 63.3,
+  "lens_strict": 38.0,
+  "dwarf_slope": -0.5,
+  "within_disk": 0.0733,
+  "slope_vs_mass": -0.41,
+  "inner_stack": -0.039,
+  "red_chi2": 61.4,
+  "blue_chi2": 11.9
+ },
+ "bigger (mu)": {
+  "abc": [
+   11.602,
+   1.0,
+   -1.363
+  ],
+  "mu": 4.41,
+  "s": 0.0,
+  "disk": 0.1486,
+  "dwarfs": 0.3427,
+  "ETG": 0.1907,
+  "MaNGA": 0.1161,
+  "CLASH_centre": 0.102,
+  "CLASH_outer": 0.1004,
+  "lens_primary": 71.8,
+  "lens_strict": 37.4,
+  "dwarf_slope": -0.21,
+  "within_disk": 0.0731,
+  "slope_vs_mass": -0.4,
+  "inner_stack": -0.041,
+  "red_chi2": 57.8,
+  "blue_chi2": 9.4
+ },
+ "looser (s)": {
+  "abc": [
+   11.789,
+   0.647,
+   -0.486
+  ],
+  "mu": 1.0,
+  "s": 0.114,
+  "disk": 0.1485,
+  "dwarfs": 0.4303,
+  "ETG": 0.1824,
+  "MaNGA": 0.116,
+  "CLASH_centre": 0.102,
+  "CLASH_outer": 0.1003,
+  "lens_primary": 66.4,
+  "lens_strict": 36.8,
+  "dwarf_slope": -0.74,
+  "within_disk": 0.0688,
+  "slope_vs_mass": -0.25,
+  "inner_stack": -0.036,
+  "red_chi2": 79.7,
+  "blue_chi2": 12.5
+ },
+ "bigger and looser": {
+  "abc": [
+   11.597,
+   0.882,
+   -1.272
+  ],
+  "mu": 6.11,
+  "s": 0.082,
+  "disk": 0.1476,
+  "dwarfs": 0.3521,
+  "ETG": 0.1874,
+  "MaNGA": 0.1161,
+  "CLASH_centre": 0.102,
+  "CLASH_outer": 0.1005,
+  "lens_primary": 79.4,
+  "lens_strict": 39.6,
+  "dwarf_slope": -0.31,
+  "within_disk": 0.07,
+  "slope_vs_mass": -0.29,
+  "inner_stack": -0.038,
+  "red_chi2": 75.9,
+  "blue_chi2": 10.4
+ }
+}

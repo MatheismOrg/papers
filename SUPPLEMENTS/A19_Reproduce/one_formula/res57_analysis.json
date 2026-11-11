@@ -1,0 +1,398 @@
+{
+ "MOGF0IESBD|primary": {
+  "disk": {
+   "T48": 0.1533,
+   "T57": 0.1513,
+   "pct": -1.26,
+   "boot95": [
+    -0.0054,
+    0.0017
+   ],
+   "p_not_better": 0.1401,
+   "within_tol": true
+  },
+  "disk_n_better": [
+   54,
+   149
+  ],
+  "dwarfs": {
+   "T48": 0.3702,
+   "T57": 0.3702,
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "ETG": {
+   "T48": 0.1852,
+   "T57": 0.1852,
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "MaNGA": {
+   "T48": 0.116,
+   "T57": 0.116,
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "CLASH_centre": {
+   "T48": 0.102,
+   "T57": 0.102,
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "CLASH_outer": {
+   "T48": 0.1002,
+   "T57": 0.1002,
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "lensing": {
+   "T48": 64.67,
+   "T57": 63.84,
+   "pct": -1.29,
+   "within_tol": true
+  },
+  "fit": {
+   "t_median": 0.35,
+   "t_range": [
+    0.242,
+    0.53
+   ],
+   "s_median": 0.141,
+   "s_range": [
+    0.104,
+    0.211
+   ],
+   "C_range": [
+    -0.91,
+    -0.49
+   ],
+   "bound_hits": 0
+  },
+  "all_within_tolerance": true,
+  "disk_gain_beyond_1pct": true,
+  "disk_boot_below_zero": false,
+  "PASS": false
+ },
+ "MOGF0IESBD|strict": {
+  "disk": {
+   "T48": 0.1533,
+   "T57": 0.1513,
+   "pct": -1.26,
+   "boot95": [
+    -0.0054,
+    0.0017
+   ],
+   "p_not_better": 0.1401,
+   "within_tol": true
+  },
+  "disk_n_better": [
+   54,
+   149
+  ],
+  "dwarfs": {
+   "T48": 0.3702,
+   "T57": 0.3702,
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "ETG": {
+   "T48": 0.1852,
+   "T57": 0.1852,
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "MaNGA": {
+   "T48": 0.116,
+   "T57": 0.116,
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "CLASH_centre": {
+   "T48": 0.102,
+   "T57": 0.102,
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "CLASH_outer": {
+   "T48": 0.1002,
+   "T57": 0.1002,
+   "pct": 0.0,
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "lensing": {
+   "T48": 39.43,
+   "T57": 38.81,
+   "pct": -1.58,
+   "within_tol": true
+  },
+  "fit": {
+   "t_median": 0.35,
+   "t_range": [
+    0.242,
+    0.53
+   ],
+   "s_median": 0.141,
+   "s_range": [
+    0.104,
+    0.211
+   ],
+   "C_range": [
+    -0.91,
+    -0.49
+   ],
+   "bound_hits": 0
+  },
+  "all_within_tolerance": true,
+  "disk_gain_beyond_1pct": true,
+  "disk_boot_below_zero": false,
+  "PASS": false
+ },
+ "MOGF0IESBD5|primary": {
+  "disk": {
+   "T48": 0.1533,
+   "T57": 0.1532,
+   "pct": -0.02,
+   "boot95": [
+    -0.0042,
+    0.0041
+   ],
+   "p_not_better": 0.4827,
+   "within_tol": true
+  },
+  "disk_n_better": [
+   74,
+   149
+  ],
+  "dwarfs": {
+   "T48": 0.3702,
+   "T57": 0.391,
+   "pct": 5.6,
+   "boot95": [
+    0.0038,
+    0.0394
+   ],
+   "p_not_better": 0.992,
+   "within_tol": false
+  },
+  "ETG": {
+   "T48": 0.1852,
+   "T57": 0.1866,
+   "pct": 0.77,
+   "boot95": [
+    -0.0008,
+    0.0038
+   ],
+   "p_not_better": 0.8984,
+   "within_tol": true
+  },
+  "MaNGA": {
+   "T48": 0.116,
+   "T57": 0.116,
+   "pct": 0.04,
+   "boot95": [
+    0.0,
+    0.0001
+   ],
+   "p_not_better": 0.9999,
+   "within_tol": true
+  },
+  "CLASH_centre": {
+   "T48": 0.102,
+   "T57": 0.102,
+   "pct": 0.02,
+   "boot95": [
+    -0.0,
+    0.0001
+   ],
+   "p_not_better": 0.829,
+   "within_tol": true
+  },
+  "CLASH_outer": {
+   "T48": 0.1002,
+   "T57": 0.1003,
+   "pct": 0.13,
+   "boot95": [
+    0.0001,
+    0.0002
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "lensing": {
+   "T48": 64.67,
+   "T57": 66.39,
+   "pct": 2.67,
+   "within_tol": true
+  },
+  "fit": {
+   "t_median": 0.412,
+   "t_range": [
+    0.115,
+    0.758
+   ],
+   "s_median": 0.159,
+   "s_range": [
+    0.104,
+    0.272
+   ],
+   "C_range": [
+    -1.23,
+    -0.48
+   ],
+   "bound_hits": 0
+  },
+  "all_within_tolerance": false,
+  "disk_gain_beyond_1pct": false,
+  "disk_boot_below_zero": false,
+  "PASS": false
+ },
+ "MOGF0IESBD5|strict": {
+  "disk": {
+   "T48": 0.1533,
+   "T57": 0.1532,
+   "pct": -0.02,
+   "boot95": [
+    -0.0042,
+    0.0041
+   ],
+   "p_not_better": 0.4827,
+   "within_tol": true
+  },
+  "disk_n_better": [
+   74,
+   149
+  ],
+  "dwarfs": {
+   "T48": 0.3702,
+   "T57": 0.391,
+   "pct": 5.6,
+   "boot95": [
+    0.0038,
+    0.0394
+   ],
+   "p_not_better": 0.992,
+   "within_tol": false
+  },
+  "ETG": {
+   "T48": 0.1852,
+   "T57": 0.1866,
+   "pct": 0.77,
+   "boot95": [
+    -0.0008,
+    0.0038
+   ],
+   "p_not_better": 0.8984,
+   "within_tol": true
+  },
+  "MaNGA": {
+   "T48": 0.116,
+   "T57": 0.116,
+   "pct": 0.04,
+   "boot95": [
+    0.0,
+    0.0001
+   ],
+   "p_not_better": 0.9999,
+   "within_tol": true
+  },
+  "CLASH_centre": {
+   "T48": 0.102,
+   "T57": 0.102,
+   "pct": 0.02,
+   "boot95": [
+    -0.0,
+    0.0001
+   ],
+   "p_not_better": 0.829,
+   "within_tol": true
+  },
+  "CLASH_outer": {
+   "T48": 0.1002,
+   "T57": 0.1003,
+   "pct": 0.13,
+   "boot95": [
+    0.0001,
+    0.0002
+   ],
+   "p_not_better": 1.0,
+   "within_tol": true
+  },
+  "lensing": {
+   "T48": 39.43,
+   "T57": 37.79,
+   "pct": -4.15,
+   "within_tol": true
+  },
+  "fit": {
+   "t_median": 0.412,
+   "t_range": [
+    0.115,
+    0.758
+   ],
+   "s_median": 0.159,
+   "s_range": [
+    0.104,
+    0.272
+   ],
+   "C_range": [
+    -1.23,
+    -0.48
+   ],
+   "bound_hits": 0
+  },
+  "all_within_tolerance": false,
+  "disk_gain_beyond_1pct": false,
+  "disk_boot_below_zero": false,
+  "PASS": false
+ }
+}

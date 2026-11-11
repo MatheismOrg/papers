@@ -1,0 +1,39 @@
+strict fold_20261027 0 74.1
+strict fold_20261027 1 250.1
+strict fold_20261027 2 590.9
+strict fold_20261027 3 756.8
+strict fold_20261027 4 876.2
+strict fold_48105 0 986.5
+strict fold_48105 1 1142.7
+strict fold_48105 2 1316.6
+strict fold_48105 3 1390.9
+strict fold_48105 4 1491.4
+strict fold_7331 0 1655.5
+strict fold_7331 1 1735.6
+strict fold_7331 2 1795.0
+strict fold_7331 3 1949.8
+strict fold_7331 4 2145.0
+{
+ "MOGH5@0.1": {
+  "scores": {
+   "disk": 0.153615,
+   "dwarfs": 0.380788,
+   "ETG": 0.201829,
+   "MaNGA": 0.169164,
+   "CLASH": 0.202674,
+   "CLASH_centre": 0.156918,
+   "CLASH_outer": 0.214574,
+   "ETG_inner": 0.246697,
+   "ETG_outer": 0.143565
+  },
+  "lensing_chi2": 50.5274,
+  "lensing_by_group": [
+   29.03,
+   8.124,
+   5.985,
+   7.389
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ }
+}

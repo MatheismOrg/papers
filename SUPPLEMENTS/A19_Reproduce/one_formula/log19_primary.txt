@@ -1,0 +1,105 @@
+primary fold_20261027 0 81.4
+primary fold_20261027 1 242.6
+primary fold_20261027 2 319.1
+primary fold_20261027 3 429.7
+primary fold_20261027 4 530.0
+primary fold_48105 0 602.7
+primary fold_48105 1 698.7
+primary fold_48105 2 815.3
+primary fold_48105 3 908.1
+primary fold_48105 4 1019.1
+primary fold_7331 0 1107.7
+primary fold_7331 1 1190.9
+primary fold_7331 2 1266.0
+primary fold_7331 3 1404.8
+primary fold_7331 4 1543.4
+{
+ "MOG@0.1": {
+  "scores": {
+   "disk": 0.153208,
+   "dwarfs": 0.380242,
+   "ETG": 0.202578,
+   "MaNGA": 0.184396,
+   "CLASH": 0.196686,
+   "CLASH_centre": 0.154656,
+   "CLASH_outer": 0.207858,
+   "ETG_inner": 0.249882,
+   "ETG_outer": 0.140125
+  },
+  "lensing_chi2": 71.9629,
+  "lensing_by_group": [
+   30.37,
+   18.503,
+   9.076,
+   14.014
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "MOGC@0.1": {
+  "scores": {
+   "disk": 0.153274,
+   "dwarfs": 0.380272,
+   "ETG": 0.201027,
+   "MaNGA": 0.172605,
+   "CLASH": 0.196051,
+   "CLASH_centre": 0.156495,
+   "CLASH_outer": 0.206633,
+   "ETG_inner": 0.246181,
+   "ETG_outer": 0.142191
+  },
+  "lensing_chi2": 71.7438,
+  "lensing_by_group": [
+   30.46,
+   18.538,
+   9.11,
+   13.636
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "MOGC@1": {
+  "scores": {
+   "disk": 0.154881,
+   "dwarfs": 0.380331,
+   "ETG": 0.199075,
+   "MaNGA": 0.149461,
+   "CLASH": 0.193062,
+   "CLASH_centre": 0.15977,
+   "CLASH_outer": 0.202121,
+   "ETG_inner": 0.237924,
+   "ETG_outer": 0.150513
+  },
+  "lensing_chi2": 76.6566,
+  "lensing_by_group": [
+   30.637,
+   18.611,
+   9.224,
+   18.185
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ },
+ "MOSC@0.1": {
+  "scores": {
+   "disk": 0.153888,
+   "dwarfs": 0.380268,
+   "ETG": 0.201766,
+   "MaNGA": 0.206511,
+   "CLASH": 0.205231,
+   "CLASH_centre": 0.151477,
+   "CLASH_outer": 0.218546,
+   "ETG_inner": 0.247153,
+   "ETG_outer": 0.142599
+  },
+  "lensing_chi2": 70.2814,
+  "lensing_by_group": [
+   30.44,
+   18.53,
+   9.099,
+   12.213
+  ],
+  "bound_hit_partitions": 0,
+  "failed_attempts": 0
+ }
+}

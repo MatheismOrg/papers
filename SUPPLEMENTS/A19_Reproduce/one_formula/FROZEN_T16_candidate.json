@@ -1,0 +1,15 @@
+{
+ "name": "A19 one-formula candidate T16 (SUBH, w = 0.1): paper rule + high-mass branch + published concentrations",
+ "frozen_at": "2026-11-06 US Pacific, session SA73 turn 16, after the T16 cross-validation",
+ "formula": "M_ref = Mp/fb + 10^A (M*/1e10 Msun)^B (Re/3 kpc)^C + 10^A2 (M*/1e11 Msun)^B2 (Re/10 kpc)^C2; NFW, dark mass (1-fb) M_ref inside r200 at the halo redshift; log10 c = 0.520 + 0.385 exp(-0.617 z^1.21) + (-0.101 + 0.026 z) log10(M_ref h/1e12 Msun) (Dutton and Maccio 2014); a satellite inside its host r200 has c multiplied by 1 - 0.54 log10(D/r200,host) (Moline et al. 2017; host M200 1.0e12 for the Milky Way, 1.5e12 for M31); fb = 0.049/0.3175, h = 0.671",
+ "coefficients": {
+  "A": 11.7481,
+  "B": 0.8178,
+  "C": -0.7119,
+  "A2": 12.0629,
+  "B2": 2.63,
+  "C2": 2.5098
+ },
+ "dwarf_upper_limits_exceeded": 3,
+ "status": "retrospective and adaptive (fourth round on seen data); frozen here for a blind test on new systems"
+}

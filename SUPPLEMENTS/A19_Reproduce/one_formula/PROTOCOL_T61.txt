@@ -1,0 +1,58 @@
+A19 protocol T61 (session SA73, round 29, written and hashed 2026-11-10 15:48 PST, US Pacific). Hashed before any held-out run of this
+model. Gary (10 Nov, 15:41), on the points the benchmark's quality cut removes, where MOND's relation does better: "can u
+improve to beat mond?"
+
+WHY: FORECAST_T60 Part A: on the 582 SPARC points with velocity errors above 10 percent, MOND's relation scores 0.381, the
+final formula (T48) 0.416; T57's looser halos recover two thirds of the difference. Check since then, no formula
+(t59/drift61.py): on the seven galaxies shared with Iorio et al. (2017), SPARC's speeds at the dropped points agree with
+the drift-corrected ones (median ratio 1.00; 1.05 below 30 km/s), so the slow centers are real, not pressure support.
+All-data looks since then (t61/explore61.py, explore61b.py, explore61c.py, describe61.py; not tests), A, B, C frozen:
+a core beats T57's lower concentration on the dropped points at the same error on the benchmark's points; the gate g L
+does better than g alone; fitted on the benchmark's points only (t 0.09, kappa 0.30) the core ties MOND's relation on the
+dropped points; fitted on all points with error weights (t 0.150, kappa 0.623) the 149 disks give: benchmark points
+0.1498 -> 0.1495 (MOND 0.1546), dropped points 0.399 -> 0.342 (MOND 0.364), all points 0.2157 -> 0.1894 (MOND 0.1996),
+lensing 63.19 -> 63.04 and 38.14 -> 38.08; dwarfs, early types, MaNGA and CLASH unchanged by construction.
+
+MODEL (harness_T61.py), MOGF0IESBC. For light-selected systems, with g = M_gas/M_p, L = -log10 min(Sigma*/Sigma_p, 1),
+Sigma* = M*/(2 pi R_e^2), Sigma_p = 1e10/(2 pi 9) Msun/kpc^2, w = g L (the variable of T57):
+   M_ref -> M_ref x 10^(t w);   M_DM(<r) = M_NFW(<r) x tanh(r / (1.75 R_e))^n,  n = tanh(kappa w).
+The profile is coreNFW (Read, Agertz and Collins 2016) with their core radius, 1.75 half-light radii; the strength n is set
+here by w in place of their star-formation time. Lensing takes the mass term only (its radii lie far outside the cores).
+A, B, C: the paper's rule on the training disks' benchmark points, exactly as T48. Then t and kappa on ALL points of the
+same training disks (positive radius, speed and baryonic V^2, no cut on the velocity error), each point weighted by
+1 / (sigma_V^2 + sigma_0^2), sigma_V = (2 / ln 10) eV / V, sigma_0 = 0.131 dex (the galaxy-to-galaxy scatter of Section
+5.5), each galaxy's weights summing to the same. M_t on the red centrals as T45. Fitted to the benchmark: 5 coefficients
+(A, B, C, t, kappa). Fixed in advance: core radius 1.75 R_e, sigma_0, the gate.
+
+RUN: chunk_split.py, the same 60 partitions, main and stricter masks, config MOGF0IESBC@0.1. Then t61/heldout61.py: with
+each partition's coefficients, the held-out disks' dropped points and all points; each disk is held out once per fold
+assignment and its three mean squared errors are averaged; host-balanced rms; paired host bootstrap (10,000 draws) against
+T48 with the same A, B, C, against MOND's relation and against standard halos.
+
+PASS (preset):
+ (a) on both masks every benchmark score within its tolerance of T48 (disks 1 percent, dwarfs 2, early types, MaNGA,
+     CLASH centers and CLASH 100 to 600 kpc 5, lensing 5);
+ (b) held-out dropped points of the benchmark disks: T61 lower than T48 with the paired 95 percent interval below zero,
+     and lower than MOND's relation;
+ (c) held-out, all points of the benchmark disks: the same two conditions.
+"Beats MOND's relation" is claimed on a set only where the paired 95 percent interval of T61 minus MOND lies below zero;
+a lower error whose interval includes zero is "matches".
+If (a), (b) and (c) hold, T61 is a candidate to replace T48, for Gary to decide; otherwise T48 stays and T61 is reported
+as tried.
+EXPECTATION, stated in advance: (a) holds, the disks within 0.7 percent of T48 either way; dropped points near 0.345
+against 0.366 for MOND's relation and 0.40 for T48; all points near 0.191 against 0.200 and 0.216.
+
+OUTSIDE CHECKS (t61/outside61.py), A, B, C frozen at 11.7481, 0.8178, -0.7119 and t, kappa at the all-data values
+0.1501, 0.6229:
+ (d) the eight dwarf irregulars of Iorio et al. (2017) outside SPARC, inputs exactly as FORECAST_T59, every point kept.
+     Forecast: T61 lower than T48 and lower than MOND's relation. Not blind to the kind of term: these galaxies were
+     scored with T57 after the fact (0.411 -> 0.357; MOND 0.414).
+ (e) the 26 SPARC galaxies outside the benchmark (quality flag 3, inclination below 30 degrees, or no benchmark point),
+     every point. Forecast: T61 lower than T48 and lower than MOND's relation. Their dropped points were part of
+     FORECAST_T60 Part A.
+Reported without a forecast: both with the benchmark's cut; the seven galaxies shared with SPARC; standard halos; T57.
+
+CAVEATS FIXED IN ADVANCE: retrospective (round 29 on these data; the dropped points were first scored in T60, and about a
+dozen core forms were looked at on all data before this file); the gate g L is inherited from T57, which missed its mark;
+the fit of t and kappa uses points the benchmark drops, weighted by their errors, and the weights use the observed speeds;
+two more coefficients than T48; the outside samples are small and (d) is not blind.

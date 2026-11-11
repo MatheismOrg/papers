@@ -1,0 +1,119 @@
+{
+ "name": "A19 one-formula candidate T37 (MOGF0IES, w = 0.1): paper rule + the expected halo given a galaxy's starlight and its sample's selection for gas-poor galaxies above M_t + halo floor; no contraction; baryons of spheroids with a measured dispersion carry the observed IMF trend",
+ "frozen_at": "2026-11-07 03:55 PST, session SA73 overnight, after T37 (held out, PROTOCOL_T37) and T38 (unfitted checks, PROTOCOL_T38)",
+ "halo_formula": "M_ref = Mp/fb + 10^A (M*/1e10 Msun)^B (Re/3 kpc)^C + q M_E(M*, z | S), q = (M*/Mp)^50 / (1 + (M_t/M*)^4); M_halo = (M_ref^8 + (1e8 Msun)^8)^(1/8); M_E = posterior mean of M200c on a grid in log10 M200c from 9.0 to 16.5 (step 0.005) with weight dn/dlnM (Tinker et al. 2008, colossus, H0 67.1, Om 0.3175, Ob 0.049, sigma8 0.8344, ns 0.9624) x exp(-0.5 [(log10 M* - log10 M*_Moster(M200c, z))/0.180]^2) x S(M200c) (Moster, Naab and White 2013 with redshift evolution; 0.180 = sqrt(0.15^2 + 0.10^2) dex); below M* = 10^9.5 Msun M_E is the mean inversion; NFW with dark mass (1-fb) M_halo inside r200 at the halo redshift, Dutton and Maccio (2014) concentration, satellites x (1 - 0.54 log10(D/r200,host)) (Moline et al. 2017); no contraction; fb = 0.049/0.3175, h = 0.671; lensing M_p as a point mass",
+ "selection_S": {
+  "CLASH clusters": "M200c > 5e14 Msun (Postman et al. 2012: X-ray selected, kT > 5 keV)",
+  "MaNGA BCGs": "M200c > 1e14 Msun (the MaNGA BCG program's aim)",
+  "every other sample (disks, dwarfs, early types, KiDS and SDSS lenses)": "none (chosen by their light, not their halos)"
+ },
+ "baryons": "as T26: stellar g_bar of spheroids with a measured velocity dispersion x alpha_IMF = 10^(0.38 log10(sigma_e/200 km/s) - 0.06 + 0.215) (Posacki et al. 2015; Chabrier scale via Madau and Dickinson 2014), for the 50 MaNGA BCGs and the 16 SPARC early types",
+ "coefficients_all_data_primary": {
+  "A": 11.7481,
+  "B": 0.8178,
+  "C": -0.7119,
+  "log10_Mt": 11.1768
+ },
+ "fixed": {
+  "M_min_Msun": 100000000.0,
+  "gas_exponent": 50,
+  "gate_steepness": 4,
+  "sigma_logMstar_dex": 0.1803
+ },
+ "coefficient_count": "4 (A, B, C set on disks alone; log10 M_t from the joint fit); the selection thresholds are taken from the surveys, not fitted",
+ "all_data_scores_primary": {
+  "disk": 0.1498,
+  "dwarfs": 0.3639,
+  "ETG": 0.1853,
+  "MaNGA": 0.1173,
+  "CLASH": 0.1293,
+  "lensing_chi2": 67.69
+ },
+ "held_out_primary": {
+  "disk": 0.1532,
+  "dwarfs": 0.3702,
+  "ETG": 0.1854,
+  "MaNGA": 0.1176,
+  "CLASH_outer": 0.1364,
+  "CLASH_centre": 0.105,
+  "lensing_chi2": 69.54,
+  "log10_Mt_median": 11.166,
+  "log10_Mt_range": [
+   10.953,
+   11.352
+  ],
+  "bound_hits": 0
+ },
+ "held_out_strict": {
+  "disk": 0.1533,
+  "dwarfs": 0.3702,
+  "ETG": 0.1852,
+  "MaNGA": 0.1197,
+  "CLASH_outer": 0.1421,
+  "CLASH_centre": 0.1048,
+  "lensing_chi2": 45.45,
+  "log10_Mt_median": 11.303,
+  "log10_Mt_range": [
+   11.167,
+   11.388
+  ],
+  "bound_hits": 0
+ },
+ "bootstrap_vs_T26": {
+  "primary": {
+   "CLASH_outer": [
+    -0.0723,
+    -0.1203,
+    -0.0201
+   ],
+   "CLASH_centre": [
+    -0.0498,
+    -0.0985,
+    -0.0012
+   ],
+   "MaNGA": [
+    0.0034,
+    -0.0073,
+    0.0152
+   ]
+  },
+  "strict": {
+   "CLASH_outer": [
+    -0.0727,
+    -0.1204,
+    -0.0201
+   ],
+   "CLASH_centre": [
+    -0.0509,
+    -0.0995,
+    -0.0028
+   ],
+   "MaNGA": [
+    0.0032,
+    -0.0077,
+    0.0148
+   ]
+  }
+ },
+ "unfitted_checks_T38": {
+  "mandelbaum_red_rms_dex": 0.141,
+  "mandelbaum_red_rms_T26": 0.5,
+  "mandelbaum_blue_rms_dex": 0.183,
+  "bins_within_mark": "12 of 14 (red 10^11.48 +0.23 against 0.20; blue 10^10.56 +0.34, the rule's known miss)",
+  "kids_split_S_model": 0.064,
+  "kids_split_S_data": {
+   "colour": 0.2062,
+   "sersic": 0.1616
+  },
+  "milky_way_M_halo": 1834000000000.0
+ },
+ "dwarf_upper_limits_exceeded": "3 of 10 (unchanged: the switch is zero for dwarfs)",
+ "caveats": [
+  "adaptive: the relation was found on these data (T31 to T34, all data) before it was built in; T37 tests only that it survives the refit of M_t held out",
+  "MaNGA depends on the program's stated threshold: at 10^13.8 suns it scores 0.123 to 0.125 (T34)",
+  "CLASH's selection is stated in temperature (kT > 5 keV); 5e14 suns M200c is its mass equivalent; the gain holds from 3e14 to 7e14 (T34)",
+  "lensing remains the weakest score (69.5 against 49.1 for an 18-coefficient mixture); the KiDS early/late split stays about a third of the measured one",
+  "the early types' inner points are ATLAS3D JAM values, which Posacki et al. used"
+ ],
+ "status": "retrospective and adaptive; frozen here for a blind test on new systems"
+}

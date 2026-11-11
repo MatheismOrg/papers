@@ -1,0 +1,25 @@
+{
+ "a0": 9.93099132740906e-11,
+ "d": {
+  "galaxies": 8,
+  "T61": 0.3079,
+  "MOND": 0.414,
+  "MOND_refit": 0.3925,
+  "T61_minus_MOND_refit_boot95": [
+   -0.1543,
+   -0.0172
+  ],
+  "n_lower": 6
+ },
+ "e": {
+  "galaxies": 26,
+  "T61": 0.392,
+  "MOND": 0.4146,
+  "MOND_refit": 0.3963,
+  "T61_minus_MOND_refit_boot95": [
+   -0.0161,
+   0.0074
+  ],
+  "n_lower": 18
+ }
+}

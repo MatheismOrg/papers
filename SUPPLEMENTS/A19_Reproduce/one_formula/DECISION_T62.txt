@@ -1,0 +1,15 @@
+DECISION_T62 (SA73 T62), recorded 18:38 PST, 10 Nov 2026.
+
+PROTOCOL_T61 (hash b370fbdc...) left one thing open: "If (a), (b) and (c) hold, T61 is a candidate to replace T48, for Gary
+to decide." All three marks were met (res61_MOGF0IESBC_primary.json, res61_MOGF0IESBC_strict.json, t61_core/res61_heldout.json),
+and both outside forecasts (t61_core/res61_outside.json).
+
+Gary, 10 November 2026, 18:19 PST, on the recommendation to keep the three-number formula as the headline: "what's wrong
+with 5 numbers? i'd think leading with better fit on all data trumps 2 added numbers".
+
+Decision: the formula with the core (model MOGF0IESBC, harness_T61.py; five coefficients fitted on disks: A, B, C, t,
+kappa; all-data values 11.7481, 0.8178, -0.7119, 0.1501, 0.6229; log M_t = 11.339) is the paper's final formula from
+turn T62 on. The formula without the core (T48, model MOGF0IESB) is the row above it in Table 7. Tables 8 and 9 and the
+pattern tests of Section 5.5 were recomputed for the final formula (final_T62.py, compare62_boot.py, t62_final/).
+The first six forecasts of Section 5.8 were hashed for the formula without the core; the core changes none of the
+quantities they name by as much as 1 percent (t62_final/check62.py).

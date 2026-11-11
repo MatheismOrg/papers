@@ -1,0 +1,43 @@
+FORECAST_T59 (SA73 T59). Written 15:07 PST, 10 Nov 2026, before any outside galaxy is scored.
+
+Question. Protocol T57 added one term to the final formula (T48): for light-selected systems, with g = M_gas / M_p and
+L = -log10 min(Sigma_* / Sigma_p, 1), the halo mass is multiplied by 10^(t g L) and its concentration by 10^(-s g L). Held
+out on the benchmark it lowered the disk error by 1.3 percent and missed its preset mark; on the 17 SPARC galaxies excluded
+from the benchmark (FORECAST_T58) it lowered the error by 2.3 percent (one-sided p 0.08). This file tests the term, with
+t = 0.361 and s = 0.146 frozen from the 149 benchmark disks, on dwarf irregulars that are not in SPARC.
+
+Data. Iorio et al. (2017, MNRAS 466, 4159) publish asymmetric-drift-corrected circular velocities and intrinsic HI surface
+densities for 17 LITTLE THINGS galaxies (finalrot.zip, sha256 d4c456c6...). Seven are in SPARC (DDO 50 = UGC04305, DDO 87 =
+UGC05918, DDO 126 = UGC07559, DDO 154, DDO 168, NGC 2366, WLM = UGCA444) and serve only to check the inputs. Of the other
+ten, DDO 47 and NGC 1569 have no 3.6 micron flux in the LVL survey (Dale et al. 2009, Table 2). The test sample is the
+remaining eight: CVnIdwA, DDO 52, DDO 53, DDO 101, DDO 133, DDO 210, DDO 216 (first of its two tables), UGC 8508, as many
+as keep at least one point after the cuts. Clean subsample: the four not flagged by Read et al. (2017, MNRAS 467, 2019,
+Table 2) for uncertain inclination, disequilibrium or distance: CVnIdwA, DDO 52, DDO 210, UGC 8508.
+
+Inputs, on the scale of SPARC (model59.py). Distances and inclinations of Iorio et al. Stellar mass 0.5 L[3.6], with L[3.6]
+from the LVL flux (zero point 280.9 Jy, solar magnitude 3.24), divided by KL = 1.172. Half-light radius 1.678 R_*, with R_*
+the exponential scale length of Read et al. (2017), divided by KR = 1.424. KL and KR are the medians, over the seven shared
+galaxies, of these quantities over SPARC's own (validate59.py, res59_validate.json: input ratios only, no formula; the
+ratios scatter from 0.5 to 5 in luminosity and 0.7 to 3.1 in radius, the largest for WLM and NGC 2366). Gas: razor-thin
+disk from the HI surface density times 1.33, flat inside the first point, linear between points, exponential beyond the last
+point with the slope of the outer half of the profile; M_gas = 1.33 times the HI mass of that model (median 0.97 of SPARC's
+on the shared galaxies, not rescaled). Stars: razor-thin exponential disk. M_p = M_* + M_gas.
+
+Cuts, as in the benchmark. Inclination at least 30 degrees; points with velocity error at most 10 percent of the velocity,
+positive velocity and positive baryonic V^2.
+
+Formulas, all frozen. T48: A, B, C = 11.7481, 0.8178, -0.7119. T57: the same with t = 0.361, s = 0.146. Score: host-balanced
+rms of log10(g_obs / g_pred). Script test59.py.
+
+Forecast. (1) On the test sample T57's error is lower than T48's. (2) On the clean subsample T57's error is lower than T48's.
+A higher error on the test sample counts against the term.
+Combined mark. With the 17 galaxies of FORECAST_T58 added (their result is already known, so this mark is not blind to
+them), the term counts as supported outside the benchmark only if the 95 percent range of the paired bootstrap difference
+over galaxies (10,000 draws) excludes zero. Otherwise it stays a lead that is not secure.
+
+Reported without a forecast: the same with KL = KR = 1; with the gas profile cut half a step beyond the last point; with
+the rotation velocities before the asymmetric-drift correction; MOND's relation (a0 = 1.2e-10 m/s^2) and standard
+abundance-matched halos on the same galaxies, as in Table 8; mean offsets and within-galaxy scatter; the seven shared
+galaxies scored with these inputs and with SPARC's own.
+
+The formula of the paper stays T48 whatever the outcome; T57 missed its preset mark and is not adopted.

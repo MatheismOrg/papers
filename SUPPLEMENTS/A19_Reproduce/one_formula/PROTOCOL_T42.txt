@@ -1,0 +1,11 @@
+A19 protocol T42 (session SA73, overnight round 22, 7 November 2026, US Pacific). Hashed before the run.
+Sensitivity of the T37 formula to the concentration-mass relation (all data, primary mask).
+
+Three relations for c200c(M, z): Dutton and Maccio 2014 (A19's), Diemer and Joyce 2019 and Ludlow et al. 2016 (colossus,
+A19 Planck cosmology; log c interpolated on a grid in log10 M from 6 to 16.5 and z from 0 to 1.5). With each relation,
+everywhere the formula uses a concentration (the rule's disk fit and every population, dynamics and lensing; the Moline
+factor for satellite dwarfs unchanged), describe42.py refits the rule's A, B, C on all disks alone (as the paper), then
+log10 M_t jointly (weight 0.1), and reports the coefficients, the five population scores, the lensing chi-square and the
+Milky Way's formula halo (McMillan 2017 inputs as diag_milkyway.py).
+The T37 result is robust to the concentration relation if every population's score stays within its tolerance of the
+Dutton and Maccio value (disks 1 percent, dwarfs 2, others 5, lensing 5) for both alternatives. All numbers reported.

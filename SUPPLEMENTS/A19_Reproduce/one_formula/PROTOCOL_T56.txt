@@ -1,0 +1,29 @@
+A19 protocol T56 (session SA73, round 27, written and hashed 2026-11-10 12:57 PST, US Pacific). Hashed before any held-out run of this
+model. Gary's request (10 Nov, 12:34): "focus only on how to find fit for remaining real gap."
+
+WHY: at fixed stellar mass the dwarfs' residuals fall with half-light radius by 0.50 dex per dex, beyond the noise (Table 9).
+All-data looks today (t56/: ctilt56, sig56, core56, gate56, gasmu56, mu56, describe56; none a test): looser halos for diffuse
+disks improve the disks by 2.7 percent and worsen the dwarfs by 27; cores set by gas share gain 0.4 to 1.6 percent on disks.
+One change helps the dwarfs without fitting them: weighting the cold gas mu times in the baryon term, with mu fitted on the
+disks. All disks: mu = 4.41, A, B, C = 11.602, 1.000, -1.363; disks 0.1498 -> 0.1486, dwarfs 0.3639 -> 0.3427 (slope with
+radius -0.50 -> -0.21), early types 0.1851 -> 0.1907, MaNGA and CLASH unchanged, lensing 63.2 -> 71.8 on the main mask and
+38.2 -> 37.4 on the stricter one; Mandelbaum red and blue chi-squares 61.2 -> 57.8 and 12.0 -> 9.4. On the 15 disk folds
+(mu56.py): held-out disks 0.1533 -> 0.1542, dwarfs 0.3651 -> 0.3485, early types 0.1852 -> 0.1911; mu from 2.3 to 7.3.
+EXPECTATION, stated in advance: it fails the lensing mark on the main mask.
+
+MODEL MOGF0IESBU (harness_T56.py): T48's MOGF0IESB in every respect, except
+  M_ref = (M* + mu M_gas)/f_b + 10^A (M*/1e10)^B (R_e/3)^C + q M_E,   M_gas = M_p - M*,
+for light-selected systems (disks, dwarfs, early types, lensing stacks); halo-selected systems (MaNGA, CLASH, with their
+hot gas) keep M_p/f_b, and the switch q keeps the true M_p. In each partition A, B, C and mu are fitted on the training
+disks (bounds of the paper's rule; 0 <= mu <= 20; three starts), then M_t on the Mandelbaum red centrals as in T45.
+Coefficients fitted to the benchmark: 4 (A, B, C, mu on the training disks).
+
+RUN: chunk_split.py, the same 60 partitions, main and stricter masks, config MOGF0IESBU@0.1. Compare with T48 held out.
+
+PASS (preset): on both masks every score within its tolerance of T48 (disks 1 percent, dwarfs 2, early types, MaNGA, CLASH
+centers and CLASH 100 to 600 kpc 5, lensing 5), and the dwarfs lower than T48 with a host-bootstrap 95 percent interval of
+the difference below zero. If it passes, T56 is a candidate to replace T48; otherwise T48 stays and T56 is reported as tried.
+
+CAVEATS FIXED IN ADVANCE: retrospective (found on these data, 27th round); mu is weakly set by the disks (their error is
+flat within 1 percent from mu = 1 to 6) and trades against A, B, C; the stacks' gas comes from the SPARC HI relation of
+HI-rich disks; the hot gas of clusters keeps weight 1, an asymmetry with no derivation.

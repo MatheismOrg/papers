@@ -1,0 +1,116 @@
+{
+ "MOG@0.1|primary": {
+  "frozen_abc": [
+   11.748054,
+   0.817829,
+   -0.711865
+  ],
+  "coefficients": {
+   "logMt": 11.179256
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "limits_exceeded_without_subhalo": 2,
+  "all_data_scores": {
+   "disk": 0.1498,
+   "dwarfs": 0.3681,
+   "ETG": 0.2026,
+   "MaNGA": 0.1844,
+   "CLASH": 0.1959
+  },
+  "lensing_chi2_all": 67.705,
+  "switch_on_share": {
+   "disk": 0.0,
+   "dwarfs": 0.0,
+   "ETG": 0.0,
+   "MaNGA": 0.98,
+   "CLASH": 1.0
+  }
+ },
+ "MOGC@0.1|primary": {
+  "frozen_abc": [
+   11.748054,
+   0.817829,
+   -0.711865
+  ],
+  "coefficients": {
+   "logMt": 11.182185,
+   "s": 0.173541
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "limits_exceeded_without_subhalo": 2,
+  "all_data_scores": {
+   "disk": 0.1496,
+   "dwarfs": 0.3681,
+   "ETG": 0.2012,
+   "MaNGA": 0.173,
+   "CLASH": 0.1953
+  },
+  "lensing_chi2_all": 67.892,
+  "switch_on_share": {
+   "disk": 0.0,
+   "dwarfs": 0.0,
+   "ETG": 0.0,
+   "MaNGA": 0.98,
+   "CLASH": 1.0
+  }
+ },
+ "MOG@0.1|strict": {
+  "frozen_abc": [
+   11.748054,
+   0.817829,
+   -0.711865
+  ],
+  "coefficients": {
+   "logMt": 11.277701
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "limits_exceeded_without_subhalo": 2,
+  "all_data_scores": {
+   "disk": 0.1498,
+   "dwarfs": 0.3681,
+   "ETG": 0.2027,
+   "MaNGA": 0.1881,
+   "CLASH": 0.2003
+  },
+  "lensing_chi2_all": 43.823,
+  "switch_on_share": {
+   "disk": 0.0,
+   "dwarfs": 0.0,
+   "ETG": 0.0,
+   "MaNGA": 0.9,
+   "CLASH": 1.0
+  }
+ },
+ "MOGC@0.1|strict": {
+  "frozen_abc": [
+   11.748054,
+   0.817829,
+   -0.711865
+  ],
+  "coefficients": {
+   "logMt": 11.282731,
+   "s": 0.175581
+  },
+  "bound_hits": [],
+  "limits_exceeded": 3,
+  "limits_exceeded_without_subhalo": 2,
+  "all_data_scores": {
+   "disk": 0.1496,
+   "dwarfs": 0.3681,
+   "ETG": 0.2013,
+   "MaNGA": 0.1766,
+   "CLASH": 0.1996
+  },
+  "lensing_chi2_all": 43.984,
+  "switch_on_share": {
+   "disk": 0.0,
+   "dwarfs": 0.0,
+   "ETG": 0.0,
+   "MaNGA": 0.9,
+   "CLASH": 1.0
+  }
+ }
+}

@@ -1,0 +1,8 @@
+A19 forecast T58 (session SA73, written and hashed 2026-11-10 13:16 PST), before any look at these galaxies with T57.
+T57 (PROTOCOL_T57, 9ccdb892...) missed its mark: held-out disks 0.1533 -> 0.1513 (-1.26 percent), bootstrap -0.0054 to +0.0017.
+TEST ON DISKS NEVER USED: the SPARC galaxies left out of the benchmark by its quality cuts (quality flag 3 or inclination
+below 30 degrees; the benchmark's point cuts otherwise), with everything frozen on the 149 benchmark disks:
+A, B, C = 11.7481, 0.8178, -0.7119; log M_t = 11.339; T57's t = 0.361, s = 0.146 (harness_T57d.py, MOGF0IESBD).
+FORECAST: T57's host-balanced error on these galaxies is lower than T48's, and lower among those with a nonzero term
+(g L > 0). AGAINST: T57's error higher than T48's. These galaxies are fewer and noisier than the benchmark's; a win here
+does not reverse T57's failed mark, it decides whether a new protocol on more disks is worth writing.

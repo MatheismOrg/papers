@@ -1,0 +1,230 @@
+{
+ "benchmark points (149)": {
+  "T48": {
+   "rms": 0.1498,
+   "mean": 0.0011,
+   "within": 0.0733,
+   "galaxies": 149,
+   "points": 2700
+  },
+  "T61": {
+   "rms": 0.1495,
+   "mean": 0.0071,
+   "within": 0.0664,
+   "galaxies": 149,
+   "points": 2700
+  },
+  "T57": {
+   "rms": 0.1476,
+   "mean": 0.0029,
+   "within": 0.0679,
+   "galaxies": 149,
+   "points": 2700
+  },
+  "MOND": {
+   "rms": 0.1546,
+   "mean": -0.0245,
+   "within": 0.0716,
+   "galaxies": 149,
+   "points": 2700
+  },
+  "STD": {
+   "rms": 0.1655,
+   "mean": -0.0098,
+   "within": 0.0804,
+   "galaxies": 149,
+   "points": 2700
+  }
+ },
+ "dropped, all 175": {
+  "T48": {
+   "rms": 0.4156,
+   "mean": -0.2127,
+   "within": 0.1606,
+   "galaxies": 139,
+   "points": 582
+  },
+  "T61": {
+   "rms": 0.3596,
+   "mean": -0.1176,
+   "within": 0.129,
+   "galaxies": 139,
+   "points": 582
+  },
+  "T57": {
+   "rms": 0.3922,
+   "mean": -0.184,
+   "within": 0.1509,
+   "galaxies": 139,
+   "points": 582
+  },
+  "MOND": {
+   "rms": 0.381,
+   "mean": -0.1697,
+   "within": 0.1308,
+   "galaxies": 139,
+   "points": 582
+  },
+  "STD": {
+   "rms": 0.4257,
+   "mean": -0.2172,
+   "within": 0.1602,
+   "galaxies": 139,
+   "points": 582
+  }
+ },
+ "all points, all 175": {
+  "T48": {
+   "rms": 0.2603,
+   "mean": -0.0647,
+   "within": 0.1466,
+   "galaxies": 175,
+   "points": 3389
+  },
+  "T61": {
+   "rms": 0.231,
+   "mean": -0.0347,
+   "within": 0.1184,
+   "galaxies": 175,
+   "points": 3389
+  },
+  "T57": {
+   "rms": 0.2479,
+   "mean": -0.0557,
+   "within": 0.1353,
+   "galaxies": 175,
+   "points": 3389
+  },
+  "MOND": {
+   "rms": 0.2438,
+   "mean": -0.0716,
+   "within": 0.1224,
+   "galaxies": 175,
+   "points": 3389
+  },
+  "STD": {
+   "rms": 0.274,
+   "mean": -0.0748,
+   "within": 0.1492,
+   "galaxies": 175,
+   "points": 3389
+  }
+ },
+ "dropped, slower than 30 km/s": {
+  "T48": {
+   "rms": 0.5626,
+   "mean": -0.4738,
+   "within": 0.1358,
+   "galaxies": 83,
+   "points": 203
+  },
+  "T61": {
+   "rms": 0.4264,
+   "mean": -0.2617,
+   "within": 0.1141,
+   "galaxies": 83,
+   "points": 203
+  },
+  "T57": {
+   "rms": 0.5154,
+   "mean": -0.4131,
+   "within": 0.1311,
+   "galaxies": 83,
+   "points": 203
+  },
+  "MOND": {
+   "rms": 0.4702,
+   "mean": -0.354,
+   "within": 0.1081,
+   "galaxies": 83,
+   "points": 203
+  },
+  "STD": {
+   "rms": 0.5757,
+   "mean": -0.487,
+   "within": 0.135,
+   "galaxies": 83,
+   "points": 203
+  }
+ },
+ "dropped, 30 km/s or faster": {
+  "T48": {
+   "rms": 0.3221,
+   "mean": -0.093,
+   "within": 0.0904,
+   "galaxies": 109,
+   "points": 379
+  },
+  "T61": {
+   "rms": 0.3219,
+   "mean": -0.0498,
+   "within": 0.0873,
+   "galaxies": 109,
+   "points": 379
+  },
+  "T57": {
+   "rms": 0.3198,
+   "mean": -0.0803,
+   "within": 0.0875,
+   "galaxies": 109,
+   "points": 379
+  },
+  "MOND": {
+   "rms": 0.3261,
+   "mean": -0.0859,
+   "within": 0.0915,
+   "galaxies": 109,
+   "points": 379
+  },
+  "STD": {
+   "rms": 0.3251,
+   "mean": -0.0942,
+   "within": 0.0908,
+   "galaxies": 109,
+   "points": 379
+  }
+ },
+ "kept, all 175": {
+  "T48": {
+   "rms": 0.1744,
+   "mean": -0.006,
+   "within": 0.0742,
+   "galaxies": 166,
+   "points": 2807
+  },
+  "T61": {
+   "rms": 0.1741,
+   "mean": 0.0002,
+   "within": 0.069,
+   "galaxies": 166,
+   "points": 2807
+  },
+  "T57": {
+   "rms": 0.1714,
+   "mean": -0.0049,
+   "within": 0.0697,
+   "galaxies": 166,
+   "points": 2807
+  },
+  "MOND": {
+   "rms": 0.182,
+   "mean": -0.0346,
+   "within": 0.0734,
+   "galaxies": 166,
+   "points": 2807
+  },
+  "STD": {
+   "rms": 0.1874,
+   "mean": -0.0148,
+   "within": 0.0807,
+   "galaxies": 166,
+   "points": 2807
+  }
+ },
+ "core_strength": {
+  "galaxies_with_core": 121,
+  "n_median_nonzero": 0.374,
+  "n_above_half": 36,
+  "n_max": 0.704
+ }
+}
