@@ -2,9 +2,9 @@
 
 Rebuilds the results of "Dark Matter Behaves Like Matter" from public data with independent code, and maps every number in the paper to the original code that produced it.
 
-This package covers protocols 1 to 9 and Sections 2 to 5.3 of the paper. The one formula of Section 6, with protocols 10 to 21, the ten forecasts and their saved results, is in `one_formula/`, which has its own README.
+This package covers protocols 1 to 9 and Sections 2 to 5.3 of the paper. The one formula of Section 6, with protocols 10 to 21, the ten forecasts and their saved results, is in `one_formula/`, which has its own README. The paper and its Supplemental Notes are in this repository's `PDF/`, `SOURCE_MD/` and `SOURCE_HTML/` folders, as `A19_Dark_Matter_Behaves_Like_Matter` and `A19_Dark_Matter_Behaves_Like_Matter_Supplemental_Notes`.
 
-Section numbers in the number map follow the paper's version of 11 November 2026, the version this package was last checked against. In it, Sections 1 to 5.3 keep their earlier numbers, the one formula is Section 6, and the section on circular cluster benchmarks is Section 7 (it is Section 6 in the version of 31 October 2026 kept in this repository's PDF folder). Table 1 now lists the protocols, the disk table is Table 2 (it was Table 1), the table of dwarfs no rule had scored is Table S1 of the Supplemental Notes (it was Table 2), and Tables 3 to 6 keep their numbers.
+Section numbers in the number map follow the paper's version of 11 November 2026, the version this package was last checked against. In it, Sections 1 to 5.3 keep their earlier numbers, the one formula is Section 6, and the section on circular cluster benchmarks is Section 7 (it was Section 6 in the version of 31 October 2026). Table 1 now lists the protocols, the disk table is Table 2 (it was Table 1), the table of dwarfs no rule had scored is Table S1 of the Supplemental Notes (it was Table 2), and Tables 3 to 6 keep their numbers.
 
 ## Run (Python 3, numpy, scipy; the protocol 6 and 8 steps and the protocol 9 independent check also need colossus, pip install colossus, and the Figure 7 digitization needs Pillow; about four minutes, plus about eight for the optional check)
 
