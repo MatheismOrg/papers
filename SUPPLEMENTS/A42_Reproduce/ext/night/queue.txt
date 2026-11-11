@@ -1,0 +1,22 @@
+# SA74 night plan Q1, fixed 00:17 PST before its runs. Gary 00:06: "u can also use my local mac cpus"; 00:11 (server top):
+# SA73's six DM-search workers also run at nice 19, so the six S1 chains took half their CPU; S1's big grids move here.
+# a = 0.005 unless the A column says otherwise, lambda = 1, ten rescalings per sweep, flat starts except where FROM is given.
+# Purpose: growth of the curvature fluctuation with grid size at k = 0.2475 and 0.2525 from 8^4 to 16^4 (with N2b's 10^4 and
+# 12^4 chains and the cloud's small grids), and start independence on 8^4 near the crossing: two chains start from a rough
+# a = 0, k = 0.1 configuration (the T19 preparation design, 1,000 + 2,000 sweeps), to compare with N2b's flat starts.
+# Columns: TAG L K THERM MEAS SEED A [FROM], in priority order (longest first).
+Q_L16_k0.2525 16 0.2525 800 1200 99461 0.005
+Q_L16_k0.2475 16 0.2475 800 1200 99460 0.005
+Q_L14_k0.2525 14 0.2525 800 1600 99441 0.005
+Q_L14_k0.2475 14 0.2475 800 1600 99440 0.005
+Q_P8_a0_k0.10 8 0.10 1000 2000 99480 0
+Q_L8_k0.250_rough 8 0.250 1500 3000 99481 0.005 Q_P8_a0_k0.10
+Q_L8_k0.255_rough 8 0.255 1500 3000 99482 0.005 Q_P8_a0_k0.10
+Q_L10_k0.2525 10 0.2525 1000 2500 99400 0.005
+Q_L10_k0.255 10 0.255 1000 2500 99401 0.005
+Q_L12_k0.255 12 0.255 1000 2000 99422 0.005
+Q_L12_k0.250 12 0.250 1000 2000 99421 0.005
+Q_L8_k0.2475 8 0.2475 1500 3000 99486 0.005
+Q_L8_k0.2525 8 0.2525 1500 3000 99483 0.005
+Q_L8_k0.2575 8 0.2575 1500 3000 99484 0.005
+Q_L8_k0.260 8 0.260 1500 3000 99485 0.005

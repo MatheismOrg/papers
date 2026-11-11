@@ -1,0 +1,160 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "AS3_a0.001_L4_k0.130_flat",
+   "L": 4,
+   "k": 0.13,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99800,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L4_k0.150_flat",
+   "L": 4,
+   "k": 0.15,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99801,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L4_k0.140_flat_s0",
+   "L": 4,
+   "k": 0.14,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99810,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L4_k0.140_rough_s0",
+   "L": 4,
+   "k": 0.14,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99811,
+   "load": "prepare_L4_s0.cfg",
+   "start": "rough",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L4_k0.140_flat_s1",
+   "L": 4,
+   "k": 0.14,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99820,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L4_k0.140_rough_s1",
+   "L": 4,
+   "k": 0.14,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99821,
+   "load": "prepare_L4_s1.cfg",
+   "start": "rough",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L4_k0.140_flat_s2",
+   "L": 4,
+   "k": 0.14,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99830,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L4_k0.140_rough_s2",
+   "L": 4,
+   "k": 0.14,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99831,
+   "load": "prepare_L4_s2.cfg",
+   "start": "rough",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L6_k0.100_flat",
+   "L": 6,
+   "k": 0.1,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99860,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L6_k0.120_flat",
+   "L": 6,
+   "k": 0.12,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99861,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L6_k0.130_flat",
+   "L": 6,
+   "k": 0.13,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99862,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L6_k0.140_flat",
+   "L": 6,
+   "k": 0.14,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99863,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L6_k0.150_flat",
+   "L": 6,
+   "k": 0.15,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99864,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS3_a0.001_L6_k0.160_flat",
+   "L": 6,
+   "k": 0.16,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99865,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  }
+ ],
+ "note": "SA74 night stage AS3, fixed 00:05 PST before its runs: a = 0.001 near its zero crossing (about 0.15 on 4^4). Fill-ins on 4^4 (k = 0.13, 0.15), start independence at k = 0.14 (three flat, three rough starts from the a = 0 preparations), and a 6^4 scan (k = 0.10 to 0.16), each 2,000 + 4,000 sweeps, to fit k_c and delta for a = 0.001 on two sizes."
+}

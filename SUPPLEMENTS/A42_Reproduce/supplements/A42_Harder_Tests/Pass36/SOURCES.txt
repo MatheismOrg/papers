@@ -1,0 +1,40 @@
+Primary sources consulted for Pass36, 31 October 2026 UTC
+
+1. Bueno, Cano, Hennigar and Murcia, Regular black hole formation in
+four-dimensional non-polynomial gravities, arXiv:2509.19016v2.
+https://arxiv.org/html/2509.19016v2
+Published gravity model; Eq. (44) gives its closed-FLRW Friedmann equation.
+Its classical regular solutions are not discoveries of this project.
+
+2. M. J. Duff, Twenty Years of the Weyl Anomaly, hep-th/9308075.
+https://arxiv.org/pdf/hep-th/9308075
+Euler anomaly coefficients for scalars, Dirac fermions and vectors;
+one Weyl fermion contributes half the Dirac value.
+
+3. C. P. Herzog and K.-W. Huang, Stress Tensors from Trace Anomalies
+in Conformal Field Theories, Phys. Rev. D 87, 081901 (2013).
+https://arxiv.org/pdf/1301.5002
+Eq. (23): covariant 4D vacuum stress in a conformally flat background.
+Eq. (28): Casimir energy, giving 3 a_Euler/(4L) in four dimensions.
+Their prescription removes total-derivative (type D) anomalies.
+
+4. J. E. Lidsey, Thermodynamics of Anomaly-Driven Cosmology,
+arXiv:0812.2791.
+https://arxiv.org/pdf/0812.2791
+Derives the anomaly-generated H^4 energy plus an independent radiation
+constant in flat FLRW. Here the closed-space generalization is derived
+and checked against the covariant tensor, not imported without checking.
+
+5. J. F. Koksma and T. Prokopec, Effect of the Trace Anomaly on the
+Cosmological Constant, Phys. Rev. D 78, 023508 (2008).
+https://arxiv.org/pdf/0803.4000
+Discusses finite curvature couplings, higher derivatives and stability;
+lists minimal SM field counts. We use Duff/Lidsey anomaly weights with
+an explicit distinction between Dirac and Weyl counts.
+
+Attribution and scope
+Quantum trace anomalies, Casimir energy, anomaly-driven cosmology and
+the gravity action are established prior work. This package combines
+them in a specified test model, derives conditional response/curvature
+bounds and supplies reproducible evolution. No claim of first discovery
+or of being superior to existing quantum-gravity theories is made.

@@ -1,0 +1,12 @@
+# SA74 night plan N2b, fixed 23:28 PST before its native runs (N2 minus the 14^4 and 16^4 chains, which moved to the server, plan S1):
+# a = 0.005, lambda = 1, flat starts, ten rescalings per sweep. The first four continue the plan M1b chains from their saved
+# configurations (same tags and totals). Columns: TAG L K THERM MEAS SEED A
+N_L12_k0.2475 12 0.2475 1000 2000 99220 0.005
+N_L10_k0.245 10 0.245 1000 2500 99200 0.005
+N_L10_k0.250 10 0.250 1000 2500 99201 0.005
+N_L8_k0.250 8 0.250 1500 3000 99180 0.005
+N_L12_k0.245 12 0.245 1000 2000 99221 0.005
+N_L12_k0.2525 12 0.2525 1000 2000 99222 0.005
+N_L10_k0.2475 10 0.2475 1000 2500 99202 0.005
+N_L8_k0.245 8 0.245 1500 3000 99181 0.005
+N_L8_k0.255 8 0.255 1500 3000 99182 0.005

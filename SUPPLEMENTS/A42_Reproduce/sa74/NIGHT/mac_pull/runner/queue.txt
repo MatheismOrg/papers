@@ -1,0 +1,60 @@
+# SA74 night plan Q1, fixed 00:17 PST before its runs. Gary 00:06: "u can also use my local mac cpus"; 00:11 (server top):
+# SA73's six DM-search workers also run at nice 19, so the six S1 chains took half their CPU; S1's big grids move here.
+# a = 0.005 unless the A column says otherwise, lambda = 1, ten rescalings per sweep, flat starts except where FROM is given.
+# Purpose: growth of the curvature fluctuation with grid size at k = 0.2475 and 0.2525 from 8^4 to 16^4 (with N2b's 10^4 and
+# 12^4 chains and the cloud's small grids), and start independence on 8^4 near the crossing: two chains start from a rough
+# a = 0, k = 0.1 configuration (the T19 preparation design, 1,000 + 2,000 sweeps), to compare with N2b's flat starts.
+# Columns: TAG L K THERM MEAS SEED A [FROM], in priority order (longest first).
+Q_L16_k0.2525 16 0.2525 800 1200 99461 0.005
+Q_L16_k0.2475 16 0.2475 800 1200 99460 0.005
+Q_L14_k0.2525 14 0.2525 800 1600 99441 0.005
+Q_L14_k0.2475 14 0.2475 800 1600 99440 0.005
+Q_P8_a0_k0.10 8 0.10 1000 2000 99480 0
+Q_L8_k0.250_rough 8 0.250 1500 3000 99481 0.005 Q_P8_a0_k0.10
+Q_L8_k0.255_rough 8 0.255 1500 3000 99482 0.005 Q_P8_a0_k0.10
+# SA74 night plan Q2 (exploratory), fixed 00:33 PST before its runs, inserted here so it starts ahead of Q1's 10^4 and 12^4 chains:
+# continue the two 8^4 chains whose curvature was still rising (k = 0.255, N2b, last half +0.011 against first half +0.002; and
+# k = 0.26, the cloud's FSS_L8_k0.26 chain, +0.028 against +0.001) for 6,000 more sweeps each from their final configurations,
+# to see whether the rise stops at a small positive value or runs on into the rough phase. Q_F8_k0.260.cfg is FSS_L8_k0.26's file.
+Q_L8_k0.255_cont 8 0.255 0 6000 99491 0.005 N_L8_k0.255
+Q_L8_k0.260_cont 8 0.260 0 6000 99492 0.005 Q_F8_k0.260
+# SA74 night plan Q3 (hysteresis on 8^4), fixed 01:23 PST before its runs. At 01:19 the 8^4 chain started at k = 0.250 from the rough
+# a = 0, k = 0.1 preparation sat at R = +0.03 after 2,659 sweeps, while the flat start at the same k sits at -0.004: possible
+# coexistence of two states (a first-order signature) or very slow relaxation. Tests: rough starts at k = 0.245 and 0.2475 (where does
+# the difference begin?), 6,000 more sweeps of the k = 0.250 rough chain (does it relax?), and a second rough preparation (new seed)
+# with its own k = 0.250 chain (does the result depend on the preparation?). The two 16^4 chains of Q1 were stopped at 01:30: at the
+# measured 3.4 sweeps per minute they would reach equilibrium only near 04:20; their cores go to these tests (configurations kept).
+Q_L8_k0.245_rough 8 0.245 1500 3000 99501 0.005 Q_P8_a0_k0.10
+Q_L8_k0.2475_rough 8 0.2475 1500 3000 99502 0.005 Q_P8_a0_k0.10
+Q_L8_k0.250_rough_cont 8 0.250 0 6000 99503 0.005 Q_L8_k0.250_rough
+# 02:24 PST execution order changed (same jobs): 12^4 and 10^4 near the crossing first, the second rough preparation last
+Q_L12_k0.250 12 0.250 1000 2000 99421 0.005
+Q_L12_k0.255 12 0.255 1000 2000 99422 0.005
+Q_L10_k0.2525 10 0.2525 1000 2500 99400 0.005
+Q_L10_k0.255 10 0.255 1000 2500 99401 0.005
+Q_L8_k0.2475 8 0.2475 1500 3000 99486 0.005
+Q_L8_k0.2525 8 0.2525 1500 3000 99483 0.005
+Q_L8_k0.2575 8 0.2575 1500 3000 99484 0.005
+Q_L8_k0.260 8 0.260 1500 3000 99485 0.005
+# SA74 night plan Q4, fixed 01:47 PST before its runs: replicas at the two couplings of the finite-size series. The night chains have
+# autocorrelation times of 100 to 300 sweeps at every size, so one chain per point gives effective sample sizes of 10 to 40; more
+# independent flat starts on 8^4 (two more at each k) and one more 10^4 chain at k = 0.2475, where the first gave the highest fluctuation.
+Q_L8_k0.2475_r2 8 0.2475 1500 3000 99601 0.005
+Q_L8_k0.2525_r2 8 0.2525 1500 3000 99602 0.005
+Q_L8_k0.2475_r3 8 0.2475 1500 3000 99603 0.005
+Q_L8_k0.2525_r3 8 0.2525 1500 3000 99604 0.005
+Q_L10_k0.2475_r2 10 0.2475 1000 2500 99605 0.005
+# SA74 night plan Q5, fixed 01:47 PST before its runs: two more 8^4 flat chains at k = 0.245, beside Hamber's k_c = 0.2443, where he
+# fits the average curvature against lattice size; with N2b's chain they give three at that point (the cloud's FSS3 covers 3^4 to 6^4).
+Q_L8_k0.245_r2 8 0.245 1500 3000 99606 0.005
+# SA74 night plan Q6, fixed 03:57 PST before its runs. On 8^4 at k = 0.245 the rough start (Q_L8_k0.245_rough, from the a = 0,
+# k = 0.1 preparation) fell from +0.05 to about 0 within 1,000 sweeps and then stayed between -0.006 and +0.011 for 2,000 sweeps,
+# while the flat start at the same k sits at -0.02 to -0.04. At k = 0.2475, 0.250 and 0.255 the rough starts reached the flat
+# values. Tests: 6,000 more sweeps of the k = 0.245 rough chain (does it relax to the flat value?) and a rough start at k = 0.245
+# from the second preparation Q_P8b (does an independent preparation also stay high?). Coexistence would need both to stay high.
+Q_L8_k0.245_rough_cont 8 0.245 0 6000 99701 0.005 Q_L8_k0.245_rough
+Q_L8_k0.245_rough2 8 0.245 1500 3000 99702 0.005 Q_P8b_a0_k0.10
+Q_L8_k0.245_r3 8 0.245 1500 3000 99607 0.005
+# moved to the end at 02:24 PST
+Q_P8b_a0_k0.10 8 0.10 1000 2000 99504 0
+Q_L8_k0.250_rough2 8 0.250 1500 3000 99505 0.005 Q_P8b_a0_k0.10

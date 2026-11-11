@@ -1,0 +1,72 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "AS5_a0.003_L4_k0.200_flat_s0",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99950,
+   "load": null,
+   "start": "flat",
+   "a": 0.003
+  },
+  {
+   "tag": "AS5_a0.003_L4_k0.200_rough_s0",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99951,
+   "load": "prepare_L4_s0.cfg",
+   "start": "rough",
+   "a": 0.003
+  },
+  {
+   "tag": "AS5_a0.003_L4_k0.200_flat_s1",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99960,
+   "load": null,
+   "start": "flat",
+   "a": 0.003
+  },
+  {
+   "tag": "AS5_a0.003_L4_k0.200_rough_s1",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99961,
+   "load": "prepare_L4_s1.cfg",
+   "start": "rough",
+   "a": 0.003
+  },
+  {
+   "tag": "AS5_a0.003_L4_k0.200_flat_s2",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99970,
+   "load": null,
+   "start": "flat",
+   "a": 0.003
+  },
+  {
+   "tag": "AS5_a0.003_L4_k0.200_rough_s2",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99971,
+   "load": "prepare_L4_s2.cfg",
+   "start": "rough",
+   "a": 0.003
+  }
+ ],
+ "note": "SA74 night stage AS5, fixed 02:18 PST before its runs: the same start-independence design as AS3 and AS4 at a = 0.003, k = 0.20 on 4^4 (an estimate of about 0.01 below its crossing, interpolated between 0.187 at a = 0.002 and about 0.25 at a = 0.005), three flat and three rough starts, 2,000 + 4,000 sweeps, split R-hat screen 1.05. Purpose: where between a = 0.002 (unbiased, slow) and 0.005 (passes) mixing near the transition recovers."
+}

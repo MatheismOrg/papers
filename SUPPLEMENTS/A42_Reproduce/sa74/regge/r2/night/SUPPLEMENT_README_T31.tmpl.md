@@ -1,0 +1,52 @@
+# SA74 night supplement: the curvature-squared Regge ensemble on larger grids (6 to 7 November 2026; T31 update, 9 November)
+
+## What was asked
+Does the supplied-lattice gravity of A42 Section 8.10 (Regge action with Hamber's curvature-squared term, a = 0.005, DeWitt measure dl², lambda = 1, the 15-edge, 50-triangle, 24-simplex hypercubic triangulation) show the finite-size signs of a critical point near Hamber's k_c = 0.2443(11)? How small can a be while the ensemble still mixes, and does a = 0.02 behave the same way?
+
+## Answer, in short
+- **No critical growth from 4⁴ to 20⁴.** The curvature fluctuation at fixed coupling, combined across all chains on each grid by multiple-histogram reweighting (Ferrenberg and Swendsen 1989) on 4⁴ to 12⁴, pooled over two chains from independent starts per coupling on 16⁴ (plus two forks at k = 0.244) and from one chain per coupling on 20⁴, is, on 4⁴, 5⁴, 6⁴, 8⁴, 10⁴, 12⁴, 16⁴, 20⁴: <<f244_list>> at Hamber's k_c, k = 0.244 (fitted power in L <<p244>>); <<f248_list>> at k = 0.248 (<<p248>>); <<f252_list>> at k = 0.252 (<<p252>>). A critical point with delta = 0.62 predicts +0.94, a factor <<crit>> from 4⁴ to 20⁴. The largest value near the crossing (k = 0.2415 to 0.258, within 0.002 of a coupling run) on 4⁴ to 12⁴ is <<peak_list>>: power <<pw>>, or <<pw2>> from the second halves of the chains (results/multihist_T30.json, multihist_skip50_T30.json, a1_results_T31.json, chi_fixedk.png).
+- **Hamber's own fit, against these grids:** his 1993 fit of the fluctuation at k = 0.244, (0.16 + 1.11/L) L^0.64(11), rises <<hr>> times from L = 4 to 20, a power of <<hp>> over that range. The fitted power here at k = 0.244 is <<p244>>, <<g1>> standard errors below it. A single chain's variance runs low by about 2/ESS (<<bias16>> for the 16⁴ chains); dividing the 16⁴ and 20⁴ values by (1 - 2/ESS), with ESS added over the independent chains only, gives <<p244b>> at 0.244 (<<g2>> standard errors below his curve), <<p248b>> at 0.248 and <<p252b>> at 0.252 (a1_results_T31.json, fixed_k_power_lowbias). So the data lean against his fitted growth without ruling it out; a critical point is far outside.
+- **16⁴ (plans A1, A2, A3):** <<chains16>>. At k = 0.244 the four chains form two independent lineages (A2 r1 started from A1's final 0.248 configuration, A2 r2 from A1's final 0.252 configuration; each A3 fork started from its parent after about 1,280 of its 2,000 sweeps at 0.244, with a new seed, 700 + 1,500 sweeps); pooled about the common mean they give <<p16_244>> (lineages <<l16_244>>). The pooled error is the larger of the lineages' parent-chain errors, combined with weights by sweeps, and the spread between lineages.
+- **16⁴ start check (plan A2):** chains started from the final configuration of the coupling above or below against plan A1's flat starts, difference in R (A1 minus A2): <<sc248>> at k = 0.248, <<sc252>> at 0.252; at 0.244 the two lineages differ by <<sc244>>. So the small start memory seen on 12⁴ does not show on 16⁴ after 2,000 sweeps. The forks sit above their parents by <<scf1>> and <<scf2>>: they measure earlier in the relaxation from the parents' starts, and within single chains R wanders by a few thousandths over thousands of sweeps (A2 r1 by sixths: <<six_r1>>; r2: <<six_r2>>), so batch errors on R understate the slow wander, as the 12⁴ chains already showed.
+- **20⁴ (plan A5, multi-core engine, Mac runner 3, 8 threads):** <<chains20>>. The chain at 0.244 is a flat start (2,500 + 3,000 sweeps); 0.248 and 0.252 each continue the previous coupling's final configuration (1,500 + 3,000).
+- **12⁴ (plan A1):** <<n12>> chains, two at each of k = 0.244 to 0.254, each 3,000 sweeps at its coupling and then 4,000 measured (r1 continues the night's 12⁴ configurations, r2 is a fresh flat start). Between the halves of the measurement the mean squared edge moves by at most <<dq12>> and R by at most <<dR12>>. A small start memory: r1 sits below r2 in R at all six couplings (<<d12_list>>, 1.0 to 1.9 standard errors each); the fluctuations show no such pattern.
+- **14⁴:** two single chains of 800 + 1,600 sweeps at k = 0.2475 and 0.2525; too short for the fits; fluctuations <<c14a>> and <<c14b>>.
+- **Smooth zero crossing** of the average curvature at k = <<cr_lo>> to <<cr_hi>> on 4⁴ to 20⁴ (12⁴: <<cr12>>; 16⁴: <<cr16>>; 20⁴: <<cr20>>, a short extrapolation above 0.252), a little above Hamber's fitted k_c; the slope d<R>/dk does not steepen with size.
+- **No slowing with size:** median autocorrelation times (n/ESS of R) of chains near the crossing are <<tau_list>> sweeps on 4⁴, 5⁴, 6⁴, 8⁴, 10⁴, 12⁴, 16⁴, 20⁴.
+- **The slowest motion is local:** clusters of long edges form and anneal over thousands of sweeps and lift R while they last (results/defects.json). Rough starts on 8⁴ reach the flat-start values (at k = 0.250 from the second preparation: <<rough2_250>>); at k = 0.245 the rough chain needed about 7,000 sweeps.
+- **Small a:** a = 0.001 is start-dependent near its crossing (split R-hat 1.21); a = 0.002 is slow but unbiased (1.136); a = 0.003 passes the screen (1.037) (results/as5_results.json, as3_results.json).
+- **a = 0.02 (AU1, AU2, plans A2 and A4):** the fluctuation is a tenth as large and grows by at most a fifth from 4⁴ to 12⁴ (at k = 0.46: <<au46>> on 4⁴, 6⁴, 8⁴, 10⁴, 12⁴; power <<au_pow46>>), where critical growth with Hamber's delta = 0.628 would nearly triple it. R at k = 0.45, 0.46, 0.47: <<au_R10>> on 10⁴ and <<au_R12>> on 12⁴ (chi <<au_c10>> and <<au_c12>>). The curvature crosses zero at k = <<au_cr4>> (4⁴), <<au_cr6>> (6⁴), about <<au_cr8>> (8⁴, from R = <<au_R8>> at k = 0.46 and the fluctuation slope), <<au_cr10>> (10⁴) and <<au_cr12>> (12⁴): no drift toward Hamber's k_c = 0.4244(36) beyond 6⁴. **Correction:** T29 and T30 said the crossing drifts down with size; that rested on 4⁴ to 8⁴ and does not hold on 10⁴ and 12⁴ (results/au_results_T31.json). Side note: our crossing sits above Hamber's fitted k_c by about 0.008 at a = 0.005 and about 0.045 at a = 0.02.
+
+## Stages (each plan fixed and hashed before its runs; times PST; NIGHT_LOG.md has the order of events)
+| Stage | Where | What |
+|---|---|---|
+| FSS8 | cloud | 8⁴ flat starts at k = 0.24, 0.26 |
+| AS to AS5 | cloud | small a: start independence and k-scans on 4⁴ and 6⁴ at a = 0.001, 0.002, 0.003 |
+| AU1, AU2 | cloud | a = 0.02: 3⁴, 4⁴, 6⁴, 8⁴ at k = 0.40 to 0.50 |
+| M1b, N2b | Mac (VM chunks, then native) | 8⁴, 10⁴, 12⁴ flat starts at k = 0.245 to 0.255 |
+| S1 | server | 12⁴ to 16⁴ (stopped at 00:27: it halved SA73's share of the server) |
+| Q1 to Q6 | Mac queue | 14⁴, 10⁴, 12⁴, 8⁴ points, rough starts and replicas on 8⁴ and 10⁴ |
+| A1 | Mac runner 2 (sequential edge order, Wilson lines) | 12⁴ at k = 0.244 to 0.254 (r1, r2), 16⁴ at 0.248, 0.252, 8⁴ r1 to r4; finished by 10:08, Nov 7 |
+| A2 | Mac runner 2 | 16⁴ at k = 0.244 (2), second chains at 0.248, 0.252, and 0.250 (2,000 + 3,000); a = 0.02 on 10⁴ and 12⁴ at 0.45, 0.46 (2,000 + 4,000); fixed 10:20; finished 11:19 (10⁴), 12:30 (12⁴), 15:20 (16⁴) |
+| A3 | Mac runner 2 | two 16⁴ forks at k = 0.244 from A2's chains (700 + 1,500); started 11:42, finished 14:17 |
+| A4 | Mac runner 2 | a = 0.02 at k = 0.47 on 10⁴ and 12⁴ (2,000 + 4,000); queued 12:12, finished 13:37 and 14:38 |
+| A5 | Mac runner 3 (multi-core engine, 8 threads) | 20⁴ at k = 0.244 (flat start, 2,500 + 3,000), 0.248 and 0.252 (each from the previous configuration, 1,500 + 3,000); written to the Mac 12:59, runner started 13:03, runs 15:21 to 19:33 |
+| S2, S3 | server | 16⁴ forks and a second 20⁴ chain at idle priority; not run (first try failed with "Text file busy"; then the server's load was 6.97 and 7.60 on 8 cores, above the scripts' limits) |
+| HY1 | cloud | flat against rough starts at k = 0.250, 0.255 on 4⁴ and 6⁴ |
+| FSS2 to FSS4 | cloud | 3⁴ to 6⁴ at k = 0.2425 to 0.265, up to five chains per point |
+| V1, V2 | Mac VM | exploratory: per-slice curvature sums on 8⁴ |
+
+**Clock note (T31):** NIGHT_LOG.md entries labeled 13:05 to 13:40 on November 7 were written between about 12:56 and 13:14 by the file clocks (the log was last written at 13:14:05); their labels ran up to 33 minutes ahead. queue3.txt (plan A5) says "fixed 13:30 PST" in its header; the file reached the Mac at 12:59:03, runner 3 read it from 13:03, and its runs began at 15:21, so the plan still preceded its runs. Every plan run by a runner precedes its runs by construction: a runner starts a job only after reading its line.
+
+## The multi-core engine (plan A5)
+regge_r2_par.c (engines/), from the sequential engine regge_r2_big_x.c: with PAR=n the grid's edges are swept in 256 blocks of side L/4 in a 16-color checkerboard (L divisible by 4 and at least 12), or by edge type and base vertex otherwise; at start the code checks that blocks of one color share no hinge. Random numbers come from a counter hash of (sweep, edge), so a run does not depend on the number of threads. Checks: without PAR the engine is byte-identical to the sequential one (3⁴); PAR=1, 2 and 8 give identical runs (4⁴ to 12⁴, cloud and Mac); on 4⁴ at k = 0.20, a = 0.005, two sequential and two PAR=1 runs of 1,000 + 20,000 sweeps agree within the run-to-run spread (pooled differences 1.0 to 1.7 standard errors); a 12⁴ PAR=2 run from A1's final configuration at k = 0.248 wanders as widely as A1's chains (engine_checks/).
+
+## Observables
+- R: the engine's average curvature 2 Σ δ_h A_h / Σ V (column 5).
+- χ = 4 var(Σ δ_h A_h) / <Σ V>, Hamber's curvature fluctuation; at a critical point χ grows as L^(2/ν - 4).
+- Reweighting (4⁴ to 12⁴): multihist.py combines all chains on a grid, each weighted by n/ESS, with bootstrap errors; settings A1INC=1, LMAX=12, KPAD=0.002, KFIX at 0.244, 0.2475, 0.248, 0.252, 0.2525 (multihist_T30.json; earlier states kept as multihist_T28.json, *_T29frozen.json).
+- Single chains (14⁴ and larger): χ error the larger of a five-block error and the error from the effective sample size of the squared deviations; T31 pools the finished chains at one coupling about their common mean, by lineage (analyze_a1.py; the T30 version is analyze_a1_T30.py).
+- Split R-hat across flat and rough starts (screen 1.05), effective sample size, autocorrelation time n/ESS.
+
+## Rebuild
+analysis/night_final.py reruns the night's analyses from the chain files; analysis/analyze_a1.py (MHFILE=multihist_T30.json OUTSUFFIX=_T31) writes a1_results_T31.json and analysis/analyze_au.py writes au_results.json (kept as au_results_T31.json); fig_fixedk.py draws chi_fixedk.png; fill_t31.py writes this README.

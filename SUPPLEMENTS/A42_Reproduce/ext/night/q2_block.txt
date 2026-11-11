@@ -1,0 +1,6 @@
+# SA74 night plan Q2 (exploratory), fixed 00:33 PST before its runs, inserted here so it starts ahead of Q1's 10^4 and 12^4 chains:
+# continue the two 8^4 chains whose curvature was still rising (k = 0.255, N2b, last half +0.011 against first half +0.002; and
+# k = 0.26, the cloud's FSS_L8_k0.26 chain, +0.028 against +0.001) for 6,000 more sweeps each from their final configurations,
+# to see whether the rise stops at a small positive value or runs on into the rough phase. Q_F8_k0.260.cfg is FSS_L8_k0.26's file.
+Q_L8_k0.255_cont 8 0.255 0 6000 99491 0.005 N_L8_k0.255
+Q_L8_k0.260_cont 8 0.260 0 6000 99492 0.005 Q_F8_k0.260

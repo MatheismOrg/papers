@@ -1,0 +1,21 @@
+A42 T19: fixed audit protocol, 31 October 2026 (Los Angeles).
+Freeze before main/preparation runs; a separate 200-sweep timing-only run preceded this protocol.
+Reuse the supplied C engine byte-for-byte. No change to action, measure, moves or physics.
+Two sizes L=3,4; couplings k=0.05 (control),0.065 (near reported boundary); lambda=1.
+Three independent seeds per start class, flat and rough: 24 main chains.
+Rough starts are ALL terminal configurations from six fixed k=0.1 preparation chains;
+1000 thermal + 2000 recorded preparation sweeps. No selection by observed roughness.
+Each main chain: 3000 thermal + 12000 measurement sweeps; ten global rescalings per sweep.
+No matter, no frozen edges. Input seed pairing is a design convenience, not an independence claim
+between starts. Preparations are independent; their descendants at different k share a start.
+Preserve complete logs, every sweep, configuration snapshots, commands and failures.
+Diagnostics: R time series, first/last half means, batch means at powers of two (at least16
+batches), maximum batch standard error, autocorrelation-based effective sample size,
+ordinary split R-hat across all six chains and within each start class, scale identity,
+local deficit-angle spread, max squared edge and mean squared edge. Cross-start differences
+use independent seed-level means; do not confuse sweeps with independent replicates.
+Report convergence as unsupported if split R-hat>1.05, clear persistent start dependence,
+or substantial drift; passing is only a finite-run diagnostic, not proof of equilibrium.
+This is a new execution of existing code plus independent analysis, not an independent
+implementation of Regge gravity. The earlier raw histories are not in the supplied bundle.
+No claims of a critical point, Newtonian potential, physical Lorentzian dynamics or ToE.

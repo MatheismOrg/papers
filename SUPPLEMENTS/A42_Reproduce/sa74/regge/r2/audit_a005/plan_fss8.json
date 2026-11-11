@@ -1,0 +1,28 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "FSS_L8_k0.24_flat",
+   "L": 8,
+   "k": 0.24,
+   "thermal": 1500,
+   "measure": 3000,
+   "seed": 98800,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS_L8_k0.26_flat",
+   "L": 8,
+   "k": 0.26,
+   "thermal": 1500,
+   "measure": 3000,
+   "seed": 98801,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  }
+ ],
+ "note": "T26 finite-size stage, 8^4 extension, fixed before its runs after the 6^4 chains at k = 0.22 and 0.24 showed R and its fluctuation nearly unchanged from 3^4 and 4^4: flat starts at k = 0.24 and 0.26, 1,500 + 3,000 sweeps, a = 0.005. Purpose: the zero crossing and the curvature fluctuation on a lattice twice as wide as 4^4."
+}
