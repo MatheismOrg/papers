@@ -1,0 +1,325 @@
+{
+ "preparation": [
+  {
+   "tag": "prepare_L3_s0",
+   "L": 3,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92030,
+   "a": 0.0
+  },
+  {
+   "tag": "prepare_L3_s1",
+   "L": 3,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92031,
+   "a": 0.0
+  },
+  {
+   "tag": "prepare_L3_s2",
+   "L": 3,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92032,
+   "a": 0.0
+  },
+  {
+   "tag": "prepare_L4_s0",
+   "L": 4,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92040,
+   "a": 0.0
+  },
+  {
+   "tag": "prepare_L4_s1",
+   "L": 4,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92041,
+   "a": 0.0
+  },
+  {
+   "tag": "prepare_L4_s2",
+   "L": 4,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92042,
+   "a": 0.0
+  }
+ ],
+ "main": [
+  {
+   "tag": "L3_k0.05_flat_s0",
+   "L": 3,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93300,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.05_rough_s0",
+   "L": 3,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93301,
+   "load": "prepare_L3_s0.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.065_flat_s0",
+   "L": 3,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93300,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.065_rough_s0",
+   "L": 3,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93301,
+   "load": "prepare_L3_s0.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.05_flat_s1",
+   "L": 3,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93310,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.05_rough_s1",
+   "L": 3,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93311,
+   "load": "prepare_L3_s1.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.065_flat_s1",
+   "L": 3,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93310,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.065_rough_s1",
+   "L": 3,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93311,
+   "load": "prepare_L3_s1.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.05_flat_s2",
+   "L": 3,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93320,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.05_rough_s2",
+   "L": 3,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93321,
+   "load": "prepare_L3_s2.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.065_flat_s2",
+   "L": 3,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93320,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.065_rough_s2",
+   "L": 3,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93321,
+   "load": "prepare_L3_s2.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.05_flat_s0",
+   "L": 4,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93400,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.05_rough_s0",
+   "L": 4,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93401,
+   "load": "prepare_L4_s0.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.065_flat_s0",
+   "L": 4,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93400,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.065_rough_s0",
+   "L": 4,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93401,
+   "load": "prepare_L4_s0.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.05_flat_s1",
+   "L": 4,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93410,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.05_rough_s1",
+   "L": 4,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93411,
+   "load": "prepare_L4_s1.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.065_flat_s1",
+   "L": 4,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93410,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.065_rough_s1",
+   "L": 4,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93411,
+   "load": "prepare_L4_s1.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.05_flat_s2",
+   "L": 4,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93420,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.05_rough_s2",
+   "L": 4,
+   "k": 0.05,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93421,
+   "load": "prepare_L4_s2.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.065_flat_s2",
+   "L": 4,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93420,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.065_rough_s2",
+   "L": 4,
+   "k": 0.065,
+   "thermal": 3000,
+   "measure": 12000,
+   "seed": 93421,
+   "load": "prepare_L4_s2.cfg",
+   "start": "rough",
+   "a": 0.005
+  }
+ ],
+ "note": "T25 rerun of the T19 audit design. Preparations, seeds, starts, lengths, couplings and moves are copied from the T19 plan.json unchanged; the only change is the curvature-squared coupling a=0.005 in the 24 main chains (Hamber convention, sum_h a delta_h^2 A_h^2/V_h). Preparations stay at a=0, so rough starts are the same kind of k=0.1 configuration that trapped the T19 chains."
+}

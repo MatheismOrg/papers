@@ -1,0 +1,35 @@
+A42 four-dimension test, fixed before the SA74 runs (October 31, 2026)
+
+1. Readings. Each causal interval is read by the three tests of Section 3: the ordering fraction inverted with
+f(d) = Gamma(d+1) Gamma(d/2) / (2 Gamma(3d/2)); midpoint scaling, d = log2(N / largest smaller half-interval);
+the longest chain, L = m_d N^(1/d) with m_2 = 1.9544, m_3 = 2.0567, m_4 = 2.1443, m_5 = 2.2492, m_6 = 2.3,
+interpolated linearly in d.
+
+2. Intervals. As in Section 3: the six elements with the largest pasts; the largest intervals run to each from
+the root; the inner intervals run to each from the element at 30 percent of its depth that makes the interval
+largest; each holds at least 120 elements; a size series adds single intervals from the top element down to
+bottom ends at 0, 10, ..., 70 percent of its depth, each of at least 60 elements.
+
+3. Noise bands. Sprinkled intervals of flat spacetime in d = 2, 3 and 4 dimensions, with N = 120, 250, 500,
+1000, 2000 and 4000 points inside, replicated 40, 40, 40, 20, 12 and 6 times with seeds 1, 2, 3, ... Each test
+t gets a mean mu_t(d, N) and a standard deviation sigma_t(d, N). Between the sizes, mu and sigma are
+interpolated linearly in log N; outside them the nearest size is used.
+
+4. An interval reads d-dimensional when each of its three readings lies within 3 sigma of mu at its size.
+The window of the first passes, all three readings between 3.5 and 4.5, is reported alongside.
+
+5. A rule or growth model is a four-dimensional candidate when its largest interval of at least 1,000
+elements reads four-dimensional and the two largest intervals of its size series with at least 1,000
+elements both read four-dimensional, so that the readings do not drift away from four as the size grows.
+
+6. Runs under this protocol: (a) update orders oldest-first (the first passes), newest-first, and random
+with seeds 1 and 2, each to 20,000 updates, on the ten rules of the runs past 100,000 updates and the four
+other near misses of the first pass; (b) transitive percolation, the simplest sequential growth, with
+N = 1000, 2000, 4000 and 8000 elements and p = 0.3, 0.1, 0.03, 0.01, 0.003, 0.001 and 0.0003, seeds 1 and 2,
+skipping pN above 500, with a root added below all elements as the bottom of the largest intervals;
+(c) causal invariance by critical pairs: every pair of overlapping matches in a minimal state is applied
+both ways, and the pair resolves if some states reached from the two results in at most two further updates
+coincide up to renaming the new nodes.
+
+7. These criteria are not changed after the results are seen. Any later change is reported as a change,
+with its reason.

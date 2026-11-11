@@ -1,0 +1,72 @@
+# SA74 plan A1, fixed 03:27 PST before its runs (Gary 03:24: "u can continue past 4am without limit"), run by runner 2 with the sequential
+# engine (SEQ=1) and Wilson-line output (LINES=1). Purpose: the finite-size test on a finer grid of couplings around both Hamber's k_c = 0.2443
+# and tonight's zero crossing (about 0.252), with longer equilibration (3,000 sweeps: 12^4 flat starts still drift after 2,000) and several
+# independent chains per point; Wilson lines on 12^4 and 16^4 for the Newtonian-potential test. a = 0.005, lambda = 1, ten rescalings per sweep.
+# 12^4 chains r1 continue tonight's thermalized 12^4 configurations at the nearest k (FROM); r2 chains and all 8^4 chains start flat.
+# Columns: TAG L K THERM MEAS SEED A [FROM], in priority order (longest first).
+A1_L16_k0.248 16 0.248 3000 3000 99800 0.005 Q_L16_k0.2475
+A1_L16_k0.252 16 0.252 3000 3000 99801 0.005 Q_L16_k0.2525
+A1_L12_k0.244_r1 12 0.244 3000 4000 99802 0.005 N_L12_k0.245
+A1_L12_k0.246_r1 12 0.246 3000 4000 99803 0.005 N_L12_k0.245
+A1_L12_k0.248_r1 12 0.248 3000 4000 99804 0.005 N_L12_k0.2475
+A1_L12_k0.250_r1 12 0.250 3000 4000 99805 0.005 Q_L12_k0.250
+A1_L12_k0.252_r1 12 0.252 3000 4000 99806 0.005 N_L12_k0.2525
+A1_L12_k0.254_r1 12 0.254 3000 4000 99807 0.005 Q_L12_k0.255
+A1_L12_k0.244_r2 12 0.244 3000 4000 99808 0.005
+A1_L12_k0.246_r2 12 0.246 3000 4000 99809 0.005
+A1_L12_k0.248_r2 12 0.248 3000 4000 99810 0.005
+A1_L12_k0.250_r2 12 0.250 3000 4000 99811 0.005
+A1_L12_k0.252_r2 12 0.252 3000 4000 99812 0.005
+A1_L12_k0.254_r2 12 0.254 3000 4000 99813 0.005
+A1_L8_k0.244_r1 8 0.244 3000 6000 99814 0.005
+A1_L8_k0.246_r1 8 0.246 3000 6000 99815 0.005
+A1_L8_k0.248_r1 8 0.248 3000 6000 99816 0.005
+A1_L8_k0.250_r1 8 0.250 3000 6000 99817 0.005
+A1_L8_k0.252_r1 8 0.252 3000 6000 99818 0.005
+A1_L8_k0.254_r1 8 0.254 3000 6000 99819 0.005
+A1_L8_k0.244_r2 8 0.244 3000 6000 99820 0.005
+A1_L8_k0.246_r2 8 0.246 3000 6000 99821 0.005
+A1_L8_k0.248_r2 8 0.248 3000 6000 99822 0.005
+A1_L8_k0.250_r2 8 0.250 3000 6000 99823 0.005
+A1_L8_k0.252_r2 8 0.252 3000 6000 99824 0.005
+A1_L8_k0.254_r2 8 0.254 3000 6000 99825 0.005
+A1_L8_k0.244_r3 8 0.244 3000 6000 99826 0.005
+A1_L8_k0.246_r3 8 0.246 3000 6000 99827 0.005
+A1_L8_k0.248_r3 8 0.248 3000 6000 99828 0.005
+A1_L8_k0.250_r3 8 0.250 3000 6000 99829 0.005
+A1_L8_k0.252_r3 8 0.252 3000 6000 99830 0.005
+A1_L8_k0.254_r3 8 0.254 3000 6000 99831 0.005
+A1_L8_k0.244_r4 8 0.244 3000 6000 99832 0.005
+A1_L8_k0.246_r4 8 0.246 3000 6000 99833 0.005
+A1_L8_k0.248_r4 8 0.248 3000 6000 99834 0.005
+A1_L8_k0.250_r4 8 0.250 3000 6000 99835 0.005
+A1_L8_k0.252_r4 8 0.252 3000 6000 99836 0.005
+A1_L8_k0.254_r4 8 0.254 3000 6000 99837 0.005
+# SA74 plan A2, fixed 10:20 PST before its runs (Gary 10:15: "can connect to mac and server as needed? continue."), run by runner 2 with
+# A1's engine and settings. Purpose: (1) 16^4 in the fixed-coupling comparison with two chains per coupling: k = 0.244 (Hamber's k_c, where
+# his 1993 chi(L) fit was made), second chains at 0.248 and 0.252 started from the other coupling's configuration (approach from both sides),
+# and 0.250 for the zero crossing; each continues a finished A1 16^4 configuration (2,000 sweeps at its coupling, then 3,000 measured).
+# (2) a = 0.02 on 10^4 and 12^4 at k = 0.45 and 0.46, flat starts (2,000 + 4,000): does the zero crossing keep moving toward Hamber's
+# k_c = 0.4244(36) (4^4 0.479, 6^4 0.467, 8^4 about 0.462), and does chi grow at k = 0.46 (0.61, 0.55, 0.55 on 4^4, 6^4, 8^4)?
+A2_L16_k0.244_r1 16 0.244 2000 3000 99900 0.005 A1_L16_k0.248
+A2_L16_k0.244_r2 16 0.244 2000 3000 99901 0.005 A1_L16_k0.252
+A2_L16_k0.248_r2 16 0.248 2000 3000 99902 0.005 A1_L16_k0.252
+A2_L16_k0.252_r2 16 0.252 2000 3000 99903 0.005 A1_L16_k0.248
+A2_L16_k0.250 16 0.250 2000 3000 99904 0.005 A1_L16_k0.248
+A2_a0.02_L12_k0.450 12 0.450 2000 4000 99905 0.02
+A2_a0.02_L12_k0.460 12 0.460 2000 4000 99906 0.02
+A2_a0.02_L10_k0.450 10 0.450 2000 4000 99907 0.02
+A2_a0.02_L10_k0.460 10 0.460 2000 4000 99908 0.02
+# SA74 plan A3, fixed 11:43 PST before its runs (Gary 11:40: "how can it finish faster? run on both mac and server?"): forks of plan A2's
+# two 16^4 chains at Hamber's k_c = 0.244, started from their configurations after about 1,280 sweeps at that coupling (copied 11:42 as
+# TAG.cfg, checked whole), with new seeds: 700 more sweeps, then 1,500 measured. They use the two Mac slots left free when A2's a = 0.02
+# 10^4 runs finished (11:19). Purpose: the k = 0.244 answer on 16^4 about an hour sooner. Each fork shares its start with its parent,
+# so the analysis groups fork and parent.
+A3_L16_k0.244_f1 16 0.244 700 1500 99920 0.005
+A3_L16_k0.244_f2 16 0.244 700 1500 99921 0.005
+# SA74 plan A4, fixed 12:20 PST before its runs (12:10 check): at a = 0.02, plan A2's flat starts on 10^4 and 12^4 at k = 0.45 and 0.46
+# put the zero crossing above 0.46 on both grids (10^4: R = -0.0032 at 0.46, drifting up by sixths from -0.0050 to -0.0010), not below
+# 8^4's estimate of about 0.462. Purpose: bracket the crossing from above on 10^4 and 12^4 with flat starts at k = 0.47 (2,000 + 4,000
+# sweeps), and give chi at 0.47. They take the two slots that A2's 12^4 a = 0.02 runs free (about 12:30).
+A4_a0.02_L10_k0.470 10 0.470 2000 4000 99940 0.02
+A4_a0.02_L12_k0.470 12 0.470 2000 4000 99941 0.02

@@ -1,0 +1,325 @@
+{
+ "preparation": [
+  {
+   "tag": "prepare_L3_s0",
+   "L": 3,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92030,
+   "a": 0.0
+  },
+  {
+   "tag": "prepare_L3_s1",
+   "L": 3,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92031,
+   "a": 0.0
+  },
+  {
+   "tag": "prepare_L3_s2",
+   "L": 3,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92032,
+   "a": 0.0
+  },
+  {
+   "tag": "prepare_L4_s0",
+   "L": 4,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92040,
+   "a": 0.0
+  },
+  {
+   "tag": "prepare_L4_s1",
+   "L": 4,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92041,
+   "a": 0.0
+  },
+  {
+   "tag": "prepare_L4_s2",
+   "L": 4,
+   "k": 0.1,
+   "thermal": 1000,
+   "measure": 2000,
+   "seed": 92042,
+   "a": 0.0
+  }
+ ],
+ "main": [
+  {
+   "tag": "L3_k0.20_flat_s0",
+   "L": 3,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95300,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.20_rough_s0",
+   "L": 3,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95301,
+   "load": "prepare_L3_s0.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.24_flat_s0",
+   "L": 3,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95300,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.24_rough_s0",
+   "L": 3,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95301,
+   "load": "prepare_L3_s0.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.20_flat_s1",
+   "L": 3,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95310,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.20_rough_s1",
+   "L": 3,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95311,
+   "load": "prepare_L3_s1.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.24_flat_s1",
+   "L": 3,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95310,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.24_rough_s1",
+   "L": 3,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95311,
+   "load": "prepare_L3_s1.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.20_flat_s2",
+   "L": 3,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95320,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.20_rough_s2",
+   "L": 3,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95321,
+   "load": "prepare_L3_s2.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.24_flat_s2",
+   "L": 3,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95320,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L3_k0.24_rough_s2",
+   "L": 3,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95321,
+   "load": "prepare_L3_s2.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.20_flat_s0",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95400,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.20_rough_s0",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95401,
+   "load": "prepare_L4_s0.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_flat_s0",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95400,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_rough_s0",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95401,
+   "load": "prepare_L4_s0.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.20_flat_s1",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95410,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.20_rough_s1",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95411,
+   "load": "prepare_L4_s1.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_flat_s1",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95410,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_rough_s1",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95411,
+   "load": "prepare_L4_s1.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.20_flat_s2",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95420,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.20_rough_s2",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95421,
+   "load": "prepare_L4_s2.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_flat_s2",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95420,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_rough_s2",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 95421,
+   "load": "prepare_L4_s2.cfg",
+   "start": "rough",
+   "a": 0.005
+  }
+ ],
+ "note": "T25 stage B, fixed before its runs: the same six a=0, k=0.1 rough preparations as stage A; couplings k=0.20 and 0.24 near the zero crossing of the mean curvature seen in a 3^4 scan and near Hamber's k_c=0.2443(11) for a=0.005; 2000 equilibration and 6000 measurement sweeps; ten rescalings per sweep; same diagnostics and 1.05 screen."
+}

@@ -1,0 +1,116 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "AU1_a0.02_L6_k0.420_flat",
+   "L": 6,
+   "k": 0.42,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99000,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU1_a0.02_L6_k0.440_flat",
+   "L": 6,
+   "k": 0.44,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99001,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU1_a0.02_L4_k0.400_flat",
+   "L": 4,
+   "k": 0.4,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 99002,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU1_a0.02_L4_k0.420_flat",
+   "L": 4,
+   "k": 0.42,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 99003,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU1_a0.02_L4_k0.440_flat",
+   "L": 4,
+   "k": 0.44,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 99004,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU1_a0.02_L4_k0.460_flat",
+   "L": 4,
+   "k": 0.46,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 99005,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU1_a0.02_L3_k0.400_flat",
+   "L": 3,
+   "k": 0.4,
+   "thermal": 2000,
+   "measure": 8000,
+   "seed": 99006,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU1_a0.02_L3_k0.420_flat",
+   "L": 3,
+   "k": 0.42,
+   "thermal": 2000,
+   "measure": 8000,
+   "seed": 99007,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU1_a0.02_L3_k0.440_flat",
+   "L": 3,
+   "k": 0.44,
+   "thermal": 2000,
+   "measure": 8000,
+   "seed": 99008,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU1_a0.02_L3_k0.460_flat",
+   "L": 3,
+   "k": 0.46,
+   "thermal": 2000,
+   "measure": 8000,
+   "seed": 99009,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  }
+ ],
+ "note": "SA74 night stage AU1, fixed 03:12 PST before its runs: does the absence of critical growth seen at a = 0.005 hold at a = 0.02, where Hamber (1993) found k_c = 0.4244(36) and delta = 0.628(20) on lattices up to 16^4? Flat starts, a = 0.02, ten rescalings per sweep: 3^4 and 4^4 at k = 0.40, 0.42, 0.44, 0.46 (2,000 + 8,000 and 2,000 + 6,000 sweeps) and 6^4 at k = 0.42, 0.44 (2,000 + 4,000). Purpose: the zero crossing of the average curvature and the curvature fluctuation against size near it."
+}

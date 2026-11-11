@@ -1,0 +1,1 @@
+; at k = 0.245 they need about 7,000, until the long edges shrink, and a start from a second rough preparation is at -0.013 after 4,500, against -0.017 to -0.027 for the three flat starts

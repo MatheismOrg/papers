@@ -1,0 +1,107 @@
+"""Generate the numerical summary from saved results, without preset outputs."""
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+d = json.loads((ROOT / 'results.json').read_text())
+rows = d['cosmologies'] + d['state_sensitivity'] + d['fixed_dust_comparison']
+sm = d['free_SM_proxy']
+lam = sm['lambda_at_alpha_planck_area']
+sm_rows = [r for r in d['cosmologies'] if r['lam'] == lam]
+fixed = d['fixed_dust_comparison']
+failure = d['failure_control']
+checks = d['checks']
+env = d['environment']
+unique = len({(r['lam'], r['c'], r['radiation']) for r in rows})
+lines = [
+    'A42 Pass36 — Four-dimensional quantum matter and self-consistent geometry',
+    'Research working package, 31 October 2026 UTC',
+    '',
+    'RESULT AND SCOPE',
+    'A published nonsingular gravity model is coupled to the published four-dimensional',
+    'conformal-vacuum stress in closed homogeneous/isotropic FLRW. Quantum matter',
+    'changes the geometry self-consistently, including through its angular pressure.',
+    'This replaces the inadequate radial-source promotion in this restricted sector.',
+    'The gravity action and anomaly tensor are prior work. No novelty priority is claimed.',
+    '',
+    'The combined background equation is',
+    '  Phi/sqrt(1-alpha^2 Phi^2) - eta Phi^2 = C_d/a^3 + C_r/a^4,',
+    '  Phi=H^2+1/a^2, eta=N_eff*hbar*G/(360*pi).',
+    '',
+    'An analytic condition lambda=eta/alpha < 8/(3*sqrt(3)) ensures positive',
+    'algebraic response for every nonnegative density. A second analytic inequality',
+    'bounds both independent FLRW curvature combinations in the dust sector.',
+    'For the specified free SM-count proxy at alpha=hbar*G it gives K<=24/alpha^2.',
+    'The inequality is conditional on the stated model, state and coupling assumptions.',
+    '',
+    'COMPUTED RESULTS',
+    f"Passing checks: {sum(checks.values())}/{len(checks)} (implementation and structural checks).",
+    f'Evolution entries: {len(rows)}; distinct parameter sets: {unique}.',
+    f"Free-field effective count: {sm['N_eff']:.12g}.",
+    f"Free SM-count lambda: {lam:.12g}; response threshold: {d['bounds']['response_lambda_exact']:.12g}.",
+    f"Maximum sampled quantum density fraction in main proxy runs: {max(r['max_quantum_fraction'] for r in sm_rows):.9g}.",
+    f"Maximum normalized constraint error across all entries: {max(r['max_constraint_error'] for r in rows):.6g}.",
+    f"Maximum bounce-radius discrepancy: {max(r['bounce_radius_error'] for r in rows):.6g}.",
+    f"Independent finite-difference conservation residual: {d['independent_checks']['max_fd_ward']:.6g}.",
+    f"Angular-equation residual: {d['independent_checks']['max_angular_equation']:.6g}.",
+    f"Covariant quantum-tensor component error: {d['independent_checks']['max_covariant_tensor_error']:.6g}.",
+    '',
+    f"Fixed dust constant c={fixed[0]['c']:.12g}:",
+    f"  Classical minimum radius: {fixed[0]['amin_evolved']:.12g}; quantum: {fixed[1]['amin_evolved']:.12g} (sqrt(alpha) units).",
+    f"  Classical maximum sampled K*alpha^2: {fixed[0]['max_kretschmann']:.12g}; quantum: {fixed[1]['max_kretschmann']:.12g}.",
+    'Both bounce; quantum feedback does not decrease curvature in this comparison.',
+    'These trajectories share the dust constant, not their complete initial data.',
+    '',
+    'FAILURES RETAINED',
+    f"At lambda=1.5, maximum sampled K*alpha^2 is {max(r['max_kretschmann'] for r in rows if r['lam']==1.5):.12g}.",
+    'Thus the classical ceiling 24 cannot be extended to every subcritical coupling.',
+    f"At lambda={failure['lam']}, c={failure['c']}, response vanishes at y={failure['yfold']:.12g}.",
+    f"The scaled proper time from half that y is {failure['time_from_y_half']:.12g}.",
+    'The nonzero source divided by vanishing response makes acceleration diverge.',
+    'This is an effective-equation failure, not a rounding artifact.',
+    '',
+    'ASSUMPTIONS AND UNRESOLVED WORK',
+    'The total renormalized Box R coefficient is set to zero. With dynamical gravity',
+    'this fixes an independent physical curvature coupling. Restoring it changes',
+    'the differential order and can change stability. That test remains open.',
+    'Matter is free, massless and conformal. The SM field-count proxy is not an',
+    'interacting Standard Model: masses, running, symmetry breaking and scattering',
+    'are absent, and conformal Higgs coupling is assumed. There is vacuum polarization,',
+    'not conformal particle production. alpha is specified, not derived.',
+    'Near-Planck-curvature examples are formal semiclassical solutions; control over',
+    'quantum-gravity corrections has not been demonstrated. Spatial perturbations,',
+    'inhomogeneous black-hole centers and evaporation are not solved here.',
+    'The implicit-midpoint step is a standard integrator, not a fundamental discrete',
+    'spacetime law, exact finite-step conservation proof, or shortest ToE program.',
+    '',
+    'REPRODUCTION',
+    f"Recorded environment: Python {env['python']}, NumPy {env['numpy']}, SciPy {env['scipy']}.",
+    'In a suitable Python environment:',
+    '  python3 -m pip install -r requirements.txt',
+    '  python3 run_all.py',
+    'run.py is the authoritative executable experiment specification. It derives the',
+    'SM proxy from field counts and writes inputs.json, results.json and trajectories.npz.',
+    'inputs.json records that specification; editing it alone does not change a run.',
+    'run_all.py captures run.log, regenerates the plot and regenerates this summary.',
+    'All observables are calculated, not supplied as expected answers. Assertions',
+    'check tolerances/identities; the physical failure control is expected to fail',
+    'regularity and is retained explicitly. No downloaded numerical data are required.',
+    'Exact floating-point results can vary slightly across environments.',
+    '',
+    'FILES',
+    'DERIVATION.txt: equations, proofs, assumptions and interpretation.',
+    'PAPER_INSERT.txt: proposed A42 addition; the main manuscript was not overwritten.',
+    'PROTOCOL.txt and AUDIT_NOTES.txt: choices before/after runs and limitations.',
+    'SOURCES.txt: primary literature and attribution.',
+    'model.py: equations, root searches and discrete update.',
+    'run.py, inputs.json, results.json, run.log: experiment and numerical record.',
+    'trajectories.npz: sampled trajectories, named by case and variable.',
+    'plot.py, quantum_backreaction.png: scientific figure and generator.',
+    'report.py, run_all.py, requirements.txt: reproduction helpers.',
+    'SHA256SUMS: integrity hashes of the distributed files (before rerunning).',
+    '',
+    'CHECK REGISTER',
+]
+lines += [f"  {name}: {'PASS' if passed else 'FAIL'}" for name, passed in checks.items()]
+(ROOT / 'README.txt').write_text('\n'.join(lines) + '\n')
+

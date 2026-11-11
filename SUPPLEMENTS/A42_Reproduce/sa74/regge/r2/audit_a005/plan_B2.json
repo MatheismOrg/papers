@@ -1,0 +1,72 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "L4_k0.24_flat_s0_cont",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 500,
+   "measure": 12000,
+   "seed": 97400,
+   "load": "L4_k0.24_flat_s0.cfg",
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_rough_s0_cont",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 500,
+   "measure": 12000,
+   "seed": 97401,
+   "load": "L4_k0.24_rough_s0.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_flat_s1_cont",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 500,
+   "measure": 12000,
+   "seed": 97410,
+   "load": "L4_k0.24_flat_s1.cfg",
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_rough_s1_cont",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 500,
+   "measure": 12000,
+   "seed": 97411,
+   "load": "L4_k0.24_rough_s1.cfg",
+   "start": "rough",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_flat_s2_cont",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 500,
+   "measure": 12000,
+   "seed": 97420,
+   "load": "L4_k0.24_flat_s2.cfg",
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "L4_k0.24_rough_s2_cont",
+   "L": 4,
+   "k": 0.24,
+   "thermal": 500,
+   "measure": 12000,
+   "seed": 97421,
+   "load": "L4_k0.24_rough_s2.cfg",
+   "start": "rough",
+   "a": 0.005
+  }
+ ],
+ "note": "T25 stage B2, fixed before its runs after stage B: the six 4^4, k = 0.24 chains failed the screen (1.077) with their two start classes agreeing in mean, so each is continued from its final configuration with a new seed for 500 retuning and 12,000 measurement sweeps. Same screen; the continuation is reported separately and is not pooled with stage B."
+}

@@ -1,0 +1,61 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "AU2_a0.02_L8_k0.460_flat",
+   "L": 8,
+   "k": 0.46,
+   "thermal": 2000,
+   "measure": 3000,
+   "seed": 99100,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU2_a0.02_L6_k0.460_flat",
+   "L": 6,
+   "k": 0.46,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99101,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU2_a0.02_L6_k0.480_flat",
+   "L": 6,
+   "k": 0.48,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99102,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU2_a0.02_L4_k0.480_flat",
+   "L": 4,
+   "k": 0.48,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 99103,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  },
+  {
+   "tag": "AU2_a0.02_L4_k0.500_flat",
+   "L": 4,
+   "k": 0.5,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 99104,
+   "load": null,
+   "start": "flat",
+   "a": 0.02
+  }
+ ],
+ "note": "SA74 night stage AU2, fixed 04:15 PST before its runs: where does the average curvature cross zero at a = 0.02, and does the curvature fluctuation grow from 4^4 to 8^4 near that crossing? AU1 found R still negative at k = 0.46 on 4^4 (-0.0029) and at k = 0.44 on 6^4 (-0.0097), with chi 0.45-0.61; Hamber (1993) gives k_c = 0.4244(36) at a = 0.02. Flat starts, a = 0.02, ten rescalings per sweep: 6^4 at k = 0.46, 0.48 (2,000 + 4,000); 8^4 at k = 0.46 (2,000 + 3,000); 4^4 at k = 0.48, 0.50 (2,000 + 6,000). Runs after FSS4 on the cloud's two cores; descriptive."
+}

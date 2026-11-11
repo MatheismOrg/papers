@@ -1,0 +1,94 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "FSS2_L3_k0.2475_flat",
+   "L": 3,
+   "k": 0.2475,
+   "thermal": 2000,
+   "measure": 8000,
+   "seed": 98700,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS2_L3_k0.2525_flat",
+   "L": 3,
+   "k": 0.2525,
+   "thermal": 2000,
+   "measure": 8000,
+   "seed": 98701,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS2_L4_k0.2475_flat",
+   "L": 4,
+   "k": 0.2475,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 98702,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS2_L4_k0.2525_flat",
+   "L": 4,
+   "k": 0.2525,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 98703,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS2_L5_k0.2475_flat",
+   "L": 5,
+   "k": 0.2475,
+   "thermal": 2000,
+   "measure": 5000,
+   "seed": 98704,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS2_L5_k0.2525_flat",
+   "L": 5,
+   "k": 0.2525,
+   "thermal": 2000,
+   "measure": 5000,
+   "seed": 98705,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS2_L6_k0.2475_flat",
+   "L": 6,
+   "k": 0.2475,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 98706,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS2_L6_k0.2525_flat",
+   "L": 6,
+   "k": 0.2525,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 98707,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  }
+ ],
+ "note": "SA74 night stage FSS2, fixed 00:29 PST before its runs: the small grids of the finite-size series at the two couplings of plan Q1 (k = 0.2475 and 0.2525, a = 0.005, flat starts, ten rescalings per sweep): 3^4 (2,000 + 8,000 sweeps), 4^4 (2,000 + 6,000), 5^4 (2,000 + 5,000) and 6^4 (2,000 + 4,000). With N2b (10^4, 12^4) and Q1 (8^4 to 16^4) they give the curvature fluctuation from 3^4 to 16^4 at fixed k. Runs on the cloud after stage AS3."
+}

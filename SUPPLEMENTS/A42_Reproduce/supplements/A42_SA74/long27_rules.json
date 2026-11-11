@@ -1,0 +1,110 @@
+[
+{
+"rule": "{{x,y},{x,z}}->{{x,w},{y,z},{z,w}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{x,z}}->{{y,w},{z,w},{w,x}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{x,z}}->{{y,x},{z,w},{w,y}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{x,z}}->{{y,y},{y,w},{z,y}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{x,z}}->{{y,y},{z,w},{w,y}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{y,z}}->{{x,y},{x,w},{w,z}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{y,z}}->{{x,y},{y,w},{z,y}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{y,z}}->{{x,z},{x,w},{w,z}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{y,z}}->{{y,x},{y,w},{z,x}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{y,z}}->{{y,x},{y,w},{z,y}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{y,z}}->{{y,x},{y,z},{w,y}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{y,z}}->{{y,x},{z,y},{w,y}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{y,z}}->{{z,x},{z,w},{w,x}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{z,y}}->{{x,w},{y,x},{w,z}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{z,y}}->{{x,x},{x,w},{w,z}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{z,y}}->{{y,w},{w,x},{w,z}}",
+"group": "scan 2->3 candidate"
+},
+{
+"rule": "{{x,y},{z,y}}->{{x,z},{x,w},{y,x},{w,y}}",
+"group": "sample 2->4 candidate"
+},
+{
+"rule": "{{x,y},{x,z}}->{{x,y},{z,y},{z,w},{w,z}}",
+"group": "sample 2->4 candidate"
+},
+{
+"rule": "{{x,y},{y,z}}->{{x,y},{y,x},{z,y},{w,y}}",
+"group": "sample 2->4 candidate"
+},
+{
+"rule": "{{x,y},{z,y}}->{{x,y},{y,w},{u,x},{u,z}}",
+"group": "sample 2->4 candidate"
+},
+{
+"rule": "{{x,y},{y,z}}->{{x,y},{y,w},{z,y},{w,y}}",
+"group": "sample 2->4 candidate"
+},
+{
+"rule": "{{x,y},{z,y}}->{{x,z},{x,w},{w,y},{u,z}}",
+"group": "sample 2->4 candidate"
+},
+{
+"rule": "{{x,y},{x,z}}->{{x,y},{y,w},{z,u},{u,y}}",
+"group": "sample 2->4 candidate"
+},
+{
+"rule": "{{x,y},{x,z}}->{{y,x},{y,w},{z,x}}",
+"group": "two-dimensional control"
+},
+{
+"rule": "{{x,y},{x,z}}->{{x,y},{x,w},{z,x}}",
+"group": "two-dimensional control"
+},
+{
+"rule": "{{x,y},{z,y}}->{{x,y},{y,z},{w,y}}",
+"group": "two-dimensional control"
+},
+{
+"rule": "{{x,y},{z,y}}->{{y,x},{y,z},{w,x}}",
+"group": "two-dimensional control"
+}
+]

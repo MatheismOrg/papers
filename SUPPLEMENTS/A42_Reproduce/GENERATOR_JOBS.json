@@ -1,0 +1,457 @@
+[
+ {
+  "folder": "A42_Supplied_Physics/audit",
+  "argv": [
+   "mass_coin_audit.py"
+  ]
+ },
+ {
+  "folder": "A42_Supplied_Physics/audit",
+  "argv": [
+   "quench_overlap_audit.py"
+  ]
+ },
+ {
+  "folder": "A42_Supplied_Physics/gauge",
+  "argv": [
+   "gauge_ring.py"
+  ]
+ },
+ {
+  "folder": "A42_Supplied_Physics/geodesic",
+  "argv": [
+   "circuit_geodesic.py"
+  ]
+ },
+ {
+  "folder": "A42_Supplied_Physics/geodesic",
+  "argv": [
+   "geodesic_packet.py"
+  ]
+ },
+ {
+  "folder": "A42_Supplied_Physics/horizon",
+  "argv": [
+   "horizon_test.py"
+  ]
+ },
+ {
+  "folder": "A42_Supplied_Physics/massive",
+  "argv": [
+   "massive_curved.py"
+  ]
+ },
+ {
+  "folder": "A42_Supplied_Physics/maxwell",
+  "argv": [
+   "maxwell_gravity.py"
+  ]
+ },
+ {
+  "folder": "A42_Supplied_Physics/qft",
+  "argv": [
+   "fock_mass_quench.py"
+  ]
+ },
+ {
+  "folder": ".",
+  "argv": [
+   "A38_Coupling_Code_Benchmark.py"
+  ]
+ },
+ {
+  "folder": ".",
+  "argv": [
+   "A38_Symbolic_Benchmark.py"
+  ]
+ },
+ {
+  "folder": "A42_Step_Rule",
+  "argv": [
+   "A42_Step_Rule_Transfer.py"
+  ]
+ },
+ {
+  "folder": "A42_Step_Rule",
+  "argv": [
+   "verify_cap.py"
+  ],
+  "claims": [
+   {
+    "file": "A42_Step_Rule_Check.json",
+    "path": [
+     "rule_raw_lzma2_bits"
+    ],
+    "paper": 2488,
+    "text": "the single-particle Dirac step fits in a program of 2,488 bits (abstract; Section 8)"
+   }
+  ]
+ },
+ {
+  "folder": ".",
+  "argv": [
+   "A42_Rule_Search.py",
+   "validate",
+   "validation.json"
+  ]
+ },
+ {
+  "folder": ".",
+  "argv": [
+   "A42_Rule_Search.py",
+   "enumerate",
+   "rules_22_32.json"
+  ],
+  "timeout": 900,
+  "claims": [
+   {
+    "file": "rules_22_32.json",
+    "len": true,
+    "paper": 2935,
+    "text": "2,935 rules rewrite two connected relations into three (abstract; Section 4.1)"
+   }
+  ]
+ },
+ {
+  "folder": "A42_SA74",
+  "argv": [
+   "A42_SA74_Supplied_Lattice.py",
+   "../A38_Symbolic_Benchmark_Spec.txt",
+   "A42_SA74_Supplied_Lattice_Results.json"
+  ],
+  "timeout": 1200,
+  "claims": [
+   {
+    "file": "A42_SA74_Supplied_Lattice_Results.json",
+    "path": [
+     "bits",
+     "plus lattice and declared"
+    ],
+    "paper": 16272,
+    "text": "the known laws on a supplied lattice, with declared dark matter and initial data, compress to 16,272 bits (abstract; Section 8.7; Table 12)"
+   }
+  ]
+ },
+ {
+  "folder": "A42_SA74",
+  "argv": [
+   "A42_SA74_Forms.py",
+   "A42_SA74_Forms_Results.json"
+  ],
+  "timeout": 1800
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass10",
+  "argv": [
+   "expanding_dirac.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass10",
+  "argv": [
+   "audit_expansion.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass11",
+  "argv": [
+   "gauge_feedback.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass11",
+  "argv": [
+   "audit_and_plot.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass12",
+  "argv": [
+   "curved_gauge.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass12",
+  "argv": [
+   "gauge_feedback_pass11.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass12",
+  "argv": [
+   "audit_and_plot.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass13",
+  "argv": [
+   "bosonization_test.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass13",
+  "argv": [
+   "dynamics.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass13",
+  "argv": [
+   "extend_dynamics.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass13",
+  "argv": [
+   "lattice_scaling.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass13",
+  "argv": [
+   "audit_bosonization.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass13",
+  "argv": [
+   "audit_scaling.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900,
+  "prep_copy": {
+   "../Pass12/curved_gauge.py": "curved_gauge_pass12.py"
+  }
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass15",
+  "argv": [
+   "lattice_stress.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass15",
+  "argv": [
+   "audit_precision.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass15",
+  "argv": [
+   "audit_operators.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass16",
+  "argv": [
+   "step_scalar.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass16",
+  "argv": [
+   "audit_shadow.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass16",
+  "argv": [
+   "audit_steps.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass17",
+  "argv": [
+   "backreaction.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass17",
+  "argv": [
+   "audit_gate.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass17",
+  "argv": [
+   "audit_backreaction.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass17",
+  "argv": [
+   "cutoff_test.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass17",
+  "argv": [
+   "summarize.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass18",
+  "argv": [
+   "endpoint_ledger.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass18",
+  "argv": [
+   "audit_rst.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass18",
+  "argv": [
+   "audit_endpoint.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass36",
+  "argv": [
+   "run_all.py"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass36_R2",
+  "argv": [
+   "derive2.py"
+  ],
+  "timeout": 900
+ },
+ {
+  "folder": "A42_Harder_Tests/Pass36_R2",
+  "argv": [
+   "r2_bounce.py",
+   "0.0",
+   "1e-06",
+   "1e-05",
+   "0.0001",
+   "0.001",
+   "0.002",
+   "0.005",
+   "0.01",
+   "0.1",
+   "1.0",
+   "-1e-06",
+   "-0.0001",
+   "-0.01",
+   "-0.1"
+  ],
+  "env": {
+   "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout": 900
+ }
+]

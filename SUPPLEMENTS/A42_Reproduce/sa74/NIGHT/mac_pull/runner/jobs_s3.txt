@@ -1,0 +1,5 @@
+# SA74 plan S3, fixed 13:05 PST before its run (Gary 12:59: the other project uses about half a core of the server): a second 20^4 chain at
+# Hamber's k_c = 0.244, from a flat start with its own seed, beside plan A5's on the Mac, for start independence and statistics on 20^4.
+# a = 0.005, lambda = 1, ten rescalings per sweep; static multi-core engine regge_par_x86 (md5 181d09c2), 6 threads at idle priority.
+# Columns: TAG L K THERM MEAS SEED A
+S3_L20_k0.244_r2 20 0.244 2500 3000 99970 0.005

@@ -1,0 +1,160 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "AS2_a0.001_L4_k0.08_flat",
+   "L": 4,
+   "k": 0.08,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 101600,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS2_a0.001_L4_k0.10_flat",
+   "L": 4,
+   "k": 0.1,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 101601,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS2_a0.001_L4_k0.12_flat",
+   "L": 4,
+   "k": 0.12,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 101602,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS2_a0.001_L4_k0.14_flat",
+   "L": 4,
+   "k": 0.14,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 101603,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS2_a0.001_L4_k0.16_flat",
+   "L": 4,
+   "k": 0.16,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 101604,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS2_a0.001_L4_k0.18_flat",
+   "L": 4,
+   "k": 0.18,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 101605,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS2_a0.001_L4_k0.20_flat",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 101606,
+   "load": null,
+   "start": "flat",
+   "a": 0.001
+  },
+  {
+   "tag": "AS2_a0.002_L4_k0.08_flat",
+   "L": 4,
+   "k": 0.08,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 103600,
+   "load": null,
+   "start": "flat",
+   "a": 0.002
+  },
+  {
+   "tag": "AS2_a0.002_L4_k0.10_flat",
+   "L": 4,
+   "k": 0.1,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 103601,
+   "load": null,
+   "start": "flat",
+   "a": 0.002
+  },
+  {
+   "tag": "AS2_a0.002_L4_k0.12_flat",
+   "L": 4,
+   "k": 0.12,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 103602,
+   "load": null,
+   "start": "flat",
+   "a": 0.002
+  },
+  {
+   "tag": "AS2_a0.002_L4_k0.14_flat",
+   "L": 4,
+   "k": 0.14,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 103603,
+   "load": null,
+   "start": "flat",
+   "a": 0.002
+  },
+  {
+   "tag": "AS2_a0.002_L4_k0.16_flat",
+   "L": 4,
+   "k": 0.16,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 103604,
+   "load": null,
+   "start": "flat",
+   "a": 0.002
+  },
+  {
+   "tag": "AS2_a0.002_L4_k0.18_flat",
+   "L": 4,
+   "k": 0.18,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 103605,
+   "load": null,
+   "start": "flat",
+   "a": 0.002
+  },
+  {
+   "tag": "AS2_a0.002_L4_k0.20_flat",
+   "L": 4,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 103606,
+   "load": null,
+   "start": "flat",
+   "a": 0.002
+  }
+ ],
+ "note": "SA74 night stage AS2, fixed 23:31 PST before its runs, after the first AS chains showed rough starts relaxing at a = 0.001: where the curvature crosses zero for a = 0.001 and 0.002 on 4^4 (flat starts, k = 0.08 to 0.20, 2,000 + 4,000 sweeps), to fit k_c(a) and delta(a)."
+}

@@ -1,0 +1,20 @@
+# SA74 plan A5, fixed 13:30 PST before its runs (Gary 11:40: "how can it finish faster?"; 12:21 run logs and remote control): 20^4, beyond
+# Hamber's largest grid, with the multi-core engine regge_mac_par (PAR threads; checked against the sequential engine: without PAR it is
+# byte-identical, 1 and 2 threads give identical runs, and on 4^4 its averages match the sequential engine's). Runner 3 runs these one at
+# a time once runner 2's chains are done. a = 0.005, lambda = 1, ten rescalings per sweep, Wilson-line output. Purpose: the curvature
+# fluctuation on 20^4 at Hamber's k_c = 0.244 (flat start, 2,500 + 3,000 sweeps), then at 0.248 and 0.252, each continuing the previous
+# configuration (1,500 + 3,000), for the fixed-coupling comparison of A42 Section 8.10.
+# Columns: TAG L K THERM MEAS SEED A [FROM]
+A5_L20_k0.244 20 0.244 2500 3000 99960 0.005
+A5_L20_k0.248 20 0.248 1500 3000 99961 0.005 A5_L20_k0.244
+A5_L20_k0.252 20 0.252 1500 3000 99962 0.005 A5_L20_k0.248
+# SA74 plan A6, appended Nov 9 about 20:35 PST before its runs (Gary 20:32: "go"): does Hamber's model show any growth beyond 20^4?
+# A second, independent 20^4 chain at k = 0.244 (flat start, new seed); 24^4 at k = 0.244 (flat start, 2,500 + 3,000), then 0.248 and
+# 0.252, each continuing the previous configuration (1,500 + 3,000); then 32^4 at k = 0.244 (flat start, 2,500 + 3,000). Same engine and
+# settings as plan A5. Analysis fixed now: the fluctuation chi at fixed k joins the fits of a1_results (power in L); a first-order
+# transition is tested by the histogram of R on 24^4 and 32^4 (two peaks) and by chi growing as L^4.
+A6_L20_k0.244_r2 20 0.244 2500 3000 99970 0.005
+A6_L24_k0.244 24 0.244 2500 3000 99971 0.005
+A6_L24_k0.248 24 0.248 1500 3000 99972 0.005 A6_L24_k0.244
+A6_L24_k0.252 24 0.252 1500 3000 99973 0.005 A6_L24_k0.248
+A6_L32_k0.244 32 0.244 2500 3000 99974 0.005

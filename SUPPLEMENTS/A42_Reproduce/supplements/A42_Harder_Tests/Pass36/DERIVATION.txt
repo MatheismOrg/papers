@@ -1,0 +1,226 @@
+A42 PASS36: FOUR-DIMENSIONAL CONFORMAL MATTER WITH SELF-CONSISTENT GEOMETRY
+Gary Abraham Bernstein research working package -- 31 October 2026 UTC
+
+What is being improved
+
+Pass35 showed why a two-dimensional Polyakov tensor divided by sphere
+area cannot simply be promoted to a regular four-dimensional center.
+Here the quantum source is replaced in a tractable sector: homogeneous
+and isotropic four-dimensional spacetime. It has angular pressure and
+agrees with the covariant conformal-vacuum tensor, not merely a radial
+ansatz. Its backreaction is solved together with the geometry.
+
+This is a restricted semiclassical construction. It does not repair the
+inhomogeneous black-hole calculation or reproduce the interacting SM.
+The gravity model and quantum-stress ingredients are published physics;
+the contribution here is their explicit combination, bounds and tests.
+No publication-priority claim is made.
+
+1. Gravity, matter, state and renormalization
+
+Use the square-root NPQT characteristic function from Bueno et al.:
+
+  h(Phi)=Phi/sqrt(1-alpha^2 Phi^2), alpha>0,
+  Phi=H^2+1/a^2, H=dot a/a, D=ddot a/a.
+
+The geometry is closed FLRW with metric signature (-,+,+,+). The
+published Friedmann equation is h(Phi)=(8pi G/3)rho_total. The action's
+real positive-curvature branch has 0<=alpha Phi<1. alpha is a length
+squared, not measured or derived here. The dust density is
+rho_d=3 C_d/(8pi G a^3). No cosmological constant is included.
+
+For free massless conformal fields, let
+
+  N_eff=N_s+(11/2)N_W+62N_v,
+  a_Euler=N_eff/360, kappa=N_eff hbar/(960pi^2).
+
+N_s counts real conformally coupled scalars, N_W counts two-component
+Weyl fermions, N_v counts vectors. These coefficients follow the
+standard Euler trace anomaly. Weyl curvature vanishes in FLRW.
+
+SPECIFIED COUPLING CHOICE: the total renormalized coefficient of Box R
+in the semiclassical trace equation is set to zero. In a prescribed
+background this term can be shifted by a finite R^2 counterterm. Once
+gravity is dynamical, its total physical coefficient is an independent
+coupling. Setting it to zero restricts the candidate; it is not a proof
+that the coefficient is absent in nature. A nonzero coefficient adds
+higher derivatives and invalidates the two-variable evolution used here.
+
+The state-dependent homogeneous traceless part is retained as C_q/a^4.
+The main calculation sets C_q=0 in the conformal-vacuum prescription
+with no type-D (Box R) anomaly. This choice has the expected static
+Einstein-universe Casimir energy, rather than incorrectly setting that
+vacuum energy to zero. Positive extra radiation/state contributions
+are tested separately. Trace information alone never fixes this constant.
+
+2. Full four-dimensional stress in this symmetry sector
+
+The Euler invariant is E4=24 Phi D. The trace and conservation law are
+
+  T_q=-kappa E4/6=-4kappa Phi D,
+  dot rho_q+3H(rho_q+p_q)=0.
+
+Using dot Phi=2H(D-Phi), integration gives
+
+  rho_q=kappa Phi^2+C_q/a^4,
+  p_q=(kappa/3)(Phi^2-4Phi D)+C_q/(3a^4).             (1)
+
+p_q is all three spatial pressures, including the two angular ones.
+It stays finite at the spherical coordinate center when Phi,D,a are
+finite. In orthonormal components T=diag(rho_q,p_q,p_q,p_q); there is
+no 1/r^2 promotion from a two-dimensional tensor. Coordinate angular
+components vanish as p_q r^2 near r=0, as regularity requires.
+
+An independent check uses Herzog and Huang, arXiv:1301.5002, Eq. (23):
+
+  T^mu_nu=-a_Euler hbar/(16pi^2) [
+     delta^mu_nu(R^2/2-R_ab R^ab)
+     +2R^mu_lambda R^lambda_nu -(4/3)R R^mu_nu ].     (2)
+
+On FLRW the mixed Ricci eigenvalues are (3D,D+2Phi,D+2Phi,D+2Phi).
+Substitution reproduces every vacuum component of (1). The code tests
+this independently over a grid of Phi,D values. Extra C_q/a^4 is the
+separately conserved state/radiation tensor, not part of (2).
+
+Minkowski space has zero vacuum stress. In de Sitter, D=Phi=H_dS^2,
+so rho_q=kappa H_dS^4 and p_q=-rho_q. These are external-geometry
+checks, not a claim of a source-free de Sitter solution of the combined
+gravity equations. On a static three-sphere of radius L, (1) gives
+energy 2pi^2 L^3 rho_q=3a_Euler hbar/(4L), agreeing with the Casimir
+energy in the same zero-Box-R prescription.
+
+3. One combined background equation
+
+Define eta=(8pi G/3)kappa=N_eff hbar G/(360pi), and let C_r include
+the state term plus any independently specified classical radiation.
+The self-consistent constraint becomes
+
+  Phi/sqrt(1-alpha^2 Phi^2)-eta Phi^2
+                         =C_d/a^3+C_r/a^4.           (3)
+
+This is the improved formula for this sector. The geometry on both sides
+changes during evolution; the quantum correction is not evaluated on
+a fixed classical orbit. In particular its pressure contains D and
+therefore changes the acceleration equation.
+
+For dimensionless x=a/sqrt(alpha), s=t/sqrt(alpha), y=alpha Phi,
+lambda=eta/alpha, c=C_d/sqrt(alpha), d=C_r/alpha, define
+
+  F_lambda(y)=y/sqrt(1-y^2)-lambda y^2,
+  F_lambda(y)=c/x^3+d/x^4, y=(1+v^2)/x^2, v=dx/ds.  (4)
+
+The local homogeneous time evolution is
+
+  x'=v,
+  v'=x [ y-(3c/x^3+4d/x^4)/(2 F_lambda'(y)) ],
+  F_lambda'(y)=(1-y^2)^(-3/2)-2lambda y.              (5)
+
+The right side is regular at v=0; a bounce is produced by the equations,
+not imposed by changing the sign of velocity. Differentiation shows
+that the constraint residual F_lambda(y)-c/x^3-d/x^4 is constant under
+(5), hence exact initial satisfaction is propagated in the continuum.
+The full angular equation h'(Phi)(D-Phi)=-4pi G(rho_total+p_total)
+is also checked directly, including dust and all quantum pressures.
+
+4. Exact algebraic-response condition
+
+For lambda>=0, F_lambda'(y)>0 throughout 0<=y<1 precisely when
+
+  lambda < lambda_star = 8/(3sqrt(3)) = 1.53960071784. (6)
+
+Proof: positivity requires lambda<1/[2y(1-y^2)^(3/2)]. The denominator
+has its unique maximum at y=1/2. Below (6), F rises monotonically from
+zero to infinity; there is a unique y for every nonnegative total
+classical/state density. This is an algebraic background condition,
+not a theorem about inhomogeneous characteristics or stability.
+
+For lambda=1.6, a contracting dust example with c=2 reaches F'=0 at
+y=0.41483100405, x=2.22907835349, v=-1.03014963551. The proper time
+from y=y_fold/2 is finite (0.29060380649 in scaled units). The numerator
+in (5) remains positive, so D diverges there. The saved approach data
+show increasing curvature as the fold is approached. This is a genuine
+failure of this effective equation, not a floating-point zero. It does
+not imply that a more complete quantum-gravity theory is singular.
+
+5. Uniform curvature control, including a proved bound for the proxy
+
+For d=0 and lambda<lambda_star, put q=1-lambda/lambda_star>0,
+b=3/(2q). Since F'>=q(1-y^2)^(-3/2) and 0<=F<=y/sqrt(1-y^2),
+the dimensionless acceleration z=alpha D obeys
+
+  y(1-b+b y^2) <= z = y-3F/(2F') <= y <=1.
+
+The minimum of the cubic lower bound is
+
+  z >= -m,  m=2(b-1)^(3/2)/(3sqrt(3b)).
+
+Consequently the four-dimensional Kretschmann invariant satisfies
+
+  K=12(Phi^2+D^2) <=12[1+max(1,m^2)]/alpha^2.       (7)
+
+This bound is uniform in the dust constant and is analytic, not a grid
+observation. Positive radiation can be covered by replacing b=3/(2q)
+by b=2/q, since 3rho_d+4rho_r<=4(rho_d+rho_r).
+
+For the specified free SM-count proxy, q=0.42828342147 and
+m=0.81412509890<1. Thus K<=24/alpha^2 for the zero-extra-radiation
+dust sector. Also rho_q<=kappa/alpha^2 and
+|p_q|<=5kappa/(3alpha^2), establishing finite central quantum stress
+in this homogeneous sector. A separate numerical minimization gives
+1.27458516440 as a sufficient lambda bound from the exact z>=-1
+inequality. That optimized number is a numerical result; the simpler
+analytic proof above suffices for the SM-count proxy.
+
+Do not extend the classical ceiling to every subcritical lambda:
+at lambda=1.5 one tested dust case reaches K alpha^2=618.23, although
+it remains finite. At lambda=1.6 the fold can make curvature diverge.
+Both behaviors are retained in results.json.
+
+6. Standard Model field-count benchmark and actual runs
+
+Counting only the minimal SM fields before mass generation gives
+N_s=4, N_W=45, N_v=12. Using the standard free-field anomaly weights,
+N_eff=995.5. With the illustrative normalization alpha=hbar G,
+lambda=0.88021525471, below (6). The uniform response condition would
+read alpha>0.57171657853 hbar G for this proxy. This is a conditional
+model inequality, not a measurement or prediction of a fundamental area.
+
+The proxy omits masses, interactions, running-coupling trace terms and
+nonconformal Higgs coupling. It is NOT the full Standard Model. Scalar
+conformal coupling is explicitly assumed. Planck-curvature runs are
+formal semiclassical tests, not a controlled quantum-gravity expansion.
+
+The main scan uses five lambda choices and three dust constants relative
+to each model's turning threshold. Three radiation choices and a fixed
+dust comparison were added. In the fixed-dust comparison c=3.22370979547,
+the classical minimum scale factor is 1.02712279278; quantum feedback
+changes it to 1.01605252375. Both are in units of sqrt(alpha).
+The quantum term reaches about 44% of the total energy density along
+the proxy trajectories; it is not assumed to be infinitesimal. The
+general d=0 fraction is lambda y sqrt(1-y^2)<=lambda/2.
+
+The main proxy bounce radii at 1.1,2,10 times its turning threshold are
+1.13917815428, 1.04142662410 and 1.00247688043. The scripts compute
+them independently from the turning constraint and from time evolution.
+The quantum stress satisfies the anomaly, conservation and angular
+equation throughout the saved trajectories. All numerical values and
+error measures are regenerated, not printed as preset results.
+
+7. Discrete implementation and limits
+
+model.py supplies one implicit-midpoint update for (5). It evolves
+through contraction and expansion without a prescribed bounce. Its
+second-order convergence is ordinary numerical-method behavior, not a
+new physical discovery or proof of spacetime discreteness. The finite
+step has small constraint drift; no exact finite-step conservation or
+fundamental code-length claim is made. An implicit root solver and
+floating-point arithmetic remain explicit dependencies.
+
+The present improvement is a coherent four-dimensional quantum-matter
+benchmark coupled to the same published gravity family, together with
+a conditional regularity proof and an explicit excessive-coupling
+failure. The next priority is to restore and test the independent R^2
+coupling, and to examine inhomogeneous perturbations with a correctly
+specified quantum state. Those could still reject the construction.
+No black-hole evaporation, information recovery, full SM fit or ToE has
+been established. The main A42 manuscript has not been overwritten.

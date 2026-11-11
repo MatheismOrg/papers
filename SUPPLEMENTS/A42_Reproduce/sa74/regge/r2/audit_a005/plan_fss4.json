@@ -1,0 +1,61 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "FSS4_L6_k0.2425_flat",
+   "L": 6,
+   "k": 0.2425,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 98900,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS4_L6_k0.2575_flat",
+   "L": 6,
+   "k": 0.2575,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 98901,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS4_L4_k0.2425_flat",
+   "L": 4,
+   "k": 0.2425,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 98902,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS4_L4_k0.2575_flat",
+   "L": 4,
+   "k": 0.2575,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 98903,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS4_L4_k0.2650_flat",
+   "L": 4,
+   "k": 0.265,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 98904,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  }
+ ],
+ "note": "SA74 night stage FSS4, fixed 02:21 PST before its runs: fill-ins for the shape of the average curvature near its zero crossing (linear against Hamber's power law) on the small grids: 6^4 at k = 0.2425 and 0.2575, 4^4 at 0.2425, 0.2575 and 0.265; a = 0.005, flat starts, the FSS2 lengths. Runs on the cloud after AS5, if time allows before 05:00."
+}

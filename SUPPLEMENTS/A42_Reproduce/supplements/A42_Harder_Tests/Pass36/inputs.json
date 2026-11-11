@@ -1,0 +1,28 @@
+{
+  "lambdas": [
+    0.0,
+    0.5,
+    0.88021525471101,
+    1.25,
+    1.5
+  ],
+  "dust_ratios": [
+    1.1,
+    2.0,
+    10.0
+  ],
+  "state_radiation": [
+    0.0,
+    0.1,
+    1.0
+  ],
+  "failure_lambda": 1.6,
+  "sm_proxy": {
+    "real_scalars": 4,
+    "weyl_fermions": 45,
+    "vectors": 12,
+    "alpha_over_planck_area": 1
+  },
+  "renormalization": "total Box R coefficient zero",
+  "main_state": "radiation integration constant zero"
+}

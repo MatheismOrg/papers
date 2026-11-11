@@ -1,0 +1,11 @@
+# SA74 night plan Q3 (hysteresis on 8^4), fixed 01:23 PST before its runs. At 01:19 the 8^4 chain started at k = 0.250 from the rough
+# a = 0, k = 0.1 preparation sat at R = +0.03 after 2,659 sweeps, while the flat start at the same k sits at -0.004: possible
+# coexistence of two states (a first-order signature) or very slow relaxation. Tests: rough starts at k = 0.245 and 0.2475 (where does
+# the difference begin?), 6,000 more sweeps of the k = 0.250 rough chain (does it relax?), and a second rough preparation (new seed)
+# with its own k = 0.250 chain (does the result depend on the preparation?). The two 16^4 chains of Q1 were stopped at 01:30: at the
+# measured 3.4 sweeps per minute they would reach equilibrium only near 04:20; their cores go to these tests (configurations kept).
+Q_L8_k0.245_rough 8 0.245 1500 3000 99501 0.005 Q_P8_a0_k0.10
+Q_L8_k0.2475_rough 8 0.2475 1500 3000 99502 0.005 Q_P8_a0_k0.10
+Q_L8_k0.250_rough_cont 8 0.250 0 6000 99503 0.005 Q_L8_k0.250_rough
+Q_P8b_a0_k0.10 8 0.10 1000 2000 99504 0
+Q_L8_k0.250_rough2 8 0.250 1500 3000 99505 0.005 Q_P8b_a0_k0.10

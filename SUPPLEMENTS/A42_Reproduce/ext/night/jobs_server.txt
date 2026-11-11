@@ -1,0 +1,13 @@
+# SA74 night plan S1, fixed 23:28 PST before its runs: a = 0.005, lambda = 1, flat starts, ten rescalings per sweep.
+# The largest grids, on Gary's server. Purpose: growth of the curvature fluctuation near the zero crossing up to 16^4.
+# Columns: TAG L K THERM MEAS SEED A (listed in priority order)
+S_L16_k0.2475 16 0.2475 800 1600 99360 0.005
+S_L16_k0.2525 16 0.2525 800 1600 99361 0.005
+S_L14_k0.245 14 0.245 800 1600 99340 0.005
+S_L14_k0.2475 14 0.2475 800 1600 99341 0.005
+S_L14_k0.250 14 0.250 800 1600 99342 0.005
+S_L12_k0.2475 12 0.2475 1000 2000 99320 0.005
+S_L12_k0.250 12 0.250 1000 2000 99321 0.005
+S_L12_k0.255 12 0.255 1000 2000 99322 0.005
+S_L10_k0.2525 10 0.2525 1000 2500 99300 0.005
+S_L10_k0.255 10 0.255 1000 2500 99301 0.005

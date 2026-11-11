@@ -1,0 +1,116 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "FSS_L6_k0.22_flat",
+   "L": 6,
+   "k": 0.22,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 98600,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS_L6_k0.24_flat",
+   "L": 6,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 98601,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS_L6_k0.26_flat",
+   "L": 6,
+   "k": 0.26,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 98602,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS_L5_k0.20_flat",
+   "L": 5,
+   "k": 0.2,
+   "thermal": 2000,
+   "measure": 5000,
+   "seed": 98500,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS_L5_k0.22_flat",
+   "L": 5,
+   "k": 0.22,
+   "thermal": 2000,
+   "measure": 5000,
+   "seed": 98501,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS_L5_k0.24_flat",
+   "L": 5,
+   "k": 0.24,
+   "thermal": 2000,
+   "measure": 5000,
+   "seed": 98502,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS_L5_k0.26_flat",
+   "L": 5,
+   "k": 0.26,
+   "thermal": 2000,
+   "measure": 5000,
+   "seed": 98503,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS_L4_k0.10_flat",
+   "L": 4,
+   "k": 0.1,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 98400,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS_L4_k0.15_flat",
+   "L": 4,
+   "k": 0.15,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 98401,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  },
+  {
+   "tag": "FSS_L4_k0.22_flat",
+   "L": 4,
+   "k": 0.22,
+   "thermal": 2000,
+   "measure": 6000,
+   "seed": 98402,
+   "load": null,
+   "start": "flat",
+   "a": 0.005
+  }
+ ],
+ "note": "T26 finite-size stage, fixed before its runs: flat starts with a = 0.005 on 6^4 (k = 0.22, 0.24, 0.26; 2,000 + 4,000 sweeps), 5^4 (k = 0.20 to 0.26; 2,000 + 5,000) and 4^4 fill-ins (k = 0.10, 0.15, 0.22; 2,000 + 6,000). Purpose: how the zero crossing of the average curvature and its fluctuation move with grid size near Hamber k_c = 0.2443. Start independence was tested on 3^4 and 4^4 only; these chains are descriptive."
+}

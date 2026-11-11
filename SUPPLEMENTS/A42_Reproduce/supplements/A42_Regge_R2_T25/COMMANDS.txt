@@ -1,0 +1,22 @@
+Exact commands for the exploratory runs (the fixed plans run through run_audit_r2.py).
+Engine: regge_r2 built by `python3 make_r2.py regge_audited_T19.c regge_r2.c && gcc -O2 -Wall -o regge_r2 regge_r2.c -lm`.
+
+Pilot (3^4), in pilot/:
+  regge_r2 run 3 0.1 1 1000 2000 92030 prep_L3_s0.dat 0.5 - prep_L3_s0.cfg 10 0 0            (R2A unset: a = 0)
+  R2A=0.005 regge_r2 run 3 K 1 3000 3000 93301 rough_kXX.dat 0.5 prep_L3_s0.cfg - 10 0 0     K = 0.065, 0.05
+  R2A=0.005 regge_r2 run 3 K 1 3000 3000 93300 flat_kXX.dat 0.5 - - 10 0 0
+
+3^4 scan, in scan/ (rough start = the pilot preparation prep_L3_s0.cfg):
+  R2A=0.005 regge_r2 run 3 K 1 2000 2000 94300 L3_kK_flat.dat 0.5 - L3_kK_flat.cfg 10 0 0
+  R2A=0.005 regge_r2 run 3 K 1 2000 2000 94300 L3_kK_rough.dat 0.5 prep_L3_s0.cfg L3_kK_rough.cfg 10 0 0
+  K = 0.10 0.15 0.20 0.22 0.24 0.26 0.28 0.30
+
+4^4 scan past the transition, in scan4/ (rough start = audit preparation prepare_L4_s0.cfg):
+  R2A=0.005 regge_r2 run 4 K 1 2000 4000 96400 L4_kK_flat.dat 0.5 - L4_kK_flat.cfg 10 0 0
+  R2A=0.005 regge_r2 run 4 K 1 2000 4000 96400 L4_kK_rough.dat 0.5 prepare_L4_s0.cfg L4_kK_rough.cfg 10 0 0
+  K = 0.26 0.28
+
+Fixed plans (written before their runs): plan.json (stage A, the T19 design with a = 0.005), plan_B.json (k = 0.20, 0.24),
+plan_B2.json (continuation of the six 4^4, k = 0.24 chains after stage B).
+  python3 run_audit_r2.py regge_audited_T19.c 2 plan.json      (then plan_B.json, plan_B2.json)
+  python3 analyze_r2.py plan.json runs results_A.json            (then plan_B.json -> results_B.json, plan_B2.json -> results_B2.json)

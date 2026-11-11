@@ -1,0 +1,72 @@
+{
+ "preparation": [],
+ "main": [
+  {
+   "tag": "AS4_a0.002_L4_k0.175_flat_s0",
+   "L": 4,
+   "k": 0.175,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99900,
+   "load": null,
+   "start": "flat",
+   "a": 0.002
+  },
+  {
+   "tag": "AS4_a0.002_L4_k0.175_rough_s0",
+   "L": 4,
+   "k": 0.175,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99901,
+   "load": "prepare_L4_s0.cfg",
+   "start": "rough",
+   "a": 0.002
+  },
+  {
+   "tag": "AS4_a0.002_L4_k0.175_flat_s1",
+   "L": 4,
+   "k": 0.175,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99910,
+   "load": null,
+   "start": "flat",
+   "a": 0.002
+  },
+  {
+   "tag": "AS4_a0.002_L4_k0.175_rough_s1",
+   "L": 4,
+   "k": 0.175,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99911,
+   "load": "prepare_L4_s1.cfg",
+   "start": "rough",
+   "a": 0.002
+  },
+  {
+   "tag": "AS4_a0.002_L4_k0.175_flat_s2",
+   "L": 4,
+   "k": 0.175,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99920,
+   "load": null,
+   "start": "flat",
+   "a": 0.002
+  },
+  {
+   "tag": "AS4_a0.002_L4_k0.175_rough_s2",
+   "L": 4,
+   "k": 0.175,
+   "thermal": 2000,
+   "measure": 4000,
+   "seed": 99921,
+   "load": "prepare_L4_s2.cfg",
+   "start": "rough",
+   "a": 0.002
+  }
+ ],
+ "note": "SA74 night stage AS4, fixed 00:53 PST before its runs, after AS3 found that a = 0.001 fails the start-independence screen near its zero crossing (k = 0.14 on 4^4: split R-hat 1.21, flat -0.19 against rough -0.12). Same design for a = 0.002 at k = 0.175, about as far below its 4^4 crossing (0.187) as 0.14 is below 0.153: three flat and three rough starts (the a = 0, k = 0.1 preparations), 2,000 + 4,000 sweeps, ten rescalings per sweep, split R-hat screen 1.05."
+}
